@@ -1,0 +1,921 @@
+{
+  "schema_version": 1,
+  "source_path": "shared/impl/src/androidMain/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "cwf_comment_avg_delta",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fd56841b4b289041",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_avg_delta_ext",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. The 'from AAPSClient or AAPSClient2' variants show data of another patient followed through a client app; keep the product names. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6888203bda7bbb12",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 30
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_background",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Describes a graphic layer or container view of the watch face (image, graph, complication slot). Shown next to the untranslated JSON key; short noun phrase. Layer order matters in the wording (in front of / behind).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "63269d07dc8ca5fa",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_basalRate",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b814d9037d508f6e",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_basalRate_ext",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. The 'from AAPSClient or AAPSClient2' variants show data of another patient followed through a client app; keep the product names. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c789dbb8fd099416",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 34
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_bgi",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9e3cf630b7ac2873",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_bgi_ext",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. The 'from AAPSClient or AAPSClient2' variants show data of another patient followed through a client app; keep the product names. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "aff22b1669afa423",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 35
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_chart",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Describes a graphic layer or container view of the watch face (image, graph, complication slot). Shown next to the untranslated JSON key; short noun phrase. Layer order matters in the wording (in front of / behind).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4854ba5e8a0bf46e",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_cob1",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c7a5214f60e1345b",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 27
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 44
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_cob2",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6e9b6044f44239dc",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_cob2_ext",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. The 'from AAPSClient or AAPSClient2' variants show data of another patient followed through a client app; keep the product names. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "026c3d98de0bd545",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 28
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_complication",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Describes a graphic layer or container view of the watch face (image, graph, complication slot). Shown next to the untranslated JSON key; short noun phrase. Layer order matters in the wording (in front of / behind).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "450720189bd80c14",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 13
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 14
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 15
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 16
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_cover_chart",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Describes a graphic layer or container view of the watch face (image, graph, complication slot). Shown next to the untranslated JSON key; short noun phrase. Layer order matters in the wording (in front of / behind).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e4a7128ed5b9a611",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_cover_plate",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Describes a graphic layer or container view of the watch face (image, graph, complication slot). Shown next to the untranslated JSON key; short noun phrase. Layer order matters in the wording (in front of / behind).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7e5361ba72b250da",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_day",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Describes a date/time view key on the watch face. The letters in brackets (HH, MM, SS, DD, ww) are format patterns and stay as they are. Shown next to the untranslated JSON key.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "583b0c597c13eff4",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_day_name",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4bfb638c70a76768",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_delta",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "aa0b0282b5d9959b",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_delta_ext",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. The 'from AAPSClient or AAPSClient2' variants show data of another patient followed through a client app; keep the product names. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fccc6f9e6187b93a",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 29
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_direction",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f2ec0c07a69df7d8",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 82
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_direction_ext",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. The 'from AAPSClient or AAPSClient2' variants show data of another patient followed through a client app; keep the product names. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "99812dc1712b95d6",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 38
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_freetext1",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Names a free text field of the custom watch face; shown next to the JSON view key, which is not translated. Short noun phrase.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7a4d00fd4ca6a01a",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_freetext2",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Names a free text field of the custom watch face; shown next to the JSON view key, which is not translated. Short noun phrase.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c6625b89f6829df3",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_freetext3",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Names a free text field of the custom watch face; shown next to the JSON view key, which is not translated. Short noun phrase.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "cd82006934c841c9",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_freetext4",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Names a free text field of the custom watch face; shown next to the JSON view key, which is not translated. Short noun phrase.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a62c9eb9237a4acc",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_hour",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Describes a date/time view key on the watch face. The letters in brackets (HH, MM, SS, DD, ww) are format patterns and stay as they are. Shown next to the untranslated JSON key.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2cd0c3c3bfaf6ea5",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_hour_hand",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Explains which image the view key sets: one clock hand of an analog watch face. Shown next to the untranslated JSON key; short noun phrase.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c34f61f63f28c51e",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 86
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_iob1",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a858bd55b3794af0",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_iob1_ext",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. The 'from AAPSClient or AAPSClient2' variants show data of another patient followed through a client app; keep the product names. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "90a915e5bb2a77d0",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 25
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_iob2",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "46cdddd4bb54eb36",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_iob2_ext",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. The 'from AAPSClient or AAPSClient2' variants show data of another patient followed through a client app; keep the product names. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fbe084d4fbb5a9af",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 26
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_loop",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c5c0993f92dce301",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 81
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_loop_ext",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. The 'from AAPSClient or AAPSClient2' variants show data of another patient followed through a client app; keep the product names. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1c322582333b30e0",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 37
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_minute",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Describes a date/time view key on the watch face. The letters in brackets (HH, MM, SS, DD, ww) are format patterns and stay as they are. Shown next to the untranslated JSON key.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c98c83756cc9827f",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 74
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_minute_hand",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Explains which image the view key sets: one clock hand of an analog watch face. Shown next to the untranslated JSON key; short noun phrase.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "29651fb0b4a8ea9b",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 87
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_month",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2d74b9425f81aa04",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_patient_name",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b1c5c48fb215e19c",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_patient_name_ext",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. The 'from AAPSClient or AAPSClient2' variants show data of another patient followed through a client app; keep the product names. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "55f648cc738e1fa7",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 24
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_reservoir",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d0e0db74f92ed79d",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_reservoir_ext",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. The 'from AAPSClient or AAPSClient2' variants show data of another patient followed through a client app; keep the product names. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fb876588f23dc483",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 32
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_rig_battery",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f6df35bcddd12a71",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_rig_battery_ext",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. The 'from AAPSClient or AAPSClient2' variants show data of another patient followed through a client app; keep the product names. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "54335bbb50a9f136",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 33
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_second",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Describes a date/time view key on the watch face. The letters in brackets (HH, MM, SS, DD, ww) are format patterns and stay as they are. Shown next to the untranslated JSON key.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b14edb3a1fcbd3cb",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_second_hand",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Explains which image the view key sets: one clock hand of an analog watch face. Shown next to the untranslated JSON key; short noun phrase.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "654d24a314064b75",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 88
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_sgv",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e7d1590032bc8539",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_sgv_ext",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. The 'from AAPSClient or AAPSClient2' variants show data of another patient followed through a client app; keep the product names. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "994db1679b31e293",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 40
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_status",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1b43829a5826b994",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_status_ext",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. The 'from AAPSClient or AAPSClient2' variants show data of another patient followed through a client app; keep the product names. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a4b1b7ee9066c1c1",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 36
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_temp_target",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8b72fe55eaa600d0",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_temp_target_ext",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. The 'from AAPSClient or AAPSClient2' variants show data of another patient followed through a client app; keep the product names. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1df2cdeafed2d74f",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 31
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_time",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Describes a date/time view key on the watch face. The letters in brackets (HH, MM, SS, DD, ww) are format patterns and stay as they are. Shown next to the untranslated JSON key.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e472b0e680ccb6d0",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_timePeriod",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Describes a date/time view key on the watch face. The letters in brackets (HH, MM, SS, DD, ww) are format patterns and stay as they are. Shown next to the untranslated JSON key.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "19de9ca0035faabf",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 76
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_timestamp",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence. The English has a typo ('Mintutes'); the meaning is minutes since the last received glucose reading.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "571537236ec57208",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 83
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_timestamp_ext",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. The 'from AAPSClient or AAPSClient2' variants show data of another patient followed through a client app; keep the product names. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ddf0a210be52c970",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 39
+        },
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_uploader_battery",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Short explanation shown next to a JSON view key (the key name is not translated) to tell watch face authors what the view displays or contains. Fragment, not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e4b8f473b982f1e7",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 67
+        }
+      ]
+    },
+    {
+      "key": "cwf_comment_week_number",
+      "ui_location": "Wear > Custom watch face > list of available view keys",
+      "kind": "label",
+      "description": "Describes a date/time view key on the watch face. The letters in brackets (HH, MM, SS, DD, ww) are format patterns and stay as they are. Shown next to the untranslated JSON key.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "edbb033825a1649e",
+      "usages": [
+        {
+          "path": "shared/impl/src/androidMain/kotlin/app/aaps/shared/impl/weardata/ViewKeys.kt",
+          "line": 79
+        }
+      ]
+    }
+  ]
+}

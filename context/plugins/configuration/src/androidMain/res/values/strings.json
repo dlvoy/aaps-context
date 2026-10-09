@@ -1,0 +1,1011 @@
+{
+  "schema_version": 1,
+  "source_path": "plugins/configuration/src/androidMain/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "alert_dialog_permission_battery_optimization_failed",
+      "ui_location": "Main screen > alert dialog",
+      "kind": "dialog_text",
+      "description": "Warning when the device cannot exempt AAPS from battery optimization, so performance may suffer.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b1c7962f7592a438",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/ComposeMainActivity.kt",
+          "line": 378
+        }
+      ]
+    },
+    {
+      "key": "allow_hardware_pump_text",
+      "ui_location": "Config builder > switching to a hardware pump > confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Warning that connecting a real pump copies the profile's basal rates to the pump and overwrites its stored basal. Tells the user to cancel if unsure. Cancel is the button.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f56302698ce7520b",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/configBuilder/ConfigBuilderImpl.kt",
+          "line": 253
+        }
+      ]
+    },
+    {
+      "key": "common_values",
+      "ui_location": "Setup wizard > Safety page > max bolus and max carbs fields",
+      "kind": "hint",
+      "description": "Helper text under the max bolus and max carbs fields, telling the user to base them on their largest usual meal. Ends with a line break, keep it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c23042bacfe0d265",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 280
+        },
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 287
+        }
+      ]
+    },
+    {
+      "key": "configbuilder_aps_description",
+      "ui_location": "Setup wizard > APS page",
+      "kind": "label",
+      "description": "Question above the APS algorithm list.",
+      "related_keys": [
+        "setupwizard_aps_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "dc38d3405cedfd0d",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 373
+        }
+      ]
+    },
+    {
+      "key": "configbuilder_bgsource_description",
+      "ui_location": "Setup wizard > BG source page",
+      "kind": "label",
+      "description": "Question above the BG source list. The English has a doubled space and an escaped apostrophe; keep wording simple.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2ebd078e819bb62d",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 305
+        }
+      ]
+    },
+    {
+      "key": "configbuilder_pump_description",
+      "ui_location": "Setup wizard > Pump page",
+      "kind": "label",
+      "description": "Question above the pump list.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "be2be586232e3657",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 330
+        }
+      ]
+    },
+    {
+      "key": "configbuilder_sensitivity_description",
+      "ui_location": "Setup wizard > Sensitivity page",
+      "kind": "label",
+      "description": "Question above the sensitivity plugin list.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ef96df629d7e0192",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 384
+        }
+      ]
+    },
+    {
+      "key": "configbuilder_sync_description",
+      "ui_location": "Setup wizard > Synchronization page",
+      "kind": "label",
+      "description": "Short description of the upload and sync plugins list.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8de1a46f032408fa",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 205
+        }
+      ]
+    },
+    {
+      "key": "diawarning",
+      "ui_location": "Setup wizard > Profile page",
+      "kind": "label",
+      "description": "Warning about DIA (duration of insulin action): the newer insulin curves need at least 5 hours. Keep 'DIA' and the hour values.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8a6f951c6fd79b5b",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 298
+        }
+      ]
+    },
+    {
+      "key": "display_settings",
+      "ui_location": "Setup wizard > Display settings",
+      "kind": "title",
+      "description": "Title of the wizard page for the in-range display limits.",
+      "related_keys": [
+        "low_mark",
+        "high_mark"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3a5a21e0ea1a9778",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 168
+        }
+      ]
+    },
+    {
+      "key": "doprofileswitch",
+      "ui_location": "Setup wizard > Profile page",
+      "kind": "button",
+      "description": "Button that applies the created profile by doing a profile switch. Imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "13b77bdcf7ad2c1a",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 322
+        }
+      ]
+    },
+    {
+      "key": "end_user_license_agreement",
+      "ui_location": "Setup wizard > license page",
+      "kind": "title",
+      "description": "Title of the page showing the license text and disclaimer.",
+      "related_keys": [
+        "end_user_license_agreement_text"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "bbcab3af998e9c91",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 142
+        }
+      ]
+    },
+    {
+      "key": "end_user_license_agreement_i_understand",
+      "ui_location": "Setup wizard > license page",
+      "kind": "button",
+      "description": "Button the user taps to accept the license. Capitalised in English.",
+      "related_keys": [
+        "end_user_license_agreement_text"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d3adaba0857d5a22",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 148
+        }
+      ]
+    },
+    {
+      "key": "end_user_license_agreement_text",
+      "ui_location": "Setup wizard > license page",
+      "kind": "label",
+      "description": "Legal disclaimer in capitals: the software is not for medical decisions and has no warranty. Translate faithfully; legal wording matters.",
+      "related_keys": [
+        "end_user_license_agreement_i_understand"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "fd287df95bf243ce",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 144
+        }
+      ]
+    },
+    {
+      "key": "exitwizard",
+      "ui_location": "Setup wizard > menu",
+      "kind": "menu_item",
+      "description": "Action that closes the setup wizard without finishing it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "137378fcdb48f192",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SetupWizardScreen.kt",
+          "line": 187
+        }
+      ]
+    },
+    {
+      "key": "high_mark",
+      "ui_location": "Setup wizard > Display settings",
+      "kind": "label",
+      "description": "Label of the number field for the upper limit of the target range drawn on the glucose graph.",
+      "related_keys": [
+        "high_mark_comment"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "bc1386776f163354",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 182
+        }
+      ]
+    },
+    {
+      "key": "high_mark_comment",
+      "ui_location": "Setup wizard > Display settings",
+      "kind": "hint",
+      "description": "Helper text under the high-mark field; display only, not used for dosing.",
+      "related_keys": [
+        "high_mark"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "13f17082fd0ef350",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 183
+        }
+      ]
+    },
+    {
+      "key": "loading",
+      "ui_location": "Splash screen; foreground-service placeholder notification",
+      "kind": "status",
+      "description": "Shown while the app starts. Ends with an ellipsis. Short.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "2824f0c40f9b8315",
+      "usages": [
+        {
+          "path": "appshell/src/commonMain/kotlin/app/aaps/appshell/AapsAppRoot.kt",
+          "line": 292
+        },
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/androidNotification/NotificationHolderImpl.kt",
+          "line": 56
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 187
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowScreen.kt",
+          "line": 219
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 277
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 126
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 177
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 228
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 284
+        }
+      ]
+    },
+    {
+      "key": "low_mark",
+      "ui_location": "Setup wizard > Display settings",
+      "kind": "label",
+      "description": "Label of the number field for the lower limit of the target range drawn on the glucose graph. Value is in the chosen glucose unit.",
+      "related_keys": [
+        "low_mark_comment"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d3c203283e448570",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 174
+        }
+      ]
+    },
+    {
+      "key": "low_mark_comment",
+      "ui_location": "Setup wizard > Display settings",
+      "kind": "hint",
+      "description": "Helper text under the low-mark field. 'In range area' is the band on the graph; the value only affects display, not dosing.",
+      "related_keys": [
+        "low_mark"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "83bbc7e344fe25fc",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 175
+        }
+      ]
+    },
+    {
+      "key": "master_password_summary",
+      "ui_location": "Setup wizard > Master password page",
+      "kind": "label",
+      "description": "Explains what the master password does: encrypts backups and overrides app protection. Warns to keep it safe.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4c842f7a1a849e5d",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 262
+        }
+      ]
+    },
+    {
+      "key": "next_button",
+      "ui_location": "Setup wizard > bottom navigation",
+      "kind": "button",
+      "description": "Button that moves to the next wizard page. Short imperative; the bottom bar has little room.",
+      "related_keys": [
+        "previous_button",
+        "setupwizard_finish"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b493292ea4814e53",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SetupWizardScreen.kt",
+          "line": 236
+        }
+      ]
+    },
+    {
+      "key": "nsclient_version_does_not_match",
+      "ui_location": "Notification list",
+      "kind": "notification",
+      "description": "AAPSClient and AAPS versions differ; the user should update. 'AAPSClient' and 'AAPS' are product names.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1e9353af85b730d7",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/configBuilder/RunningConfigurationImpl.kt",
+          "line": 184
+        }
+      ]
+    },
+    {
+      "key": "open_objectives",
+      "ui_location": "Setup wizard > last page",
+      "kind": "button",
+      "description": "Button that opens the Objectives screen. Imperative.",
+      "related_keys": [
+        "startobjective"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e408194530740aa5",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 391
+        }
+      ]
+    },
+    {
+      "key": "previous_button",
+      "ui_location": "Setup wizard > bottom navigation",
+      "kind": "button",
+      "description": "Button that goes back one wizard page. 'Prev' is deliberately abbreviated to fit the bar; keep it as short as possible.",
+      "related_keys": [
+        "next_button"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "77d7e0c38fc85758",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SetupWizardScreen.kt",
+          "line": 243
+        }
+      ]
+    },
+    {
+      "key": "profile",
+      "ui_location": "Profile viewer > comparison row; bolus wizard summary",
+      "kind": "label",
+      "description": "The word 'Profile' as a label, e.g. for the active profile name. Noun, short.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "8ae5968c6b94bf6a",
+      "usages": [
+        {
+          "path": "core/graph/src/commonMain/kotlin/app/aaps/core/graph/profile/ProfileViewerContent.kt",
+          "line": 232
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 866
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 432
+        },
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 309
+        },
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 313
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/WizardInfoDialog.kt",
+          "line": 176
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 857
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 965
+        }
+      ]
+    },
+    {
+      "key": "readstatus",
+      "ui_location": "Setup wizard > Pump page",
+      "kind": "button",
+      "description": "Button that reads the pump status. Imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "21e7ae207d339b60",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 344
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_aps_description",
+      "ui_location": "Setup wizard > APS page",
+      "kind": "label",
+      "description": "Explains how to choose the APS (automated insulin delivery) algorithm; algorithms are listed oldest to newest. Mentions OpenAPS documentation.",
+      "related_keys": [
+        "configbuilder_aps_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "18b9cb6878d4638f",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 371
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_client_control_info",
+      "ui_location": "Setup wizard > Client control",
+      "kind": "label",
+      "description": "Explains remote control: paired clients send signed commands to this master through Nightscout. Master is the main phone running the pump.",
+      "related_keys": [
+        "setupwizard_client_control_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "bb34c9485b9aa377",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 217
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_client_control_title",
+      "ui_location": "Setup wizard > Client control",
+      "kind": "title",
+      "description": "Title of the page for pairing client devices with this master AAPS.",
+      "related_keys": [
+        "setupwizard_client_control_info"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c88fa4d1aa2ab774",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 215
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_finish",
+      "ui_location": "Setup wizard > bottom navigation (last page)",
+      "kind": "button",
+      "description": "Replaces Next on the last wizard page and closes the wizard. Written in capitals in English; one word.",
+      "related_keys": [
+        "next_button"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ff90adb3edaecc06",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SetupWizardScreen.kt",
+          "line": 231
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_ns_receive_info",
+      "ui_location": "Setup wizard > Client control",
+      "kind": "label",
+      "description": "Says that accepting data directly from Nightscout is off by default because it is less secure, and when to enable it.",
+      "related_keys": [
+        "setupwizard_open_ns_receive_settings"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b408e0f761f45a61",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 228
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_open_ns_receive_settings",
+      "ui_location": "Setup wizard > Client control",
+      "kind": "button",
+      "description": "Button opening the setting that allows data from Nightscout. Noun phrase.",
+      "related_keys": [
+        "setupwizard_ns_receive_info"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d12739dc2c6b4216",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 231
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_pair_with_master_info",
+      "ui_location": "Setup wizard > Pairing (client mode)",
+      "kind": "label",
+      "description": "Explains pairing this AAPSClient with the master so it can send commands securely.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e826cd13f7ea496d",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 239
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_pairing_status_client_not_paired",
+      "ui_location": "Setup wizard > Pairing (client)",
+      "kind": "status",
+      "description": "Status line on a client that is not yet paired.",
+      "related_keys": [
+        "setupwizard_pairing_status_client_paired"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "cbfa7a7823b3d390",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/elements/SWPairingStatus.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_pairing_status_client_paired",
+      "ui_location": "Setup wizard > Pairing (client)",
+      "kind": "status",
+      "description": "Status line on a client that is paired with its master.",
+      "related_keys": [
+        "setupwizard_pairing_status_client_not_paired"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "16c057899c595cd9",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/elements/SWPairingStatus.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_pairing_status_master",
+      "ui_location": "Setup wizard > Pairing (master)",
+      "kind": "status",
+      "description": "Status line. %1$d is the number of paired clients.",
+      "related_keys": [
+        "setupwizard_pairing_status_master_none"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7cce36b737de0a4c",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/elements/SWPairingStatus.kt",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_pairing_status_master_none",
+      "ui_location": "Setup wizard > Pairing (master)",
+      "kind": "status",
+      "description": "Status line when no client is paired.",
+      "related_keys": [
+        "setupwizard_pairing_status_master"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1d3606855f4ad7f2",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/elements/SWPairingStatus.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_pairing_ws_warning",
+      "ui_location": "Setup wizard > Pairing",
+      "kind": "label",
+      "description": "Warning that pairing needs the Nightscout WebSocket connection; tells the user to go back and enable it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "02960a64a09383fb",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 226
+        },
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 249
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_permissions",
+      "ui_location": "Setup wizard > Permissions",
+      "kind": "title",
+      "description": "Title of the wizard page for granting Android permissions.",
+      "related_keys": [
+        "setupwizard_permissions_info"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1351fb5b2668f540",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 187
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_permissions_info",
+      "ui_location": "Setup wizard > Permissions",
+      "kind": "label",
+      "description": "Explains that AAPS needs storage access and permissions, and asks the user to grant them.",
+      "related_keys": [
+        "setupwizard_permissions"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "177f344a58d646ed",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 189
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_profile_info",
+      "ui_location": "Setup wizard > Profile page",
+      "kind": "label",
+      "description": "Explains creating a profile with basal rates, IC (insulin to carb ratio), ISF (insulin sensitivity factor) and targets.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d6e141d5da8d6b9d",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 311
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_pump_pump_not_initialized",
+      "ui_location": "Setup wizard > Pump page",
+      "kind": "label",
+      "description": "Hint that setup continues only after the pump is set up. Contains HTML bold tags; keep them.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4fe94407441b6445",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 332
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_pump_riley_link_status",
+      "ui_location": "Setup wizard > Pump page",
+      "kind": "label",
+      "description": "Label before the RileyLink connection status, ends with a colon.",
+      "related_keys": [
+        "setupwizard_pump_waiting_for_riley_link_connection"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "611e0b730b5d3900",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 340
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_pump_waiting_for_riley_link_connection",
+      "ui_location": "Setup wizard > Pump page",
+      "kind": "label",
+      "description": "Shown for RileyLink-based pumps: configure the RileyLink and wait until status is Connected. The quoted word must match the status text. Trailing line break.",
+      "related_keys": [
+        "setupwizard_pump_riley_link_status"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "da4dcfe102dd2aa5",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 335
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_sensitivity_description",
+      "ui_location": "Setup wizard > Sensitivity page",
+      "kind": "label",
+      "description": "Explains the sensitivity plugin (sensitivity detection and COB, carbs on board). Followed by a link to the documentation.",
+      "related_keys": [
+        "setupwizard_sensitivity_url"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "51ff63d5f36421a1",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 381
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_sensitivity_url",
+      "ui_location": "Setup wizard > Sensitivity page",
+      "kind": "other",
+      "description": "Link target of the documentation page. A URL, not displayed text; translate only if a localized wiki page exists, otherwise keep.",
+      "related_keys": [
+        "setupwizard_sensitivity_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "ba8069ea950ccbaf",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 382
+        }
+      ]
+    },
+    {
+      "key": "setupwizard_units_prompt",
+      "ui_location": "Setup wizard > Units",
+      "kind": "label",
+      "description": "Instruction above the mg/dL / mmol/L choice. Full sentence.",
+      "related_keys": [
+        "units"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e9731df8ddccfe59",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 160
+        }
+      ]
+    },
+    {
+      "key": "startobjective",
+      "ui_location": "Setup wizard > last page",
+      "kind": "label",
+      "description": "Prompt inviting the user to begin the first objective (a guided learning step in AAPS).",
+      "related_keys": [
+        "open_objectives"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ff1dd027285dfbe3",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 389
+        }
+      ]
+    },
+    {
+      "key": "status_label",
+      "ui_location": "Setup wizard > Synchronization page; Tidepool screen",
+      "kind": "label",
+      "description": "Label before a status value, ending in a colon. The status text follows it.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8eb7470553980328",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 209
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/compose/TidepoolScreen.kt",
+          "line": 132
+        },
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/compose/NSClientScreen.kt",
+          "line": 171
+        }
+      ]
+    },
+    {
+      "key": "storedsettingsfound",
+      "ui_location": "Setup wizard > Settings import page",
+      "kind": "label",
+      "description": "Heading shown when previously exported settings are found on the device so they can be imported.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bd75cf1a357a4d07",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 195
+        }
+      ]
+    },
+    {
+      "key": "syncinfotext",
+      "ui_location": "Setup wizard > Synchronization page",
+      "kind": "label",
+      "description": "Explains that cloud sync can be skipped now, but objectives cannot be completed until Nightscout or Tidepool is set up.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "dd718ae7cef3df00",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 207
+        }
+      ]
+    },
+    {
+      "key": "units",
+      "ui_location": "Setup wizard > Units",
+      "kind": "title",
+      "description": "Title of the wizard page where the user picks mg/dL or mmol/L. Also the page's tab/step name.",
+      "related_keys": [
+        "setupwizard_units_prompt"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "308d7d42f3a7b5fe",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 158
+        }
+      ]
+    },
+    {
+      "key": "warning_wrong_directory_message",
+      "ui_location": "Main screen > alert dialog",
+      "kind": "dialog_text",
+      "description": "Explains the wrong folder choice. %1$s is the selected subfolder name; the user is asked to pick the root AAPS folder.",
+      "related_keys": [
+        "warning_wrong_directory_selected"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "41e9b387e4b3df20",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/ComposeMainActivity.kt",
+          "line": 250
+        }
+      ]
+    },
+    {
+      "key": "warning_wrong_directory_selected",
+      "ui_location": "Main screen > alert dialog",
+      "kind": "dialog_title",
+      "description": "Title of the dialog shown when the chosen storage folder is a subfolder instead of the root AAPS folder.",
+      "related_keys": [
+        "warning_wrong_directory_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ac445b661125eac7",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/ComposeMainActivity.kt",
+          "line": 249
+        }
+      ]
+    },
+    {
+      "key": "welcome",
+      "ui_location": "Setup wizard > first page",
+      "kind": "title",
+      "description": "Title of the first wizard page.",
+      "related_keys": [
+        "welcometosetupwizard"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e247dc243caa36db",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 138
+        }
+      ]
+    },
+    {
+      "key": "welcometosetupwizard",
+      "ui_location": "Setup wizard > first page",
+      "kind": "label",
+      "description": "Intro text on the first page. Contains line breaks; keep them.",
+      "related_keys": [
+        "welcome"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a9a1d95558d54a12",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 139
+        }
+      ]
+    }
+  ]
+}

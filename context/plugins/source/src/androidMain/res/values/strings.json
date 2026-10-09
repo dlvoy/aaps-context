@@ -1,0 +1,812 @@
+{
+  "schema_version": 1,
+  "source_path": "plugins/source/src/androidMain/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "a11y_bg_duplicate",
+      "ui_location": "BG source screen > reading list (screen reader)",
+      "kind": "other",
+      "description": "Spoken state description (TalkBack) added to a glucose reading row that is a duplicate; not visible on screen. Short lower-case fragment read after the reading's value. Duplicates are shown with a coloured background.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2756222ad7bc57eb",
+      "usages": [
+        {
+          "path": "plugins/source/src/commonMain/kotlin/app/aaps/plugins/source/compose/BgSourceScreen.kt",
+          "line": 249
+        }
+      ]
+    },
+    {
+      "key": "aidex",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "title",
+      "description": "Name of the MicroTech AiDEX CGM app BG source plugin. Shown in the BG source list in the config builder and as the plugin's title. Product/app name; usually kept as is.",
+      "related_keys": [
+        "description_source_aidex"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1d485b7b701fbc60",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/AidexPlugin.kt",
+          "line": 61
+        },
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/AidexPlugin.kt",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "key": "aidex_sensor_error",
+      "ui_location": "AAPS notifications (shown in the notification area on Overview and in the notification list)",
+      "kind": "notification",
+      "description": "The AiDEX sensor reports an error. Notification asking the user to check the sensor. Whole sentence.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "4024fc8d370c0bf5",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/AidexPlugin.kt",
+          "line": 209
+        }
+      ]
+    },
+    {
+      "key": "aidex_sensor_expired",
+      "ui_location": "AAPS notifications (shown in the notification area on Overview and in the notification list)",
+      "kind": "notification",
+      "description": "The AiDEX sensor has expired. Posted once as an important notification, valid 60 minutes. Whole sentence.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "3a4059697f34bd75",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/AidexPlugin.kt",
+          "line": 177
+        }
+      ]
+    },
+    {
+      "key": "aidex_sensor_replace",
+      "ui_location": "AAPS notifications (shown in the notification area on Overview and in the notification list)",
+      "kind": "notification",
+      "description": "The AiDEX sensor must be replaced soon. Notification; wording is urgent but not an alarm. Whole sentence.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "eac6c9cc9ca2304a",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/AidexPlugin.kt",
+          "line": 193
+        }
+      ]
+    },
+    {
+      "key": "aidex_sensor_stabilizing",
+      "ui_location": "AAPS notifications (shown in the notification area on Overview and in the notification list)",
+      "kind": "notification",
+      "description": "The AiDEX sensor is in its warm-up phase after insertion; readings come later. Ends with an ellipsis. Whole sentence.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "5eb645e4c8ca1f71",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/AidexPlugin.kt",
+          "line": 225
+        }
+      ]
+    },
+    {
+      "key": "aidex_signal_lost",
+      "ui_location": "AAPS notifications (shown in the notification area on Overview and in the notification list)",
+      "kind": "notification",
+      "description": "The app lost the connection to the AiDEX sensor. Notification asking to check the connection. Whole sentence.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "552fe5872114ca00",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/AidexPlugin.kt",
+          "line": 241
+        }
+      ]
+    },
+    {
+      "key": "description_source_aidex",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "summary",
+      "description": "Description of the MicroTech CGM App BG source. The list is of product names (LinX, Equil, Diaexpert); keep them. 'etc.' ends the list.",
+      "related_keys": [
+        "aidex"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f79f1739219853e4",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/AidexPlugin.kt",
+          "line": 67
+        }
+      ]
+    },
+    {
+      "key": "description_source_dexcom",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "summary",
+      "description": "Description of the BYODA BG source. The quoted name is the official name of a community-built Dexcom app, so keep it recognisable. The apostrophes are escaped in the resource.",
+      "related_keys": [
+        "dexcom_app_patched"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "75fa7e74d732c3ac",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/DexcomPlugin.kt",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "key": "description_source_glimp",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "summary",
+      "description": "Description of the Glimp BG source in the plugin list. Glimp is a third-party app name.",
+      "related_keys": [
+        "glimp"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e45a68745ea067ef",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/GlimpPlugin.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "description_source_glunovo",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "summary",
+      "description": "Description of the Glunovo BG source. 'Values' means glucose values.",
+      "related_keys": [
+        "glunovo"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e21548d87603e1cf",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/GlunovoPlugin.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "description_source_instara_app",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "summary",
+      "description": "Description of the Instara BG source in the plugin list.",
+      "related_keys": [
+        "instara_app"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "222dec19ad038d43",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/instara/InstaraPlugin.kt",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "description_source_intelligo",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "summary",
+      "description": "Description of the Intelligo BG source. 'Values' means glucose values.",
+      "related_keys": [
+        "intelligo"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "07f757b80abcdf2d",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/IntelligoPlugin.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "description_source_mm640g",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "summary",
+      "description": "Description of the MM640g BG source. '600SeriesAndroidUploader' is a project/app name; do not translate.",
+      "related_keys": [
+        "mm640g"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "30317eea40c946a1",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/MM640gPlugin.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "description_source_notification_reader",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "summary",
+      "description": "Description of the Notification Reader BG source. The parenthesised list names official CGM apps; keep app names.",
+      "related_keys": [
+        "notification_reader"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d893708bd05986af",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/NotificationReaderPlugin.kt",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "description_source_ns_client",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "summary",
+      "description": "One-line description under the Nightscout client BG source in the plugin list. Says glucose data is downloaded from Nightscout. 'BG' is blood glucose.",
+      "related_keys": [
+        "ns_client_bg"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "933129780f7c5df2",
+      "usages": [
+        {
+          "path": "plugins/source/src/commonMain/kotlin/app/aaps/plugins/source/NSClientSourcePlugin.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "description_source_patched_si_app",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "summary",
+      "description": "Description of the SI App BG source. Names the patched Sibionic app or the Sibionics app; keep product names.",
+      "related_keys": [
+        "patched_si_app"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3a6065c60b89be27",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/PatchedSiAppPlugin.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "description_source_patched_sino_app",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "summary",
+      "description": "Description of the Sino App BG source. 'Patched' means a modified build of the vendor app.",
+      "related_keys": [
+        "patched_sino_app"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "02ff4ce108f83a62",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/PatchedSinoAppPlugin.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "description_source_patched_syai_tag_app",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "summary",
+      "description": "Description of the Syai BG source. Syai and Ottai are app names; keep them.",
+      "related_keys": [
+        "syai_tag_app"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5c5f3c286ae46a6b",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/SyaiPlugin.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "description_source_poctech",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "summary",
+      "description": "Description of the Poctech BG source. Poctech is a third-party app name.",
+      "related_keys": [
+        "poctech"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0cf67024e60c7c15",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/PoctechPlugin.kt",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "key": "description_source_random_bg",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "summary",
+      "description": "Description of the random BG source. It only works in Demo mode and produces fake glucose values for testing.",
+      "related_keys": [
+        "random_bg"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3191b76c92923b53",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/RandomBgPlugin.kt",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "key": "description_source_tomato",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "summary",
+      "description": "Description of the Tomato BG source. MiaoMiao is a Bluetooth transmitter for Libre sensors; keep the names.",
+      "related_keys": [
+        "tomato"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c9fda24c6efc0d29",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/TomatoPlugin.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "description_source_xdrip",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "summary",
+      "description": "Description of the xDrip+ BG source in the plugin list. Names compatible apps in parentheses; keep app names untranslated.",
+      "related_keys": [
+        "source_xdrip"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "55c44af61ac37560",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/XdripSourcePlugin.kt",
+          "line": 74
+        }
+      ]
+    },
+    {
+      "key": "dexcom_app_patched",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "title",
+      "description": "Name of the patched Dexcom app ('Build Your Own Dexcom App') BG source plugin. Shown in the BG source list in the config builder and as the plugin's title. Product/app name; usually kept as is. BYODA is an abbreviation of that name; it can stay as is.",
+      "related_keys": [
+        "description_source_dexcom"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "96974e03bbaba3b1",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/DexcomPlugin.kt",
+          "line": 73
+        },
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/DexcomPlugin.kt",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "key": "glimp",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "title",
+      "description": "Name of the Glimp BG source plugin. Shown in the BG source list in the config builder and as the plugin's title. Product/app name; usually kept as is.",
+      "related_keys": [
+        "description_source_glimp"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "722439d9768dd354",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/GlimpPlugin.kt",
+          "line": 54
+        },
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/GlimpPlugin.kt",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "key": "glunovo",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "title",
+      "description": "Name of the Glunovo BG source plugin. Shown in the BG source list in the config builder and as the plugin's title. Product/app name; usually kept as is.",
+      "related_keys": [
+        "description_source_glunovo"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9eb775eb3184c347",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/GlunovoPlugin.kt",
+          "line": 62
+        },
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/GlunovoPlugin.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "instara_app",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "title",
+      "description": "Name of the Instara BG source plugin. Shown in the BG source list in the config builder and as the plugin's title. Product/app name; usually kept as is.",
+      "related_keys": [
+        "description_source_instara_app"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a3629da767989420",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/instara/InstaraPlugin.kt",
+          "line": 65
+        },
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/instara/InstaraPlugin.kt",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "key": "intelligo",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "title",
+      "description": "Name of the Intelligo BG source plugin. Shown in the BG source list in the config builder and as the plugin's title. Product/app name; usually kept as is.",
+      "related_keys": [
+        "description_source_intelligo"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b8c8118e26912b8f",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/IntelligoPlugin.kt",
+          "line": 62
+        },
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/IntelligoPlugin.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "mm640g",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "title",
+      "description": "Name of the Medtronic MM640g BG source plugin. Shown in the BG source list in the config builder and as the plugin's title. Product/app name; usually kept as is.",
+      "related_keys": [
+        "description_source_mm640g"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b5e6452b1baa9828",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/MM640gPlugin.kt",
+          "line": 57
+        },
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/MM640gPlugin.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "notification_reader",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "title",
+      "description": "Name of the Notification Reader BG source plugin. Shown in the BG source list in the config builder and as the plugin's title. Product/app name; usually kept as is. It reads glucose from other apps' notifications.",
+      "related_keys": [
+        "description_source_notification_reader"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2477af623e1a03b1",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/NotificationReaderPlugin.kt",
+          "line": 44
+        },
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/NotificationReaderPlugin.kt",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "key": "ns_client_bg",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "title",
+      "description": "Name of the Nightscout client BG source plugin. Shown in the BG source list in the config builder and as the plugin's title. Product/app name; usually kept as is. Also the title of the BG source screen listing readings.",
+      "related_keys": [
+        "description_source_ns_client"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d57406e92ae9703e",
+      "usages": [
+        {
+          "path": "plugins/source/src/commonMain/kotlin/app/aaps/plugins/source/NSClientSourcePlugin.kt",
+          "line": 38
+        },
+        {
+          "path": "plugins/source/src/commonMain/kotlin/app/aaps/plugins/source/NSClientSourcePlugin.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "patched_si_app",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "title",
+      "description": "Name of the patched Sibionic SI App BG source plugin. Shown in the BG source list in the config builder and as the plugin's title. Product/app name; usually kept as is.",
+      "related_keys": [
+        "description_source_patched_si_app"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "eb5f054a182cf415",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/PatchedSiAppPlugin.kt",
+          "line": 56
+        },
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/PatchedSiAppPlugin.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "patched_sino_app",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "title",
+      "description": "Name of the patched Sino App BG source plugin. Shown in the BG source list in the config builder and as the plugin's title. Product/app name; usually kept as is.",
+      "related_keys": [
+        "description_source_patched_sino_app"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "54a74580259150fa",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/PatchedSinoAppPlugin.kt",
+          "line": 56
+        },
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/PatchedSinoAppPlugin.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "permission_dexcom_description",
+      "ui_location": "Permission request dialog > Dexcom CGM",
+      "kind": "dialog_text",
+      "description": "Explains why the app asks for the Dexcom data permission. One sentence.",
+      "related_keys": [
+        "permission_dexcom_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "11762e76a7d1c531",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/DexcomPlugin.kt",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "key": "permission_dexcom_title",
+      "ui_location": "Permission request dialog > Dexcom CGM",
+      "kind": "dialog_title",
+      "description": "Title of the permission rationale shown when AAPS needs permission to read data from the installed Dexcom app. Names the permission group; short label.",
+      "related_keys": [
+        "permission_dexcom_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1ce645c0ed4312e2",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/DexcomPlugin.kt",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "key": "permission_notification_listener_description",
+      "ui_location": "Permission request dialog > Notification Access",
+      "kind": "dialog_text",
+      "description": "Explains that notification access is needed to read glucose values from CGM apps' notifications.",
+      "related_keys": [
+        "permission_notification_listener_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "abe0c504ca43c53d",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/NotificationReaderPlugin.kt",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "key": "permission_notification_listener_title",
+      "ui_location": "Permission request dialog > Notification Access",
+      "kind": "dialog_title",
+      "description": "Title of the rationale for Android's notification access permission, used by the Notification Reader BG source. Matches the Android system setting name.",
+      "related_keys": [
+        "permission_notification_listener_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b6135a4d79e16a48",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/NotificationReaderPlugin.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "poctech",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "title",
+      "description": "Name of the Poctech BG source plugin. Shown in the BG source list in the config builder and as the plugin's title. Product/app name; usually kept as is.",
+      "related_keys": [
+        "description_source_poctech"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "47e425d60bf7d05f",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/PoctechPlugin.kt",
+          "line": 59
+        },
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/PoctechPlugin.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_instara_history_request",
+      "ui_location": "Preferences > BG source > Instara",
+      "kind": "preference_summary",
+      "description": "Summary under the switch above. A sentence fragment explaining that missing historical glucose data is requested in the background.",
+      "related_keys": [
+        "pref_title_instara_history_request"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "39a5bc3fddbfcde8",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/instara/InstaraBooleanKey.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "pref_title_instara_history_request",
+      "ui_location": "Preferences > BG source > Instara",
+      "kind": "preference_title",
+      "description": "Title of an on/off switch in the Instara settings. When on, AAPS asks the Instara app in the background to resend readings it may have missed. Not shown in AAPSClient mode.",
+      "related_keys": [
+        "pref_summary_instara_history_request"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "83af679009417516",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/instara/InstaraBooleanKey.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "random_bg",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "title",
+      "description": "Name of the random BG generator BG source plugin. Shown in the BG source list in the config builder and as the plugin's title. Product/app name; usually kept as is. It is also the title of the generator's settings screen, so keep it short. Only meant for demo/testing.",
+      "related_keys": [
+        "description_source_random_bg"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0da45f57953ccc11",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/RandomBgPlugin.kt",
+          "line": 71
+        },
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/RandomBgPlugin.kt",
+          "line": 75
+        },
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/RandomBgPlugin.kt",
+          "line": 208
+        }
+      ]
+    },
+    {
+      "key": "source_xdrip",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "title",
+      "description": "Name of the xDrip+ BG source plugin. Shown in the BG source list in the config builder and as the plugin's title. Product/app name; usually kept as is.",
+      "related_keys": [
+        "description_source_xdrip"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5a11b232a29cdb97",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/XdripSourcePlugin.kt",
+          "line": 68
+        },
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/XdripSourcePlugin.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "syai_tag_app",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "title",
+      "description": "Name of the Syai BG source plugin. Shown in the BG source list in the config builder and as the plugin's title. Product/app name; usually kept as is.",
+      "related_keys": [
+        "description_source_patched_syai_tag_app"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "28938aa3406f0d9b",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/SyaiPlugin.kt",
+          "line": 56
+        },
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/SyaiPlugin.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "tomato",
+      "ui_location": "Config builder > BG source > plugin list",
+      "kind": "title",
+      "description": "Name of the Tomato (MiaoMiao) BG source plugin. Shown in the BG source list in the config builder and as the plugin's title. Product/app name; usually kept as is. The text names the app and the device in brackets.",
+      "related_keys": [
+        "description_source_tomato"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "97129aa063bfb959",
+      "usages": [
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/TomatoPlugin.kt",
+          "line": 53
+        },
+        {
+          "path": "plugins/source/src/androidMain/kotlin/app/aaps/plugins/source/TomatoPlugin.kt",
+          "line": 57
+        }
+      ]
+    }
+  ]
+}

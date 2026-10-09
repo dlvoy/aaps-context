@@ -1,0 +1,1043 @@
+{
+  "schema_version": 1,
+  "source_path": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "scene_chain_ended_with_skip",
+      "ui_location": "Notification list",
+      "kind": "notification",
+      "description": "A scene ended but its follow-up did not start. %1$s is the ended scene name, %2$s the reason, which is one of the 'skipped' strings or a pump/loop status text, so %2$s is a fragment.",
+      "related_keys": [
+        "scene_chain_skipped_deleted",
+        "scene_chain_skipped_disabled"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b6259207cbbe2f1a",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExpiryRunner.kt",
+          "line": 124
+        }
+      ]
+    },
+    {
+      "key": "scene_chain_error_summary",
+      "ui_location": "Notification list; automation result",
+      "kind": "error",
+      "description": "Summary when the follow-up scene was started but some actions failed. %1$s old scene, %2$s new scene, %3$d failed actions, %4$d total actions.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "830b62bca71d4b6e",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneAutomationApiImpl.kt",
+          "line": 127
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExpiryRunner.kt",
+          "line": 129
+        }
+      ]
+    },
+    {
+      "key": "scene_chain_indicator",
+      "ui_location": "Active scene banner; scene summary lines",
+      "kind": "status",
+      "description": "Small indicator that a follow-up scene is queued. %1$s is the follow-up scene name; an arrow precedes it. Keep the arrow.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "92f5e62f5c8695f0",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExecutor.kt",
+          "line": 172
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActiveSceneBanner.kt",
+          "line": 144
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListScreen.kt",
+          "line": 278
+        }
+      ]
+    },
+    {
+      "key": "scene_chain_none",
+      "ui_location": "Scenes > scene wizard > follow-up step",
+      "kind": "label",
+      "description": "Radio option meaning no follow-up scene. 'None' as a choice.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6ec473e0a62b3f14",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/ChainStep.kt",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "key": "scene_chain_skipped_deleted",
+      "ui_location": "Notification list (used as the reason in the line above)",
+      "kind": "error",
+      "description": "Lower-case reason fragment inserted as %2$s: the follow-up scene no longer exists. Not a standalone sentence.",
+      "related_keys": [
+        "scene_chain_ended_with_skip"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "654d144e89e8331e",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExpiryRunner.kt",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "scene_chain_skipped_disabled",
+      "ui_location": "Notification list (used as the reason in the line above)",
+      "kind": "error",
+      "description": "Reason fragment inserted into the skipped-follow-up notification. %1$s is the follow-up scene name, in quotes; the scene was turned off.",
+      "related_keys": [
+        "scene_chain_ended_with_skip"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "86ac2d44bf5ff199",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExpiryRunner.kt",
+          "line": 82
+        }
+      ]
+    },
+    {
+      "key": "scene_chain_target_missing",
+      "ui_location": "Scenes > scene card",
+      "kind": "error",
+      "description": "Shown on a scene card when its follow-up scene was deleted.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c51b31c694d3acf9",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListScreen.kt",
+          "line": 272
+        }
+      ]
+    },
+    {
+      "key": "scene_chained_format",
+      "ui_location": "Notification list; automation result",
+      "kind": "notification",
+      "description": "Notification that a scene ended and the follow-up started. %1$s is the old scene name, %2$s the new one; an arrow separates them.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "617fa90c8e934697",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneAutomationApiImpl.kt",
+          "line": 122
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExpiryRunner.kt",
+          "line": 117
+        }
+      ]
+    },
+    {
+      "key": "scene_ended_format",
+      "ui_location": "Notification list",
+      "kind": "notification",
+      "description": "Notification that a scene finished. %1$s is the scene name, in quotes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a328e7e812605f3c",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExpiryRunner.kt",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "key": "scene_skip_to_format",
+      "ui_location": "Overview > scene deactivation dialog; Scenes list",
+      "kind": "button",
+      "description": "Action text that ends the active scene early and starts its follow-up. %1$s is the follow-up scene name.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e4f4b066505c92a6",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 878
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListScreen.kt",
+          "line": 92
+        }
+      ]
+    },
+    {
+      "key": "scene_template_alcohol",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "title",
+      "description": "Name of the built-in scene template for drinking alcohol. Shown as the card title in the template list; short noun phrase.",
+      "related_keys": [
+        "scene_wizard_alcohol_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7a1281e10020018c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 98
+        }
+      ]
+    },
+    {
+      "key": "scene_template_bathing",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "title",
+      "description": "Name of the built-in scene template for showering, swimming or bathing. Shown as the card title in the template list; short noun phrase.",
+      "related_keys": [
+        "scene_wizard_bathing_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "059f90d30de83407",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 124
+        }
+      ]
+    },
+    {
+      "key": "scene_template_blank",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "title",
+      "description": "Name of the empty template with no pre-selected actions. Means 'empty', not a colour.",
+      "related_keys": [
+        "scene_wizard_blank_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "bae9e73d151a5da0",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 170
+        }
+      ]
+    },
+    {
+      "key": "scene_template_driving",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "title",
+      "description": "Name of the built-in scene template for driving. Shown as the card title in the template list; short noun phrase.",
+      "related_keys": [
+        "scene_wizard_driving_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "55c4e505ae0d5a9a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 113
+        }
+      ]
+    },
+    {
+      "key": "scene_template_exercise",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "title",
+      "description": "Name of the built-in scene template for physical exercise. Shown as the card title in the template list; short noun phrase.",
+      "related_keys": [
+        "scene_wizard_exercise_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "01e172e4d516e758",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "key": "scene_template_hot_weather",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "title",
+      "description": "Name of the built-in scene template for hot weather. Shown as the card title in the template list; short noun phrase.",
+      "related_keys": [
+        "scene_wizard_hot_weather_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "aa4cbfa2f30ab252",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 147
+        }
+      ]
+    },
+    {
+      "key": "scene_template_luteal_phase",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "title",
+      "description": "Name of the built-in scene template for the luteal phase of the menstrual cycle. Shown as the card title in the template list; short noun phrase.",
+      "related_keys": [
+        "scene_wizard_luteal_phase_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "bd78cb686ab21272",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 135
+        }
+      ]
+    },
+    {
+      "key": "scene_template_medical_procedure",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "title",
+      "description": "Name of the built-in scene template for surgery or a medical procedure. Shown as the card title in the template list; short noun phrase.",
+      "related_keys": [
+        "scene_wizard_medical_procedure_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d40c20a2ce33bc2a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 158
+        }
+      ]
+    },
+    {
+      "key": "scene_template_post_exercise_night",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "title",
+      "description": "Name of the built-in scene template for the night after exercise. Shown as the card title in the template list; short noun phrase.",
+      "related_keys": [
+        "scene_wizard_post_exercise_night_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2386abac32cb7076",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 74
+        }
+      ]
+    },
+    {
+      "key": "scene_template_pre_meal",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "title",
+      "description": "Name of the built-in scene template for the time before a meal. Shown as the card title in the template list; short noun phrase.",
+      "related_keys": [
+        "scene_wizard_pre_meal_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "05a9cc50bc46b8d5",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 87
+        }
+      ]
+    },
+    {
+      "key": "scene_template_sick_day",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "title",
+      "description": "Name of the built-in scene template for illness. Shown as the card title in the template list; short noun phrase.",
+      "related_keys": [
+        "scene_wizard_sick_day_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "39657c6ab06ea2c4",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "key": "scene_template_sick_day_vomiting",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "title",
+      "description": "Name of the built-in scene template for illness with vomiting. Shown as the card title in the template list; short noun phrase.",
+      "related_keys": [
+        "scene_wizard_sick_day_vomiting_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5a8245ef622efc52",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "scene_template_sleep",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "title",
+      "description": "Name of the built-in scene template for sleep. Shown as the card title in the template list; short noun phrase.",
+      "related_keys": [
+        "scene_wizard_sleep_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c6bc0010aa673d45",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_alcohol_desc",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "summary",
+      "description": "One-line summary under the Alcohol template name: which settings it changes (target, profile percentage, SMB, loop mode). SMB, LGS and the percentages stay as they are.",
+      "related_keys": [
+        "scene_template_alcohol",
+        "scene_wizard_info_alcohol"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7225d4456951b3c2",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_bathing_desc",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "summary",
+      "description": "One-line summary under the Bathing template name: which settings it changes (target, profile percentage, SMB, loop mode). SMB, LGS and the percentages stay as they are.",
+      "related_keys": [
+        "scene_template_bathing",
+        "scene_wizard_info_bathing"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0bd1efa155f2c956",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 125
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_blank_desc",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "summary",
+      "description": "Summary under the Blank template: start from scratch.",
+      "related_keys": [
+        "scene_template_blank"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "35ce19614fb99ec0",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 171
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_careportal_info",
+      "ui_location": "Scenes > scene wizard > CarePortal step",
+      "kind": "hint",
+      "description": "Explanatory text at the top of the CarePortal step describing the CarePortal event: what it does and its effect on the algorithm. Keep medical terms consistent with the rest of the app.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b03ea0e7e7544310",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/CarePortalStep.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_chain_info",
+      "ui_location": "Scenes > scene wizard > follow-up step",
+      "kind": "hint",
+      "description": "Explains chaining: the chosen scene activates when this one expires, and the user can also skip to it earlier.",
+      "related_keys": [
+        "scene_wizard_chain_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "4bab7691d7165197",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/ChainStep.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_chain_title",
+      "ui_location": "Scenes > scene wizard > follow-up step",
+      "kind": "title",
+      "description": "Title of the step where a second scene can be chosen to start automatically when this one ends.",
+      "related_keys": [
+        "scene_wizard_chain_info"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "68977d421a47e79b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/ChainStep.kt",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_choose_template",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "label",
+      "description": "Intro text above the list of scene templates. A scene is a saved bundle of actions (profile switch, temp target, SMB, running mode) applied together for a situation.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "321f6419930fe24f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/TemplatePickerStep.kt",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_driving_desc",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "summary",
+      "description": "One-line summary under the Driving template name: which settings it changes (target, profile percentage, SMB, loop mode). SMB, LGS and the percentages stay as they are.",
+      "related_keys": [
+        "scene_template_driving",
+        "scene_wizard_info_driving"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1120c3fda29af9b1",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 114
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_duration_info",
+      "ui_location": "Scenes > scene wizard > duration step",
+      "kind": "hint",
+      "description": "Explanatory text at the top of the duration step describing the scene duration: what it does and its effect on the algorithm. Keep medical terms consistent with the rest of the app.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9d7c050e2ca7fc13",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/DurationStep.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_exercise_desc",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "summary",
+      "description": "One-line summary under the Exercise template name: which settings it changes (target, profile percentage, SMB, loop mode). SMB, LGS and the percentages stay as they are.",
+      "related_keys": [
+        "scene_template_exercise",
+        "scene_wizard_info_exercise"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "4aba76cb2c628e7a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_finish",
+      "ui_location": "Scenes > scene wizard > last step",
+      "kind": "button",
+      "description": "Button that saves the scene and closes the wizard. Single imperative word.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "84a3b4451655b5ca",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/NameIconStep.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_hot_weather_desc",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "summary",
+      "description": "One-line summary under the Hot Weather template name: which settings it changes (target, profile percentage, SMB, loop mode). SMB, LGS and the percentages stay as they are.",
+      "related_keys": [
+        "scene_template_hot_weather",
+        "scene_wizard_info_hot_weather"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3f3ef284d7a6d78b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 148
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_include_action",
+      "ui_location": "Scenes > scene wizard > profile step, CarePortal step",
+      "kind": "label",
+      "description": "Switch label that turns an action on for the scene. %1$s is the action name, such as 'Profile switch' or 'Temporary target'.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a0a3fa5f20e73144",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/CarePortalStep.kt",
+          "line": 48
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/ProfileStep.kt",
+          "line": 47
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/RunningModeStep.kt",
+          "line": 43
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/SmbStep.kt",
+          "line": 46
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/TempTargetStep.kt",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_info_alcohol",
+      "ui_location": "Scenes > scene wizard > info step",
+      "kind": "dialog_text",
+      "description": "Educational paragraph explaining why the Alcohol template is useful and how drinking alcohol affects glucose and insulin needs. Medical wording: keep it accurate and cautious.",
+      "related_keys": [
+        "scene_template_alcohol"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "800c19f2e4be1de3",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 100
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_info_bathing",
+      "ui_location": "Scenes > scene wizard > info step",
+      "kind": "dialog_text",
+      "description": "Educational paragraph explaining why the Bathing template is useful and how showering, swimming or bathing affects glucose and insulin needs. Medical wording: keep it accurate and cautious.",
+      "related_keys": [
+        "scene_template_bathing"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "3c4d9e99173d6970",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 126
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_info_driving",
+      "ui_location": "Scenes > scene wizard > info step",
+      "kind": "dialog_text",
+      "description": "Educational paragraph explaining why the Driving template is useful and how driving affects glucose and insulin needs. Medical wording: keep it accurate and cautious.",
+      "related_keys": [
+        "scene_template_driving"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "f684c8551191fe6b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 115
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_info_exercise",
+      "ui_location": "Scenes > scene wizard > info step",
+      "kind": "dialog_text",
+      "description": "Educational paragraph explaining why the Exercise template is useful and how physical exercise affects glucose and insulin needs. Medical wording: keep it accurate and cautious.",
+      "related_keys": [
+        "scene_template_exercise"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "1ec122a431520a74",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_info_hot_weather",
+      "ui_location": "Scenes > scene wizard > info step",
+      "kind": "dialog_text",
+      "description": "Educational paragraph explaining why the Hot Weather template is useful and how hot weather affects glucose and insulin needs. Medical wording: keep it accurate and cautious.",
+      "related_keys": [
+        "scene_template_hot_weather"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "a6435bc217b0b56b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 149
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_info_luteal_phase",
+      "ui_location": "Scenes > scene wizard > info step",
+      "kind": "dialog_text",
+      "description": "Educational paragraph explaining why the Luteal Phase template is useful and how the luteal phase of the menstrual cycle affects glucose and insulin needs. Medical wording: keep it accurate and cautious.",
+      "related_keys": [
+        "scene_template_luteal_phase"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "68f5254cd56c79f2",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 137
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_info_medical_procedure",
+      "ui_location": "Scenes > scene wizard > info step",
+      "kind": "dialog_text",
+      "description": "Educational paragraph explaining why the Medical Procedure template is useful and how surgery or a medical procedure affects glucose and insulin needs. Medical wording: keep it accurate and cautious.",
+      "related_keys": [
+        "scene_template_medical_procedure"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "8bbd28586984aedd",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 160
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_info_post_exercise_night",
+      "ui_location": "Scenes > scene wizard > info step",
+      "kind": "dialog_text",
+      "description": "Educational paragraph explaining why the Post-exercise Night template is useful and how the night after exercise affects glucose and insulin needs. Medical wording: keep it accurate and cautious.",
+      "related_keys": [
+        "scene_template_post_exercise_night"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "41149408d587384d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 76
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_info_pre_meal",
+      "ui_location": "Scenes > scene wizard > info step",
+      "kind": "dialog_text",
+      "description": "Educational paragraph explaining why the Pre-meal template is useful and how the time before a meal affects glucose and insulin needs. Medical wording: keep it accurate and cautious.",
+      "related_keys": [
+        "scene_template_pre_meal"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "6fe8b38777deb3b1",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 89
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_info_sick_day",
+      "ui_location": "Scenes > scene wizard > info step",
+      "kind": "dialog_text",
+      "description": "Educational paragraph explaining why the Sick Day template is useful and how illness affects glucose and insulin needs. Medical wording: keep it accurate and cautious.",
+      "related_keys": [
+        "scene_template_sick_day"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "98df660a0987a79e",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_info_sick_day_vomiting",
+      "ui_location": "Scenes > scene wizard > info step",
+      "kind": "dialog_text",
+      "description": "Educational paragraph explaining why the Sick Day — Vomiting template is useful and how illness with vomiting affects glucose and insulin needs. Medical wording: keep it accurate and cautious.",
+      "related_keys": [
+        "scene_template_sick_day_vomiting"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "62de16d535295df0",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_info_sleep",
+      "ui_location": "Scenes > scene wizard > info step",
+      "kind": "dialog_text",
+      "description": "Educational paragraph explaining why the Sleep template is useful and how sleep affects glucose and insulin needs. Medical wording: keep it accurate and cautious.",
+      "related_keys": [
+        "scene_template_sleep"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "ce7686586a88f92d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 67
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_loop_mode_info",
+      "ui_location": "Scenes > scene wizard > running mode step",
+      "kind": "hint",
+      "description": "Explanatory text at the top of the running mode step describing the running mode (Closed Loop, Low Glucose Suspend, Open Loop): what it does and its effect on the algorithm. Keep medical terms consistent with the rest of the app.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "907c6c97469d0ae7",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/RunningModeStep.kt",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_luteal_phase_desc",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "summary",
+      "description": "One-line summary under the Luteal Phase template name: which settings it changes (target, profile percentage, SMB, loop mode). SMB, LGS and the percentages stay as they are.",
+      "related_keys": [
+        "scene_template_luteal_phase",
+        "scene_wizard_info_luteal_phase"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "dc40686db75f7900",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 136
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_medical_procedure_desc",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "summary",
+      "description": "One-line summary under the Medical Procedure template name: which settings it changes (target, profile percentage, SMB, loop mode). SMB, LGS and the percentages stay as they are.",
+      "related_keys": [
+        "scene_template_medical_procedure",
+        "scene_wizard_info_medical_procedure"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "553ab017e233a5cf",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 159
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_name_info",
+      "ui_location": "Scenes > scene wizard > name and icon step",
+      "kind": "hint",
+      "description": "Explanatory text at the top of the name and icon step describing the scene name and icon: what it does and its effect on the algorithm. Keep medical terms consistent with the rest of the app.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7e5957bddca56e5a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/NameIconStep.kt",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_post_exercise_night_desc",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "summary",
+      "description": "One-line summary under the Post-exercise Night template name: which settings it changes (target, profile percentage, SMB, loop mode). SMB, LGS and the percentages stay as they are.",
+      "related_keys": [
+        "scene_template_post_exercise_night",
+        "scene_wizard_info_post_exercise_night"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "36c29a883969c306",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_pre_meal_desc",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "summary",
+      "description": "One-line summary under the Pre-meal template name: which settings it changes (target, profile percentage, SMB, loop mode). SMB, LGS and the percentages stay as they are.",
+      "related_keys": [
+        "scene_template_pre_meal",
+        "scene_wizard_info_pre_meal"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5955a8460fe583da",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 88
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_profile_info",
+      "ui_location": "Scenes > scene wizard > profile step",
+      "kind": "hint",
+      "description": "Explanatory text at the top of the profile step describing the profile switch (basal rates, ISF, IC ratio): what it does and its effect on the algorithm. Keep medical terms consistent with the rest of the app.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "37256cd07e9bd769",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/ProfileStep.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_sick_day_desc",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "summary",
+      "description": "One-line summary under the Sick Day template name: which settings it changes (target, profile percentage, SMB, loop mode). SMB, LGS and the percentages stay as they are.",
+      "related_keys": [
+        "scene_template_sick_day",
+        "scene_wizard_info_sick_day"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "243f690817ae53c0",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_sick_day_vomiting_desc",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "summary",
+      "description": "One-line summary under the Sick Day — Vomiting template name: which settings it changes (target, profile percentage, SMB, loop mode). SMB, LGS and the percentages stay as they are.",
+      "related_keys": [
+        "scene_template_sick_day_vomiting",
+        "scene_wizard_info_sick_day_vomiting"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a8cc28cada6c277e",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_sleep_desc",
+      "ui_location": "Scenes > scene wizard > template picker",
+      "kind": "summary",
+      "description": "One-line summary under the Sleep template name: which settings it changes (target, profile percentage, SMB, loop mode). SMB, LGS and the percentages stay as they are.",
+      "related_keys": [
+        "scene_template_sleep",
+        "scene_wizard_info_sleep"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "25bee46499412e22",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneTemplate.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_smb_info",
+      "ui_location": "Scenes > scene wizard > SMB step",
+      "kind": "hint",
+      "description": "Explanatory text at the top of the SMB step describing the Super Micro Boluses (SMB): what it does and its effect on the algorithm. Keep medical terms consistent with the rest of the app.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2c54df7769875d4a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/SmbStep.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "scene_wizard_tt_info",
+      "ui_location": "Scenes > scene wizard > temp target step",
+      "kind": "hint",
+      "description": "Explanatory text at the top of the temp target step describing the temporary target: what it does and its effect on the algorithm. Keep medical terms consistent with the rest of the app.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "85d233bba6ffb5f8",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/TempTargetStep.kt",
+          "line": 45
+        }
+      ]
+    }
+  ]
+}
