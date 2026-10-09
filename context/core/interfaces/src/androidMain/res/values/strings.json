@@ -1,0 +1,3132 @@
+{
+  "schema_version": 1,
+  "source_path": "core/interfaces/src/androidMain/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "advisoralarm",
+      "ui_location": "Bolus wizard > confirmation dialog",
+      "kind": "status",
+      "description": "Notice that an alarm will remind the user when it is time to eat.",
+      "related_keys": [
+        "alarminxmin"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "af19fd3832b23e00",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 431
+        }
+      ]
+    },
+    {
+      "key": "alarminxmin",
+      "ui_location": "Bolus wizard > confirmation dialog",
+      "kind": "status",
+      "description": "Notice that an alarm will ring in %1$d minutes to remind the user to eat.",
+      "related_keys": [
+        "advisoralarm"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b7f7a121f1b7bbc1",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 428
+        }
+      ]
+    },
+    {
+      "key": "authorized",
+      "ui_location": "Nightscout client status",
+      "kind": "status",
+      "description": "Nightscout connection state shown when the server accepted the token and granted full API permissions.",
+      "related_keys": [
+        "connected"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "a85291afa47ec255",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/NSClientV3Plugin.kt",
+          "line": 213
+        }
+      ]
+    },
+    {
+      "key": "basal_value",
+      "ui_location": "Profile validation",
+      "kind": "label",
+      "description": "Name of the basal value, used inside the out-of-limits message.",
+      "related_keys": [
+        "value_out_of_hard_limits"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "52ae498eb5460077",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 187
+        }
+      ]
+    },
+    {
+      "key": "basalprofilenotaligned",
+      "ui_location": "Notification; profile validity message",
+      "kind": "notification",
+      "description": "Warning that the profile has basal values not starting at full hours, which the pump cannot do. %1$s lists the values or time.",
+      "related_keys": [
+        "minimalbasalvaluereplaced"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "b43ad882a3fc62fc",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 261
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 265
+        }
+      ]
+    },
+    {
+      "key": "bolus",
+      "ui_location": "Bolus wizard; confirmation lines; quick wizard",
+      "kind": "label",
+      "description": "Label 'Bolus': an amount of insulin given at once, usually for a meal or a correction.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3b6ce1d1509b093d",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 384
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 753
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 839
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnHistoryScreen.kt",
+          "line": 101
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinDialog/InsulinDialogViewModel.kt",
+          "line": 250
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinDialog/InsulinDialogViewModel.kt",
+          "line": 257
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinDialog/InsulinDialogViewModel.kt",
+          "line": 259
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinDialog/InsulinDialogViewModel.kt",
+          "line": 273
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinDialog/InsulinDialogViewModel.kt",
+          "line": 281
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinDialog/InsulinDialogViewModel.kt",
+          "line": 283
+        }
+      ]
+    },
+    {
+      "key": "bolus_constraint_applied_warn",
+      "ui_location": "Bolus wizard and fill dialog > confirmation",
+      "kind": "dialog_text",
+      "description": "Warning that a safety limit lowered the insulin amount. %1$.2f is the original amount, %2$.2f the new amount, both in units.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bdd78d6886430df2",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 422
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 758
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/fillDialog/FillDialogViewModel.kt",
+          "line": 279
+        }
+      ]
+    },
+    {
+      "key": "bolus_delivered_so_far",
+      "ui_location": "Overview > bolus progress dialog",
+      "kind": "status",
+      "description": "Progress line during bolus delivery. %1$.2f is the insulin delivered so far, %2$.2f the total requested, both in units (U).",
+      "related_keys": [
+        "bolus_delivering"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "601b9faedd29695f",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/insulin/ConcentrationHelperImpl.kt",
+          "line": 135
+        }
+      ]
+    },
+    {
+      "key": "bolus_delivered_successfully",
+      "ui_location": "Overview > bolus progress dialog",
+      "kind": "status",
+      "description": "Final line of the bolus progress dialog once the pump has delivered the whole bolus. %1$.2f is the amount in units (U).",
+      "related_keys": [
+        "bolus_delivering"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b828dc17f3078c1a",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/pump/BolusProgressData.kt",
+          "line": 87
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/coordinator/CarelevoBolusCoordinator.kt",
+          "line": 402
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/coordinator/CarelevoBolusCoordinator.kt",
+          "line": 490
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 960
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 994
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/EopatchPumpPlugin.kt",
+          "line": 386
+        }
+      ]
+    },
+    {
+      "key": "bolus_delivering",
+      "ui_location": "Overview > bolus progress dialog",
+      "kind": "status",
+      "description": "Progress line shown while a bolus is being delivered. %1$.2f is the insulin delivered so far, in units (U).",
+      "related_keys": [
+        "bolus_delivered_so_far",
+        "bolus_delivered_successfully"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "17acbaa2abfc8b7f",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/insulin/ConcentrationHelperImpl.kt",
+          "line": 133
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/coordinator/CarelevoBolusCoordinator.kt",
+          "line": 524
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 961
+        }
+      ]
+    },
+    {
+      "key": "bolus_recorded_only",
+      "ui_location": "Insulin dialog banner; bolus wizard confirmation",
+      "kind": "dialog_text",
+      "description": "Warning that the bolus is only logged in the app and the pump does not deliver it (for example insulin already given with a pen).",
+      "related_keys": [
+        "record"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "607aa076279b65d7",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 425
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 755
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinDialog/InsulinDialogScreen.kt",
+          "line": 307
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinDialog/InsulinDialogScreen.kt",
+          "line": 325
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatmentDialog/TreatmentDialogScreen.kt",
+          "line": 225
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 322
+        }
+      ]
+    },
+    {
+      "key": "carbs",
+      "ui_location": "Bolus wizard; Carbs input; Automation elements",
+      "kind": "label",
+      "description": "Label 'Carbs' (carbohydrates in grams) for a field or line.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f7a6a7594cc544be",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 399
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/NumberInputRowPreviews.kt",
+          "line": 14
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 204
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 762
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 853
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/carbsDialog/CarbsDialogScreen.kt",
+          "line": 328
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/carbsDialog/CarbsDialogViewModel.kt",
+          "line": 302
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/carbsDialog/CarbsDialogViewModel.kt",
+          "line": 307
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/carbsDialog/CarbsDialogViewModel.kt",
+          "line": 309
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/carbsDialog/CarbsDialogViewModel.kt",
+          "line": 323
+        }
+      ]
+    },
+    {
+      "key": "cobvsiob",
+      "ui_location": "Bolus wizard > confirmation dialog",
+      "kind": "label",
+      "description": "Label for the wizard's correction that compares carbs on board (COB) to insulin on board (IOB).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9069442f7cf5655f",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 409
+        }
+      ]
+    },
+    {
+      "key": "confirmation",
+      "ui_location": "Confirmation dialogs (Overview, Configuration, Maintenance, Setup wizard)",
+      "kind": "dialog_title",
+      "description": "Title of generic OK/Cancel confirmation dialogs, for example before switching pump hardware or resetting the database. A single noun.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e34a8d1f5c9ff260",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SetupWizardScreen.kt",
+          "line": 186
+        },
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/elements/SWPlugin.kt",
+          "line": 112
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/configuration/ConfigurationScreen.kt",
+          "line": 47
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/configuration/PluginCategoryScreen.kt",
+          "line": 63
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainScreen.kt",
+          "line": 333
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 134
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 146
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 158
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 170
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 182
+        }
+      ]
+    },
+    {
+      "key": "confirmation_line",
+      "ui_location": "Bolus wizard > confirmation dialog",
+      "kind": "label",
+      "description": "Template for one line of a confirmation dialog: %1$s is a label (e.g. Carbs), %2$s the value. Keep the colon style of your language.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a1496b09a7bd454f",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 383
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 398
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 408
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 442
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/DateTimeSection.kt",
+          "line": 55
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/DateTimeSection.kt",
+          "line": 56
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/NumberInputRow.kt",
+          "line": 157
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/RowActionLabel.kt",
+          "line": 16
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/SliderWithButtons.kt",
+          "line": 212
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/ValueInputDialog.kt",
+          "line": 83
+        }
+      ]
+    },
+    {
+      "key": "connected",
+      "ui_location": "Overview > pump status line; NSClient status; SMS reply",
+      "kind": "status",
+      "description": "Status word 'Connected', used for the pump link, the Nightscout client websocket (after 'WS: ') and in the SMS answer to a pump connect command.",
+      "related_keys": [
+        "disconnecting"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0100f2f198a10d19",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/events/EventPumpStatusChanged.kt",
+          "line": 98
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 602
+        },
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/NSClientV3Plugin.kt",
+          "line": 208
+        },
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpDriverState.kt",
+          "line": 12
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 314
+        }
+      ]
+    },
+    {
+      "key": "connecting_for",
+      "ui_location": "Overview > pump status line",
+      "kind": "status",
+      "description": "Pump status while a connection attempt is in progress. %1$d is the number of seconds elapsed. The 's' is the unit seconds.",
+      "related_keys": [
+        "handshaking",
+        "connected"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e33fcc4249649781",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/events/EventPumpStatusChanged.kt",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "key": "days",
+      "ui_location": "Pump overview > expiry texts (e.g. Medtrum)",
+      "kind": "label",
+      "description": "Unit word 'days' placed after a number, such as in a pump or patch expiry line ('3 days 4 hours'). Not a plural-aware string.",
+      "related_keys": [
+        "hours"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "bc15954cbc90e0e9",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/FileListProviderImpl.kt",
+          "line": 269
+        },
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/AndroidDurationText.kt",
+          "line": 31
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 384
+        },
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 318
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/statusLights/StatusViewModel.kt",
+          "line": 278
+        }
+      ]
+    },
+    {
+      "key": "days_ago",
+      "ui_location": "Status and info texts",
+      "kind": "status",
+      "description": "Relative time in days. %1$.1f is days since the event. Used when the value is not rounded.",
+      "related_keys": [
+        "days_ago_round",
+        "in_days"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "c5da2b30d2de9699",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 237
+        }
+      ]
+    },
+    {
+      "key": "days_ago_round",
+      "ui_location": "Status and info texts",
+      "kind": "status",
+      "description": "Relative time in days, rounded to a whole number. %1$.0f is days since the event.",
+      "related_keys": [
+        "days_ago"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "88f56877a049f484",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 234
+        }
+      ]
+    },
+    {
+      "key": "default_custom_watchface_comment",
+      "ui_location": "Wear > custom watchface info",
+      "kind": "other",
+      "description": "Comment stored in the metadata of the built-in default custom watchface. It tells the user they can press the export button to get a template to edit. The button is named 'EXPORT WATCHFACE' in the app.",
+      "related_keys": [
+        "default_custom_watchface_external_comment"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "8454da2390a86b34",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 1064
+        }
+      ]
+    },
+    {
+      "key": "default_custom_watchface_external_comment",
+      "ui_location": "Wear > custom watchface info",
+      "kind": "other",
+      "description": "Comment of the default watchface variant that includes external views for followers. Mentions the EXPORT WATCHFACE button to get a template.",
+      "related_keys": [
+        "default_custom_watchface_comment"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "8454da2390a86b34",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 1064
+        }
+      ]
+    },
+    {
+      "key": "disconnecting",
+      "ui_location": "Overview > pump status line",
+      "kind": "status",
+      "description": "Pump status while the app is closing the link to the pump.",
+      "related_keys": [
+        "waiting_for_disconnection",
+        "connected"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c62c9a8846f844a6",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/events/EventPumpStatusChanged.kt",
+          "line": 101
+        },
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpDriverState.kt",
+          "line": 19
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 308
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 392
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 561
+        }
+      ]
+    },
+    {
+      "key": "fast_acting_insulin_comment",
+      "ui_location": "Insulin configuration > insulin type",
+      "kind": "other",
+      "description": "Hint listing insulin brands that fit the rapid-acting profile. Brand names, comma separated.",
+      "related_keys": [
+        "rapid_acting_oref"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "da52005a7448367f",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/insulin/InsulinType.kt",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "key": "forever",
+      "ui_location": "Status > age texts",
+      "kind": "status",
+      "description": "Shown instead of a number when a duration is longer than about 1000 days, meaning 'no end'.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0974fdba645268b7",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 317
+        }
+      ]
+    },
+    {
+      "key": "format_carbs",
+      "ui_location": "Bolus wizard confirmation; COB display",
+      "kind": "status",
+      "description": "Carbs amount in grams. %1$d is grams. Keep it short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "87012669c74f359c",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 400
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 441
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/extensions/CobInfoDisplay.kt",
+          "line": 27
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 762
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandBolus.kt",
+          "line": 45
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/carbsDialog/CarbsDialogScreen.kt",
+          "line": 259
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 410
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 453
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/OverviewDataCacheImpl.kt",
+          "line": 878
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatmentDialog/TreatmentDialogScreen.kt",
+          "line": 198
+        }
+      ]
+    },
+    {
+      "key": "format_insulin_units",
+      "ui_location": "Bolus wizard confirmation; insulin amount texts",
+      "kind": "status",
+      "description": "Insulin amount in units (U). %1$.2f is the amount.",
+      "related_keys": [
+        "formatsignedinsulinunits"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7c32036bfbc1e8b3",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 385
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 993
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/insulin/ConcentrationHelperImpl.kt",
+          "line": 82
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandBolus.kt",
+          "line": 44
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandSMBBolus.kt",
+          "line": 57
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/DecimalFormatterImpl.kt",
+          "line": 36
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 312
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaHistoryViewModel.kt",
+          "line": 123
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaHistoryViewModel.kt",
+          "line": 126
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaHistoryViewModel.kt",
+          "line": 129
+        }
+      ]
+    },
+    {
+      "key": "formatsignedinsulinunits",
+      "ui_location": "Bolus wizard > confirmation dialog",
+      "kind": "status",
+      "description": "Insulin amount with an explicit sign (+ or -), in units. %1$+.2f is the amount.",
+      "related_keys": [
+        "format_insulin_units"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "3371fe29692ed594",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 411
+        }
+      ]
+    },
+    {
+      "key": "free_peak_oref",
+      "ui_location": "Insulin configuration > insulin type",
+      "kind": "label",
+      "description": "Name of the insulin profile in which the user sets the peak time freely (oref model). 'Oref' is the name of the algorithm family.",
+      "related_keys": [
+        "insulin_peak_time"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "a2f15a6f3d4f4e05",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/insulin/InsulinType.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "handshaking",
+      "ui_location": "Overview > pump status line",
+      "kind": "status",
+      "description": "Pump status while the app and pump exchange the first messages after a link is made (the connection is not usable yet).",
+      "related_keys": [
+        "connecting_for",
+        "connected"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "bf2083a6a2a34336",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/events/EventPumpStatusChanged.kt",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "key": "hours",
+      "ui_location": "Pump overview > expiry texts (e.g. Medtrum)",
+      "kind": "label",
+      "description": "Unit word 'hours' placed after a number in an expiry line ('3 days 4 hours').",
+      "related_keys": [
+        "days"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "bc541b75548a01f0",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/FileListProviderImpl.kt",
+          "line": 267
+        },
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/AndroidDurationText.kt",
+          "line": 32
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 385
+        },
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 319
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/statusLights/StatusViewModel.kt",
+          "line": 278
+        }
+      ]
+    },
+    {
+      "key": "hoursago",
+      "ui_location": "Status and info texts",
+      "kind": "status",
+      "description": "Relative time in hours with a short unit. %1$.1f is hours since the event.",
+      "related_keys": [
+        "days_ago"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "86333512d8ca19bc",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 228
+        }
+      ]
+    },
+    {
+      "key": "in_days",
+      "ui_location": "Date and time texts; Statistics > activity",
+      "kind": "status",
+      "description": "Future time in days. %1$.0f is the number of days from now. Also used as a label in the activity statistics.",
+      "related_keys": [
+        "in_days_round",
+        "days_ago"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "f209603723c0276f",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 238
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/ActivityStatsCompose.kt",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "key": "in_days_round",
+      "ui_location": "Date and time texts",
+      "kind": "status",
+      "description": "Future time in whole days (rounded down). %1$.0f is days from now.",
+      "related_keys": [
+        "in_days"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "a1423b1bbef3e1f5",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 235
+        }
+      ]
+    },
+    {
+      "key": "insulin_peak_time",
+      "ui_location": "Insulin configuration > free peak",
+      "kind": "hint",
+      "description": "Short description of the field where the user enters the time of peak insulin action. [min] means minutes.",
+      "related_keys": [
+        "free_peak_oref"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "a2f15a6f3d4f4e05",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/insulin/InsulinType.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "later_today",
+      "ui_location": "Date label (e.g. Automation, scheduled events)",
+      "kind": "label",
+      "description": "Relative day label for a time that is still ahead today.",
+      "related_keys": [
+        "today",
+        "tomorrow"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "11cc210d79ba2e49",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 130
+        }
+      ]
+    },
+    {
+      "key": "loopsuspended",
+      "ui_location": "Running mode texts; command rejection messages",
+      "kind": "status",
+      "description": "Running mode 'Loop suspended' (the user paused the loop). Also used as the reason text when a bolus is blocked.",
+      "related_keys": [
+        "pumpsuspended"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "c1a6c14911de81aa",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/runningMode/RunningModeGuard.kt",
+          "line": 57
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/CommandQueueImplementation.kt",
+          "line": 284
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 256
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 633
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 634
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 828
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/AutomationRuntime.kt",
+          "line": 556
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/ExtendedSetAction.kt",
+          "line": 33
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 580
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/TreatmentBeltGraphCompose.kt",
+          "line": 542
+        }
+      ]
+    },
+    {
+      "key": "lyumjev",
+      "ui_location": "Insulin configuration > insulin type",
+      "kind": "label",
+      "description": "Insulin brand name (Lyumjev). Do not translate.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7e9e5ea70a0faded",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/insulin/InsulinType.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "maximumbasalvaluereplaced",
+      "ui_location": "Notification; profile validity message",
+      "kind": "notification",
+      "description": "The basal value in the profile was above the pump's maximum and was lowered to it. %1$s is the original value.",
+      "related_keys": [
+        "minimalbasalvaluereplaced"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "a9ad80134c24da15",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 279
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 291
+        }
+      ]
+    },
+    {
+      "key": "metadata_label_plugin_version",
+      "ui_location": "Wear > custom watchface import dialog",
+      "kind": "label",
+      "description": "Metadata line: %1$s is the version of the custom watchface format (CWF) the file was made for.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d10fb707a472bc67",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "key": "metadata_label_watchface_author",
+      "ui_location": "Wear > custom watchface import dialog",
+      "kind": "label",
+      "description": "Metadata line: %1$s is the author of the watchface.",
+      "related_keys": [
+        "metadata_label_watchface_created_at"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "e2913f9c90f377c1",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "key": "metadata_label_watchface_created_at",
+      "ui_location": "Wear > custom watchface import dialog",
+      "kind": "label",
+      "description": "Metadata line about a custom watchface file. %1$s is the creation date. Keep the colon and placeholder.",
+      "related_keys": [
+        "metadata_label_watchface_author"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "31f9c78fc690cb79",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "key": "metadata_label_watchface_infos",
+      "ui_location": "Wear > custom watchface import dialog",
+      "kind": "label",
+      "description": "Metadata line: %1$s is the free-text comment written by the watchface author.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bde4489c07df11e3",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "metadata_label_watchface_name",
+      "ui_location": "Wear > custom watchface import dialog",
+      "kind": "label",
+      "description": "Metadata line: %1$s is the watchface name.",
+      "related_keys": [
+        "metadata_label_watchface_name_version"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "f9f291d233619075",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 8
+        }
+      ]
+    },
+    {
+      "key": "metadata_label_watchface_name_version",
+      "ui_location": "Wear > custom watchface import dialog",
+      "kind": "label",
+      "description": "Metadata line for author with their file version. %1$s is the author name, %2$s the version.",
+      "related_keys": [
+        "metadata_label_watchface_author"
+      ],
+      "confidence": 0.6,
+      "usages_hash": "bb012d8c793138d6",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "key": "metadata_wear_import_filename",
+      "ui_location": "Wear > custom watchface import dialog",
+      "kind": "label",
+      "description": "Metadata line: %1$s is the file name of the watchface zip.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "25803d0795ef93db",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "key": "min_plus",
+      "ui_location": "Status lines (time of an event)",
+      "kind": "status",
+      "description": "Short suffix with the extra duration in whole minutes, shown in brackets, e.g. '(+5m)'. %1$d is minutes. Not a sentence.",
+      "related_keys": [
+        "sec_plus"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "de7ad5e16e00a175",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 209
+        }
+      ]
+    },
+    {
+      "key": "minago",
+      "ui_location": "Pump overview > last connection; watch and status lines",
+      "kind": "status",
+      "description": "Short relative time, %1$d is whole minutes since the event. Sits in tight spaces such as a status row or in brackets after a clock time, so keep it short (like '5m ago').",
+      "related_keys": [
+        "secago",
+        "minago_long"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "16d04dc4650dac55",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 322
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 263
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 215
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 239
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 221
+        },
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 193
+        },
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 200
+        }
+      ]
+    },
+    {
+      "key": "minago_long",
+      "ui_location": "Status and info texts",
+      "kind": "status",
+      "description": "Relative time written out in full. %1$d is the number of minutes since the event.",
+      "related_keys": [
+        "minago"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "a143385069ef21c5",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 224
+        }
+      ]
+    },
+    {
+      "key": "minimalbasalvaluereplaced",
+      "ui_location": "Notification; profile validity message",
+      "kind": "notification",
+      "description": "The basal value in the profile was below the pump's minimum and was raised to it. %1$s is the original value.",
+      "related_keys": [
+        "maximumbasalvaluereplaced"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "edb3885f564675a3",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 274
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 287
+        }
+      ]
+    },
+    {
+      "key": "mins",
+      "ui_location": "Bolus wizard confirmation; duration step",
+      "kind": "label",
+      "description": "Number of minutes with short unit. %1$d is minutes, may be negative (shown as an offset).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6943737b05a28d51",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 391
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 392
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/DurationStep.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "permission_bluetooth_description",
+      "ui_location": "Permission request dialog",
+      "kind": "dialog_text",
+      "description": "Explanation why the app needs Bluetooth: to talk to the insulin pump.",
+      "related_keys": [
+        "permission_bluetooth_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2f1bf1df63cd1cfe",
+      "usages": [
+        {
+          "path": "core/interfaces/src/androidMain/kotlin/app/aaps/core/interfaces/pump/BluetoothPermission.android.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "permission_bluetooth_title",
+      "ui_location": "Permission request dialog",
+      "kind": "dialog_title",
+      "description": "Title of the explanation shown before the system asks for Bluetooth permission. One word.",
+      "related_keys": [
+        "permission_bluetooth_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "aaa4a3a3b2577298",
+      "usages": [
+        {
+          "path": "core/interfaces/src/androidMain/kotlin/app/aaps/core/interfaces/pump/BluetoothPermission.android.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "plugin_start_failed",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Error shown if a plugin crashed while starting. %1$s is the plugin name. Asks to restart the app (AAPS).",
+      "related_keys": [
+        "plugin_work_failed"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "44c43f6b29966cd3",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/plugin/PluginBase.kt",
+          "line": 312
+        }
+      ]
+    },
+    {
+      "key": "plugin_work_failed",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Error shown if a plugin hit an error during its work. %1$s is the plugin name. Asks to restart the app (AAPS).",
+      "related_keys": [
+        "plugin_start_failed"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "bb9761a070fb6c7e",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/plugin/PluginBase.kt",
+          "line": 123
+        }
+      ]
+    },
+    {
+      "key": "plurals_day_hour_ago",
+      "ui_location": "Time-ago text (e.g. history lists, exported file age)",
+      "kind": "status",
+      "description": "Plural string: days and hours since an event. %1$s is the number of days, %2$s the number of hours. The plural form follows the count of days.",
+      "related_keys": [
+        "plurals_hour_ago",
+        "plurals_minute_ago"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "806ad1bc51de0571",
+      "usages": [
+        {
+          "path": "core/interfaces/src/androidMain/kotlin/app/aaps/core/interfaces/utils/DateUtilAndroid.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "plurals_hour_ago",
+      "ui_location": "Time-ago text",
+      "kind": "status",
+      "description": "Plural string: hours since an event. %1$s is the number of hours; the plural form follows the same count.",
+      "related_keys": [
+        "plurals_minute_ago"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "ab127d3246607b03",
+      "usages": [
+        {
+          "path": "core/interfaces/src/androidMain/kotlin/app/aaps/core/interfaces/utils/DateUtilAndroid.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "plurals_minute_ago",
+      "ui_location": "Time-ago text",
+      "kind": "status",
+      "description": "Plural string: minutes since an event. %1$s is the number of minutes; the plural form follows the same count.",
+      "related_keys": [
+        "plurals_hour_ago",
+        "seconds_ago"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "60115ac67a1d51b7",
+      "usages": [
+        {
+          "path": "core/interfaces/src/androidMain/kotlin/app/aaps/core/interfaces/utils/DateUtilAndroid.kt",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "pref_show_ago",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing how long ago the last glucose reading arrived on the watch face. Short noun phrase after 'Show'.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "061cd0da2d955ba1",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 29
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 101
+        }
+      ]
+    },
+    {
+      "key": "pref_show_avgdelta",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing the average glucose change over a longer period (AvgDelta) on the watch face. Short noun phrase after 'Show'.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a3c65898d88ee066",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 22
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "pref_show_basal_rate",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing the current basal rate on the watch face. Short noun phrase after 'Show'. Also used for the basal line in graph preferences.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "df12ee98e5eff5cf",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 27
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 128
+        },
+        {
+          "path": "wear/src/main/res/xml/graph_preferences.xml",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "pref_show_bg",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing the glucose value on the watch face. Short noun phrase after 'Show'.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a32e01601815f185",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 30
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "key": "pref_show_bgi",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing blood glucose impact (BGI), the expected glucose change from insulin activity on the watch face. Short noun phrase after 'Show'.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f50689a2274cc0bb",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 18
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "pref_show_cob",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing carbs on board (COB) on the watch face. Short noun phrase after 'Show'. Also used for the carbs line in graph preferences.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6c3d53525dd02949",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 20
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 41
+        },
+        {
+          "path": "wear/src/main/res/xml/graph_preferences.xml",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "key": "pref_show_complication1",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing watch complication slot 1 on the watch face. Short noun phrase after 'Show'. 'Complication' is the Wear OS term for a small data widget on the watch face.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "16832ab336a3b6a6",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 35
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 87
+        }
+      ]
+    },
+    {
+      "key": "pref_show_complication2",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing watch complication slot 2 on the watch face. Short noun phrase after 'Show'. 'Complication' is the Wear OS term for a small data widget on the watch face.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "07908aadb4186559",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 36
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 101
+        }
+      ]
+    },
+    {
+      "key": "pref_show_complication3",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing watch complication slot 3 on the watch face. Short noun phrase after 'Show'. 'Complication' is the Wear OS term for a small data widget on the watch face.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c20df017a380f40c",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 37
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 115
+        }
+      ]
+    },
+    {
+      "key": "pref_show_complication4",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing watch complication slot 4 on the watch face. Short noun phrase after 'Show'. 'Complication' is the Wear OS term for a small data widget on the watch face.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "92ce5f9115c9bdcf",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 38
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 129
+        }
+      ]
+    },
+    {
+      "key": "pref_show_complication5",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing watch complication slot 5 on the watch face. Short noun phrase after 'Show'. 'Complication' is the Wear OS term for a small data widget on the watch face.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6a22c7f0954fe169",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 39
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 143
+        }
+      ]
+    },
+    {
+      "key": "pref_show_date",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing the date on the watch face. Short noun phrase after 'Show'.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b6ad9e710567182a",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 33
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 47
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_digitalstyle.xml",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "pref_show_delta",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing the glucose change since the last reading (delta) on the watch face. Short noun phrase after 'Show'.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fd581c1e28ed9597",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 21
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "pref_show_detailed_delta",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing the glucose delta with more decimals on the watch face. Short noun phrase after 'Show'.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "277768a1a8cabb91",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 17
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 81
+        }
+      ]
+    },
+    {
+      "key": "pref_show_detailed_iob",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing IOB split into bolus and basal parts on the watch face. Short noun phrase after 'Show'.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5b1af83ed037e224",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 16
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "pref_show_direction_arrow",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing the glucose trend arrow on the watch face. Short noun phrase after 'Show'.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8f0895b3b9b34082",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 28
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 91
+        }
+      ]
+    },
+    {
+      "key": "pref_show_iob",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing insulin on board (IOB) on the watch face. Short noun phrase after 'Show'.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "61f36cc9a4115401",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 19
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "pref_show_loop_status",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing the closed loop status on the watch face. Short noun phrase after 'Show'.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ade82845b8ed8b9a",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 31
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 155
+        }
+      ]
+    },
+    {
+      "key": "pref_show_phone_battery",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing the battery level of the phone running AAPS on the watch face. Short noun phrase after 'Show'.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "07a8e8a51ac9a8ba",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 25
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "key": "pref_show_reservoir_level",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing the insulin reservoir level of the pump on the watch face. Short noun phrase after 'Show'.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "98f4105d0f5ec987",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 24
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 146
+        }
+      ]
+    },
+    {
+      "key": "pref_show_rig_battery",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing the battery level of the rig (a separate uploader device) on the watch face. Short noun phrase after 'Show'.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b1b8f38f6706f5f4",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 26
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 119
+        }
+      ]
+    },
+    {
+      "key": "pref_show_seconds",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing seconds in the clock on the watch face. Short noun phrase after 'Show'.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "2e39b1a7726b9206",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "pref_show_tempTarget",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing the active temporary target on the watch face. Short noun phrase after 'Show'.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "f93a60bad5bf6bf0",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "pref_show_week_number",
+      "ui_location": "Watch face > preferences",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch for showing the calendar week number on the watch face. Short noun phrase after 'Show'.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "c081a0279df62524",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "profile_carbs_per_unit",
+      "ui_location": "Profile viewer; Autotune",
+      "kind": "label",
+      "description": "Unit for insulin to carb ratio (IC): grams of carbs covered by one unit of insulin.",
+      "related_keys": [
+        "profile_ins_units_per_hour"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c6e45f3b41ac154b",
+      "usages": [
+        {
+          "path": "core/graph/src/commonMain/kotlin/app/aaps/core/graph/profile/ProfileCompareRowBuilders.kt",
+          "line": 57
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 368
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 320
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 172
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
+          "line": 452
+        }
+      ]
+    },
+    {
+      "key": "profile_carbs_ratio_value",
+      "ui_location": "Profile validation; hard limit checks",
+      "kind": "label",
+      "description": "Name of the insulin to carb ratio (IC) profile value, used in out-of-limits messages.",
+      "related_keys": [
+        "value_out_of_hard_limits"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "974ba8827b84189d",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 204
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 140
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 264
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 313
+        }
+      ]
+    },
+    {
+      "key": "profile_dia",
+      "ui_location": "Profile validation; hard limit checks",
+      "kind": "label",
+      "description": "Name of the duration of insulin action (DIA) profile value, used in out-of-limits messages.",
+      "related_keys": [
+        "value_out_of_hard_limits"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "71057b209ffaeb1d",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 195
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 137
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 261
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 310
+        }
+      ]
+    },
+    {
+      "key": "profile_high_target",
+      "ui_location": "Profile validation; hard limit checks",
+      "kind": "label",
+      "description": "Name of the profile's upper glucose target, used inside out-of-limits messages.",
+      "related_keys": [
+        "profile_low_target",
+        "value_out_of_hard_limits"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "c410c855253bedee",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 230
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 156
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 286
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 341
+        }
+      ]
+    },
+    {
+      "key": "profile_ins_units_per_hour",
+      "ui_location": "Profile viewer; CSV export header",
+      "kind": "label",
+      "description": "Unit for basal rate: units of insulin per hour.",
+      "related_keys": [
+        "profile_carbs_per_unit"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "fffe0f2749b1faf3",
+      "usages": [
+        {
+          "path": "core/graph/src/commonMain/kotlin/app/aaps/core/graph/profile/ProfileCompareRowBuilders.kt",
+          "line": 59
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 374
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/userEntry/UserEntryPresentationHelperImpl.kt",
+          "line": 330
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 139
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 324
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 176
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
+          "line": 551
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempBasalDialog/TempBasalDialogScreen.kt",
+          "line": 148
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempBasalDialog/TempBasalDialogScreen.kt",
+          "line": 216
+        }
+      ]
+    },
+    {
+      "key": "profile_isf_units_mgdl",
+      "ui_location": "Profile viewer; profile compare; Autotune",
+      "kind": "label",
+      "description": "Unit of insulin sensitivity factor (ISF): glucose drop in mg/dL per one unit of insulin. Short unit string.",
+      "related_keys": [
+        "profile_isf_units_mmol"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "73c5ae7068480392",
+      "usages": [
+        {
+          "path": "core/graph/src/commonMain/kotlin/app/aaps/core/graph/profile/ProfileCompareRowBuilders.kt",
+          "line": 58
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 371
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 322
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 174
+        }
+      ]
+    },
+    {
+      "key": "profile_isf_units_mmol",
+      "ui_location": "Profile viewer; profile compare; Autotune",
+      "kind": "label",
+      "description": "Unit of insulin sensitivity factor (ISF): glucose drop in mmol/L per one unit of insulin.",
+      "related_keys": [
+        "profile_isf_units_mgdl"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "73c5ae7068480392",
+      "usages": [
+        {
+          "path": "core/graph/src/commonMain/kotlin/app/aaps/core/graph/profile/ProfileCompareRowBuilders.kt",
+          "line": 58
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 371
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 322
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 174
+        }
+      ]
+    },
+    {
+      "key": "profile_low_target",
+      "ui_location": "Profile validation; hard limit checks",
+      "kind": "label",
+      "description": "Name of the profile's lower glucose target, used as the name inside out-of-limits messages.",
+      "related_keys": [
+        "profile_high_target",
+        "value_out_of_hard_limits"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "044fcd3906fb4f32",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 225
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 155
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 285
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 340
+        }
+      ]
+    },
+    {
+      "key": "profile_sensitivity_value",
+      "ui_location": "Profile validation; hard limit checks",
+      "kind": "label",
+      "description": "Name of the insulin sensitivity (ISF) profile value, used in out-of-limits messages.",
+      "related_keys": [
+        "value_out_of_hard_limits"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "41aa4a61b8e39bc4",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 216
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 144
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 268
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 317
+        }
+      ]
+    },
+    {
+      "key": "pump_disconnected",
+      "ui_location": "Running mode texts; command rejection messages",
+      "kind": "status",
+      "description": "Running mode where the user has disconnected the pump, for example to shower. Also a reason text for rejected commands.",
+      "related_keys": [
+        "pumpsuspended"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2d0d9fd41820539e",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/runningMode/RunningModeGuard.kt",
+          "line": 55
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 947
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/CommandQueueImplementation.kt",
+          "line": 282
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExecutor.kt",
+          "line": 116
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExpiryRunner.kt",
+          "line": 83
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 254
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 292
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 461
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 393
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 443
+        }
+      ]
+    },
+    {
+      "key": "pump_driver_changed",
+      "ui_location": "Internal pump status read",
+      "kind": "log",
+      "description": "Reason text passed to the command queue when the pump driver is switched and the pump status is read again. Mostly seen in logs and the queue status.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "4311bc03252c3065",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/pump/PumpPluginBase.kt",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "key": "pumpsuspended",
+      "ui_location": "Overview and command rejection messages",
+      "kind": "error",
+      "description": "Reason text: the pump reports itself as suspended, so commands cannot be sent. Also a line in the pump status summary.",
+      "related_keys": [
+        "pump_disconnected",
+        "loopsuspended"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "8ee384873ef32c03",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/runningMode/RunningModeGuard.kt",
+          "line": 59
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/pump/PumpStatusProviderImpl.kt",
+          "line": 51
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/CommandQueueImplementation.kt",
+          "line": 286
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 435
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 873
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 874
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 957
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 958
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 462
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 766
+        }
+      ]
+    },
+    {
+      "key": "rapid_acting_oref",
+      "ui_location": "Insulin configuration > insulin type",
+      "kind": "label",
+      "description": "Name of the rapid-acting insulin profile, named after a brand (Novorapid). Brand names are usually left as they are.",
+      "related_keys": [
+        "fast_acting_insulin_comment"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "da52005a7448367f",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/insulin/InsulinType.kt",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "key": "record",
+      "ui_location": "Treatment note",
+      "kind": "other",
+      "description": "Default note saved with a treatment that is only recorded and not given by the pump. A noun/verb.",
+      "related_keys": [
+        "bolus_recorded_only"
+      ],
+      "confidence": 0.6,
+      "usages_hash": "cb6d49e6c187ecf0",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 587
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 595
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 648
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 1329
+        }
+      ]
+    },
+    {
+      "key": "sec_plus",
+      "ui_location": "Status lines (time of an event)",
+      "kind": "status",
+      "description": "Short suffix with the extra duration in seconds, shown in brackets, e.g. '(+30s)'. %1$d is seconds. Not a sentence.",
+      "related_keys": [
+        "min_plus"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "943144af38404c63",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 210
+        }
+      ]
+    },
+    {
+      "key": "secago",
+      "ui_location": "Status lines (time since last reading or connection)",
+      "kind": "status",
+      "description": "Short relative time for under a minute, %1$d is seconds. Keep it as short as possible.",
+      "related_keys": [
+        "minago"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "61968d8703389e4d",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 201
+        }
+      ]
+    },
+    {
+      "key": "seconds_ago",
+      "ui_location": "Time-ago text",
+      "kind": "status",
+      "description": "Used when an event happened less than a minute ago. There is no number, so it works as a stand-alone phrase.",
+      "related_keys": [
+        "plurals_minute_ago"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "8682198b2bc16e4e",
+      "usages": [
+        {
+          "path": "core/interfaces/src/androidMain/kotlin/app/aaps/core/interfaces/utils/DateUtilAndroid.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "shortday",
+      "ui_location": "Status > age of sensor/cannula/battery",
+      "kind": "label",
+      "description": "One-letter abbreviation for days, appended to a number ('2d'). Followed directly by hours, as in '2d3h'.",
+      "related_keys": [
+        "shorthour"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "8c54ba4ddd775136",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 318
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/statusLights/StatusViewModel.kt",
+          "line": 276
+        }
+      ]
+    },
+    {
+      "key": "shorthour",
+      "ui_location": "Profile comparison; age and expiry texts; wizard confirmation",
+      "kind": "label",
+      "description": "One-letter or very short unit for hours, appended to a number ('5h'). Used where space is tight.",
+      "related_keys": [
+        "shortminute",
+        "shortday"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "ea7bfff8b6ddecee",
+      "usages": [
+        {
+          "path": "core/graph/src/commonMain/kotlin/app/aaps/core/graph/profile/ProfileCompareRowBuilders.kt",
+          "line": 56
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 770
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 869
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/userEntry/UserEntryPresentationHelperImpl.kt",
+          "line": 332
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 133
+        },
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 251
+        },
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 319
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/carbsDialog/CarbsDialogScreen.kt",
+          "line": 361
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/OverviewDataCacheImpl.kt",
+          "line": 934
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/statusLights/StatusViewModel.kt",
+          "line": 276
+        }
+      ]
+    },
+    {
+      "key": "shortminute",
+      "ui_location": "Age texts; user action log CSV header; action values",
+      "kind": "label",
+      "description": "One-letter abbreviation for minutes, appended to a number ('5m'). Also a column unit in the exported user action log.",
+      "related_keys": [
+        "shorthour",
+        "shortday"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "697c71520388f3a8",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/userEntry/UserEntryPresentationHelperImpl.kt",
+          "line": 333
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 136
+        },
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 320
+        }
+      ]
+    },
+    {
+      "key": "slowabsorptiondetected_plain",
+      "ui_location": "Bolus wizard > confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Warning line about carbs absorbing slowly. %1$d%% is how much of the time absorption was slow. The exclamation marks signal a warning; the text also advises double-checking the calculation.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "b712244c07f839f3",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 418
+        }
+      ]
+    },
+    {
+      "key": "temp_basal_absolute_rate",
+      "ui_location": "Treatments and history lists",
+      "kind": "status",
+      "description": "Description of a temporary basal with an absolute rate. %1$.2f is the rate in U/h, %2$s the start time, %3$d minutes elapsed and %4$d the total duration in minutes. The apostrophe stands for minutes.",
+      "related_keys": [
+        "temp_basal_percent_rate"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "775b71d7b44074d3",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/pump/PumpSync.kt",
+          "line": 105
+        }
+      ]
+    },
+    {
+      "key": "temp_basal_extended_bolus",
+      "ui_location": "Treatments and history lists",
+      "kind": "status",
+      "description": "Description of an extended bolus, which is delivered over time at a rate. 'E' marks it as extended. %1$.2f is the rate in U/h, %2$s start time, %3$d minutes elapsed, %4$d total minutes.",
+      "related_keys": [
+        "temp_basal_absolute_rate"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "d2d3777724bf098f",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/pump/PumpSync.kt",
+          "line": 142
+        }
+      ]
+    },
+    {
+      "key": "temp_basal_percent_rate",
+      "ui_location": "Treatments and history lists",
+      "kind": "status",
+      "description": "Description of a temporary basal as a percent of the profile basal. %1$.2f is the percent, %2$s start time, %3$d minutes elapsed, %4$d total minutes. '%%' is a literal percent sign.",
+      "related_keys": [
+        "temp_basal_absolute_rate"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "838a146a0a0fffed",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/pump/PumpSync.kt",
+          "line": 109
+        }
+      ]
+    },
+    {
+      "key": "time_remaining_h_m",
+      "ui_location": "Remaining time texts (pump or sensor)",
+      "kind": "status",
+      "description": "Time left until something expires or ends. %1$d is whole hours, %2$d remaining minutes.",
+      "related_keys": [
+        "time_remaining_m"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "2d624fe93cf68fa6",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 266
+        }
+      ]
+    },
+    {
+      "key": "time_remaining_m",
+      "ui_location": "Remaining time texts",
+      "kind": "status",
+      "description": "Time left when under one hour. %1$d is minutes.",
+      "related_keys": [
+        "time_remaining_h_m"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "7f817b6e7d9d0e98",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 267
+        }
+      ]
+    },
+    {
+      "key": "today",
+      "ui_location": "Relative date labels; Statistics > TDD; Wear TDD message",
+      "kind": "label",
+      "description": "Relative day label. In date lists it is followed by ' - ' and the date; in the TDD statistics it labels the row for the current day. Keep it short.",
+      "related_keys": [
+        "yesterday",
+        "tomorrow"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "c8b722cfdeaa563d",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1747
+        },
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 123
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TddStatsCompose.kt",
+          "line": 122
+        }
+      ]
+    },
+    {
+      "key": "tomorrow",
+      "ui_location": "Date label",
+      "kind": "label",
+      "description": "Relative day label for dates falling on the next day.",
+      "related_keys": [
+        "today",
+        "later_today"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "e0561c3ae73492bd",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 131
+        }
+      ]
+    },
+    {
+      "key": "u10",
+      "ui_location": "Insulin concentration picker",
+      "kind": "label",
+      "description": "Insulin concentration U10: 10 units of insulin per millilitre. A product code, not translated.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c1c0d6de1faeadb2",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/insulin/ConcentrationType.kt",
+          "line": 8
+        }
+      ]
+    },
+    {
+      "key": "u100",
+      "ui_location": "Insulin concentration picker",
+      "kind": "label",
+      "description": "Insulin concentration U100: 100 units of insulin per millilitre. A product code, not translated.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "269850d4ca67a6a2",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/insulin/ConcentrationType.kt",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "key": "u200",
+      "ui_location": "Insulin concentration picker",
+      "kind": "label",
+      "description": "Insulin concentration U200: 200 units of insulin per millilitre. A product code, not translated.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "040600fc8d24a059",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/insulin/ConcentrationType.kt",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "key": "u300",
+      "ui_location": "Insulin concentration picker",
+      "kind": "label",
+      "description": "Insulin concentration U300: 300 units of insulin per millilitre. A product code, not translated.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "46a814038a8af78a",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/insulin/ConcentrationType.kt",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "key": "u40",
+      "ui_location": "Insulin concentration picker",
+      "kind": "label",
+      "description": "Insulin concentration U40: 40 units of insulin per millilitre. A product code, not translated.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9026a930cff9fd0b",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/insulin/ConcentrationType.kt",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "key": "u50",
+      "ui_location": "Insulin concentration picker",
+      "kind": "label",
+      "description": "Insulin concentration U50: 50 units of insulin per millilitre. A product code, not translated.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5295a6c9b4a56eff",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/insulin/ConcentrationType.kt",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "key": "u500",
+      "ui_location": "Insulin concentration picker",
+      "kind": "label",
+      "description": "Insulin concentration U500: 500 units of insulin per millilitre. A product code, not translated.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "70224430f7779890",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/insulin/ConcentrationType.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "uel_extended_carbs",
+      "ui_location": "Bolus wizard confirmation; user action log",
+      "kind": "label",
+      "description": "Label for extended carbs (eCarbs): carbs entered with a duration and absorbed over time. Upper case in the source because it is a log type.",
+      "related_keys": [
+        "wizard_ecarbs"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "d7ff3b21ec187b51",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 442
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "ultra_fast_acting_insulin_comment",
+      "ui_location": "Insulin configuration > insulin type",
+      "kind": "other",
+      "description": "Hint listing insulin brands that fit the ultra-rapid profile.",
+      "related_keys": [
+        "ultra_rapid_oref"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "d051936850160c4f",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/insulin/InsulinType.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "ultra_rapid_oref",
+      "ui_location": "Insulin configuration > insulin type",
+      "kind": "label",
+      "description": "Name of the ultra-rapid insulin profile, named after a brand (Fiasp). Brand names are usually left as they are.",
+      "related_keys": [
+        "ultra_fast_acting_insulin_comment"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "d051936850160c4f",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/insulin/InsulinType.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "unit_day",
+      "ui_location": "Duration texts (age, nice time scalar)",
+      "kind": "label",
+      "description": "Singular unit 'day', used after the number 1. Plural form is the matching unit_days key.",
+      "related_keys": [
+        "unit_days"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "49ccbe52cc091d5d",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 340
+        }
+      ]
+    },
+    {
+      "key": "unit_days",
+      "ui_location": "Duration texts (age, nice time scalar)",
+      "kind": "label",
+      "description": "Plural unit 'days', used after a number other than 1 in duration texts.",
+      "related_keys": [
+        "unit_day"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "49ccbe52cc091d5d",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 340
+        }
+      ]
+    },
+    {
+      "key": "unit_hour",
+      "ui_location": "Duration texts (age, nice time scalar)",
+      "kind": "label",
+      "description": "Singular unit 'hour', used after the number 1. Plural form is the matching unit_hours key.",
+      "related_keys": [
+        "unit_hours"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "3343c29d2b831111",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 344
+        }
+      ]
+    },
+    {
+      "key": "unit_hours",
+      "ui_location": "Duration texts (age, nice time scalar)",
+      "kind": "label",
+      "description": "Plural unit 'hours', used after a number other than 1 in duration texts.",
+      "related_keys": [
+        "unit_hour"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "3343c29d2b831111",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 344
+        }
+      ]
+    },
+    {
+      "key": "unit_minute",
+      "ui_location": "Duration texts (age, nice time scalar)",
+      "kind": "label",
+      "description": "Singular unit 'minute', used after the number 1. Plural form is the matching unit_minutes key.",
+      "related_keys": [
+        "unit_minutes"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "6c190a57377cad60",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 348
+        }
+      ]
+    },
+    {
+      "key": "unit_minutes",
+      "ui_location": "Automation > trigger editor (steps count window); duration texts",
+      "kind": "label",
+      "description": "Plural unit 'minutes', used after a number other than 1 in duration texts. Also the unit label next to the time window in the steps count trigger.",
+      "related_keys": [
+        "unit_minute"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "e1748b75df902c92",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 473
+        },
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 320
+        },
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 348
+        }
+      ]
+    },
+    {
+      "key": "unit_second",
+      "ui_location": "Duration texts (age, nice time scalar)",
+      "kind": "label",
+      "description": "Singular unit 'second', used after the number 1. Plural form is the matching unit_seconds key.",
+      "related_keys": [
+        "unit_seconds"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "bc6e41183fa7fd00",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 352
+        }
+      ]
+    },
+    {
+      "key": "unit_seconds",
+      "ui_location": "Duration texts (age, nice time scalar)",
+      "kind": "label",
+      "description": "Plural unit 'seconds', used after a number other than 1 in duration texts.",
+      "related_keys": [
+        "unit_second"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "bc6e41183fa7fd00",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 352
+        }
+      ]
+    },
+    {
+      "key": "unit_week",
+      "ui_location": "Duration texts (age, nice time scalar)",
+      "kind": "label",
+      "description": "Singular unit 'week', used after the number 1. Plural form is the matching unit_weeks key.",
+      "related_keys": [
+        "unit_weeks"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "a5fcdf5cc08f435e",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 336
+        }
+      ]
+    },
+    {
+      "key": "unit_weeks",
+      "ui_location": "Duration texts (age, nice time scalar)",
+      "kind": "label",
+      "description": "Plural unit 'weeks', used after a number other than 1 in duration texts.",
+      "related_keys": [
+        "unit_week"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "a5fcdf5cc08f435e",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 336
+        }
+      ]
+    },
+    {
+      "key": "unknown",
+      "ui_location": "Insulin and concentration pickers; trend arrow list",
+      "kind": "label",
+      "description": "Generic option 'Unknown' for an insulin type, insulin concentration, or a trend arrow that is not set.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4702bca3f9c3e17f",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/insulin/ConcentrationType.kt",
+          "line": 7
+        },
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/insulin/InsulinType.kt",
+          "line": 9
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/ArrowSelectionDialog.kt",
+          "line": 84
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 128
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 148
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 187
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 189
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 219
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 220
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 233
+        }
+      ]
+    },
+    {
+      "key": "value_out_of_hard_limits",
+      "ui_location": "Profile validation message; algorithm warning",
+      "kind": "error",
+      "description": "Error: a setting is outside the safety limits. %1$s is the setting name (another string, such as Profile DIA value), %2$.2f the value. The » « quotes are part of the text.",
+      "related_keys": [
+        "profile_dia"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3bf5694efa5555af",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 187
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 195
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 203
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 215
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 225
+        },
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/profile/ProfileSealed.kt",
+          "line": 230
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementViewModel.kt",
+          "line": 412
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementViewModel.kt",
+          "line": 416
+        }
+      ]
+    },
+    {
+      "key": "waiting_for_disconnection",
+      "ui_location": "Overview > pump status line",
+      "kind": "status",
+      "description": "Pump status shown while the app waits for the pump link to close after a command has finished.",
+      "related_keys": [
+        "disconnecting"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "85204ac08cdc2464",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/events/EventPumpStatusChanged.kt",
+          "line": 100
+        }
+      ]
+    },
+    {
+      "key": "wear_default_watchface",
+      "ui_location": "Wear > custom watchface info",
+      "kind": "label",
+      "description": "Name (and file name) shown for the built-in default custom watchface.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "95e7d1af15fc2a92",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 1058
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 1059
+        }
+      ]
+    },
+    {
+      "key": "wear_more_watchfaces",
+      "ui_location": "Wear app > main screen",
+      "kind": "button",
+      "description": "Button that opens the watch's store page to find more watch faces. Short.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "44f31348ab0c83ac",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 356
+        }
+      ]
+    },
+    {
+      "key": "wizard_ecarbs",
+      "ui_location": "Bolus wizard; confirmation lines",
+      "kind": "status",
+      "description": "Extended carbs summary. %1$d is grams, %2$d duration in hours, %3$d delay in minutes. The g, h and min are unit abbreviations.",
+      "related_keys": [
+        "uel_extended_carbs"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d1b77ccfbb2f962f",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/wizard/BolusWizard.kt",
+          "line": 447
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 773
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 545
+        }
+      ]
+    },
+    {
+      "key": "yesterday",
+      "ui_location": "Relative date labels",
+      "kind": "label",
+      "description": "Relative day label, shown followed by ' - ' and the date.",
+      "related_keys": [
+        "today"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "08ae88dddc09c62c",
+      "usages": [
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 124
+        }
+      ]
+    }
+  ]
+}
