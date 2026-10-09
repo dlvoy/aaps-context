@@ -1,0 +1,612 @@
+{
+  "schema_version": 1,
+  "source_path": "core/ui/src/androidMain/res/values/protection.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "aaps_directory_access_lost",
+      "ui_location": "Notification list",
+      "kind": "notification",
+      "description": "Warning that Android permission to the chosen AAPS storage directory was revoked, so settings are not saved to the phone anymore; user must pick the directory again. Full sentences.",
+      "related_keys": [
+        "aaps_directory_not_selected"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f1248030a8587dd4",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 516
+        }
+      ]
+    },
+    {
+      "key": "aaps_directory_not_selected",
+      "ui_location": "Notification list",
+      "kind": "notification",
+      "description": "Warning that the user has not chosen the AAPS storage directory on the phone, where settings and exports are saved. Short notification text.",
+      "related_keys": [
+        "aaps_directory_access_lost"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d1a652cd476b21c2",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 500
+        }
+      ]
+    },
+    {
+      "key": "application_password",
+      "ui_location": "Dialog shown when opening the app",
+      "kind": "dialog_title",
+      "description": "Title of the dialog asking for the password that protects the whole application at start-up. Noun phrase.",
+      "related_keys": [
+        "application_pin"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f77ef9afecc113c2",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/ProtectionCheckImpl.kt",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "key": "application_pin",
+      "ui_location": "Dialog shown when opening the app",
+      "kind": "dialog_title",
+      "description": "Title of the dialog asking for the numeric PIN that protects the whole application at start-up.",
+      "related_keys": [
+        "application_password"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d4ab1afe493450ed",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/ProtectionCheckImpl.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "application_protection",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "auth_hint_master_or_password",
+      "ui_location": "Authentication dialog",
+      "kind": "hint",
+      "description": "Hint in the authentication dialog's text field when either the master password or the custom (per-feature) password is accepted.",
+      "related_keys": [
+        "auth_hint_master_password"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "fc86dc5837056065",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/UnifiedAuthDialog.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "auth_hint_master_or_pin",
+      "ui_location": "Authentication dialog",
+      "kind": "hint",
+      "description": "Hint in the authentication dialog's text field when either the master password or the PIN is accepted.",
+      "related_keys": [
+        "auth_hint_master_password"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e49975ffe0c3eec5",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/UnifiedAuthDialog.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "auth_hint_master_password",
+      "ui_location": "Authentication dialog",
+      "kind": "hint",
+      "description": "Hint in the authentication dialog's text field when only the master password is accepted.",
+      "related_keys": [
+        "auth_hint_master_or_pin",
+        "auth_hint_master_or_password"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c915a033be6b9df8",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/UnifiedAuthDialog.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "biometric_description",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "biometric_title",
+      "ui_location": "Authentication dialog; biometric prompt",
+      "kind": "dialog_title",
+      "description": "Title of the fingerprint/face prompt and of the app's own authentication dialog, shown when a protected action (settings, bolus, app unlock) needs the user to prove identity. Short noun phrase.",
+      "related_keys": [
+        "use_pin_password"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8d7e5937456af642",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/ProtectionHost.kt",
+          "line": 60
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/UnifiedAuthDialog.kt",
+          "line": 98
+        },
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/protection/BiometricCheck.kt",
+          "line": 61
+        },
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/protection/BiometricCheck.kt",
+          "line": 123
+        }
+      ]
+    },
+    {
+      "key": "bolus_password",
+      "ui_location": "Dialog shown before a bolus",
+      "kind": "dialog_title",
+      "description": "Title of the dialog asking for the password required before delivering a bolus (insulin dose). Noun phrase.",
+      "related_keys": [
+        "bolus_pin"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ad7bf6c0884f746b",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/ProtectionCheckImpl.kt",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "bolus_pin",
+      "ui_location": "Dialog shown before a bolus",
+      "kind": "dialog_title",
+      "description": "Title of the dialog asking for the numeric PIN required before delivering a bolus (insulin dose).",
+      "related_keys": [
+        "bolus_password"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "449336b045b438b7",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/ProtectionCheckImpl.kt",
+          "line": 76
+        }
+      ]
+    },
+    {
+      "key": "bolus_protection",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "current_master_password",
+      "ui_location": "Preferences > Protection > Master password",
+      "kind": "dialog_title",
+      "description": "Label for the field where the user enters the existing master password before changing it. The master password is the main password protecting the app's protected features.",
+      "related_keys": [
+        "password_set"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "6dd63d6bd2bbf620",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptiveMasterPasswordPreference.kt",
+          "line": 92
+        }
+      ]
+    },
+    {
+      "key": "datastore_password_cleared",
+      "ui_location": "Snackbar at app start",
+      "kind": "status",
+      "description": "Confirmation shown at start-up after the stored export password was removed, because the user requested a reset. The export password protects exported settings files.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "34c8c76f60cdd992",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 473
+        }
+      ]
+    },
+    {
+      "key": "master_password_not_set",
+      "ui_location": "Notification list; message in Objectives",
+      "kind": "error",
+      "description": "Warning that no master password exists. Shown as a notification and in the first Objective, which requires a master password to be set. Whole sentence fragment.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f50a2c7e3c854817",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 491
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective0.kt",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "key": "password_not_changed",
+      "ui_location": "Snackbar after password dialog",
+      "kind": "status",
+      "description": "Message shown when the user confirmed the password dialog but the password stayed the same, for example because the fields were empty or did not match.",
+      "related_keys": [
+        "pin_not_changed"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "2ef9a296fa4658ce",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptiveMasterPasswordPreference.kt",
+          "line": 87
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptivePasswordPreference.kt",
+          "line": 89
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/PasswordCheckImpl.kt",
+          "line": 127
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/PasswordCheckImpl.kt",
+          "line": 134
+        }
+      ]
+    },
+    {
+      "key": "password_not_set",
+      "ui_location": "Preferences > Protection",
+      "kind": "preference_summary",
+      "description": "Summary shown under a password preference when no password has been set yet. Short status phrase.",
+      "related_keys": [
+        "pin_not_set"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ff69a6c9a02342fe",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptiveMasterPasswordPreference.kt",
+          "line": 52
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptivePasswordPreference.kt",
+          "line": 73
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptiveStringPreference.kt",
+          "line": 71
+        },
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/elements/SWEditEncryptedPassword.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "password_set",
+      "ui_location": "Snackbar after setting a password",
+      "kind": "status",
+      "description": "Confirmation message shown briefly after a password was saved, in the preferences and after a password reset at start-up. Whole sentence-like exclamation.",
+      "related_keys": [
+        "pin_set",
+        "password_not_set"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "62ac9b83c1ca2ee6",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 461
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptiveMasterPasswordPreference.kt",
+          "line": 50
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptiveMasterPasswordPreference.kt",
+          "line": 85
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptivePasswordPreference.kt",
+          "line": 87
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/PasswordCheckImpl.kt",
+          "line": 113
+        },
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/elements/SWEditEncryptedPassword.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "pin_cleared",
+      "ui_location": "Snackbar after clearing a PIN",
+      "kind": "status",
+      "description": "Confirmation shown briefly after the numeric PIN was removed. Counterpart of the password version.",
+      "related_keys": [
+        "pin_set"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d1466f3abcef3759",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptivePasswordPreference.kt",
+          "line": 88
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/PasswordCheckImpl.kt",
+          "line": 121
+        }
+      ]
+    },
+    {
+      "key": "pin_not_changed",
+      "ui_location": "Snackbar after PIN dialog",
+      "kind": "status",
+      "description": "Message shown when the user confirmed the PIN dialog but the PIN stayed the same, for example because the fields were empty or did not match.",
+      "related_keys": [
+        "password_not_changed"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "7984fb827960dfbc",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptivePasswordPreference.kt",
+          "line": 89
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/PasswordCheckImpl.kt",
+          "line": 127
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/PasswordCheckImpl.kt",
+          "line": 134
+        }
+      ]
+    },
+    {
+      "key": "pin_not_set",
+      "ui_location": "Preferences > Protection",
+      "kind": "preference_summary",
+      "description": "Summary shown under a PIN preference when no PIN has been set yet. Short status phrase.",
+      "related_keys": [
+        "password_not_set"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d84cd556e96193dc",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptivePasswordPreference.kt",
+          "line": 72
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptiveStringPreference.kt",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "pin_set",
+      "ui_location": "Snackbar after setting a PIN",
+      "kind": "status",
+      "description": "Confirmation shown briefly after a numeric PIN was saved. Counterpart of the password version.",
+      "related_keys": [
+        "password_set",
+        "pin_cleared"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "11cb9c26a854405a",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptivePasswordPreference.kt",
+          "line": 87
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/PasswordCheckImpl.kt",
+          "line": 113
+        }
+      ]
+    },
+    {
+      "key": "protection_password_hint",
+      "ui_location": "Password dialogs",
+      "kind": "hint",
+      "description": "Placeholder/label of the text field in dialogs where a password is typed or chosen. Short instruction.",
+      "related_keys": [
+        "protection_pin_hint"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "febad174c5ccbe86",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/QueryAnyPasswordDialog.kt",
+          "line": 108
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/QueryPasswordDialog.kt",
+          "line": 76
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/SetPasswordDialog.kt",
+          "line": 83
+        }
+      ]
+    },
+    {
+      "key": "protection_pin_hint",
+      "ui_location": "PIN dialogs",
+      "kind": "hint",
+      "description": "Placeholder/label of the text field in dialogs where a numeric PIN is typed or chosen. Short instruction.",
+      "related_keys": [
+        "protection_password_hint"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e718679abe0767ce",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/QueryPasswordDialog.kt",
+          "line": 76
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/SetPasswordDialog.kt",
+          "line": 83
+        }
+      ]
+    },
+    {
+      "key": "protection_timeout_summary",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "protection_timeout_title",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "settings_password",
+      "ui_location": "Preferences > Protection > Settings protection",
+      "kind": "dialog_title",
+      "description": "Title of the dialog asking for the custom password that guards opening the settings. Also the label for the preference where that password is set. Noun phrase.",
+      "related_keys": [
+        "settings_pin"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7cd4be3dff03cf96",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/ProtectionCheckImpl.kt",
+          "line": 68
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/ProtectionCheckImpl.kt",
+          "line": 295
+        }
+      ]
+    },
+    {
+      "key": "settings_pin",
+      "ui_location": "Preferences > Protection > Settings protection",
+      "kind": "dialog_title",
+      "description": "Title of the dialog asking for the numeric PIN that guards opening the settings. PIN is a numeric code, as opposed to a password.",
+      "related_keys": [
+        "settings_password"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2b9c44925f9065a4",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/ProtectionCheckImpl.kt",
+          "line": 74
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/ProtectionCheckImpl.kt",
+          "line": 294
+        }
+      ]
+    },
+    {
+      "key": "settings_protection",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "unsecure_fallback_biometric",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "unsecure_fallback_descriotion_biometric",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "use_pin_password",
+      "ui_location": "Biometric prompt",
+      "kind": "button",
+      "description": "Negative button of the fingerprint/face prompt; lets the user type a PIN or password instead. Short button label, limited space.",
+      "related_keys": [
+        "biometric_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "35ac29e02e028fb1",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/protection/BiometricCheck.kt",
+          "line": 62
+        }
+      ]
+    }
+  ]
+}

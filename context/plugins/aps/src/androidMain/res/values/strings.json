@@ -1,0 +1,1790 @@
+{
+  "schema_version": 1,
+  "source_path": "plugins/aps/src/androidMain/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "array_of_elements",
+      "ui_location": "OpenAPS screen (algorithm run details)",
+      "kind": "label",
+      "description": "Row label in the algorithm input parameters list for an array value. %1$d is the number of elements; the actual value follows after the line break.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "72be8c86560997d2",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/compose/OpenAPSViewModel.kt",
+          "line": 241
+        }
+      ]
+    },
+    {
+      "key": "autoISF_settings_title",
+      "ui_location": "Preferences > OpenAPS SMB/AMA/AutoISF > Auto ISF",
+      "kind": "preference_title",
+      "description": "Title of the group of Auto ISF preferences.",
+      "related_keys": [
+        "smb_delivery_settings_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8c3900562b15f815",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 970
+        }
+      ]
+    },
+    {
+      "key": "autosens_disabled_in_preferences",
+      "ui_location": "Constraint reason in loop result",
+      "kind": "log",
+      "description": "Reason shown when autosens (automatic sensitivity detection) is off in preferences.",
+      "related_keys": [
+        "smb_disabled_in_preferences"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0dc65c8005e793c8",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 312
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 531
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 575
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 579
+        }
+      ]
+    },
+    {
+      "key": "autotune_check_input_profile_button",
+      "ui_location": "Autotune screen",
+      "kind": "button",
+      "description": "Button showing the input profile that Autotune will use. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d9ceed46dd682bdd",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 244
+        }
+      ]
+    },
+    {
+      "key": "autotune_compare_profile",
+      "ui_location": "Autotune screen",
+      "kind": "button",
+      "description": "Button opening a comparison of original and tuned profile. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8fcdf56251123bdd",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 229
+        }
+      ]
+    },
+    {
+      "key": "autotune_copy_local_profile_message",
+      "ui_location": "Autotune screen > confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Question in the confirmation dialog; the proposed new profile name follows on the next line.",
+      "related_keys": [
+        "autotune_copy_localprofile_button"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9d93c20a818b727a",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 257
+        }
+      ]
+    },
+    {
+      "key": "autotune_copy_localprofile_button",
+      "ui_location": "Autotune screen",
+      "kind": "button",
+      "description": "Button (and confirmation dialog title) to copy the tuned profile into a new local profile. Short imperative.",
+      "related_keys": [
+        "autotune_copy_local_profile_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8d98fde3c722f7ba",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 232
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 256
+        }
+      ]
+    },
+    {
+      "key": "autotune_default_tune_days_title",
+      "ui_location": "Autotune screen and Preferences > Autotune",
+      "kind": "label",
+      "description": "Label for the number of days of past data Autotune analyses.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "6eb70391859bc2ef",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 130
+        }
+      ]
+    },
+    {
+      "key": "autotune_description",
+      "ui_location": "Config builder > APS > Autotune",
+      "kind": "summary",
+      "description": "Description of the Autotune plugin: helps suggest adjustments of profile values (ISF, carb ratio, basal rates).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d42c1ffa893e99ef",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/AutotunePlugin.kt",
+          "line": 128
+        }
+      ]
+    },
+    {
+      "key": "autotune_error",
+      "ui_location": "Autotune screen",
+      "kind": "error",
+      "description": "Error shown after a failed run: input data is faulty; try again or reduce the number of days.",
+      "related_keys": [
+        "autotune_error_more_days"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5295cb8babc58311",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/AutotunePlugin.kt",
+          "line": 242
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/AutotunePlugin.kt",
+          "line": 273
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/AutotunePlugin.kt",
+          "line": 338
+        }
+      ]
+    },
+    {
+      "key": "autotune_error_more_days",
+      "ui_location": "Autotune screen",
+      "kind": "error",
+      "description": "Error shown after a failed run: input data insufficient; increase the number of days.",
+      "related_keys": [
+        "autotune_error"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "76a4d7fd45c2638a",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/AutotunePlugin.kt",
+          "line": 222
+        }
+      ]
+    },
+    {
+      "key": "autotune_ic_warning",
+      "ui_location": "Autotune screen",
+      "kind": "status",
+      "description": "Warning that the profile has several IC (insulin to carb ratio) values but Autotune uses a single one. %1$d is count, %2$.2f the ratio in grams per unit.",
+      "related_keys": [
+        "autotune_isf_warning"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "24fa75c223285d4c",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneViewModel.kt",
+          "line": 438
+        }
+      ]
+    },
+    {
+      "key": "autotune_isf_warning",
+      "ui_location": "Autotune screen",
+      "kind": "status",
+      "description": "Warning that the profile has several ISF (insulin sensitivity factor) values but Autotune uses a single one. %1$d count, %2$.1f value, %3$s glucose unit (mg/dL or mmol/L).",
+      "related_keys": [
+        "autotune_ic_warning"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "58af44f14338827b",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneViewModel.kt",
+          "line": 440
+        }
+      ]
+    },
+    {
+      "key": "autotune_last_run",
+      "ui_location": "Autotune screen",
+      "kind": "label",
+      "description": "Label before the date of the last Autotune run. Ends with a colon.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d35a1859f3000f56",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 169
+        }
+      ]
+    },
+    {
+      "key": "autotune_missing",
+      "ui_location": "Autotune screen > results table header",
+      "kind": "label",
+      "description": "Narrow column header: how much data was missing for this time slot or parameter.",
+      "related_keys": [
+        "autotune_param"
+      ],
+      "confidence": 0.6,
+      "usages_hash": "46a46b6cb29069c5",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 436
+        }
+      ]
+    },
+    {
+      "key": "autotune_param",
+      "ui_location": "Autotune screen > results table header",
+      "kind": "label",
+      "description": "Column header for the profile parameter name (ISF, IC, ...) in the results table. Very narrow column.",
+      "related_keys": [
+        "autotune_percent",
+        "autotune_missing"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "dd014ebd9084eb1b",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 431
+        }
+      ]
+    },
+    {
+      "key": "autotune_partial_result",
+      "ui_location": "Autotune screen",
+      "kind": "status",
+      "description": "Progress message while running. %1$d is the current day tuned, %2$d the total number of days.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f2c3b33963bde710",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/AutotunePlugin.kt",
+          "line": 259
+        }
+      ]
+    },
+    {
+      "key": "autotune_peak",
+      "ui_location": "Autotune screen > results table",
+      "kind": "label",
+      "description": "Row label in the Autotune results: insulin peak time of the active insulin curve. Short.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "03b0269aad7dbdbc",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/AutotunePlugin.kt",
+          "line": 353
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneViewModel.kt",
+          "line": 455
+        }
+      ]
+    },
+    {
+      "key": "autotune_percent",
+      "ui_location": "Autotune screen > results table header",
+      "kind": "label",
+      "description": "Narrow column header for the percent difference between original and tuned value. Just the percent sign in English.",
+      "related_keys": [
+        "autotune_param"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "cbfc5388af1a3be9",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 434
+        }
+      ]
+    },
+    {
+      "key": "autotune_profile",
+      "ui_location": "Autotune screen",
+      "kind": "label",
+      "description": "Label of the dropdown that selects which profile to tune. Ends with a colon in English.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8368e12497538e10",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 361
+        }
+      ]
+    },
+    {
+      "key": "autotune_profile_invalid",
+      "ui_location": "Autotune screen",
+      "kind": "error",
+      "description": "Warning that the selected profile is not valid, so Autotune cannot use it. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "74e975650d7561a8",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneViewModel.kt",
+          "line": 435
+        }
+      ]
+    },
+    {
+      "key": "autotune_result",
+      "ui_location": "Autotune screen",
+      "kind": "status",
+      "description": "Heading line of the result. %1$s is the date and time of the run.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "52f9ebf4ba366a86",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/AutotunePlugin.kt",
+          "line": 283
+        }
+      ]
+    },
+    {
+      "key": "autotune_revert_input_profile_button",
+      "ui_location": "Autotune screen",
+      "kind": "button",
+      "description": "Button (and confirmation dialog title) to restore the input profile from the one Autotune started with. Short imperative.",
+      "related_keys": [
+        "autotune_revert_local_profile_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6670c6763e51c2fa",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 238
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 274
+        }
+      ]
+    },
+    {
+      "key": "autotune_revert_local_profile_message",
+      "ui_location": "Autotune screen > confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Question in the confirmation dialog. %1$s is the profile name.",
+      "related_keys": [
+        "autotune_revert_input_profile_button"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "94154206c2c313c3",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 275
+        }
+      ]
+    },
+    {
+      "key": "autotune_run",
+      "ui_location": "Autotune screen",
+      "kind": "button",
+      "description": "Button starting an Autotune calculation; also the name of the Automation action. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2758e9ab2d0247ae",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 241
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionRunAutotune.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "autotune_tunedprofile_name",
+      "ui_location": "Autotune screen",
+      "kind": "other",
+      "description": "Name given to the profile produced by Autotune (also used as file name). One word.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "cf4a2f5c1d5a34df",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/AutotuneFS.kt",
+          "line": 100
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/AutotunePlugin.kt",
+          "line": 214
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 433
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneViewModel.kt",
+          "line": 247
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneViewModel.kt",
+          "line": 383
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/data/ATProfile.kt",
+          "line": 222
+        }
+      ]
+    },
+    {
+      "key": "autotune_update_input_profile_button",
+      "ui_location": "Autotune screen",
+      "kind": "button",
+      "description": "Button (and confirmation dialog title) to overwrite the input profile with the tuned values. Short imperative.",
+      "related_keys": [
+        "autotune_update_local_profile_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "445911f80502daa6",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 235
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 265
+        }
+      ]
+    },
+    {
+      "key": "autotune_update_local_profile_message",
+      "ui_location": "Autotune screen > confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Question in the confirmation dialog. %1$s is the profile name.",
+      "related_keys": [
+        "autotune_update_input_profile_button"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b0e0a934bbacbe57",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 266
+        }
+      ]
+    },
+    {
+      "key": "autotune_warning",
+      "ui_location": "Autotune screen",
+      "kind": "label",
+      "description": "Label before warnings about the selected profile. Ends with a colon.",
+      "related_keys": [
+        "autotune_ic_warning"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "af663223bd8cf02d",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 176
+        }
+      ]
+    },
+    {
+      "key": "autotune_warning_after_run",
+      "ui_location": "Autotune screen",
+      "kind": "status",
+      "description": "Warning shown after a successful run: the user must review results before applying them to a profile.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "18c6db512a5dfba9",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneViewModel.kt",
+          "line": 503
+        }
+      ]
+    },
+    {
+      "key": "autotune_warning_during_run",
+      "ui_location": "Autotune screen",
+      "kind": "status",
+      "description": "Warning shown while the calculation is running, which takes a while.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f537d365fb08d851",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneViewModel.kt",
+          "line": 502
+        }
+      ]
+    },
+    {
+      "key": "basal_set_correctly",
+      "ui_location": "Loop result",
+      "kind": "status",
+      "description": "Result text when the temporary basal request was already in place or applied correctly. Short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d7664f1cfcdf8aae",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 887
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 898
+        }
+      ]
+    },
+    {
+      "key": "carbs_suggestion",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Title of the notification that tells the user to eat carbohydrates because the algorithm predicts low glucose.",
+      "related_keys": [
+        "open_loop_new_suggestion"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5fa42edd36d74798",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/loop/AndroidLoopNotifier.kt",
+          "line": 54
+        },
+        {
+          "path": "plugins/aps/src/iosMain/kotlin/app/aaps/plugins/aps/loop/IosLoopNotifier.kt",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "key": "constraints",
+      "ui_location": "OpenAPS screen (algorithm run details)",
+      "kind": "title",
+      "description": "Section heading for the constraints (safety limits) applied to the algorithm result. Plural noun.",
+      "related_keys": [
+        "loop_constraints_processed_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6f71d363a77b2d70",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/PluginCategoryTitle.kt",
+          "line": 21
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/compose/OpenAPSViewModel.kt",
+          "line": 101
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopScreen.kt",
+          "line": 74
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/runningMode/RunningModeScreen.kt",
+          "line": 94
+        }
+      ]
+    },
+    {
+      "key": "description_ama",
+      "ui_location": "Config builder > APS",
+      "kind": "summary",
+      "description": "Description of the AMA plugin in the plugin list: it is an old algorithm, state of the art in 2017.",
+      "related_keys": [
+        "openapsama"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5e63b8cc2846b7d4",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 100
+        }
+      ]
+    },
+    {
+      "key": "description_auto_isf",
+      "ui_location": "Config builder > APS",
+      "kind": "summary",
+      "description": "Description of the Auto ISF plugin in the plugin list: experimental, for advanced users.",
+      "related_keys": [
+        "openaps_auto_isf"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "dc2b9438136fc333",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 126
+        }
+      ]
+    },
+    {
+      "key": "description_loop",
+      "ui_location": "Config builder > APS > Loop",
+      "kind": "summary",
+      "description": "Description of the Loop plugin in the plugin list: enables or disables the algorithm that triggers loop runs.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ed6d8f103af5e9e9",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 155
+        }
+      ]
+    },
+    {
+      "key": "description_smb",
+      "ui_location": "Config builder > APS",
+      "kind": "summary",
+      "description": "Description of the SMB plugin in the plugin list: recommended for advanced users.",
+      "related_keys": [
+        "openapssmb"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f22176891231aebc",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 121
+        }
+      ]
+    },
+    {
+      "key": "description_smb_dynamic_isf",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "dyn_isf_adjust_title",
+      "ui_location": "Preferences > OpenAPS SMB/AMA/AutoISF",
+      "kind": "preference_title",
+      "description": "Title of the percentage factor that scales the dynamic insulin sensitivity factor (ISF, how much one unit of insulin lowers glucose). Contains % as unit hint.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "035bb4028e6687cd",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 326
+        }
+      ]
+    },
+    {
+      "key": "dynisf_shortname",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "fallback_smb_no_tdd",
+      "ui_location": "Constraint/result reason",
+      "kind": "log",
+      "description": "Reason shown when dynamic ISF cannot be used and the plain SMB algorithm is used because there is too little total daily dose (TDD) data.",
+      "related_keys": [
+        "fallback_to_isf_no_tdd"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6df1277171ca9acb",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 360
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 365
+        }
+      ]
+    },
+    {
+      "key": "fallback_to_isf_no_tdd",
+      "ui_location": "Constraint/result reason",
+      "kind": "log",
+      "description": "Reason shown when the profile's fixed sensitivity (ISF) is used because dynamic data is missing. %1$s is the reason, already translated or English.",
+      "related_keys": [
+        "fallback_smb_no_tdd"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "54d989323a0c2b76",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 184
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 157
+        }
+      ]
+    },
+    {
+      "key": "hardlimit",
+      "ui_location": "Constraint reason",
+      "kind": "log",
+      "description": "Fragment naming the cause of a limit: the fixed safety hard limit built into the app. Inserted into other messages, lowercase.",
+      "related_keys": [
+        "maxvalueinpreferences"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "409e7a8e93c4a379",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 281
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 488
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 530
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 106
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 153
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 170
+        }
+      ]
+    },
+    {
+      "key": "ignore15m",
+      "ui_location": "Notification action button",
+      "kind": "button",
+      "description": "Action button on the carbs-required notification: ignore it for 15 minutes. Short button; m means minutes.",
+      "related_keys": [
+        "ignore5m",
+        "ignore30m"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ab0b728caff46ec9",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/loop/AndroidLoopNotifier.kt",
+          "line": 59
+        },
+        {
+          "path": "plugins/aps/src/iosMain/kotlin/app/aaps/plugins/aps/loop/IosLoopNotifier.kt",
+          "line": 137
+        }
+      ]
+    },
+    {
+      "key": "ignore30m",
+      "ui_location": "Notification action button",
+      "kind": "button",
+      "description": "Action button on the carbs-required notification: ignore it for 30 minutes. Short button; m means minutes.",
+      "related_keys": [
+        "ignore5m",
+        "ignore15m"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ad7891f970730dd2",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/loop/AndroidLoopNotifier.kt",
+          "line": 60
+        },
+        {
+          "path": "plugins/aps/src/iosMain/kotlin/app/aaps/plugins/aps/loop/IosLoopNotifier.kt",
+          "line": 138
+        }
+      ]
+    },
+    {
+      "key": "ignore5m",
+      "ui_location": "Notification action button",
+      "kind": "button",
+      "description": "Action button on the carbs-required notification: ignore it for 5 minutes. Short button, limited space; m means minutes.",
+      "related_keys": [
+        "ignore15m",
+        "ignore30m"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f70aadea65e10b39",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/loop/AndroidLoopNotifier.kt",
+          "line": 58
+        },
+        {
+          "path": "plugins/aps/src/iosMain/kotlin/app/aaps/plugins/aps/loop/IosLoopNotifier.kt",
+          "line": 136
+        }
+      ]
+    },
+    {
+      "key": "increasing_max_basal",
+      "ui_location": "Constraint reason in loop result / Loop screen",
+      "kind": "log",
+      "description": "Reason text recorded when the max basal setting is raised because it is lower than the maximum basal in the profile. Basal is background insulin rate.",
+      "related_keys": [
+        "max_basal_multiplier"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "34d50ad4713b52ec",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 291
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 498
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 540
+        }
+      ]
+    },
+    {
+      "key": "last_run_label",
+      "ui_location": "Loop screen",
+      "kind": "label",
+      "description": "Label before the time of the last loop run. Short.",
+      "related_keys": [
+        "openapsma_last_run_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "491d3dd45fe84215",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopScreen.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "limiting_iob",
+      "ui_location": "Constraint reason in loop result",
+      "kind": "log",
+      "description": "Reason that max insulin on board (IOB) is limited. %1$.1f is the limit in units (U), %2$s the cause, a fragment such as 'hard limit' or 'max value in preferences'.",
+      "related_keys": [
+        "maxvalueinpreferences",
+        "hardlimit"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "dd231c2d8ac78b94",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 523
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 280
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 281
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 487
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 488
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 529
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 530
+        }
+      ]
+    },
+    {
+      "key": "loop_aps_label",
+      "ui_location": "Loop screen",
+      "kind": "label",
+      "description": "Label before the name of the APS algorithm plugin used. APS is the abbreviation of artificial pancreas system; keep short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "269bf904127d9cf1",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopScreen.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "loop_constraints_processed_label",
+      "ui_location": "Loop screen",
+      "kind": "label",
+      "description": "Label before the algorithm result after safety constraints were applied.",
+      "related_keys": [
+        "constraints"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f29da80de8e19c9c",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopScreen.kt",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "loop_smb_execution_time_label",
+      "ui_location": "Loop screen",
+      "kind": "label",
+      "description": "Label before the time the SMB was sent to the pump.",
+      "related_keys": [
+        "loop_smb_request_time_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "696024409f5711bb",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopScreen.kt",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "key": "loop_smb_request_time_label",
+      "ui_location": "Loop screen",
+      "kind": "label",
+      "description": "Label before the time an SMB (super micro bolus, small automatic bolus) was requested.",
+      "related_keys": [
+        "loop_smb_execution_time_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c5eb92a2a901af38",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopScreen.kt",
+          "line": 95
+        }
+      ]
+    },
+    {
+      "key": "loop_smb_set_by_pump_label",
+      "ui_location": "Loop screen",
+      "kind": "label",
+      "description": "Label before the SMB the pump confirmed it delivered.",
+      "related_keys": [
+        "loop_smb_request_time_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2bba2046fdc298f4",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopScreen.kt",
+          "line": 100
+        }
+      ]
+    },
+    {
+      "key": "loop_tbr_execution_time_label",
+      "ui_location": "Loop screen",
+      "kind": "label",
+      "description": "Label before the time the temporary basal rate was sent to the pump.",
+      "related_keys": [
+        "loop_tbr_request_time_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5f06ccccbcf9d50b",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopScreen.kt",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "key": "loop_tbr_request_time_label",
+      "ui_location": "Loop screen",
+      "kind": "label",
+      "description": "Label before the time a temporary basal rate (TBR) was requested.",
+      "related_keys": [
+        "loop_tbr_execution_time_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2e38dcea7d6510b8",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopScreen.kt",
+          "line": 82
+        }
+      ]
+    },
+    {
+      "key": "loop_tbr_set_by_pump_label",
+      "ui_location": "Loop screen",
+      "kind": "label",
+      "description": "Label before the temporary basal the pump confirmed it is running.",
+      "related_keys": [
+        "loop_tbr_request_time_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "61fe0b316b5e618e",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopScreen.kt",
+          "line": 87
+        }
+      ]
+    },
+    {
+      "key": "max_basal_multiplier",
+      "ui_location": "Constraint reason",
+      "kind": "log",
+      "description": "Fragment inserted as the limiting cause into the 'limiting basal rate' reason: the profile max basal multiplier. Lowercase, not a sentence.",
+      "related_keys": [
+        "max_daily_basal_multiplier",
+        "hardlimit"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "663fa4eae16e41e1",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 300
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 507
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 549
+        }
+      ]
+    },
+    {
+      "key": "max_daily_basal_multiplier",
+      "ui_location": "Constraint reason",
+      "kind": "log",
+      "description": "Fragment inserted as the limiting cause into the 'limiting basal rate' reason: the max daily basal multiplier. Lowercase fragment.",
+      "related_keys": [
+        "max_basal_multiplier"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "a53541fea43bac58",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 305
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 512
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 554
+        }
+      ]
+    },
+    {
+      "key": "maxvalueinpreferences",
+      "ui_location": "Constraint reason",
+      "kind": "log",
+      "description": "Fragment naming the cause of a limit: the value set in preferences. Inserted into other messages, lowercase.",
+      "related_keys": [
+        "hardlimit",
+        "limiting_iob"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "00cfce68e64a08c8",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 280
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 293
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 487
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 500
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 529
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 542
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 152
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 169
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 184
+        }
+      ]
+    },
+    {
+      "key": "no_aps_selected",
+      "ui_location": "Loop screen",
+      "kind": "status",
+      "description": "Shown in the loop result when no algorithm plugin is selected or it gave no result. Uppercase on purpose.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "44f0dec875039c8a",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 589
+        }
+      ]
+    },
+    {
+      "key": "open_loop_new_suggestion",
+      "ui_location": "Notification; watch",
+      "kind": "notification",
+      "description": "Title of the notification (and message on the watch) shown in open loop mode when the algorithm has a new proposal the user has to accept.",
+      "related_keys": [
+        "open_loop_suggestion_too_old"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "21abaf4d53354dca",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/loop/AndroidLoopNotifier.kt",
+          "line": 67
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 803
+        },
+        {
+          "path": "plugins/aps/src/iosMain/kotlin/app/aaps/plugins/aps/loop/IosLoopNotifier.kt",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "key": "open_loop_suggestion_too_old",
+      "ui_location": "Open loop dialog",
+      "kind": "error",
+      "description": "Error shown when the user accepts an old open loop suggestion; nothing was sent to the pump.",
+      "related_keys": [
+        "open_loop_new_suggestion"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d496ca8c75c24db1",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 837
+        }
+      ]
+    },
+    {
+      "key": "openaps_auto_isf",
+      "ui_location": "Config builder > APS",
+      "kind": "title",
+      "description": "Name of the Auto ISF algorithm plugin, an OpenAPS variant. Shown in the plugin list and as preference screen title.",
+      "related_keys": [
+        "description_auto_isf"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "db3d0dc2c2dc65e4",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 117
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 937
+        }
+      ]
+    },
+    {
+      "key": "openaps_no_as_data",
+      "ui_location": "OpenAPS screen (algorithm run details)",
+      "kind": "status",
+      "description": "Message shown in the algorithm result area when autosens (automatic sensitivity detection) has no data yet.",
+      "related_keys": [
+        "openapsma_autosensdata_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9cd41e2df7a48c12",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 171
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 303
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 608
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 395
+        }
+      ]
+    },
+    {
+      "key": "openaps_smb_dynamic_isf",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "openapsama",
+      "ui_location": "Config builder > APS",
+      "kind": "title",
+      "description": "Name of the OpenAPS AMA algorithm plugin (AMA = advanced meal assist). Shown in the plugin list and as preference screen title.",
+      "related_keys": [
+        "description_ama"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "69982a5a7a81ae44",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 97
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 319
+        }
+      ]
+    },
+    {
+      "key": "openapsama_link_to_preference_json_doc_txt",
+      "ui_location": "Preferences > OpenAPS SMB/AMA/AutoISF",
+      "kind": "preference_summary",
+      "description": "Warning text on a clickable preference that opens documentation; tells advanced settings below normally should not be changed. Keeps capitalised CLICK HERE and READ for emphasis.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1751929dcaa83c6f",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/keys/ApsIntentKey.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "openapsma_autosensdata_label",
+      "ui_location": "OpenAPS screen (algorithm run details)",
+      "kind": "title",
+      "description": "Section heading for autosens data (automatically detected sensitivity ratio).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6bbd84d30686011b",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/compose/OpenAPSViewModel.kt",
+          "line": 165
+        }
+      ]
+    },
+    {
+      "key": "openapsma_current_temp_label",
+      "ui_location": "OpenAPS screen (algorithm run details)",
+      "kind": "title",
+      "description": "Section heading showing the currently running temporary basal rate that is fed into the algorithm.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "33515c1f6580776e",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/compose/OpenAPSViewModel.kt",
+          "line": 122
+        }
+      ]
+    },
+    {
+      "key": "openapsma_disabled",
+      "ui_location": "OpenAPS screen (algorithm run details)",
+      "kind": "status",
+      "description": "Message shown in the algorithm result area (and debug log) when the algorithm plugin is disabled.",
+      "related_keys": [
+        "openapsma_no_glucose_data"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "cb01474b387e07bd",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 126
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 127
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 249
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 250
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 298
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 299
+        }
+      ]
+    },
+    {
+      "key": "openapsma_glucose_status_label",
+      "ui_location": "OpenAPS screen (algorithm run details)",
+      "kind": "title",
+      "description": "Section heading showing the glucose status input (current value and deltas).",
+      "related_keys": [
+        "openapsma_input_parameters_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "bedd8c8b1d9b9972",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/compose/OpenAPSViewModel.kt",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "key": "openapsma_input_parameters_label",
+      "ui_location": "OpenAPS screen (algorithm run details)",
+      "kind": "title",
+      "description": "Group heading above the data given to the algorithm as input.",
+      "related_keys": [
+        "openapsma_glucose_status_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "62f8f2f79de3e2fd",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/compose/OpenAPSViewModel.kt",
+          "line": 93
+        }
+      ]
+    },
+    {
+      "key": "openapsma_iob_data_label",
+      "ui_location": "OpenAPS screen (algorithm run details)",
+      "kind": "title",
+      "description": "Section heading for insulin-on-board (IOB, active insulin) input data.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e53a0d141fca26bd",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/compose/OpenAPSViewModel.kt",
+          "line": 132
+        }
+      ]
+    },
+    {
+      "key": "openapsma_last_run_label",
+      "ui_location": "OpenAPS screen (algorithm run details)",
+      "kind": "label",
+      "description": "Label before the time of the last algorithm run. Short.",
+      "related_keys": [
+        "last_run_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "18b44828cb8bd811",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/compose/OpenAPSScreen.kt",
+          "line": 83
+        }
+      ]
+    },
+    {
+      "key": "openapsma_meal_data_label",
+      "ui_location": "OpenAPS screen (algorithm run details)",
+      "kind": "title",
+      "description": "Section heading for meal data (carbs on board and absorption) input.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fb4b586d58d6bb70",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/compose/OpenAPSViewModel.kt",
+          "line": 155
+        }
+      ]
+    },
+    {
+      "key": "openapsma_no_glucose_data",
+      "ui_location": "OpenAPS screen (algorithm run details)",
+      "kind": "status",
+      "description": "Message shown in the algorithm result area when there is no glucose reading to calculate from.",
+      "related_keys": [
+        "openapsma_disabled"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "97dd2437277afefd",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 131
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 132
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 254
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 255
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 303
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 304
+        }
+      ]
+    },
+    {
+      "key": "openapsma_profile_label",
+      "ui_location": "OpenAPS screen (algorithm run details)",
+      "kind": "title",
+      "description": "Section heading for the profile (basal, ISF, carb ratio, targets) input.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "82cf8c20c8f18064",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/compose/OpenAPSViewModel.kt",
+          "line": 144
+        }
+      ]
+    },
+    {
+      "key": "openapsma_request_label",
+      "ui_location": "OpenAPS screen (algorithm run details)",
+      "kind": "title",
+      "description": "Section heading for the algorithm's result: the request for temp basal or SMB.",
+      "related_keys": [
+        "request_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "79c95186d3f10335",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/compose/OpenAPSViewModel.kt",
+          "line": 204
+        }
+      ]
+    },
+    {
+      "key": "openapsma_script_debug_data_label",
+      "ui_location": "OpenAPS screen (algorithm run details)",
+      "kind": "title",
+      "description": "Section heading for the debug output of the algorithm script; technical.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "da48ed24f114e830",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/compose/OpenAPSViewModel.kt",
+          "line": 179
+        }
+      ]
+    },
+    {
+      "key": "openapssmb",
+      "ui_location": "Config builder > APS",
+      "kind": "title",
+      "description": "Name of the OpenAPS SMB algorithm plugin (SMB = super micro bolus). Product name, shown in the plugin list and as the preference screen title.",
+      "related_keys": [
+        "description_smb"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1f5921eb008268b3",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 118
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 586
+        }
+      ]
+    },
+    {
+      "key": "pump_disconnected",
+      "ui_location": "Running mode status; bolus wizard",
+      "kind": "status",
+      "description": "Reason shown when a pump command is blocked or the running mode is 'disconnected': the pump was disconnected by the user. Short status phrase.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2d0d9fd41820539e",
+      "usages": [
+        {
+          "path": "core/objects/src/commonMain/kotlin/app/aaps/core/objects/runningMode/RunningModeGuard.kt",
+          "line": 55
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 947
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/CommandQueueImplementation.kt",
+          "line": 282
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExecutor.kt",
+          "line": 116
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExpiryRunner.kt",
+          "line": 83
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 254
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 292
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 461
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 393
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 443
+        }
+      ]
+    },
+    {
+      "key": "pump_not_initialized",
+      "ui_location": "Loop result",
+      "kind": "error",
+      "description": "Message shown as loop result when the pump driver is not yet ready. Whole sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a94180d54a625110",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 869
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 870
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 953
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 954
+        }
+      ]
+    },
+    {
+      "key": "request_label",
+      "ui_location": "Loop screen",
+      "kind": "label",
+      "description": "Label before the algorithm's request (temp basal or SMB proposal), shown as full-width row.",
+      "related_keys": [
+        "openapsma_request_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8d6ff3dcbb2bf7e3",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopScreen.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "smb_delivery_settings_title",
+      "ui_location": "Preferences > OpenAPS SMB/AMA/AutoISF > Auto ISF",
+      "kind": "preference_title",
+      "description": "Title of the group of preferences about how SMB (small automatic boluses) are delivered.",
+      "related_keys": [
+        "autoISF_settings_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c9de82adefce84ad",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 986
+        }
+      ]
+    },
+    {
+      "key": "smb_disabled_in_preferences",
+      "ui_location": "Constraint reason in loop result",
+      "kind": "log",
+      "description": "Reason shown when SMB (super micro bolus) is not allowed because the user turned it off in preferences.",
+      "related_keys": [
+        "uam_disabled_in_preferences"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "fab1396265a55267",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 519
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 561
+        }
+      ]
+    },
+    {
+      "key": "smb_frequency_exceeded",
+      "ui_location": "Loop result",
+      "kind": "error",
+      "description": "Message when an SMB (super micro bolus) is skipped because a bolus was delivered in the last three minutes. Whole sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e602f9b74f4f7da5",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 950
+        }
+      ]
+    },
+    {
+      "key": "uam_disabled_in_preferences",
+      "ui_location": "Constraint reason in loop result",
+      "kind": "log",
+      "description": "Reason shown when UAM (unannounced meals detection) is off in preferences.",
+      "related_keys": [
+        "smb_disabled_in_preferences"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "43c84124e4ae97cb",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 525
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 567
+        }
+      ]
+    },
+    {
+      "key": "zero_basal_not_set",
+      "ui_location": "Alarm notification",
+      "kind": "notification",
+      "description": "Alarm text when the pump rejected a zero temporary basal, so insulin might still be delivered; user is asked to check the pump. Important safety warning.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fcba282393f6be19",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/runningMode/RunningModeReconciler.kt",
+          "line": 256
+        }
+      ]
+    }
+  ]
+}

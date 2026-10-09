@@ -1,0 +1,1384 @@
+{
+  "schema_version": 1,
+  "source_path": "implementation/src/androidMain/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "backup_to_google_drive",
+      "ui_location": "Settings > Import/Export > Cloud storage",
+      "kind": "summary",
+      "description": "Short description of the cloud storage option: settings backups go to Google Drive.",
+      "related_keys": [
+        "storage_google_drive"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "46caedf647665dc0",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/cloud/CloudDirectoryManagerImpl.kt",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "key": "basal_value_below_minimum",
+      "ui_location": "Notification list; command result",
+      "kind": "error",
+      "description": "Error shown when a profile cannot be sent to the pump because a basal rate is lower than the pump's minimum. Basal is the continuous background insulin rate. Whole sentence plus short status.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e8441befadd8968f",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/CommandQueueImplementation.kt",
+          "line": 664
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/CommandQueueImplementation.kt",
+          "line": 665
+        }
+      ]
+    },
+    {
+      "key": "bolus_with_volume",
+      "ui_location": "Bolus amount display (concentrated insulin)",
+      "kind": "label",
+      "description": "Bolus amount with its liquid volume. %1$s is the number of insulin units (U), %2$.1f the volume in microlitres. \\u00a0 is a non-breaking space; keep it between number and unit.",
+      "related_keys": [
+        "insulin_concentration"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "7f30672f0c0e93de",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/insulin/ConcentrationHelperImpl.kt",
+          "line": 122
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/insulin/ConcentrationHelperImpl.kt",
+          "line": 128
+        }
+      ]
+    },
+    {
+      "key": "carbs_short",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "cloud_directory_path",
+      "ui_location": "Settings > Import/Export",
+      "kind": "status",
+      "description": "Second line of the CSV upload snackbar. %1$s is the name or path of the cloud folder.",
+      "related_keys": [
+        "csv_uploaded_to_cloud"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7590d1fd7da9cb4e",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/ImportExportPrefsImpl.kt",
+          "line": 833
+        }
+      ]
+    },
+    {
+      "key": "concentration_ago_format",
+      "ui_location": "Insulin delivery history line",
+      "kind": "other",
+      "description": "Pattern for a past delivery: %1$s the amount, %2$s the time, %3$d minutes. The apostrophe stands for minutes.",
+      "related_keys": [
+        "concentration_tbr_format"
+      ],
+      "confidence": 0.6,
+      "usages_hash": "0d98e4e8ea2bbfc8",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/insulin/ConcentrationHelperImpl.kt",
+          "line": 101
+        }
+      ]
+    },
+    {
+      "key": "concentration_delivered_format",
+      "ui_location": "Insulin delivery progress",
+      "kind": "other",
+      "description": "Pattern 'delivered/total': %1$s the amount already delivered, %2$s the total amount. Only a separator is translatable.",
+      "related_keys": [
+        "concentration_format"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "1f260f87f603e643",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/insulin/ConcentrationHelperImpl.kt",
+          "line": 106
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/insulin/ConcentrationHelperImpl.kt",
+          "line": 111
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/insulin/ConcentrationHelperImpl.kt",
+          "line": 114
+        }
+      ]
+    },
+    {
+      "key": "concentration_etbr_format",
+      "ui_location": "Extended bolus text (concentrated insulin)",
+      "kind": "other",
+      "description": "Same as the temporary basal pattern but for an extended bolus, prefixed with E: %1$s rate, %2$s start time, %3$d/%4$d minutes delivered of total.",
+      "related_keys": [
+        "concentration_tbr_format"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "82213ae9125d4491",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/insulin/ConcentrationHelperImpl.kt",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "key": "concentration_format",
+      "ui_location": "Amounts shown for non-standard insulin concentration",
+      "kind": "other",
+      "description": "Combines the same amount in two measures: %1$s the amount in standard insulin units (IU), %2$s the amount in concentration units (CU) in brackets. Not translatable text, only a pattern.",
+      "related_keys": [
+        "pump_base_basal_rate_cu_dynamic"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "2401166c65166ad7",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/insulin/ConcentrationHelperImpl.kt",
+          "line": 65
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/insulin/ConcentrationHelperImpl.kt",
+          "line": 85
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/insulin/ConcentrationHelperImpl.kt",
+          "line": 115
+        }
+      ]
+    },
+    {
+      "key": "concentration_tbr_format",
+      "ui_location": "Temporary basal text (concentrated insulin)",
+      "kind": "other",
+      "description": "Pattern for a temporary basal (TBR): %1$s the rate, %2$s the start time, %3$d minutes delivered of %4$d total minutes. The apostrophe stands for minutes.",
+      "related_keys": [
+        "concentration_etbr_format"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "d9aba9ffb0304da9",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/insulin/ConcentrationHelperImpl.kt",
+          "line": 73
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/insulin/ConcentrationHelperImpl.kt",
+          "line": 101
+        }
+      ]
+    },
+    {
+      "key": "csv_upload_error",
+      "ui_location": "Settings > Import/Export > User entries export",
+      "kind": "error",
+      "description": "Snackbar when an unexpected error occurred during the CSV upload to the cloud.",
+      "related_keys": [
+        "csv_upload_failed"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "aa18587d6bdb6b73",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/ImportExportPrefsImpl.kt",
+          "line": 842
+        }
+      ]
+    },
+    {
+      "key": "csv_upload_failed",
+      "ui_location": "Settings > Import/Export > User entries export",
+      "kind": "error",
+      "description": "Snackbar when the upload of the User Entries CSV to cloud storage failed.",
+      "related_keys": [
+        "csv_uploaded_to_cloud"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5f2b24cb99e9fada",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/ImportExportPrefsImpl.kt",
+          "line": 801
+        },
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/ImportExportPrefsImpl.kt",
+          "line": 837
+        }
+      ]
+    },
+    {
+      "key": "csv_uploaded_to_cloud",
+      "ui_location": "Settings > Import/Export > User entries export",
+      "kind": "toast",
+      "description": "Snackbar after uploading the User Entries (log of user actions) CSV to cloud storage; the cloud directory line follows below it.",
+      "related_keys": [
+        "cloud_directory_path",
+        "csv_upload_failed"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7590d1fd7da9cb4e",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/ImportExportPrefsImpl.kt",
+          "line": 833
+        }
+      ]
+    },
+    {
+      "key": "error_accessing_filesystem_select_aaps_directory_properly",
+      "ui_location": "Settings > Import/Export",
+      "kind": "error",
+      "description": "Snackbar shown when the app cannot read or write the storage directory; tells the user to pick the AAPS directory again.",
+      "related_keys": [
+        "permission_directory_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c6b410086de8cf89",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/FileListProviderImpl.kt",
+          "line": 87
+        },
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/FileListProviderImpl.kt",
+          "line": 114
+        },
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/ImportExportPrefsImpl.kt",
+          "line": 856
+        },
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/formats/EncryptedPrefsFormat.kt",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "key": "executing_right_now",
+      "ui_location": "Command queue error",
+      "kind": "error",
+      "description": "Error text returned when a pump command is requested while the same command is already being executed. Sentence fragment, shown to the user as the result of the command.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "e8dd7b309937b21d",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/CommandQueueImplementation.kt",
+          "line": 264
+        }
+      ]
+    },
+    {
+      "key": "export_to_cloud_failed",
+      "ui_location": "Settings > Import/Export",
+      "kind": "error",
+      "description": "Snackbar after exporting settings: upload to cloud storage failed.",
+      "related_keys": [
+        "exported_to_cloud"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f42040e664ce5f23",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/ImportExportPrefsImpl.kt",
+          "line": 276
+        }
+      ]
+    },
+    {
+      "key": "exported",
+      "ui_location": "Settings > Import/Export",
+      "kind": "toast",
+      "description": "Snackbar after settings were exported to a local file successfully.",
+      "related_keys": [
+        "exported_failed"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a1f65f4275e44126",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/ImportExportPrefsImpl.kt",
+          "line": 259
+        }
+      ]
+    },
+    {
+      "key": "exported_ago",
+      "ui_location": "Settings file import dialog > file list",
+      "kind": "status",
+      "description": "Small caption under a settings file in the import list. %1$s is a ready-made duration such as '3 hours' or '2 days'.",
+      "related_keys": [
+        "exported_at",
+        "exported_less_than_hour_ago"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "350754aa5686962d",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/FileListProviderImpl.kt",
+          "line": 267
+        },
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/FileListProviderImpl.kt",
+          "line": 269
+        }
+      ]
+    },
+    {
+      "key": "exported_at",
+      "ui_location": "Settings file import dialog > file list",
+      "kind": "status",
+      "description": "Caption under a settings file in the import list when the export is older than a few days. %1$s is a date (yyyy-mm-dd).",
+      "related_keys": [
+        "exported_ago"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d394b8106968048a",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/FileListProviderImpl.kt",
+          "line": 271
+        }
+      ]
+    },
+    {
+      "key": "exported_failed",
+      "ui_location": "Settings > Import/Export",
+      "kind": "error",
+      "description": "Snackbar shown when exporting settings to a local file failed.",
+      "related_keys": [
+        "exported"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a1f65f4275e44126",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/ImportExportPrefsImpl.kt",
+          "line": 259
+        }
+      ]
+    },
+    {
+      "key": "exported_less_than_hour_ago",
+      "ui_location": "Settings file import dialog > file list",
+      "kind": "status",
+      "description": "Caption under a settings file in the import list for an export made within the last hour.",
+      "related_keys": [
+        "exported_ago"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7baff162c504cc79",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/FileListProviderImpl.kt",
+          "line": 265
+        }
+      ]
+    },
+    {
+      "key": "exported_to_cloud",
+      "ui_location": "Settings > Import/Export",
+      "kind": "toast",
+      "description": "Snackbar after exporting settings: upload to cloud storage worked.",
+      "related_keys": [
+        "export_to_cloud_failed",
+        "exported"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f42040e664ce5f23",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/ImportExportPrefsImpl.kt",
+          "line": 276
+        }
+      ]
+    },
+    {
+      "key": "filenotfound",
+      "ui_location": "Settings > Import/Export > User entries export",
+      "kind": "error",
+      "description": "Snackbar error followed by a space and a file name; the file the app expected after export was not found. Short.",
+      "related_keys": [
+        "ue_exported"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "43b5740a5f307008",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/ImportExportPrefsImpl.kt",
+          "line": 784
+        }
+      ]
+    },
+    {
+      "key": "google_drive_authorized",
+      "ui_location": "Settings > Import/Export > Cloud storage",
+      "kind": "status",
+      "description": "Status shown in the cloud storage settings when the user has granted AAPS access to Google Drive.",
+      "related_keys": [
+        "google_drive_reauth_required"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "5dabf472316816c4",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/cloud/GoogleDriveProvider.kt",
+          "line": 342
+        }
+      ]
+    },
+    {
+      "key": "google_drive_connect_error",
+      "ui_location": "Settings > Import/Export > Cloud storage",
+      "kind": "error",
+      "description": "Error shown when connecting to Google Drive failed. %1$s is the technical error message, in English.",
+      "related_keys": [
+        "google_drive_reauth_required"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6a63f33af94c291d",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/cloud/GoogleDriveProvider.kt",
+          "line": 253
+        }
+      ]
+    },
+    {
+      "key": "google_drive_connection_test_failed",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "google_drive_download_error",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "google_drive_download_failed",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "google_drive_folder_access_error",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "google_drive_list_folders_error",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "google_drive_list_folders_failed",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "google_drive_list_settings_error",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "google_drive_list_settings_failed",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "google_drive_reauth_required",
+      "ui_location": "Settings > Import/Export > Cloud storage",
+      "kind": "status",
+      "description": "Message telling the user to clear the Google Drive settings and authorise again because access no longer works.",
+      "related_keys": [
+        "google_drive_authorized"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "64440cb6c5636008",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/cloud/GoogleDriveProvider.kt",
+          "line": 246
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/cloud/GoogleDriveProvider.kt",
+          "line": 343
+        }
+      ]
+    },
+    {
+      "key": "google_drive_token_refresh_error",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "google_drive_token_refresh_failed",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "google_drive_upload_error",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "google_drive_upload_failed",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "google_drive_upload_no_id",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "google_drive_upload_verify_failed",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "insulin_concentration",
+      "ui_location": "Insulin concentration label",
+      "kind": "label",
+      "description": "Insulin concentration name such as U100 or U200: U followed by the units per millilitre (%1$d). Keep the pattern.",
+      "related_keys": [
+        "bolus_with_volume"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "ed485f5b57516cae",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/insulin/ConcentrationHelperImpl.kt",
+          "line": 119
+        }
+      ]
+    },
+    {
+      "key": "metadata_format_new",
+      "ui_location": "Settings > Import/Export > Import settings > file details",
+      "kind": "status",
+      "description": "Value of the file format row for the current encrypted settings format.",
+      "related_keys": [
+        "metadata_label_format"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "26e88fa352654fbb",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/PrefsMetadataKeyImpl.kt",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "key": "metadata_format_other",
+      "ui_location": "Settings > Import/Export > Import settings > file details",
+      "kind": "status",
+      "description": "Value of the file format row when the format is not recognised; also used as an error when reading metadata.",
+      "related_keys": [
+        "metadata_label_format"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f879b150681bf752",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/PrefsMetadataKeyImpl.kt",
+          "line": 48
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/formats/PrefsFormatCodec.kt",
+          "line": 252
+        }
+      ]
+    },
+    {
+      "key": "metadata_label_aaps_flavour",
+      "ui_location": "Settings > Import/Export > Import settings > file details",
+      "kind": "label",
+      "description": "Row label in the file details list; the value is the build variant (flavour) of AAPS, such as full or pumpcontrol.",
+      "related_keys": [
+        "metadata_warning_different_flavour"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "120eadc88ca10e65",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/PrefsMetadataKeyImpl.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "metadata_label_aaps_version",
+      "ui_location": "Settings > Import/Export > Import settings > file details",
+      "kind": "label",
+      "description": "Row label in the file details list; the value is the AAPS version that made the file. AAPS is the app's name.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "66543ff9e1f4ded2",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/PrefsMetadataKeyImpl.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "metadata_label_created_at",
+      "ui_location": "Settings > Import/Export > Import settings > file details",
+      "kind": "label",
+      "description": "Row label in the file details list; the value is the export date and time. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c007c95ee37c397d",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/PrefsMetadataKeyImpl.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "metadata_label_device_model",
+      "ui_location": "Settings > Import/Export > Import settings > file details",
+      "kind": "label",
+      "description": "Row label in the file details list; the value is the phone model that exported the file.",
+      "related_keys": [
+        "metadata_warning_different_device"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0e1bddc7e095a6be",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/PrefsMetadataKeyImpl.kt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "metadata_label_device_name",
+      "ui_location": "Settings > Import/Export > Import settings > file details",
+      "kind": "label",
+      "description": "Row label in the file details list; the value is the patient name configured on the exporting phone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2aa6acd47427c9ee",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/PrefsMetadataKeyImpl.kt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "metadata_label_encryption",
+      "ui_location": "Settings > Import/Export > Import settings > file details",
+      "kind": "label",
+      "description": "Row label in the file details list; the value says whether and how the file is encrypted.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7bb6e8cf738f7623",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/PrefsMetadataKeyImpl.kt",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "key": "metadata_label_format",
+      "ui_location": "Settings > Import/Export > Import settings > file details",
+      "kind": "label",
+      "description": "Row label in the settings file details list; the value is the file format. Short noun phrase.",
+      "related_keys": [
+        "metadata_format_new"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3b01b93089b0b1a9",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/PrefsMetadataKeyImpl.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "metadata_urgent_different_version",
+      "ui_location": "Settings > Import/Export > Import settings > file details",
+      "kind": "dialog_text",
+      "description": "Stronger warning that the settings file was made by a different major version, whose preferences may be incompatible.",
+      "related_keys": [
+        "metadata_warning_different_version"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "36420a1eaafe93d9",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/FileListProviderImpl.kt",
+          "line": 251
+        }
+      ]
+    },
+    {
+      "key": "metadata_warning_date_format",
+      "ui_location": "Settings > Import/Export > Import settings > file details",
+      "kind": "error",
+      "description": "Shown when the creation date stored in the settings file cannot be parsed.",
+      "related_keys": [
+        "metadata_label_created_at"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "002ba2879607251b",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/FileListProviderImpl.kt",
+          "line": 236
+        }
+      ]
+    },
+    {
+      "key": "metadata_warning_different_device",
+      "ui_location": "Settings > Import/Export > Import settings > file details",
+      "kind": "dialog_text",
+      "description": "Warning that the settings file was exported on another phone; usually harmless but the user should verify the values.",
+      "related_keys": [
+        "metadata_label_device_model"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "424b948c44e0ff89",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/FileListProviderImpl.kt",
+          "line": 219
+        }
+      ]
+    },
+    {
+      "key": "metadata_warning_different_flavour",
+      "ui_location": "Settings > Import/Export > Import settings > file details",
+      "kind": "dialog_text",
+      "description": "Warning that the settings file came from a different build variant of AAPS. %1$s is the variant in the file, %2$s the installed one. Contains a paragraph break.",
+      "related_keys": [
+        "metadata_label_aaps_flavour"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0aadb74ed4d5e164",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/FileListProviderImpl.kt",
+          "line": 212
+        }
+      ]
+    },
+    {
+      "key": "metadata_warning_different_version",
+      "ui_location": "Settings > Import/Export > Import settings > file details",
+      "kind": "dialog_text",
+      "description": "Warning that the settings file was made by a different minor version of AAPS; usually fine after upgrade but should be checked.",
+      "related_keys": [
+        "metadata_urgent_different_version"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "75dd7dbf538c4eb5",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/FileListProviderImpl.kt",
+          "line": 246
+        }
+      ]
+    },
+    {
+      "key": "metadata_warning_old_export",
+      "ui_location": "Settings > Import/Export > Import settings > file details",
+      "kind": "dialog_text",
+      "description": "Warning that the settings file is old. %1$s is the number of days. Encourages exporting settings regularly.",
+      "related_keys": [
+        "metadata_label_created_at"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "23c0aba5f56dc079",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/FileListProviderImpl.kt",
+          "line": 232
+        }
+      ]
+    },
+    {
+      "key": "permission_battery_description",
+      "ui_location": "Permission rationale dialog",
+      "kind": "dialog_text",
+      "description": "Explanation under the battery optimization title: the app must keep running in the background, for example to talk to the pump.",
+      "related_keys": [
+        "permission_battery_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a5c019974457abbd",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/plugin/PluginPermissionsImpl.kt",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "key": "permission_battery_title",
+      "ui_location": "Permission rationale dialog",
+      "kind": "dialog_title",
+      "description": "Title explaining why the app asks to be excluded from Android battery optimization. Noun phrase.",
+      "related_keys": [
+        "permission_battery_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "973b85263298e1c4",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/plugin/PluginPermissionsImpl.kt",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "key": "permission_directory_description",
+      "ui_location": "Permission rationale dialog",
+      "kind": "dialog_text",
+      "description": "Explains that the user should choose a folder where the app keeps its settings and log files.",
+      "related_keys": [
+        "permission_directory_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "61212fa150150290",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/plugin/PluginPermissionsImpl.kt",
+          "line": 87
+        }
+      ]
+    },
+    {
+      "key": "permission_directory_title",
+      "ui_location": "Permission rationale dialog",
+      "kind": "dialog_title",
+      "description": "Title of the request to pick a storage directory (called the AAPS directory) on the phone. Noun phrase.",
+      "related_keys": [
+        "permission_directory_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "296c90c208dc6df3",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/plugin/PluginPermissionsImpl.kt",
+          "line": 86
+        }
+      ]
+    },
+    {
+      "key": "permission_notifications_description",
+      "ui_location": "Permission rationale dialog",
+      "kind": "dialog_text",
+      "description": "Explains that notifications are needed to deliver alerts, alarms and pump status updates.",
+      "related_keys": [
+        "permission_notifications_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a3f6e78412bcb219",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/plugin/PluginPermissionsImpl.kt",
+          "line": 101
+        }
+      ]
+    },
+    {
+      "key": "permission_notifications_title",
+      "ui_location": "Permission rationale dialog",
+      "kind": "dialog_title",
+      "description": "Title of the request for the Android notification permission. Noun.",
+      "related_keys": [
+        "permission_notifications_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "de02b639f0f5e425",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/plugin/PluginPermissionsImpl.kt",
+          "line": 100
+        }
+      ]
+    },
+    {
+      "key": "permission_schedule_exact_alarm_description",
+      "ui_location": "Permission rationale dialog",
+      "kind": "dialog_text",
+      "description": "Explains that the permission lets alarms wake the screen while the app is in the background and lets reminders ring on time.",
+      "related_keys": [
+        "permission_schedule_exact_alarm_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f9579502cb6a0831",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/plugin/PluginPermissionsImpl.kt",
+          "line": 123
+        }
+      ]
+    },
+    {
+      "key": "permission_schedule_exact_alarm_title",
+      "ui_location": "Permission rationale dialog",
+      "kind": "dialog_title",
+      "description": "Title of the request for Android's exact-alarm permission. Noun phrase.",
+      "related_keys": [
+        "permission_schedule_exact_alarm_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d8d2526300e7141e",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/plugin/PluginPermissionsImpl.kt",
+          "line": 122
+        }
+      ]
+    },
+    {
+      "key": "prefdecrypt_issue_missing_file_hash",
+      "ui_location": "Settings > Import/Export > Import settings > file details > issues list",
+      "kind": "error",
+      "description": "Issue listed when the settings file has no checksum (hash), so authenticity cannot be verified.",
+      "related_keys": [
+        "prefdecrypt_issue_modified"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3bc9262f297669e1",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/formats/PrefsFormatCodec.kt",
+          "line": 154
+        }
+      ]
+    },
+    {
+      "key": "prefdecrypt_issue_modified",
+      "ui_location": "Settings > Import/Export > Import settings > file details > issues list",
+      "kind": "error",
+      "description": "Issue listed when the file's checksum does not match, meaning it changed after being exported.",
+      "related_keys": [
+        "prefdecrypt_issue_missing_file_hash"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "743dcd6b59b9d2b2",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/formats/PrefsFormatCodec.kt",
+          "line": 157
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/formats/PrefsFormatCodec.kt",
+          "line": 189
+        }
+      ]
+    },
+    {
+      "key": "prefdecrypt_issue_parsing",
+      "ui_location": "Settings > Import/Export > Import settings > file details > issues list",
+      "kind": "error",
+      "description": "Issue listed when decryption produced data that could not be read as preferences.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "00c2dc009148c4a7",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/formats/PrefsFormatCodec.kt",
+          "line": 194
+        }
+      ]
+    },
+    {
+      "key": "prefdecrypt_issue_wrong_algorithm",
+      "ui_location": "Settings > Import/Export > Import settings > file details > issues list",
+      "kind": "error",
+      "description": "Issue listed when the encryption algorithm in the file is unknown or absent.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "acdb7a3c551470b7",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/formats/PrefsFormatCodec.kt",
+          "line": 167
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/formats/PrefsFormatCodec.kt",
+          "line": 206
+        }
+      ]
+    },
+    {
+      "key": "prefdecrypt_issue_wrong_format",
+      "ui_location": "Settings > Import/Export > Import settings > file details > issues list",
+      "kind": "error",
+      "description": "Issue listed when the encryption configuration is missing from the settings file.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e32cbdc79105403d",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/formats/PrefsFormatCodec.kt",
+          "line": 172
+        }
+      ]
+    },
+    {
+      "key": "prefdecrypt_issue_wrong_pass",
+      "ui_location": "Settings > Import/Export > Import settings > file details > issues list",
+      "kind": "error",
+      "description": "Issue listed when decryption fails: password invalid or file modified; may also happen if the file was exported with a different master password.",
+      "related_keys": [
+        "prefdecrypt_wrong_password"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "573d80de2433dc2f",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/formats/PrefsFormatCodec.kt",
+          "line": 185
+        }
+      ]
+    },
+    {
+      "key": "prefdecrypt_settings_secure",
+      "ui_location": "Settings > Import/Export > Import settings > file details > security status",
+      "kind": "status",
+      "description": "Security verdict shown when the settings file passed all integrity and encryption checks.",
+      "related_keys": [
+        "prefdecrypt_settings_tampered"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ac7276fada48d2ba",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/formats/PrefsFormatCodec.kt",
+          "line": 222
+        }
+      ]
+    },
+    {
+      "key": "prefdecrypt_settings_tampered",
+      "ui_location": "Settings > Import/Export > Import settings > file details > security status",
+      "kind": "status",
+      "description": "Security verdict shown when the settings file failed integrity checks, so it may have been altered.",
+      "related_keys": [
+        "prefdecrypt_settings_secure"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3b3aa2fdf82e9a69",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/formats/PrefsFormatCodec.kt",
+          "line": 149
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/formats/PrefsFormatCodec.kt",
+          "line": 225
+        }
+      ]
+    },
+    {
+      "key": "prefdecrypt_settings_unencrypted",
+      "ui_location": "Settings > Import/Export > Import settings > file details > security status",
+      "kind": "status",
+      "description": "Security note shown when the settings file uses the old unencrypted format.",
+      "related_keys": [
+        "prefdecrypt_settings_secure"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "992499de813680b5",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/formats/PrefsFormatCodec.kt",
+          "line": 224
+        }
+      ]
+    },
+    {
+      "key": "prefdecrypt_wrong_json",
+      "ui_location": "Settings > Import/Export > Import settings > file details > security status",
+      "kind": "error",
+      "description": "Error shown when the settings file lacks one of the required JSON fields: format, content, metadata, security. The words in brackets are field names.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d9a6c64ff72478f8",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/formats/PrefsFormatCodec.kt",
+          "line": 246
+        }
+      ]
+    },
+    {
+      "key": "prefdecrypt_wrong_password",
+      "ui_location": "Settings > Import/Export > Import settings > file details > security status",
+      "kind": "error",
+      "description": "Error shown when the password entered does not decrypt the settings file.",
+      "related_keys": [
+        "prefdecrypt_issue_wrong_pass"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f9deb2ebf30ad4e4",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/formats/PrefsFormatCodec.kt",
+          "line": 186
+        }
+      ]
+    },
+    {
+      "key": "pump_base_basal_rate_cu_dynamic",
+      "ui_location": "Basal rate display (concentrated insulin)",
+      "kind": "label",
+      "description": "Basal rate in concentration units per hour (CU/h). %1$s is the number; \\u00a0 is a non-breaking space.",
+      "related_keys": [
+        "concentration_format"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "e7907734aa02fbfc",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/insulin/ConcentrationHelperImpl.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "short_status_battery",
+      "ui_location": "Pump status (short status text)",
+      "kind": "status",
+      "description": "One line of the short pump status showing pump battery level; %1$d is a percentage. The doubled percent sign is a literal %. Keep abbreviated.",
+      "related_keys": [
+        "short_status_last_connection"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0fabdff29c9a1e20",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/pump/PumpStatusProviderImpl.kt",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "key": "short_status_last_bolus",
+      "ui_location": "Pump status (short status text)",
+      "kind": "status",
+      "description": "One line of the short pump status. %1$s is the bolus amount in insulin units (U), %2$s the time of the bolus. Keep abbreviated.",
+      "related_keys": [
+        "short_status_last_connection"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "763607cc546af568",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/pump/PumpStatusProviderImpl.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "short_status_last_connection",
+      "ui_location": "Pump status (short status text)",
+      "kind": "status",
+      "description": "One line of the plain-text pump status sent as a short message (for example by SMS). %1$d is the number of minutes since the last pump connection. Keep short.",
+      "related_keys": [
+        "short_status_battery"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "effeb5ab21fecc72",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/pump/PumpStatusProviderImpl.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "short_status_not_initialized",
+      "ui_location": "Pump status (short status text)",
+      "kind": "status",
+      "description": "Line of the short pump status used when the pump driver has not finished initialising, so no data is available.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c77bdebd8046d424",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/pump/PumpStatusProviderImpl.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "short_status_temp_basal",
+      "ui_location": "Pump status (short status text)",
+      "kind": "status",
+      "description": "One line of the short pump status showing the running temporary basal rate or extended bolus; %1$s is a ready-made description. Keep abbreviated.",
+      "related_keys": [
+        "short_status_last_bolus"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "27cfdcb2d0c427d1",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/pump/PumpStatusProviderImpl.kt",
+          "line": 73
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/pump/PumpStatusProviderImpl.kt",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "key": "storage_google_drive",
+      "ui_location": "Settings > Import/Export > Cloud storage",
+      "kind": "label",
+      "description": "Name of the cloud storage provider (Google Drive), used when the provider name is unavailable. Product name.",
+      "related_keys": [
+        "backup_to_google_drive"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "1e38e2a238615894",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/maintenance/cloud/CloudDirectoryManagerImpl.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "ue_exported",
+      "ui_location": "Settings > Import/Export > User entries export",
+      "kind": "toast",
+      "description": "Snackbar after the User Entries (log of user actions) were exported to a file.",
+      "related_keys": [
+        "filenotfound"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b7fd773e68e51c9e",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/ImportExportPrefsImpl.kt",
+          "line": 782
+        }
+      ]
+    },
+    {
+      "key": "uploading_to_cloud",
+      "ui_location": "Settings > Import/Export",
+      "kind": "status",
+      "description": "Snackbar shown while a file is being uploaded to cloud storage. Ongoing action with ellipsis.",
+      "related_keys": [
+        "csv_uploaded_to_cloud"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ee991fb65a54e53d",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/ImportExportPrefsImpl.kt",
+          "line": 814
+        }
+      ]
+    }
+  ]
+}
