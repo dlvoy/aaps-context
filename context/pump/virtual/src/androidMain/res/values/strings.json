@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/virtual/src/androidMain/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "def_extended_note",
+      "ui_location": "Virtual pump screen > Pump Definition row",
+      "kind": "label",
+      "description": "Footnote appended at the end of the pump definition for pump types whose basal or bolus increments are a list of fixed values rather than a range. Starts with an asterisk; keep it.",
+      "related_keys": [
+        "virtual_pump_pump_def"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "23fc72565539d1e6",
+      "usages": [
+        {
+          "path": "pump/virtual/src/commonMain/kotlin/app/aaps/pump/virtual/VirtualPumpViewModel.kt",
+          "line": 217
+        }
+      ]
+    },
+    {
+      "key": "description_pump_virtual",
+      "ui_location": "Configuration > Pump > plugin list",
+      "kind": "summary",
+      "description": "Description under the Virtual pump plugin name: used for pumps AAPS cannot control, so the user delivers insulin by hand and the loop runs open (suggestions only).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a0c70523ab188496",
+      "usages": [
+        {
+          "path": "pump/virtual/src/commonMain/kotlin/app/aaps/pump/virtual/VirtualPumpPlugin.kt",
+          "line": 124
+        }
+      ]
+    },
+    {
+      "key": "virtual_pump_definition",
+      "ui_location": "Virtual pump screen > info rows",
+      "kind": "label",
+      "description": "Row label on the virtual pump screen; the value is a multi-line list of the imitated pump's capabilities (bolus step, extended bolus, basal and temporary basal limits).",
+      "related_keys": [
+        "virtual_pump_type",
+        "virtual_pump_pump_def"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "dbbb39d2fa15e529",
+      "usages": [
+        {
+          "path": "pump/virtual/src/commonMain/kotlin/app/aaps/pump/virtual/VirtualPumpViewModel.kt",
+          "line": 181
+        }
+      ]
+    },
+    {
+      "key": "virtual_pump_pump_def",
+      "ui_location": "Virtual pump screen > Pump Definition row",
+      "kind": "label",
+      "description": "Multi-line value of the 'Pump Definition' row; keep the \\n line breaks and placeholder order. %1$s bolus step (U); %2$s extended bolus step, %3$s its duration step in minutes, %4$s its maximum duration in hours; %5$s basal rate step or range; %6$s temporary basal (TBR) min-max, %7$s TBR step, %8$s TBR duration step in minutes, %9$s max TBR duration in hours; %10$s an optional footnote. Step means the smallest increment the pump accepts.",
+      "related_keys": [
+        "def_extended_note",
+        "virtual_pump_definition"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "57da0075afc88870",
+      "usages": [
+        {
+          "path": "pump/virtual/src/commonMain/kotlin/app/aaps/pump/virtual/VirtualPumpViewModel.kt",
+          "line": 219
+        }
+      ]
+    },
+    {
+      "key": "virtual_pump_type",
+      "ui_location": "Virtual pump screen > info rows",
+      "kind": "label",
+      "description": "Row label on the virtual pump screen; the value is the name of the real pump model the virtual pump imitates (chosen in its settings).",
+      "related_keys": [
+        "virtual_pump_definition"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7cd85581751196e3",
+      "usages": [
+        {
+          "path": "pump/virtual/src/commonMain/kotlin/app/aaps/pump/virtual/VirtualPumpViewModel.kt",
+          "line": 175
+        }
+      ]
+    },
+    {
+      "key": "virtualpump_settings",
+      "ui_location": "Preferences > Virtual pump settings",
+      "kind": "preference_title",
+      "description": "Title of the virtual pump's settings screen (choice of imitated pump type, status upload).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0e805c01b794d3ea",
+      "usages": [
+        {
+          "path": "pump/virtual/src/commonMain/kotlin/app/aaps/pump/virtual/VirtualPumpPlugin.kt",
+          "line": 451
+        }
+      ]
+    }
+  ]
+}

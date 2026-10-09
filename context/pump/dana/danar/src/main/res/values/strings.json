@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/dana/danar/src/main/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "unsupported_action_in_pump",
+      "ui_location": "Overview > notifications",
+      "kind": "notification",
+      "description": "Warning notification when AAPS finds a temporary basal or extended bolus on the Dana R pump that it did not set (or one it set is missing), meaning someone used the pump's own buttons. Tells the user to control the pump only from AAPS. AndroidAPS is the app name.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "fb3735fcacf180a7",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/AbstractDanaRExecutionService.kt",
+          "line": 295
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/AbstractDanaRExecutionService.kt",
+          "line": 315
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/AbstractDanaRExecutionService.kt",
+          "line": 330
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/AbstractDanaRExecutionService.kt",
+          "line": 340
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/AbstractDanaRExecutionService.kt",
+          "line": 359
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/AbstractDanaRExecutionService.kt",
+          "line": 364
+        }
+      ]
+    },
+    {
+      "key": "waiting_1_minute",
+      "ui_location": "Dana R pump > connection status",
+      "kind": "status",
+      "description": "Pump status text shown after a bolus was interrupted, while AAPS waits before reconnecting to read the real delivered amount. %1$d is the seconds waited so far, %2$d the total (60). Updates every second.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "b155c29154d16de8",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 241
+        }
+      ]
+    }
+  ]
+}

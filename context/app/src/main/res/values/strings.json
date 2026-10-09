@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "source_path": "app/src/main/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "authorizationfailed",
+      "ui_location": "Overview > authorization failed dialog",
+      "kind": "dialog_text",
+      "description": "Message of a small OK dialog shown when the user fails to authorize (wrong password or failed biometric check) for a protected action. The dialog has no title, so this short message is all the user sees.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "52536781796549bb",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/ComposeMainActivity.kt",
+          "line": 528
+        }
+      ]
+    },
+    {
+      "key": "identification_not_set",
+      "ui_location": "Overview > notifications",
+      "kind": "notification",
+      "description": "In-app notification shown only in development builds when the maintenance identification (the user's name or email used in logs and support) is empty. Has a button to go and set it.",
+      "related_keys": [
+        "set"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "21cb5724f30a9452",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 482
+        }
+      ]
+    },
+    {
+      "key": "initializing",
+      "ui_location": "Splash screen > startup progress; Overview > bolus wizard button",
+      "kind": "status",
+      "description": "General 'still starting up' state. Shown as a splash screen step, and on the Overview and treatment sheet in place of the wizard or quick wizard info, or as an error if the user tries a wizard bolus before the app has finished starting.",
+      "related_keys": [
+        "initializing_plugins"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "8b312b338a4d3dab",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 267
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 224
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 282
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 438
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatmentsSheet/TreatmentViewModel.kt",
+          "line": 203
+        }
+      ]
+    },
+    {
+      "key": "initializing_plugins",
+      "ui_location": "Splash screen > startup progress",
+      "kind": "status",
+      "description": "Progress step shown on the splash screen while the app starts its plugins (pump, CGM, loop and others).",
+      "related_keys": [
+        "migrating_preferences",
+        "initializing"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "281a421ded7b8be0",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 241
+        }
+      ]
+    },
+    {
+      "key": "insulin_migration_default_used",
+      "ui_location": "Overview > notifications",
+      "kind": "notification",
+      "description": "Important in-app notification after a database upgrade. Old dose records had no insulin type and no profile was active, so a default insulin was assumed. %1$s is the name of that insulin type (for example an ultra-rapid insulin). Asks the user to check insulin settings and warns the old records will not be changed later.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "dacb4d9510113525",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 789
+        }
+      ]
+    },
+    {
+      "key": "migrating_boluses",
+      "ui_location": "Splash screen > startup progress",
+      "kind": "status",
+      "description": "Progress step on the splash screen during a one-time database upgrade that converts stored bolus (insulin dose) records.",
+      "related_keys": [
+        "migrating_profile_switches"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "284ddc68bff2fbcb",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 747
+        }
+      ]
+    },
+    {
+      "key": "migrating_effective_profile_switches",
+      "ui_location": "Splash screen > startup progress",
+      "kind": "status",
+      "description": "Progress step on the splash screen during a one-time database upgrade that converts the records of profile switches as actually applied by the pump. Keep it distinct from the plain profile switches step.",
+      "related_keys": [
+        "migrating_profile_switches",
+        "migrating_boluses"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "018c36293501b8f2",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 744
+        }
+      ]
+    },
+    {
+      "key": "migrating_preferences",
+      "ui_location": "Splash screen > startup progress",
+      "kind": "status",
+      "description": "Progress step shown on the splash screen while the app starts and converts stored settings to a newer format. The ellipsis shows that the step is in progress.",
+      "related_keys": [
+        "initializing_plugins",
+        "optimizing_database",
+        "initializing"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "8829d1c486dadc28",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 221
+        }
+      ]
+    },
+    {
+      "key": "migrating_profile_switches",
+      "ui_location": "Splash screen > startup progress",
+      "kind": "status",
+      "description": "Progress step on the splash screen during a one-time database upgrade that converts stored profile switch records (changes of the active insulin profile).",
+      "related_keys": [
+        "migrating_effective_profile_switches",
+        "migrating_boluses"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "29797a311721c72b",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 741
+        }
+      ]
+    },
+    {
+      "key": "optimizing_database",
+      "ui_location": "Splash screen > startup progress",
+      "kind": "status",
+      "description": "Progress step shown on the splash screen during startup while the database is periodically compacted (vacuumed). The ellipsis shows that the step is in progress.",
+      "related_keys": [
+        "migrating_preferences",
+        "initializing"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "64723890b55802ba",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 297
+        }
+      ]
+    },
+    {
+      "key": "select",
+      "ui_location": "Overview > notifications > action button",
+      "kind": "button",
+      "description": "Action button on in-app notifications saying the AAPS directory is not selected or its access was lost; tapping it lets the user choose the folder. Keep it a short imperative verb.",
+      "related_keys": [
+        "set"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "4ac9756825b52174",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 502
+        },
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 517
+        }
+      ]
+    },
+    {
+      "key": "set",
+      "ui_location": "Overview > notifications > action button",
+      "kind": "button",
+      "description": "Action button on in-app notifications about a missing setting (master password, identification); tapping it opens the place to set the value. Also the button label for entering a password that is not set yet in the setup wizard (shown instead of 'Change'). Short imperative verb.",
+      "related_keys": [
+        "identification_not_set",
+        "select"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "4d71d9232ecf838f",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 484
+        },
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 493
+        },
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/elements/SWEditEncryptedPassword.kt",
+          "line": 67
+        }
+      ]
+    }
+  ]
+}

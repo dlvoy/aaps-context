@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "source_path": "plugins/smoothing/src/androidMain/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "UKF_name",
+      "ui_location": "Configuration > Smoothing > plugin list",
+      "kind": "title",
+      "description": "Name of the smoothing plugin based on an Unscented Kalman Filter, a standard estimation algorithm. Shown as a plugin name in the Smoothing list, in settings search and in the plugin switch confirmation; use the established term in your language if there is one.",
+      "related_keys": [
+        "description_UKF"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5231ec9cf959f0ba",
+      "usages": [
+        {
+          "path": "plugins/smoothing/src/commonMain/kotlin/app/aaps/plugins/smoothing/UnscentedKalmanFilterPlugin.kt",
+          "line": 88
+        }
+      ]
+    },
+    {
+      "key": "avg_smoothing_name",
+      "ui_location": "Configuration > Smoothing > plugin list",
+      "kind": "title",
+      "description": "Name of the smoothing plugin that averages recent glucose readings. Shown as a plugin name in the Smoothing list, in settings search and in the plugin switch confirmation.",
+      "related_keys": [
+        "description_avg_smoothing"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9a0327238ffec733",
+      "usages": [
+        {
+          "path": "plugins/smoothing/src/commonMain/kotlin/app/aaps/plugins/smoothing/AvgSmoothingPlugin.kt",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "key": "description_UKF",
+      "ui_location": "Configuration > Smoothing > plugin list",
+      "kind": "summary",
+      "description": "One-line description under the \"Unscented Kalman Filter\" plugin name, also the summary in settings search. Noise is sensor noise in glucose readings; RTS smoothing is the Rauch-Tung-Striebel smoother, keep the abbreviation.",
+      "related_keys": [
+        "UKF_name"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "33bba2a0f178da21",
+      "usages": [
+        {
+          "path": "plugins/smoothing/src/commonMain/kotlin/app/aaps/plugins/smoothing/UnscentedKalmanFilterPlugin.kt",
+          "line": 89
+        }
+      ]
+    },
+    {
+      "key": "description_avg_smoothing",
+      "ui_location": "Configuration > Smoothing > plugin list",
+      "kind": "summary",
+      "description": "One-line description under the \"Average smoothing\" plugin name, also the summary in settings search. \"Newest value is not affected\" means the latest glucose reading is used as measured.",
+      "related_keys": [
+        "avg_smoothing_name"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c74abee290a8aaaf",
+      "usages": [
+        {
+          "path": "plugins/smoothing/src/commonMain/kotlin/app/aaps/plugins/smoothing/AvgSmoothingPlugin.kt",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "key": "description_exponential_smoothing",
+      "ui_location": "Configuration > Smoothing > plugin list",
+      "kind": "summary",
+      "description": "One-line description under the \"Exponential smoothing\" plugin name, also the summary in settings search. Second-order exponential smoothing is the name of a statistical method; use the usual term in your language.",
+      "related_keys": [
+        "exponential_smoothing_name"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b3f075910500c09c",
+      "usages": [
+        {
+          "path": "plugins/smoothing/src/commonMain/kotlin/app/aaps/plugins/smoothing/ExponentialSmoothingPlugin.kt",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "key": "description_no_smoothing",
+      "ui_location": "Configuration > Smoothing > plugin list",
+      "kind": "summary",
+      "description": "One-line description under the \"No smoothing\" plugin name, also the summary in settings search. BYODA G6 is an app name (Build Your Own Dexcom App for the G6 sensor) and stays as is.",
+      "related_keys": [
+        "no_smoothing_name"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "de7ae9389f44fde7",
+      "usages": [
+        {
+          "path": "plugins/smoothing/src/commonMain/kotlin/app/aaps/plugins/smoothing/NoSmoothingPlugin.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "exponential_smoothing_name",
+      "ui_location": "Configuration > Smoothing > plugin list",
+      "kind": "title",
+      "description": "Name of the smoothing plugin that applies exponential smoothing to glucose readings. Shown as a plugin name in the Smoothing list, in settings search and in the plugin switch confirmation.",
+      "related_keys": [
+        "description_exponential_smoothing"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9e7494c70b2a1592",
+      "usages": [
+        {
+          "path": "plugins/smoothing/src/commonMain/kotlin/app/aaps/plugins/smoothing/ExponentialSmoothingPlugin.kt",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "no_smoothing_name",
+      "ui_location": "Configuration > Smoothing > plugin list",
+      "kind": "title",
+      "description": "Name of the option that passes glucose readings through unsmoothed. Shown as a plugin name in the Smoothing list, where exactly one option is active, and in settings search and the plugin switch confirmation.",
+      "related_keys": [
+        "description_no_smoothing",
+        "avg_smoothing_name"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "061e48488cc5da12",
+      "usages": [
+        {
+          "path": "plugins/smoothing/src/commonMain/kotlin/app/aaps/plugins/smoothing/NoSmoothingPlugin.kt",
+          "line": 35
+        }
+      ]
+    }
+  ]
+}

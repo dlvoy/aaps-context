@@ -1,0 +1,410 @@
+{
+  "schema_version": 1,
+  "source_path": "plugins/calibration/src/androidMain/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "cal_add_calibration",
+      "ui_location": "Linear calibration screen > button",
+      "kind": "button",
+      "description": "Button that opens the dialog to enter a fingerstick blood glucose value for calibration. Half-width button; keep it short.",
+      "related_keys": [
+        "cal_mark_sensor_change_now"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2b41435c5e580d94",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/compose/CalibrationScreen.kt",
+          "line": 140
+        }
+      ]
+    },
+    {
+      "key": "cal_chart_entry_readout",
+      "ui_location": "Linear calibration screen > chart",
+      "kind": "label",
+      "description": "Readout line under the calibration chart for the selected point. %1$d is its position and %2$d the total number of entries, %3$s the date and time, %4$s the sensor reading, %5$s the fingerstick blood glucose (BG). The middle dots separate the parts.",
+      "related_keys": [
+        "cal_entry_pair"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "08163f7b4360197b",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/compose/CalibrationScreen.kt",
+          "line": 298
+        }
+      ]
+    },
+    {
+      "key": "cal_entries_header",
+      "ui_location": "Linear calibration screen > entries list",
+      "kind": "label",
+      "description": "Header above the list of fingerstick calibration entries. %1$d is the number of entries.",
+      "related_keys": [
+        "cal_no_entries",
+        "cal_entry_pair"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9d25a99a21ccc925",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/compose/CalibrationScreen.kt",
+          "line": 151
+        }
+      ]
+    },
+    {
+      "key": "cal_entry_pair",
+      "ui_location": "Linear calibration screen > entries list > row",
+      "kind": "label",
+      "description": "One row of the entries list, under its time. %1$s is the fingerstick blood glucose, %2$s the sensor reading at that moment, %3$s the signed difference (Δ means difference). Values include formatting but not units. Keep it compact.",
+      "related_keys": [
+        "cal_entries_header",
+        "cal_chart_entry_readout"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d321f5f9da1c2e19",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/compose/CalibrationScreen.kt",
+          "line": 419
+        }
+      ]
+    },
+    {
+      "key": "cal_mark_sensor_change_now",
+      "ui_location": "Linear calibration screen > button",
+      "kind": "button",
+      "description": "Button that opens the dialog to record a sensor change (insertion of a new CGM sensor). Sits next to 'Add calibration' in a half-width button; keep it short.",
+      "related_keys": [
+        "cal_add_calibration",
+        "cal_status_no_session"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9b80a5266d8ee59b",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/compose/CalibrationScreen.kt",
+          "line": 134
+        }
+      ]
+    },
+    {
+      "key": "cal_no_entries",
+      "ui_location": "Linear calibration screen > entries list",
+      "kind": "label",
+      "description": "Placeholder shown in the entries list when no fingerstick measurement has been entered yet for this sensor.",
+      "related_keys": [
+        "cal_entries_header"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "28f0dd520ef22b81",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/compose/CalibrationScreen.kt",
+          "line": 353
+        }
+      ]
+    },
+    {
+      "key": "cal_remove_entry_message",
+      "ui_location": "Linear calibration screen > remove entry dialog",
+      "kind": "dialog_text",
+      "description": "Text of the remove entry confirmation. 'Invalidate' means the entry is marked invalid rather than erased; the fit (calibration line) is then computed again without it.",
+      "related_keys": [
+        "cal_remove_entry_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f30f9017ff85135f",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/compose/CalibrationScreen.kt",
+          "line": 176
+        }
+      ]
+    },
+    {
+      "key": "cal_remove_entry_title",
+      "ui_location": "Linear calibration screen > remove entry dialog",
+      "kind": "dialog_title",
+      "description": "Title of the confirmation dialog shown after tapping delete on a calibration entry. A short question.",
+      "related_keys": [
+        "cal_remove_entry_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "aaae5ba79d029109",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/compose/CalibrationScreen.kt",
+          "line": 175
+        }
+      ]
+    },
+    {
+      "key": "cal_session_started",
+      "ui_location": "Linear calibration screen > status card",
+      "kind": "label",
+      "description": "Small detail line showing when the current sensor session started. %1$s is a date and time.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7a4242125db6ed13",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/compose/CalibrationScreen.kt",
+          "line": 242
+        }
+      ]
+    },
+    {
+      "key": "cal_slope_offset",
+      "ui_location": "Linear calibration screen > status card",
+      "kind": "label",
+      "description": "Small detail line under the status. %1$.2f is the slope (a plain number like 1.05); %2$s is the signed glucose correction in the middle of the range, with units formatted, e.g. +8 or -0.4.",
+      "related_keys": [
+        "cal_status_applied"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "756a90cbb3f00de8",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/compose/CalibrationScreen.kt",
+          "line": 231
+        }
+      ]
+    },
+    {
+      "key": "cal_status_applied",
+      "ui_location": "Linear calibration screen > status card",
+      "kind": "status",
+      "description": "Status line when the calibration is valid and is being applied to CGM readings.",
+      "related_keys": [
+        "cal_status_applied_offset_only",
+        "cal_status_applied_slope_clamped",
+        "cal_slope_offset"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "69091cd6eade1cf7",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/compose/CalibrationScreen.kt",
+          "line": 220
+        }
+      ]
+    },
+    {
+      "key": "cal_status_applied_offset_only",
+      "ui_location": "Linear calibration screen > status card",
+      "kind": "status",
+      "description": "Status line when only a constant shift (offset) is applied, because the fingerstick values cover too narrow a glucose range to compute a reliable slope.",
+      "related_keys": [
+        "cal_status_applied"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3d6874836a19a6e0",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/compose/CalibrationScreen.kt",
+          "line": 214
+        }
+      ]
+    },
+    {
+      "key": "cal_status_applied_slope_clamped",
+      "ui_location": "Linear calibration screen > status card",
+      "kind": "status",
+      "description": "Status line when calibration is applied but its slope was limited to a safe range. 'Relax' means the limit will loosen as more fingerstick entries are added.",
+      "related_keys": [
+        "cal_status_applied"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "70c4337585a931b0",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/compose/CalibrationScreen.kt",
+          "line": 217
+        }
+      ]
+    },
+    {
+      "key": "cal_status_need_more_entries",
+      "ui_location": "Linear calibration screen > status card",
+      "kind": "status",
+      "description": "Status line when there are too few fingerstick measurements to compute a fit. %1$d is how many entries there are now (0 or 1).",
+      "related_keys": [
+        "cal_status_warmup",
+        "cal_entries_header"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8e0a23edf20757af",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/compose/CalibrationScreen.kt",
+          "line": 208
+        }
+      ]
+    },
+    {
+      "key": "cal_status_no_session",
+      "ui_location": "Linear calibration screen > status card",
+      "kind": "status",
+      "description": "Status line shown when no sensor change has been logged yet, so the plugin does not know when the current sensor started. Tells the user what to do; full sentence.",
+      "related_keys": [
+        "cal_mark_sensor_change_now",
+        "cal_status_warmup"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0bd27dca87a7abf1",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/compose/CalibrationScreen.kt",
+          "line": 202
+        }
+      ]
+    },
+    {
+      "key": "cal_status_unsafe_fit",
+      "ui_location": "Linear calibration screen > status card",
+      "kind": "status",
+      "description": "Status line when the computed correction is outside the safe limits, so sensor values are used uncorrected. 'Fit' is the computed calibration line.",
+      "related_keys": [
+        "cal_status_applied"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c0e28ce9a8f8830e",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/compose/CalibrationScreen.kt",
+          "line": 211
+        }
+      ]
+    },
+    {
+      "key": "cal_status_warmup",
+      "ui_location": "Linear calibration screen > status card",
+      "kind": "status",
+      "description": "Status line during the first hours of a new sensor (warm-up), when calibration is not yet used. %1$s is the time of day when warm-up ends.",
+      "related_keys": [
+        "cal_status_no_session",
+        "cal_status_need_more_entries"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b10123d71f91f596",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/compose/CalibrationScreen.kt",
+          "line": 205
+        }
+      ]
+    },
+    {
+      "key": "description_linear_calibration",
+      "ui_location": "Configuration > Calibration > plugin list",
+      "kind": "summary",
+      "description": "Description under the 'Linear calibration' plugin name. Slope and offset are the two parameters of the linear correction; a fingerstick entry is a blood glucose measured with a finger-prick meter. Warm-up is the first hours after a new sensor is inserted.",
+      "related_keys": [
+        "linear_calibration_name"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ecb0182a0043c690",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/LinearCalibrationPlugin.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "description_no_calibration",
+      "ui_location": "Configuration > Calibration > plugin list",
+      "kind": "summary",
+      "description": "Description under the 'No calibration' plugin name. Factory-calibrated means the CGM sensor needs no fingerstick calibration from the user.",
+      "related_keys": [
+        "no_calibration_name"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5d19ff569aa1e41b",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/NoCalibrationPlugin.kt",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "linear_calibration_name",
+      "ui_location": "Configuration > Calibration > plugin list; Linear calibration screen > title",
+      "kind": "title",
+      "description": "Name of the plugin that corrects CGM readings with a straight-line fit to fingerstick blood glucose measurements. Shown in the Calibration plugin list and as the toolbar title of its screen.",
+      "related_keys": [
+        "description_linear_calibration"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6f541c71668ba7a6",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/LinearCalibrationPlugin.kt",
+          "line": 65
+        },
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/compose/CalibrationScreen.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "no_calibration_name",
+      "ui_location": "Configuration > Calibration > plugin list",
+      "kind": "title",
+      "description": "Name of the default calibration option, which leaves CGM sensor values unchanged. Shown as a plugin name in the Calibration list, where exactly one option is active.",
+      "related_keys": [
+        "description_no_calibration",
+        "linear_calibration_name"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "10263b7f30d3949e",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/NoCalibrationPlugin.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "sensor_change_detected_action",
+      "ui_location": "Overview > notifications > action button",
+      "kind": "button",
+      "description": "Button on the 'possible sensor change detected' notification. Records a sensor change event at the detected time. Short imperative.",
+      "related_keys": [
+        "sensor_change_detected_text"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e1be3e9dcf62d84b",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/LinearCalibrationPlugin.kt",
+          "line": 225
+        }
+      ]
+    },
+    {
+      "key": "sensor_change_detected_text",
+      "ui_location": "Overview > notifications",
+      "kind": "notification",
+      "description": "In-app notification when a gap in CGM data suggests the sensor was replaced but no sensor change was logged. %1$s is the time of the gap. Ends with a question; the action button marks the change.",
+      "related_keys": [
+        "sensor_change_detected_action"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b766c9f281b6cf6d",
+      "usages": [
+        {
+          "path": "plugins/calibration/src/commonMain/kotlin/app/aaps/plugins/calibration/LinearCalibrationPlugin.kt",
+          "line": 223
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,686 @@
+{
+  "schema_version": 1,
+  "source_path": "plugins/constraints/src/androidMain/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "a11y_bg_quality_doubles",
+      "ui_location": "Bottom navigation bar > BG source badge (screen reader)",
+      "kind": "other",
+      "description": "Screen reader description of the red badge on the BG source navigation item when duplicate glucose readings were found. Short lowercase fragment.",
+      "related_keys": [
+        "a11y_bg_quality_recalculated",
+        "bg_too_close"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "525b85c69bc17068",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/bgQualityCheck/BgQualityCheckPlugin.kt",
+          "line": 158
+        }
+      ]
+    },
+    {
+      "key": "a11y_bg_quality_flat",
+      "ui_location": "Bottom navigation bar > BG source badge (screen reader)",
+      "kind": "other",
+      "description": "Screen reader description of the badge when glucose readings have stayed flat for 45 minutes, which suggests a faulty sensor. Also stored as the BG quality check message.",
+      "related_keys": [
+        "a11y_bg_quality_recalculated"
+      ],
+      "confidence": 0.75,
+      "usages_hash": "955fca876db8f22e",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/bgQualityCheck/BgQualityCheckPlugin.kt",
+          "line": 117
+        },
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/bgQualityCheck/BgQualityCheckPlugin.kt",
+          "line": 159
+        }
+      ]
+    },
+    {
+      "key": "a11y_bg_quality_recalculated",
+      "ui_location": "Bottom navigation bar > BG source badge (screen reader)",
+      "kind": "other",
+      "description": "Screen reader description of the warning badge on the BG source navigation item when glucose data was recalculated. A short lowercase fragment describing the badge.",
+      "related_keys": [
+        "a11y_bg_quality_doubles",
+        "a11y_bg_quality_flat"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "cbb9d13647bf1286",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/bgQualityCheck/BgQualityCheckPlugin.kt",
+          "line": 157
+        }
+      ]
+    },
+    {
+      "key": "application_expired",
+      "ui_location": "Overview > notifications; OpenAPS screen > constraints",
+      "kind": "notification",
+      "description": "Notification when this AAPS build has passed its expiry date (test and dev builds expire), and the reason given when maximum insulin on board is limited to zero because of it. Short noun phrase.",
+      "related_keys": [
+        "version_expire"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "f372e5434d368895",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/versionChecker/VersionCheckerPlugin.kt",
+          "line": 55
+        },
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/versionChecker/VersionCheckerUtilsImpl.kt",
+          "line": 157
+        }
+      ]
+    },
+    {
+      "key": "apsselected",
+      "ui_location": "Objectives > first objective > task",
+      "kind": "label",
+      "description": "Task in the first objective: an APS (artificial pancreas system algorithm, e.g. OpenAPS SMB) plugin is selected. Keep APS as an abbreviation.",
+      "related_keys": [
+        "loopenabled"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "379b6d18bcc18c99",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective0.kt",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "key": "bg_doubled_lgs",
+      "ui_location": "Loop screen > constraints",
+      "kind": "status",
+      "description": "Reason the loop is forced into LGS (low glucose suspend: insulin is only reduced, never increased) because the glucose source sends duplicate readings. Keep LGS as an abbreviation.",
+      "related_keys": [
+        "bg_too_close"
+      ],
+      "confidence": 0.75,
+      "usages_hash": "ab984513c555af7f",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/bgQualityCheck/BgQualityCheckPlugin.kt",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "key": "bg_too_close",
+      "ui_location": "BG quality check message",
+      "kind": "status",
+      "description": "Message of the BG quality check when two glucose readings are less than 20 seconds apart (doubled data). %1$s and %2$s are the two timestamps with seconds, each on its own line; keep the \\n breaks. The code stores it but no screen showing it was found.",
+      "related_keys": [
+        "bg_doubled_lgs",
+        "a11y_bg_quality_doubles"
+      ],
+      "confidence": 0.5,
+      "usages_hash": "9749433e9cef7056",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/bgQualityCheck/BgQualityCheckPlugin.kt",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "key": "closed_loop_disabled_on_dev_branch",
+      "ui_location": "Overview > notifications; Loop screen > constraints",
+      "kind": "notification",
+      "description": "Notification and constraint reason shown when running a development build: closed loop (automatic dosing) is not allowed in it.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "4476f2e9d5b0501c",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 82
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "key": "closed_loop_disabled_with_eb",
+      "ui_location": "Loop screen > constraints",
+      "kind": "status",
+      "description": "Reason closed loop is turned off while an extended bolus (insulin spread over time) is running.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b7a1bc44e8938d98",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 88
+        }
+      ]
+    },
+    {
+      "key": "closedmodeenabled",
+      "ui_location": "Objectives > closed loop objective > task",
+      "kind": "label",
+      "description": "Task of the objective that starts closed loop: closed loop mode (automatic insulin dosing) is switched on.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c6d50c4be9c34f0c",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective6.kt",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "completed_well_done",
+      "ui_location": "Objectives > task progress",
+      "kind": "status",
+      "description": "Progress text next to an objective task once it is fulfilled. Encouraging, short.",
+      "related_keys": [
+        "not_completed_yet"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "efbed79567ac87bb",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective.kt",
+          "line": 77
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective3.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "description_objectives",
+      "ui_location": "Configuration > Constraints > Objectives",
+      "kind": "summary",
+      "description": "Short description of the Objectives plugin, the step-by-step training program users complete to unlock loop features.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "88bfb95896a3193f",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/ObjectivesPlugin.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "disk_full",
+      "ui_location": "Overview > notifications; Loop screen > constraints",
+      "kind": "notification",
+      "description": "Urgent notification and closed-loop constraint reason when the phone's internal storage is almost full. %1$d is the number of megabytes to free. The loop is disabled until space is freed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a2f32ed6304f9fd4",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/storage/StorageConstraintPlugin.kt",
+          "line": 51
+        },
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/storage/StorageConstraintPlugin.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "doyouwantresetstart",
+      "ui_location": "Objectives > reset started state dialog",
+      "kind": "dialog_text",
+      "description": "Confirmation text when the user resets an objective that was started; the start time and progress may be lost. Dialog title is 'Objectives'.",
+      "related_keys": [
+        "objectives_button_unstart"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e1306eac6351be74",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesComposeContent.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "dst_in_24h_warning",
+      "ui_location": "Overview > notifications",
+      "kind": "notification",
+      "description": "Warning notification that a daylight saving time clock change happens within 24 hours, for pumps that cannot handle it themselves. Has a Snooze button. Use the local term for daylight saving time.",
+      "related_keys": [
+        "dst_loop_disabled_warning"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "230457434b5d979a",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/dstHelper/DstHelperPlugin.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "dst_loop_disabled_warning",
+      "ui_location": "Overview > notifications",
+      "kind": "notification",
+      "description": "Warning notification after a daylight saving time change: the loop is suspended for a few hours, so closed loop (automatic insulin dosing) is off. Has a Snooze button.",
+      "related_keys": [
+        "dst_in_24h_warning"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1d58b73f23ac1790",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/dstHelper/DstHelperPlugin.kt",
+          "line": 94
+        }
+      ]
+    },
+    {
+      "key": "hardlimit",
+      "ui_location": "Constraint reasons > cause fragment",
+      "kind": "other",
+      "description": "Lowercase fragment inserted into 'Limiting ... because of %s' messages. A hard limit is the fixed safety maximum built into the app for the patient type, which settings cannot exceed. Must fit after 'because of'.",
+      "related_keys": [
+        "maxvalueinpreferences"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "409e7a8e93c4a379",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 281
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 488
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 530
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 106
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 153
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 170
+        }
+      ]
+    },
+    {
+      "key": "hasbgdata",
+      "ui_location": "Objectives > first objective > task",
+      "kind": "label",
+      "description": "Task in the first objective (setup): glucose readings are arriving from the selected BG (blood glucose) source.",
+      "related_keys": [
+        "synchaswritepermission",
+        "loopenabled",
+        "apsselected"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "d4424c249c3e8e92",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective0.kt",
+          "line": 74
+        }
+      ]
+    },
+    {
+      "key": "limitingcarbs",
+      "ui_location": "Treatment > carbs > constraint reason",
+      "kind": "status",
+      "description": "Reason recorded when entered carbs are reduced to the configured maximum. %1$d is grams, %2$s the cause fragment (e.g. 'max value in preferences').",
+      "related_keys": [
+        "maxvalueinpreferences",
+        "limitingextendedbolus"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "78f154b3d9c587c4",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 184
+        }
+      ]
+    },
+    {
+      "key": "limitingextendedbolus",
+      "ui_location": "Treatment > extended bolus > constraint reason",
+      "kind": "status",
+      "description": "Reason recorded when a requested extended bolus is reduced. %1$.1f is the allowed amount in insulin units (U); %2$s is why, a fragment like 'max value in preferences' or 'hard limit'.",
+      "related_keys": [
+        "maxvalueinpreferences",
+        "hardlimit",
+        "limitingcarbs"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "06a5923f3940417f",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 167
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 169
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 170
+        }
+      ]
+    },
+    {
+      "key": "loopenabled",
+      "ui_location": "Objectives > first objective > task",
+      "kind": "label",
+      "description": "Task in the first objective: the Loop plugin is enabled.",
+      "related_keys": [
+        "apsselected",
+        "hasbgdata"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "27da7f5320939be3",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective0.kt",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "key": "maxvalueinpreferences",
+      "ui_location": "Constraint reasons > cause fragment",
+      "kind": "other",
+      "description": "Lowercase fragment inserted into 'Limiting ... because of %s' messages (bolus, basal, carbs, IOB). Says the limit comes from the user's maximum setting. Must fit grammatically after 'because of'.",
+      "related_keys": [
+        "hardlimit",
+        "limitingextendedbolus",
+        "limitingcarbs"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "00cfce68e64a08c8",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 280
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 293
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 487
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 500
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 529
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 542
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 152
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 169
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 184
+        }
+      ]
+    },
+    {
+      "key": "not_completed_yet",
+      "ui_location": "Objectives > task progress",
+      "kind": "status",
+      "description": "Progress text next to an objective task that is not yet fulfilled.",
+      "related_keys": [
+        "completed_well_done"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "ed624aca35b541a9",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective.kt",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "key": "objectives_button_unfinish",
+      "ui_location": "Objectives > completed objective > button",
+      "kind": "button",
+      "description": "Text button on a completed objective that marks it as not finished again. Short imperative.",
+      "related_keys": [
+        "objectives_button_unstart"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c2585f1a6d1f0a92",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesScreen.kt",
+          "line": 385
+        }
+      ]
+    },
+    {
+      "key": "objectives_button_unstart",
+      "ui_location": "Objectives > active objective > button",
+      "kind": "button",
+      "description": "Text button on a started objective that returns it to not started, after confirmation. Short imperative.",
+      "related_keys": [
+        "doyouwantresetstart",
+        "objectives_button_unfinish"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "86a8f21411ee2742",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesScreen.kt",
+          "line": 513
+        }
+      ]
+    },
+    {
+      "key": "pumpisnottempbasalcapable",
+      "ui_location": "Loop screen > constraints",
+      "kind": "status",
+      "description": "Reason the loop cannot run: the selected pump cannot set temporary basal rates (TBR), which the loop needs.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "baa3785cc925857b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "recalculated_data_used",
+      "ui_location": "BG quality check message",
+      "kind": "status",
+      "description": "Message of the BG (blood glucose) quality check when CGM readings were not 5 minutes apart, so values were recalculated onto a 5-minute grid. The code stores it but no screen showing it was found.",
+      "related_keys": [
+        "a11y_bg_quality_recalculated"
+      ],
+      "confidence": 0.5,
+      "usages_hash": "6f0f06f4827d9d59",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/bgQualityCheck/BgQualityCheckPlugin.kt",
+          "line": 123
+        }
+      ]
+    },
+    {
+      "key": "running_invalid_version",
+      "ui_location": "Overview > notifications",
+      "kind": "notification",
+      "description": "Notification when the app's signature check fails, meaning the build is not a valid one; the loop is disabled. Full sentences.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "d564fb07649f7bd7",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/signatureVerifier/SignatureVerifierPlugin.kt",
+          "line": 119
+        }
+      ]
+    },
+    {
+      "key": "safety",
+      "ui_location": "Configuration > Constraints > plugin list; Preferences > Safety",
+      "kind": "title",
+      "description": "Name of the Safety plugin that enforces limits on insulin and carbs, and title of its settings screen. Short noun.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0308c684dd917908",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 66
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 190
+        }
+      ]
+    },
+    {
+      "key": "smbalwaysdisabled",
+      "ui_location": "OpenAPS screen > constraints",
+      "kind": "status",
+      "description": "Reason the 'SMB always' and 'SMB after carbs' options are off: the current CGM source does not provide the filtered data they need. SMB means super micro bolus; keep the abbreviation.",
+      "related_keys": [
+        "smbnotallowedinopenloopmode"
+      ],
+      "confidence": 0.75,
+      "usages_hash": "11df1266054a3aec",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 100
+        }
+      ]
+    },
+    {
+      "key": "smbnotallowedinopenloopmode",
+      "ui_location": "OpenAPS screen > constraints",
+      "kind": "status",
+      "description": "Reason SMB (super micro bolus) is off: the loop is in open loop mode, where AAPS only suggests and does not dose automatically.",
+      "related_keys": [
+        "smbalwaysdisabled"
+      ],
+      "confidence": 0.75,
+      "usages_hash": "563721d63f298c23",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 95
+        }
+      ]
+    },
+    {
+      "key": "synchaswritepermission",
+      "ui_location": "Objectives > first objective > task",
+      "kind": "label",
+      "description": "Task in the first objective: the data synchronization service (e.g. Nightscout) is allowed to write data.",
+      "related_keys": [
+        "hasbgdata"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "950d9a54a031c6a7",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective0.kt",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "key": "time_elapsed",
+      "ui_location": "Objectives > task",
+      "kind": "label",
+      "description": "Name of the objective task that requires a minimum time to pass since the objective was started. Its progress shows the time.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "267afd6cda066768",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective.kt",
+          "line": 92
+        }
+      ]
+    },
+    {
+      "key": "version_expire",
+      "ui_location": "Overview > notifications",
+      "kind": "notification",
+      "description": "Notification giving the expiry date of the installed version. %1$s is the version number, %2$s the date. LGS means low glucose suspend: after expiry the loop only stops insulin when glucose is low; keep the abbreviation.",
+      "related_keys": [
+        "application_expired",
+        "versionavailable"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b6936805fdab0780",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/versionChecker/VersionCheckerUtilsImpl.kt",
+          "line": 159
+        },
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/versionChecker/VersionCheckerUtilsImpl.kt",
+          "line": 160
+        }
+      ]
+    },
+    {
+      "key": "versionavailable",
+      "ui_location": "Overview > notifications",
+      "kind": "notification",
+      "description": "Low-priority notification that a newer AAPS version exists. %1$s is the version number.",
+      "related_keys": [
+        "version_expire"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1d34087ab2e4a2c1",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/versionChecker/VersionCheckerUtilsImpl.kt",
+          "line": 145
+        }
+      ]
+    }
+  ]
+}

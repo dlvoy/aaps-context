@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "source_path": "wear/watchfacepush/src/cwf/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "simplify_ui_always_on",
+      "ui_location": "Watch > watch face editor > option",
+      "kind": "preference_title",
+      "description": "Name of an on/off option in the watch face customization editor. When on, the always-on (ambient) screen shows a simple clock and readings instead of the user's design. Must be very short: it is drawn on one line at the top of a round watch screen.",
+      "related_keys": [
+        "simplify_ui_always_on_reader"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "aab21979be8fa796",
+      "usages": [
+        {
+          "path": "wear/watchfacepush/src/cwf/template/watchface.xml",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "simplify_ui_always_on_reader",
+      "ui_location": "Watch > watch face editor > option (screen reader)",
+      "kind": "other",
+      "description": "Full spoken description of the 'Simple always-on' option, read by the screen reader instead of the short title. No length limit; a full sentence.",
+      "related_keys": [
+        "simplify_ui_always_on"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b9be4b1d6a770c8d",
+      "usages": [
+        {
+          "path": "wear/watchfacepush/src/cwf/template/watchface.xml",
+          "line": 29
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "source_path": "plugins/main/src/androidMain/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "basal_shortname",
+      "ui_location": "Overview > IOB graph > label",
+      "kind": "label",
+      "description": "Very short abbreviation of basal (the background insulin rate), shown after 'IOB /' as the corner label of the IOB graph and its settings sheet. Keep it to about three letters.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b81e24babfd4884c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 472
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 491
+        }
+      ]
+    },
+    {
+      "key": "cannula",
+      "ui_location": "Overview > status lights",
+      "kind": "label",
+      "description": "Label of the infusion set row in the Overview status lights, showing how long ago the cannula (the small tube under the skin delivering insulin) was changed. Also the title of its threshold settings. Use the medical term.",
+      "related_keys": [
+        "patch_pump",
+        "insulin_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e533d359170ef054",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/statusLights/StatusViewModel.kt",
+          "line": 216
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 251
+        }
+      ]
+    },
+    {
+      "key": "description_persistent_notification",
+      "ui_location": "Config builder > General > Persistent notification",
+      "kind": "summary",
+      "description": "Description of the plugin that keeps an ongoing Android notification with the current glucose, basal and insulin on board. The plugin is hidden from the plugin list, so this text is rarely seen.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "5ebbee4217cffc53",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/persistentNotification/PersistentNotificationPlugin.kt",
+          "line": 114
+        }
+      ]
+    },
+    {
+      "key": "insulin_label",
+      "ui_location": "Overview > status lights; Profile viewer; Insulin management",
+      "kind": "label",
+      "description": "Generic label meaning insulin. Shown on the insulin (reservoir) row of the Overview status lights, as a row label in the profile viewer, as the title of the insulin management screen and of the insulin button and status light settings. Use the plain noun.",
+      "related_keys": [
+        "sensor_label",
+        "cannula"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "1a229c06dbc55ce4",
+      "usages": [
+        {
+          "path": "core/graph/src/commonMain/kotlin/app/aaps/core/graph/profile/ProfileViewerContent.kt",
+          "line": 86
+        },
+        {
+          "path": "core/graph/src/commonMain/kotlin/app/aaps/core/graph/profile/ProfileViewerContent.kt",
+          "line": 271
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/NumberInputRowPreviews.kt",
+          "line": 23
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementScreen.kt",
+          "line": 216
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/statusLights/StatusViewModel.kt",
+          "line": 191
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 219
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 257
+        }
+      ]
+    },
+    {
+      "key": "nav_history_browser",
+      "ui_location": "Navigation menu > History browser",
+      "kind": "title",
+      "description": "Name of the screen that shows past glucose, treatments and loop data on a scrollable graph. Used as the menu entry and as the screen title. A short noun phrase.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "7138a90760663b30",
+      "usages": [
+        {
+          "path": "appshell/src/commonMain/kotlin/app/aaps/appshell/navigation/AppNavGraph.kt",
+          "line": 533
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 237
+        }
+      ]
+    },
+    {
+      "key": "notification_iob_short",
+      "ui_location": "Notification shade > ongoing AAPS notification",
+      "kind": "status",
+      "description": "Total insulin on board in units, shown after the IOB label in the second line of the ongoing notification. %1$.1f is the number with one decimal; U is the insulin unit symbol. Keep the format compact.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "478f14f9e22918cb",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/persistentNotification/PersistentNotificationPlugin.kt",
+          "line": 277
+        }
+      ]
+    },
+    {
+      "key": "old_data",
+      "ui_location": "Notification shade > ongoing AAPS notification",
+      "kind": "status",
+      "description": "Appended after the glucose value in the first line of the ongoing notification when there is no recent change (delta) to show, meaning the reading is old. Written in capitals as a warning; keep it short.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "42815ba91ccc9057",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/persistentNotification/PersistentNotificationPlugin.kt",
+          "line": 259
+        }
+      ]
+    },
+    {
+      "key": "patch_pump",
+      "ui_location": "Overview > status lights",
+      "kind": "label",
+      "description": "Label of the status light row that shows the age of the patch pump (a pump stuck on the skin with no separate tubing). Shown instead of the cannula label when the active pump is a patch pump. Short.",
+      "related_keys": [
+        "cannula"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6a2d2679cf062e5c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/statusLights/StatusViewModel.kt",
+          "line": 216
+        }
+      ]
+    },
+    {
+      "key": "pb_label",
+      "ui_location": "Overview > status lights",
+      "kind": "label",
+      "description": "Label of the pump battery row in the Overview status lights, showing battery age and level. Also the title of the pump battery status light thresholds. Keep it short.",
+      "related_keys": [
+        "sensor_label",
+        "insulin_label",
+        "cannula"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "898f17bd744fdec5",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/statusLights/StatusViewModel.kt",
+          "line": 257
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 269
+        }
+      ]
+    },
+    {
+      "key": "sensor_label",
+      "ui_location": "Overview > status lights; Preferences > status light thresholds",
+      "kind": "label",
+      "description": "Label of the CGM sensor row in the Overview status lights, which show the sensor's age and battery level. Also the title of the sensor group of status light warning thresholds. Short; space is tight.",
+      "related_keys": [
+        "insulin_label",
+        "cannula",
+        "pb_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "09a60bc4c9bf4a2f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/statusLights/StatusViewModel.kt",
+          "line": 154
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 263
+        }
+      ]
+    }
+  ]
+}

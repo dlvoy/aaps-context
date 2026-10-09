@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "source_path": "plugins/sensitivity/src/androidMain/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "absorption_settings_title",
+      "ui_location": "Preferences > Sensitivity detection > Absorption settings",
+      "kind": "preference_title",
+      "description": "Title of the settings group for carbohydrate absorption (maximum absorption time, minimum carb impact, autosens period) inside the sensitivity plugin's preferences.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "e518425efda37c05",
+      "usages": [
+        {
+          "path": "plugins/sensitivity/src/commonMain/kotlin/app/aaps/plugins/sensitivity/SensitivityAAPSPlugin.kt",
+          "line": 165
+        },
+        {
+          "path": "plugins/sensitivity/src/commonMain/kotlin/app/aaps/plugins/sensitivity/SensitivityOref1Plugin.kt",
+          "line": 227
+        }
+      ]
+    },
+    {
+      "key": "description_sensitivity_aaps",
+      "ui_location": "Configuration > Sensitivity detection > plugin list",
+      "kind": "summary",
+      "description": "Description under the 'Sensitivity AAPS' plugin name. Oref0 is an algorithm name; keep it. The 'timeframe to the past' is a setting for how many hours of history are used. Carb absorption refers to how fast eaten carbohydrates are absorbed.",
+      "related_keys": [
+        "sensitivity_aaps"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "252165ad909bc3fd",
+      "usages": [
+        {
+          "path": "plugins/sensitivity/src/commonMain/kotlin/app/aaps/plugins/sensitivity/SensitivityAAPSPlugin.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "description_sensitivity_oref1",
+      "ui_location": "Configuration > Sensitivity detection > plugin list",
+      "kind": "summary",
+      "description": "Description under the 'Sensitivity Oref1' plugin name. Explains that it uses 8 or 24 hours of history and drops unabsorbed carbs after a set time. UAM means unannounced meals (meals the user did not enter); keep the abbreviation.",
+      "related_keys": [
+        "sensitivity_oref1"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "7554d3f60df4d6d6",
+      "usages": [
+        {
+          "path": "plugins/sensitivity/src/commonMain/kotlin/app/aaps/plugins/sensitivity/SensitivityOref1Plugin.kt",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "key": "description_sensitivity_weighted_average",
+      "ui_location": "Configuration > Sensitivity detection > plugin list",
+      "kind": "summary",
+      "description": "Description under the 'Sensitivity WeightedAverage' plugin name. Deviations are differences between expected and actual glucose; newer ones count more, so this method reacts fastest to sensitivity changes.",
+      "related_keys": [
+        "sensitivity_weighted_average"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "928fbcaa10d8bf55",
+      "usages": [
+        {
+          "path": "plugins/sensitivity/src/commonMain/kotlin/app/aaps/plugins/sensitivity/SensitivityWeightedAveragePlugin.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "sensitivity_aaps",
+      "ui_location": "Configuration > Sensitivity detection > plugin list",
+      "kind": "title",
+      "description": "Name of the AAPS sensitivity detection plugin, which estimates current insulin sensitivity. AAPS is the app's name; keep it. Shown in the plugin list, settings search and plugin switch confirmation.",
+      "related_keys": [
+        "description_sensitivity_aaps"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b106e7a362b09f8f",
+      "usages": [
+        {
+          "path": "plugins/sensitivity/src/commonMain/kotlin/app/aaps/plugins/sensitivity/SensitivityAAPSPlugin.kt",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "key": "sensitivity_oref1",
+      "ui_location": "Configuration > Sensitivity detection > plugin list",
+      "kind": "title",
+      "description": "Name of the sensitivity detection plugin using the Oref1 algorithm (from OpenAPS), which estimates how sensitive the body currently is to insulin. Oref1 is a proper name; keep it. Shown in the plugin list, settings search and plugin switch confirmation.",
+      "related_keys": [
+        "description_sensitivity_oref1"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "25725406f9f37990",
+      "usages": [
+        {
+          "path": "plugins/sensitivity/src/commonMain/kotlin/app/aaps/plugins/sensitivity/SensitivityOref1Plugin.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "sensitivity_weighted_average",
+      "ui_location": "Configuration > Sensitivity detection > plugin list",
+      "kind": "title",
+      "description": "Name of the sensitivity detection plugin that uses a weighted average of past deviations. 'WeightedAverage' is written as one word as a plugin name; you may translate it as a normal phrase.",
+      "related_keys": [
+        "description_sensitivity_weighted_average"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "36a89fe419b907ba",
+      "usages": [
+        {
+          "path": "plugins/sensitivity/src/commonMain/kotlin/app/aaps/plugins/sensitivity/SensitivityWeightedAveragePlugin.kt",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "key": "uam_disabled_oref1_not_selected",
+      "ui_location": "Loop / OpenAPS screen > constraints",
+      "kind": "status",
+      "description": "Reason given when UAM (unannounced meal detection) is turned off because the Oref1 sensitivity plugin is not the active one. Listed among constraint reasons of the algorithm. A full sentence.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "857f91ef7ce39ab3",
+      "usages": [
+        {
+          "path": "plugins/sensitivity/src/commonMain/kotlin/app/aaps/plugins/sensitivity/SensitivityOref1Plugin.kt",
+          "line": 221
+        }
+      ]
+    }
+  ]
+}
