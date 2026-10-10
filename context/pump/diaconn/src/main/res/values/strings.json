@@ -1,0 +1,2411 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/diaconn/src/main/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "approachingdailylimit",
+      "ui_location": "Notification (pump)",
+      "kind": "notification",
+      "description": "Warning that the pump's daily insulin limit is nearly reached. Shared with Dana pumps.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "65a4d075d9e50ea5",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 139
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 141
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 131
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 133
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 162
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 164
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 293
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 295
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 271
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 273
+        }
+      ]
+    },
+    {
+      "key": "basal_step",
+      "ui_location": "Diaconn G8 > pump overview > info table",
+      "kind": "label",
+      "description": "Row label for the smallest basal rate increment the pump supports. Combined with 'Bolus Step' in one row as 'Basal Step / Bolus Step'; keep short.",
+      "related_keys": [
+        "bolus_step"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c2e8bff2a50fadb5",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 304
+        }
+      ]
+    },
+    {
+      "key": "batterywarning",
+      "ui_location": "Notification (pump alarm)",
+      "kind": "notification",
+      "description": "Alarm title: the pump battery is low.",
+      "related_keys": [
+        "needbatteryreplace"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "199d2640ceebfaa7",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/BLECommonService.kt",
+          "line": 365
+        }
+      ]
+    },
+    {
+      "key": "bolus_speed_1",
+      "ui_location": "Preferences > Pump > Diaconn G8 > Bolus speed",
+      "kind": "preference_summary",
+      "description": "List entry: bolus delivery speed of 1 U/min (units of insulin per minute). Keep the number and unit.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9a015485e8cffdb6",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnIntKey.kt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "bolus_speed_2",
+      "ui_location": "Preferences > Pump > Diaconn G8 > Bolus speed",
+      "kind": "preference_summary",
+      "description": "List entry: bolus delivery speed of 2 U/min (units of insulin per minute). Keep the number and unit.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a415b03752d92c9a",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnIntKey.kt",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "key": "bolus_speed_3",
+      "ui_location": "Preferences > Pump > Diaconn G8 > Bolus speed",
+      "kind": "preference_summary",
+      "description": "List entry: bolus delivery speed of 3 U/min (units of insulin per minute). Keep the number and unit.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "24bf25081b3f47f6",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnIntKey.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "bolus_speed_4",
+      "ui_location": "Preferences > Pump > Diaconn G8 > Bolus speed",
+      "kind": "preference_summary",
+      "description": "List entry: bolus delivery speed of 4 U/min (units of insulin per minute). Keep the number and unit.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "abf4f4f96d5794e1",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnIntKey.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "bolus_speed_5",
+      "ui_location": "Preferences > Pump > Diaconn G8 > Bolus speed",
+      "kind": "preference_summary",
+      "description": "List entry: bolus delivery speed of 5 U/min (units of insulin per minute). Keep the number and unit.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "aead836f354ab034",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnIntKey.kt",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "bolus_speed_6",
+      "ui_location": "Preferences > Pump > Diaconn G8 > Bolus speed",
+      "kind": "preference_summary",
+      "description": "List entry: bolus delivery speed of 6 U/min (units of insulin per minute). Keep the number and unit.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ee521ae733edd6dd",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnIntKey.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "bolus_speed_7",
+      "ui_location": "Preferences > Pump > Diaconn G8 > Bolus speed",
+      "kind": "preference_summary",
+      "description": "List entry: bolus delivery speed of 7 U/min (units of insulin per minute). Keep the number and unit.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "dca3d8ed07a9c68a",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnIntKey.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "bolus_speed_8",
+      "ui_location": "Preferences > Pump > Diaconn G8 > Bolus speed",
+      "kind": "preference_summary",
+      "description": "List entry: bolus delivery speed of 8 U/min (units of insulin per minute). Keep the number and unit.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "90173f6649bce929",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnIntKey.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "bolus_step",
+      "ui_location": "Diaconn G8 > pump overview > info table",
+      "kind": "label",
+      "description": "Row label for the smallest bolus increment the pump supports. Combined with 'Basal Step' as 'Basal Step / Bolus Step' in one table row; keep short.",
+      "related_keys": [
+        "basal_step"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c2e8bff2a50fadb5",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 304
+        }
+      ]
+    },
+    {
+      "key": "boluserrorcode",
+      "ui_location": "Overview > bolus result message",
+      "kind": "error",
+      "description": "Message after a bolus delivered less than requested. %1$.2f is the requested insulin in units (U), %2$.2f the amount actually delivered, %3$s the pump's error code. Shared with Dana pumps.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3f562c4477248ced",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/DanaRPlugin.kt",
+          "line": 177
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/DanaRKoreanPlugin.kt",
+          "line": 178
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/DanaRv2Plugin.kt",
+          "line": 190
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 317
+        }
+      ]
+    },
+    {
+      "key": "commanderror",
+      "ui_location": "Overview > bolus result message",
+      "kind": "error",
+      "description": "Error reason text appended to a failed bolus result: the pump rejected a command. Shared with Dana pumps; short fragment.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "482c9e6b86971dc9",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 336
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 347
+        }
+      ]
+    },
+    {
+      "key": "description_pump_diaconn_g8",
+      "ui_location": "Config builder > Pump > Diaconn G8",
+      "kind": "summary",
+      "description": "One-line description of the Diaconn G8 pump plugin in the plugin list.",
+      "related_keys": [
+        "diaconn_g8_pump"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e35933b8f5fa504f",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "key": "diacon_g8_blockbasal",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "Uppercase label for the kind of injection that was blocked, here basal (background) insulin. Inserted into the 'Injection Block (%s)' record.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6f56ef894752cfe5",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 997
+        }
+      ]
+    },
+    {
+      "key": "diacon_g8_blockdualbolus",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "Uppercase label for the kind of injection that was blocked, here a dual bolus (normal plus extended). Inserted into the 'Injection Block (%s)' record.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d114b008158e0b8f",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 1001
+        }
+      ]
+    },
+    {
+      "key": "diacon_g8_blockmealbolus",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "Uppercase label for the kind of injection that was blocked, here a meal bolus. Inserted into the 'Injection Block (%s)' record.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ff7570dcc7484031",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 998
+        }
+      ]
+    },
+    {
+      "key": "diacon_g8_blocknormalbolus",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "Uppercase label for the kind of injection that was blocked, here a normal bolus. Inserted into the 'Injection Block (%s)' record.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ef41c39b9c2eaac7",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 999
+        }
+      ]
+    },
+    {
+      "key": "diacon_g8_blockreplaceneedle",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "Uppercase label for the kind of injection that was blocked, here replacing the needle. Inserted into the 'Injection Block (%s)' record.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "57697f0bb5cd3f7b",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 1003
+        }
+      ]
+    },
+    {
+      "key": "diacon_g8_blockreplacesyringe",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "Uppercase label for the kind of injection that was blocked, here replacing the syringe/reservoir. Inserted into the 'Injection Block (%s)' record.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a7b72d3e7dae4cd5",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 1004
+        }
+      ]
+    },
+    {
+      "key": "diacon_g8_blockreplacetube",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "Uppercase label for the kind of injection that was blocked, here replacing the tube. Inserted into the 'Injection Block (%s)' record.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e4e7d9e4948a6a5c",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 1002
+        }
+      ]
+    },
+    {
+      "key": "diacon_g8_blocksquarebolus",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "Uppercase label for the kind of injection that was blocked, here a square (extended) bolus. Inserted into the 'Injection Block (%s)' record.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "903309ceb90d0b19",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 1000
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_bolus_speed",
+      "ui_location": "Diaconn G8 > pump settings",
+      "kind": "label",
+      "description": "Section header for how fast the pump delivers a bolus (units per minute choices).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "11baed3c7862dc9a",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnUserOptionsScreen.kt",
+          "line": 122
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_cloudsend_summary",
+      "ui_location": "Preferences > Pump > Diaconn G8",
+      "kind": "preference_summary",
+      "description": "Switch summary: pump logs are uploaded to the Diaconn Cloud.",
+      "related_keys": [
+        "diaconn_g8_cloudsend_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2001099870e7a6c4",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnBooleanKey.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_cloudsend_title",
+      "ui_location": "Preferences > Pump > Diaconn G8",
+      "kind": "preference_title",
+      "description": "Switch title for syncing pump logs to the Diaconn Cloud service. 'Diaconn Cloud' is a service name.",
+      "related_keys": [
+        "diaconn_g8_cloudsend_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2001099870e7a6c4",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnBooleanKey.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_1",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 1: the request was refused or failed because of packet CRC error on a query. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "635b2b30e5b84322",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 497
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_10",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 10: the request was refused or failed because of the pump not responding. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1c216d1d91089c65",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 505
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_11",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 11: the request was refused or failed because of low battery. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a958a5fff20abb8a",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 506
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_12",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 12: the request was refused or failed because of insufficient insulin. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ed1246cbf45fd171",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 507
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_13",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 13: the request was refused or failed because of exceeding the single-dose limit. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e5ee5eaa23ea8ad1",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 508
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_14",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 14: the request was refused or failed because of exceeding today's total insulin limit. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e68bcaf82f94578b",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 509
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_15",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 15: the request was refused or failed because of the basal setup needing to be completed first. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "33e72bfe1a1a3e73",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 510
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_2",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 2: the request was refused or failed because of an input parameter error. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "358b1c9d0b82832f",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 498
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_3",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 3: the request was refused or failed because of a protocol specification error. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0fd3f6c4bd79a20f",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 499
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_32",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 32: the request was refused or failed because of LGS (low glucose suspend) running. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "520a645487e8a0b4",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 511
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_33",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 33: the request was refused or failed because of LGS being already ON when ON is requested. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a1d6feb71f250e3d",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 512
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_34",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 34: the request was refused or failed because of LGS being already OFF when OFF is requested. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f79f4dd8b678903d",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 513
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_35",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 35: the request was refused or failed because of a temp basal already running. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ce06f1c25f10beb1",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 514
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_36",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 36: the request was refused or failed because of no temp basal running to stop. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "70babaaab4eb1cf6",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 515
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_4",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 4: the request was refused or failed because of mealtime timing, so a bolus cannot be given. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8f78449ca7707440",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 500
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_6",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 6: the request was refused or failed because of the pump cancelled the request. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "cd27c2dd8d298d74",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 501
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_7",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 7: the request was refused or failed because of the pump being busy with another action that limits app settings. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "cea7e20d3521e13a",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 502
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_8",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 8: the request was refused or failed because of another bolus already being delivered. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4970e3d899a7b051",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 503
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_errorcode_9",
+      "ui_location": "Overview > result message of a failed pump command",
+      "kind": "error",
+      "description": "Explanation of pump error code 9: the request was refused or failed because of the basal injection needing to be resumed first. Full sentence shown to the user in the command result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0860b7f9bfc7e592",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 504
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_history_alarm",
+      "ui_location": "Diaconn G8 > History > type selector",
+      "kind": "label",
+      "description": "Name of a history category the user picks on the Diaconn G8 history screen, listing alarm events recorded by the pump. Short noun phrase, shown in a selector.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a1b3206ef643f8c1",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnHistoryViewModel.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_history_basalhours",
+      "ui_location": "Diaconn G8 > History > type selector",
+      "kind": "label",
+      "description": "Name of a history category the user picks on the Diaconn G8 history screen, listing hourly basal delivery totals. Short noun phrase, shown in a selector.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "29a4364ddbfc80d8",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnHistoryViewModel.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_history_bolus",
+      "ui_location": "Diaconn G8 > History > type selector",
+      "kind": "label",
+      "description": "Name of a history category the user picks on the Diaconn G8 history screen, listing delivered boluses. Short noun phrase, shown in a selector.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a6dc292dd555ac54",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnHistoryViewModel.kt",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_history_dailyinsulin",
+      "ui_location": "Diaconn G8 > History > type selector",
+      "kind": "label",
+      "description": "Name of a history category the user picks on the Diaconn G8 history screen, listing total insulin delivered per day. Short noun phrase, shown in a selector.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "26669aab43ec1d23",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnHistoryViewModel.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_history_refill",
+      "ui_location": "Diaconn G8 > History > type selector",
+      "kind": "label",
+      "description": "Name of a history category the user picks on the Diaconn G8 history screen, listing reservoir refill events. Short noun phrase, shown in a selector.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "586a8726f6505f35",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnHistoryViewModel.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_history_suspend",
+      "ui_location": "Diaconn G8 > History > type selector",
+      "kind": "label",
+      "description": "Name of a history category the user picks on the Diaconn G8 history screen, listing basal suspend and release events. Short noun phrase, shown in a selector.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2c3e1165e36e5b03",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnHistoryViewModel.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_history_tempbasal",
+      "ui_location": "Diaconn G8 > History > type selector",
+      "kind": "label",
+      "description": "Name of a history category the user picks on the Diaconn G8 history screen, listing temporary basal rates. Short noun phrase, shown in a selector.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f92025769155f5e6",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnHistoryViewModel.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_language",
+      "ui_location": "Diaconn G8 > pump settings",
+      "kind": "label",
+      "description": "Section header for the display language of the pump itself, not of the app.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "31d4811687055496",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnUserOptionsScreen.kt",
+          "line": 101
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_lgorelease",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: basal released after suspension; %s is the basal pattern name.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fa4d1ddac5377c6f",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 541
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_lgosuspend",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: basal suspended; %s is the basal pattern name.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d0ab0897e937c3f6",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 526
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logalarmblock",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record for an injection block alarm; %s is the type of injection that was blocked (BASAL, MEAL BOLUS, ...).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "02a3097065a3cf38",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 842
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logbatterychange_summary",
+      "ui_location": "Preferences > Pump > Diaconn G8",
+      "kind": "preference_summary",
+      "description": "Switch summary: when the pump history shows a battery change, a \"Battery Change\" event is added to the careportal (treatment log). The quoted event name should match the app's translated event name.",
+      "related_keys": [
+        "diaconn_g8_logbatterychange_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "addc4a366083e3b4",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnBooleanKey.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logbatterychange_title",
+      "ui_location": "Preferences > Pump > Diaconn G8",
+      "kind": "preference_title",
+      "description": "Switch title: record a battery change in the log. Short imperative-style label.",
+      "related_keys": [
+        "diaconn_g8_logbatterychange_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "addc4a366083e3b4",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnBooleanKey.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logbatteryshorage",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: pump battery shortage.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d8f8edf74b42c304",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 824
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logcanulachange_summary",
+      "ui_location": "Preferences > Pump > Diaconn G8",
+      "kind": "preference_summary",
+      "description": "Switch summary: when the pump history shows a needle (cannula) change, a \"Site Change\" event is added to the careportal (treatment log). The quoted event name should match the app's translated event name.",
+      "related_keys": [
+        "diaconn_g8_logcanulachange_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0f24fbf901c6338d",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnBooleanKey.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logcanulachange_title",
+      "ui_location": "Preferences > Pump > Diaconn G8",
+      "kind": "preference_title",
+      "description": "Switch title: record a needle (cannula) change in the log. Short imperative-style label.",
+      "related_keys": [
+        "diaconn_g8_logcanulachange_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0f24fbf901c6338d",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnBooleanKey.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logdualnormalsuccess",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: normal part of a dual bolus delivered successfully.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9063b8f5e37f39fb",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 443
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logdualsquarestart",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: square (extended) part of a dual bolus started.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7192a06b2946e11b",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 405
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logdualsquaresuccess",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: square part of a dual bolus finished successfully.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5fbebe3d011cb76d",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 466
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_loginjectorprime",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record for priming the injector after a refill. %1$.2f is insulin in units (U).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a92592f1ee95398d",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 570
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_loginsulinchange_summary",
+      "ui_location": "Preferences > Pump > Diaconn G8",
+      "kind": "preference_summary",
+      "description": "Switch summary: when the pump history shows a reservoir (insulin) change, a \"Insulin Change\" event is added to the careportal (treatment log). The quoted event name should match the app's translated event name.",
+      "related_keys": [
+        "diaconn_g8_loginsulinchange_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5fae11b7dacd3e34",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnBooleanKey.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_loginsulinchange_title",
+      "ui_location": "Preferences > Pump > Diaconn G8",
+      "kind": "preference_title",
+      "description": "Switch title: record a reservoir (insulin) change in the log. Short imperative-style label.",
+      "related_keys": [
+        "diaconn_g8_loginsulinchange_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5fae11b7dacd3e34",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnBooleanKey.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_loginsulinshorage",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: insulin shortage in the reservoir reported by the pump (typo in key).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8aeff44210b2f408",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 860
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logmealfail",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: meal bolus failed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b2919bfa8a827ddd",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 219
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logmealsuccess",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: meal bolus delivered successfully.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6265a10a8c4375f7",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 184
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logneedleprime",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record for priming the needle (filling the cannula with insulin). %1$.2f is insulin in units (U).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "df1d5c7e4bae739c",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 730
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logsquarestart",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: square (extended) bolus started.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5efe7685018c085a",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 327
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logsquaresuccess",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: square (extended) bolus finished successfully.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "908fdc63eadbd01d",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 344
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logsuccess",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: bolus delivered successfully.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "dab9827bc4fe31a8",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 255
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logsyncinprogress",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record text stating that log synchronisation with the pump is in progress.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f44f8134c99c2002",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 898
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logtempstart",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: temporary basal started.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fc50c79dfd68c2bf",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 774
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logtubechange_summary",
+      "ui_location": "Preferences > Pump > Diaconn G8",
+      "kind": "preference_summary",
+      "description": "Switch summary: when the pump history shows a tube change, a \"Tube Change\" event is added to the careportal (treatment log). The quoted event name should match the app's translated event name.",
+      "related_keys": [
+        "diaconn_g8_logtubechange_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3608b2b7f516f843",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnBooleanKey.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logtubechange_title",
+      "ui_location": "Preferences > Pump > Diaconn G8",
+      "kind": "preference_title",
+      "description": "Switch title: record a tube change in the log. Short imperative-style label.",
+      "related_keys": [
+        "diaconn_g8_logtubechange_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3608b2b7f516f843",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnBooleanKey.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_logtubeprime",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record for priming after a tube change. %1$.2f is insulin in units (U).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6e92e85c0e852282",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 587
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 602
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_pump",
+      "ui_location": "Config builder > Pump > Diaconn G8",
+      "kind": "title",
+      "description": "Product name of the pump (Diaconn G8). Used as plugin name, preference screen title and in the pump info. A brand name; usually not translated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f45b2ce511a3c33a",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 103
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 109
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 524
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 307
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_pumpalarm",
+      "ui_location": "Diaconn G8 > pump settings > Alarm",
+      "kind": "label",
+      "description": "Section header for how the pump signals alarms; options are sound, vibrate, silent plus an intensity.",
+      "related_keys": [
+        "diaconn_g8_pumpalarm_sound"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "d59d264403fe56d3",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnUserOptionsScreen.kt",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_pumpalarm_intensity_high",
+      "ui_location": "Diaconn G8 > pump settings > Alarm intensity",
+      "kind": "label",
+      "description": "Radio option for alarm volume/intensity level (high). Single word.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9c939f360e9c8cd1",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnUserOptionsScreen.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_pumpalarm_intensity_low",
+      "ui_location": "Diaconn G8 > pump settings > Alarm intensity",
+      "kind": "label",
+      "description": "Radio option for alarm volume/intensity level (low). Single word.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2a23abf7ed00c973",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnUserOptionsScreen.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_pumpalarm_intensity_middle",
+      "ui_location": "Diaconn G8 > pump settings > Alarm intensity",
+      "kind": "label",
+      "description": "Radio option for alarm volume/intensity level (middle). Single word.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8175686f6abd0ba2",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnUserOptionsScreen.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_pumpalarm_silent",
+      "ui_location": "Diaconn G8 > pump settings > Alarm",
+      "kind": "label",
+      "description": "Radio option for pump alarm mode: no sound or vibration. Single lowercase word in the source.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f07c1e618ae14718",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnUserOptionsScreen.kt",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_pumpalarm_sound",
+      "ui_location": "Diaconn G8 > pump settings > Alarm",
+      "kind": "label",
+      "description": "Radio option for pump alarm mode: audible beep. Single lowercase word in the source.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "98609b9cc1479ccb",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnUserOptionsScreen.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_pumpalarm_vibrate",
+      "ui_location": "Diaconn G8 > pump settings > Alarm",
+      "kind": "label",
+      "description": "Radio option for pump alarm mode: vibration only. Single lowercase word in the source.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1b3b2ddea3bc8063",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnUserOptionsScreen.kt",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_pumplang_chiness",
+      "ui_location": "Diaconn G8 > pump settings > Language",
+      "kind": "label",
+      "description": "Radio option naming Chinese (misspelled in source) as the pump display language. Language name only.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "748fd716cd48c9e7",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnUserOptionsScreen.kt",
+          "line": 104
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_pumplang_english",
+      "ui_location": "Diaconn G8 > pump settings > Language",
+      "kind": "label",
+      "description": "Radio option naming English as the pump display language. Language name only.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "83bd8f3994188be1",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnUserOptionsScreen.kt",
+          "line": 106
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_pumplang_korean",
+      "ui_location": "Diaconn G8 > pump settings > Language",
+      "kind": "label",
+      "description": "Radio option naming Korean as the pump display language. Language name only.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b18d27b3d317ceac",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnUserOptionsScreen.kt",
+          "line": 105
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_pumpscreentimeout_10",
+      "ui_location": "Diaconn G8 > pump settings > LCD on time",
+      "kind": "label",
+      "description": "Radio option: LCD stays on 10 seconds. Bare number, unit is in the section header.",
+      "related_keys": [
+        "diaconn_g8_screentimeout"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ec514950d8a7f422",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnUserOptionsScreen.kt",
+          "line": 83
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_pumpscreentimeout_20",
+      "ui_location": "Diaconn G8 > pump settings > LCD on time",
+      "kind": "label",
+      "description": "Radio option: LCD stays on 20 seconds. Bare number, unit is in the section header.",
+      "related_keys": [
+        "diaconn_g8_screentimeout"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "800d7814b60dfe2e",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnUserOptionsScreen.kt",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_pumpscreentimeout_30",
+      "ui_location": "Diaconn G8 > pump settings > LCD on time",
+      "kind": "label",
+      "description": "Radio option: LCD stays on 30 seconds. Bare number, unit is in the section header.",
+      "related_keys": [
+        "diaconn_g8_screentimeout"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ed1fbec380279916",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnUserOptionsScreen.kt",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_reasonbatteryshortage",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "Reason a bolus/basal ended, shown in the history: stopped because of low battery. Short phrase, can be a table cell.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1586c7056ec6f88c",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 973
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_reasoncomplete",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "Reason a bolus/basal ended, shown in the history: delivery completed normally. Short phrase, can be a table cell.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8d5149a7c3b1ae10",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 971
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_reasonemergencystop",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "Reason a bolus/basal ended, shown in the history: stopped by an emergency stop. Short phrase, can be a table cell.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3d7f50f983b8517c",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 978
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_reasoninjectonblock",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "Reason a bolus/basal ended, shown in the history: delivery stopped by an injection block. Short phrase, can be a table cell.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c35fda02b2d9e931",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 972
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_reasoninsulinshortage",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "Reason a bolus/basal ended, shown in the history: stopped because of too little insulin. Short phrase, can be a table cell.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "debf1bfc30dae54b",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 974
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_reasonother",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "Reason a bolus/basal ended, shown in the history: stopped for another reason. Short phrase, can be a table cell.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a9d987b6dd3e725c",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 977
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_reasonsystemreset",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "Reason a bolus/basal ended, shown in the history: stopped by a system reset. Short phrase, can be a table cell.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f30146a877fc598b",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 976
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_reasonuserstop",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "Reason a bolus/basal ended, shown in the history: stopped by the user. Short phrase, can be a table cell.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "593e79bc45d06598",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 975
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_resetaftercalibration",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: pump was reset after calibration. Describes why the pump restarted.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3602a5ab4e6353b2",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 988
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_resetbatteryreplacement",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: pump was reset after the user replaced the battery. Describes why the pump restarted.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7396e5cf91f0e054",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 987
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_resetemergencyoff",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: pump was reset after an emergency off. Describes why the pump restarted.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6d5f4648196a6048",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 986
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_resetfactoryreset",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: pump was reset after a factory reset. Describes why the pump restarted.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0a088aacfd99f0b0",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 985
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_resetpreshipment",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: pump was reset after pre-shipment setup at the factory. Describes why the pump restarted.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bdb683fdae82cc93",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 989
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_resetunexpected",
+      "ui_location": "Diaconn G8 > History (text of a pump log record)",
+      "kind": "log",
+      "description": "History record: pump had an unexpected system reset. Describes why the pump restarted.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4769b0b796dec2a2",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 990
+        }
+      ]
+    },
+    {
+      "key": "diaconn_g8_screentimeout",
+      "ui_location": "Diaconn G8 > pump settings",
+      "kind": "label",
+      "description": "Section header for how long the pump's LCD stays on; the unit is seconds, given in brackets in the text.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4bb3ff04be7f5109",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnUserOptionsScreen.kt",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "key": "diaconn_pairing",
+      "ui_location": "Diaconn G8 > pairing wizard",
+      "kind": "title",
+      "description": "Title of the wizard and screen used to pair the phone with a Diaconn pump over Bluetooth.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "71de18e7aea1688a",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnComposeContent.kt",
+          "line": 80
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnPairWizardScreen.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "diaconn_pairing_successful",
+      "ui_location": "Diaconn G8 > pairing wizard > success step",
+      "kind": "title",
+      "description": "Heading shown when pairing finished successfully. Short sentence with an exclamation mark.",
+      "related_keys": [
+        "diaconn_pairing_successful_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "693ffe396f634991",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnPairWizardScreen.kt",
+          "line": 90
+        }
+      ]
+    },
+    {
+      "key": "diaconn_pairing_successful_message",
+      "ui_location": "Diaconn G8 > pairing wizard > success step",
+      "kind": "dialog_text",
+      "description": "Reassurance under the success heading: the pump is connected and can be used for dosing.",
+      "related_keys": [
+        "diaconn_pairing_successful"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "022c1d553bbf59ad",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnPairWizardScreen.kt",
+          "line": 94
+        }
+      ]
+    },
+    {
+      "key": "diaconng8_pump_settings",
+      "ui_location": "Diaconn G8 > pump settings",
+      "kind": "title",
+      "description": "Title of the screen with settings stored on the pump (alarm, LCD timeout, language, bolus speed).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9247074a5f4940fd",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnComposeContent.kt",
+          "line": 79
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 336
+        }
+      ]
+    },
+    {
+      "key": "gettingbolusstatus",
+      "ui_location": "Overview > pump connection status line",
+      "kind": "status",
+      "description": "Progress text while the app queries the pump for the state of the current bolus. Shared with Dana pumps.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "aa64072d95617f2a",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 90
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 84
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 91
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 306
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 219
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 390
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 559
+        }
+      ]
+    },
+    {
+      "key": "gettingpumpsettings",
+      "ui_location": "Overview > pump connection status line",
+      "kind": "status",
+      "description": "Progress text shown while the app reads configuration from the pump. Present continuous, no final period. Shared with Dana pumps.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fb6b2dc8efcc9261",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 95
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 102
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 89
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 96
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 102
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 142
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 203
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 224
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 186
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 191
+        }
+      ]
+    },
+    {
+      "key": "gettingpumptime",
+      "ui_location": "Overview > pump connection status line",
+      "kind": "status",
+      "description": "Progress text shown while the app reads the pump's clock. Shared with Dana pumps.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "73c7bb721015ea5a",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 114
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 104
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 108
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 229
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 219
+        }
+      ]
+    },
+    {
+      "key": "injectionblocked",
+      "ui_location": "Notification (pump alarm)",
+      "kind": "notification",
+      "description": "Alarm title: the pump reports that insulin injection is blocked (occlusion or similar).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5248eb497da6a854",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/BLECommonService.kt",
+          "line": 359
+        }
+      ]
+    },
+    {
+      "key": "insulinlackwarning",
+      "ui_location": "Notification (pump alarm)",
+      "kind": "notification",
+      "description": "Alarm title: the pump reservoir is running low on insulin.",
+      "related_keys": [
+        "needinsullinreplace"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "c92a0a636247e2fb",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/BLECommonService.kt",
+          "line": 372
+        }
+      ]
+    },
+    {
+      "key": "insulinlimitviolation",
+      "ui_location": "Overview > bolus result message",
+      "kind": "error",
+      "description": "Error reason text appended to a failed bolus result: the insulin limit was exceeded. Shared with Dana pumps; short fragment.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "f89f869bff181f08",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 338
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 349
+        }
+      ]
+    },
+    {
+      "key": "largetimediff",
+      "ui_location": "Notification / alert dialog (pump clock)",
+      "kind": "dialog_text",
+      "description": "Warning that the pump clock differs from the phone by more than 1.5 hours and the user must fix the time on the pump. Contains line breaks. Shared with Dana pumps.",
+      "related_keys": [
+        "largetimedifftitle"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "6154ca537f4afc12",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 124
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 251
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 240
+        }
+      ]
+    },
+    {
+      "key": "largetimedifftitle",
+      "ui_location": "Notification / alert dialog (pump clock)",
+      "kind": "dialog_title",
+      "description": "Title of the pump clock difference warning. Short noun phrase.",
+      "related_keys": [
+        "largetimediff"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "6154ca537f4afc12",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 124
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 251
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 240
+        }
+      ]
+    },
+    {
+      "key": "maxbolusviolation",
+      "ui_location": "Overview > bolus result message",
+      "kind": "error",
+      "description": "Error reason text appended to a failed bolus result: maximum bolus limit was exceeded. Shared with Dana pumps; short fragment.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "818d92be1729712f",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 339
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 346
+        }
+      ]
+    },
+    {
+      "key": "needbatteryreplace",
+      "ui_location": "Notification (pump alarm)",
+      "kind": "notification",
+      "description": "Alarm text asking the user to replace the pump battery.",
+      "related_keys": [
+        "batterywarning"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "199d2640ceebfaa7",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/BLECommonService.kt",
+          "line": 365
+        }
+      ]
+    },
+    {
+      "key": "needinsullinreplace",
+      "ui_location": "Notification (pump alarm)",
+      "kind": "notification",
+      "description": "Alarm text asking the user to replace the insulin reservoir/cartridge.",
+      "related_keys": [
+        "insulinlackwarning"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "c92a0a636247e2fb",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/BLECommonService.kt",
+          "line": 372
+        }
+      ]
+    },
+    {
+      "key": "pairfirst",
+      "ui_location": "Diaconn G8 > connection error",
+      "kind": "error",
+      "description": "Message telling the user to pair the pump with the phone in Android Bluetooth settings first, shown when connecting fails because no pairing exists.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bba4deb7eded2fc8",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/BLEComm.kt",
+          "line": 475
+        }
+      ]
+    },
+    {
+      "key": "processinghistory",
+      "ui_location": "Overview > pump connection status line",
+      "kind": "status",
+      "description": "Status shown while reading pump history log entries one by one. Singular 'event' refers to a pump history record.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "959701a50b44216e",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/comm/MsgHistoryEventsV2.kt",
+          "line": 303
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketAPSHistoryEvents.kt",
+          "line": 471
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 903
+        }
+      ]
+    },
+    {
+      "key": "resetpairing",
+      "ui_location": "Diaconn G8 > pump screen > reset pairing confirmation",
+      "kind": "dialog_text",
+      "description": "Confirmation question shown before the saved Bluetooth pairing with the pump is erased. Yes/no style question.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fb6b5b696c64fe26",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRComposeContent.kt",
+          "line": 73
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSComposeContent.kt",
+          "line": 77
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnComposeContent.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "selectedpump",
+      "ui_location": "Preferences > Pump > Diaconn G8",
+      "kind": "preference_title",
+      "description": "Title of a preference showing the currently selected (paired) pump, usually a Bluetooth device name.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "52322813e0944f19",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/keys/DanaIntentKey.kt",
+          "line": 13
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnIntentKey.kt",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "key": "settingextendedbolus",
+      "ui_location": "Overview > pump connection status line",
+      "kind": "status",
+      "description": "Progress text while the app is starting an extended (slow, spread-out) bolus on the pump. Present continuous, no final period. Shared with Dana pumps.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1af0d412c0cc4b48",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 180
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 172
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 238
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 516
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 729
+        }
+      ]
+    },
+    {
+      "key": "settingtempbasal",
+      "ui_location": "Overview > pump connection status line",
+      "kind": "status",
+      "description": "Progress text while the app is starting a temporary basal rate on the pump. Present continuous, no final period. Shared with Dana pumps.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8e7866a95d253f97",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 162
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 154
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 184
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 199
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 218
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 444
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 465
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 489
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 611
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 650
+        }
+      ]
+    },
+    {
+      "key": "speederror",
+      "ui_location": "Overview > bolus result message",
+      "kind": "error",
+      "description": "Error reason text appended to a failed bolus result: the bolus speed setting was invalid. Shared with Dana pumps; short fragment.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "caaf191a4e9d6edb",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 337
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 348
+        }
+      ]
+    },
+    {
+      "key": "startingbolus",
+      "ui_location": "Overview > bolus progress dialog",
+      "kind": "status",
+      "description": "Status line shown when the pump begins delivering a bolus. Bolus is a dose of insulin. Shared with Dana pumps.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "eb886800249165cf",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 259
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 344
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 472
+        }
+      ]
+    },
+    {
+      "key": "stoppingextendedbolus",
+      "ui_location": "Overview > pump connection status line",
+      "kind": "status",
+      "description": "Progress text while the app is cancelling an extended bolus on the pump. Present continuous, no final period. Shared with Dana pumps.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d368c982219fe24b",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 189
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 181
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 248
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 530
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 756
+        }
+      ]
+    },
+    {
+      "key": "stoppingtempbasal",
+      "ui_location": "Overview > pump connection status line",
+      "kind": "status",
+      "description": "Progress text while the app is cancelling a temporary basal rate on the pump. Present continuous, no final period. Shared with Dana pumps.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "09876640674a3ce1",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 158
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 171
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 150
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 163
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 180
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 195
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 214
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 228
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 440
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 461
+        }
+      ]
+    },
+    {
+      "key": "updatingbasalrates",
+      "ui_location": "Overview > pump connection status line",
+      "kind": "status",
+      "description": "Progress text while the app is writing the basal profile to the pump on the pump. Present continuous, no final period. Shared with Dana pumps.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e8b828443b20d254",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 288
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 233
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 333
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 543
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 780
+        }
+      ]
+    },
+    {
+      "key": "waitingforbolusend",
+      "ui_location": "Overview > bolus progress dialog",
+      "kind": "status",
+      "description": "Status line shown while the app waits until the pump should have finished the bolus, based on an estimated delivery time.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ebea3c8910a595fc",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 548
+        }
+      ]
+    }
+  ]
+}
