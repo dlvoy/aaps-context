@@ -1,0 +1,4034 @@
+{
+  "schema_version": 1,
+  "source_path": "ui/src/androidMain/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "a11y_add_new_insulin",
+      "ui_location": "Insulin management > toolbar button",
+      "kind": "button",
+      "description": "Accessibility description (read by screen readers, not visible) of the button that adds a new insulin.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "6f3994f7eef08e33",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementScreen.kt",
+          "line": 440
+        }
+      ]
+    },
+    {
+      "key": "a11y_bg_delta",
+      "ui_location": "Overview and widgets > spoken BG",
+      "kind": "other",
+      "description": "Spoken fragment for glucose change since the last reading. %1$s is the change with sign and unit.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "c4ddf201709eaa79",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/components/BgSpokenDescription.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "a11y_bg_graph_summary",
+      "ui_location": "Overview > glucose graph",
+      "kind": "other",
+      "description": "Accessibility summary read aloud for the graph, not visible. %1$s are recent values, %2$s and %3$s other spoken details (trend, status). Sentences separated by periods.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "56b1abfc51006ea0",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 402
+        }
+      ]
+    },
+    {
+      "key": "a11y_bg_graph_summary_values_only",
+      "ui_location": "Overview > glucose graph",
+      "kind": "other",
+      "description": "Accessibility summary of the graph (not visible) when only recent values are available. %1$s are the values.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "cb1fa5295799db9c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 408
+        }
+      ]
+    },
+    {
+      "key": "a11y_bg_old_reading",
+      "ui_location": "Overview and widgets > spoken BG",
+      "kind": "other",
+      "description": "Spoken fragment saying the glucose value is outdated. Fragment added after the value.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "5bbb76b5d13d2193",
+      "usages": [
+        {
+          "path": "ui/src/androidMain/kotlin/app/aaps/ui/widget/glance/WidgetStateLoader.kt",
+          "line": 220
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/components/BgSpokenDescription.kt",
+          "line": 38
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 753
+        }
+      ]
+    },
+    {
+      "key": "a11y_delete_current_insulin",
+      "ui_location": "Insulin management > toolbar button",
+      "kind": "button",
+      "description": "Accessibility description (not visible) of the button that deletes the insulin being shown.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "de0b23938f501605",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementScreen.kt",
+          "line": 450
+        }
+      ]
+    },
+    {
+      "key": "a11y_history_next_window",
+      "ui_location": "History > toolbar",
+      "kind": "button",
+      "description": "Accessibility description (not visible) of the button that moves to the later time window.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "385683c7a1b2a824",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/history/HistoryScreen.kt",
+          "line": 223
+        }
+      ]
+    },
+    {
+      "key": "a11y_history_previous_window",
+      "ui_location": "History > toolbar",
+      "kind": "button",
+      "description": "Accessibility description (not visible) of the button that moves to the earlier time window.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "6338350eb73e1915",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/history/HistoryScreen.kt",
+          "line": 202
+        }
+      ]
+    },
+    {
+      "key": "a11y_notifications",
+      "ui_location": "Overview > notification button",
+      "kind": "other",
+      "description": "Accessibility description (not visible) of the notification button. %1$d is the number of notifications.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "2b46aa1b80051a56",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/notificationsSheet/NotificationFab.kt",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "key": "a11y_profile_entry",
+      "ui_location": "Profile editor > time value rows",
+      "kind": "other",
+      "description": "Accessibility description of a profile row (not visible). %1$s is the setting name, %2$s the start time.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "076af36571f743ca",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/TimeValueList.kt",
+          "line": 176
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/TimeValueList.kt",
+          "line": 342
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/TimeValueList.kt",
+          "line": 343
+        }
+      ]
+    },
+    {
+      "key": "a11y_show_controls",
+      "ui_location": "Overview > accessibility action",
+      "kind": "other",
+      "description": "Accessibility action name that reveals the hidden control buttons. Not visible.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "cb78a226f47e24cb",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainScreen.kt",
+          "line": 465
+        }
+      ]
+    },
+    {
+      "key": "a11y_tt_adjusted",
+      "ui_location": "Overview > temp target chip",
+      "kind": "other",
+      "description": "Spoken description when the loop adjusted the target itself. Fragment inserted into a spoken sentence.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "b6c3e642f412c218",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/chips/TempTargetChip.kt",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "key": "a11y_tt_none",
+      "ui_location": "Overview > temp target chip",
+      "kind": "other",
+      "description": "Spoken description when no temp target is active and the profile target applies. Fragment inserted into a spoken sentence.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "f2f1a970d6084b83",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/chips/TempTargetChip.kt",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "key": "aaps_activity_icon_label",
+      "ui_location": "Scenes > icon picker > AAPS icons",
+      "kind": "label",
+      "description": "Name of the AAPS-specific icon \"Exercise\" in the scene icon picker. Short noun phrase naming the AAPS concept the icon stands for; use the same term as elsewhere in the app. TT means temporary target.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "017980bf1f0a735d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 100
+        }
+      ]
+    },
+    {
+      "key": "aaps_automation_icon_label",
+      "ui_location": "Scenes > icon picker > AAPS icons",
+      "kind": "label",
+      "description": "Name of the AAPS-specific icon \"Automation\" in the scene icon picker. Short noun phrase naming the AAPS concept the icon stands for; use the same term as elsewhere in the app. TT means temporary target.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "879fe93118195734",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 102
+        }
+      ]
+    },
+    {
+      "key": "aaps_bolus_icon_label",
+      "ui_location": "Scenes > icon picker > AAPS icons",
+      "kind": "label",
+      "description": "Name of the AAPS-specific icon \"Bolus\" in the scene icon picker. Short noun phrase naming the AAPS concept the icon stands for; use the same term as elsewhere in the app. TT means temporary target.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "4106d26a3722f119",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "key": "aaps_calibration_icon_label",
+      "ui_location": "Scenes > icon picker > AAPS icons",
+      "kind": "label",
+      "description": "Name of the AAPS-specific icon \"Calibration\" in the scene icon picker. Short noun phrase naming the AAPS concept the icon stands for; use the same term as elsewhere in the app. TT means temporary target.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "a6789859923d8129",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 103
+        }
+      ]
+    },
+    {
+      "key": "aaps_carbs_icon_label",
+      "ui_location": "Scenes > icon picker > AAPS icons",
+      "kind": "label",
+      "description": "Name of the AAPS-specific icon \"Carbs\" in the scene icon picker. Short noun phrase naming the AAPS concept the icon stands for; use the same term as elsewhere in the app. TT means temporary target.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "8bf1e48577a364ec",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 98
+        }
+      ]
+    },
+    {
+      "key": "aaps_loop_icon_label",
+      "ui_location": "Scenes > icon picker > AAPS icons",
+      "kind": "label",
+      "description": "Name of the AAPS-specific icon \"Loop\" in the scene icon picker. Short noun phrase naming the AAPS concept the icon stands for; use the same term as elsewhere in the app. TT means temporary target.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "0c8c933625dcb95e",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 95
+        }
+      ]
+    },
+    {
+      "key": "aaps_note_icon_label",
+      "ui_location": "Scenes > icon picker > AAPS icons",
+      "kind": "label",
+      "description": "Name of the AAPS-specific icon \"Note\" in the scene icon picker. Short noun phrase naming the AAPS concept the icon stands for; use the same term as elsewhere in the app. TT means temporary target.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "bcc5e3afe0e2851f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 101
+        }
+      ]
+    },
+    {
+      "key": "aaps_profile_icon_label",
+      "ui_location": "Scenes > icon picker > AAPS icons",
+      "kind": "label",
+      "description": "Name of the AAPS-specific icon \"Profile\" in the scene icon picker. Short noun phrase naming the AAPS concept the icon stands for; use the same term as elsewhere in the app. TT means temporary target.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "491d0013f22bf6ed",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 94
+        }
+      ]
+    },
+    {
+      "key": "aaps_smb_icon_label",
+      "ui_location": "Scenes > icon picker > AAPS icons",
+      "kind": "label",
+      "description": "Name of the AAPS-specific icon \"SMB\" in the scene icon picker. Short noun phrase naming the AAPS concept the icon stands for; use the same term as elsewhere in the app. TT means temporary target.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "96c69c5d8dee93e6",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "key": "aaps_tbr_icon_label",
+      "ui_location": "Scenes > icon picker > AAPS icons",
+      "kind": "label",
+      "description": "Name of the AAPS-specific icon \"Temp Basal\" in the scene icon picker. Short noun phrase naming the AAPS concept the icon stands for; use the same term as elsewhere in the app. TT means temporary target.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "3743ba1fc88e1709",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "key": "aaps_tt_activity_icon_label",
+      "ui_location": "Scenes > icon picker > AAPS icons",
+      "kind": "label",
+      "description": "Name of the AAPS-specific icon \"TT Activity\" in the scene icon picker. Short noun phrase naming the AAPS concept the icon stands for; use the same term as elsewhere in the app. TT means temporary target.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "5b02b1497a393320",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 90
+        }
+      ]
+    },
+    {
+      "key": "aaps_tt_eating_icon_label",
+      "ui_location": "Scenes > icon picker > AAPS icons",
+      "kind": "label",
+      "description": "Name of the AAPS-specific icon \"TT Eating Soon\" in the scene icon picker. Short noun phrase naming the AAPS concept the icon stands for; use the same term as elsewhere in the app. TT means temporary target.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "ff7bcd96992aef37",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 91
+        }
+      ]
+    },
+    {
+      "key": "aaps_tt_high_icon_label",
+      "ui_location": "Scenes > icon picker > AAPS icons",
+      "kind": "label",
+      "description": "Name of the AAPS-specific icon \"Temp Target\" in the scene icon picker. Short noun phrase naming the AAPS concept the icon stands for; use the same term as elsewhere in the app. TT means temporary target.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "e9c36cd0f6c6ee88",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 89
+        }
+      ]
+    },
+    {
+      "key": "aaps_tt_hypo_icon_label",
+      "ui_location": "Scenes > icon picker > AAPS icons",
+      "kind": "label",
+      "description": "Name of the AAPS-specific icon \"TT Hypo\" in the scene icon picker. Short noun phrase naming the AAPS concept the icon stands for; use the same term as elsewhere in the app. TT means temporary target.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "2f517464f650aad1",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 92
+        }
+      ]
+    },
+    {
+      "key": "aaps_tt_manual_icon_label",
+      "ui_location": "Scenes > icon picker > AAPS icons",
+      "kind": "label",
+      "description": "Name of the AAPS-specific icon \"TT Manual\" in the scene icon picker. Short noun phrase naming the AAPS concept the icon stands for; use the same term as elsewhere in the app. TT means temporary target.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "3ac3cddb9527d5d5",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 93
+        }
+      ]
+    },
+    {
+      "key": "activate_label",
+      "ui_location": "Profile activation",
+      "kind": "button",
+      "description": "Title and button to activate (switch to) a profile. Short verb.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "2a2a8eac4069ca9a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileActivationScreen.kt",
+          "line": 166
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileActivationScreen.kt",
+          "line": 207
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileManagementScreen.kt",
+          "line": 505
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetManagementScreen.kt",
+          "line": 586
+        }
+      ]
+    },
+    {
+      "key": "activate_profile",
+      "ui_location": "Profile gate step and Autotune",
+      "kind": "button",
+      "description": "Button that activates a profile, including the one produced by Autotune. Short verb phrase.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "91316ec0572a026b",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/pump/ProfileGateWizardStep.kt",
+          "line": 56
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 226
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 283
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective0.kt",
+          "line": 90
+        }
+      ]
+    },
+    {
+      "key": "active_profile",
+      "ui_location": "Profile helper",
+      "kind": "title",
+      "description": "Heading for the currently active profile.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "fda0122304828f2f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 225
+        }
+      ]
+    },
+    {
+      "key": "active_profile_indicator",
+      "ui_location": "Profile management > carousel card",
+      "kind": "label",
+      "description": "Badge marking the profile currently in use. Sometimes followed by an arrow and the name of the next scheduled profile. Short, uppercase in English.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "480242be92c125fb",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileCarouselCard.kt",
+          "line": 170
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileCarouselCard.kt",
+          "line": 172
+        }
+      ]
+    },
+    {
+      "key": "activity_monitor",
+      "ui_location": "Statistics > Activity monitor",
+      "kind": "title",
+      "description": "Tab and section title for statistics on how long the app and its loop were active over time periods.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "d379a558dc7be70c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 265
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 288
+        }
+      ]
+    },
+    {
+      "key": "add_new_profile",
+      "ui_location": "Profile management > button",
+      "kind": "button",
+      "description": "Accessibility description of the button that adds a profile.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "fd10af6e2ab50ef6",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileManagementScreen.kt",
+          "line": 457
+        }
+      ]
+    },
+    {
+      "key": "additional_ecarbs",
+      "ui_location": "Quick wizard editor",
+      "kind": "label",
+      "description": "Switch label: add extended carbs (eCarbs), carbs absorbed later over a duration, to this entry.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "858447f91edb64cf",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 386
+        }
+      ]
+    },
+    {
+      "key": "age",
+      "ui_location": "Profile helper > default profile",
+      "kind": "label",
+      "description": "Label of the age input when building a default profile from age and weight.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "26689e53468cf14e",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 487
+        }
+      ]
+    },
+    {
+      "key": "alarm_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Alarm\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "efb8bc388bb608bb",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 161
+        }
+      ]
+    },
+    {
+      "key": "available_profile",
+      "ui_location": "Profile helper > profile type dropdown",
+      "kind": "label",
+      "description": "Option to pick any stored profile.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "2c0694c67d5d7146",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 427
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 466
+        }
+      ]
+    },
+    {
+      "key": "available_profiles",
+      "ui_location": "Profile helper",
+      "kind": "title",
+      "description": "Heading for the list of stored profiles.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "27a348613ee3ce38",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 531
+        }
+      ]
+    },
+    {
+      "key": "bakery_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Bakery\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "77af37a6c0c7b725",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 135
+        }
+      ]
+    },
+    {
+      "key": "basal_pct_from_tdd_label",
+      "ui_location": "Profile helper > default profile",
+      "kind": "label",
+      "description": "Label of the input: percentage of the total daily dose used as basal. TDD means total daily dose.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "a2277b1bf6938d65",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 511
+        }
+      ]
+    },
+    {
+      "key": "baseball_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Rugby\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "0f69c236b7f1acf9",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 114
+        }
+      ]
+    },
+    {
+      "key": "basketball_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Handball\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "d19bc262229e04e1",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 115
+        }
+      ]
+    },
+    {
+      "key": "bg_meter",
+      "ui_location": "Careportal dialog > glucose source choice",
+      "kind": "label",
+      "description": "Option for a glucose value measured with a finger-stick meter. Short chip text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "70fe04762ffc918d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/careDialog/CareDialogScreen.kt",
+          "line": 313
+        }
+      ]
+    },
+    {
+      "key": "bg_other",
+      "ui_location": "Careportal dialog > glucose source choice",
+      "kind": "label",
+      "description": "Option for a glucose value from another source than a meter or sensor. Short chip text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "016071b9aa1e62e7",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/careDialog/CareDialogScreen.kt",
+          "line": 315
+        }
+      ]
+    },
+    {
+      "key": "bg_sensor",
+      "ui_location": "Careportal dialog > glucose source choice",
+      "kind": "label",
+      "description": "Option for a glucose value from a CGM sensor. Short chip text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5e1cc2cdb7104fb0",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/careDialog/CareDialogScreen.kt",
+          "line": 314
+        }
+      ]
+    },
+    {
+      "key": "bike_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Bike\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "96e74638b0fd4415",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "key": "blood_type_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Blood\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "049aa402dd335ca6",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 127
+        }
+      ]
+    },
+    {
+      "key": "bookmark_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Bookmark\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "cc952d6fdf7402ba",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 164
+        }
+      ]
+    },
+    {
+      "key": "cafe_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Coffee\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "864216f5bb4c1d0b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 133
+        }
+      ]
+    },
+    {
+      "key": "calculation_in_progress",
+      "ui_location": "Statistics > loading placeholder",
+      "kind": "status",
+      "description": "Shown in place of a statistics section while its values are being computed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ab91ff42563de879",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 131
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 182
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 233
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 289
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 389
+        }
+      ]
+    },
+    {
+      "key": "calculator_options",
+      "ui_location": "Quick wizard editor",
+      "kind": "title",
+      "description": "Section heading above the switches choosing what the wizard calculation includes.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "a79aca7c610419e2",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 252
+        }
+      ]
+    },
+    {
+      "key": "cancel_action_with_details",
+      "ui_location": "Manage sheet > cancel buttons",
+      "kind": "button",
+      "description": "Label of the button that cancels a running extended bolus or temp basal. %1$s is the word for cancel, %2$s a short summary of the running one (rate, duration). Keep it a short imperative with the details after it.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "654b6948ad56ddf1",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/manageSheet/ManageViewModel.kt",
+          "line": 147
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/manageSheet/ManageViewModel.kt",
+          "line": 173
+        }
+      ]
+    },
+    {
+      "key": "cannot_delete_active_insulin",
+      "ui_location": "Insulin management > delete",
+      "kind": "error",
+      "description": "Snackbar error: deletion refused because this insulin is the one currently in use.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "10feca38dd80bb97",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementViewModel.kt",
+          "line": 470
+        }
+      ]
+    },
+    {
+      "key": "cannot_delete_last_insulin",
+      "ui_location": "Insulin management > delete",
+      "kind": "error",
+      "description": "Snackbar error: deletion refused because at least one insulin must remain.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "ab39e93ec08f2eb4",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementViewModel.kt",
+          "line": 465
+        }
+      ]
+    },
+    {
+      "key": "car_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Drive\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "7940f0be4cbecfca",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 148
+        }
+      ]
+    },
+    {
+      "key": "carb_time",
+      "ui_location": "Quick wizard editor",
+      "kind": "label",
+      "description": "Label of the field for the time offset of the carbs relative to now, in minutes.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "df927a9493540df9",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 226
+        }
+      ]
+    },
+    {
+      "key": "carbs_and_bolus",
+      "ui_location": "Treatments > tab",
+      "kind": "title",
+      "description": "Tab title for the combined list of carbs and bolus entries.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "8fcba1b80d052930",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/TreatmentsScreen.kt",
+          "line": 84
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/TreatmentsScreen.kt",
+          "line": 212
+        }
+      ]
+    },
+    {
+      "key": "carbs_constraint_violation",
+      "ui_location": "Overview > quick wizard button",
+      "kind": "status",
+      "description": "Reason a quick wizard button is disabled: the carbs amount exceeds a safety limit (maximum carbs) set in preferences.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "c7de666f91eeb3b9",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 414
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 418
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 458
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 462
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatmentsSheet/TreatmentViewModel.kt",
+          "line": 179
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatmentsSheet/TreatmentViewModel.kt",
+          "line": 183
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatmentsSheet/TreatmentViewModel.kt",
+          "line": 223
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatmentsSheet/TreatmentViewModel.kt",
+          "line": 227
+        }
+      ]
+    },
+    {
+      "key": "careportal_remove_started_events",
+      "ui_location": "Careportal > actions",
+      "kind": "button",
+      "description": "Button and confirmation text that removes the automatic entries written when AAPS starts.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "33482942824c917c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/CareportalScreen.kt",
+          "line": 94
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/CareportalScreen.kt",
+          "line": 121
+        }
+      ]
+    },
+    {
+      "key": "cgp_cv",
+      "ui_location": "Statistics > Glucose Pentagon > chart axis",
+      "kind": "label",
+      "description": "Axis label of the pentagon chart: coefficient of variation of glucose, in percent. Very short.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "6be1412f4d21f400",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/GlucosePentagonCompose.kt",
+          "line": 261
+        }
+      ]
+    },
+    {
+      "key": "cgp_hyper",
+      "ui_location": "Statistics > Glucose Pentagon > chart axis",
+      "kind": "label",
+      "description": "Axis label of the pentagon chart: time in hyperglycemia (high glucose). Very short.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "3d0ea54c24803493",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/GlucosePentagonCompose.kt",
+          "line": 263
+        }
+      ]
+    },
+    {
+      "key": "cgp_hypo",
+      "ui_location": "Statistics > Glucose Pentagon > chart axis",
+      "kind": "label",
+      "description": "Axis label of the pentagon chart: time in hypoglycemia (low glucose). Very short.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "17b1c03b37f57a4f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/GlucosePentagonCompose.kt",
+          "line": 262
+        }
+      ]
+    },
+    {
+      "key": "cgp_mean_glucose",
+      "ui_location": "Statistics > Glucose Pentagon > chart axis",
+      "kind": "label",
+      "description": "Axis label of the pentagon chart: mean glucose. Very short.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "46f94f5fa1489f00",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/GlucosePentagonCompose.kt",
+          "line": 264
+        }
+      ]
+    },
+    {
+      "key": "cgp_patient",
+      "ui_location": "Statistics > Glucose Pentagon > legend",
+      "kind": "label",
+      "description": "Legend entry for the shape of the user's own glucose data in the pentagon chart.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2aa89a705d4ae9a5",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/GlucosePentagonCompose.kt",
+          "line": 204
+        }
+      ]
+    },
+    {
+      "key": "cgp_pgr",
+      "ui_location": "Statistics > Glucose Pentagon > summary",
+      "kind": "label",
+      "description": "Abbreviation PGR (Pentagon Glucose Risk) shown before its value, as PGR: 2.5. Keep short.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "15d7ffe82951fbc6",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/GlucosePentagonCompose.kt",
+          "line": 217
+        }
+      ]
+    },
+    {
+      "key": "cgp_pgr_extremely_high",
+      "ui_location": "Statistics > Glucose Pentagon > risk rating",
+      "kind": "status",
+      "description": "Risk rating text for a PGR value above 4.5, the worst level of the scale.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "920b6ce16f808ad1",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/GlucosePentagonCompose.kt",
+          "line": 228
+        }
+      ]
+    },
+    {
+      "key": "cgp_pgr_high",
+      "ui_location": "Statistics > Glucose Pentagon > risk rating",
+      "kind": "status",
+      "description": "Risk rating text for a PGR value above 4.0 up to 4.5.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "631cc48c299753d2",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/GlucosePentagonCompose.kt",
+          "line": 227
+        }
+      ]
+    },
+    {
+      "key": "cgp_pgr_low",
+      "ui_location": "Statistics > Glucose Pentagon > risk rating",
+      "kind": "status",
+      "description": "Risk rating text for a PGR value above 2.0 up to 3.0.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "524e36d31b3f57f1",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/GlucosePentagonCompose.kt",
+          "line": 225
+        }
+      ]
+    },
+    {
+      "key": "cgp_pgr_moderate",
+      "ui_location": "Statistics > Glucose Pentagon > risk rating",
+      "kind": "status",
+      "description": "Risk rating text for a PGR value above 3.0 up to 4.0.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b16bc71ac73a76c3",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/GlucosePentagonCompose.kt",
+          "line": 226
+        }
+      ]
+    },
+    {
+      "key": "cgp_pgr_very_low",
+      "ui_location": "Statistics > Glucose Pentagon > risk rating",
+      "kind": "status",
+      "description": "Risk rating text for a PGR value up to 2.0. Part of a scale with low, moderate, high and extremely high.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4d3d35f58b61815d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/GlucosePentagonCompose.kt",
+          "line": 224
+        }
+      ]
+    },
+    {
+      "key": "cgp_reference",
+      "ui_location": "Statistics > Glucose Pentagon > legend",
+      "kind": "label",
+      "description": "Legend entry for the reference shape in the pentagon chart, drawn for a person without diabetes.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b1f408bbbc80a201",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/GlucosePentagonCompose.kt",
+          "line": 199
+        }
+      ]
+    },
+    {
+      "key": "cgp_title",
+      "ui_location": "Statistics > Glucose Pentagon",
+      "kind": "title",
+      "description": "Title of the Comprehensive Glucose Pentagon (CGP) card, a chart that scores glucose control over the last 14 days.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "389aa9ec40ffe017",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 383
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 389
+        }
+      ]
+    },
+    {
+      "key": "cgp_tor",
+      "ui_location": "Statistics > Glucose Pentagon > chart axis",
+      "kind": "label",
+      "description": "Axis label of the pentagon chart. ToR is time out of range. Very short abbreviation.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "bc882052194071fc",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/GlucosePentagonCompose.kt",
+          "line": 260
+        }
+      ]
+    },
+    {
+      "key": "cleaned_tdd",
+      "ui_location": "Statistics > TDD cycle pattern",
+      "kind": "label",
+      "description": "Chip choosing the TDD series with insulin for carbs removed.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "5aea8cb631e21d14",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TddCyclePatternCompose.kt",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "key": "cleaned_tdd_explanation",
+      "ui_location": "Statistics > TDD cycle pattern",
+      "kind": "hint",
+      "description": "Short explanation of cleaned TDD: total daily dose minus insulin given for carbs.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "9f8e17d1ad855cad",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TddCyclePatternCompose.kt",
+          "line": 103
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_pending_failed_format",
+      "ui_location": "Client control > pending action dialog",
+      "kind": "dialog_text",
+      "description": "Body when a command was rejected. %1$s is the name of the action (for example a bolus or profile switch), %2$s the reason from the master. \\n is a line break.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "98854edadc505534",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/clientcontrol/ClientControlPendingDialog.kt",
+          "line": 76
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_pending_partial_format",
+      "ui_location": "Client control > pending action dialog",
+      "kind": "dialog_text",
+      "description": "Body for a partly applied command. %1$s is the action name. Tells the user to check what is now active. \\n is a line break.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "9e611887494e92f3",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/clientcontrol/ClientControlPendingDialog.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_pending_partial_title",
+      "ui_location": "Client control > pending action dialog",
+      "kind": "dialog_title",
+      "description": "Title when only part of a multi-step command succeeded on the master.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "70bfedc8aa5761aa",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/clientcontrol/ClientControlPendingDialog.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_pending_rejected_title",
+      "ui_location": "Client control > pending action dialog",
+      "kind": "dialog_title",
+      "description": "Title when the master rejected the command sent from a client, so nothing was changed.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "288e9259328fc038",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/clientcontrol/ClientControlPendingDialog.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_pending_stop_waiting",
+      "ui_location": "Client control > pending action dialog",
+      "kind": "button",
+      "description": "Button that dismisses the dialog while still waiting for the master; the command may still be applied later.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "28bf0506cdf406e4",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/clientcontrol/ClientControlPendingDialog.kt",
+          "line": 106
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_pending_unconfirmed_format",
+      "ui_location": "Client control > pending action dialog",
+      "kind": "dialog_text",
+      "description": "Body when no confirmation arrived. %1$s is the action name, %2$s the reason. Says the action will show up if the master applies it later. \\n is a line break.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "f6e6fa98fc0bb318",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/clientcontrol/ClientControlPendingDialog.kt",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_pending_unconfirmed_title",
+      "ui_location": "Client control > pending action dialog",
+      "kind": "dialog_title",
+      "description": "Title when a command was sent but the master did not answer in time.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "925909cf7051eca9",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/clientcontrol/ClientControlPendingDialog.kt",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_pending_working_text",
+      "ui_location": "Client control > pending action dialog",
+      "kind": "dialog_text",
+      "description": "Body while waiting for the master phone to confirm a command sent from a client.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "bdd22285d2cbad20",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/clientcontrol/ClientControlPendingDialog.kt",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_pending_working_title",
+      "ui_location": "Client control > pending action dialog",
+      "kind": "dialog_title",
+      "description": "Title while a command from a client device is being sent to or run by the master (the main AAPS phone). Progressive form, ends with an ellipsis.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "49a2d3ce1a8332de",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/clientcontrol/ClientControlPendingDialog.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "clone_label",
+      "ui_location": "Profile management and helper",
+      "kind": "button",
+      "description": "Action and dialog title to duplicate a profile. Short verb.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "0edd9282c1f13f33",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 352
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileManagementScreen.kt",
+          "line": 158
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileManagementScreen.kt",
+          "line": 472
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardManagementScreen.kt",
+          "line": 513
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/ProfileSwitchScreen.kt",
+          "line": 282
+        }
+      ]
+    },
+    {
+      "key": "comparation",
+      "ui_location": "Profile helper > tab",
+      "kind": "title",
+      "description": "Tab title for side by side comparison of two profiles. English spelling is non-standard; translate as comparison.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "621d7381812db9ef",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 318
+        }
+      ]
+    },
+    {
+      "key": "configure",
+      "ui_location": "Widget configuration screen",
+      "kind": "title",
+      "description": "Heading on the widget setup screen where the user sets the widget's background opacity. The English text is Configure opacity.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "5795aba67fb44e9b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/widget/WidgetConfigureScreen.kt",
+          "line": 82
+        }
+      ]
+    },
+    {
+      "key": "confirm_clone_profile",
+      "ui_location": "Profile management > dialog",
+      "kind": "dialog_text",
+      "description": "Confirmation question before duplicating a profile. %1$s is its name, shown in quotes.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "a75328150fc2f134",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileManagementScreen.kt",
+          "line": 159
+        }
+      ]
+    },
+    {
+      "key": "confirm_remove_profile",
+      "ui_location": "Profile management > dialog",
+      "kind": "dialog_text",
+      "description": "Confirmation question before deleting a profile. %1$s is its name, shown in quotes.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "681981c70aa7e90a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileManagementScreen.kt",
+          "line": 141
+        }
+      ]
+    },
+    {
+      "key": "confirm_treatment",
+      "ui_location": "Careportal dialog > confirmation",
+      "kind": "dialog_title",
+      "description": "Heading of the confirmation summary before a careportal entry is saved.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "a678b6078ab31bf4",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/careDialog/CareDialogViewModel.kt",
+          "line": 167
+        }
+      ]
+    },
+    {
+      "key": "current_profile",
+      "ui_location": "Profile helper > profile type dropdown",
+      "kind": "label",
+      "description": "Option to use the profile currently in use.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "bfdd8bf6f63f2b0e",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 426
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 465
+        }
+      ]
+    },
+    {
+      "key": "cycle_offset",
+      "ui_location": "Statistics > TDD cycle pattern",
+      "kind": "label",
+      "description": "Label of the control for the cycle start offset, in days. TDD is total daily dose.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "83d3d3d47db50832",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TddCyclePatternCompose.kt",
+          "line": 167
+        }
+      ]
+    },
+    {
+      "key": "delete_site_note",
+      "ui_location": "Site rotation > confirmation summary",
+      "kind": "label",
+      "description": "Confirmation line saying the site note will be deleted.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d38d2aee3d9c2150",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/siteRotationDialog/viewModels/SiteRotationManagementViewModel.kt",
+          "line": 222
+        }
+      ]
+    },
+    {
+      "key": "device_selection",
+      "ui_location": "Quick wizard editor",
+      "kind": "title",
+      "description": "Section heading above switches choosing where the quick wizard button is shown.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "4598336eb16c3785",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 362
+        }
+      ]
+    },
+    {
+      "key": "dexcom_tir",
+      "ui_location": "Statistics > Dexcom TIR",
+      "kind": "title",
+      "description": "Tab and section title for time in range statistics in the style of Dexcom reports. TIR means time in range (glucose within target).",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "95be2cc249cd9ab3",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 214
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 232
+        }
+      ]
+    },
+    {
+      "key": "disconnectpump",
+      "ui_location": "Running mode screen > disconnect pump section",
+      "kind": "title",
+      "description": "Heading of the card where the user disconnects the pump for a chosen time (for example to shower). Loop and insulin delivery are paused meanwhile.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "63a3cc3747c0266a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/runningMode/RunningModeScreen.kt",
+          "line": 327
+        }
+      ]
+    },
+    {
+      "key": "do_you_want_recalculate_tdd_stats",
+      "ui_location": "Statistics > recalculate confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Question in a confirmation dialog before total daily dose (TDD) statistics are recalculated.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f37ce509d30a066f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 403
+        }
+      ]
+    },
+    {
+      "key": "do_you_want_reset_stats",
+      "ui_location": "Statistics > reset confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Question in a confirmation dialog before the activity statistics are reset (deleted).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f05e88746d395b38",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 411
+        }
+      ]
+    },
+    {
+      "key": "dpv_default_profile",
+      "ui_location": "Profile helper > profile type dropdown",
+      "kind": "label",
+      "description": "Option for a default profile from the DPV model (a published pediatric dosing model). Keep DPV as is.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "332bfe7e2bc3a8b9",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 425
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 464
+        }
+      ]
+    },
+    {
+      "key": "duration10h",
+      "ui_location": "Running mode screen > suspend section",
+      "kind": "button",
+      "description": "Button that sets a 10 hour loop suspension. Short.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "5d19af21de9ccf9a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/runningMode/RunningModeScreen.kt",
+          "line": 268
+        }
+      ]
+    },
+    {
+      "key": "duration15m",
+      "ui_location": "Running mode screen > duration buttons",
+      "kind": "button",
+      "description": "Button that sets a 15 minute duration. Short, shares a row with other durations.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "55da645789a9c49d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/runningMode/RunningModeScreen.kt",
+          "line": 319
+        }
+      ]
+    },
+    {
+      "key": "duration1h",
+      "ui_location": "Running mode screen > duration buttons",
+      "kind": "button",
+      "description": "Button that sets a 1 hour duration, in both the suspend and disconnect sections. Short.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "26b5f507d0084062",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/runningMode/RunningModeScreen.kt",
+          "line": 265
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/runningMode/RunningModeScreen.kt",
+          "line": 321
+        }
+      ]
+    },
+    {
+      "key": "duration2h",
+      "ui_location": "Running mode screen > duration buttons",
+      "kind": "button",
+      "description": "Button that sets a 2 hour duration, in both the suspend and disconnect sections. Short.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "c1df89c7146189ff",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/runningMode/RunningModeScreen.kt",
+          "line": 266
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/runningMode/RunningModeScreen.kt",
+          "line": 322
+        }
+      ]
+    },
+    {
+      "key": "duration30m",
+      "ui_location": "Running mode screen > duration buttons",
+      "kind": "button",
+      "description": "Button that sets a 30 minute duration. Short.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "d04b2e9ac9b66903",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/runningMode/RunningModeScreen.kt",
+          "line": 320
+        }
+      ]
+    },
+    {
+      "key": "duration3h",
+      "ui_location": "Running mode screen > duration buttons",
+      "kind": "button",
+      "description": "Button that sets a 3 hour duration, in both the suspend and disconnect sections. Short.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "b41717997e66e59d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/runningMode/RunningModeScreen.kt",
+          "line": 267
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/runningMode/RunningModeScreen.kt",
+          "line": 323
+        }
+      ]
+    },
+    {
+      "key": "ecarbs_additional",
+      "ui_location": "Quick wizard editor > eCarbs",
+      "kind": "label",
+      "description": "Label of the field for the amount of extended carbs (eCarbs), in grams.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "dcf1e4226ca6da72",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 422
+        }
+      ]
+    },
+    {
+      "key": "edit_label",
+      "ui_location": "Profile management > row action",
+      "kind": "button",
+      "description": "Accessibility description of the edit button. Short verb.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "fe6884862bdab904",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileManagementScreen.kt",
+          "line": 463
+        }
+      ]
+    },
+    {
+      "key": "edit_site",
+      "ui_location": "Site rotation > entry list and edit screen",
+      "kind": "title",
+      "description": "Screen title when editing a site entry, and accessibility description of the edit button on a row. Short verb.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "b318e9c6c460d6fe",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/SiteEntryList.kt",
+          "line": 165
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/siteRotationDialog/SiteRotationManagementScreen.kt",
+          "line": 195
+        }
+      ]
+    },
+    {
+      "key": "event_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Event\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "bd8c726955a719c5",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 162
+        }
+      ]
+    },
+    {
+      "key": "execute_label",
+      "ui_location": "Quick wizard management > row action",
+      "kind": "button",
+      "description": "Accessibility description of the button that runs a quick wizard entry now. Short verb.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "1d5d9fe7dc729d95",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardManagementScreen.kt",
+          "line": 552
+        }
+      ]
+    },
+    {
+      "key": "exercise_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Run\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "28dce29f1369a9b6",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 106
+        }
+      ]
+    },
+    {
+      "key": "fill_insulin_change",
+      "ui_location": "Fill dialog > confirmation summary",
+      "kind": "label",
+      "description": "Confirmation line saying the insulin type will switch and a profile switch will follow. %1$s is the insulin name.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bc0ef1eec2200b82",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/fillDialog/FillDialogViewModel.kt",
+          "line": 301
+        }
+      ]
+    },
+    {
+      "key": "fill_prime_amount",
+      "ui_location": "Fill dialog > amount field",
+      "kind": "label",
+      "description": "Label of the amount field for priming (filling the tubing or cannula with insulin), in insulin units.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f512793aaa93c23e",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/fillDialog/FillDialogScreen.kt",
+          "line": 365
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/fillDialog/FillDialogViewModel.kt",
+          "line": 274
+        }
+      ]
+    },
+    {
+      "key": "fill_pump_units_note",
+      "ui_location": "Fill dialog > amount field note",
+      "kind": "hint",
+      "description": "Note that the prime amount is entered in the pump's own units, not necessarily AAPS units.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "cde802c965b6e796",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/fillDialog/FillDialogViewModel.kt",
+          "line": 242
+        }
+      ]
+    },
+    {
+      "key": "fill_warning",
+      "ui_location": "Fill dialog > confirmation summary",
+      "kind": "dialog_text",
+      "description": "Warning shown before priming or filling the infusion set: the entered insulin amount must match the infusion set's specification (tubing or cannula volume).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "93a015eab5245e2a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/fillDialog/FillDialogViewModel.kt",
+          "line": 267
+        }
+      ]
+    },
+    {
+      "key": "fitness_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Fitness\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "0b30f21ddbc2d208",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 107
+        }
+      ]
+    },
+    {
+      "key": "flag_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Flag\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "d2cb8c37bbfac268",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 163
+        }
+      ]
+    },
+    {
+      "key": "flight_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Flight\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "053b3635ebce7583",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 149
+        }
+      ]
+    },
+    {
+      "key": "format_with_tdd",
+      "ui_location": "Profile helper > generated profile name",
+      "kind": "label",
+      "description": "Name given to a generated profile. %1$d is the age in years, %2$.0f the total daily dose (TDD) in insulin units, shown with the U unit.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "8cdfdfa9b94c738a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/viewmodels/ProfileHelperViewModel.kt",
+          "line": 195
+        }
+      ]
+    },
+    {
+      "key": "format_with_tdd_and_pct",
+      "ui_location": "Profile helper > generated profile name",
+      "kind": "label",
+      "description": "Name given to a generated profile. %1$d is age in years, %2$.0f total daily dose (TDD) in insulin units, %3$d%% the basal share in percent.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "41f36fecb6f742cd",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/viewmodels/ProfileHelperViewModel.kt",
+          "line": 198
+        }
+      ]
+    },
+    {
+      "key": "format_with_weight",
+      "ui_location": "Profile helper > generated profile name",
+      "kind": "label",
+      "description": "Name given to a generated profile. %1$d is age in years, %2$.0f weight in kg.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "91b51d90049b2add",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/viewmodels/ProfileHelperViewModel.kt",
+          "line": 196
+        }
+      ]
+    },
+    {
+      "key": "glucose_type",
+      "ui_location": "Careportal dialog > confirmation summary",
+      "kind": "label",
+      "description": "Label in the confirmation summary naming the glucose source (meter, sensor or other). The chosen source is shown after it.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "05978687fb9db4b7",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/careDialog/CareDialogViewModel.kt",
+          "line": 172
+        }
+      ]
+    },
+    {
+      "key": "golf_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Golf\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "e49d2b2fb1f25b85",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 117
+        }
+      ]
+    },
+    {
+      "key": "healing_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Healing\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "053e81d4d6930b22",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 129
+        }
+      ]
+    },
+    {
+      "key": "health_safety_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Health\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "a31bf4f46b65ffed",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 128
+        }
+      ]
+    },
+    {
+      "key": "heart_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Heart\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "d00c2362528b4a89",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 155
+        }
+      ]
+    },
+    {
+      "key": "hide_invalidated",
+      "ui_location": "Treatments lists > toolbar menu",
+      "kind": "menu_item",
+      "description": "Toggle to hide entries that were marked invalid. Opposite of Show invalidated.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "c47d6fddd596a841",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/SelectableListToolbar.kt",
+          "line": 103
+        }
+      ]
+    },
+    {
+      "key": "hiking_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Hiking\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "e069123cee152693",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 109
+        }
+      ]
+    },
+    {
+      "key": "history_now",
+      "ui_location": "History > toolbar",
+      "kind": "button",
+      "description": "Button that jumps the history view to the current time. Short.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "ea36e0de75fd3048",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/history/HistoryScreen.kt",
+          "line": 218
+        }
+      ]
+    },
+    {
+      "key": "home_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Home\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "959d93d6c407f9a4",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 147
+        }
+      ]
+    },
+    {
+      "key": "hospital_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Hospital\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "ddbccc1209180e90",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 123
+        }
+      ]
+    },
+    {
+      "key": "hotel_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Hotel\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "1443d53e24c52067",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 141
+        }
+      ]
+    },
+    {
+      "key": "insulin_activation_applied",
+      "ui_location": "Insulin management > activation",
+      "kind": "toast",
+      "description": "Snackbar confirmation that switching the active insulin took effect.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "05657c2c07604c33",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementViewModel.kt",
+          "line": 521
+        }
+      ]
+    },
+    {
+      "key": "insulin_constraint_violation",
+      "ui_location": "Overview > quick wizard button",
+      "kind": "status",
+      "description": "Reason a quick wizard button is disabled: the insulin amount exceeds a safety limit (for example maximum bolus).",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "4ee1814d06669d7b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 402
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 465
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatmentsSheet/TreatmentViewModel.kt",
+          "line": 167
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatmentsSheet/TreatmentViewModel.kt",
+          "line": 230
+        }
+      ]
+    },
+    {
+      "key": "insulin_edit_target_gone",
+      "ui_location": "Insulin management > save",
+      "kind": "error",
+      "description": "Snackbar error: the insulin being edited was deleted on another device, so the edit was lost and the list was reloaded.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "b107d578ac2b8a0c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementViewModel.kt",
+          "line": 430
+        }
+      ]
+    },
+    {
+      "key": "insulin_external_update_message",
+      "ui_location": "Insulin management > dialog",
+      "kind": "dialog_text",
+      "description": "Body of the dialog above. OK loads the other device's changes and discards the user's unsaved edits; Cancel keeps editing and a later save overwrites the other device's changes.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "239d56e50499fcbf",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementScreen.kt",
+          "line": 197
+        }
+      ]
+    },
+    {
+      "key": "insulin_external_update_title",
+      "ui_location": "Insulin management > dialog",
+      "kind": "dialog_title",
+      "description": "Title of a dialog shown when a paired client (another phone following or controlling this AAPS) changed the insulin configuration while the user is editing.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "ef7d8d6adc17b177",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementScreen.kt",
+          "line": 196
+        }
+      ]
+    },
+    {
+      "key": "insulin_name_exists",
+      "ui_location": "Insulin management > save",
+      "kind": "error",
+      "description": "Snackbar error: another insulin already uses the entered name. %1$s is the name; the user must pick a different one.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "32e8c4f3a6ec2308",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementViewModel.kt",
+          "line": 436
+        }
+      ]
+    },
+    {
+      "key": "label_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Label\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "1ff18f4631aab5e4",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 165
+        }
+      ]
+    },
+    {
+      "key": "load_peak_from",
+      "ui_location": "Insulin management > peak time presets",
+      "kind": "dialog_title",
+      "description": "Title of the chooser and label above preset chips: copy the peak time of a standard insulin (such as rapid-acting) into the current insulin. Peak is when insulin action is strongest.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "e2a397aabc056b26",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementScreen.kt",
+          "line": 538
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementScreen.kt",
+          "line": 555
+        }
+      ]
+    },
+    {
+      "key": "lunch_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Lunch\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "7be4a108db2c2d8f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 134
+        }
+      ]
+    },
+    {
+      "key": "meal_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Restaurant\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "b80848409e5c4056",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 132
+        }
+      ]
+    },
+    {
+      "key": "medication_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Medication\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "c3312b79d4e6b363",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 124
+        }
+      ]
+    },
+    {
+      "key": "missing_carbs",
+      "ui_location": "Bolus wizard > result",
+      "kind": "status",
+      "description": "Shown when the calculated insulin needs more carbs to avoid a low. %1$d is the number of grams.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "1f60c12fc886dade",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 389
+        }
+      ]
+    },
+    {
+      "key": "missing_insulin_name",
+      "ui_location": "Insulin management > save",
+      "kind": "toast",
+      "description": "Snackbar error when saving an insulin that has no name entered.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "f081275aa588c4bb",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementViewModel.kt",
+          "line": 396
+        }
+      ]
+    },
+    {
+      "key": "monitor_heart_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Monitor\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "6fb4566be39d1212",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 125
+        }
+      ]
+    },
+    {
+      "key": "motol_default_profile",
+      "ui_location": "Profile helper > profile type dropdown",
+      "kind": "label",
+      "description": "Option for a default profile generated from age and weight (the Motol Hospital model).",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "30caa59cd4abc157",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 424
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 463
+        }
+      ]
+    },
+    {
+      "key": "night_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Night\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "79e9386acb4a6f8f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 139
+        }
+      ]
+    },
+    {
+      "key": "nights_stay_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Nights Stay\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "5e57f4f662cf5c06",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 140
+        }
+      ]
+    },
+    {
+      "key": "no_records_available",
+      "ui_location": "Treatments and user entries lists",
+      "kind": "status",
+      "description": "Empty-state text when a list has no entries.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "71db655f528768ce",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/components/ContentContainer.kt",
+          "line": 67
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/UserEntryScreen.kt",
+          "line": 139
+        }
+      ]
+    },
+    {
+      "key": "no_temp_basal_running",
+      "ui_location": "Overview > temp basal info",
+      "kind": "status",
+      "description": "Message shown when the user taps the temp basal info and no temporary basal rate is active.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4cdb9f9b9562da6a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 776
+        }
+      ]
+    },
+    {
+      "key": "overview_edit_quickwizard_button_text",
+      "ui_location": "Quick wizard editor",
+      "kind": "label",
+      "description": "Label of the text field for the caption shown on the quick wizard button on the Overview screen. Short.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "d5a025dd5b6aafbb",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 158
+        }
+      ]
+    },
+    {
+      "key": "overview_edit_quickwizard_superbolus",
+      "ui_location": "Quick wizard editor > calculator options",
+      "kind": "label",
+      "description": "Switch label: use a superbolus (basal for the next hours given upfront as bolus while basal is zeroed).",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "96fde1872ec150c6",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 322
+        }
+      ]
+    },
+    {
+      "key": "overview_edit_quickwizard_use_positive_iob_only",
+      "ui_location": "Quick wizard editor > calculator options",
+      "kind": "label",
+      "description": "Switch label: count insulin on board (IOB) only when positive, ignoring negative IOB.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "72cb9d72c7aa8e15",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 281
+        }
+      ]
+    },
+    {
+      "key": "percentage_label",
+      "ui_location": "Profile switch dialog and confirmation summary",
+      "kind": "label",
+      "description": "Label of the profile percentage field (scale of insulin doses, 100% is unchanged), also used in confirmation lines.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "2db75ef3e0ae4eeb",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 867
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileActivationScreen.kt",
+          "line": 273
+        }
+      ]
+    },
+    {
+      "key": "permission_change",
+      "ui_location": "Permissions sheet > row button",
+      "kind": "button",
+      "description": "Button to change an already granted permission in system settings. Short verb.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "4dc7f55549050ba2",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/permissionsSheet/PermissionsSheet.kt",
+          "line": 141
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/permissionsSheet/PermissionsSheetPreviews.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "permission_denied_go_to_settings",
+      "ui_location": "Main screen > snackbar",
+      "kind": "toast",
+      "description": "Snackbar message: Android will no longer ask for the permission, so the user must enable it in system settings.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "ceb56f2854300d96",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/ComposeMainActivity.kt",
+          "line": 426
+        }
+      ]
+    },
+    {
+      "key": "permission_directory_picker_error",
+      "ui_location": "Main screen > snackbar",
+      "kind": "error",
+      "description": "Error when Android's folder picker could not open. Mentions Family Link (Google parental control) as a common cause.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "e4273a073c045e55",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/ComposeMainActivity.kt",
+          "line": 385
+        }
+      ]
+    },
+    {
+      "key": "permission_grant",
+      "ui_location": "Permissions sheet > row button",
+      "kind": "button",
+      "description": "Button to request a not yet granted permission. Short verb.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "6d9bd4a4d30660f7",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/permissionsSheet/PermissionsSheet.kt",
+          "line": 142
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/permissionsSheet/PermissionsSheetPreviews.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "permission_nav_label",
+      "ui_location": "Navigation bar",
+      "kind": "menu_item",
+      "description": "Label of the navigation item that opens the permissions sheet. Short, under an icon.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "909e9fcab0bfea19",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainNavigationBar.kt",
+          "line": 275
+        }
+      ]
+    },
+    {
+      "key": "permission_open_settings",
+      "ui_location": "Main screen > snackbar action",
+      "kind": "button",
+      "description": "Action button of the snackbar above, opens Android app settings. Short.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "260d1704daca6162",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/ComposeMainActivity.kt",
+          "line": 427
+        }
+      ]
+    },
+    {
+      "key": "permission_sheet_subtitle",
+      "ui_location": "Permissions sheet",
+      "kind": "dialog_text",
+      "description": "Short sentence under the title explaining why permissions are requested.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "370154198c218ebb",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/permissionsSheet/PermissionsSheet.kt",
+          "line": 79
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/permissionsSheet/PermissionsSheetPreviews.kt",
+          "line": 19
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/permissionsSheet/PermissionsSheetPreviews.kt",
+          "line": 27
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/permissionsSheet/PermissionsSheetPreviews.kt",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "key": "permission_sheet_title",
+      "ui_location": "Navigation bar > permissions sheet",
+      "kind": "dialog_title",
+      "description": "Title of the sheet listing missing Android permissions; also accessibility description of its navigation item.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "1415e72c94107878",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainNavigationBar.kt",
+          "line": 271
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/permissionsSheet/PermissionsSheet.kt",
+          "line": 72
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/permissionsSheet/PermissionsSheetPreviews.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "profile_no_longer_exists",
+      "ui_location": "Profile management > snackbar",
+      "kind": "error",
+      "description": "Error shown when the profile list changed (for example on another device) before a clone or remove could finish.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "d5eeb1c8568eb905",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/viewmodels/ProfileManagementViewModel.kt",
+          "line": 408
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/viewmodels/ProfileManagementViewModel.kt",
+          "line": 427
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/viewmodels/ProfileManagementViewModel.kt",
+          "line": 533
+        }
+      ]
+    },
+    {
+      "key": "profile_parameters",
+      "ui_location": "Profile helper > default profile",
+      "kind": "title",
+      "description": "Section heading above age, weight and similar inputs.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "0e5389139c12ec11",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 485
+        }
+      ]
+    },
+    {
+      "key": "profile_switches",
+      "ui_location": "Profile helper and sync consent",
+      "kind": "title",
+      "description": "Heading for profile switch history (past changes of active profile, with percentage and time shift) and the matching data category.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "5229e6bae1e21478",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 216
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 560
+        }
+      ]
+    },
+    {
+      "key": "profile_tab_1",
+      "ui_location": "Profile helper > tab",
+      "kind": "title",
+      "description": "Tab title for the first profile in the comparison.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "d1dfd8c0a256cf2a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 316
+        }
+      ]
+    },
+    {
+      "key": "profile_tab_2",
+      "ui_location": "Profile helper > tab",
+      "kind": "title",
+      "description": "Tab title for the second profile in the comparison.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "037068e2e551c56f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 317
+        }
+      ]
+    },
+    {
+      "key": "profile_type",
+      "ui_location": "Profile helper > selector",
+      "kind": "label",
+      "description": "Label of the dropdown choosing which kind of profile to base the comparison on.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "951c654b69427ab5",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 440
+        }
+      ]
+    },
+    {
+      "key": "psychology_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Mind\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "b4668458539b61d9",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 156
+        }
+      ]
+    },
+    {
+      "key": "quick_wizard_mode_carbs",
+      "ui_location": "Quick wizard editor",
+      "kind": "label",
+      "description": "Mode choice: only record a fixed amount of carbs. Short chip text.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "323a0a95a228ce39",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 189
+        }
+      ]
+    },
+    {
+      "key": "quick_wizard_mode_insulin",
+      "ui_location": "Quick wizard editor",
+      "kind": "label",
+      "description": "Mode choice: deliver a fixed amount of insulin. Short chip text.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "bf6e66c2d53cdd24",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 188
+        }
+      ]
+    },
+    {
+      "key": "quick_wizard_mode_wizard",
+      "ui_location": "Quick wizard editor",
+      "kind": "label",
+      "description": "Mode choice: run the full bolus wizard calculation. Short chip text.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "00b498f8a3f3aa21",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 187
+        }
+      ]
+    },
+    {
+      "key": "raw_tdd",
+      "ui_location": "Statistics > TDD cycle pattern",
+      "kind": "label",
+      "description": "Chip choosing the unmodified total daily dose (TDD) series.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "7ae5a6ebe1d06fd2",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TddCyclePatternCompose.kt",
+          "line": 91
+        }
+      ]
+    },
+    {
+      "key": "recalculate",
+      "ui_location": "Statistics > TDD section",
+      "kind": "button",
+      "description": "Button that recalculates total daily dose statistics. Short verb.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "6dcd3671b4eb3950",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 113
+        }
+      ]
+    },
+    {
+      "key": "reconnect",
+      "ui_location": "Running mode screen > disconnect pump section",
+      "kind": "button",
+      "description": "Button that ends a pump disconnection and reconnects the pump. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "a5277f8a39409ad2",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/runningMode/RunningModeScreen.kt",
+          "line": 318
+        }
+      ]
+    },
+    {
+      "key": "record_insulin_cartridge_change",
+      "ui_location": "Fill dialog > switch and confirmation",
+      "kind": "label",
+      "description": "Switch label and confirmation line: also log an insulin cartridge/reservoir change.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bd1f697d40025f2d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/fillDialog/FillDialogScreen.kt",
+          "line": 335
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/fillDialog/FillDialogViewModel.kt",
+          "line": 295
+        }
+      ]
+    },
+    {
+      "key": "record_pump_site_change",
+      "ui_location": "Fill dialog > switch and confirmation",
+      "kind": "label",
+      "description": "Switch label and confirmation line: also log a pump site (infusion set) change when filling.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "90cfa100813aeb69",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/fillDialog/FillDialogScreen.kt",
+          "line": 318
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/fillDialog/FillDialogViewModel.kt",
+          "line": 291
+        }
+      ]
+    },
+    {
+      "key": "record_site_arrow",
+      "ui_location": "Site rotation > confirmation summary",
+      "kind": "label",
+      "description": "Confirmation line for the arrow direction marked on a body diagram. %1$s is the arrow.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "a1407aff131256a6",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/siteRotationDialog/viewModels/SiteRotationManagementViewModel.kt",
+          "line": 217
+        }
+      ]
+    },
+    {
+      "key": "record_site_location",
+      "ui_location": "Site rotation > confirmation summary",
+      "kind": "label",
+      "description": "Confirmation line stating where the infusion set or sensor was placed. %1$s is the body location.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1438c6a8e7e90df5",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/siteRotationDialog/viewModels/SiteRotationManagementViewModel.kt",
+          "line": 215
+        }
+      ]
+    },
+    {
+      "key": "record_site_note",
+      "ui_location": "Site rotation > confirmation summary",
+      "kind": "label",
+      "description": "Confirmation line showing the note entered for the site. %1$s is the user's text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0ca13fdb93a0864a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/siteRotationDialog/viewModels/SiteRotationManagementViewModel.kt",
+          "line": 220
+        }
+      ]
+    },
+    {
+      "key": "relax_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Meditate\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "af8e64c056f90ef0",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 153
+        }
+      ]
+    },
+    {
+      "key": "remove_label",
+      "ui_location": "Profile and quick wizard management > row action",
+      "kind": "button",
+      "description": "Accessibility description of the remove (delete) button. Short verb.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "9dd5932c60701974",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileManagementScreen.kt",
+          "line": 486
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardManagementScreen.kt",
+          "line": 527
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetManagementScreen.kt",
+          "line": 567
+        }
+      ]
+    },
+    {
+      "key": "resume",
+      "ui_location": "Running mode screen > suspend section",
+      "kind": "button",
+      "description": "Button that ends a loop suspension and resumes normal looping. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "5c6decf8d1854a1c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/runningMode/RunningModeScreen.kt",
+          "line": 264
+        }
+      ]
+    },
+    {
+      "key": "reuse_profile_pct_hours",
+      "ui_location": "Profile switch dialog",
+      "kind": "button",
+      "description": "Button that reuses the settings of the current profile switch. %1$d is the percentage, %2$d the time shift in hours; the literal characters %% and h (hours) are part of the format.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "902d01e1aa81d32f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileActivationScreen.kt",
+          "line": 350
+        }
+      ]
+    },
+    {
+      "key": "rowing_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Rowing\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "328c400829cf1c7a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 119
+        }
+      ]
+    },
+    {
+      "key": "save_changes_question",
+      "ui_location": "Quick wizard management > dialog",
+      "kind": "dialog_text",
+      "description": "Question asking whether to save edits when leaving the entry editor.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "9d7b35a8267f4fa0",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardManagementScreen.kt",
+          "line": 144
+        }
+      ]
+    },
+    {
+      "key": "scene_cat_aaps",
+      "ui_location": "Scenes > icon picker category",
+      "kind": "label",
+      "description": "Name of the icon category for AAPS-specific icons when choosing an icon for a scene. Keep AAPS untranslated.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "2fa807e5b571f61a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 190
+        }
+      ]
+    },
+    {
+      "key": "scene_cat_activity",
+      "ui_location": "Scenes > icon picker > category",
+      "kind": "label",
+      "description": "Name of an icon category (Activity) in the icon picker used when creating or editing a scene. Short heading above a group of icons.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "c7b43b8fe60dfb5f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 195
+        }
+      ]
+    },
+    {
+      "key": "scene_cat_dailylife",
+      "ui_location": "Scenes > icon picker > category",
+      "kind": "label",
+      "description": "Name of an icon category (Daily Life) in the icon picker used when creating or editing a scene. Short heading above a group of icons.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "31eee9375b880454",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 199
+        }
+      ]
+    },
+    {
+      "key": "scene_cat_food",
+      "ui_location": "Scenes > icon picker > category",
+      "kind": "label",
+      "description": "Name of an icon category (Food) in the icon picker used when creating or editing a scene. Short heading above a group of icons.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "6ca7c1d408e3410c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 197
+        }
+      ]
+    },
+    {
+      "key": "scene_cat_general",
+      "ui_location": "Scenes > icon picker > category",
+      "kind": "label",
+      "description": "Name of an icon category (General) in the icon picker used when creating or editing a scene. Short heading above a group of icons.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "f8581377b481af86",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 201
+        }
+      ]
+    },
+    {
+      "key": "scene_cat_health",
+      "ui_location": "Scenes > icon picker > category",
+      "kind": "label",
+      "description": "Name of an icon category (Health) in the icon picker used when creating or editing a scene. Short heading above a group of icons.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "d143c91b6081f0b3",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 196
+        }
+      ]
+    },
+    {
+      "key": "scene_cat_sleep",
+      "ui_location": "Scenes > icon picker > category",
+      "kind": "label",
+      "description": "Name of an icon category (Sleep) in the icon picker used when creating or editing a scene. Short heading above a group of icons.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "e6f2c9794ad9e9e6",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 198
+        }
+      ]
+    },
+    {
+      "key": "scene_cat_wellness",
+      "ui_location": "Scenes > icon picker > category",
+      "kind": "label",
+      "description": "Name of an icon category (Wellness) in the icon picker used when creating or editing a scene. Short heading above a group of icons.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "eac35cd1327d8350",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 200
+        }
+      ]
+    },
+    {
+      "key": "school_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"School\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "b4e7e67c82ca11a1",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 146
+        }
+      ]
+    },
+    {
+      "key": "scubadiving_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Scuba Diving\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "21e12c58405102e2",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 118
+        }
+      ]
+    },
+    {
+      "key": "seat_flat_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Rest\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "3bb2672f067c95de",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 142
+        }
+      ]
+    },
+    {
+      "key": "selected_profile",
+      "ui_location": "Profile helper > available profile",
+      "kind": "label",
+      "description": "Label before the name of the selected profile, ends with a colon.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "821fa599db434d07",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 535
+        }
+      ]
+    },
+    {
+      "key": "shopping_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Shopping\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "bc2736ab63c1bc1a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 150
+        }
+      ]
+    },
+    {
+      "key": "show_invalidated",
+      "ui_location": "Treatments lists > toolbar menu",
+      "kind": "menu_item",
+      "description": "Toggle to display entries that were marked invalid (deleted). Short.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "dd523accf42257ec",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/SelectableListToolbar.kt",
+          "line": 105
+        }
+      ]
+    },
+    {
+      "key": "show_on_phone",
+      "ui_location": "Quick wizard editor > device selection",
+      "kind": "label",
+      "description": "Switch label: show the button on the phone.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "1d33ea0221866c6c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 368
+        }
+      ]
+    },
+    {
+      "key": "show_on_watch",
+      "ui_location": "Quick wizard editor > device selection",
+      "kind": "label",
+      "description": "Switch label: show the button on the paired watch.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "e25f3ffeb43bbf6c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 375
+        }
+      ]
+    },
+    {
+      "key": "skateboard_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Skateboard\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "27cc8a9d745a6d6e",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 111
+        }
+      ]
+    },
+    {
+      "key": "sleep_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Sleep\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "b68767c649b2495e",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 138
+        }
+      ]
+    },
+    {
+      "key": "soccer_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Football\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "d8a1ef6efd0e56ed",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 113
+        }
+      ]
+    },
+    {
+      "key": "spa_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Spa\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "31f2be77d5cb77a3",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 154
+        }
+      ]
+    },
+    {
+      "key": "speed_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Speed\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "7ff35814454e8dbc",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 160
+        }
+      ]
+    },
+    {
+      "key": "star_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Star\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "f1a09875466c8edf",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 159
+        }
+      ]
+    },
+    {
+      "key": "start_activity_tt",
+      "ui_location": "Carbs dialog > temp target switches",
+      "kind": "label",
+      "description": "Label of a switch in the carbs dialog: start an Activity temp target (raised glucose target for exercise). TT means temporary target.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "cc1b3735105ee532",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/carbsDialog/CarbsDialogScreen.kt",
+          "line": 428
+        }
+      ]
+    },
+    {
+      "key": "start_eating_soon_tt",
+      "ui_location": "Carbs and Insulin dialogs > temp target switches",
+      "kind": "label",
+      "description": "Label of a switch: start an Eating soon temp target (lower target before a meal). TT means temporary target.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6fc2d0da8040d2c2",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/carbsDialog/CarbsDialogScreen.kt",
+          "line": 427
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinDialog/InsulinDialogScreen.kt",
+          "line": 320
+        }
+      ]
+    },
+    {
+      "key": "start_hypo_tt",
+      "ui_location": "Carbs dialog > temp target switches",
+      "kind": "label",
+      "description": "Label of a switch: start a Hypo temp target (raised target after a low glucose). TT means temporary target.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6d2fd2169f8fa055",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/carbsDialog/CarbsDialogScreen.kt",
+          "line": 426
+        }
+      ]
+    },
+    {
+      "key": "surfing_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Surfing\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "cd7ed01c8a5d69d1",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 120
+        }
+      ]
+    },
+    {
+      "key": "swim_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Swim\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "a56cbc6d1e6b89e3",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 108
+        }
+      ]
+    },
+    {
+      "key": "tbr_type_flag_emulated_suspended",
+      "ui_location": "Temp basal list > row flags",
+      "kind": "label",
+      "description": "Two-letter badge meaning the suspension was emulated by AAPS with a zero temp basal. Keep at most two characters.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "89845bb0ff6ab900",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/TempBasalScreen.kt",
+          "line": 265
+        }
+      ]
+    },
+    {
+      "key": "tbr_type_flag_extended",
+      "ui_location": "Temp basal list > row flags",
+      "kind": "label",
+      "description": "One-letter badge on a temp basal row meaning extended bolus. Single character; choose a letter that fits your language.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "1296af35ec989636",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/TempBasalScreen.kt",
+          "line": 247
+        }
+      ]
+    },
+    {
+      "key": "tbr_type_flag_superbolus",
+      "ui_location": "Temp basal list > row flags",
+      "kind": "label",
+      "description": "Two-letter badge meaning the temp basal belongs to a superbolus (basal given early as bolus). Keep at most two characters.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "d999f8d6ae99a505",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/TempBasalScreen.kt",
+          "line": 274
+        }
+      ]
+    },
+    {
+      "key": "tbr_type_flag_suspended",
+      "ui_location": "Temp basal list > row flags",
+      "kind": "label",
+      "description": "One-letter badge meaning the pump was suspended during this entry. Single character.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "0c9885c6a2b81cff",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/TempBasalScreen.kt",
+          "line": 256
+        }
+      ]
+    },
+    {
+      "key": "tennis_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Tennis\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "5a6c8e35020b51cf",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "key": "thermostat_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Thermostat\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "83a5ece7ed9d10f4",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 126
+        }
+      ]
+    },
+    {
+      "key": "time_offset",
+      "ui_location": "Quick wizard editor > time offset field",
+      "kind": "label",
+      "description": "Label of a numeric field in the quick wizard editor: how long before or after the meal the entry applies or the bolus is timed.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "039dbb9a5f9daf27",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 400
+        }
+      ]
+    },
+    {
+      "key": "time_range",
+      "ui_location": "Statistics > Activity monitor > table header",
+      "kind": "label",
+      "description": "Column header of the activity table: the period each row covers. Narrow column.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "35d48d9a7113d19d",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerTimeRange.kt",
+          "line": 66
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/ActivityStatsCompose.kt",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "key": "treatments_iob_label_string",
+      "ui_location": "Notification shade > AAPS status notification",
+      "kind": "notification",
+      "description": "Short prefix before the IOB (insulin on board) value in the persistent notification. Space limited.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "478f14f9e22918cb",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/persistentNotification/PersistentNotificationPlugin.kt",
+          "line": 277
+        }
+      ]
+    },
+    {
+      "key": "trend_all",
+      "ui_location": "Quick wizard editor > trend choice",
+      "kind": "label",
+      "description": "Option: apply the trend whether rising or falling. Short.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "0db656e5659fb99b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 301
+        }
+      ]
+    },
+    {
+      "key": "trend_negative_only",
+      "ui_location": "Quick wizard editor > trend choice",
+      "kind": "label",
+      "description": "Option: apply the trend only when glucose is falling. Short.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "13eec3c82b5b5ea7",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 311
+        }
+      ]
+    },
+    {
+      "key": "trend_positive_only",
+      "ui_location": "Quick wizard editor > trend choice",
+      "kind": "label",
+      "description": "Option: apply the trend only when glucose is rising. Short.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "89f373d1d81f5daa",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 306
+        }
+      ]
+    },
+    {
+      "key": "until_changed",
+      "ui_location": "Running mode screen",
+      "kind": "label",
+      "description": "Shown instead of a duration when a running mode stays until the user changes it, with no end time.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "7d3deac2544c1c25",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/RunningModeScreen.kt",
+          "line": 206
+        }
+      ]
+    },
+    {
+      "key": "use_alarm",
+      "ui_location": "Quick wizard editor",
+      "kind": "label",
+      "description": "Switch label: set an alarm (reminder) after the bolus.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "a2b6e063ede8c61e",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 337
+        }
+      ]
+    },
+    {
+      "key": "use_bg",
+      "ui_location": "Quick wizard editor > calculator options",
+      "kind": "label",
+      "description": "Switch label: include the current blood glucose (BG) correction in the calculation.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "cd77b3dee86f648a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 259
+        }
+      ]
+    },
+    {
+      "key": "use_black_color",
+      "ui_location": "Widget configuration screen",
+      "kind": "label",
+      "description": "Switch label: use black instead of the default text color on the widget.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "a7ee61bed03a132f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/widget/WidgetConfigureScreen.kt",
+          "line": 119
+        }
+      ]
+    },
+    {
+      "key": "use_cob",
+      "ui_location": "Quick wizard editor > calculator options",
+      "kind": "label",
+      "description": "Switch label: include carbs on board (COB) in the calculation.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "af4623bd4a7726b4",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 266
+        }
+      ]
+    },
+    {
+      "key": "use_iob",
+      "ui_location": "Quick wizard editor > calculator options",
+      "kind": "label",
+      "description": "Switch label: include insulin on board (IOB) in the calculation.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "6d4c1a608ddc9d2b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 273
+        }
+      ]
+    },
+    {
+      "key": "use_temp_target",
+      "ui_location": "Quick wizard editor > calculator options",
+      "kind": "label",
+      "description": "Switch label: take an active temp target into account.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "77149625842ac35b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 330
+        }
+      ]
+    },
+    {
+      "key": "use_trend",
+      "ui_location": "Quick wizard editor > calculator options",
+      "kind": "label",
+      "description": "Switch label: include the glucose trend (rising or falling) in the calculation.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "366071a2b31e485d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 291
+        }
+      ]
+    },
+    {
+      "key": "user_entry",
+      "ui_location": "Treatments > tab",
+      "kind": "title",
+      "description": "Tab title and element type name for the log of actions the user performed in the app.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "5bf7dc42cd2fcccb",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 249
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/TreatmentsScreen.kt",
+          "line": 142
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/TreatmentsScreen.kt",
+          "line": 271
+        }
+      ]
+    },
+    {
+      "key": "valid_from_to",
+      "ui_location": "Quick wizard editor",
+      "kind": "label",
+      "description": "Label for the daily time range in which the entry is available.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "ae4d4bb9b88072fe",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 238
+        }
+      ]
+    },
+    {
+      "key": "volleyball_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Gymnastics\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "211735c0154bbc65",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 116
+        }
+      ]
+    },
+    {
+      "key": "weight_label",
+      "ui_location": "Profile helper > default profile",
+      "kind": "label",
+      "description": "Label of the body weight input when building a default profile.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "948998f62bd55761",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 503
+        }
+      ]
+    },
+    {
+      "key": "widget_bg_graph_description",
+      "ui_location": "Android widget picker",
+      "kind": "widget",
+      "description": "Name of the glucose graph widget in the Android widget picker. BG means blood glucose. Short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1a93ee78d348df41",
+      "usages": [
+        {
+          "path": "ui/src/androidMain/res/xml/bg_graph_widget_info.xml",
+          "line": 4
+        }
+      ]
+    },
+    {
+      "key": "widget_compact_bg_description",
+      "ui_location": "Android widget picker",
+      "kind": "widget",
+      "description": "Name of the compact widget showing BG, IOB (insulin on board) and COB (carbs on board) in the Android widget picker. Short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "78cea0a4f362f7fb",
+      "usages": [
+        {
+          "path": "ui/src/androidMain/res/xml/compact_bg_widget_info.xml",
+          "line": 4
+        }
+      ]
+    },
+    {
+      "key": "widget_configuration",
+      "ui_location": "Widget configuration screen",
+      "kind": "title",
+      "description": "Screen title for configuring a home screen widget.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "d7166ddb11bb4420",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/widget/WidgetConfigureScreen.kt",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "key": "widget_description",
+      "ui_location": "Android widget picker",
+      "kind": "widget",
+      "description": "Name of the standard AAPS home screen widget as listed in the Android widget picker. Short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "260472e8e37ebe1b",
+      "usages": [
+        {
+          "path": "ui/src/androidMain/res/xml/widget_info.xml",
+          "line": 4
+        }
+      ]
+    },
+    {
+      "key": "widget_glucose_circle_description",
+      "ui_location": "Android widget picker",
+      "kind": "widget",
+      "description": "Name of the circular glucose widget in the Android widget picker. Short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b3cab667e7adfaf3",
+      "usages": [
+        {
+          "path": "ui/src/androidMain/res/xml/glucose_circle_widget_info.xml",
+          "line": 4
+        }
+      ]
+    },
+    {
+      "key": "widget_small_description",
+      "ui_location": "Android widget picker",
+      "kind": "widget",
+      "description": "Name of the small widget in the Android widget picker. Short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a852a1315a25e938",
+      "usages": [
+        {
+          "path": "ui/src/androidMain/res/xml/small_widget_info.xml",
+          "line": 3
+        }
+      ]
+    },
+    {
+      "key": "wizard_carbs_type_bread_desc",
+      "ui_location": "Bolus wizard > carbs type explanation",
+      "kind": "hint",
+      "description": "Explains the bread carbs type: all carbs counted immediately, none spread over time (no extended carbs).",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "f44f63cbdbe63dc9",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 993
+        }
+      ]
+    },
+    {
+      "key": "wizard_carbs_type_desc",
+      "ui_location": "Bolus wizard > carbs type explanation",
+      "kind": "hint",
+      "description": "Explains a carbs type with slow absorption. %1$d%% is the reduction of immediate carbs, %2$d%% the share added as eCarbs (extended carbs), %3$d the delay in minutes, %4$d the spread in hours.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "98e541fec4493a3b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 995
+        }
+      ]
+    },
+    {
+      "key": "wizard_include_info",
+      "ui_location": "Bolus wizard > help text",
+      "kind": "dialog_text",
+      "description": "Help text for the include/exclude chips. Abbreviations BG (blood glucose), TT (temp target), IOB (insulin on board), COB (carbs on board) match the chip labels; \\n marks line breaks and bullet characters. Keep each abbreviation as shown on the chips.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "eba5b6f2595be16e",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 484
+        }
+      ]
+    },
+    {
+      "key": "wizard_no_insulin_required",
+      "ui_location": "Bolus wizard and quick wizard",
+      "kind": "error",
+      "description": "Error shown when the calculation results in no insulin; nothing is delivered.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "2962ca00dd2d93c7",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 253
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 319
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 462
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 451
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatmentsSheet/TreatmentViewModel.kt",
+          "line": 216
+        }
+      ]
+    },
+    {
+      "key": "work_icon_label",
+      "ui_location": "Scenes > icon picker > general icons",
+      "kind": "label",
+      "description": "Name of the \"Work\" icon in the scene icon picker, a generic icon for a scene. Translate the meaning of the English word shown, not the key name. One or two words.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "2122d71cbae0d965",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
+          "line": 145
+        }
+      ]
+    }
+  ]
+}
