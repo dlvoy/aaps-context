@@ -1,0 +1,2461 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/dana/common/src/main/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "approachingdailylimit",
+      "ui_location": "Notification; pump status",
+      "kind": "notification",
+      "description": "Warning that the daily insulin total approaches the pump's daily limit. In the status line it is followed by used/maximum units.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "65a4d075d9e50ea5",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 139
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 141
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 131
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 133
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 162
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 164
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 293
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 295
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 271
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 273
+        }
+      ]
+    },
+    {
+      "key": "basal_bolus_step",
+      "ui_location": "Pump > Dana overview > pump info table",
+      "kind": "label",
+      "description": "Row label; value shows the pump's basal step and bolus step (smallest increments) separated by a slash.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "37a032a248f3bd78",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 381
+        }
+      ]
+    },
+    {
+      "key": "basalcompare",
+      "ui_location": "Pump alarm",
+      "kind": "error",
+      "description": "Pump alarm: the pump delivers less than the programmed basal rate.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ebe237ed9fe913ab",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketNotifyAlarm.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "basalmax",
+      "ui_location": "Pump alarm",
+      "kind": "error",
+      "description": "Pump alarm: the maximum basal rate limit set in the pump was reached.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c212dc6e2a2d6be8",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketNotifyAlarm.kt",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "key": "batterydischarged",
+      "ui_location": "Pump alarm",
+      "kind": "error",
+      "description": "Pump alarm: the pump battery is empty.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "405939cae1aef411",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/comm/MsgError.kt",
+          "line": 25
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketNotifyAlarm.kt",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "bloodsugarmeasurementalert",
+      "ui_location": "Pump alarm",
+      "kind": "error",
+      "description": "Reminder alarm from the pump to measure blood glucose.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "57403acec66f6fd0",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketNotifyAlarm.kt",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "key": "bolus_speed_12",
+      "ui_location": "Preferences > Dana pump settings > bolus speed",
+      "kind": "preference_summary",
+      "description": "Choice in the bolus speed list: 12 seconds per insulin unit (U). Keep the unit format short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f57e0fa8755d0890",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/keys/DanaIntKey.kt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "bolus_speed_30",
+      "ui_location": "Preferences > Dana pump settings > bolus speed",
+      "kind": "preference_summary",
+      "description": "Choice in the bolus speed list: 30 seconds per insulin unit (U). Keep the unit format short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5da2bc028d7935b3",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/keys/DanaIntKey.kt",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "key": "bolus_speed_60",
+      "ui_location": "Preferences > Dana pump settings > bolus speed",
+      "kind": "preference_summary",
+      "description": "Choice in the bolus speed list: 60 seconds per insulin unit (U). Keep the unit format short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4476effd2c3c1397",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/keys/DanaIntKey.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "boluserrorcode",
+      "ui_location": "Bolus result > comment",
+      "kind": "error",
+      "description": "Comment on a failed or partial bolus from a Dana pump. %1$.2f is the requested insulin in units (U), %2$.2f the amount actually delivered in U, %3$s the reason, one of the pump error texts. Keep the placeholder order or use positional markers.",
+      "related_keys": [
+        "maxbolusviolation",
+        "commanderror"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3f562c4477248ced",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/DanaRPlugin.kt",
+          "line": 177
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/DanaRKoreanPlugin.kt",
+          "line": 178
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/DanaRv2Plugin.kt",
+          "line": 190
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 317
+        }
+      ]
+    },
+    {
+      "key": "cancel_pairing_message",
+      "ui_location": "Pump setup > pairing wizard > cancel dialog",
+      "kind": "dialog_text",
+      "description": "Body of the cancel dialog.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f6f7e7af79935fe1",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRPairWizardScreen.kt",
+          "line": 67
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSPairWizardScreen.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "cancel_pairing_title",
+      "ui_location": "Pump setup > pairing wizard > cancel dialog",
+      "kind": "dialog_title",
+      "description": "Title of the dialog that asks to abort the pairing wizard (Dana R and RS).",
+      "related_keys": [
+        "cancel_pairing_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ea6aca20819b8e1d",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRPairWizardScreen.kt",
+          "line": 66
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSPairWizardScreen.kt",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "key": "checkshaft",
+      "ui_location": "Pump alarm",
+      "kind": "error",
+      "description": "Pump alarm: the pump motor shaft needs to be checked, a mechanical fault of the pump.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3cc0f8311053552a",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketNotifyAlarm.kt",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "key": "commanderror",
+      "ui_location": "Bolus result > error reason",
+      "kind": "error",
+      "description": "Error text for why the pump refused to start a bolus; appended to the bolus result comment (see boluserrorcode). The pump rejected the bolus command.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "482c9e6b86971dc9",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 336
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 347
+        }
+      ]
+    },
+    {
+      "key": "connecting_to_pump",
+      "ui_location": "Pump setup > Dana RS pairing wizard",
+      "kind": "status",
+      "description": "Progress text during pairing.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "938be48715a2e12d",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSPairWizardScreen.kt",
+          "line": 121
+        }
+      ]
+    },
+    {
+      "key": "connecting_verifying",
+      "ui_location": "Pump setup > DanaR pairing wizard",
+      "kind": "status",
+      "description": "Progress text while connecting and checking the password.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "28f38f81b08223e7",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRPairWizardScreen.kt",
+          "line": 247
+        }
+      ]
+    },
+    {
+      "key": "dailymax",
+      "ui_location": "Pump alarm; bolus error reason",
+      "kind": "error",
+      "description": "Alarm or bolus error: the maximum daily insulin amount of the pump was reached.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "586848fdb5e9417b",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 332
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketNotifyAlarm.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "dana_easy_mode",
+      "ui_location": "Pump > Dana overview > pump info table",
+      "kind": "label",
+      "description": "Row label in the Dana pump info list. The value is On or Off for the pump's Easy mode (simplified pump UI).",
+      "related_keys": [
+        "option_on",
+        "option_off"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "49bc80e59a5d69eb",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 385
+        }
+      ]
+    },
+    {
+      "key": "dana_model",
+      "ui_location": "Pump > Dana overview > pump info table",
+      "kind": "status",
+      "description": "Multi-line value of the pump info row: %1$s friendly model name, %2$02X hardware model, %3$02X protocol, %4$02X product code (hex numbers). Keep the line breaks.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "77040c643c51a416",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 392
+        }
+      ]
+    },
+    {
+      "key": "danai2_auto_lock",
+      "ui_location": "Pump > Dana-i > User options > Auto lock",
+      "kind": "label",
+      "description": "Label of the pump user option that locks the pump's buttons automatically. Value is On or Off.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3d9cb76926c89fed",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 149
+        }
+      ]
+    },
+    {
+      "key": "danai2_bolus_error_easy_sleep",
+      "ui_location": "Bolus result > error reason",
+      "kind": "error",
+      "description": "Error text for why the pump refused to start a bolus; appended to the bolus result comment (see boluserrorcode). Easy sleep mode, a pump feature, blocks delivery.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a9707055b9acafea",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 341
+        }
+      ]
+    },
+    {
+      "key": "danai2_bolus_error_no_prime",
+      "ui_location": "Bolus result > error reason",
+      "kind": "error",
+      "description": "Error text for why the pump refused to start a bolus; appended to the bolus result comment (see boluserrorcode). The pump has not been primed (filled tubing) after a cartridge change.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3e84bccba1e08b96",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 335
+        }
+      ]
+    },
+    {
+      "key": "danai2_bolus_error_not_enough_insulin",
+      "ui_location": "Bolus result > error reason",
+      "kind": "error",
+      "description": "Error text for why the pump refused to start a bolus; appended to the bolus result comment (see boluserrorcode). The reservoir holds less insulin than the bolus requires.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "04aa04132a71f7dd",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 340
+        }
+      ]
+    },
+    {
+      "key": "danai2_pump_check_error",
+      "ui_location": "Pump alarm > pump check error text",
+      "kind": "error",
+      "description": "One cause named in the Dana RS pump check (self test) alarm text. Short status phrase.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "9471a5a14e461206",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSAlarmReporter.kt",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "key": "danar_backlight",
+      "ui_location": "Pump > Dana > User options",
+      "kind": "label",
+      "description": "Field label: how long the pump backlight stays on, in seconds.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5748a030bd1434da",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 205
+        }
+      ]
+    },
+    {
+      "key": "danar_beep",
+      "ui_location": "Pump > Dana > User options",
+      "kind": "label",
+      "description": "Option: the pump beeps when a button is pressed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ed821d5c1467774b",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 158
+        }
+      ]
+    },
+    {
+      "key": "danar_button_scroll",
+      "ui_location": "Pump > Dana > User options",
+      "kind": "label",
+      "description": "Option that lets the pump buttons scroll through screens. Value On or Off.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "78321b54c361c05a",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 139
+        }
+      ]
+    },
+    {
+      "key": "danar_disablebolusblock",
+      "ui_location": "Notification; bolus error reason",
+      "kind": "notification",
+      "description": "Message that the pump's bolus block is on, so no insulin can be delivered. The user must turn it off on the pump. Also used as the reason for a failed bolus.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d21c7bb7d2d466d3",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 333
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketGeneralInitialScreenInformation.kt",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "key": "danar_disableeasymode",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Notification asking the user to turn off EasyUI (simplified UI) mode on the pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cbab9b157be6402e",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/comm/MsgInitConnStatusBasicK.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "danar_enableextendedbolus",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Notification telling the user to enable extended boluses in the pump settings, because AAPS needs them.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ad62963e7af09396",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/comm/MsgInitConnStatusBolus.kt",
+          "line": 32
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/comm/MsgInitConnStatusBolusK.kt",
+          "line": 33
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketBolusGetBolusOption.kt",
+          "line": 83
+        }
+      ]
+    },
+    {
+      "key": "danar_glucose_units",
+      "ui_location": "Pump > Dana > User options",
+      "kind": "label",
+      "description": "Option for the glucose unit shown on the pump (mg/dL or mmol/L).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5aa3a287682a9ad0",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 217
+        }
+      ]
+    },
+    {
+      "key": "danar_history_alarm",
+      "ui_location": "Pump > Dana history > record type selector",
+      "kind": "menu_item",
+      "description": "Entry in the pump history type dropdown: alarms. Plural noun or short label.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a2aa53354c4481f7",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaHistoryViewModel.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "danar_history_basalhours",
+      "ui_location": "Pump > Dana history > record type selector",
+      "kind": "menu_item",
+      "description": "Entry in the pump history type dropdown: hours with basal delivery. Plural noun or short label.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e416d4f8a210df0e",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaHistoryViewModel.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "danar_history_bolus",
+      "ui_location": "Pump > Dana history > record type selector",
+      "kind": "menu_item",
+      "description": "Entry in the pump history type dropdown: boluses; also the label of a daily bolus value in the list. Plural noun or short label.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d9ded7e38248bf6c",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaHistoryScreen.kt",
+          "line": 97
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaHistoryViewModel.kt",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "key": "danar_history_carbohydrates",
+      "ui_location": "Pump > Dana history > record type selector",
+      "kind": "menu_item",
+      "description": "Entry in the pump history type dropdown: carbohydrate entries. Plural noun or short label.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7d9c22791cffbf4a",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaHistoryViewModel.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "danar_history_dailyinsulin",
+      "ui_location": "Pump > Dana history > record type selector",
+      "kind": "menu_item",
+      "description": "Entry in the pump history type dropdown: daily insulin totals. Plural noun or short label.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d7ad0dddab35b65c",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaHistoryViewModel.kt",
+          "line": 67
+        }
+      ]
+    },
+    {
+      "key": "danar_history_glucose",
+      "ui_location": "Pump > Dana history > record type selector",
+      "kind": "menu_item",
+      "description": "Entry in the pump history type dropdown: glucose entries. Plural noun or short label.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e4777888c052ada0",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaHistoryViewModel.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "danar_history_prime",
+      "ui_location": "Pump > Dana history > record type selector",
+      "kind": "menu_item",
+      "description": "Entry in the pump history type dropdown: priming events (Dana RS only). Plural noun or short label.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e5f2a5c3bc4e5d96",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaHistoryViewModel.kt",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "danar_history_refill",
+      "ui_location": "Pump > Dana history > record type selector",
+      "kind": "menu_item",
+      "description": "Entry in the pump history type dropdown: reservoir refills. Plural noun or short label.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b84827e969180e28",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaHistoryViewModel.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "danar_history_syspend",
+      "ui_location": "Pump > Dana history > record type selector",
+      "kind": "menu_item",
+      "description": "Entry in the pump history type dropdown: pump suspend events. Plural noun or short label.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fc19efa4a2e2bcb7",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaHistoryViewModel.kt",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "key": "danar_low_reservoir",
+      "ui_location": "Pump > Dana > User options",
+      "kind": "label",
+      "description": "Field label: reservoir level in insulin units (U) at which the pump gives a low reservoir alarm.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "58354697683a4000",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 238
+        }
+      ]
+    },
+    {
+      "key": "danar_password_title",
+      "ui_location": "Pump setup > DanaR pairing wizard > password",
+      "kind": "label",
+      "description": "Label of the pump password field in the DanaR wizard.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "54f6189fe625f976",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRPairWizardScreen.kt",
+          "line": 127
+        }
+      ]
+    },
+    {
+      "key": "danar_pump_alarm_both",
+      "ui_location": "Pump > Dana > User options > alarm type",
+      "kind": "label",
+      "description": "Choice for how the pump alarms: sound and vibration together.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2d5a64c290c7c8a4",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 184
+        }
+      ]
+    },
+    {
+      "key": "danar_pump_alarm_sound",
+      "ui_location": "Pump > Dana > User options > alarm type",
+      "kind": "label",
+      "description": "Choice for how the pump alarms: by sound. One of Sound, Vibrate, Both.",
+      "related_keys": [
+        "danar_pump_alarm_vibrate",
+        "danar_pump_alarm_both"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b1a5b90ec95d9503",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 174
+        }
+      ]
+    },
+    {
+      "key": "danar_pump_alarm_vibrate",
+      "ui_location": "Pump > Dana > User options > alarm type",
+      "kind": "label",
+      "description": "Choice for how the pump alarms: by vibration.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6b923264483a6d38",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 179
+        }
+      ]
+    },
+    {
+      "key": "danar_pump_settings",
+      "ui_location": "Preferences > Dana pump settings; user options screen title",
+      "kind": "preference_title",
+      "description": "Title of the Dana pump preferences and of the user options screen.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8a687da47ecbb42a",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/DanaRPlugin.kt",
+          "line": 362
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRComposeContent.kt",
+          "line": 84
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/DanaRKoreanPlugin.kt",
+          "line": 346
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/DanaRv2Plugin.kt",
+          "line": 380
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSComposeContent.kt",
+          "line": 88
+        }
+      ]
+    },
+    {
+      "key": "danar_save_user_options",
+      "ui_location": "Pump > Dana > User options",
+      "kind": "button",
+      "description": "Button that writes the edited options to the pump. Imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7b5f5e43ddb3159d",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 105
+        }
+      ]
+    },
+    {
+      "key": "danar_screen_timeout",
+      "ui_location": "Pump > Dana > User options",
+      "kind": "label",
+      "description": "Field label: how long the pump LCD stays on, in seconds.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9f74c619dc399a9b",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 193
+        }
+      ]
+    },
+    {
+      "key": "danar_setbasalstep001",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Notification asking the user to change the pump's basal step to 0.01 U/h in the pump settings. It is shown when the pump reports a different step. U/h means insulin units per hour.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ceab3e625ab1d4d9",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/comm/MsgSettingMeal.kt",
+          "line": 36
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketBasalGetBasalRate.kt",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "key": "danar_shutdown",
+      "ui_location": "Pump > Dana > User options",
+      "kind": "label",
+      "description": "Field label: hours of inactivity after which the pump shuts down. Value in hours.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "afb517891a5d153b",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 226
+        }
+      ]
+    },
+    {
+      "key": "danar_switchtouhmode",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Notification asking the user to switch the pump dosing mode from units per day (U/d) to units per hour (U/h) in the pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f4f8815d2e30bd7e",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/comm/MsgSettingMeal.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "danar_time_display",
+      "ui_location": "Pump > Dana > User options",
+      "kind": "label",
+      "description": "Option for the time format on the pump display: 12h or 24h.",
+      "related_keys": [
+        "time_format_12h",
+        "time_format_24h"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2e6b46d4f4518105",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 130
+        }
+      ]
+    },
+    {
+      "key": "danar_useextended_title",
+      "ui_location": "Preferences > Dana pump settings",
+      "kind": "preference_title",
+      "description": "Switch title: use extended boluses when the requested temp basal exceeds 200%, since the pump cannot do more by temp basal.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "43af0d8873e542e4",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/keys/DanaBooleanKey.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "danar_user_options",
+      "ui_location": "Pump > Dana overview > management buttons",
+      "kind": "button",
+      "description": "Button opening the screen with pump user options. Noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "453ac4b664770b54",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 203
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSOverviewViewModel.kt",
+          "line": 100
+        }
+      ]
+    },
+    {
+      "key": "danar_valuenotsetproperly",
+      "ui_location": "Treatment result > failure comment",
+      "kind": "error",
+      "description": "Comment when an extended bolus or high temp basal could not be set on the pump because the pump kept a different value. Short error.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "4b88246e21abb0e3",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/AbstractDanaRPlugin.kt",
+          "line": 282
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/DanaRv2Plugin.kt",
+          "line": 303
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/DanaRv2Plugin.kt",
+          "line": 351
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 495
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 532
+        }
+      ]
+    },
+    {
+      "key": "danarkoreanpump",
+      "ui_location": "Config builder > Pump > DanaR Korean",
+      "kind": "title",
+      "description": "Plugin name of the DanaR Korean pump driver. Product name.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bf6962dcc35bc80a",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/DanaRKoreanPlugin.kt",
+          "line": 145
+        }
+      ]
+    },
+    {
+      "key": "danarpump",
+      "ui_location": "Config builder > Pump > DanaR",
+      "kind": "title",
+      "description": "Plugin name of the DanaR pump driver. Product name.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7083bf7da5fd2341",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/AbstractDanaRPlugin.kt",
+          "line": 87
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/DanaRPlugin.kt",
+          "line": 146
+        }
+      ]
+    },
+    {
+      "key": "danars_bonding_failed",
+      "ui_location": "Pump setup > Dana RS pairing wizard > error step",
+      "kind": "error",
+      "description": "Error shown in the pairing wizard when the Bluetooth bonding with the pump fails or the user cancels it. The user is told to retry and type the PIN that the pump displays.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ae21c68aac1a1fbf",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSPairWizardViewModel.kt",
+          "line": 176
+        }
+      ]
+    },
+    {
+      "key": "danars_pairingtimedout",
+      "ui_location": "Pump setup > Dana RS pairing wizard > error step",
+      "kind": "error",
+      "description": "Error message shown on the error step of the Dana RS pairing wizard when the pump does not complete pairing in time. A short sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c18e9bf43dc30318",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSPairWizardViewModel.kt",
+          "line": 372
+        }
+      ]
+    },
+    {
+      "key": "danars_password_title",
+      "ui_location": "Pump setup > Dana RS pairing wizard > password",
+      "kind": "label",
+      "description": "Label of the pump password field in the Dana RS wizard. Only protocol v1 pumps use it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d2c93e80bd3626bb",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSPairWizardScreen.kt",
+          "line": 155
+        }
+      ]
+    },
+    {
+      "key": "danars_unsupported_model",
+      "ui_location": "Snackbar / alarm on connect",
+      "kind": "error",
+      "description": "Error when the connected Dana RS or Dana-i model is not supported. %1$s is the model code as hex (e.g. 0x05).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "dc5feb616ff1e6e1",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/BLEComm.kt",
+          "line": 560
+        }
+      ]
+    },
+    {
+      "key": "danarspump",
+      "ui_location": "Config builder > Pump > Dana-i/RS; Preferences > Dana-i/RS",
+      "kind": "title",
+      "description": "Plugin name of the Dana-i and Dana RS pump driver. A product name; usually kept as is. Used as the plugin list entry and as the title of its preference screen.",
+      "related_keys": [
+        "description_pump_dana_rs"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "eb427fd3633c3632",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 104
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 111
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 600
+        }
+      ]
+    },
+    {
+      "key": "danarv2pump",
+      "ui_location": "Config builder > Pump > DanaRv2",
+      "kind": "title",
+      "description": "Plugin name of the DanaRv2 pump driver. Product name.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7c5cb441e169a980",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/DanaRv2Plugin.kt",
+          "line": 148
+        }
+      ]
+    },
+    {
+      "key": "description_pump_dana_r",
+      "ui_location": "Config builder > Pump > DanaR > description",
+      "kind": "other",
+      "description": "Plugin description for the DanaR pump driver.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "81a5d32f0bf6776d",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/AbstractDanaRPlugin.kt",
+          "line": 88
+        }
+      ]
+    },
+    {
+      "key": "description_pump_dana_r_korean",
+      "ui_location": "Config builder > Pump > DanaR Korean > description",
+      "kind": "other",
+      "description": "Plugin description for the DanaR Korean (domestic market) pump driver.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d33a8f83d76c6efd",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/DanaRKoreanPlugin.kt",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "key": "description_pump_dana_r_v2",
+      "ui_location": "Config builder > Pump > DanaRv2 > description",
+      "kind": "other",
+      "description": "Plugin description for the DanaR pump driver with upgraded firmware (v2).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "198e7cfa28586d2c",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/DanaRv2Plugin.kt",
+          "line": 119
+        }
+      ]
+    },
+    {
+      "key": "description_pump_dana_rs",
+      "ui_location": "Config builder > Pump > Dana-i/RS > description",
+      "kind": "other",
+      "description": "Plugin description under the Dana-i/RS pump in the config builder. Pump model names are product names.",
+      "related_keys": [
+        "danarspump"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f96d2702f703594a",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "key": "devicenotfound",
+      "ui_location": "Snackbar",
+      "kind": "error",
+      "description": "Error: the Bluetooth pump selected in the settings was not found among paired devices.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3e379a37bc4c2794",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/AbstractDanaRExecutionService.kt",
+          "line": 202
+        }
+      ]
+    },
+    {
+      "key": "done",
+      "ui_location": "Pump setup > pairing wizard > final button",
+      "kind": "button",
+      "description": "Button that closes the wizard after success. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "621ca4dc6eaa502a",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRPairWizardScreen.kt",
+          "line": 270
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSPairWizardScreen.kt",
+          "line": 218
+        }
+      ]
+    },
+    {
+      "key": "emptyreservoir",
+      "ui_location": "Pump alarm",
+      "kind": "error",
+      "description": "Pump alarm: the insulin reservoir is empty.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a546775b7c908da8",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketNotifyAlarm.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "enter_pump_password",
+      "ui_location": "Pump setup > DanaR pairing wizard",
+      "kind": "dialog_text",
+      "description": "Instruction text above the password field.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "594aa2c450c3b259",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRPairWizardScreen.kt",
+          "line": 121
+        }
+      ]
+    },
+    {
+      "key": "gettingbolusstatus",
+      "ui_location": "Overview > pump status line while connecting",
+      "kind": "status",
+      "description": "Short progress text shown on the status line while the app is reading the bolus status. A present participle phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "aa64072d95617f2a",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 90
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 84
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 91
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 306
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 219
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 390
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 559
+        }
+      ]
+    },
+    {
+      "key": "gettingextendedbolusstatus",
+      "ui_location": "Overview > pump status line while connecting",
+      "kind": "status",
+      "description": "Short progress text shown on the status line while the app is reading the extended bolus status. A present participle phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c131f037514d941d",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 88
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 82
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "key": "gettingpumpsettings",
+      "ui_location": "Overview > pump status line while connecting",
+      "kind": "status",
+      "description": "Short progress text shown on the status line while the app is reading the pump settings. A present participle phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fb6b2dc8efcc9261",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 95
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 102
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 89
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 96
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 102
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 142
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 203
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 224
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 186
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 191
+        }
+      ]
+    },
+    {
+      "key": "gettingpumpstatus",
+      "ui_location": "Overview > pump status line while connecting",
+      "kind": "status",
+      "description": "Short progress text shown on the status line while the app is reading the pump status. A present participle phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c36dcbde447630c4",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 72
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 65
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 79
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 215
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 329
+        }
+      ]
+    },
+    {
+      "key": "gettingpumptime",
+      "ui_location": "Overview > pump status line while connecting",
+      "kind": "status",
+      "description": "Short progress text shown on the status line while the app is reading the pump clock. A present participle phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "73c7bb721015ea5a",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 114
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 104
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 108
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 229
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 219
+        }
+      ]
+    },
+    {
+      "key": "gettingtempbasalstatus",
+      "ui_location": "Overview > pump status line while connecting",
+      "kind": "status",
+      "description": "Short progress text shown on the status line while the app is reading the temporary basal (TBR) status. A present participle phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "42a7171843baded8",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 86
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 80
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 94
+        }
+      ]
+    },
+    {
+      "key": "insulinlimitviolation",
+      "ui_location": "Bolus result > error reason",
+      "kind": "error",
+      "description": "Error text for why the pump refused to start a bolus; appended to the bolus result comment (see boluserrorcode). The bolus would exceed the daily insulin limit of the pump.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f89f869bff181f08",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 338
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 349
+        }
+      ]
+    },
+    {
+      "key": "invalidpairing",
+      "ui_location": "Snackbar and toast",
+      "kind": "error",
+      "description": "Message when saved pairing information is invalid and the app will ask for a new pairing.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0dffa2d0e5cd4978",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/BLEComm.kt",
+          "line": 169
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/BLEComm.kt",
+          "line": 187
+        }
+      ]
+    },
+    {
+      "key": "largetimediff",
+      "ui_location": "Alarm dialog > text",
+      "kind": "dialog_text",
+      "description": "Alarm text: the pump clock differs from the phone by more than 1.5 hours; the user must set the time on the pump manually. Multi-line.",
+      "related_keys": [
+        "largetimedifftitle"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6154ca537f4afc12",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 124
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 251
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 240
+        }
+      ]
+    },
+    {
+      "key": "largetimedifftitle",
+      "ui_location": "Alarm dialog > title",
+      "kind": "dialog_title",
+      "description": "Title of the alarm that warns of a large time difference between phone and pump.",
+      "related_keys": [
+        "largetimediff"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6154ca537f4afc12",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 124
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 251
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 240
+        }
+      ]
+    },
+    {
+      "key": "lowbattery",
+      "ui_location": "Pump alarm",
+      "kind": "error",
+      "description": "Pump alarm: the pump battery is low.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "53a946b3477456b9",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/comm/MsgError.kt",
+          "line": 24
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketNotifyAlarm.kt",
+          "line": 37
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSAlarmReporter.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "maxbolusviolation",
+      "ui_location": "Bolus result > error reason",
+      "kind": "error",
+      "description": "Error text for why the pump refused to start a bolus; appended to the bolus result comment (see boluserrorcode). The requested bolus is above the maximum bolus limit set in the pump.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "818d92be1729712f",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 339
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 346
+        }
+      ]
+    },
+    {
+      "key": "missedbolus",
+      "ui_location": "Pump alarm",
+      "kind": "error",
+      "description": "Pump alarm for a missed bolus, a reminder set on the pump for a meal bolus not given.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1ac04d7201851f93",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketNotifyAlarm.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "no_paired_devices",
+      "ui_location": "Pump setup > DanaR pairing wizard",
+      "kind": "dialog_text",
+      "description": "Shown when no paired Dana device exists; tells the user to pair the pump in Android Bluetooth settings first.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "29192749dee937b9",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRPairWizardScreen.kt",
+          "line": 171
+        }
+      ]
+    },
+    {
+      "key": "num1pin",
+      "ui_location": "Pump setup > Dana RS pairing wizard > PIN step",
+      "kind": "label",
+      "description": "Label of the first PIN field, the number with 12 digits.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "76d59756a0cb904f",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSPairWizardScreen.kt",
+          "line": 195
+        }
+      ]
+    },
+    {
+      "key": "num2pin",
+      "ui_location": "Pump setup > Dana RS pairing wizard > PIN step",
+      "kind": "label",
+      "description": "Label of the second PIN field, the number with 8 digits.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ceb11497bb0f654f",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSPairWizardScreen.kt",
+          "line": 204
+        }
+      ]
+    },
+    {
+      "key": "occlusion",
+      "ui_location": "Pump alarm",
+      "kind": "error",
+      "description": "Pump alarm: the infusion line is blocked and insulin cannot flow. Medical term.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f1147c27e848c4ef",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/comm/MsgError.kt",
+          "line": 23
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketNotifyAlarm.kt",
+          "line": 34
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSAlarmReporter.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "open_bluetooth_settings",
+      "ui_location": "Pump setup > DanaR pairing wizard",
+      "kind": "button",
+      "description": "Button that opens Android Bluetooth settings so the user can pair the pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cb891b78c5ecaacc",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRPairWizardScreen.kt",
+          "line": 148
+        }
+      ]
+    },
+    {
+      "key": "option_off",
+      "ui_location": "Dana pump info and user options",
+      "kind": "status",
+      "description": "Value for a switched-off option. Very short.",
+      "related_keys": [
+        "option_on"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9bb1973d5a2b00fe",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 385
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 140
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 150
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 159
+        }
+      ]
+    },
+    {
+      "key": "option_on",
+      "ui_location": "Dana pump info and user options",
+      "kind": "status",
+      "description": "Value for a switched-on option. Very short.",
+      "related_keys": [
+        "option_off"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9bb1973d5a2b00fe",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 385
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 140
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 150
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 159
+        }
+      ]
+    },
+    {
+      "key": "overview_bolusprogress_stoped",
+      "ui_location": "Overview > bolus progress dialog",
+      "kind": "status",
+      "description": "Status text in the bolus progress dialog when the bolus was stopped by the user or pump. Single word.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "736f209b6530fb2a",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/comm/MsgBolusStop.kt",
+          "line": 24
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketBolusSetStepBolusStop.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "pairfirst",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Notification: the pump is not paired with the phone yet, ask the user to pair it first via Bluetooth.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bba4deb7eded2fc8",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/BLEComm.kt",
+          "line": 475
+        }
+      ]
+    },
+    {
+      "key": "pairing_successful",
+      "ui_location": "Pump setup > Dana RS pairing wizard > completion",
+      "kind": "status",
+      "description": "Success headline of the wizard.",
+      "related_keys": [
+        "pairing_successful_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "758079129f2a319b",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSPairWizardScreen.kt",
+          "line": 233
+        }
+      ]
+    },
+    {
+      "key": "pairing_successful_message",
+      "ui_location": "Pump setup > Dana RS pairing wizard > completion",
+      "kind": "status",
+      "description": "Success sentence under the headline.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e196eafd4713e7d0",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSPairWizardScreen.kt",
+          "line": 239
+        }
+      ]
+    },
+    {
+      "key": "password_hint",
+      "ui_location": "Pump setup > DanaR pairing wizard > password field",
+      "kind": "hint",
+      "description": "Placeholder in the password field: a 4-digit number from 0 to 9999.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e31dcf689f40c473",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRPairWizardScreen.kt",
+          "line": 128
+        }
+      ]
+    },
+    {
+      "key": "password_ok",
+      "ui_location": "Pump setup > DanaR pairing wizard",
+      "kind": "status",
+      "description": "Success text after the password check.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e83c3237e9dce766",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRPairWizardScreen.kt",
+          "line": 285
+        }
+      ]
+    },
+    {
+      "key": "password_wrong",
+      "ui_location": "Pump setup > DanaR pairing wizard > error",
+      "kind": "error",
+      "description": "Error: wrong password, go back and correct it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c94e79060398190f",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRPairWizardScreen.kt",
+          "line": 309
+        }
+      ]
+    },
+    {
+      "key": "press_ok_on_the_pump",
+      "ui_location": "Pump setup > Dana RS pairing wizard > PIN step",
+      "kind": "dialog_text",
+      "description": "Multi-line instruction: press OK on the pump, type the two numbers it shows (next fields), and keep the pump display on by pressing minus. Keep the line breaks.",
+      "related_keys": [
+        "num1pin",
+        "num2pin"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a4a400647d978687",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSPairWizardScreen.kt",
+          "line": 186
+        }
+      ]
+    },
+    {
+      "key": "processinghistory",
+      "ui_location": "Overview > pump status line",
+      "kind": "status",
+      "description": "Prefix of the pump status shown while pump history is being read. A colon and the record being handled follow. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "959701a50b44216e",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/comm/MsgHistoryEventsV2.kt",
+          "line": 303
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketAPSHistoryEvents.kt",
+          "line": 471
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/packet/BigLogInquireResponsePacket.kt",
+          "line": 903
+        }
+      ]
+    },
+    {
+      "key": "profile_set_failed",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "pumpdrivercorrected",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Notification: AAPS detected the wrong pump driver selected and changed it to the correct one.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "69fcb88d67b2217d",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/comm/MsgInitConnStatusTime.kt",
+          "line": 21
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/comm/MsgInitConnStatusTimeK.kt",
+          "line": 22
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/comm/MsgCheckValueV2.kt",
+          "line": 28
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/comm/MsgCheckValueV2.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "pumperror",
+      "ui_location": "Pump alarm > error title",
+      "kind": "error",
+      "description": "Title or description of a generic pump error; a code may follow after a space. Also the title of the Dana R dialog.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0e892c9a2e33d2b3",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/comm/MsgError.kt",
+          "line": 21
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRComposeContent.kt",
+          "line": 63
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketNotifyAlarm.kt",
+          "line": 31
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSComposeContent.kt",
+          "line": 67
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSAlarmReporter.kt",
+          "line": 40
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSAlarmReporter.kt",
+          "line": 43
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSAlarmReporter.kt",
+          "line": 44
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSAlarmReporter.kt",
+          "line": 47
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSAlarmReporter.kt",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "key": "pumpshutdown",
+      "ui_location": "Pump alarm",
+      "kind": "error",
+      "description": "Pump alarm: the pump has shut down because it was not used for the configured number of hours (see Shutdown option).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d51cf0a34312449b",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/comm/MsgError.kt",
+          "line": 22
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketNotifyAlarm.kt",
+          "line": 40
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSAlarmReporter.kt",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "key": "remaininsulinalert",
+      "ui_location": "Pump alarm",
+      "kind": "error",
+      "description": "Pump alarm about the low remaining insulin level in the reservoir.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "970bcc4c8cca0f90",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketNotifyAlarm.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "resetpairing",
+      "ui_location": "Pump overview > reset pairing confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Confirmation question before the stored pairing data (Bluetooth device and keys) for the pump is removed. Shared by the Dana R, Dana RS and Diaconn pump screens.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fb6b5b696c64fe26",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRComposeContent.kt",
+          "line": 73
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSComposeContent.kt",
+          "line": 77
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnComposeContent.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "rs_logcanulachange_summary",
+      "ui_location": "Preferences > Dana RS",
+      "kind": "preference_summary",
+      "description": "Summary of the switch above. \"Site Change\" names a careportal event type.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6bff9811ddd49ada",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/keys/DanaBooleanKey.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "rs_logcanulachange_title",
+      "ui_location": "Preferences > Dana RS",
+      "kind": "preference_title",
+      "description": "Switch title: record a cannula change in the careportal.",
+      "related_keys": [
+        "rs_logcanulachange_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6bff9811ddd49ada",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/keys/DanaBooleanKey.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "rs_loginsulinchange_summary",
+      "ui_location": "Preferences > Dana RS",
+      "kind": "preference_summary",
+      "description": "Summary of the switch above. \"Insulin Change\" names a careportal event type.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "19e12c7dbb77d097",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/keys/DanaBooleanKey.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "rs_loginsulinchange_title",
+      "ui_location": "Preferences > Dana RS",
+      "kind": "preference_title",
+      "description": "Switch title: record an insulin (reservoir) change in the careportal.",
+      "related_keys": [
+        "rs_loginsulinchange_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "19e12c7dbb77d097",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/keys/DanaBooleanKey.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "select_paired_device",
+      "ui_location": "Pump setup > DanaR pairing wizard",
+      "kind": "dialog_text",
+      "description": "Instruction text above the list of paired Bluetooth devices.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "18e5c54146723271",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRPairWizardScreen.kt",
+          "line": 160
+        }
+      ]
+    },
+    {
+      "key": "selectedpump",
+      "ui_location": "Preferences > Dana / Diaconn > Bluetooth device",
+      "kind": "preference_title",
+      "description": "Title of the preference that selects the pump's Bluetooth device. Shared by Dana and Diaconn.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "52322813e0944f19",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/keys/DanaIntentKey.kt",
+          "line": 13
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnIntentKey.kt",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "key": "settingextendedbolus",
+      "ui_location": "Overview > pump status line while connecting",
+      "kind": "status",
+      "description": "Progress text on the status line while an extended bolus (insulin spread over time) is sent to the pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1af0d412c0cc4b48",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 180
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 172
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 238
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 516
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 729
+        }
+      ]
+    },
+    {
+      "key": "settingtempbasal",
+      "ui_location": "Overview > pump status line while connecting",
+      "kind": "status",
+      "description": "Progress text on the status line while a temporary basal rate is sent to the pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8e7866a95d253f97",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 162
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 154
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 184
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 199
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 218
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 444
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 465
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 489
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 611
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 650
+        }
+      ]
+    },
+    {
+      "key": "speederror",
+      "ui_location": "Bolus result > error reason",
+      "kind": "error",
+      "description": "Error text for why the pump refused to start a bolus; appended to the bolus result comment (see boluserrorcode). The bolus speed setting was refused by the pump.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "caaf191a4e9d6edb",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 337
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 348
+        }
+      ]
+    },
+    {
+      "key": "startingbolus",
+      "ui_location": "Overview > pump status line while connecting",
+      "kind": "status",
+      "description": "Progress text on the status line when a bolus delivery is being started.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "eb886800249165cf",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 259
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 344
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 472
+        }
+      ]
+    },
+    {
+      "key": "stoppingextendedbolus",
+      "ui_location": "Overview > pump status line while connecting",
+      "kind": "status",
+      "description": "Progress text on the status line while an extended bolus is cancelled.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d368c982219fe24b",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 189
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 181
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 248
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 530
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 756
+        }
+      ]
+    },
+    {
+      "key": "stoppingtempbasal",
+      "ui_location": "Overview > pump status line while connecting",
+      "kind": "status",
+      "description": "Progress text on the status line while a temporary basal rate is cancelled.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "09876640674a3ce1",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 158
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 171
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 150
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 163
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 180
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 195
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 214
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 228
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 440
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 461
+        }
+      ]
+    },
+    {
+      "key": "time_format_12h",
+      "ui_location": "Pump > Dana > User options > time format summary",
+      "kind": "label",
+      "description": "Value text: 12-hour clock.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8e6cf62e7b161a58",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 131
+        }
+      ]
+    },
+    {
+      "key": "time_format_24h",
+      "ui_location": "Pump > Dana > User options > time format summary",
+      "kind": "label",
+      "description": "Value text: 24-hour clock.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8e6cf62e7b161a58",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 131
+        }
+      ]
+    },
+    {
+      "key": "unsupportedfirmware",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Notification: the connected pump has a firmware version that AAPS does not support.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "611aef5d3aafb394",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/comm/DanaRSPacketGeneralGetPumpCheck.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "updatingbasalrates",
+      "ui_location": "Overview > pump status line while connecting",
+      "kind": "status",
+      "description": "Progress text on the status line while the basal profile is written to the pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e8b828443b20d254",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 288
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 233
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 333
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 543
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/DiaconnG8Service.kt",
+          "line": 780
+        }
+      ]
+    },
+    {
+      "key": "waitingforestimatedbolusend",
+      "ui_location": "Overview > bolus progress dialog",
+      "kind": "status",
+      "description": "Progress text while the app waits for the pump to finish the bolus. %1$d is the seconds remaining.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "df73d358bbb69a8f",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 249
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/services/DanaRv2ExecutionService.kt",
+          "line": 299
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 383
+        }
+      ]
+    },
+    {
+      "key": "waitingfortimesynchronization",
+      "ui_location": "Overview > pump status line while connecting",
+      "kind": "status",
+      "description": "Progress text while waiting until the pump clock reaches a full minute before sending a command. %1$d is the seconds left.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "43cdd55ee54602ff",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/AbstractDanaRExecutionService.kt",
+          "line": 281
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 611
+        }
+      ]
+    },
+    {
+      "key": "wrongpumppassword",
+      "ui_location": "Notification; pairing wizard password step",
+      "kind": "error",
+      "description": "Error that the pump password was rejected. Shown as a notification and as an error line under the password field.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "55c75214b65c6346",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/comm/MsgInitConnStatusOption.kt",
+          "line": 35
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/comm/MsgInitConnStatusBasicK.kt",
+          "line": 38
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSPairWizardScreen.kt",
+          "line": 148
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/BLEComm.kt",
+          "line": 682
+        }
+      ]
+    }
+  ]
+}

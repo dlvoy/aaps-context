@@ -1,0 +1,443 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/eopatch/src/main/res/values/strings_alarm.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "string_a002",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm (empty reservoir): the patch is deactivated, insulin delivery stopped, the user must change the patch now.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ffc3e82cb6973738",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "key": "string_a003",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm (patch expired): the patch is deactivated, insulin delivery stopped, the user must change the patch now.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c3b2fd10f9b1ab81",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "string_a004",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm (occlusion (blocked infusion)): the patch is deactivated, insulin delivery stopped, the user must change the patch now.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "95fcef861c889d08",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "string_a005",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm: the patch failed its power-on self test and was deactivated.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "a3dcf9f81d6cdaa1",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "string_a007",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Alarm: the temperature is outside the allowed range, so delivery or activation stopped; the user should avoid extreme heat or cold.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "c2747a2134a91d94",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "string_a016",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Alarm about a failed needle insertion; the user checks the knob position and presses Retry (button name).",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "2ec84ba6ff748906",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "string_a018",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm (battery error): the patch is deactivated, insulin delivery stopped, the user must change the patch now.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "12b6a0010487adf2",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "string_a019",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm (battery error): the patch is deactivated, insulin delivery stopped, the user must change the patch now.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d597ce41aeab110b",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "string_a020",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Alarm: activation took too long and expired; Confirm (button name) deactivates the patch.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "8b7708e74fc2cd7e",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "string_a022",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm (patch error): the patch is deactivated, insulin delivery stopped, the user must change the patch now.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b6dfd588b9e4b4e5",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "string_a023",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm (patch error): the patch is deactivated, insulin delivery stopped, the user must change the patch now.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "01c761b36d90106c",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "string_a034",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm (patch error): the patch is deactivated, insulin delivery stopped, the user must change the patch now.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d3ad2c62b9b88c6b",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "string_a041",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm (patch error): the patch is deactivated, insulin delivery stopped, the user must change the patch now.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bd03c79c46fa9548",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "key": "string_a042",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm (patch error): the patch is deactivated, insulin delivery stopped, the user must change the patch now.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "460caf01ac4d5657",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "string_a043",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm (patch error): the patch is deactivated, insulin delivery stopped, the user must change the patch now.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a14d03c07bcde66d",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "string_a044",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm (patch error): the patch is deactivated, insulin delivery stopped, the user must change the patch now.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ac45df7c4a832823",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "string_a106",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm (patch error): the patch is deactivated, insulin delivery stopped, the user must change the patch now.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "56e7e8cba33ce297",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "string_a107",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm (patch error): the patch is deactivated, insulin delivery stopped, the user must change the patch now.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "779fb4ada5792059",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "string_a108",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm (patch error): the patch is deactivated, insulin delivery stopped, the user must change the patch now.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0fa47a9346dbe101",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "string_a116",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm (patch error): the patch is deactivated, insulin delivery stopped, the user must change the patch now.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9b2fd9f6f91108ba",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "string_a117",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm (patch error): the patch is deactivated, insulin delivery stopped, the user must change the patch now.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1233bc1fbcd77874",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "string_a118",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Critical alarm (patch error): the patch is deactivated, insulin delivery stopped, the user must change the patch now.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9348d2d99fa57f40",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "string_b000",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "Advance warning that the patch lifetime ends. %s is the time of expiry, already formatted (e.g. date and time).",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "791b3e8478f9fe43",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "key": "string_b001",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Reminder that a delivery suspension ended; Resume is a button name.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "8592a816f6940526",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "string_b003",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Warning: the reservoir is low.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "16dd248a7c92ef1e",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "string_b005",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Alarm: the patch's operating life is over.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "f3e9965016892401",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "key": "string_b006",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Warning that the patch is about to expire.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "cb4b0a75675f4a80",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "key": "string_b012",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Reminder that activation was not completed; Activate Patch names a button.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "341efc9d4b8ee32f",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "string_b018",
+      "ui_location": "Alarm notification and dialog for the EOPatch2 patch",
+      "kind": "notification",
+      "description": "The first line is a short title and the rest is the detail, split by a line break; keep that structure. Warning: the patch battery is low.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "5db9dfd93892cfa1",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmCode.kt",
+          "line": 41
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1619 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/eopatch/src/main/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "all_dose_unit",
+      "ui_location": "Pump > EOPatch2 > deactivation wizard > reservoir text",
+      "kind": "label",
+      "description": "Unit text appended to insulin amounts, with a leading space: units (U).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f599114661e1a6ac",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SafeDeactivationStep.kt",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "key": "eopatch",
+      "ui_location": "Config builder > Pump > EOPatch2; Preferences > EOPatch2",
+      "kind": "title",
+      "description": "Plugin name of the EOPatch2 pump driver, also the title of its preference screen. Product name.",
+      "related_keys": [
+        "eopatch_pump_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b8e8d10e8114e94a",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/EopatchPumpPlugin.kt",
+          "line": 118
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/EopatchPumpPlugin.kt",
+          "line": 599
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchComposeContent.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "eopatch_base_basal_rate",
+      "ui_location": "Pump > EOPatch2 > overview > info table",
+      "kind": "label",
+      "description": "Row label for the base (profile) basal rate being delivered.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "01a21794564d9b59",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 303
+        }
+      ]
+    },
+    {
+      "key": "eopatch_ble_status",
+      "ui_location": "Pump > EOPatch2 > overview > info table",
+      "kind": "label",
+      "description": "Row label for the Bluetooth Low Energy (BLE) connection state to the patch.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a84826b83458c082",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 284
+        }
+      ]
+    },
+    {
+      "key": "eopatch_bolus_end_not_confirmed",
+      "ui_location": "Bolus result > comment",
+      "kind": "error",
+      "description": "Warning after a bolus when the patch did not confirm the bolus end. %1$s is the recorded insulin amount with unit (e.g. 2.50 U). The user should check the patch before giving more.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bd6c9c7f1b8d37b9",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/EopatchPumpPlugin.kt",
+          "line": 373
+        }
+      ]
+    },
+    {
+      "key": "eopatch_expiration_time",
+      "ui_location": "Pump > EOPatch2 > deactivation wizard > safe deactivation step",
+      "kind": "label",
+      "description": "Label followed by a colon and the remaining time of the patch; the expiry time of the patch.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "06704e37a05bd1c4",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SafeDeactivationStep.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "eopatch_not_activated",
+      "ui_location": "Pump > EOPatch2 > overview > status banner",
+      "kind": "status",
+      "description": "Banner text: no patch is active yet.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3f246b0897202f9c",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 383
+        }
+      ]
+    },
+    {
+      "key": "eopatch_pump_description",
+      "ui_location": "Config builder > Pump > EOPatch2 > description",
+      "kind": "other",
+      "description": "Plugin description. EOPatch2 and GlucoMen Day are product names of the same patch pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6cd0d6059c59ef5a",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/EopatchPumpPlugin.kt",
+          "line": 119
+        }
+      ]
+    },
+    {
+      "key": "eopatch_serial_number",
+      "ui_location": "Pump > EOPatch2 > overview > info table",
+      "kind": "label",
+      "description": "Row label for the serial number of the current patch.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1651795190646d5d",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 326
+        }
+      ]
+    },
+    {
+      "key": "eopatch_temp_basal_rate",
+      "ui_location": "Pump > EOPatch2 > overview > info table",
+      "kind": "label",
+      "description": "Row label for the running temporary basal rate.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "45fa3894c6c908e3",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 310
+        }
+      ]
+    },
+    {
+      "key": "insulin_suspend_msg1",
+      "ui_location": "Pump > EOPatch2 > suspend confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Warns that suspending cancels the running bolus and temp basal. %1$s the temp basal rate (U/hr), %2$s remaining time, %3$.2f insulin not yet delivered (U). Keep line breaks.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "478c1eb16fd61181",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 258
+        }
+      ]
+    },
+    {
+      "key": "insulin_suspend_msg2",
+      "ui_location": "Pump > EOPatch2 > suspend confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Warns that suspending cancels the running bolus. %1$.2f is the insulin not yet delivered, in U.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2fc539cad795016a",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 259
+        }
+      ]
+    },
+    {
+      "key": "insulin_suspend_msg3",
+      "ui_location": "Pump > EOPatch2 > suspend confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Warns that suspending cancels the running temp basal. %1$s rate (U/hr), %2$s remaining time.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "93305d7ff8110656",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 260
+        }
+      ]
+    },
+    {
+      "key": "insulin_suspend_msg4",
+      "ui_location": "Pump > EOPatch2 > suspend confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Simple notice when nothing is running.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ed8816eb7ae388ce",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 261
+        }
+      ]
+    },
+    {
+      "key": "invalid_basal_rate",
+      "ui_location": "Pump > EOPatch2 > overview > toast on Activate Patch",
+      "kind": "toast",
+      "description": "Toast when the profile contains a basal rate below 0.05 U/hr; the patch's smallest dose is 0.05 U. Asks the user to fix the profile first.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8314b877fe712d59",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 180
+        }
+      ]
+    },
+    {
+      "key": "low_reservoir",
+      "ui_location": "Preferences > EOPatch2",
+      "kind": "preference_title",
+      "description": "Title of the setting for the low reservoir alert level, in insulin units.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "191c0b52d12858ad",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/keys/EopatchIntKey.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "needle_insertion_error_1",
+      "ui_location": "Pump > EOPatch2 > activation wizard > needle insertion error",
+      "kind": "error",
+      "description": "Title of an error in the needle step.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3a5ba1273411a0c5",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStep.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "needle_insertion_error_3",
+      "ui_location": "Pump > EOPatch2 > activation wizard > needle insertion error",
+      "kind": "error",
+      "description": "Instruction to press Discard (button name) to deactivate the patch.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "92e809f8bfe31f0d",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStep.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "no_profile_selected_try_again",
+      "ui_location": "Pump > EOPatch2 > overview > toast on Activate Patch",
+      "kind": "toast",
+      "description": "Toast when activation is tried without an active profile.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f512a649a00a8b9d",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 174
+        }
+      ]
+    },
+    {
+      "key": "patch_activate_reminder_desc",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Reminder that patch activation is not finished; continue it. Multi-line.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e720ead159d89e01",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/ble/PatchManager.kt",
+          "line": 122
+        }
+      ]
+    },
+    {
+      "key": "patch_basal_schedule",
+      "ui_location": "Pump > EOPatch2 > activation wizard > completion",
+      "kind": "title",
+      "description": "Headline: activation succeeded.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cc5fd60c8e617fa9",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/BasalScheduleStep.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "patch_basal_schedule_desc_1",
+      "ui_location": "Pump > EOPatch2 > activation wizard > completion",
+      "kind": "dialog_text",
+      "description": "Says which basal program is enabled; %1$s is the program name (such as Basal 1), shown in quotes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1af65704964a873b",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchViewModel.kt",
+          "line": 181
+        }
+      ]
+    },
+    {
+      "key": "patch_basal_schedule_desc_2",
+      "ui_location": "Pump > EOPatch2 > activation wizard > completion",
+      "kind": "dialog_text",
+      "description": "Explains the expiry reminder and that its time can be changed. Multi-line.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a6b42e058a22a302",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/BasalScheduleStep.kt",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "patch_buzzer_reminders",
+      "ui_location": "Preferences > EOPatch2",
+      "kind": "preference_title",
+      "description": "Switch title: the patch itself beeps for reminders. Buzzer is the patch's beeper.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "0fbe4369277b852a",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/keys/EopatchBooleanKey.kt",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "key": "patch_cancel_pairing",
+      "ui_location": "Pump > EOPatch2 > activation wizard > pairing > button",
+      "kind": "button",
+      "description": "Button that cancels pairing.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5ade5b19df9c9c6c",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchViewModel.kt",
+          "line": 194
+        }
+      ]
+    },
+    {
+      "key": "patch_change_confirm_bolus_and_temp_basal_are_active_desc",
+      "ui_location": "Pump > EOPatch2 > discard confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Same question when both a bolus and a temp basal are running.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "660968736c0b3281",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 213
+        }
+      ]
+    },
+    {
+      "key": "patch_change_confirm_bolus_is_active_desc",
+      "ui_location": "Pump > EOPatch2 > discard confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Question shown when a bolus is running while the user wants to discard the patch; discarding cancels delivery.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "685232f12fb9b1c4",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 215
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 236
+        }
+      ]
+    },
+    {
+      "key": "patch_change_confirm_desc",
+      "ui_location": "Pump > EOPatch2 > discard confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Plain confirmation question before discarding the patch when nothing is running.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2d2a9b281ea07f1b",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 217
+        }
+      ]
+    },
+    {
+      "key": "patch_change_confirm_temp_basal_is_active_desc",
+      "ui_location": "Pump > EOPatch2 > discard confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Same question when a temp basal is running.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7aa2284caf50d13b",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 216
+        }
+      ]
+    },
+    {
+      "key": "patch_comm_error_during_discard_desc_2",
+      "ui_location": "Pump > EOPatch2 > communication error dialog",
+      "kind": "dialog_text",
+      "description": "Hint line in the dialog shown when talking to the patch fails during discard; 'Discard' names the button. One-sided deactivation means without a working connection.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "28ac95111622b421",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 170
+        }
+      ]
+    },
+    {
+      "key": "patch_communication_check_helper_1",
+      "ui_location": "Pump > EOPatch2 > communication error dialog",
+      "kind": "dialog_text",
+      "description": "First hint line: bring the phone nearer to the patch.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "394c4e6b7d266db2",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 182
+        }
+      ]
+    },
+    {
+      "key": "patch_communication_check_helper_2",
+      "ui_location": "Pump > EOPatch2 > communication error dialog",
+      "kind": "dialog_text",
+      "description": "Second hint line: move elsewhere and try again.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9f2a7dffc69d21d6",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 170
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 182
+        }
+      ]
+    },
+    {
+      "key": "patch_communication_failed",
+      "ui_location": "Pump > EOPatch2 > communication error dialog",
+      "kind": "dialog_title",
+      "description": "Title of the dialog shown when the app cannot reach the patch.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b1ac14bbfbf287b0",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 169
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 181
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SafetyCheckStep.kt",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "patch_communication_succeed",
+      "ui_location": "Pump > EOPatch2 > activation wizard > pairing success dialog",
+      "kind": "dialog_title",
+      "description": "Title of the dialog confirming Bluetooth bonding.",
+      "related_keys": [
+        "patch_communication_succeed_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e93c9430acd4c6af",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 198
+        }
+      ]
+    },
+    {
+      "key": "patch_communication_succeed_message",
+      "ui_location": "Pump > EOPatch2 > activation wizard > pairing success dialog",
+      "kind": "dialog_text",
+      "description": "Body: the app is connected to the patch.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "480d1f6d9dcdfa63",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 199
+        }
+      ]
+    },
+    {
+      "key": "patch_connect_new",
+      "ui_location": "Pump > EOPatch2 > activation wizard > pairing",
+      "kind": "title",
+      "description": "Title of the pairing step.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "403cb6ef3677d8dd",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/ConnectStep.kt",
+          "line": 64
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/ConnectStepPreviews.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "patch_connect_new_desc",
+      "ui_location": "Pump > EOPatch2 > activation wizard > pairing",
+      "kind": "dialog_text",
+      "description": "Text while pairing runs; the phone must be held close to the patch. Multi-line.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e897fffbff63bac0",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/ConnectStep.kt",
+          "line": 71
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/ConnectStepPreviews.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "patch_discard_complete_desc",
+      "ui_location": "Pump > EOPatch2 > deactivation wizard > remove patch",
+      "kind": "dialog_text",
+      "description": "Multi-line instruction after deactivation: the patch is off; remove it from the body. Keep line breaks.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7d67d2d957245db8",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveStep.kt",
+          "line": 28
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveStepPreviews.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "patch_discard_complete_title",
+      "ui_location": "Pump > EOPatch2 > deactivation wizard > remove patch",
+      "kind": "title",
+      "description": "Headline: the patch was discarded successfully.",
+      "related_keys": [
+        "patch_discard_complete_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "163e6e2e1e3b122e",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchViewModel.kt",
+          "line": 396
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveStep.kt",
+          "line": 24
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveStepPreviews.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "patch_expiration_reminder_setting_title",
+      "ui_location": "Pump > EOPatch2 > activation wizard > reminder time step",
+      "kind": "title",
+      "description": "Title of the step for setting the expiry reminder.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9543d4c384199fa9",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchViewModel.kt",
+          "line": 411
+        }
+      ]
+    },
+    {
+      "key": "patch_expiration_reminders",
+      "ui_location": "Preferences > EOPatch2",
+      "kind": "preference_title",
+      "description": "Title of the setting for how many hours before the patch expires a reminder is given. The patch is the disposable pump unit.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "002ce3eaf0d8aa1d",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/keys/EopatchIntKey.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "patch_force_reset",
+      "ui_location": "Pump > EOPatch2 > force reset dialog",
+      "kind": "dialog_title",
+      "description": "Title and button of a last-resort action that clears the patch state only in the app.",
+      "related_keys": [
+        "patch_force_reset_confirm"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e92bc530fa9d92c3",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 275
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 279
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SafeDeactivationStep.kt",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "key": "patch_force_reset_confirm",
+      "ui_location": "Pump > EOPatch2 > force reset dialog",
+      "kind": "dialog_text",
+      "description": "Warns that force reset only clears the local state, sends nothing to the patch, and the patch keeps delivering. Use only if normal deactivation fails.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e3b05c5f847bfe7d",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 276
+        }
+      ]
+    },
+    {
+      "key": "patch_forced_discard",
+      "ui_location": "Pump > EOPatch2 > deactivation wizard > button",
+      "kind": "button",
+      "description": "Button label to discard the patch without the normal safe deactivation. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e937172b964c7590",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchViewModel.kt",
+          "line": 195
+        }
+      ]
+    },
+    {
+      "key": "patch_manually_turning_off_alarm_desc_1",
+      "ui_location": "Pump > EOPatch2 > deactivation wizard > manual alarm silencing",
+      "kind": "dialog_text",
+      "description": "Explains that the alarm beep may continue if the patch was deactivated during a communication error.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4282c5712efe6d2f",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/TurningOffAlarmStep.kt",
+          "line": 28
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/TurningOffAlarmStepPreviews.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "patch_manually_turning_off_alarm_desc_2",
+      "ui_location": "Pump > EOPatch2 > deactivation wizard > manual alarm silencing",
+      "kind": "dialog_text",
+      "description": "Lead-in to a picture and the numbered steps: the alarm can be stopped by poking the release port.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b45c7c2c1c7f9f3f",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/TurningOffAlarmStep.kt",
+          "line": 32
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/TurningOffAlarmStepPreviews.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "patch_manually_turning_off_alarm_step_1",
+      "ui_location": "Pump > EOPatch2 > deactivation wizard > manual alarm silencing",
+      "kind": "dialog_text",
+      "description": "Step 1 of a numbered list; keep the number prefix.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "621efc1329348a62",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/TurningOffAlarmStep.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "patch_manually_turning_off_alarm_step_2",
+      "ui_location": "Pump > EOPatch2 > deactivation wizard > manual alarm silencing",
+      "kind": "dialog_text",
+      "description": "Step 2 of a numbered list; keep the number prefix. A paper clip is meant.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c2f339ead7053bf6",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/TurningOffAlarmStep.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "patch_manually_turning_off_alarm_title",
+      "ui_location": "Pump > EOPatch2 > deactivation wizard > manual alarm silencing",
+      "kind": "title",
+      "description": "Title of the step explaining how to silence the patch alarm by hand.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6eb7fc856523a215",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchViewModel.kt",
+          "line": 398
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/TurningOffAlarmStep.kt",
+          "line": 24
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/TurningOffAlarmStepPreviews.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "patch_remove_needle_cap",
+      "ui_location": "Pump > EOPatch2 > activation wizard > prepare attaching",
+      "kind": "title",
+      "description": "Title: prepare to attach the patch.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8e502270fe4f2510",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveNeedleCapStep.kt",
+          "line": 32
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveNeedleCapStepPreviews.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "patch_remove_needle_cap_desc_1",
+      "ui_location": "Pump > EOPatch2 > activation wizard > prepare attaching",
+      "kind": "dialog_text",
+      "description": "Instruction: remove the adhesive tape cover, then press the Next button.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7e454fee35c4b1a2",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveNeedleCapStep.kt",
+          "line": 36
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveNeedleCapStepPreviews.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "patch_remove_needle_cap_desc_2",
+      "ui_location": "Pump > EOPatch2 > activation wizard > prepare attaching",
+      "kind": "dialog_text",
+      "description": "Instruction: if the needle is visible, press the Discard button.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "afcd56844842634d",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveNeedleCapStep.kt",
+          "line": 40
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveNeedleCapStepPreviews.kt",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "patch_remove_needle_cap_desc_3",
+      "ui_location": "Pump > EOPatch2 > activation wizard > prepare attaching",
+      "kind": "dialog_text",
+      "description": "Instruction: if the patch is wet, dirty or the tape folded, press Discard.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2bec2dd24972f847",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveNeedleCapStep.kt",
+          "line": 45
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveNeedleCapStepPreviews.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "patch_remove_protection_tape",
+      "ui_location": "Pump > EOPatch2 > activation wizard > attach patch",
+      "kind": "title",
+      "description": "Title of the step for sticking the patch to the skin.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "537c16c86ea4abff",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveProtectionTapeStep.kt",
+          "line": 25
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveProtectionTapeStepPreviews.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "patch_remove_protection_tape_desc_1",
+      "ui_location": "Pump > EOPatch2 > activation wizard > attach patch",
+      "kind": "dialog_text",
+      "description": "Instruction: clean and dry the skin, then attach the patch.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0befdab5ae416b20",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveProtectionTapeStep.kt",
+          "line": 29
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveProtectionTapeStepPreviews.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "patch_remove_protection_tape_desc_2",
+      "ui_location": "Pump > EOPatch2 > activation wizard > attach patch",
+      "kind": "dialog_text",
+      "description": "Instruction: check the infusion site, then press the start safety check button.",
+      "related_keys": [
+        "patch_start_safety_check"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "482a08136210de6f",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveProtectionTapeStep.kt",
+          "line": 33
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveProtectionTapeStepPreviews.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "patch_rotate_knob",
+      "ui_location": "Pump > EOPatch2 > activation wizard > needle insertion",
+      "kind": "title",
+      "description": "Title of the step where the needle is inserted into the skin.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "93c5d0cc65a39252",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStep.kt",
+          "line": 80
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStepPreviews.kt",
+          "line": 19
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStepPreviews.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "patch_rotate_knob_desc_1",
+      "ui_location": "Pump > EOPatch2 > activation wizard > needle insertion",
+      "kind": "dialog_text",
+      "description": "Instruction to turn the needle action lever (the knob) over 100 degrees to insert the needle, then fully back.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b4de19ef0f540909",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStep.kt",
+          "line": 84
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStepPreviews.kt",
+          "line": 20
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStepPreviews.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "patch_rotate_knob_desc_2",
+      "ui_location": "Pump > EOPatch2 > activation wizard > needle insertion",
+      "kind": "dialog_text",
+      "description": "Instruction: listen for one beep, then press Next.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "396411a97d102940",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStep.kt",
+          "line": 91
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStepPreviews.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "patch_rotate_knob_desc_2_needle_insertion_error",
+      "ui_location": "Pump > EOPatch2 > activation wizard > needle insertion error",
+      "kind": "dialog_text",
+      "description": "Shown after an insertion error: listen for one beep, then press Retry.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7e3d7c9df2dbe437",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStep.kt",
+          "line": 89
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStepPreviews.kt",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "key": "patch_safe_deactivation_desc",
+      "ui_location": "Pump > EOPatch2 > deactivation wizard > safe deactivation",
+      "kind": "dialog_text",
+      "description": "Explains that the current patch must be discarded to switch to a new one, which cancels all insulin delivery.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e40e3ff0e1bf49e8",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SafeDeactivationStep.kt",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "key": "patch_safety_check",
+      "ui_location": "Pump > EOPatch2 > activation wizard > safety check",
+      "kind": "title",
+      "description": "Title shown while the check runs. The ellipsis means in progress.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1cfaa0bd69ceb122",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SafetyCheckStep.kt",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "patch_safety_check_desc_1",
+      "ui_location": "Pump > EOPatch2 > activation wizard > safety check",
+      "kind": "dialog_text",
+      "description": "Says the check lasts about 30 seconds.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fc3299e3634eef4e",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SafetyCheckStep.kt",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "key": "patch_safety_check_desc_2",
+      "ui_location": "Pump > EOPatch2 > activation wizard > safety check",
+      "kind": "dialog_text",
+      "description": "Safety warning: keep the needle action lever in place until the check is done.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cfbc377ce5a263e5",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SafetyCheckStep.kt",
+          "line": 87
+        }
+      ]
+    },
+    {
+      "key": "patch_safety_check_failed_desc",
+      "ui_location": "Pump > EOPatch2 > activation wizard > safety check",
+      "kind": "error",
+      "description": "Error text when the safety check failed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b737b2888ec9fa43",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SafetyCheckStep.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "patch_start_pairing",
+      "ui_location": "Pump > EOPatch2 > activation wizard > fill insulin > button",
+      "kind": "button",
+      "description": "Button that starts Bluetooth pairing. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b2fea51a52029f40",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/WakeUpStep.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "patch_start_safety_check",
+      "ui_location": "Pump > EOPatch2 > activation wizard > attach patch > button",
+      "kind": "button",
+      "description": "Button that starts the safety check. Must match the name quoted in the previous instruction.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f59bfa5e104a1c3f",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveProtectionTapeStep.kt",
+          "line": 20
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveProtectionTapeStepPreviews.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "patch_wake_up",
+      "ui_location": "Pump > EOPatch2 > activation wizard > fill insulin",
+      "kind": "title",
+      "description": "Title of the first activation step: filling the new patch with insulin.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "dbadd2cf35f2a736",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/WakeUpStep.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "patch_wake_up_desc_1",
+      "ui_location": "Pump > EOPatch2 > activation wizard > fill insulin",
+      "kind": "dialog_text",
+      "description": "Instruction to fill a new patch with room-temperature insulin and check the syringe angle.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "dee530ec279c8d42",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/WakeUpStep.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "patch_wake_up_desc_2",
+      "ui_location": "Pump > EOPatch2 > activation wizard > fill insulin",
+      "kind": "dialog_text",
+      "description": "Instruction: the patch beeps once to confirm.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3962de805ad15cd7",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/WakeUpStep.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "patch_wake_up_pairing_info",
+      "ui_location": "Pump > EOPatch2 > activation wizard > pairing",
+      "kind": "dialog_text",
+      "description": "Notice that Android shows two system popups during Bluetooth pairing and both must be confirmed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d59aee39f751ff08",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/ConnectStep.kt",
+          "line": 75
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/ConnectStepPreviews.kt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "retry",
+      "ui_location": "Button in wizard and alarm notification",
+      "kind": "button",
+      "description": "Button to try again after an error. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "fc4dcc978a0d6f6f",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardScreen.kt",
+          "line": 349
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmManager.kt",
+          "line": 161
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 184
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStep.kt",
+          "line": 62
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStep.kt",
+          "line": 75
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SafetyCheckStep.kt",
+          "line": 57
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/PasswordStep.kt",
+          "line": 118
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/PrepareStep.kt",
+          "line": 126
+        },
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/ui/wizard/compose/steps/ActionStep.kt",
+          "line": 105
+        }
+      ]
+    },
+    {
+      "key": "string_activate_patch",
+      "ui_location": "Pump > EOPatch2 > overview > button; wizard title",
+      "kind": "button",
+      "description": "Button on the patch overview and title of the activation wizard.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "11d1f8e0c03530d9",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 341
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchViewModel.kt",
+          "line": 115
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchViewModel.kt",
+          "line": 409
+        }
+      ]
+    },
+    {
+      "key": "string_are_you_sure_to_discard_current_patch",
+      "ui_location": "Pump > EOPatch2 > discard dialog",
+      "kind": "dialog_text",
+      "description": "Confirmation question before discarding the active patch.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a4bde589181984ab",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 238
+        }
+      ]
+    },
+    {
+      "key": "string_discard_patch",
+      "ui_location": "Pump > EOPatch2 > overview > button; dialog title",
+      "kind": "button",
+      "description": "Button on the overview and title of the discard confirmation dialog.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7753d62287e71f53",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 364
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 221
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 224
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 241
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchViewModel.kt",
+          "line": 393
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SafeDeactivationStep.kt",
+          "line": 40
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SafeDeactivationStep.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "string_pause_failed",
+      "ui_location": "Pump > EOPatch2 > overview",
+      "kind": "toast",
+      "description": "Error toast: suspending failed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d0bf08f68cacd4f9",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 215
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 218
+        }
+      ]
+    },
+    {
+      "key": "string_resume_failed",
+      "ui_location": "Pump > EOPatch2 > overview",
+      "kind": "toast",
+      "description": "Error toast: resuming failed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b81fb3ac9ad329f2",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 240
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 243
+        }
+      ]
+    },
+    {
+      "key": "string_resume_insulin_delivery_message",
+      "ui_location": "Pump > EOPatch2 > overview > resume dialog",
+      "kind": "dialog_text",
+      "description": "Tells the user to press Confirm to restart delivery; stresses that delivery stays stopped until then. Multi-line.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c38533b434ccbbac",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewScreen.kt",
+          "line": 161
+        }
+      ]
+    },
+    {
+      "key": "string_resume_insulin_delivery_title",
+      "ui_location": "Pump > EOPatch2 > overview > resume dialog",
+      "kind": "dialog_title",
+      "description": "Title of the dialog confirming the end of the suspension.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ae2c3b5719b5e6c9",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewScreen.kt",
+          "line": 160
+        }
+      ]
+    },
+    {
+      "key": "string_resumed_insulin_delivery_message",
+      "ui_location": "Pump > EOPatch2 > overview",
+      "kind": "toast",
+      "description": "Toast confirming that delivery resumed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c120c56a1e37be57",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 237
+        }
+      ]
+    },
+    {
+      "key": "string_running",
+      "ui_location": "Pump > EOPatch2 > overview > status",
+      "kind": "status",
+      "description": "Status text for a patch that is delivering normally.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5d0397e65eff0bb3",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 296
+        }
+      ]
+    },
+    {
+      "key": "string_suspend_time_insulin_delivery_title",
+      "ui_location": "Pump > EOPatch2 > overview > suspend time dialog",
+      "kind": "dialog_title",
+      "description": "Title of the dialog to choose how long basal delivery is suspended.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "787dc1977a31b4d0",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewScreen.kt",
+          "line": 114
+        }
+      ]
+    },
+    {
+      "key": "string_suspended_insulin_delivery_message",
+      "ui_location": "Pump > EOPatch2 > overview",
+      "kind": "toast",
+      "description": "Toast confirming suspension.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c2de8dfbfc91d69c",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 212
+        }
+      ]
+    },
+    {
+      "key": "string_temp_basal_remained_hhmm",
+      "ui_location": "Pump > EOPatch2 > overview > status banner",
+      "kind": "status",
+      "description": "Remaining suspend time: %1$s hours, %2$s minutes, joined with a colon. Follows the 'pump suspended' line.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "54161d91feeb8645",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 294
+        }
+      ]
+    },
+    {
+      "key": "symbol_day",
+      "ui_location": "Pump > EOPatch2 > deactivation wizard > safe deactivation step",
+      "kind": "label",
+      "description": "Unit word for days in the expiry text, placed after a number in brackets. Singular, short.",
+      "related_keys": [
+        "eopatch_expiration_time"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "06704e37a05bd1c4",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SafeDeactivationStep.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "symbol_minus",
+      "ui_location": "Pump > EOPatch2 > deactivation wizard > safe deactivation step",
+      "kind": "label",
+      "description": "A minus sign shown instead when 1 U or less remains. Keep it as -.",
+      "related_keys": [
+        "symbol_plus"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "a9960f84ee5a1fac",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SafeDeactivationStep.kt",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "symbol_plus",
+      "ui_location": "Pump > EOPatch2 > deactivation wizard > safe deactivation step",
+      "kind": "label",
+      "description": "A plus sign shown before the remaining insulin when more than 1 U remains. Keep it as +.",
+      "related_keys": [
+        "symbol_minus"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "a9960f84ee5a1fac",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SafeDeactivationStep.kt",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "time_1hr",
+      "ui_location": "Pump > EOPatch2 > overview > Basal Suspending Time dialog",
+      "kind": "label",
+      "description": "Choice of how long basal delivery is suspended: 1 hour. Abbreviated, space limited.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "52b187064e39b7ee",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewScreen.kt",
+          "line": 108
+        }
+      ]
+    },
+    {
+      "key": "time_1hr_30min",
+      "ui_location": "Pump > EOPatch2 > overview > Basal Suspending Time dialog",
+      "kind": "label",
+      "description": "Choice of how long basal delivery is suspended: 1 hour 30 minutes. Abbreviated, space limited.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d68d02506f7b6228",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewScreen.kt",
+          "line": 109
+        }
+      ]
+    },
+    {
+      "key": "time_2hr",
+      "ui_location": "Pump > EOPatch2 > overview > Basal Suspending Time dialog",
+      "kind": "label",
+      "description": "Choice of how long basal delivery is suspended: 2 hours. Abbreviated, space limited.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ea2b68284ede20a4",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewScreen.kt",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "key": "time_30min",
+      "ui_location": "Pump > EOPatch2 > overview > Basal Suspending Time dialog",
+      "kind": "label",
+      "description": "Choice of how long basal delivery is suspended: 30 minutes. Abbreviated, space limited.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3963d317a3317ab1",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewScreen.kt",
+          "line": 107
+        }
+      ]
+    },
+    {
+      "key": "wizard_exit_activation_warning",
+      "ui_location": "Pump > EOPatch2 > activation wizard > exit confirmation",
+      "kind": "dialog_text",
+      "description": "Confirmation when leaving the activation wizard early.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f12ffec326156913",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 115
+        }
+      ]
+    },
+    {
+      "key": "wizard_exit_deactivation_warning",
+      "ui_location": "Pump > EOPatch2 > deactivation wizard > exit confirmation",
+      "kind": "dialog_text",
+      "description": "Confirmation when leaving the deactivation wizard; the patch may keep delivering insulin.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6be3ad5496121056",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 114
+        }
+      ]
+    }
+  ]
+}
