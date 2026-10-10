@@ -1,0 +1,2793 @@
+{
+  "schema_version": 1,
+  "source_path": "plugins/automation/src/androidMain/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "action",
+      "ui_location": "Automation > rule editor section header",
+      "kind": "label",
+      "description": "Header of the actions section. Trailing colon is stripped in the UI.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0d3bc084808b7864",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationEditScreen.kt",
+          "line": 245
+        }
+      ]
+    },
+    {
+      "key": "action_disable_scene",
+      "ui_location": "Automation > rule editor > action",
+      "kind": "label",
+      "description": "Name of the action in the action list: disables a scene (a saved set of settings). Short imperative.",
+      "related_keys": [
+        "action_disable_scene_short"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5e9f3b16811ce178",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionDisableScene.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "action_disable_scene_short",
+      "ui_location": "Automation > rule list and editor > action summary",
+      "kind": "status",
+      "description": "One-line summary of the action shown on the rule. %1$s is the scene name.",
+      "related_keys": [
+        "action_disable_scene"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0b89df3989fd6928",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionDisableScene.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "action_enable_scene",
+      "ui_location": "Automation > rule editor > action",
+      "kind": "label",
+      "description": "Name of the action in the action list: enables a scene (a saved set of settings). Short imperative.",
+      "related_keys": [
+        "action_enable_scene_short"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d7f0ab2cee298d38",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionEnableScene.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "action_enable_scene_short",
+      "ui_location": "Automation > rule list and editor > action summary",
+      "kind": "status",
+      "description": "One-line summary of the action shown on the rule. %1$s is the scene name.",
+      "related_keys": [
+        "action_enable_scene"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0dfc608d251145c9",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionEnableScene.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "action_run_scene",
+      "ui_location": "Automation > rule editor > action",
+      "kind": "label",
+      "description": "Name of the action in the action list: runs a scene (a saved set of settings). Short imperative.",
+      "related_keys": [
+        "action_run_scene_short"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "063102e39a5f7db4",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionRunScene.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "action_run_scene_short",
+      "ui_location": "Automation > rule list and editor > action summary",
+      "kind": "status",
+      "description": "One-line summary of the action shown on the rule. %1$s is the scene name.",
+      "related_keys": [
+        "action_run_scene"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "01b42868c6979afa",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionRunScene.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "action_scene_disabled",
+      "ui_location": "Automation > action result",
+      "kind": "error",
+      "description": "Result comment when running a scene that is disabled.",
+      "related_keys": [
+        "action_scene_not_found"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "4ae225629ed9b40a",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionRunScene.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "action_scene_label",
+      "ui_location": "Automation > action editor > scene picker",
+      "kind": "label",
+      "description": "Label of the dropdown choosing a scene. Short noun.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fcd86aa583ba7d7d",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 296
+        }
+      ]
+    },
+    {
+      "key": "action_scene_not_found",
+      "ui_location": "Automation > action result",
+      "kind": "error",
+      "description": "Result comment when the chosen scene no longer exists. Shown in the automation log/result.",
+      "related_keys": [
+        "action_scene_disabled"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "a822f54260d17f19",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionDisableScene.kt",
+          "line": 44
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionEnableScene.kt",
+          "line": 44
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionRunScene.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "add_automation",
+      "ui_location": "Automation > rule list > add button",
+      "kind": "button",
+      "description": "Accessibility description of the button adding a rule.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e601cf161c75eee5",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationScreen.kt",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "key": "add_short",
+      "ui_location": "Automation > rule editor > actions",
+      "kind": "button",
+      "description": "Small button to add an action. Uppercase, very short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0a3013d1a6ada9aa",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationEditScreen.kt",
+          "line": 277
+        }
+      ]
+    },
+    {
+      "key": "alarm_message",
+      "ui_location": "Automation > rule summary > action",
+      "kind": "status",
+      "description": "Summary of the alarm action. %1$s is the alarm text entered by the user.",
+      "related_keys": [
+        "alarm_short"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7cb845ea241accd2",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionAlarm.kt",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "key": "alarm_short",
+      "ui_location": "Automation > action editor > alarm",
+      "kind": "label",
+      "description": "Label of the text field for the alarm message. Ends with a colon.",
+      "related_keys": [
+        "alarm_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "aa837cad800a1db4",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 94
+        }
+      ]
+    },
+    {
+      "key": "alreadyset",
+      "ui_location": "Automation > action result",
+      "kind": "status",
+      "description": "Result comment when the action changed nothing because the profile or smoothing method was already active.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "02513c9fe2e2a64f",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionProfileSwitch.kt",
+          "line": 52
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSmoothingChange.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "atspecifiedtime",
+      "ui_location": "Automation > rule summary > time trigger",
+      "kind": "status",
+      "description": "%1$s is a formatted date and time.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2d740d4aad50be38",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerTime.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "automation",
+      "ui_location": "App toolbar title and ElementType label > Automation",
+      "kind": "title",
+      "description": "Name of the Automation feature (rules that run actions when triggers match). Used as screen title and as the source name 'Automation' in treatment reasons and logs.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4754d92ce7155e69",
+      "usages": [
+        {
+          "path": "appshell/src/commonMain/kotlin/app/aaps/appshell/navigation/AppNavGraph.kt",
+          "line": 927
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 229
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 242
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 351
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 130
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationScreen.kt",
+          "line": 128
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/chips/TempTargetChip.kt",
+          "line": 144
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetCarouselCard.kt",
+          "line": 259
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 336
+        }
+      ]
+    },
+    {
+      "key": "automation_add_group",
+      "ui_location": "Automation > rule editor > condition",
+      "kind": "button",
+      "description": "Button that adds a nested group of triggers combined with and/or. One word.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fbb45e3d96cb7860",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationEditTriggerScreen.kt",
+          "line": 231
+        }
+      ]
+    },
+    {
+      "key": "automation_category_alerts",
+      "ui_location": "Automation > rule editor > Add action sheet",
+      "kind": "label",
+      "description": "Section heading grouping actions about notifications, alarms and SMS. Short heading.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3fdcb8aa99959b10",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ChooseActionSheet.kt",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "key": "automation_category_device",
+      "ui_location": "Automation > rule editor > Add trigger sheet",
+      "kind": "label",
+      "description": "Section heading grouping triggers about pump and device status such as battery or reservoir. Short heading.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c615cb7cfcc54bae",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/ChooseTriggerSheet.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "automation_category_glucose",
+      "ui_location": "Automation > rule editor > Add trigger sheet",
+      "kind": "label",
+      "description": "Section heading grouping triggers about glucose, IOB, COB, bolus and similar. Short heading.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0f66c29338f2a576",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/ChooseTriggerSheet.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "automation_category_loop",
+      "ui_location": "Automation > rule editor > Add action sheet",
+      "kind": "label",
+      "description": "Section heading grouping actions about loop mode, SMB and insulin related actions. Short heading.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cfc2c3c0ad182c0a",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ChooseActionSheet.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "automation_category_other",
+      "ui_location": "Automation > Add trigger sheet and Add action sheet",
+      "kind": "label",
+      "description": "Section heading for the remaining triggers or actions that fit no other category. Short heading.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "04c6adecf6ff280b",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/ChooseTriggerSheet.kt",
+          "line": 62
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ChooseActionSheet.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "automation_category_profile",
+      "ui_location": "Automation > rule editor > Add action sheet",
+      "kind": "label",
+      "description": "Section heading grouping actions about profile switches and percentage. Short heading.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ed2faa2c8a89a679",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ChooseActionSheet.kt",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "automation_category_scenes",
+      "ui_location": "Automation > rule editor > Add action sheet",
+      "kind": "label",
+      "description": "Section heading grouping actions about running, enabling and disabling scenes. Short heading.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7977930ebe432df1",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ChooseActionSheet.kt",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "key": "automation_category_sensors",
+      "ui_location": "Automation > rule editor > Add trigger sheet",
+      "kind": "label",
+      "description": "Section heading grouping triggers about sensors, location, Wi-Fi and Bluetooth. Short heading.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e8e427b8d9adcb39",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/ChooseTriggerSheet.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "automation_category_system",
+      "ui_location": "Automation > rule editor > Add action sheet",
+      "kind": "label",
+      "description": "Section heading grouping actions about app-level actions such as settings export. Short heading.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "62484a7d61bd6267",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ChooseActionSheet.kt",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "key": "automation_category_targets",
+      "ui_location": "Automation > rule editor > Add action sheet",
+      "kind": "label",
+      "description": "Section heading grouping actions about temporary and default targets. Short heading.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b6cb2f6389448ecb",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ChooseActionSheet.kt",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "automation_category_time",
+      "ui_location": "Automation > rule editor > Add trigger sheet",
+      "kind": "label",
+      "description": "Section heading grouping triggers about times and schedules. Short heading.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e6592d78cdafd1a6",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/ChooseTriggerSheet.kt",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "key": "automation_choose_action",
+      "ui_location": "Automation > rule editor > actions",
+      "kind": "button",
+      "description": "Button and sheet title for adding an action to a rule. Short imperative.",
+      "related_keys": [
+        "automation_choose_trigger"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a7dfe719b77172e8",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ChooseActionSheet.kt",
+          "line": 126
+        }
+      ]
+    },
+    {
+      "key": "automation_choose_trigger",
+      "ui_location": "Automation > rule editor > condition",
+      "kind": "button",
+      "description": "Button and sheet title for adding a trigger (condition) to a rule. Short imperative.",
+      "related_keys": [
+        "automation_choose_action"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c1f2a9bbae6b808d",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationEditTriggerScreen.kt",
+          "line": 223
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/ChooseTriggerSheet.kt",
+          "line": 140
+        }
+      ]
+    },
+    {
+      "key": "automation_discard_confirm",
+      "ui_location": "Automation > rule editor > discard dialog",
+      "kind": "button",
+      "description": "Confirm button that throws away the edits. Short imperative.",
+      "related_keys": [
+        "automation_discard_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8975a2d6b9d27cbe",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 249
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 413
+        }
+      ]
+    },
+    {
+      "key": "automation_discard_message",
+      "ui_location": "Automation > rule editor > discard dialog",
+      "kind": "dialog_text",
+      "description": "Body of the discard dialog. The rule lacks required parts (trigger or action) so it cannot be saved.",
+      "related_keys": [
+        "automation_discard_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5ba0e0f71ab43fb8",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 242
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 407
+        }
+      ]
+    },
+    {
+      "key": "automation_discard_title",
+      "ui_location": "Automation > rule editor > discard dialog",
+      "kind": "dialog_title",
+      "description": "Title of the confirmation dialog shown when leaving the editor with unsaved changes. A question.",
+      "related_keys": [
+        "automation_discard_message",
+        "automation_discard_confirm"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b3446c6df7e2abd3",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 241
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 406
+        }
+      ]
+    },
+    {
+      "key": "automation_edit_rule",
+      "ui_location": "Automation > rule editor title; rule card edit icon",
+      "kind": "title",
+      "description": "Toolbar title when editing a rule, and the accessibility description of the edit icon on a rule card.",
+      "related_keys": [
+        "automation_new_rule"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "8b3fc19ab89f271d",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 358
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationScreen.kt",
+          "line": 245
+        }
+      ]
+    },
+    {
+      "key": "automation_empty_desc",
+      "ui_location": "Automation > rule list (empty state)",
+      "kind": "hint",
+      "description": "Hint shown when no rules exist yet. Full sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6ef81c1a563a03e9",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationScreen.kt",
+          "line": 132
+        }
+      ]
+    },
+    {
+      "key": "automation_enabled",
+      "ui_location": "Automation > rule editor > Basics",
+      "kind": "label",
+      "description": "Label of the switch that turns a single rule on or off.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8373d9e207d59783",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationEditScreen.kt",
+          "line": 150
+        }
+      ]
+    },
+    {
+      "key": "automation_missing_action",
+      "ui_location": "Automation > rule editor > actions",
+      "kind": "error",
+      "description": "Validation message shown when the rule has no action.",
+      "related_keys": [
+        "automation_missing_trigger"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "43227ffe13ba55e9",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationEditScreen.kt",
+          "line": 248
+        }
+      ]
+    },
+    {
+      "key": "automation_missing_task_name",
+      "ui_location": "Automation > rule editor",
+      "kind": "error",
+      "description": "Validation error under the name field when the rule has no name.",
+      "related_keys": [
+        "automation_missing_trigger",
+        "automation_missing_action"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1419087619287a69",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationEditScreen.kt",
+          "line": 130
+        }
+      ]
+    },
+    {
+      "key": "automation_missing_trigger",
+      "ui_location": "Automation > rule editor > condition",
+      "kind": "error",
+      "description": "Validation message shown when the rule has no trigger.",
+      "related_keys": [
+        "automation_missing_action"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "524dbb6b7263daf9",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationEditScreen.kt",
+          "line": 194
+        }
+      ]
+    },
+    {
+      "key": "automation_new_rule",
+      "ui_location": "Automation > new rule screen title",
+      "kind": "title",
+      "description": "Toolbar title when creating a rule. Short noun phrase.",
+      "related_keys": [
+        "automation_edit_rule"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "021adbee979d811a",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 358
+        }
+      ]
+    },
+    {
+      "key": "automation_read_only",
+      "ui_location": "Automation > rule editor > chip",
+      "kind": "label",
+      "description": "Short chip shown for a rule that cannot be edited (system rule). One or two words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "89ce136a08d3b58c",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationEditScreen.kt",
+          "line": 104
+        }
+      ]
+    },
+    {
+      "key": "automation_trigger_pump_last_connection_compared",
+      "ui_location": "Automation > rule summary > trigger",
+      "kind": "status",
+      "description": "%1$s is a comparator phrase ('is greater than'), %2$s the number of minutes. Words follow the sentence flow.",
+      "related_keys": [
+        "automation_trigger_pump_last_connection_label"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "7699f1135d8f56ff",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerPumpLastConnection.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "automation_trigger_pump_last_connection_label",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the trigger that checks how long ago the app last communicated with the pump.",
+      "related_keys": [
+        "automation_trigger_pump_last_connection_compared"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5235a63267efce65",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerPumpLastConnection.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "automation_unit_bpm",
+      "ui_location": "Automation > heart rate trigger editor",
+      "kind": "label",
+      "description": "Unit label (beats per minute) next to the heart rate field. Abbreviation.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1af41140cb86cd22",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 224
+        }
+      ]
+    },
+    {
+      "key": "automation_unit_meters",
+      "ui_location": "Automation > location trigger editor",
+      "kind": "label",
+      "description": "Unit label (metres) next to the radius field. Abbreviation.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a62ef5c665ee9ddf",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 576
+        }
+      ]
+    },
+    {
+      "key": "autosenscompared",
+      "ui_location": "Automation > rule summary > Autosens trigger",
+      "kind": "status",
+      "description": "Autosens is the AAPS sensitivity ratio. %1$s comparator phrase, %2$s percentage value; %% prints a percent sign.",
+      "related_keys": [
+        "autosenslabel"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "031fb42f9afc0662",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerAutosensValue.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "autosenslabel",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the Autosens trigger, with a percent sign because the value is a percentage.",
+      "related_keys": [
+        "autosenscompared"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6e3feec0bae99535",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerAutosensValue.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "autotune_profile_name",
+      "ui_location": "Automation > rule summary > Autotune action",
+      "kind": "status",
+      "description": "%1$s is the profile name used for the Autotune run.",
+      "related_keys": [
+        "autotune_run"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "14491765ba2d7962",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionRunAutotune.kt",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "autotune_run",
+      "ui_location": "Automation > action name; Autotune screen button",
+      "kind": "button",
+      "description": "Name of the action that runs Autotune (profile tuning), and the run button label. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2758e9ab2d0247ae",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 241
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionRunAutotune.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "autotune_run_cancelled",
+      "ui_location": "Automation > action result",
+      "kind": "error",
+      "description": "Result: run skipped because Autotune was already running.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3388f2ba1da992b7",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionRunAutotune.kt",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "autotune_run_with_autoswitch",
+      "ui_location": "Automation > action result",
+      "kind": "status",
+      "description": "Result: Autotune finished and the result was switched to automatically.",
+      "related_keys": [
+        "autotune_run_without_autoswitch"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "090e4d5d3048df2c",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionRunAutotune.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "autotune_run_with_error",
+      "ui_location": "Automation > action result",
+      "kind": "error",
+      "description": "Result: the last Autotune run failed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "608bd93ccb70e87e",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionRunAutotune.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "autotune_run_without_autoswitch",
+      "ui_location": "Automation > action result",
+      "kind": "status",
+      "description": "Result: Autotune finished, profile was not changed.",
+      "related_keys": [
+        "autotune_run_with_autoswitch"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "090e4d5d3048df2c",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionRunAutotune.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "btdevice",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the trigger for a Bluetooth device connecting or disconnecting. Ends with a space; the device name follows in the editor.",
+      "related_keys": [
+        "btdevicecompared"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c825b9eaf501500f",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerBTDevice.kt",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "key": "btdevicecompared",
+      "ui_location": "Automation > rule summary > Bluetooth trigger",
+      "kind": "status",
+      "description": "%1$s Bluetooth device name, %2$s comparator phrase ('On connect').",
+      "related_keys": [
+        "btdevice"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9d9d022fae8ef635",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerBTDevice.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "changeSmbState",
+      "ui_location": "Automation > action name",
+      "kind": "label",
+      "description": "Name of the action that turns SMB (super micro bolus) on or off.",
+      "related_keys": [
+        "changeSmbTo"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "fa42f442117f6136",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSMBChange.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "changeSmbTo",
+      "ui_location": "Automation > rule summary > SMB action",
+      "kind": "status",
+      "description": "%1$s is ON or OFF.",
+      "related_keys": [
+        "on",
+        "off"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5e7100f7f026521c",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSMBChange.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "change_smoothing",
+      "ui_location": "Automation > action name",
+      "kind": "label",
+      "description": "Name of the action that switches the glucose smoothing method.",
+      "related_keys": [
+        "change_smoothing_to"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "44622b495a05f384",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSmoothingChange.kt",
+          "line": 44
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSmoothingChange.kt",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "key": "change_smoothing_to",
+      "ui_location": "Automation > rule summary > smoothing action",
+      "kind": "status",
+      "description": "%1$s is the smoothing plugin name.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e229d8113964739a",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSmoothingChange.kt",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "key": "changengetoprofilename",
+      "ui_location": "Automation > rule summary > action",
+      "kind": "status",
+      "description": "Summary of the profile switch action. %1$s is the profile name.",
+      "related_keys": [
+        "profilename"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a30a1976e77925f1",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionProfileSwitch.kt",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "key": "cobcompared",
+      "ui_location": "Automation > rule summary > COB trigger",
+      "kind": "status",
+      "description": "COB is carbs on board. %1$s comparator phrase, %2$.0f grams.",
+      "related_keys": [
+        "triggercoblabel"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "76b5c78bc49ee6f0",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerCOB.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "condition",
+      "ui_location": "Automation > rule editor section header",
+      "kind": "label",
+      "description": "Header of the triggers section. Trailing colon is stripped in the UI.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8194184e1759343e",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 199
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationEditScreen.kt",
+          "line": 181
+        }
+      ]
+    },
+    {
+      "key": "currentlocation",
+      "ui_location": "Automation > location trigger editor",
+      "kind": "button",
+      "description": "Button that fills in the phone's current location.",
+      "related_keys": [
+        "pick_from_map"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3edcebd25919392f",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 560
+        }
+      ]
+    },
+    {
+      "key": "delta",
+      "ui_location": "Automation > glucose delta trigger > type dropdown",
+      "kind": "label",
+      "description": "Glucose change between the last two readings.",
+      "related_keys": [
+        "short_avgdelta",
+        "long_avgdelta"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "788bd678468b1b08",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputDelta.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "deltacompared",
+      "ui_location": "Automation > rule summary > glucose delta trigger",
+      "kind": "status",
+      "description": "%3$s delta type name (e.g. 'Delta'), %1$s comparator phrase, %2$s value. Arguments are reordered, keep the numbering.",
+      "related_keys": [
+        "deltalabel"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a68f29514b3ffc33",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerDelta.kt",
+          "line": 111
+        }
+      ]
+    },
+    {
+      "key": "deltalabel",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the trigger on glucose change (difference between readings).",
+      "related_keys": [
+        "deltacompared"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "90f0872db8cdbd2c",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerDelta.kt",
+          "line": 108
+        }
+      ]
+    },
+    {
+      "key": "edit_short",
+      "ui_location": "Automation > rule editor > condition",
+      "kind": "button",
+      "description": "Small button to edit the triggers. Uppercase, very short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d4ca5faf6dd04fa1",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationEditScreen.kt",
+          "line": 203
+        }
+      ]
+    },
+    {
+      "key": "error_setting_reminder",
+      "ui_location": "Snackbar",
+      "kind": "error",
+      "description": "Error shown when the reminder alarm could not be scheduled.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "63f0c18bcbb0ffae",
+      "usages": [
+        {
+          "path": "plugins/automation/src/androidMain/kotlin/app/aaps/plugins/automation/ReminderSchedulerImpl.kt",
+          "line": 49
+        },
+        {
+          "path": "plugins/automation/src/androidMain/kotlin/app/aaps/plugins/automation/ReminderSchedulerImpl.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "every",
+      "ui_location": "Automation > rule summary > recurring time trigger",
+      "kind": "status",
+      "description": "Start of the summary listing weekdays, followed by day names. Fragment.",
+      "related_keys": [
+        "never"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "937d96ec0cfdb265",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerRecurringTime.kt",
+          "line": 76
+        }
+      ]
+    },
+    {
+      "key": "export_settings_short",
+      "ui_location": "Automation > action editor > settings export",
+      "kind": "label",
+      "description": "Label of the text field for the note stored with the exported settings. Ends with a colon.",
+      "related_keys": [
+        "exportsettings_message"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "fb097b5a11309eaa",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 122
+        }
+      ]
+    },
+    {
+      "key": "exportsettings_message",
+      "ui_location": "Automation > rule summary > action",
+      "kind": "status",
+      "description": "Summary of the settings export action. %1$s is the free text the user entered, saved with the export.",
+      "related_keys": [
+        "export_settings_short"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "0536c8678254dea2",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSettingsExport.kt",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "key": "glucosecomparedmgdl",
+      "ui_location": "Automation > rule summary > glucose trigger",
+      "kind": "status",
+      "description": "%1$s comparator phrase, %2$.0f glucose value in mg/dL (no decimals), %3$s unit.",
+      "related_keys": [
+        "glucosecomparedmmol"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1fbd16934dfdcc2e",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerBg.kt",
+          "line": 89
+        }
+      ]
+    },
+    {
+      "key": "glucosecomparedmmol",
+      "ui_location": "Automation > rule summary > glucose trigger",
+      "kind": "status",
+      "description": "%1$s comparator phrase, %2$.1f glucose value in mmol/L (one decimal), %3$s unit.",
+      "related_keys": [
+        "glucosecomparedmgdl"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1fbd16934dfdcc2e",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerBg.kt",
+          "line": 89
+        }
+      ]
+    },
+    {
+      "key": "glucoseisnotavailable",
+      "ui_location": "Automation > rule summary > glucose trigger",
+      "kind": "status",
+      "description": "Complete summary when no glucose value is present.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3cbc7cce3ff49cea",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerBg.kt",
+          "line": 87
+        }
+      ]
+    },
+    {
+      "key": "iobcompared",
+      "ui_location": "Automation > rule summary > IOB trigger",
+      "kind": "status",
+      "description": "IOB means insulin on board. %1$s comparator phrase, %2$.1f insulin in units.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "af874663e150ebb7",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerIob.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "isequal",
+      "ui_location": "Automation > comparator dropdown and rule summaries",
+      "kind": "label",
+      "description": "Comparator meaning 'equal to'. A fragment placed between a value name and a number, e.g. 'Glucose is greater than 180'.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b9dd141fdb9ea914",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/Comparator.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "isequalorgreater",
+      "ui_location": "Automation > comparator dropdown and rule summaries",
+      "kind": "label",
+      "description": "Comparator meaning 'greater than or equal to'. A fragment placed between a value name and a number, e.g. 'Glucose is greater than 180'.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "209a0af320173201",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/Comparator.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "isequalorlesser",
+      "ui_location": "Automation > comparator dropdown and rule summaries",
+      "kind": "label",
+      "description": "Comparator meaning 'less than or equal to'. A fragment placed between a value name and a number, e.g. 'Glucose is greater than 180'.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6e36c59a06110c1c",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/Comparator.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "isgreater",
+      "ui_location": "Automation > comparator dropdown and rule summaries",
+      "kind": "label",
+      "description": "Comparator meaning 'greater than'. A fragment placed between a value name and a number, e.g. 'Glucose is greater than 180'.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fb30bcf3e6c36a8c",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/Comparator.kt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "islesser",
+      "ui_location": "Automation > comparator dropdown and rule summaries",
+      "kind": "label",
+      "description": "Comparator meaning 'less than'. A fragment placed between a value name and a number, e.g. 'Glucose is greater than 180'.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a81a606545b03644",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/Comparator.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "isnotavailable",
+      "ui_location": "Automation > comparator dropdown and rule summaries",
+      "kind": "label",
+      "description": "Comparator for a value that has no data. Fragment in a sentence such as 'Glucose is not available'.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8a60c8667efbf397",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/Comparator.kt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "lastboluscompared",
+      "ui_location": "Automation > rule summary > last bolus trigger",
+      "kind": "status",
+      "description": "%1$s comparator phrase, %2$s number of minutes.",
+      "related_keys": [
+        "lastboluslabel"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7c92afea253c03c4",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerBolusAgo.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "lastboluslabel",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the trigger on the time since the last bolus.",
+      "related_keys": [
+        "lastboluscompared"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a59d1ec1947107e9",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerBolusAgo.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "location",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the location trigger.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1f6ba895401d4104",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerLocation.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "location_going_in",
+      "ui_location": "Automation > location trigger > mode dropdown",
+      "kind": "label",
+      "description": "Mode: trigger once when the phone enters the area. Ends with 'named', followed by the place name.",
+      "related_keys": [
+        "location_going_out"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "934711d55b82651b",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputLocationMode.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "location_going_out",
+      "ui_location": "Automation > location trigger > mode dropdown",
+      "kind": "label",
+      "description": "Mode: trigger once when the phone leaves the area. Ends with 'named', followed by the place name.",
+      "related_keys": [
+        "location_going_in"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9ee123bef49b7d2e",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputLocationMode.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "location_inside",
+      "ui_location": "Automation > location trigger > mode dropdown",
+      "kind": "label",
+      "description": "Mode: trigger while the phone is inside the area. Fragment that precedes the place name in the summary.",
+      "related_keys": [
+        "location_outside"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2521cc690e8f0830",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputLocationMode.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "location_outside",
+      "ui_location": "Automation > location trigger > mode dropdown",
+      "kind": "label",
+      "description": "Mode: trigger while the phone is outside the area.",
+      "related_keys": [
+        "location_inside"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "58632eb98c6609d1",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputLocationMode.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "locationis",
+      "ui_location": "Automation > rule summary > location trigger",
+      "kind": "status",
+      "description": "%1$s is a location mode sentence (see 'When you are inside the area'), %2$s the saved place name, preceded by a space.",
+      "related_keys": [
+        "location"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "d2ed402bb7b97a49",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerLocation.kt",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "key": "long_avgdelta",
+      "ui_location": "Automation > glucose delta trigger > type dropdown",
+      "kind": "label",
+      "description": "Long average glucose change rate over a longer window (about 15-40 minutes).",
+      "related_keys": [
+        "short_avgdelta",
+        "delta"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "de7498aa98f7cefa",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputDelta.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "message_short",
+      "ui_location": "Automation > action editor > notification",
+      "kind": "label",
+      "description": "Label of the text field for the notification message. Abbreviation of 'message', ends with a colon.",
+      "related_keys": [
+        "notification_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9f35a00663bc01ff",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 103
+        }
+      ]
+    },
+    {
+      "key": "never",
+      "ui_location": "Automation > rule summary > recurring time trigger",
+      "kind": "status",
+      "description": "Summary text when no weekday is selected.",
+      "related_keys": [
+        "every"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "ca9310136abe6430",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerRecurringTime.kt",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "key": "newSmbMode",
+      "ui_location": "Automation > SMB action editor",
+      "kind": "label",
+      "description": "Label before the ON/OFF dropdown. Ends with a colon.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "aa87af47ed2cb31d",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 159
+        }
+      ]
+    },
+    {
+      "key": "notemptarget",
+      "ui_location": "Automation > rule summary > temp target trigger",
+      "kind": "status",
+      "description": "Complete summary when no temporary target is running.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ad457f60e2f3e03b",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerTempTargetValue.kt",
+          "line": 83
+        }
+      ]
+    },
+    {
+      "key": "notification_message",
+      "ui_location": "Automation > rule summary > action",
+      "kind": "status",
+      "description": "Summary of the notification action. %1$s is the message text.",
+      "related_keys": [
+        "message_short"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7ab82045f27b0441",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionNotification.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "off",
+      "ui_location": "Automation > ON/OFF dropdown",
+      "kind": "label",
+      "description": "State value, uppercase.",
+      "related_keys": [
+        "on"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "1585c6dcdfb9a3d6",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputDropdownOnOffMenu.kt",
+          "line": 21
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/CustomWatchfaceConfigurationFragment.kt",
+          "line": 83
+        },
+        {
+          "path": "wear/src/main/res/xml/complication_preferences.xml",
+          "line": 26
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 11
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 20
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 30
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 40
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 50
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 60
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "on",
+      "ui_location": "Automation > ON/OFF dropdown",
+      "kind": "label",
+      "description": "State value, uppercase. Also used for switch summaries elsewhere.",
+      "related_keys": [
+        "off"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "3d19e774cda88916",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputDropdownOnOffMenu.kt",
+          "line": 20
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/CustomWatchfaceConfigurationFragment.kt",
+          "line": 82
+        },
+        {
+          "path": "wear/src/main/res/xml/complication_preferences.xml",
+          "line": 25
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 10
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 19
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 29
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 39
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 49
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 59
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "key": "onconnect",
+      "ui_location": "Automation > comparator dropdown > Bluetooth/Wi-Fi triggers",
+      "kind": "label",
+      "description": "Comparator: the device connects. Fragment.",
+      "related_keys": [
+        "ondisconnect"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7789e8ab276c5be0",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/ComparatorConnect.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "ondisconnect",
+      "ui_location": "Automation > comparator dropdown > Bluetooth/Wi-Fi triggers",
+      "kind": "label",
+      "description": "Comparator: the device disconnects. Fragment.",
+      "related_keys": [
+        "onconnect"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8a085cf557a5b401",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/ComparatorConnect.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "or",
+      "ui_location": "Automation > rule editor > connector between triggers",
+      "kind": "label",
+      "description": "Logical OR connector choice. One word.",
+      "related_keys": [
+        "xor"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f2d78d6f07f2d535",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerConnector.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "percentagecompared",
+      "ui_location": "Automation > rule summary > profile percentage trigger",
+      "kind": "status",
+      "description": "%1$s comparator phrase, %2$d percentage of the active profile. 'pct' is short for percent.",
+      "related_keys": [
+        "profilepercentage"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1d5a550bf2881299",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerProfilePercent.kt",
+          "line": 83
+        }
+      ]
+    },
+    {
+      "key": "permission_background_location_description",
+      "ui_location": "Permission rationale dialog",
+      "kind": "dialog_text",
+      "description": "Explains why background location access is needed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "00fe5bf6c80de71c",
+      "usages": [
+        {
+          "path": "plugins/automation/src/androidMain/kotlin/app/aaps/plugins/automation/AndroidLocationPermissions.kt",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "permission_location_description",
+      "ui_location": "Permission rationale dialog",
+      "kind": "dialog_text",
+      "description": "Explains why location access is needed.",
+      "related_keys": [
+        "permission_location_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f218851b32d8d1fd",
+      "usages": [
+        {
+          "path": "plugins/automation/src/androidMain/kotlin/app/aaps/plugins/automation/AndroidLocationPermissions.kt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "permission_location_title",
+      "ui_location": "Permission rationale dialog",
+      "kind": "dialog_title",
+      "description": "Title naming the location permission being requested.",
+      "related_keys": [
+        "permission_location_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "887dd151d7395c76",
+      "usages": [
+        {
+          "path": "plugins/automation/src/androidMain/kotlin/app/aaps/plugins/automation/AndroidLocationPermissions.kt",
+          "line": 22
+        },
+        {
+          "path": "plugins/automation/src/androidMain/kotlin/app/aaps/plugins/automation/AndroidLocationPermissions.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "pick_from_map",
+      "ui_location": "Automation > location trigger editor; map screen title",
+      "kind": "button",
+      "description": "Button and screen title to choose a place on a map.",
+      "related_keys": [
+        "tap_to_select_location"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b6cff38618d3c4fe",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 306
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 567
+        }
+      ]
+    },
+    {
+      "key": "precondition_smoothing_not_active",
+      "ui_location": "Automation > rule summary > precondition",
+      "kind": "status",
+      "description": "%1$s is the smoothing plugin name.",
+      "related_keys": [
+        "precondition_smoothing_not_active_name"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "973c87d5805bbf6e",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerSelectedSmoothingNotActive.kt",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "precondition_smoothing_not_active_name",
+      "ui_location": "Automation > preconditions",
+      "kind": "label",
+      "description": "Name of the precondition that requires a given smoothing method not be active.",
+      "related_keys": [
+        "precondition_smoothing_not_active"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e2e5e554a9a34c22",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerSelectedSmoothingNotActive.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "preconditions",
+      "ui_location": "Automation > rule editor section",
+      "kind": "label",
+      "description": "Header of the section of extra conditions that must hold before the rule runs. Colon stripped.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "dd9ee134fa0fdace",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationEditScreen.kt",
+          "line": 217
+        }
+      ]
+    },
+    {
+      "key": "profilename",
+      "ui_location": "Automation > action list and editor",
+      "kind": "label",
+      "description": "Name of the profile switch action and label of its profile dropdown. Followed by a profile name; a fragment.",
+      "related_keys": [
+        "changengetoprofilename"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5a8c46e1925b4dfd",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionProfileSwitch.kt",
+          "line": 34
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 202
+        }
+      ]
+    },
+    {
+      "key": "profilepercentage",
+      "ui_location": "Automation > action and trigger name",
+      "kind": "label",
+      "description": "Name of the profile percentage action and trigger (the percentage scaling of the active profile's insulin).",
+      "related_keys": [
+        "startprofileforever"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ac10f8f97d8d24ff",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionProfileSwitchPercent.kt",
+          "line": 41
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerProfilePercent.kt",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "key": "recurringTime",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the trigger that fires on chosen weekdays at a set time.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3a3349711576e27b",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerRecurringTime.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "run_automations",
+      "ui_location": "Automation > overflow menu",
+      "kind": "menu_item",
+      "description": "Menu item that runs all rules now. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7e2f9071050c26ae",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 513
+        }
+      ]
+    },
+    {
+      "key": "selected_coords",
+      "ui_location": "Automation > map picker",
+      "kind": "status",
+      "description": "%1$.6f latitude, %2$.6f longitude, in decimal degrees.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ccb691433b220dbe",
+      "usages": [
+        {
+          "path": "plugins/automation/src/androidMain/kotlin/app/aaps/plugins/automation/compose/MapPickerScreen.kt",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "sendsmsactiondescription",
+      "ui_location": "Automation > action list",
+      "kind": "label",
+      "description": "Name of the action that texts all configured phone numbers.",
+      "related_keys": [
+        "sendsmsactionlabel"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9d349fc4f88d5d5f",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSendSMS.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "sendsmsactionlabel",
+      "ui_location": "Automation > rule summary > action",
+      "kind": "status",
+      "description": "Summary of the send SMS action. %1$s is the message text.",
+      "related_keys": [
+        "sendsmsactiondescription"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "79c093e187a9ffc3",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSendSMS.kt",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "sendsmsactiontext",
+      "ui_location": "Automation > action editor > SMS",
+      "kind": "label",
+      "description": "Label of the text field for the SMS message.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "de599c5da903dfce",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "key": "short_avgdelta",
+      "ui_location": "Automation > glucose delta trigger > type dropdown",
+      "kind": "label",
+      "description": "Short average glucose change rate over the last few readings (about 5-15 minutes).",
+      "related_keys": [
+        "long_avgdelta",
+        "delta"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9598ca6231b7c8c5",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputDelta.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "smoothing_label",
+      "ui_location": "Automation > smoothing action editor",
+      "kind": "label",
+      "description": "Label of the smoothing method dropdown.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4b5cd213b5ec6254",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 183
+        }
+      ]
+    },
+    {
+      "key": "startprofileforever",
+      "ui_location": "Automation > rule summary > action",
+      "kind": "status",
+      "description": "Summary of a profile percentage switch with no end. %1$d is the percentage; %% prints a percent sign.",
+      "related_keys": [
+        "profilepercentage"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c77d24e678d7006f",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionProfileSwitchPercent.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "starttemptarget",
+      "ui_location": "Automation > action name and summary",
+      "kind": "label",
+      "description": "Name of the action starting a temporary glucose target. Also the beginning of the summary: followed by ': ' and the target details.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0c7bdcb985e4be31",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionStartTempTarget.kt",
+          "line": 55
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionStartTempTarget.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "stop_processing",
+      "ui_location": "Automation > action",
+      "kind": "label",
+      "description": "Name of the action that stops evaluating the remaining rules. Also its summary.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "083e6f4655506de8",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionStopProcessing.kt",
+          "line": 21
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionStopProcessing.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "system_automation",
+      "ui_location": "Automation > rule card icon",
+      "kind": "label",
+      "description": "Accessibility description of an icon marking a rule created by the system.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b1b3633681546c05",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationScreen.kt",
+          "line": 250
+        }
+      ]
+    },
+    {
+      "key": "tap_to_select_location",
+      "ui_location": "Automation > map picker",
+      "kind": "hint",
+      "description": "Hint shown before a point is chosen.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6f8316ae741439a2",
+      "usages": [
+        {
+          "path": "plugins/automation/src/androidMain/kotlin/app/aaps/plugins/automation/compose/MapPickerScreen.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "taskname",
+      "ui_location": "Automation > rule editor > Basics",
+      "kind": "label",
+      "description": "Label of the text field for the rule's name.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d5697ce263f61170",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationEditScreen.kt",
+          "line": 125
+        }
+      ]
+    },
+    {
+      "key": "temptargetcompared",
+      "ui_location": "Automation > rule summary > temp target trigger",
+      "kind": "status",
+      "description": "%1$s is a phrase such as 'exists' / 'does not exist'-style comparator.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "2424f20e57ee1bbc",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerTempTarget.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "temptargetcomparedmgdl",
+      "ui_location": "Automation > rule summary > temp target trigger",
+      "kind": "status",
+      "description": "%1$s comparator phrase, %2$.0f target in mg/dL, %3$s unit.",
+      "related_keys": [
+        "temptargetcomparedmmol"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a28a6194e7b1d99a",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerTempTargetValue.kt",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "key": "temptargetcomparedmmol",
+      "ui_location": "Automation > rule summary > temp target trigger",
+      "kind": "status",
+      "description": "%1$s comparator phrase, %2$.1f target in mmol/L, %3$s unit.",
+      "related_keys": [
+        "temptargetcomparedmgdl"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a28a6194e7b1d99a",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerTempTargetValue.kt",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "key": "time_range",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the trigger that is true between two times of day. May also be used as a column header in the activity table.",
+      "related_keys": [
+        "timerange_value"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "35d48d9a7113d19d",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerTimeRange.kt",
+          "line": 66
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/ActivityStatsCompose.kt",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "key": "time_to_bolus",
+      "ui_location": "Automation > alarm text",
+      "kind": "dialog_text",
+      "description": "Alarm message reminding the user to bolus and rerun the bolus wizard. \\n is a line break.",
+      "related_keys": [
+        "time_to_eat"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b228cad9859a0c78",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/AutomationRuntime.kt",
+          "line": 876
+        }
+      ]
+    },
+    {
+      "key": "time_to_eat",
+      "ui_location": "Automation > alarm text",
+      "kind": "dialog_text",
+      "description": "Alarm message reminding the user to eat and rerun the bolus wizard. \\n is a line break.",
+      "related_keys": [
+        "time_to_bolus"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a0db248f097d994e",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/AutomationRuntime.kt",
+          "line": 788
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/AutomationRuntime.kt",
+          "line": 842
+        }
+      ]
+    },
+    {
+      "key": "timerange_value",
+      "ui_location": "Automation > rule summary > time range trigger",
+      "kind": "status",
+      "description": "%1$s start time and %2$s end time of day.",
+      "related_keys": [
+        "time_range"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b75a099e384a31c0",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerTimeRange.kt",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "key": "triggerCannulaAgeDesc",
+      "ui_location": "Automation > rule summary > cannula age trigger",
+      "kind": "status",
+      "description": "Age of the infusion cannula. %1$s comparator phrase, %2$.1f age in hours.",
+      "related_keys": [
+        "triggerCannulaAgeLabel"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1ce57c4225284844",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerCannulaAge.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "triggerCannulaAgeLabel",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the trigger on the age of the infusion cannula.",
+      "related_keys": [
+        "triggerCannulaAgeDesc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "56880f9019d0b8ac",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerCannulaAge.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "triggerHeartRate",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the trigger on heart rate from a wearable.",
+      "related_keys": [
+        "triggerHeartRateDesc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f3f121e860887393",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerHeartRate.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "triggerHeartRateDesc",
+      "ui_location": "Automation > rule summary > heart rate trigger",
+      "kind": "status",
+      "description": "HR is heart rate. %1$s comparator phrase, %2$.0f beats per minute.",
+      "related_keys": [
+        "triggerHeartRate"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0fbc3447f43a2484",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerHeartRate.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "triggerInsulinAgeDesc",
+      "ui_location": "Automation > rule summary > insulin age trigger",
+      "kind": "status",
+      "description": "Age of the insulin in use. %1$s comparator phrase, %2$.1f age in hours.",
+      "related_keys": [
+        "triggerInsulinAgeLabel"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "4b3a7881bd6d6041",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerInsulinAge.kt",
+          "line": 81
+        }
+      ]
+    },
+    {
+      "key": "triggerInsulinAgeLabel",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the trigger on the age of the insulin in use.",
+      "related_keys": [
+        "triggerInsulinAgeDesc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e0d0fcd0ed512469",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerInsulinAge.kt",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "key": "triggerPodChangeDesc",
+      "ui_location": "Automation > trigger editor and rule summary",
+      "kind": "status",
+      "description": "Statement that a pod was activated. Complete phrase, no placeholders.",
+      "related_keys": [
+        "triggerPodChangeLabel"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "78ee75632d5f132f",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 396
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerPodChange.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "triggerPodChangeLabel",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the trigger that fires when an Omnipod pod is activated.",
+      "related_keys": [
+        "triggerPodChangeDesc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "46dd81711b921a15",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerPodChange.kt",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "key": "triggerPumpBatteryAgeDesc",
+      "ui_location": "Automation > rule summary > pumpbattery age trigger",
+      "kind": "status",
+      "description": "Age of the pump battery. %1$s comparator phrase, %2$.1f age in hours.",
+      "related_keys": [
+        "triggerPumpBatteryAgeLabel"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8ff14015bd4e3995",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerPumpBatteryAge.kt",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "key": "triggerPumpBatteryAgeLabel",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the trigger on the age of the pump battery.",
+      "related_keys": [
+        "triggerPumpBatteryAgeDesc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "81a489ea332d8b85",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerPumpBatteryAge.kt",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "key": "triggerPumpBatteryLevelDesc",
+      "ui_location": "Automation > rule summary > pump battery trigger",
+      "kind": "status",
+      "description": "%1$s comparator phrase, %2$.0f percent charge.",
+      "related_keys": [
+        "triggerPumpBatteryLevelLabel"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "61e7a519eda421ff",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerPumpBatteryLevel.kt",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "triggerPumpBatteryLevelLabel",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the trigger on the pump battery charge percentage.",
+      "related_keys": [
+        "triggerPumpBatteryLevelDesc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "47b1b0e481ef1da8",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerPumpBatteryLevel.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "triggerReservoirLevelDesc",
+      "ui_location": "Automation > rule summary > reservoir trigger",
+      "kind": "status",
+      "description": "%1$s comparator phrase, %2$.0f insulin units remaining.",
+      "related_keys": [
+        "triggerReservoirLevelLabel"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "497f2f7a417b54a1",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerReservoirLevel.kt",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "triggerReservoirLevelLabel",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the trigger on the remaining insulin in the pump reservoir.",
+      "related_keys": [
+        "triggerReservoirLevelDesc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0ad045dfe620ee47",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerReservoirLevel.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "triggerSensorAgeDesc",
+      "ui_location": "Automation > rule summary > sensor age trigger",
+      "kind": "status",
+      "description": "Age of the glucose sensor. %1$s comparator phrase, %2$.1f age in hours.",
+      "related_keys": [
+        "triggerSensorAgeLabel"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2a09bbcdaeeba7cc",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerSensorAge.kt",
+          "line": 76
+        }
+      ]
+    },
+    {
+      "key": "triggerSensorAgeLabel",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the trigger on the age of the glucose sensor.",
+      "related_keys": [
+        "triggerSensorAgeDesc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1cffff99d0501c7e",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerSensorAge.kt",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "key": "triggerStepsCountDesc",
+      "ui_location": "Automation > rule summary > steps trigger",
+      "kind": "status",
+      "description": "%1$s duration in minutes, %2$s comparator phrase, %3$.0f number of steps.",
+      "related_keys": [
+        "triggerStepsCountLabel"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "33041ad557929f97",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerStepsCount.kt",
+          "line": 81
+        }
+      ]
+    },
+    {
+      "key": "triggerStepsCountDropdownLabel",
+      "ui_location": "Automation > steps trigger editor",
+      "kind": "label",
+      "description": "Label of the dropdown choosing the time window in minutes. A colon is appended in the UI.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "05bdeeb5cdf83598",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 472
+        }
+      ]
+    },
+    {
+      "key": "triggerStepsCountLabel",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the trigger on step count from a wearable.",
+      "related_keys": [
+        "triggerStepsCountDesc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "71a5fcb501b713e8",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerStepsCount.kt",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "key": "triggerUnknownDesc",
+      "ui_location": "Automation > rule summary > unknown trigger",
+      "kind": "status",
+      "description": "%1$s is the internal type name. The trigger never fires.",
+      "related_keys": [
+        "triggerUnknownLabel"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "75e257924bade2a1",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerUnknown.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "triggerUnknownLabel",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name shown for a stored trigger of an unrecognised type (for example from a newer version).",
+      "related_keys": [
+        "triggerUnknownDesc"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "0bba7edfe6826360",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerUnknown.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "trigger_scene_active",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the trigger that checks whether a scene is active. Noun.",
+      "related_keys": [
+        "trigger_scene_active_compared"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b747e9bc22f881f5",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerSceneActive.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "trigger_scene_active_compared",
+      "ui_location": "Automation > rule summary > trigger",
+      "kind": "status",
+      "description": "Summary of the scene trigger. %1$s is a comparator phrase such as 'is active' / 'is not active' inserted from another string.",
+      "related_keys": [
+        "trigger_scene_active"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "0ef448dd0ccbdd11",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerSceneActive.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "triggercoblabel",
+      "ui_location": "Automation > rule editor > trigger",
+      "kind": "label",
+      "description": "Name of the carbs on board trigger. COB is a common abbreviation; keep if usual.",
+      "related_keys": [
+        "cobcompared"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e5e98ed53ddb6850",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerCOB.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "user_action",
+      "ui_location": "Automation > rule editor > Basics",
+      "kind": "label",
+      "description": "Switch label marking the rule as a user action, run manually from the Overview rather than automatically.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "09e0fb4e53a0b2d1",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationEditScreen.kt",
+          "line": 139
+        }
+      ]
+    },
+    {
+      "key": "wifissidcompared",
+      "ui_location": "Automation > rule summary > Wi-Fi trigger",
+      "kind": "status",
+      "description": "%1$s comparator phrase, %2$s Wi-Fi network name (SSID).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "dac9ddef5431c370",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerWifiSsid.kt",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "key": "xor",
+      "ui_location": "Automation > rule editor > connector between triggers",
+      "kind": "label",
+      "description": "Logical exclusive-or connector choice: exactly one of the two triggers is true.",
+      "related_keys": [
+        "or"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0714bd9d9846bb01",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerConnector.kt",
+          "line": 34
+        }
+      ]
+    }
+  ]
+}
