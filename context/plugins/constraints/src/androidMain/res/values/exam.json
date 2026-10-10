@@ -1,0 +1,3272 @@
+{
+  "schema_version": 1,
+  "source_path": "plugins/constraints/src/androidMain/res/values/exam.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "basaltest_beforeloop",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6b161035a252d961",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "key": "basaltest_fixed",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e30bf0ce2206017c",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "basaltest_havingregularhighlow",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0dacdeb66d823f5e",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "basaltest_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6035d4f8424b8fcf",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "key": "basaltest_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cedd66658f5c86a2",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "basaltest_weekly",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "daca24c104944ece",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "basaltest_when",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cedd66658f5c86a2",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "blank",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "other",
+      "description": "Intentionally empty question text, used when an exam task has only a title and answer options. Keep empty or a single space.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "22b99a5c3bfe47d0",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 67
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 76
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 120
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 156
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 174
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 204
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 239
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 269
+        }
+      ]
+    },
+    {
+      "key": "breadgrams_calc",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a562cd3e59e66605",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 273
+        }
+      ]
+    },
+    {
+      "key": "breadgrams_decay",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "12006cfa4ce230e5",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 272
+        }
+      ]
+    },
+    {
+      "key": "breadgrams_exchange",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1e43013bde034b7d",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 271
+        }
+      ]
+    },
+    {
+      "key": "breadgrams_grams",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cd1cc6615b442aec",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 270
+        }
+      ]
+    },
+    {
+      "key": "breadgrams_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "455f13937884e921",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 274
+        }
+      ]
+    },
+    {
+      "key": "breadgrams_hint2",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "03ef81e6dea34963",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 275
+        }
+      ]
+    },
+    {
+      "key": "breadgrams_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "614970c39ff45f6e",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 269
+        }
+      ]
+    },
+    {
+      "key": "cob2_longer",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "37f92ebf1f21c28a",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 255
+        }
+      ]
+    },
+    {
+      "key": "cob2_no_effect",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c86948553f4a3ae5",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 257
+        }
+      ]
+    },
+    {
+      "key": "cob2_question",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3668a95d0cc0343c",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 254
+        }
+      ]
+    },
+    {
+      "key": "cob2_shorter",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fb7a13d9a068252e",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 256
+        }
+      ]
+    },
+    {
+      "key": "cob3_longer",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "53595222caba454a",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 262
+        }
+      ]
+    },
+    {
+      "key": "cob3_no_effect",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2d9b8a328c96dfe7",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 264
+        }
+      ]
+    },
+    {
+      "key": "cob3_question",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "43b026e456a2f50f",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 261
+        }
+      ]
+    },
+    {
+      "key": "cob3_shorter",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "23bd659ba3a87b00",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 263
+        }
+      ]
+    },
+    {
+      "key": "cob_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8137529658a91a5e",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 251
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 258
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 265
+        }
+      ]
+    },
+    {
+      "key": "cob_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "366b9f464968e825",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 247
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 254
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 261
+        }
+      ]
+    },
+    {
+      "key": "cob_longer",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9b5278c98eca1757",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 248
+        }
+      ]
+    },
+    {
+      "key": "cob_no_effect",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "dba0a82624028719",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 250
+        }
+      ]
+    },
+    {
+      "key": "cob_question",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5fce2eb4cec7d930",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 247
+        }
+      ]
+    },
+    {
+      "key": "cob_shorter",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9d10e60298912986",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 249
+        }
+      ]
+    },
+    {
+      "key": "concentration_feature_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4d9a9644d18dd69b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 302
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 310
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 319
+        }
+      ]
+    },
+    {
+      "key": "concentration_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0fb340b7df3c5311",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 306
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 315
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 324
+        }
+      ]
+    },
+    {
+      "key": "dia_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "631c11a76968b781",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "dia_label_exam",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "80361bd65b224bd7",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "key": "dia_meaningisequaltodiapump",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9566cc92b6748eb2",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "dia_minimumis5h",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9c3c4592513cc7d8",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "dia_profile",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "932200426e2a8c53",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "dia_valuemustbedetermined",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "31fd02ed83362c94",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "dia_whatmeansdia",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "80361bd65b224bd7",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "key": "exercise_15g",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b44a7ce7d095c234",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 142
+        }
+      ]
+    },
+    {
+      "key": "exercise_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c9008b656f0f9863",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 143
+        }
+      ]
+    },
+    {
+      "key": "exercise_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "160ddff451589830",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 138
+        }
+      ]
+    },
+    {
+      "key": "exercise_setfinished",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c6d25a73920d349f",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 140
+        }
+      ]
+    },
+    {
+      "key": "exercise_settt",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c96131df82deb393",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 139
+        }
+      ]
+    },
+    {
+      "key": "exercise_setunchanged",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "89b2ec834d719ab5",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 141
+        }
+      ]
+    },
+    {
+      "key": "exercise_whattodo",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "160ddff451589830",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 138
+        }
+      ]
+    },
+    {
+      "key": "exerciseprofile_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9fd76727598a2898",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 134
+        }
+      ]
+    },
+    {
+      "key": "exerciseprofile_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b6195a0bc3436684",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 129
+        }
+      ]
+    },
+    {
+      "key": "exerciseprofile_leaveat100",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ce1e9e7e67e2da12",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 133
+        }
+      ]
+    },
+    {
+      "key": "exerciseprofile_suspendloop",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0c5622a1311fdb7b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 132
+        }
+      ]
+    },
+    {
+      "key": "exerciseprofile_switchprofileabove100",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "70ffb2c7490cdb70",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 130
+        }
+      ]
+    },
+    {
+      "key": "exerciseprofile_switchprofilebelow100",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f4389bc82a7cc37d",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 131
+        }
+      ]
+    },
+    {
+      "key": "exerciseprofile_whattodo",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b6195a0bc3436684",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 129
+        }
+      ]
+    },
+    {
+      "key": "extendedcarbs_fat",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0ffa24b873b29f05",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 282
+        }
+      ]
+    },
+    {
+      "key": "extendedcarbs_free",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2160717b9cda9535",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 281
+        }
+      ]
+    },
+    {
+      "key": "extendedcarbs_future",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d351741250a9ac2a",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 280
+        }
+      ]
+    },
+    {
+      "key": "extendedcarbs_handling",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "66b2b0b73fbd9505",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 279
+        }
+      ]
+    },
+    {
+      "key": "extendedcarbs_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f71c87b31c9f4e0c",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 284
+        }
+      ]
+    },
+    {
+      "key": "extendedcarbs_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "66b2b0b73fbd9505",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 279
+        }
+      ]
+    },
+    {
+      "key": "extendedcarbs_rescue",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8f5de335f9f794d1",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 283
+        }
+      ]
+    },
+    {
+      "key": "hypott_0basal",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "42ecf5b38d1430be",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 89
+        }
+      ]
+    },
+    {
+      "key": "hypott_exercise",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9609b91f1c268f63",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 87
+        }
+      ]
+    },
+    {
+      "key": "hypott_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "eee901b4c9c48050",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 90
+        }
+      ]
+    },
+    {
+      "key": "hypott_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "220dc534d05084fe",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "key": "hypott_preventoversmb",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8215327999900b18",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 86
+        }
+      ]
+    },
+    {
+      "key": "hypott_whenhypott",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "220dc534d05084fe",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "key": "hypott_wrongbasal",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "524ce7a93f882c01",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 88
+        }
+      ]
+    },
+    {
+      "key": "ic_decreasingvalue",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "23cb81312a1ca94e",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "key": "ic_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "94628f61ef24415d",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 81
+        }
+      ]
+    },
+    {
+      "key": "ic_increasingvalue",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0303961c4a04709d",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "key": "ic_isf",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "db70bedafb7d8d34",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "key": "ic_label_exam",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "253a7b9ca1820ffd",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 76
+        }
+      ]
+    },
+    {
+      "key": "ic_multiple",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b7880c293db7b987",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "key": "insulin_actrapid",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "28f4220764403315",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 168
+        }
+      ]
+    },
+    {
+      "key": "insulin_fiasp",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d033f279c5d49379",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 169
+        }
+      ]
+    },
+    {
+      "key": "insulin_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "27288d2ce9e9bf32",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 170
+        }
+      ]
+    },
+    {
+      "key": "insulin_humalog",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3a8c4b1cac41712a",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 167
+        }
+      ]
+    },
+    {
+      "key": "insulin_novorapid",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "40056af6db81f5e9",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 166
+        }
+      ]
+    },
+    {
+      "key": "insulin_plugins",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "abfc59f1d6fceda9",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 165
+        }
+      ]
+    },
+    {
+      "key": "insulin_ultrarapid",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "abfc59f1d6fceda9",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 165
+        }
+      ]
+    },
+    {
+      "key": "iob_hightemp",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2e3065b46ca2f027",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 241
+        }
+      ]
+    },
+    {
+      "key": "iob_negiob",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "73c266722cf9703a",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 242
+        }
+      ]
+    },
+    {
+      "key": "iob_posiob",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a244ec33d3d322ad",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 243
+        }
+      ]
+    },
+    {
+      "key": "iob_value",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3c9dcf995c91ad7a",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 240
+        }
+      ]
+    },
+    {
+      "key": "isf_decreasingvalue",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0ccd3be9b32f4a11",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "isf_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ee742a871349e64a",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "isf_increasingvalue",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "817df46bd65717ae",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "isf_label_exam",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8972f7f36a09237c",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 67
+        }
+      ]
+    },
+    {
+      "key": "isf_noeffect",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "60e2da4cc0604955",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "isf_preferences",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "55f7476e12e6e035",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "key": "noisycgm_checksmoothing",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "00fe843449e77d43",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 151
+        }
+      ]
+    },
+    {
+      "key": "noisycgm_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e0139ac1d1f5617e",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 152
+        }
+      ]
+    },
+    {
+      "key": "noisycgm_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "390b671df114b16d",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 147
+        }
+      ]
+    },
+    {
+      "key": "noisycgm_nothing",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "46cb7446058d32fe",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 148
+        }
+      ]
+    },
+    {
+      "key": "noisycgm_pause",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "dea0e30f50c09d3f",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 149
+        }
+      ]
+    },
+    {
+      "key": "noisycgm_replacesensor",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "64b60319081bb0b6",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 150
+        }
+      ]
+    },
+    {
+      "key": "noisycgm_whattodo",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "390b671df114b16d",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 147
+        }
+      ]
+    },
+    {
+      "key": "nsclient_data",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "eab3f1d21bb0207b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 291
+        }
+      ]
+    },
+    {
+      "key": "nsclient_dexcomfollow",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f3a9f66dc33ef878",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 290
+        }
+      ]
+    },
+    {
+      "key": "nsclient_fullcontrol",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "655e72d22b43adb6",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 292
+        }
+      ]
+    },
+    {
+      "key": "nsclient_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "817c6ed3391b3291",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 293
+        }
+      ]
+    },
+    {
+      "key": "nsclient_howcanyou",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9ac9fee6427fa66f",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 288
+        }
+      ]
+    },
+    {
+      "key": "nsclient_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9ac9fee6427fa66f",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 288
+        }
+      ]
+    },
+    {
+      "key": "nsclient_nightscout",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c8b1cd319e1ddae6",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 289
+        }
+      ]
+    },
+    {
+      "key": "objectives2_cloud",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7791f8c2daa28e9b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 197
+        }
+      ]
+    },
+    {
+      "key": "objectives2_easyrestore",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "70800da1ecfc54d7",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 198
+        }
+      ]
+    },
+    {
+      "key": "objectives2_internalstorage",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a35f7fd162498d45",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 196
+        }
+      ]
+    },
+    {
+      "key": "objectives2_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "46b56340a5dce47c",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 194
+        }
+      ]
+    },
+    {
+      "key": "objectives2_maintenance",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7246e3a7c7a9e24e",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 195
+        }
+      ]
+    },
+    {
+      "key": "objectives_afterchange",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e85946c94dd3396b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 187
+        }
+      ]
+    },
+    {
+      "key": "objectives_afterinitialsetup",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "495ebc82e3e31762",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 188
+        }
+      ]
+    },
+    {
+      "key": "objectives_afterobjective",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "dc9c0e1816616227",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 186
+        }
+      ]
+    },
+    {
+      "key": "objectives_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "dabb06c199ca1d35",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 189
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 199
+        }
+      ]
+    },
+    {
+      "key": "objectives_hint2",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "24b8269a523c2395",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 190
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 200
+        }
+      ]
+    },
+    {
+      "key": "objectives_howtosave",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1c4b9a8693ba9d74",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 184
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 194
+        }
+      ]
+    },
+    {
+      "key": "objectives_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "58e7dd0ff7c4e591",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 184
+        }
+      ]
+    },
+    {
+      "key": "objectives_notesettings",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7cdeb5818d1223b7",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 185
+        }
+      ]
+    },
+    {
+      "key": "other_medication_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bbd7ad7a8dbaf7dd",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 297
+        }
+      ]
+    },
+    {
+      "key": "other_medication_text",
+      "ui_location": "Objectives > Objective 2 > Other medication task",
+      "kind": "dialog_text",
+      "description": "Safety statement the user must read and confirm with a checkbox. It warns about medication that affects blood glucose and how AAPS responds. Keep the medical meaning exact.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bbd7ad7a8dbaf7dd",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 297
+        }
+      ]
+    },
+    {
+      "key": "prerequisites2_device",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "66a3c05bdf2ef57c",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "prerequisites2_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "785bde3b54547f6c",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "key": "prerequisites2_internet",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cde92c33a9afe2cc",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "prerequisites2_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f9002c9d2f448352",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "prerequisites2_profile",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4944294effc8dec2",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "prerequisites2_supportedcgm",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "02a6c4115ca47d80",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "key": "prerequisites2_what",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f9002c9d2f448352",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "prerequisites_beanandroiddeveloper",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b8b0be043d76ef68",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "key": "prerequisites_build",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d89e5b73de0d40f1",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "prerequisites_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6fa5025790b8332d",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "prerequisites_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c8180650b1ee7472",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "prerequisites_nightscout",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9c9f0eaecf82e839",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "prerequisites_pump",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7f6bf7b416c0235c",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "prerequisites_what",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c8180650b1ee7472",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "profileswitch2_basalhigher",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "13a0a2a78038b9b5",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 105
+        }
+      ]
+    },
+    {
+      "key": "profileswitch2_bghigher",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7accdc6898e16c7c",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 104
+        }
+      ]
+    },
+    {
+      "key": "profileswitch2_bgunchanged",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4f90fea03646ab63",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 106
+        }
+      ]
+    },
+    {
+      "key": "profileswitch2_isfhigher",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5e056c7458ec2f5a",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 107
+        }
+      ]
+    },
+    {
+      "key": "profileswitch2_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d310f569d536fd4a",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 103
+        }
+      ]
+    },
+    {
+      "key": "profileswitch2_pctwillchange",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d310f569d536fd4a",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 103
+        }
+      ]
+    },
+    {
+      "key": "profileswitch4_internet",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b8df05d344003045",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 122
+        }
+      ]
+    },
+    {
+      "key": "profileswitch4_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "32c396dfb60bb8d5",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 120
+        }
+      ]
+    },
+    {
+      "key": "profileswitch4_multi",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5f4f22cc6c67fbb0",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 124
+        }
+      ]
+    },
+    {
+      "key": "profileswitch4_rates",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3337c35f2148dad6",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 121
+        }
+      ]
+    },
+    {
+      "key": "profileswitch4_sufficient",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ce83fa24efeeb5b6",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 123
+        }
+      ]
+    },
+    {
+      "key": "profileswitch_basallower",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "56851f6e6e0df0c5",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 95
+        }
+      ]
+    },
+    {
+      "key": "profileswitch_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fe0d9d3cf2870cad",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 99
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 108
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 125
+        }
+      ]
+    },
+    {
+      "key": "profileswitch_iclower",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fb65dab06aa14512",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "key": "profileswitch_isfhigher",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1576b15caa8232fe",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "key": "profileswitch_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0141197ae03b0ea1",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 94
+        }
+      ]
+    },
+    {
+      "key": "profileswitch_pctwillchange",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0141197ae03b0ea1",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 94
+        }
+      ]
+    },
+    {
+      "key": "profileswitch_unchanged",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "34d9d80f1397499f",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 98
+        }
+      ]
+    },
+    {
+      "key": "profileswitchtime_100",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c1ad1691fbbc1a6c",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 115
+        }
+      ]
+    },
+    {
+      "key": "profileswitchtime_2",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0854daac60590174",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "key": "profileswitchtime__2",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "92e91ffbe1108c2b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 113
+        }
+      ]
+    },
+    {
+      "key": "profileswitchtime_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bce9cbd5de422d7a",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 116
+        }
+      ]
+    },
+    {
+      "key": "profileswitchtime_iwant",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "89c50a65b6efc452",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 111
+        }
+      ]
+    },
+    {
+      "key": "profileswitchtime_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "89c50a65b6efc452",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 111
+        }
+      ]
+    },
+    {
+      "key": "profileswitchtime_tt",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "04c6c0c4cf75f2ac",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 114
+        }
+      ]
+    },
+    {
+      "key": "pumpdisconnect_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6c66382a608df095",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 161
+        }
+      ]
+    },
+    {
+      "key": "pumpdisconnect_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e9e6b21988343c3e",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 156
+        }
+      ]
+    },
+    {
+      "key": "pumpdisconnect_missinginsulin",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "08fa1c173e38366d",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 158
+        }
+      ]
+    },
+    {
+      "key": "pumpdisconnect_notstop",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cf0ae09817317b06",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 159
+        }
+      ]
+    },
+    {
+      "key": "pumpdisconnect_openloop",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d6cffdbdee76dc13",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 160
+        }
+      ]
+    },
+    {
+      "key": "pumpdisconnect_unnecessary",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "be729ef0e5d2864d",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 157
+        }
+      ]
+    },
+    {
+      "key": "sensitivity_adjust",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a9d1bf47b458dabd",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 175
+        }
+      ]
+    },
+    {
+      "key": "sensitivity_cannula",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "18c28561668aff53",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 177
+        }
+      ]
+    },
+    {
+      "key": "sensitivity_edit",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2e6135fa6d80b523",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 176
+        }
+      ]
+    },
+    {
+      "key": "sensitivity_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e4ca2056c23d802d",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 179
+        }
+      ]
+    },
+    {
+      "key": "sensitivity_hint2",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9a75cb5b894c843d",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 180
+        }
+      ]
+    },
+    {
+      "key": "sensitivity_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "be1bfcb9435798be",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 174
+        }
+      ]
+    },
+    {
+      "key": "sensitivity_time",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cfc20531b004b399",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 178
+        }
+      ]
+    },
+    {
+      "key": "switch_u100_u200",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "985c84a7edf0a747",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 319
+        }
+      ]
+    },
+    {
+      "key": "switch_u100_u200_change",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d76e9ee9ab1e5548",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 323
+        }
+      ]
+    },
+    {
+      "key": "switch_u100_u200_pen",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c12b021e64aaa366",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 322
+        }
+      ]
+    },
+    {
+      "key": "switch_u100_u200_profile",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c474c47a80aa8b12",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 320
+        }
+      ]
+    },
+    {
+      "key": "switch_u100_u200_tube",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f769f914fab52106",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 321
+        }
+      ]
+    },
+    {
+      "key": "switch_u200_profile",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "61febed398b6856b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 310
+        }
+      ]
+    },
+    {
+      "key": "switch_u200_profile_any_time",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "de215b872b4bee7f",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 311
+        }
+      ]
+    },
+    {
+      "key": "switch_u200_profile_dynisf",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e1cec04f2dd5953b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 313
+        }
+      ]
+    },
+    {
+      "key": "switch_u200_profile_mental",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ec51f18a20449456",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 314
+        }
+      ]
+    },
+    {
+      "key": "switch_u200_profile_ps",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6d7feb3a933846e7",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 312
+        }
+      ]
+    },
+    {
+      "key": "troubleshooting_discord",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "49483363337cbd46",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 215
+        }
+      ]
+    },
+    {
+      "key": "troubleshooting_fb",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4ff8382321065cd5",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 213
+        }
+      ]
+    },
+    {
+      "key": "troubleshooting_github",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d599e679c18c7fb4",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 216
+        }
+      ]
+    },
+    {
+      "key": "troubleshooting_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b4fda72dd16be303",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 218
+        }
+      ]
+    },
+    {
+      "key": "troubleshooting_hint2",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fd0d07fa980ec743",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 219
+        }
+      ]
+    },
+    {
+      "key": "troubleshooting_hint3",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b25177fa834a4285",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 220
+        }
+      ]
+    },
+    {
+      "key": "troubleshooting_hint4",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "386058b11566ff13",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 221
+        }
+      ]
+    },
+    {
+      "key": "troubleshooting_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9dbfc502cfab3e4b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 212
+        }
+      ]
+    },
+    {
+      "key": "troubleshooting_wheretoask",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9dbfc502cfab3e4b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 212
+        }
+      ]
+    },
+    {
+      "key": "troubleshooting_wiki",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ecf56729f15720b9",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 214
+        }
+      ]
+    },
+    {
+      "key": "troubleshooting_yourendo",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "433866fda9a9927f",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 217
+        }
+      ]
+    },
+    {
+      "key": "u200_with_profile",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f397e397540265ef",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 302
+        }
+      ]
+    },
+    {
+      "key": "u200_with_profile_pens",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d66cc4a5ab228973",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 304
+        }
+      ]
+    },
+    {
+      "key": "u200_with_profile_pens2",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "be6d8deeb6499e74",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 305
+        }
+      ]
+    },
+    {
+      "key": "u200_with_profile_reports",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f039d7847666bb0b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 303
+        }
+      ]
+    },
+    {
+      "key": "update_asap",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b08cb4bc84011c8c",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 208
+        }
+      ]
+    },
+    {
+      "key": "update_askfriend",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8b8fa50326cb0161",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 206
+        }
+      ]
+    },
+    {
+      "key": "update_git",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a5e7c9e073c291b1",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 205
+        }
+      ]
+    },
+    {
+      "key": "update_hint1",
+      "ui_location": "Objectives > Objective 2 > exam question > hint link",
+      "kind": "hint",
+      "description": "Link to the AAPS documentation page that helps answer the exam question. Shown as a hint under the question. Usually a URL; translate it only if a localized wiki page exists, otherwise keep it unchanged.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d960329405f500d9",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 209
+        }
+      ]
+    },
+    {
+      "key": "update_keys",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "29f299d43fff0422",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 207
+        }
+      ]
+    },
+    {
+      "key": "update_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0748ae251512bf6e",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 204
+        }
+      ]
+    },
+    {
+      "key": "wrongcarbs_addinsulin",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a944258ea59ec4ad",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 225
+        }
+      ]
+    },
+    {
+      "key": "wrongcarbs_bolus",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c6900686f5d6ccd2",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 228
+        }
+      ]
+    },
+    {
+      "key": "wrongcarbs_donothing",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1c1765c8f62ec3b7",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 227
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 236
+        }
+      ]
+    },
+    {
+      "key": "wrongcarbs_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "45878bcba4a1f12b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 224
+        }
+      ]
+    },
+    {
+      "key": "wrongcarbs_treatmentstab",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6e0d18f1a59a8f3e",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 226
+        }
+      ]
+    },
+    {
+      "key": "wrongcarbs_whattodo",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "45878bcba4a1f12b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 224
+        }
+      ]
+    },
+    {
+      "key": "wronginsulin_careportal",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is an incorrect (distractor) answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cc9a706fe59a14b1",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 233
+        }
+      ]
+    },
+    {
+      "key": "wronginsulin_compare",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9c25f08ad182354d",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 234
+        }
+      ]
+    },
+    {
+      "key": "wronginsulin_label",
+      "ui_location": "Objectives > Objective 2 > exam task title",
+      "kind": "title",
+      "description": "Short title of one exam task in the Objectives, naming the topic of the question. Shown as a heading above the question and its answer options. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1ebd88e0b5982885",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 232
+        }
+      ]
+    },
+    {
+      "key": "wronginsulin_prime",
+      "ui_location": "Objectives > Objective 2 > exam question > answer option",
+      "kind": "other",
+      "description": "One answer option of a multiple-choice exam question in the Objectives. It is a full statement the user ticks if they think it is true; it is a correct answer. Keep the meaning exact, as the user is tested on it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "90f2c40a9fcb774b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 235
+        }
+      ]
+    },
+    {
+      "key": "wronginsulin_whattodo",
+      "ui_location": "Objectives > Objective 2 > exam question",
+      "kind": "dialog_text",
+      "description": "Question text of an exam task in the Objectives. Shown above the answer options, which the user ticks if they think they are true. A full question or prompt.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1ebd88e0b5982885",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 232
+        }
+      ]
+    }
+  ]
+}
