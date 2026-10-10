@@ -1,0 +1,4175 @@
+{
+  "schema_version": 1,
+  "source_path": "core/keys/src/androidMain/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "autotune_default_tune_days_summary",
+      "ui_location": "Preferences > Autotune",
+      "kind": "preference_summary",
+      "description": "Summary under the Autotune day count: the default number of days processed, up to 30.",
+      "related_keys": [
+        "pref_title_autotune_days"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "33e8eebeb8790b1b",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 415
+        }
+      ]
+    },
+    {
+      "key": "biometric",
+      "ui_location": "Preferences > Protection > protection type list",
+      "kind": "label",
+      "description": "Fingerprint or face unlock. Choice in the protection type list.",
+      "related_keys": [
+        "pref_title_protection_type_settings"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1639bb241faff377",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 255
+        },
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 272
+        },
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 292
+        }
+      ]
+    },
+    {
+      "key": "carb_increment_button_message",
+      "ui_location": "Preferences > Overview > Buttons",
+      "kind": "preference_summary",
+      "description": "Summary shared by the three carb button settings: grams added when that button is pressed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "cb139fe5110bc600",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 37
+        },
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 49
+        },
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "carbs_req_threshold_summary",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_summary",
+      "description": "Summary: carb suggestions below the threshold in grams are not shown.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "aeedf1ae201b4efd",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 344
+        }
+      ]
+    },
+    {
+      "key": "custom_password",
+      "ui_location": "Preferences > Protection > protection type list",
+      "kind": "label",
+      "description": "A separate password for this level. Choice in the protection type list.",
+      "related_keys": [
+        "pref_title_protection_type_settings"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5cba07102200aba8",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 257
+        },
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 274
+        },
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 294
+        }
+      ]
+    },
+    {
+      "key": "custom_pin",
+      "ui_location": "Preferences > Protection > protection type list",
+      "kind": "label",
+      "description": "A separate numeric PIN for this level. Choice in the protection type list.",
+      "related_keys": [
+        "pref_title_protection_type_settings"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ac4f5fb153a2e120",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 258
+        },
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 275
+        },
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 295
+        }
+      ]
+    },
+    {
+      "key": "deliver_part_of_boluswizard_reset_time",
+      "ui_location": "Preferences > Overview > Bolus wizard",
+      "kind": "preference_summary",
+      "description": "Summary: deliver the full bolus (100%) if glucose is older than the set minutes. Fragment completed by the value shown.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "2b3a5f73ad6b704f",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 226
+        }
+      ]
+    },
+    {
+      "key": "deliverpartofboluswizard",
+      "ui_location": "Preferences > Overview > Bolus wizard",
+      "kind": "preference_summary",
+      "description": "Summary: the percentage is applied to the BG and carbs correction in the bolus wizard result.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "43040588ca480520",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 216
+        }
+      ]
+    },
+    {
+      "key": "dyn_isf_adjust_summary",
+      "ui_location": "Preferences > Algorithm (APS) > DynamicISF",
+      "kind": "preference_summary",
+      "description": "Summary: above 100% gives more aggressive corrections, below 100% less.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f20c739ffa93e88d",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 377
+        }
+      ]
+    },
+    {
+      "key": "half_basal_exercise_target_summary",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_summary",
+      "description": "Summary explaining the target value, with an example in mg/dL, at which a high temp target raises sensitivity. Keep unit symbols.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "7b82595d8250d921",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 355
+        }
+      ]
+    },
+    {
+      "key": "lang_af",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Afrikaans in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b6f0e180dec9b07e",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "lang_bg",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Bulgarian in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ca0937be75b4a5b6",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "lang_cs",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Czech in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "15c791d64836c8b5",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "key": "lang_de",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language German in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a4ca013794f819e7",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "lang_default",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Choice that follows the system language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7117d465030a5ae3",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "key": "lang_dk",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Danish in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "524462dc84d2a1ed",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "lang_el",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Greek in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f82b4ff4d94956b9",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "lang_en",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language English in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "51690f62ff2545ad",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "key": "lang_es",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Spanish in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "64e8563f3901884f",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "lang_fr",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language French in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5adfe1bdd0a5cc00",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "lang_ga",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Irish in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2d679b659cfe69a4",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "key": "lang_it",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Italian in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f447ae04c27d6a6a",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "lang_ko",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Korean in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d317c88658ab43b5",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 67
+        }
+      ]
+    },
+    {
+      "key": "lang_lt",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Lithuanian in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "84f133338f96c939",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "lang_nb",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Norwegian in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "788575a1fda28f6b",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "key": "lang_nl",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Dutch in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d4ee5b5e1d42164b",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "lang_pl",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Polish in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "efcbde3265b5a56b",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "lang_pt",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Portuguese in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "15547771bb465389",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "lang_pt_br",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Portuguese (Brazil) in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "03d997168dc32167",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "lang_ro",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Romanian in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2f0fd07bb8bb00ef",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "key": "lang_ru",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Russian in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0369302962e33e4b",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 74
+        }
+      ]
+    },
+    {
+      "key": "lang_sk",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Slovak in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "261a0d0df6310d5d",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "lang_sv",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Swedish in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c729d369abaee295",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 76
+        }
+      ]
+    },
+    {
+      "key": "lang_tr",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Turkish in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5bd4a43df41225b2",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "key": "lang_zh_cn",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Simplified Chinese in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "de92512a9e7dcdd5",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "key": "lang_zh_tw",
+      "ui_location": "Preferences > General > Language list",
+      "kind": "label",
+      "description": "Name of the language Traditional Chinese in the language list. Translate as the language name in the target language.",
+      "related_keys": [
+        "pref_title_language"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "708ee510086fcf78",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "key": "loop_open_mode_min_change_summary",
+      "ui_location": "Preferences > Loop",
+      "kind": "preference_summary",
+      "description": "Summary: open loop shows a new change request only if the change exceeds this percent; includes a default value.",
+      "related_keys": [
+        "pref_title_open_mode_min_change"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "c0e73f5042294b51",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 306
+        }
+      ]
+    },
+    {
+      "key": "master_password",
+      "ui_location": "Preferences > Protection > protection type list",
+      "kind": "label",
+      "description": "The single master password set below. Choice in the protection type list.",
+      "related_keys": [
+        "pref_title_protection_type_settings"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "94ca928a9bbdceb5",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 256
+        },
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 273
+        },
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 293
+        }
+      ]
+    },
+    {
+      "key": "noprotection",
+      "ui_location": "Preferences > Protection > protection type list",
+      "kind": "label",
+      "description": "No protection. Choice in the protection type list.",
+      "related_keys": [
+        "pref_title_protection_type_settings"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "38e8cc6369af0648",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 254
+        },
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 271
+        },
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 291
+        }
+      ]
+    },
+    {
+      "key": "openapsama_autosens_period_summary",
+      "ui_location": "Preferences > Algorithm (APS) > Autosens",
+      "kind": "preference_summary",
+      "description": "Summary: hours of history used to detect sensitivity; carb absorption time is excluded.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f202235c2ab47014",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 388
+        }
+      ]
+    },
+    {
+      "key": "openapsama_iob_threshold_percent_summary",
+      "ui_location": "Preferences > Algorithm (APS) > SMB",
+      "kind": "preference_summary",
+      "description": "Multi-line summary: percentage of maxIOB above which SMB stops, with the default value; maxIOB is a parameter name.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f510aee7d9dbf4e3",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 366
+        }
+      ]
+    },
+    {
+      "key": "pref_dark_theme",
+      "ui_location": "Preferences > General > Colour scheme list",
+      "kind": "label",
+      "description": "Choice in the theme list: dark theme.",
+      "related_keys": [
+        "pref_title_app_color_scheme"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "719d9a8affae0ef0",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "key": "pref_follow_system_theme",
+      "ui_location": "Preferences > General > Colour scheme list",
+      "kind": "label",
+      "description": "Choice in the theme list: follow the device theme.",
+      "related_keys": [
+        "pref_title_app_color_scheme"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "141c18a08262786e",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "key": "pref_light_theme",
+      "ui_location": "Preferences > General > Colour scheme list",
+      "kind": "label",
+      "description": "Choice in the theme list: light theme.",
+      "related_keys": [
+        "pref_title_app_color_scheme"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "93ca0a83711eb2ae",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 98
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_alert_override_dnd",
+      "ui_location": "Preferences > Alerts",
+      "kind": "preference_summary",
+      "description": "Explains the effect of the switch both ways (on: alarms sound when silenced; off: they respect Do Not Disturb). Do Not Disturb is the Android feature name; use the phone's localized term.",
+      "related_keys": [
+        "pref_title_alert_override_dnd"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "dd8e1dc6ec0e46b6",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_aps_always_use_short_deltas",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_summary",
+      "description": "Says the short average delta replaces the simple delta in BG-change calculations. Delta = change in glucose between readings.",
+      "related_keys": [
+        "pref_title_aps_always_use_short_deltas"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "568f537236c4337b",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 156
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_aps_autosens_adjust_targets",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_summary",
+      "description": "Autosens may change the target glucose in addition to basal and ISF.",
+      "related_keys": [
+        "pref_title_aps_autosens_adjust_targets"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "8e8904da2485a033",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 174
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_aps_dynisf_adjust_sensitivity",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_summary",
+      "description": "Adjusts sensitivity calculations when DynamicISF is used.",
+      "related_keys": [
+        "pref_title_aps_dynisf_adjust_sensitivity"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "84ab8fff8c67489a",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 165
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_aps_high_tt_raises_sensitivity",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_summary",
+      "description": "Says high temp targets increase insulin sensitivity.",
+      "related_keys": [
+        "pref_title_aps_high_tt_raises_sensitivity"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "f6f80ba9ee93fc10",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 182
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_aps_low_tt_lowers_sensitivity",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_summary",
+      "description": "Says low temp targets decrease insulin sensitivity.",
+      "related_keys": [
+        "pref_title_aps_low_tt_lowers_sensitivity"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "a51ce93efb6a6ce3",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 190
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_aps_resistance_lowers_target",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_summary",
+      "description": "Says resistance detection lowers the target glucose.",
+      "related_keys": [
+        "pref_title_aps_resistance_lowers_target"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "b700421292593306",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 142
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_aps_sensitivity_raises_target",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_summary",
+      "description": "Says sensitivity detection raises the target glucose.",
+      "related_keys": [
+        "pref_title_aps_sensitivity_raises_target"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "d23404d7e37dc166",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 131
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_aps_smb_on_even_target",
+      "ui_location": "Preferences > Algorithm (APS) > SMB",
+      "kind": "preference_summary",
+      "description": "Alternative SMB activation that depends on the target glucose value.",
+      "related_keys": [
+        "pref_title_aps_smb_on_even_target"
+      ],
+      "confidence": 0.6,
+      "usages_hash": "68c9e996567fc3af",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 199
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_aps_use_autoisf_weights",
+      "ui_location": "Preferences > Algorithm (APS) > AutoISF",
+      "kind": "preference_summary",
+      "description": "Enables weight-based ISF adjustments in AutoISF. Keep the feature name.",
+      "related_keys": [
+        "pref_title_aps_use_autoisf_weights"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "8a5440daa0c80141",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 194
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_aps_use_dynamic_sensitivity",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_summary",
+      "description": "Says DynamicISF replaces Autosens for sensitivity adjustment. DynamicISF and Autosens are feature names; ISF means insulin sensitivity factor.",
+      "related_keys": [
+        "pref_title_aps_use_dynamic_sensitivity"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "42222347cc4daf71",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 90
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_aps_use_smb",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_summary",
+      "description": "Describes SMB as small boluses delivered promptly when glucose rises. Keep the abbreviation SMB.",
+      "related_keys": [
+        "pref_title_aps_use_smb"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "a520e04230b19f26",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_aps_use_smb_after_carbs",
+      "ui_location": "Preferences > Algorithm (APS) > SMB",
+      "kind": "preference_summary",
+      "description": "Allows SMB for some time after a carb entry.",
+      "related_keys": [
+        "pref_title_aps_use_smb_after_carbs"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "1fc86fa2db43910f",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 125
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_aps_use_smb_always",
+      "ui_location": "Preferences > Algorithm (APS) > SMB",
+      "kind": "preference_summary",
+      "description": "Says SMB is used regardless of bolus or COB (carbs on board).",
+      "related_keys": [
+        "pref_title_aps_use_smb_always"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "b60d956157588f81",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_aps_use_smb_with_cob",
+      "ui_location": "Preferences > Algorithm (APS) > SMB",
+      "kind": "preference_summary",
+      "description": "Allows SMB while COB are present.",
+      "related_keys": [
+        "pref_title_aps_use_smb_with_cob"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "7f7901cfa3b9af5b",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 115
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_aps_use_smb_with_high_tt",
+      "ui_location": "Preferences > Algorithm (APS) > SMB",
+      "kind": "preference_summary",
+      "description": "Allows SMB during a high temp target. TT = temporary target.",
+      "related_keys": [
+        "pref_title_aps_use_smb_with_high_tt"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "6107e28883b8997d",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 104
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_aps_use_smb_with_low_tt",
+      "ui_location": "Preferences > Algorithm (APS) > SMB",
+      "kind": "preference_summary",
+      "description": "Allows SMB during a low temp target.",
+      "related_keys": [
+        "pref_title_aps_use_smb_with_low_tt"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "3d792eb49e2328cb",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 120
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_aps_use_uam",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_summary",
+      "description": "Describes detection and treatment of unannounced meals. Keep the abbreviation UAM.",
+      "related_keys": [
+        "pref_title_aps_use_uam"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "73b374ba58f6c47a",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 129
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_autotune_auto_switch_profile",
+      "ui_location": "Preferences > Autotune",
+      "kind": "preference_summary",
+      "description": "Says the tuned profile is activated after calculation. Profile = the user's basal, IC, ISF and target settings.",
+      "related_keys": [
+        "pref_title_autotune_auto_switch_profile"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "1da04108810c2b57",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 211
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_autotune_categorize_uam_as_basal",
+      "ui_location": "Preferences > Autotune",
+      "kind": "preference_summary",
+      "description": "UAM (unannounced meals) are counted toward basal insulin needs.",
+      "related_keys": [
+        "pref_title_autotune_categorize_uam_as_basal"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "1c37e112ca083b0c",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 212
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_autotune_circadian_ic_isf",
+      "ui_location": "Preferences > Autotune",
+      "kind": "preference_summary",
+      "description": "Applies daily variation to IC (insulin-to-carb ratio) and ISF in Autotune.",
+      "related_keys": [
+        "pref_title_autotune_circadian_ic_isf"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "1c774b9da081bacd",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 214
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_bg_source_create_sensor_change",
+      "ui_location": "Preferences > BG source",
+      "kind": "preference_summary",
+      "description": "Says a sensor change therapy event (a Nightscout/AAPS care-portal entry) is created when a new sensor is detected.",
+      "related_keys": [
+        "pref_title_bg_source_create_sensor_change"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "eab26156c258dc36",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 87
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_bt_watchdog",
+      "ui_location": "Preferences > Pump",
+      "kind": "preference_summary",
+      "description": "Explains that the phone's Bluetooth is switched off for one second when the pump cannot be reached. Contains a long warning; whole sentences.",
+      "related_keys": [
+        "pref_title_bt_watchdog"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "d252d444460ac318",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_insulin_concentration",
+      "ui_location": "Preferences > General",
+      "kind": "preference_summary",
+      "description": "Explains the switch: lets the user work with insulin concentrations such as U50 or U200. U50/U200 are product names; keep them.",
+      "related_keys": [
+        "pref_title_insulin_concentration"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "91bf73c9f8fa4ecf",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_keep_screen_on",
+      "ui_location": "Preferences > Overview",
+      "kind": "preference_summary",
+      "description": "Warns that keeping the screen on drains the battery unless the phone is charging. Whole sentence.",
+      "related_keys": [
+        "pref_title_keep_screen_on"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "9c4421ac0adc6ec5",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_ns_allow_client_control",
+      "ui_location": "Preferences > Synchronization > Nightscout",
+      "kind": "preference_summary",
+      "description": "Explains that paired clients can send signed commands, for example to start or stop scenes, through Nightscout.",
+      "related_keys": [
+        "pref_title_ns_allow_client_control"
+      ],
+      "confidence": 0.6,
+      "usages_hash": "66d9760734f30f15",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 249
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_ns_receive_carbs",
+      "ui_location": "Preferences > Synchronization > Nightscout > Receive",
+      "kind": "preference_summary",
+      "description": "Says AAPS accepts carb entries from Nightscout.",
+      "related_keys": [
+        "pref_title_ns_receive_carbs"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "1ec7018312d6ecc2",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 227
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_ns_receive_cgm",
+      "ui_location": "Preferences > Synchronization > Nightscout > Receive",
+      "kind": "preference_summary",
+      "description": "Says AAPS accepts glucose readings from Nightscout.",
+      "related_keys": [
+        "pref_title_ns_receive_cgm"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "3ebbf7eb252a6376",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 222
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_ns_receive_insulin",
+      "ui_location": "Preferences > Synchronization > Nightscout > Receive",
+      "kind": "preference_summary",
+      "description": "Says AAPS accepts insulin treatments from Nightscout.",
+      "related_keys": [
+        "pref_title_ns_receive_insulin"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "1e551a4cdaca7f17",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 226
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_ns_receive_profile_store",
+      "ui_location": "Preferences > Synchronization > Nightscout > Receive",
+      "kind": "preference_summary",
+      "description": "Says AAPS accepts profile store updates from Nightscout.",
+      "related_keys": [
+        "pref_title_ns_receive_profile_store"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "385c0471f3e89305",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 223
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_ns_receive_profile_switch",
+      "ui_location": "Preferences > Synchronization > Nightscout > Receive",
+      "kind": "preference_summary",
+      "description": "Says AAPS accepts profile switch events from Nightscout.",
+      "related_keys": [
+        "pref_title_ns_receive_profile_switch"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "905ace1061e0f7c7",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 225
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_ns_receive_running_mode",
+      "ui_location": "Preferences > Synchronization > Nightscout > Receive",
+      "kind": "preference_summary",
+      "description": "Says AAPS accepts running mode changes from Nightscout.",
+      "related_keys": [
+        "pref_title_ns_receive_running_mode"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "02382a72ceae4d48",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 229
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_ns_receive_tbr_eb",
+      "ui_location": "Preferences > Synchronization > Nightscout > Receive",
+      "kind": "preference_summary",
+      "description": "Says AAPS accepts temp basal rates and extended boluses from Nightscout. TBR = temporary basal rate, EB = extended bolus.",
+      "related_keys": [
+        "pref_title_ns_receive_tbr_eb"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "4a35cf9e09cf97c1",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 230
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_ns_receive_temp_target",
+      "ui_location": "Preferences > Synchronization > Nightscout > Receive",
+      "kind": "preference_summary",
+      "description": "Says AAPS accepts temporary target changes from Nightscout.",
+      "related_keys": [
+        "pref_title_ns_receive_temp_target"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "5ea62148c9e05404",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 224
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_ns_receive_therapy_event",
+      "ui_location": "Preferences > Synchronization > Nightscout > Receive",
+      "kind": "preference_summary",
+      "description": "Says AAPS accepts therapy events from Nightscout.",
+      "related_keys": [
+        "pref_title_ns_receive_therapy_event"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "d62324d1d4321e31",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 228
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_ns_upload_data",
+      "ui_location": "Preferences > Synchronization > Nightscout",
+      "kind": "preference_summary",
+      "description": "Says treatments, temp basals and other data are uploaded. Nightscout is the web service name.",
+      "related_keys": [
+        "pref_title_ns_upload_data"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "847391e508b43de7",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 221
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_ns_use_ws",
+      "ui_location": "Preferences > Synchronization > Nightscout",
+      "kind": "preference_summary",
+      "description": "Says websockets give real-time communication. Technical term; websocket is usually kept.",
+      "related_keys": [
+        "pref_title_ns_use_ws"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "436615fc4cfecc79",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 246
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_patient_name",
+      "ui_location": "Preferences > General > Patient",
+      "kind": "preference_summary",
+      "description": "Summary: name that identifies this AAPS instance in reports and sync.",
+      "related_keys": [
+        "pref_title_patient_name"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "929d4eadac7c4beb",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 87
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_protection_type_application",
+      "ui_location": "Preferences > Protection",
+      "kind": "preference_summary",
+      "description": "Summary: protects launching the app and returning to it; independent of the other levels.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "010afb6ecb9ed34d",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 251
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_protection_type_bolus",
+      "ui_location": "Preferences > Protection",
+      "kind": "preference_summary",
+      "description": "Summary: covers treatments and profile activation; needs the settings protection (level 2) to be set.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e34e15ef4acf7313",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 268
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_protection_type_settings",
+      "ui_location": "Preferences > Protection",
+      "kind": "preference_summary",
+      "description": "Summary: covers editing profiles and preferences.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f69d96afaee0745b",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 288
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_random_bg_randomize",
+      "ui_location": "Preferences > BG source > Random BG (demo source)",
+      "kind": "preference_summary",
+      "description": "Describes what randomization adds (noise, timestamp jitter, random trend arrows, occasional carbs). Only for testing or demo.",
+      "related_keys": [
+        "pref_title_random_bg_randomize"
+      ],
+      "confidence": 0.6,
+      "usages_hash": "e589a5cc69a1d293",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 88
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_show_calibration_button",
+      "ui_location": "Preferences > Overview > Buttons",
+      "kind": "preference_summary",
+      "description": "Says the button sends a calibration to xDrip+ and which xDrip+ setting must be enabled. \\'Accept Calibrations\\' and Inter-App settings are xDrip+ UI names; the backslash-quotes are an Android escape for apostrophes.",
+      "related_keys": [
+        "pref_title_show_calibration_button"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "f159be3fe22853c8",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_show_cgm_button",
+      "ui_location": "Preferences > Overview > Buttons",
+      "kind": "preference_summary",
+      "description": "Says the button opens the xDrip+ or Dexcom app and that Back returns to AAPS. xDrip+ and Dexcom are app names.",
+      "related_keys": [
+        "pref_title_show_cgm_button"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "96666fddfee2024e",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_sms_report_pump_unreachable",
+      "ui_location": "Preferences > SMS Communicator",
+      "kind": "preference_summary",
+      "description": "Says an SMS is sent when the pump becomes unreachable.",
+      "related_keys": [
+        "pref_title_sms_report_pump_unreachable"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "db4852646702e652",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 218
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_theme_switcher",
+      "ui_location": "Preferences > General",
+      "kind": "preference_summary",
+      "description": "Summary of the theme list.",
+      "related_keys": [
+        "pref_title_app_color_scheme"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "4045123defc28766",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 94
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_use_bolus_advisor",
+      "ui_location": "Preferences > Overview",
+      "kind": "preference_summary",
+      "description": "Explains the bolus advisor helps calculate a bolus when glucose is high.",
+      "related_keys": [
+        "pref_title_use_bolus_advisor"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "f3816e97b951dfa1",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_use_bolus_reminder",
+      "ui_location": "Preferences > Overview",
+      "kind": "preference_summary",
+      "description": "Says reminder notifications help the user keep track of insulin delivery.",
+      "related_keys": [
+        "pref_title_use_bolus_reminder"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "b56b48f37abb7fcc",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_use_super_bolus",
+      "ui_location": "Preferences > Overview",
+      "kind": "preference_summary",
+      "description": "Super bolus is a technique that gives upcoming basal insulin as part of the meal bolus. Keep the established term.",
+      "related_keys": [
+        "pref_title_use_super_bolus"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "564ed9b4c8f66297",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_wear_broadcast_data",
+      "ui_location": "Preferences > Wear",
+      "kind": "preference_summary",
+      "description": "Data is sent through Android intents.",
+      "related_keys": [
+        "pref_title_wear_broadcast_data"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "eb80ce25cd6d097c",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 275
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_wear_control",
+      "ui_location": "Preferences > Wear",
+      "kind": "preference_summary",
+      "description": "Says AAPS can be controlled from an Android Wear watch.",
+      "related_keys": [
+        "pref_title_wear_control"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "12d93f26d60165ce",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 267
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_wear_notify_on_smb",
+      "ui_location": "Preferences > Wear",
+      "kind": "preference_summary",
+      "description": "Says notifications go to the watch on SMB delivery.",
+      "related_keys": [
+        "pref_title_wear_notify_on_smb"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "2ebaac9dd21b3046",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 274
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_xdrip_send_bgi",
+      "ui_location": "Preferences > Synchronization > xDrip+",
+      "kind": "preference_summary",
+      "description": "BGI = blood glucose impact, shown in the xDrip+ status line.",
+      "related_keys": [
+        "pref_title_xdrip_send_bgi"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "0aae4dcf26bd051e",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 266
+        }
+      ]
+    },
+    {
+      "key": "pref_summary_xdrip_send_detailed_iob",
+      "ui_location": "Preferences > Synchronization > xDrip+",
+      "kind": "preference_summary",
+      "description": "Detailed IOB is shown on watch faces in xDrip+.",
+      "related_keys": [
+        "pref_title_xdrip_send_detailed_iob"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "4028085e6d309720",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 265
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aaps_directory",
+      "ui_location": "Preferences > Maintenance",
+      "kind": "preference_title",
+      "description": "Title of the setting that selects the storage folder for AAPS files such as exports.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "1a77c43b3c0d9021",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 104
+        }
+      ]
+    },
+    {
+      "key": "pref_title_alarm_stale_data",
+      "ui_location": "Preferences > Synchronization > Nightscout",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting (minutes) for the stale-data alarm.",
+      "related_keys": [
+        "pref_title_urgent_alarm_stale_data"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "79780b58a0d9a1b3",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 432
+        }
+      ]
+    },
+    {
+      "key": "pref_title_alert_carbs_required",
+      "ui_location": "Preferences > Alerts",
+      "kind": "preference_title",
+      "description": "Title of a switch: raise an alert when the algorithm suggests the user eat carbs.",
+      "related_keys": [
+        "pref_title_carbs_request_threshold"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "7fbcb80634edddb2",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "pref_title_alert_increase_volume",
+      "ui_location": "Preferences > Alerts",
+      "kind": "preference_title",
+      "description": "Title of a switch: raise the alarm sound volume gradually.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "4bb019e48f09d592",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 83
+        }
+      ]
+    },
+    {
+      "key": "pref_title_alert_missed_bg_reading",
+      "ui_location": "Preferences > Alerts",
+      "kind": "preference_title",
+      "description": "Title of a switch: raise an alert when no glucose (BG) reading arrives.",
+      "related_keys": [
+        "pref_title_stale_data_threshold"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "4cd2885c84cdc326",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "key": "pref_title_alert_override_dnd",
+      "ui_location": "Preferences > Alerts",
+      "kind": "preference_title",
+      "description": "Title of a switch: let AAPS alarms sound even in Do Not Disturb mode.",
+      "related_keys": [
+        "pref_summary_alert_override_dnd"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "dd8e1dc6ec0e46b6",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "key": "pref_title_alert_pump_unreachable",
+      "ui_location": "Preferences > Alerts",
+      "kind": "preference_title",
+      "description": "Title of a switch: raise an alert when the pump cannot be reached.",
+      "related_keys": [
+        "pref_title_pump_unreachable_threshold"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "e8935ae5141e0250",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 74
+        }
+      ]
+    },
+    {
+      "key": "pref_title_alert_urgent_as_android_notification",
+      "ui_location": "Preferences > Alerts",
+      "kind": "preference_title",
+      "description": "Title of a switch: show urgent alarms as ordinary Android notifications instead of full-screen alarms.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "b6e8a835bac789d2",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "key": "pref_title_app_color_scheme",
+      "ui_location": "Preferences > General",
+      "kind": "preference_title",
+      "description": "Title of the list choosing the dark, light or system colour theme.",
+      "related_keys": [
+        "pref_summary_theme_switcher"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "3b45cdafc75a87cd",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 93
+        }
+      ]
+    },
+    {
+      "key": "pref_title_application_password",
+      "ui_location": "Preferences > Protection",
+      "kind": "preference_title",
+      "description": "Title of the field where the user enters the application password. Shown only when that option is selected.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2c1e71251862e757",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 116
+        }
+      ]
+    },
+    {
+      "key": "pref_title_application_pin",
+      "ui_location": "Preferences > Protection",
+      "kind": "preference_title",
+      "description": "Title of the field where the user enters the application PIN. Shown only when that option is selected.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5db2b2f6c096eed2",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 120
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aps_always_use_short_deltas",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_title",
+      "description": "Title: always use the short average delta for glucose change.",
+      "related_keys": [
+        "pref_summary_aps_always_use_short_deltas"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "a8e8ec7fcfdea2c0",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 155
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aps_autosens_adjust_targets",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_title",
+      "description": "Title: let Autosens adjust the glucose target as well.",
+      "related_keys": [
+        "pref_summary_aps_autosens_adjust_targets"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "01f35f65fbdf365d",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 173
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aps_dynisf_adjust_sensitivity",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_title",
+      "description": "Title: let DynamicISF also adjust sensitivity.",
+      "related_keys": [
+        "pref_summary_aps_dynisf_adjust_sensitivity"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "9675fbf89af24284",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 164
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aps_high_tt_raises_sensitivity",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_title",
+      "description": "Title: a high temporary target raises sensitivity (makes the algorithm treat the user as more insulin-sensitive).",
+      "related_keys": [
+        "pref_summary_aps_high_tt_raises_sensitivity"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "5d32de3d87d7367d",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 181
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aps_low_tt_lowers_sensitivity",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_title",
+      "description": "Title: a low temporary target lowers sensitivity.",
+      "related_keys": [
+        "pref_summary_aps_low_tt_lowers_sensitivity"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "f87a5ef5f4c45342",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 189
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aps_resistance_lowers_target",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_title",
+      "description": "Title: when insulin resistance is detected, lower the glucose target.",
+      "related_keys": [
+        "pref_summary_aps_resistance_lowers_target"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "b700421292593306",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 142
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aps_sensitivity_raises_target",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_title",
+      "description": "Title: when higher sensitivity is detected, raise the glucose target.",
+      "related_keys": [
+        "pref_summary_aps_sensitivity_raises_target"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "d23404d7e37dc166",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 131
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aps_smb_on_even_target",
+      "ui_location": "Preferences > Algorithm (APS) > SMB",
+      "kind": "preference_title",
+      "description": "Title: enable SMB on an even target.",
+      "related_keys": [
+        "pref_summary_aps_smb_on_even_target"
+      ],
+      "confidence": 0.6,
+      "usages_hash": "f038d11f9cab8276",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 198
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aps_use_autoisf_weights",
+      "ui_location": "Preferences > Algorithm (APS) > AutoISF",
+      "kind": "preference_title",
+      "description": "Title of the switch enabling AutoISF, an algorithm variant that adjusts ISF in steps.",
+      "related_keys": [
+        "pref_summary_aps_use_autoisf_weights"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "8a5440daa0c80141",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 194
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aps_use_autosens",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_title",
+      "description": "Title of the switch enabling Autosens, automatic detection of changes in insulin sensitivity.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "8f0d302d58864cfb",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 92
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aps_use_dynamic_sensitivity",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_title",
+      "description": "Title of the switch enabling DynamicISF, which varies insulin sensitivity with glucose and insulin on board.",
+      "related_keys": [
+        "pref_summary_aps_use_dynamic_sensitivity"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "42222347cc4daf71",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 90
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aps_use_smb",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_title",
+      "description": "Title of the switch enabling SMB (super micro bolus).",
+      "related_keys": [
+        "pref_summary_aps_use_smb"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "a520e04230b19f26",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aps_use_smb_after_carbs",
+      "ui_location": "Preferences > Algorithm (APS) > SMB",
+      "kind": "preference_title",
+      "description": "Title: allow SMB for a period after carbs are entered.",
+      "related_keys": [
+        "pref_summary_aps_use_smb_after_carbs"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "1fc86fa2db43910f",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 125
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aps_use_smb_always",
+      "ui_location": "Preferences > Algorithm (APS) > SMB",
+      "kind": "preference_title",
+      "description": "Title: allow SMB in all situations.",
+      "related_keys": [
+        "pref_summary_aps_use_smb_always"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "b60d956157588f81",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aps_use_smb_with_cob",
+      "ui_location": "Preferences > Algorithm (APS) > SMB",
+      "kind": "preference_title",
+      "description": "Title: allow SMB when carbs on board (COB) are present.",
+      "related_keys": [
+        "pref_summary_aps_use_smb_with_cob"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "7f7901cfa3b9af5b",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 115
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aps_use_smb_with_high_tt",
+      "ui_location": "Preferences > Algorithm (APS) > SMB",
+      "kind": "preference_title",
+      "description": "Title: allow SMB while a high temporary target (TT) is active.",
+      "related_keys": [
+        "pref_summary_aps_use_smb_with_high_tt"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "7e50df5840c74218",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 103
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aps_use_smb_with_low_tt",
+      "ui_location": "Preferences > Algorithm (APS) > SMB",
+      "kind": "preference_title",
+      "description": "Title: allow SMB while a low temporary target is active.",
+      "related_keys": [
+        "pref_summary_aps_use_smb_with_low_tt"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "3d792eb49e2328cb",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 120
+        }
+      ]
+    },
+    {
+      "key": "pref_title_aps_use_uam",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_title",
+      "description": "Title of the switch enabling UAM, detection of unannounced meals (carbs the user did not enter).",
+      "related_keys": [
+        "pref_summary_aps_use_uam"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "73b374ba58f6c47a",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 129
+        }
+      ]
+    },
+    {
+      "key": "pref_title_autosens_period",
+      "ui_location": "Preferences > Algorithm (APS) > Autosens",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting (hours): how far back Autosens looks.",
+      "related_keys": [
+        "openapsama_autosens_period_summary"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "0b41865705d26952",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 387
+        }
+      ]
+    },
+    {
+      "key": "pref_title_autotune_additional_log",
+      "ui_location": "Preferences > Autotune",
+      "kind": "preference_title",
+      "description": "Title of a switch writing extra debug detail to the Autotune log.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "23e6d8ef25a8f78b",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 215
+        }
+      ]
+    },
+    {
+      "key": "pref_title_autotune_auto_switch_profile",
+      "ui_location": "Preferences > Autotune",
+      "kind": "preference_title",
+      "description": "Title: automatically switch to the profile Autotune produced.",
+      "related_keys": [
+        "pref_summary_autotune_auto_switch_profile"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "1da04108810c2b57",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 211
+        }
+      ]
+    },
+    {
+      "key": "pref_title_autotune_categorize_uam_as_basal",
+      "ui_location": "Preferences > Autotune",
+      "kind": "preference_title",
+      "description": "Title: treat unannounced meals as basal need in Autotune.",
+      "related_keys": [
+        "pref_summary_autotune_categorize_uam_as_basal"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "1c37e112ca083b0c",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 212
+        }
+      ]
+    },
+    {
+      "key": "pref_title_autotune_circadian_ic_isf",
+      "ui_location": "Preferences > Autotune",
+      "kind": "preference_title",
+      "description": "Title: use circadian (time-of-day) IC and ISF values.",
+      "related_keys": [
+        "pref_summary_autotune_circadian_ic_isf"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "1c774b9da081bacd",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 214
+        }
+      ]
+    },
+    {
+      "key": "pref_title_autotune_days",
+      "ui_location": "Preferences > Autotune",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: default number of days of data Autotune analyses.",
+      "related_keys": [
+        "autotune_default_tune_days_summary"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "33e8eebeb8790b1b",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 415
+        }
+      ]
+    },
+    {
+      "key": "pref_title_autotune_tune_insulin_curve",
+      "ui_location": "Preferences > Autotune",
+      "kind": "preference_title",
+      "description": "Title: let Autotune also tune the insulin action curve (DIA/peak).",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "2d1a86b7389678e5",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 213
+        }
+      ]
+    },
+    {
+      "key": "pref_title_bage_critical",
+      "ui_location": "Preferences > Overview > Status lights",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: age in hours at which the pump battery age status light turns critical (red).",
+      "related_keys": [
+        "pref_title_bage_warning"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "2a273198d084eb32",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 165
+        }
+      ]
+    },
+    {
+      "key": "pref_title_bage_warning",
+      "ui_location": "Preferences > Overview > Status lights",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: age in hours at which the pump battery age status light turns to warning (yellow).",
+      "related_keys": [
+        "pref_title_bage_critical"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "8d367bdc89c5eabe",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 155
+        }
+      ]
+    },
+    {
+      "key": "pref_title_batt_critical",
+      "ui_location": "Preferences > Overview > Status lights",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: pump battery level (percent) below which the status light turns critical.",
+      "related_keys": [
+        "pref_title_batt_warning"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "82d8aa1b389c04cb",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 205
+        }
+      ]
+    },
+    {
+      "key": "pref_title_batt_warning",
+      "ui_location": "Preferences > Overview > Status lights",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: pump battery level (percent) below which the status light turns to warning.",
+      "related_keys": [
+        "pref_title_batt_critical"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "37af59a000796d8d",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 195
+        }
+      ]
+    },
+    {
+      "key": "pref_title_bg_source_create_sensor_change",
+      "ui_location": "Preferences > BG source",
+      "kind": "preference_title",
+      "description": "Title of a switch: record a sensor change event.",
+      "related_keys": [
+        "pref_summary_bg_source_create_sensor_change"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "eab26156c258dc36",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 87
+        }
+      ]
+    },
+    {
+      "key": "pref_title_bg_source_upload_to_ns",
+      "ui_location": "Preferences > BG source",
+      "kind": "preference_title",
+      "description": "Title of a switch: upload glucose readings to Nightscout. NS = Nightscout.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "1aa8fe88fbb042dc",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 86
+        }
+      ]
+    },
+    {
+      "key": "pref_title_bolus_password",
+      "ui_location": "Preferences > Protection",
+      "kind": "preference_title",
+      "description": "Title of the field where the user enters the bolus password. Shown only when that option is selected.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "de6ba5065febf544",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 124
+        }
+      ]
+    },
+    {
+      "key": "pref_title_bolus_percentage",
+      "ui_location": "Preferences > Overview > Bolus wizard",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: percent of the calculated bolus (BG and carb correction) the wizard delivers.",
+      "related_keys": [
+        "deliverpartofboluswizard"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "05914b86cff774bb",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 215
+        }
+      ]
+    },
+    {
+      "key": "pref_title_bolus_pin",
+      "ui_location": "Preferences > Protection",
+      "kind": "preference_title",
+      "description": "Title of the field where the user enters the bolus PIN. Shown only when that option is selected.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b50451c53daa3f59",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 128
+        }
+      ]
+    },
+    {
+      "key": "pref_title_bt_watchdog",
+      "ui_location": "Preferences > Pump",
+      "kind": "preference_title",
+      "description": "Title of a switch for the Bluetooth watchdog, a workaround for lost pump connections.",
+      "related_keys": [
+        "pref_summary_bt_watchdog"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "d252d444460ac318",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "key": "pref_title_cage_critical",
+      "ui_location": "Preferences > Overview > Status lights",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: age in hours at which the cannula age status light turns critical (red).",
+      "related_keys": [
+        "pref_title_cage_warning"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "fb15146f5670b7f9",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 83
+        }
+      ]
+    },
+    {
+      "key": "pref_title_cage_warning",
+      "ui_location": "Preferences > Overview > Status lights",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: age in hours at which the cannula age status light turns to warning (yellow).",
+      "related_keys": [
+        "pref_title_cage_critical"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "46a37350e3df8472",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "key": "pref_title_carbs_button_increment_1",
+      "ui_location": "Preferences > Overview > Buttons",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: grams of carbs the Overview carbs button #1 adds. Number is the button index.",
+      "related_keys": [
+        "carb_increment_button_message"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "59d76bc07f1d1ef0",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "pref_title_carbs_button_increment_2",
+      "ui_location": "Preferences > Overview > Buttons",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: grams of carbs the Overview carbs button #2 adds. Number is the button index.",
+      "related_keys": [
+        "carb_increment_button_message"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "23a1f59f179383be",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "key": "pref_title_carbs_button_increment_3",
+      "ui_location": "Preferences > Overview > Buttons",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: grams of carbs the Overview carbs button #3 adds. Number is the button index.",
+      "related_keys": [
+        "carb_increment_button_message"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "ee04ac306b0e7ea6",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "pref_title_carbs_request_threshold",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting (grams): minimum carbs-required suggestion that triggers an alert.",
+      "related_keys": [
+        "carbs_req_threshold_summary"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "661619fb68f9b805",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 343
+        }
+      ]
+    },
+    {
+      "key": "pref_title_dynisf_adjustment_factor",
+      "ui_location": "Preferences > Algorithm (APS) > DynamicISF",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting (percent): scales how strong DynamicISF corrections are.",
+      "related_keys": [
+        "dyn_isf_adjust_summary"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "192ac05f06c2687f",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 376
+        }
+      ]
+    },
+    {
+      "key": "pref_title_half_basal_exercise_target",
+      "ui_location": "Preferences > Algorithm (APS)",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: temporary target value at which the algorithm treats the user as more insulin-sensitive (exercise).",
+      "related_keys": [
+        "half_basal_exercise_target_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "c48bc6e738d08dff",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 354
+        }
+      ]
+    },
+    {
+      "key": "pref_title_iage_critical",
+      "ui_location": "Preferences > Overview > Status lights",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: age in hours at which the insulin age status light turns critical (red).",
+      "related_keys": [
+        "pref_title_iage_warning"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "1c52dd5b9e06371e",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 104
+        }
+      ]
+    },
+    {
+      "key": "pref_title_iage_warning",
+      "ui_location": "Preferences > Overview > Status lights",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: age in hours at which the insulin age status light turns to warning (yellow).",
+      "related_keys": [
+        "pref_title_iage_critical"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "fe39e1a0885d1337",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 93
+        }
+      ]
+    },
+    {
+      "key": "pref_title_insulin_concentration",
+      "ui_location": "Preferences > General",
+      "kind": "preference_title",
+      "description": "Title of the switch enabling support for insulin concentrations other than U100.",
+      "related_keys": [
+        "pref_summary_insulin_concentration"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "91bf73c9f8fa4ecf",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "pref_title_iob_threshold_percent",
+      "ui_location": "Preferences > Algorithm (APS) > SMB",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting (percent): share of max IOB above which SMBs are disabled.",
+      "related_keys": [
+        "openapsama_iob_threshold_percent_summary"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "0dc32db1353b1fe8",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 365
+        }
+      ]
+    },
+    {
+      "key": "pref_title_keep_screen_on",
+      "ui_location": "Preferences > Overview",
+      "kind": "preference_title",
+      "description": "Title of the switch that stops the phone screen from turning off while AAPS is open.",
+      "related_keys": [
+        "pref_summary_keep_screen_on"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "9c4421ac0adc6ec5",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "key": "pref_title_language",
+      "ui_location": "Preferences > General",
+      "kind": "preference_title",
+      "description": "Title of the app language list.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6ed5a2fb8d3128f1",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "pref_title_logs_amount",
+      "ui_location": "Preferences > Maintenance",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: how many log files are sent by email.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "405bfcd2a1ee5179",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 393
+        }
+      ]
+    },
+    {
+      "key": "pref_title_maintenance_enable_export_automation",
+      "ui_location": "Preferences > Maintenance",
+      "kind": "preference_title",
+      "description": "Title of a switch: export settings automatically on a schedule.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "1f0ab995967c6afd",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 209
+        }
+      ]
+    },
+    {
+      "key": "pref_title_maintenance_enable_fabric",
+      "ui_location": "Preferences > Maintenance",
+      "kind": "preference_title",
+      "description": "Title of a switch for sending anonymous crash reports through Fabric (Firebase Crashlytics).",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "8d2b1bb5a7b69334",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 204
+        }
+      ]
+    },
+    {
+      "key": "pref_title_master_password",
+      "ui_location": "Preferences > Protection",
+      "kind": "preference_title",
+      "description": "Title of the field where the user enters the master password. Shown only when that option is selected.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "085ed43c664923d3",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 106
+        }
+      ]
+    },
+    {
+      "key": "pref_title_max_carbs",
+      "ui_location": "Preferences > Safety",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting (grams): the largest carb amount that can be entered.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8b73abc215c0de91",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 299
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_allow_client_control",
+      "ui_location": "Preferences > Synchronization > Nightscout",
+      "kind": "preference_title",
+      "description": "Title: allow paired client devices to control this instance.",
+      "related_keys": [
+        "pref_summary_ns_allow_client_control"
+      ],
+      "confidence": 0.6,
+      "usages_hash": "66d9760734f30f15",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 249
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_create_announcements_from_carbs_req",
+      "ui_location": "Preferences > Synchronization > Nightscout",
+      "kind": "preference_title",
+      "description": "Title: create Nightscout announcements when carbs are required.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "9a6707dec31def34",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 244
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_create_announcements_from_errors",
+      "ui_location": "Preferences > Synchronization > Nightscout",
+      "kind": "preference_title",
+      "description": "Title: create Nightscout announcements from AAPS errors.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "a2940fd532e78196",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 243
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_log_app_start",
+      "ui_location": "Preferences > Synchronization > Nightscout",
+      "kind": "preference_title",
+      "description": "Title of a switch: log an app-start event to Nightscout.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "b001b133aa8e0b0b",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 242
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_notifications_from_alarms",
+      "ui_location": "Preferences > Synchronization > Nightscout",
+      "kind": "preference_title",
+      "description": "Title of a switch: show Nightscout alarms as AAPS notifications.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "e5e4a8ab987682cf",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 231
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_notifications_from_announcements",
+      "ui_location": "Preferences > Synchronization > Nightscout",
+      "kind": "preference_title",
+      "description": "Title of a switch: show Nightscout announcements as AAPS notifications.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "52baad906272b255",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 232
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_receive_carbs",
+      "ui_location": "Preferences > Synchronization > Nightscout > Receive",
+      "kind": "preference_title",
+      "description": "Receive carb entries from Nightscout.",
+      "related_keys": [
+        "pref_summary_ns_receive_carbs"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "1ec7018312d6ecc2",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 227
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_receive_cgm",
+      "ui_location": "Preferences > Synchronization > Nightscout > Receive",
+      "kind": "preference_title",
+      "description": "Receive CGM data from Nightscout.",
+      "related_keys": [
+        "pref_summary_ns_receive_cgm"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "3ebbf7eb252a6376",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 222
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_receive_insulin",
+      "ui_location": "Preferences > Synchronization > Nightscout > Receive",
+      "kind": "preference_title",
+      "description": "Receive insulin entries from Nightscout.",
+      "related_keys": [
+        "pref_summary_ns_receive_insulin"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "1e551a4cdaca7f17",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 226
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_receive_profile_store",
+      "ui_location": "Preferences > Synchronization > Nightscout > Receive",
+      "kind": "preference_title",
+      "description": "Receive the profile store from Nightscout.",
+      "related_keys": [
+        "pref_summary_ns_receive_profile_store"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "385c0471f3e89305",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 223
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_receive_profile_switch",
+      "ui_location": "Preferences > Synchronization > Nightscout > Receive",
+      "kind": "preference_title",
+      "description": "Receive profile switches from Nightscout.",
+      "related_keys": [
+        "pref_summary_ns_receive_profile_switch"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "905ace1061e0f7c7",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 225
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_receive_running_mode",
+      "ui_location": "Preferences > Synchronization > Nightscout > Receive",
+      "kind": "preference_title",
+      "description": "Receive running mode (loop mode) changes from Nightscout.",
+      "related_keys": [
+        "pref_summary_ns_receive_running_mode"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "02382a72ceae4d48",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 229
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_receive_tbr_eb",
+      "ui_location": "Preferences > Synchronization > Nightscout > Receive",
+      "kind": "preference_title",
+      "description": "Receive temporary basal rates and extended boluses from Nightscout.",
+      "related_keys": [
+        "pref_summary_ns_receive_tbr_eb"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "4a35cf9e09cf97c1",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 230
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_receive_temp_target",
+      "ui_location": "Preferences > Synchronization > Nightscout > Receive",
+      "kind": "preference_title",
+      "description": "Receive temporary targets from Nightscout.",
+      "related_keys": [
+        "pref_summary_ns_receive_temp_target"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "5ea62148c9e05404",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 224
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_receive_therapy_event",
+      "ui_location": "Preferences > Synchronization > Nightscout > Receive",
+      "kind": "preference_title",
+      "description": "Receive therapy events (care-portal entries) from Nightscout.",
+      "related_keys": [
+        "pref_summary_ns_receive_therapy_event"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "d62324d1d4321e31",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 228
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_slow_sync",
+      "ui_location": "Preferences > Synchronization > Nightscout",
+      "kind": "preference_title",
+      "description": "Title of a switch: sync less often to save battery and data.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "bbddbf1c08b96099",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 245
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_upload_data",
+      "ui_location": "Preferences > Synchronization > Nightscout",
+      "kind": "preference_title",
+      "description": "Title: upload data to Nightscout.",
+      "related_keys": [
+        "pref_summary_ns_upload_data"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "847391e508b43de7",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 221
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_use_cellular",
+      "ui_location": "Preferences > Synchronization > Nightscout > Connection",
+      "kind": "preference_title",
+      "description": "Title: sync over mobile (cellular) data. Part of a group of connection conditions; short label.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "5e54f30e2302ea0e",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 233
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_use_on_battery",
+      "ui_location": "Preferences > Synchronization > Nightscout > Connection",
+      "kind": "preference_title",
+      "description": "Title: sync while the phone runs on battery. Part of a group of connection conditions; short label.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "764f7f12454bb87d",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 240
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_use_on_charging",
+      "ui_location": "Preferences > Synchronization > Nightscout > Connection",
+      "kind": "preference_title",
+      "description": "Title: sync while the phone is charging. Part of a group of connection conditions; short label.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "288f2dc44ce75d94",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 241
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_use_roaming",
+      "ui_location": "Preferences > Synchronization > Nightscout > Connection",
+      "kind": "preference_title",
+      "description": "Title: sync while roaming on a foreign mobile network. Part of a group of connection conditions; short label.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "06d6ed91bbfbb5b8",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 238
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_use_wifi",
+      "ui_location": "Preferences > Synchronization > Nightscout > Connection",
+      "kind": "preference_title",
+      "description": "Title: sync over WiFi. Part of a group of connection conditions; short label.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "f409c272dc9d2c51",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 239
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ns_use_ws",
+      "ui_location": "Preferences > Synchronization > Nightscout",
+      "kind": "preference_title",
+      "description": "Title: use websockets to talk to Nightscout.",
+      "related_keys": [
+        "pref_summary_ns_use_ws"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "436615fc4cfecc79",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 246
+        }
+      ]
+    },
+    {
+      "key": "pref_title_open_mode_min_change",
+      "ui_location": "Preferences > Loop",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting (percent): minimum change for open loop to ask for confirmation.",
+      "related_keys": [
+        "loop_open_mode_min_change_summary"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "c723afc42da9d199",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 305
+        }
+      ]
+    },
+    {
+      "key": "pref_title_openhumans_charging_only",
+      "ui_location": "Preferences > Open Humans",
+      "kind": "preference_title",
+      "description": "Title: upload to Open Humans only while charging.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "026a88160b7886b3",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 263
+        }
+      ]
+    },
+    {
+      "key": "pref_title_openhumans_wifi_only",
+      "ui_location": "Preferences > Open Humans",
+      "kind": "preference_title",
+      "description": "Title: upload to Open Humans only over WiFi. Open Humans is a data-sharing project name.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "21cf8b6ec0f5391f",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 262
+        }
+      ]
+    },
+    {
+      "key": "pref_title_patient_age",
+      "ui_location": "Preferences > Safety",
+      "kind": "preference_title",
+      "description": "Title of the list choosing the patient's age group, which sets safety limits.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "1643d83adb0a0b18",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 132
+        }
+      ]
+    },
+    {
+      "key": "pref_title_patient_name",
+      "ui_location": "Preferences > General > Patient",
+      "kind": "preference_title",
+      "description": "Title of the field for the patient's name.",
+      "related_keys": [
+        "pref_summary_patient_name"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "59c317f29c080028",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 86
+        }
+      ]
+    },
+    {
+      "key": "pref_title_protection_timeout",
+      "ui_location": "Preferences > Protection",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting (seconds): time before protection locks again.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fefe00b15b87ce2e",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 237
+        }
+      ]
+    },
+    {
+      "key": "pref_title_protection_type_application",
+      "ui_location": "Preferences > Protection",
+      "kind": "preference_title",
+      "description": "Title of the list choosing how the app launch is protected. The level number is part of a 0 to 2 scale.",
+      "related_keys": [
+        "pref_summary_protection_type_application"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e07f5befa6a5800a",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 250
+        }
+      ]
+    },
+    {
+      "key": "pref_title_protection_type_bolus",
+      "ui_location": "Preferences > Protection",
+      "kind": "preference_title",
+      "description": "Title of the list choosing how treatments and profile activation are protected. Level 1.",
+      "related_keys": [
+        "pref_summary_protection_type_bolus"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "75c1895154a66f2f",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 267
+        }
+      ]
+    },
+    {
+      "key": "pref_title_protection_type_settings",
+      "ui_location": "Preferences > Protection",
+      "kind": "preference_title",
+      "description": "Title of the list choosing how editing of profiles and preferences is protected. Level 2.",
+      "related_keys": [
+        "pref_summary_protection_type_settings"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "92abd6e5aa8af58e",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 287
+        }
+      ]
+    },
+    {
+      "key": "pref_title_pump_unreachable_threshold",
+      "ui_location": "Preferences > Alerts",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting (minutes) after which an unreachable pump raises an alert.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4d59e8d0b1057f0d",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 409
+        }
+      ]
+    },
+    {
+      "key": "pref_title_random_bg_interval",
+      "ui_location": "Preferences > BG source > Random BG (demo source)",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: minutes between generated demo glucose readings.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "b87519117488a71d",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 431
+        }
+      ]
+    },
+    {
+      "key": "pref_title_random_bg_randomize",
+      "ui_location": "Preferences > BG source > Random BG (demo source)",
+      "kind": "preference_title",
+      "description": "Title of a switch for the demo glucose source that makes its data more random.",
+      "related_keys": [
+        "pref_summary_random_bg_randomize"
+      ],
+      "confidence": 0.6,
+      "usages_hash": "e589a5cc69a1d293",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 88
+        }
+      ]
+    },
+    {
+      "key": "pref_title_res_critical",
+      "ui_location": "Preferences > Overview > Status lights",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: reservoir level (units of insulin) below which the status light turns critical.",
+      "related_keys": [
+        "pref_title_res_warning"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "05559c65406bd6e7",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 185
+        }
+      ]
+    },
+    {
+      "key": "pref_title_res_warning",
+      "ui_location": "Preferences > Overview > Status lights",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: reservoir level (units of insulin) below which the status light turns to warning.",
+      "related_keys": [
+        "pref_title_res_critical"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "ede8abd38b006944",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 175
+        }
+      ]
+    },
+    {
+      "key": "pref_title_reset_bolus_percentage_time",
+      "ui_location": "Preferences > Overview > Bolus wizard",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting (minutes): age of the glucose reading after which the full bolus is used.",
+      "related_keys": [
+        "deliver_part_of_boluswizard_reset_time"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "44fd1c12996c5c10",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 225
+        }
+      ]
+    },
+    {
+      "key": "pref_title_sage_critical",
+      "ui_location": "Preferences > Overview > Status lights",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: age in hours at which the sensor age status light turns critical (red).",
+      "related_keys": [
+        "pref_title_sage_warning"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "7857e6e220c40b19",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 125
+        }
+      ]
+    },
+    {
+      "key": "pref_title_sage_warning",
+      "ui_location": "Preferences > Overview > Status lights",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: age in hours at which the sensor age status light turns to warning (yellow).",
+      "related_keys": [
+        "pref_title_sage_critical"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "496de7004ecbb461",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 115
+        }
+      ]
+    },
+    {
+      "key": "pref_title_sbat_critical",
+      "ui_location": "Preferences > Overview > Status lights",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: sensor battery level (percent) below which the status light turns critical.",
+      "related_keys": [
+        "pref_title_sbat_warning"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "02b5bb7499a3370e",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 145
+        }
+      ]
+    },
+    {
+      "key": "pref_title_sbat_warning",
+      "ui_location": "Preferences > Overview > Status lights",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: sensor battery level (percent) below which the status light turns to warning.",
+      "related_keys": [
+        "pref_title_sbat_critical"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "f0cfe07b70414706",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 135
+        }
+      ]
+    },
+    {
+      "key": "pref_title_settings_password",
+      "ui_location": "Preferences > Protection",
+      "kind": "preference_title",
+      "description": "Title of the field where the user enters the settings password. Shown only when that option is selected.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e31140a760a1786a",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 108
+        }
+      ]
+    },
+    {
+      "key": "pref_title_settings_pin",
+      "ui_location": "Preferences > Protection",
+      "kind": "preference_title",
+      "description": "Title of the field where the user enters the settings PIN. Shown only when that option is selected.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6a101da9b858c464",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "key": "pref_title_show_calibration_button",
+      "ui_location": "Preferences > Overview > Buttons",
+      "kind": "preference_title",
+      "description": "Title of a switch showing a calibration button on the Overview screen.",
+      "related_keys": [
+        "pref_summary_show_calibration_button"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "3ce7bae8b4368049",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "pref_title_show_carbs_button",
+      "ui_location": "Preferences > Overview > Buttons",
+      "kind": "preference_title",
+      "description": "Title of a switch showing or hiding the carbs button on the Overview screen. Short label.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ff075e0b5c79dde4",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "pref_title_show_cgm_button",
+      "ui_location": "Preferences > Overview > Buttons",
+      "kind": "preference_title",
+      "description": "Title of a switch showing a button on the Overview screen that opens the CGM app.",
+      "related_keys": [
+        "pref_summary_show_cgm_button"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "96666fddfee2024e",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "pref_title_show_insulin_button",
+      "ui_location": "Preferences > Overview > Buttons",
+      "kind": "preference_title",
+      "description": "Title of a switch showing or hiding the insulin (bolus) button on the Overview screen. Short label.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "11bf7a3a04bbf5b7",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "pref_title_show_notes_in_dialogs",
+      "ui_location": "Preferences > Overview",
+      "kind": "preference_title",
+      "description": "Title of a switch that adds a notes field to the treatment entry dialogs (bolus, carbs and similar).",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "888221967a83711a",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "pref_title_show_treatment_button",
+      "ui_location": "Preferences > Overview > Buttons",
+      "kind": "preference_title",
+      "description": "Title of a switch showing or hiding the treatment button on the Overview screen. Short label.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "624af2f2250887a1",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "key": "pref_title_show_wizard_button",
+      "ui_location": "Preferences > Overview > Buttons",
+      "kind": "preference_title",
+      "description": "Title of a switch showing or hiding the bolus wizard (calculator) button on the Overview screen. Short label.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fd2077768b514bc8",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "pref_title_simple_mode",
+      "ui_location": "Preferences > General",
+      "kind": "preference_title",
+      "description": "Title of the switch that toggles the simplified app interface (fewer settings and options shown). Short label.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7b8db84b4999404c",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "pref_title_site_rotation_manage_cgm",
+      "ui_location": "Preferences > Site rotation",
+      "kind": "preference_title",
+      "description": "Title of a switch: manage sensor site rotation for the CGM.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "cfb497992875a9d1",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 278
+        }
+      ]
+    },
+    {
+      "key": "pref_title_site_rotation_manage_pump",
+      "ui_location": "Preferences > Site rotation",
+      "kind": "preference_title",
+      "description": "Title of a switch: manage infusion site rotation for the pump.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "d3fb741a82c3eaf5",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 277
+        }
+      ]
+    },
+    {
+      "key": "pref_title_site_rotation_profile",
+      "ui_location": "Preferences > Site rotation",
+      "kind": "preference_title",
+      "description": "Title of a choice list for the body profile used for the site-rotation picture.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "df62ced152338908",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 440
+        }
+      ]
+    },
+    {
+      "key": "pref_title_smb_frequency",
+      "ui_location": "Preferences > Algorithm (APS) > SMB",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting (minutes): minimum time between SMBs.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f1b6fb73b294f417",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 315
+        }
+      ]
+    },
+    {
+      "key": "pref_title_smb_max_minutes",
+      "ui_location": "Preferences > Algorithm (APS) > SMB",
+      "kind": "preference_title",
+      "description": "Title: maximum minutes of basal insulin that SMB can deliver at once.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8f383d4b0c4f4204",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 326
+        }
+      ]
+    },
+    {
+      "key": "pref_title_sms_allow_remote_commands",
+      "ui_location": "Preferences > SMS Communicator",
+      "kind": "preference_title",
+      "description": "Title of a switch allowing control of AAPS via SMS commands from authorized phone numbers.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6ab16698b196a200",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 217
+        }
+      ]
+    },
+    {
+      "key": "pref_title_sms_remote_bolus_distance",
+      "ui_location": "Preferences > SMS Communicator",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting: minimum minutes between two remote bolus commands. Enabled only when two or more phone numbers are configured.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7f3f1d23d4cf072a",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 422
+        }
+      ]
+    },
+    {
+      "key": "pref_title_sms_report_pump_unreachable",
+      "ui_location": "Preferences > SMS Communicator",
+      "kind": "preference_title",
+      "description": "Title: report an unreachable pump by SMS.",
+      "related_keys": [
+        "pref_summary_sms_report_pump_unreachable"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "db4852646702e652",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 218
+        }
+      ]
+    },
+    {
+      "key": "pref_title_stale_data_threshold",
+      "ui_location": "Preferences > Alerts",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting (minutes) after which missing glucose data raises an alert.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5f0da9f5da972598",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 399
+        }
+      ]
+    },
+    {
+      "key": "pref_title_uam_smb_max_minutes",
+      "ui_location": "Preferences > Algorithm (APS) > SMB",
+      "kind": "preference_title",
+      "description": "Title: maximum minutes of basal that SMB can deliver when triggered by UAM.",
+      "related_keys": [
+        "uam_smb_max_minutes"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "805b6debe44453b9",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 333
+        }
+      ]
+    },
+    {
+      "key": "pref_title_units",
+      "ui_location": "Preferences > General",
+      "kind": "preference_title",
+      "description": "Title of the choice between mg/dL and mmol/L glucose units.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d78d3c519d7f17a4",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "pref_title_urgent_alarm_stale_data",
+      "ui_location": "Preferences > Synchronization > Nightscout",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting (minutes) for the urgent stale-data alarm.",
+      "related_keys": [
+        "pref_title_alarm_stale_data"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "d7875d5ecdf3e71a",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 433
+        }
+      ]
+    },
+    {
+      "key": "pref_title_use_bolus_advisor",
+      "ui_location": "Preferences > Overview",
+      "kind": "preference_title",
+      "description": "Title of the switch enabling the bolus advisor.",
+      "related_keys": [
+        "pref_summary_use_bolus_advisor"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "f3816e97b951dfa1",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "pref_title_use_bolus_reminder",
+      "ui_location": "Preferences > Overview",
+      "kind": "preference_title",
+      "description": "Title of the switch enabling bolus reminders.",
+      "related_keys": [
+        "pref_summary_use_bolus_reminder"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "b56b48f37abb7fcc",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "pref_title_use_super_bolus",
+      "ui_location": "Preferences > Overview",
+      "kind": "preference_title",
+      "description": "Title of the switch enabling super bolus in the bolus wizard.",
+      "related_keys": [
+        "pref_summary_use_super_bolus"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "564ed9b4c8f66297",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "pref_title_virtual_pump_status_upload",
+      "ui_location": "Preferences > Virtual pump",
+      "kind": "preference_title",
+      "description": "Title of a switch: upload the simulated pump's status to Nightscout.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "3113acd96e957e59",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 220
+        }
+      ]
+    },
+    {
+      "key": "pref_title_wear_broadcast_data",
+      "ui_location": "Preferences > Wear",
+      "kind": "preference_title",
+      "description": "Title: broadcast AAPS data to third-party watch apps.",
+      "related_keys": [
+        "pref_summary_wear_broadcast_data"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "eb80ce25cd6d097c",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 275
+        }
+      ]
+    },
+    {
+      "key": "pref_title_wear_control",
+      "ui_location": "Preferences > Wear",
+      "kind": "preference_title",
+      "description": "Title of the switch letting the user control AAPS from a Wear OS watch.",
+      "related_keys": [
+        "pref_summary_wear_control"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "12d93f26d60165ce",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 267
+        }
+      ]
+    },
+    {
+      "key": "pref_title_wear_custom_watchface_authorization",
+      "ui_location": "Preferences > Wear",
+      "kind": "preference_title",
+      "description": "Title of a switch: authorize custom watch faces to read AAPS data.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "fd32177219862aa5",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 273
+        }
+      ]
+    },
+    {
+      "key": "pref_title_wear_notify_on_smb",
+      "ui_location": "Preferences > Wear",
+      "kind": "preference_title",
+      "description": "Title: notify the watch when an SMB is delivered.",
+      "related_keys": [
+        "pref_summary_wear_notify_on_smb"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "2ebaac9dd21b3046",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 274
+        }
+      ]
+    },
+    {
+      "key": "pref_title_wear_pushed_watchface",
+      "ui_location": "Preferences > Wear",
+      "kind": "preference_title",
+      "description": "Title of a choice list for which watch face AAPS installs on the watch.",
+      "related_keys": [
+        "wear_pushed_watchface_wfs",
+        "wear_pushed_watchface_cwf"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "2d787e7db7086fcc",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 184
+        }
+      ]
+    },
+    {
+      "key": "pref_title_wear_wizard_bg",
+      "ui_location": "Preferences > Wear > Wizard",
+      "kind": "preference_title",
+      "description": "Title: include glucose in the bolus wizard calculation started from the watch.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "0ce0139d30a958e4",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 268
+        }
+      ]
+    },
+    {
+      "key": "pref_title_wear_wizard_cob",
+      "ui_location": "Preferences > Wear > Wizard",
+      "kind": "preference_title",
+      "description": "Title: include carbs on board in the bolus wizard calculation started from the watch.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "136cece4db1d32ad",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 271
+        }
+      ]
+    },
+    {
+      "key": "pref_title_wear_wizard_iob",
+      "ui_location": "Preferences > Wear > Wizard",
+      "kind": "preference_title",
+      "description": "Title: include insulin on board in the bolus wizard calculation started from the watch.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "57d2ed030e4af575",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 272
+        }
+      ]
+    },
+    {
+      "key": "pref_title_wear_wizard_trend",
+      "ui_location": "Preferences > Wear > Wizard",
+      "kind": "preference_title",
+      "description": "Title: include glucose trend in the bolus wizard calculation started from the watch.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "72d3fcf091c9b06f",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 270
+        }
+      ]
+    },
+    {
+      "key": "pref_title_wear_wizard_tt",
+      "ui_location": "Preferences > Wear > Wizard",
+      "kind": "preference_title",
+      "description": "Title: include temporary target in the bolus wizard calculation started from the watch.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "21cad77eea076fce",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 269
+        }
+      ]
+    },
+    {
+      "key": "pref_title_xdrip_send_bgi",
+      "ui_location": "Preferences > Synchronization > xDrip+",
+      "kind": "preference_title",
+      "description": "Title: show BGI in xDrip+.",
+      "related_keys": [
+        "pref_summary_xdrip_send_bgi"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "0aae4dcf26bd051e",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 266
+        }
+      ]
+    },
+    {
+      "key": "pref_title_xdrip_send_detailed_iob",
+      "ui_location": "Preferences > Synchronization > xDrip+",
+      "kind": "preference_title",
+      "description": "Title: send detailed IOB (insulin on board) to xDrip+.",
+      "related_keys": [
+        "pref_summary_xdrip_send_detailed_iob"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "4028085e6d309720",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 265
+        }
+      ]
+    },
+    {
+      "key": "pref_title_xdrip_send_status",
+      "ui_location": "Preferences > Synchronization > xDrip+",
+      "kind": "preference_title",
+      "description": "Title: send AAPS status to xDrip+. xDrip+ is an app name.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f3602eb7bb44978d",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
+          "line": 264
+        }
+      ]
+    },
+    {
+      "key": "site_rotation_profile_child",
+      "ui_location": "Preferences > Site rotation > User profile",
+      "kind": "label",
+      "description": "Choice in the body profile list (child silhouette). Single word.",
+      "related_keys": [
+        "pref_title_site_rotation_profile"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "45eff7c745aa7c9e",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 445
+        }
+      ]
+    },
+    {
+      "key": "site_rotation_profile_man",
+      "ui_location": "Preferences > Site rotation > User profile",
+      "kind": "label",
+      "description": "Choice in the body profile list (man silhouette). Single word.",
+      "related_keys": [
+        "pref_title_site_rotation_profile"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "a4878e136784c1c1",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 443
+        }
+      ]
+    },
+    {
+      "key": "site_rotation_profile_woman",
+      "ui_location": "Preferences > Site rotation > User profile",
+      "kind": "label",
+      "description": "Choice in the body profile list (woman silhouette). Single word.",
+      "related_keys": [
+        "pref_title_site_rotation_profile"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "9de0b9d10acf7034",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 444
+        }
+      ]
+    },
+    {
+      "key": "uam_smb_max_minutes",
+      "ui_location": "Preferences > Algorithm (APS) > SMB",
+      "kind": "preference_summary",
+      "description": "Short title-like label for the UAM SMB basal-minutes limit.",
+      "related_keys": [
+        "pref_title_uam_smb_max_minutes"
+      ],
+      "confidence": 0.5,
+      "usages_hash": "805b6debe44453b9",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
+          "line": 333
+        }
+      ]
+    },
+    {
+      "key": "wear_pushed_watchface_cwf",
+      "ui_location": "Preferences > Wear > Watchface installed on watch",
+      "kind": "label",
+      "description": "Choice in the watch face list: the customizable watch face (CWF).",
+      "related_keys": [
+        "pref_title_wear_pushed_watchface"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "6d2cdbbdb5199efb",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 188
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 381
+        }
+      ]
+    },
+    {
+      "key": "wear_pushed_watchface_wfs",
+      "ui_location": "Preferences > Wear > Watchface installed on watch",
+      "kind": "label",
+      "description": "Choice in the watch face list: the watch face that shows complications. Name of a watch face type.",
+      "related_keys": [
+        "pref_title_wear_pushed_watchface"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "a7a917d8caca26bc",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 187
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 381
+        }
+      ]
+    }
+  ]
+}
