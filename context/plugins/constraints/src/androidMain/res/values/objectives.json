@@ -1,0 +1,1599 @@
+{
+  "schema_version": 1,
+  "source_path": "plugins/constraints/src/androidMain/res/values/objectives.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "accomplished",
+      "ui_location": "Objectives > completed objective card",
+      "kind": "status",
+      "description": "Line on a finished objective giving its completion date and time. %1$s is the formatted date and time.",
+      "related_keys": [
+        "nth_objective"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "869cd6aa5ed1dd52",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesViewModel.kt",
+          "line": 151
+        }
+      ]
+    },
+    {
+      "key": "answerdisabledto",
+      "ui_location": "Objectives > exam sheet",
+      "kind": "status",
+      "description": "Shown when a wrong exam answer locks the question for a while. %1$s is the time when answering is allowed again.",
+      "related_keys": [
+        "wronganswer"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a4a504491eb5c52c",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesViewModel.kt",
+          "line": 347
+        }
+      ]
+    },
+    {
+      "key": "disconnectpump_hint",
+      "ui_location": "Objectives > task hint",
+      "kind": "other",
+      "description": "Hint for an objective task. The value is a URL to the AAPS wiki (English documentation); do not translate the link text, only use a localized wiki URL if the language has one and the path is identical.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e9309d69b1a9481e",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective1.kt",
+          "line": 38
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective1.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "failedretrievetime",
+      "ui_location": "Objectives > start / verify",
+      "kind": "error",
+      "description": "Error shown when the trusted current time could not be fetched from the internet when starting or verifying an objective. Fragment, no subject.",
+      "related_keys": [
+        "notconnected"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "17b1f21f1c3fa56e",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesViewModel.kt",
+          "line": 203
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesViewModel.kt",
+          "line": 238
+        }
+      ]
+    },
+    {
+      "key": "maxiobset",
+      "ui_location": "Objectives > objective 7 task list",
+      "kind": "label",
+      "description": "Task name in objective 7, completed when max IOB is configured. 'Simple mode' is the simplified user interface setting where the user doesn't set max IOB.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8af8f27621aa89d6",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective6.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "notconnected",
+      "ui_location": "Objectives > start / verify",
+      "kind": "error",
+      "description": "Error shown when starting or verifying an objective needs internet (to read a trusted time) and the phone is offline. Short sentence.",
+      "related_keys": [
+        "failedretrievetime"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "32b547722a3d75bf",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesViewModel.kt",
+          "line": 195
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesViewModel.kt",
+          "line": 225
+        }
+      ]
+    },
+    {
+      "key": "nth_objective",
+      "ui_location": "Objectives > objective card title",
+      "kind": "title",
+      "description": "Card title naming the objective by its order number, e.g. '3. Objective'. %1$d is the objective number, starting at 1. Objectives are the sequential learning steps a user must pass before AAPS enables closed-loop features.",
+      "related_keys": [
+        "accomplished"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c58f896a5757b1b4",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/LearnedBottomSheet.kt",
+          "line": 57
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesViewModel.kt",
+          "line": 147
+        }
+      ]
+    },
+    {
+      "key": "objectivenotfinished",
+      "ui_location": "Loop constraint message (loop status / log)",
+      "kind": "error",
+      "description": "Reason shown when a loop feature is blocked because the objective was started but not completed. %1$d is the objective number.",
+      "related_keys": [
+        "objectivenotstarted"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "579b5052ffaa9722",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/ObjectivesPlugin.kt",
+          "line": 108
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/ObjectivesPlugin.kt",
+          "line": 147
+        }
+      ]
+    },
+    {
+      "key": "objectivenotstarted",
+      "ui_location": "Loop constraint message (loop status / log)",
+      "kind": "error",
+      "description": "Reason shown when a loop feature is blocked because an earlier objective was never started. %1$d is the objective number.",
+      "related_keys": [
+        "objectivenotfinished"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "8e124e252d58c430",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/ObjectivesPlugin.kt",
+          "line": 100
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/ObjectivesPlugin.kt",
+          "line": 116
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/ObjectivesPlugin.kt",
+          "line": 124
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/ObjectivesPlugin.kt",
+          "line": 132
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/ObjectivesPlugin.kt",
+          "line": 140
+        }
+      ]
+    },
+    {
+      "key": "objectives_0_gate",
+      "ui_location": "Objectives > objective 1 card",
+      "kind": "summary",
+      "description": "Requirement text of objective 1, i.e. what must be done to pass it. BG is blood glucose; Nightscout is a web service for monitoring.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5736f17253166c98",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective0.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "objectives_0_learned",
+      "ui_location": "Objectives > objective 1 card",
+      "kind": "dialog_text",
+      "description": "Lesson shown after objective 1 is completed. Full sentences. Nightscout is a product name; AAPS is the app (Android Artificial Pancreas System).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d3add5daef43da20",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective0.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "objectives_0_objective",
+      "ui_location": "Objectives > objective 1 card",
+      "kind": "title",
+      "description": "Description of objective 1: what the user is learning. Noun phrase shown as the objective's headline text. 'Basals' and 'ratios' are insulin delivery settings (basal rates, insulin-to-carb ratios).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5736f17253166c98",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective0.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "objectives_auto_gate",
+      "ui_location": "Objectives > objective 10 card",
+      "kind": "summary",
+      "description": "Requirement text of objective 10: read the docs and set up simple automation rules.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5408ec20a008a68b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective9.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "objectives_auto_learned",
+      "ui_location": "Objectives > objective 10 card",
+      "kind": "dialog_text",
+      "description": "Lesson shown after objective 10 is completed, a warning not to overuse automation.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4cd6244c44cbabd6",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective9.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "objectives_auto_objective",
+      "ui_location": "Objectives > objective 10 card",
+      "kind": "title",
+      "description": "Description of objective 10: enabling Automation (rule-based actions in AAPS).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5408ec20a008a68b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective9.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "objectives_autosens_gate",
+      "ui_location": "Objectives > objective 8 card",
+      "kind": "summary",
+      "description": "Requirement text of objective 8. 'Looping' means running AAPS in closed loop; 'carb entry' means entering eaten carbohydrates.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4f71c81f323e800f",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective7.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "objectives_autosens_learned",
+      "ui_location": "Objectives > objective 8 card",
+      "kind": "dialog_text",
+      "description": "Lesson shown after objective 8 is completed. Autosens result is a percentage around 100% when the profile fits.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8150e42e22d23861",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective7.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "objectives_autosens_objective",
+      "ui_location": "Objectives > objective 8 card",
+      "kind": "title",
+      "description": "Description of objective 8: adjusting basals and ratios, then enabling autosens (automatic sensitivity detection).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4f71c81f323e800f",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective7.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "objectives_bgavailableinns",
+      "ui_location": "Objectives > objective 1 > task list",
+      "kind": "label",
+      "description": "Task name in objective 1: glucose readings must show up in Nightscout or Tidepool (online services). Fragment, appears as a checklist line.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "338b9e79b0a4eff9",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective0.kt",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "key": "objectives_button_start",
+      "ui_location": "Objectives > objective card (not started)",
+      "kind": "button",
+      "description": "Short imperative on the button that starts the next objective, which begins its timer and tasks.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "28a0f5b42566b184",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesScreen.kt",
+          "line": 696
+        }
+      ]
+    },
+    {
+      "key": "objectives_button_verify",
+      "ui_location": "Objectives > active objective / exam sheet",
+      "kind": "button",
+      "description": "Short imperative on the button that checks whether the objective's tasks are done, or in the exam whether the selected answers are correct.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "035aa3c7d46837d3",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ExamBottomSheet.kt",
+          "line": 198
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesScreen.kt",
+          "line": 525
+        }
+      ]
+    },
+    {
+      "key": "objectives_collapse",
+      "ui_location": "Objectives > completed objective card",
+      "kind": "button",
+      "description": "Short toggle label to collapse the list of lessons of a completed objective. Opposite of the 'More' label.",
+      "related_keys": [
+        "objectives_expand"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "71495ad48fe37821",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesScreen.kt",
+          "line": 407
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_correct_answer",
+      "ui_location": "Objectives > exam sheet",
+      "kind": "label",
+      "description": "Accessibility/marker text for an answer option that is the correct one, shown after the question is answered. Lower case fragment.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9ed81fc85bf7f7fa",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ExamBottomSheet.kt",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_gate",
+      "ui_location": "Objectives > objective 3 card",
+      "kind": "summary",
+      "description": "Requirement text of objective 3: study the questions; each has four answers and possibly several are correct.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6969c36446372990",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_basaltest",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about reviewing the profile (basal and ratios) for better results. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "43a93857e67d170d",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_breadgrams",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, that carbohydrates can only be entered in grams. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "e69c65942309a893",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 276
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_cob",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about COB (carbs on board) calculation depending on the ISF/IC relation. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "5acc45d44cef0c88",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 266
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_concentration1",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about converting from U200 insulin with a 50% profile when using the insulin concentration feature. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "88bb8e107fc273cd",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 307
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_concentration2",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about switching from U200 with a 50% profile to the insulin concentration feature. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "7579cb14ef8d88be",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 316
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_concentration3",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about when insulin concentration can be changed (only when insulin or patch is changed). Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "fddf267b6d0264ac",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 325
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_dia",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about DIA (duration of insulin action) having a different meaning in looping than in classic pump therapy. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "308acc5c54d568c4",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_ecarbs",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about e-carbs (extended carbs) as a replacement for extended bolus. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "8be7576920240195",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 285
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_exercise",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about reducing insulin before exercise by choosing a profile switch below 100%. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "911ffe5a835af31c",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 135
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_exercise2",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about setting a higher temporary target before exercise. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "bf8847725f04610d",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 144
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_hypott",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about the hypo temp target (temporary higher glucose target after a low). Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "ef9012a2c2512c1e",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 91
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_ic",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about IC (insulin-to-carb ratio) and how it determines insulin to cover carbs. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "28bfa07ef185542d",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 82
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_insulin",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about setting the correct insulin type because it affects IOB calculation. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "2760074c467e6521",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 171
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_iob",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about using the IOB (insulin on board) graph to analyze how well AAPS works. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "470b1183467c0d18",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 244
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_isf",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about ISF (insulin sensitivity factor, glucose drop per unit of insulin) and how it drives correction doses. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "dbe4b5d070c5ce90",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_noisycgm",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about not looping unattended when CGM (continuous glucose monitor) values are unreliable. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "0ba2c2ba213661be",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 153
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_nsclient",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about remote monitoring and control via Nightscout and its limits. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "eaf51de6b5f819ff",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 294
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_objectives",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about backing up the progress of objectives together with settings. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "319d7edaec5c06a1",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 191
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_objectives2",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about keeping exported settings and the APK outside the phone. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "aa8ab4dbe834a7ca",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 201
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_prerequisites",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about what the user needs to pass the objectives (Nightscout, a compatible pump, a computer to build AAPS). Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "2b1235016f05aba4",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_prerequisites2",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, that AAPS can run offline. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "1c6236e44b7c348a",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_profileswitch",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about using percentage in a profile switch, which scales basal, ISF and IC but not targets. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "dc3513503b5a2c8f",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 100
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_profileswitch4",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, that editing a profile requires a profile switch to take effect. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "13ba2d93d448ca2a",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 126
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_profileswitchtime",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about timeshift in a profile switch to adapt the daily profile to a shifted schedule. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "179ad2c7a7baa110",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 117
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_pumpdisconnect",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, that AAPS must know when the pump is disconnected to compute IOB correctly. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "fa3f24f34c1fdfaa",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 162
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_sensitivity",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about sensitivity detection (autosens) in the algorithm. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "64f2e0485bd56d28",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 181
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_learned_wrongcarbs",
+      "ui_location": "Objectives > objective 3 (exam) > lessons learned",
+      "kind": "dialog_text",
+      "description": "Lesson shown after passing a matching exam question, about resolving wrong carb entries quickly to avoid overdosing. Full sentence(s) for the user.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "18ad87804c48d05e",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 229
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_next",
+      "ui_location": "Objectives > exam sheet",
+      "kind": "button",
+      "description": "Short navigation button to the next exam question.",
+      "related_keys": [
+        "objectives_exam_previous",
+        "objectives_exam_next_unanswered"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "4d6b560376a1075f",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ExamBottomSheet.kt",
+          "line": 234
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_next_unanswered",
+      "ui_location": "Objectives > exam sheet",
+      "kind": "button",
+      "description": "Short navigation button that jumps to the next question not yet answered.",
+      "related_keys": [
+        "objectives_exam_next"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "08f1609bbe81c97a",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ExamBottomSheet.kt",
+          "line": 225
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_objective",
+      "ui_location": "Objectives > objective 3 card",
+      "kind": "title",
+      "description": "Description of objective 3: a quiz about AAPS knowledge.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6969c36446372990",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_previous",
+      "ui_location": "Objectives > exam sheet",
+      "kind": "button",
+      "description": "Short navigation button to the previous exam question.",
+      "related_keys": [
+        "objectives_exam_next"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "25522c13fdc95a4b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ExamBottomSheet.kt",
+          "line": 215
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_question_progress",
+      "ui_location": "Objectives > exam sheet",
+      "kind": "label",
+      "description": "Progress counter above an exam question. %1$d is the current question number, %2$d the total number of questions.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b0d675fe220d355f",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ExamBottomSheet.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "objectives_exam_reset",
+      "ui_location": "Objectives > exam sheet",
+      "kind": "button",
+      "description": "Short button that clears the selected answers of the current exam question.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "aa5dddc4aa6aee45",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ExamBottomSheet.kt",
+          "line": 191
+        }
+      ]
+    },
+    {
+      "key": "objectives_expand",
+      "ui_location": "Objectives > completed objective card",
+      "kind": "button",
+      "description": "Short toggle label to expand the list of lessons of a completed objective. Opposite of the 'Less' label.",
+      "related_keys": [
+        "objectives_collapse"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "71495ad48fe37821",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesScreen.kt",
+          "line": 407
+        }
+      ]
+    },
+    {
+      "key": "objectives_hint",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "objectives_manualenacts",
+      "ui_location": "Objectives > objective 4 > task list",
+      "kind": "label",
+      "description": "Task name in objective 4: the user must manually enact (apply) a number of temp basals suggested by the open loop. Short checklist line.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2a4339e988fa2fc9",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective3.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "objectives_maxbasal",
+      "ui_location": "Objectives > objective 5 task list",
+      "kind": "label",
+      "description": "Task name in objective 5; completed when the user acts on the loop's recommendation. Imperative sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bbf28ae6daaf3752",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective4.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "objectives_maxbasal_gate",
+      "ui_location": "Objectives > objective 5 card",
+      "kind": "summary",
+      "description": "Requirement text of objective 5: the user decides the max basal value. 'Max basal' is the upper limit on temporary basal rate; 'simple terms' introduces a rule of thumb.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ae942f97b17c2f35",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective4.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "objectives_maxbasal_learned",
+      "ui_location": "Objectives > objective 5 card",
+      "kind": "dialog_text",
+      "description": "Lesson shown after objective 5 is completed, about safety limits.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bfb7982eaff9db03",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective4.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "objectives_maxbasal_objective",
+      "ui_location": "Objectives > objective 5 card",
+      "kind": "title",
+      "description": "Description of objective 5: understanding the open loop's temp basal recommendations.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ae942f97b17c2f35",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective4.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "objectives_maxiob_gate",
+      "ui_location": "Objectives > objective 7 card",
+      "kind": "summary",
+      "description": "Requirement text of objective 7. BG = blood glucose; 'low BG alarms' are alarms for low glucose.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e98d1d8ce515a4b6",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective6.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "objectives_maxiob_learned",
+      "ui_location": "Objectives > objective 7 card",
+      "kind": "dialog_text",
+      "description": "Lesson shown after objective 7 is completed, about keeping max IOB appropriate. 'Food' means carbohydrate boluses.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8e4da496ac427c26",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective6.kt",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "key": "objectives_maxiob_objective",
+      "ui_location": "Objectives > objective 7 card",
+      "kind": "title",
+      "description": "Description of objective 7: tuning the closed loop by raising max IOB above 0 and lowering BG targets step by step.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e98d1d8ce515a4b6",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective6.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "objectives_maxiobzero_gate",
+      "ui_location": "Objectives > objective 6 card",
+      "kind": "summary",
+      "description": "Requirement text of objective 6. 'Max IOB' is the maximum insulin on board allowed; here it is forced to 0.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5f320b2df84c2294",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective5.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "objectives_maxiobzero_learned",
+      "ui_location": "Objectives > objective 6 card",
+      "kind": "dialog_text",
+      "description": "Lesson shown after objective 6 is completed. IOB = insulin on board; basal rate = background insulin.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "21d730033360d633",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective5.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "objectives_maxiobzero_objective",
+      "ui_location": "Objectives > objective 6 card",
+      "kind": "title",
+      "description": "Description of objective 6: closing the loop with Low Glucose Suspend (LGS), where the pump only reduces insulin to prevent lows.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5f320b2df84c2294",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective5.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "objectives_no_learned",
+      "ui_location": "Objectives > lessons sheet",
+      "kind": "status",
+      "description": "Empty-state text when an objective has no lessons to show.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "25f6933d53af82ec",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/LearnedBottomSheet.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "objectives_open_exam",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "objectives_openloop_gate",
+      "ui_location": "Objectives > objective 4 card",
+      "kind": "summary",
+      "description": "Requirement text of objective 4. Temp basal = temporary basal rate; 'default temp targets' are preset temporary glucose targets.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3fe5be0adc0a0c33",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective3.kt",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "objectives_openloop_learned",
+      "ui_location": "Objectives > objective 4 card",
+      "kind": "dialog_text",
+      "description": "Lesson shown after objective 4 is completed, about when open loop is appropriate.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "96261b2b4e1f7422",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective3.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "objectives_openloop_objective",
+      "ui_location": "Objectives > objective 4 card",
+      "kind": "title",
+      "description": "Description of objective 4: running in open loop, i.e. AAPS only suggests temp basals and the user enacts them manually.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3fe5be0adc0a0c33",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective3.kt",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "objectives_pumpstatusavailableinns",
+      "ui_location": "Objectives > objective 1 > task list",
+      "kind": "label",
+      "description": "Task name in objective 1: pump status must be visible in Nightscout or Tidepool. Fragment, checklist line.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "015ae552a92a07b7",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective0.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "objectives_show_hint",
+      "ui_location": "Objectives > task row",
+      "kind": "button",
+      "description": "Short label of the button revealing a hint (a link to the AAPS documentation) for a task.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "68733d0d777d8b5a",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesScreen.kt",
+          "line": 613
+        }
+      ]
+    },
+    {
+      "key": "objectives_smb_gate",
+      "ui_location": "Objectives > objective 9 card",
+      "kind": "summary",
+      "description": "Requirement text of objective 9. maxIOB is the max insulin on board setting; SMB are small automatic boluses; 'meal bolus' is the bolus for food.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "79932101d9d9c922",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective8.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "objectives_smb_learned",
+      "ui_location": "Objectives > objective 9 card",
+      "kind": "dialog_text",
+      "description": "Lesson shown after objective 9 is completed. Oref1 is the name of the algorithm.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8bc6244d8f666b3f",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective8.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "objectives_smb_objective",
+      "ui_location": "Objectives > objective 9 card",
+      "kind": "title",
+      "description": "Description of objective 9: enabling SMB (super micro bolus) and other daytime features.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "79932101d9d9c922",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective8.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "objectives_state_done",
+      "ui_location": "Objectives > objective timeline",
+      "kind": "status",
+      "description": "Short state chip: objective is completed.",
+      "related_keys": [
+        "objectives_state_in_progress",
+        "objectives_state_not_started",
+        "objectives_state_locked"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ba342c6c22453872",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesScreen.kt",
+          "line": 209
+        }
+      ]
+    },
+    {
+      "key": "objectives_state_in_progress",
+      "ui_location": "Objectives > objective timeline",
+      "kind": "status",
+      "description": "Short state chip: objective was started and is not finished.",
+      "related_keys": [
+        "objectives_state_done"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a999936b0e6ed845",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesScreen.kt",
+          "line": 210
+        }
+      ]
+    },
+    {
+      "key": "objectives_state_locked",
+      "ui_location": "Objectives > objective timeline",
+      "kind": "status",
+      "description": "Short state chip: objective cannot be started until the previous ones are completed.",
+      "related_keys": [
+        "objectives_state_done"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1f58e5305ea52019",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesScreen.kt",
+          "line": 212
+        }
+      ]
+    },
+    {
+      "key": "objectives_state_not_started",
+      "ui_location": "Objectives > objective timeline",
+      "kind": "status",
+      "description": "Short state chip: objective can be started now but has not been yet.",
+      "related_keys": [
+        "objectives_state_done"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "07cbcf3704d5e32b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesScreen.kt",
+          "line": 211
+        }
+      ]
+    },
+    {
+      "key": "objectives_usage_gate",
+      "ui_location": "Objectives > objective 2 card",
+      "kind": "summary",
+      "description": "Requirement text of objective 2: perform the listed actions in the app.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0778dcbbad919952",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective1.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "objectives_usage_learned",
+      "ui_location": "Objectives > objective 2 card",
+      "kind": "dialog_text",
+      "description": "Lesson shown after objective 2 is completed. 'Overview' is the name of the main screen; click and long click are touch gestures.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e6014624a9d505fb",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective1.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "objectives_usage_objective",
+      "ui_location": "Objectives > objective 2 card",
+      "kind": "title",
+      "description": "Description of objective 2: learning how to control AAPS.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0778dcbbad919952",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective1.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "objectives_usedisconnectpump",
+      "ui_location": "Objectives > objective 2 > task list",
+      "kind": "label",
+      "description": "Task name in objective 2: use the 'disconnect pump' action for one hour, as when showering. Imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "443aaaec1d4af819",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective1.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "objectives_useloop",
+      "ui_location": "Objectives > objective 2 > task list",
+      "kind": "label",
+      "description": "Task name in objective 2: open the Loop plugin's screen. Imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5234a5c1cc98b9d6",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective1.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "objectives_useprofileswitch",
+      "ui_location": "Objectives > objective 2 > task list",
+      "kind": "label",
+      "description": "Task name in objective 2: perform a profile switch at 90% for 10 minutes. A profile switch temporarily scales basal and sensitivity settings. Imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "51146cc1e2326dc1",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective1.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "objectives_usereconnectpump",
+      "ui_location": "Objectives > objective 2 > task list",
+      "kind": "label",
+      "description": "Task name in objective 2, follows the disconnect task: reconnect the pump the same way. Starts with an ellipsis to continue the previous line.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1f7e74c9c9f471f0",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective1.kt",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "key": "objectives_usescale",
+      "ui_location": "Objectives > objective 2 > task list",
+      "kind": "label",
+      "description": "Task name in objective 2: scroll or zoom the glucose chart on the main screen. Imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e2e3d0c892632a12",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective1.kt",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "key": "objectives_usetemptarget",
+      "ui_location": "Objectives > objective 2 > task list",
+      "kind": "label",
+      "description": "Task name in objective 2: create a custom temporary glucose target lasting 10 minutes. Imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "730556e6d4918dd1",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective1.kt",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "key": "requestcode",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "requirementnotmet",
+      "ui_location": "Objectives > verify",
+      "kind": "error",
+      "description": "Error shown on Verify when the objective's tasks are not all completed yet.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8a800041b2bce1e4",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesViewModel.kt",
+          "line": 235
+        }
+      ]
+    },
+    {
+      "key": "unfinshed_button",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "useaction_hint",
+      "ui_location": "Objectives > task hint",
+      "kind": "other",
+      "description": "Hint for an objective task. The value is a URL to the AAPS wiki (English documentation); do not translate the link text, only use a localized wiki URL if the language has one and the path is identical.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3e5313909bb94b04",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective1.kt",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "key": "usescale_hint",
+      "ui_location": "Objectives > task hint",
+      "kind": "other",
+      "description": "Hint for an objective task. The value is a URL to the AAPS wiki (English documentation); do not translate the link text, only use a localized wiki URL if the language has one and the path is identical.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "285c87b2559b15e9",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective1.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "usetemptarget_hint",
+      "ui_location": "Objectives > task hint",
+      "kind": "other",
+      "description": "Hint for an objective task. The value is a URL to the AAPS wiki (English documentation); do not translate the link text, only use a localized wiki URL if the language has one and the path is identical.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a04462f2fc40af05",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective1.kt",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "key": "verify_master_password",
+      "ui_location": "Objectives > objective 1 > task list",
+      "kind": "label",
+      "description": "Task name in objective 1: the user must confirm they know the master password, which protects exported settings. Imperative.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d59c692866dba2e1",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective0.kt",
+          "line": 94
+        }
+      ]
+    },
+    {
+      "key": "what_i_ve_learned",
+      "ui_location": "Objectives > completed objective / lessons sheet",
+      "kind": "label",
+      "description": "Heading above the list of lessons the user has learned from an objective. Ends with a colon.",
+      "related_keys": [
+        "objectives_no_learned"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "188933eb4b9ac96b",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/LearnedBottomSheet.kt",
+          "line": 52
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesScreen.kt",
+          "line": 362
+        }
+      ]
+    },
+    {
+      "key": "wronganswer",
+      "ui_location": "Objectives > exam sheet",
+      "kind": "toast",
+      "description": "Short feedback after the user submits a wrong answer in an objective exam.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d529fc7d50bc94d7",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesViewModel.kt",
+          "line": 382
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,946 @@
+{
+  "schema_version": 1,
+  "source_path": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "agree",
+      "ui_location": "Open Humans > setup wizard > consent step",
+      "kind": "label",
+      "description": "Label of the checkbox accepting the terms. First person sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5f6aff3632283a7e",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 263
+        }
+      ]
+    },
+    {
+      "key": "algorithm_debug_data",
+      "ui_location": "Open Humans > setup wizard > consent step > uploaded data list",
+      "kind": "label",
+      "description": "List item: debug data from the dosing algorithm.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ec55c6154b53446a",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 224
+        }
+      ]
+    },
+    {
+      "key": "application_version",
+      "ui_location": "Open Humans > setup wizard > consent step > uploaded data list",
+      "kind": "label",
+      "description": "List item: the AAPS version.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c250d76b56a5a396",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 221
+        }
+      ]
+    },
+    {
+      "key": "boluses",
+      "ui_location": "Open Humans > setup wizard > consent step > uploaded data list",
+      "kind": "label",
+      "description": "List item: insulin boluses (single insulin doses).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "79a3eb96adb6f13b",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 212
+        }
+      ]
+    },
+    {
+      "key": "cancel",
+      "ui_location": "Open Humans > dialogs",
+      "kind": "button",
+      "description": "Short button that cancels. Shared by many dialogs and the wizard confirm step.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7bd3209d111f0bc3",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/DatePickerModal.kt",
+          "line": 43
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/OkCancelDialog.kt",
+          "line": 104
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/OkCancelDialog.kt",
+          "line": 177
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/QueryAnyPasswordDialog.kt",
+          "line": 144
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/QueryPasswordDialog.kt",
+          "line": 110
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/SetPasswordDialog.kt",
+          "line": 122
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/ThreeButtonDialog.kt",
+          "line": 68
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/TimePickerModal.kt",
+          "line": 53
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/UnifiedAuthDialog.kt",
+          "line": 142
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/ValueInputDialog.kt",
+          "line": 220
+        }
+      ]
+    },
+    {
+      "key": "carbohydrates",
+      "ui_location": "Open Humans > setup wizard > consent step > uploaded data list",
+      "kind": "label",
+      "description": "List item: carbohydrate entries.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6de7819d0b4ea916",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 214
+        }
+      ]
+    },
+    {
+      "key": "careportal_events",
+      "ui_location": "Open Humans > setup wizard > consent step > uploaded data list",
+      "kind": "label",
+      "description": "List item: Careportal events (e.g. site change, sensor start), excluding notes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7434d518da78c315",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 215
+        }
+      ]
+    },
+    {
+      "key": "click_here_to_sign_in_again_if_this_wasnt_on_purpose",
+      "ui_location": "Open Humans > notification",
+      "kind": "notification",
+      "description": "Second line of the sign-out notification, inviting the user to tap it to sign in again.",
+      "related_keys": [
+        "you_have_been_signed_out_of_open_humans"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e62a2a506deb1b30",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/OpenHumansUploaderPlugin.kt",
+          "line": 630
+        }
+      ]
+    },
+    {
+      "key": "close",
+      "ui_location": "Open Humans > dialogs / wizard",
+      "kind": "button",
+      "description": "Short button closing the screen or dialog. Shared by several screens.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "bd66dbac6743e1c3",
+      "usages": [
+        {
+          "path": "appshell/src/commonMain/kotlin/app/aaps/appshell/AapsAppRoot.kt",
+          "line": 288
+        },
+        {
+          "path": "core/graph/src/commonMain/kotlin/app/aaps/core/graph/profile/ProfileViewerScreen.kt",
+          "line": 157
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/SelectableListToolbar.kt",
+          "line": 69
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/SiteLocationPickerScreen.kt",
+          "line": 50
+        },
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SetupWizardScreen.kt",
+          "line": 203
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 74
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 414
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 81
+        },
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 332
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoInsulinRefillGuideDialog.kt",
+          "line": 135
+        }
+      ]
+    },
+    {
+      "key": "consent",
+      "ui_location": "Open Humans > setup wizard > consent step",
+      "kind": "title",
+      "description": "Heading of the consent page.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "767e7f52ab6c5154",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 168
+        }
+      ]
+    },
+    {
+      "key": "data_not_uploaded",
+      "ui_location": "Open Humans > setup wizard > consent step",
+      "kind": "label",
+      "description": "Card heading (shown in error color) above the list of data types that are NOT uploaded.",
+      "related_keys": [
+        "data_uploaded"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c7b373d836ddab00",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 236
+        }
+      ]
+    },
+    {
+      "key": "data_uploaded",
+      "ui_location": "Open Humans > setup wizard > consent step",
+      "kind": "label",
+      "description": "Card heading above the list of data types that are uploaded.",
+      "related_keys": [
+        "data_not_uploaded"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a8c42906da1cd6df",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 204
+        }
+      ]
+    },
+    {
+      "key": "device_model",
+      "ui_location": "Open Humans > setup wizard > consent step > uploaded data list",
+      "kind": "label",
+      "description": "List item: the phone model.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fc4342457d5ce4d8",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 222
+        }
+      ]
+    },
+    {
+      "key": "extended_boluses",
+      "ui_location": "Open Humans > setup wizard > consent step > uploaded data list",
+      "kind": "label",
+      "description": "List item: extended boluses (insulin spread over a period).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "770a502a6292984a",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 213
+        }
+      ]
+    },
+    {
+      "key": "final_touches",
+      "ui_location": "Open Humans > setup wizard > confirm step",
+      "kind": "title",
+      "description": "Heading of the last-but-one wizard page.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "714ad20fa44b30fc",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 314
+        }
+      ]
+    },
+    {
+      "key": "finishing",
+      "ui_location": "Open Humans > setup wizard > finishing step",
+      "kind": "status",
+      "description": "Progress heading while setup completes. Ends with an ellipsis.",
+      "related_keys": [
+        "this_may_take_a_few_seconds"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "18cd8d547ddb2d23",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 354
+        }
+      ]
+    },
+    {
+      "key": "free_text_fields",
+      "ui_location": "Open Humans > setup wizard > consent step > not-uploaded data list",
+      "kind": "label",
+      "description": "List item: free text entered by the user, such as notes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e55b854c786f2e5e",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 246
+        }
+      ]
+    },
+    {
+      "key": "glucose_values",
+      "ui_location": "Open Humans > setup wizard > consent step > uploaded data list",
+      "kind": "label",
+      "description": "List item: glucose (blood sugar) readings.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "351850195ce14ac1",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 211
+        }
+      ]
+    },
+    {
+      "key": "info_openhumans",
+      "ui_location": "Open Humans > setup wizard > consent step",
+      "kind": "dialog_text",
+      "description": "Terms of use text explaining that this open source tool copies the user's data to Open Humans. Long legal-style paragraph.",
+      "related_keys": [
+        "terms_of_use"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "fa348fbbe364f3f3",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 192
+        }
+      ]
+    },
+    {
+      "key": "login_open_humans",
+      "ui_location": "Open Humans > setup wizard > consent step",
+      "kind": "button",
+      "description": "Button that opens the Open Humans web login. Imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a243bd88d8e35393",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 283
+        }
+      ]
+    },
+    {
+      "key": "logout",
+      "ui_location": "Open Humans > status screen",
+      "kind": "button",
+      "description": "Short button that signs out of Open Humans and stops uploading. Also reused in other screens.",
+      "related_keys": [
+        "setup"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "762413c697b458cc",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHScreen.kt",
+          "line": 145
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/compose/TidepoolScreen.kt",
+          "line": 214
+        }
+      ]
+    },
+    {
+      "key": "next",
+      "ui_location": "Open Humans > setup wizard",
+      "kind": "button",
+      "description": "Short button moving to the next wizard step.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "2283c5b575cfdd2e",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/SiteLocationWizardStep.kt",
+          "line": 43
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 148
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoInsulinRefillGuideDialog.kt",
+          "line": 127
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep01Start.kt",
+          "line": 41
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep04Attach.kt",
+          "line": 35
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoSelectInsulinStep.kt",
+          "line": 28
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoSetAmountStep.kt",
+          "line": 59
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveNeedleCapStep.kt",
+          "line": 20
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveNeedleCapStepPreviews.kt",
+          "line": 23
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStep.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "nightscout_api_secret",
+      "ui_location": "Open Humans > setup wizard > consent step > not-uploaded data list",
+      "kind": "label",
+      "description": "List item: the Nightscout API secret (access key).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4b31887cc5e0e21f",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 245
+        }
+      ]
+    },
+    {
+      "key": "nightscout_url",
+      "ui_location": "Open Humans > setup wizard > consent step > not-uploaded data list",
+      "kind": "label",
+      "description": "List item: the Nightscout server address. Nightscout is a product name.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6447c92d69ae3fe2",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 244
+        }
+      ]
+    },
+    {
+      "key": "not_setup_info",
+      "ui_location": "Open Humans > status screen",
+      "kind": "status",
+      "description": "Status text when upload is inactive. 'Setup' in quotes must match the button label.",
+      "related_keys": [
+        "setup"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "bfa8da0ff74aba4e",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHScreen.kt",
+          "line": 109
+        }
+      ]
+    },
+    {
+      "key": "open_humans",
+      "ui_location": "Open Humans > plugin name / Preferences",
+      "kind": "title",
+      "description": "Name of the Open Humans sync plugin, a product/service name; usually left untranslated.",
+      "related_keys": [
+        "open_humans_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d0120869c4e59601",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/OpenHumansUploaderPlugin.kt",
+          "line": 83
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/OpenHumansUploaderPlugin.kt",
+          "line": 656
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 68
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHScreen.kt",
+          "line": 45
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHScreen.kt",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "key": "open_humans_description",
+      "ui_location": "Open Humans > plugin list / welcome page",
+      "kind": "summary",
+      "description": "Plugin description in Config builder and intro sentence on the first setup page. Open Humans is a research data-sharing platform.",
+      "related_keys": [
+        "open_humans"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "53eec04fae8e8e5a",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/OpenHumansUploaderPlugin.kt",
+          "line": 84
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 130
+        }
+      ]
+    },
+    {
+      "key": "open_humans_notifications",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "open_humans_uploading",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "passwords",
+      "ui_location": "Open Humans > setup wizard > consent step > not-uploaded data list",
+      "kind": "label",
+      "description": "List item: passwords, which are not uploaded.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "95878ed0c7e3b6a6",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 243
+        }
+      ]
+    },
+    {
+      "key": "please_read__information",
+      "ui_location": "Open Humans > setup wizard > consent step",
+      "kind": "hint",
+      "description": "Instruction above the terms; the user must accept them to continue.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "84ba5a6e5f144ed1",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 174
+        }
+      ]
+    },
+    {
+      "key": "proceed",
+      "ui_location": "Open Humans > setup wizard > confirm step",
+      "kind": "button",
+      "description": "Short button confirming and continuing.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "910324283c56f832",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 335
+        }
+      ]
+    },
+    {
+      "key": "profile_switches",
+      "ui_location": "Open Humans > setup wizard > consent step > uploaded data list",
+      "kind": "label",
+      "description": "List item: profile switch records. Also used as a heading in the profile helper screen.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "5229e6bae1e21478",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 216
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 560
+        }
+      ]
+    },
+    {
+      "key": "project_member_id",
+      "ui_location": "Open Humans > status screen",
+      "kind": "label",
+      "description": "Shows the user's Open Humans project member ID. %1$s is the ID.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0651f2d8cfaffb33",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHScreen.kt",
+          "line": 117
+        }
+      ]
+    },
+    {
+      "key": "screen_dimensions",
+      "ui_location": "Open Humans > setup wizard > consent step > uploaded data list",
+      "kind": "label",
+      "description": "List item: the phone's screen size.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3e980034c19f260b",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 223
+        }
+      ]
+    },
+    {
+      "key": "settings",
+      "ui_location": "Open Humans > setup wizard > consent step > uploaded data list",
+      "kind": "label",
+      "description": "List item: app settings. Also used as a generic 'Settings' title in plugin and automation screens.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "9e01c61a0569f236",
+      "usages": [
+        {
+          "path": "appshell/src/commonMain/kotlin/app/aaps/appshell/navigation/AppNavGraph.kt",
+          "line": 828
+        },
+        {
+          "path": "appshell/src/commonMain/kotlin/app/aaps/appshell/navigation/AppNavGraph.kt",
+          "line": 923
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/ConfigPluginCard.kt",
+          "line": 182
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 231
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 220
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoComposeContent.kt",
+          "line": 76
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2ComposeContent.kt",
+          "line": 84
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRComposeContent.kt",
+          "line": 100
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSComposeContent.kt",
+          "line": 104
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnComposeContent.kt",
+          "line": 95
+        }
+      ]
+    },
+    {
+      "key": "setup",
+      "ui_location": "Open Humans > status screen",
+      "kind": "button",
+      "description": "Short button that starts the Open Humans setup wizard.",
+      "related_keys": [
+        "logout"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "4dadf4bf28a59c10",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHScreen.kt",
+          "line": 129
+        }
+      ]
+    },
+    {
+      "key": "setup_completed_info",
+      "ui_location": "Open Humans > status screen",
+      "kind": "status",
+      "description": "Status text when setup is done. 'Logout' in quotes must match the button label.",
+      "related_keys": [
+        "logout"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b080a28d414a5171",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHScreen.kt",
+          "line": 107
+        }
+      ]
+    },
+    {
+      "key": "setup_data_upload",
+      "ui_location": "Open Humans > setup wizard > welcome step",
+      "kind": "hint",
+      "description": "Instruction on the first wizard page. 'Next' in quotes must match the button label.",
+      "related_keys": [
+        "next"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5f479d16a85aab09",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 137
+        }
+      ]
+    },
+    {
+      "key": "silently_upload_date_note",
+      "ui_location": "Open Humans > setup wizard > done step",
+      "kind": "dialog_text",
+      "description": "Tells the user that uploads will happen automatically in the background from now on.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "18053f6a82e0b87c",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 404
+        }
+      ]
+    },
+    {
+      "key": "temporary_basal_rates",
+      "ui_location": "Open Humans > setup wizard > consent step > uploaded data list",
+      "kind": "label",
+      "description": "List item: temporary basal rate records.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5c3d073d1799459c",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 218
+        }
+      ]
+    },
+    {
+      "key": "temporary_targets",
+      "ui_location": "Open Humans > setup wizard > consent step > uploaded data list",
+      "kind": "label",
+      "description": "List item: temporary glucose target records.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e772f1db2507073e",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 219
+        }
+      ]
+    },
+    {
+      "key": "terms_of_use",
+      "ui_location": "Open Humans > setup wizard > consent step",
+      "kind": "label",
+      "description": "Heading for the terms of use text.",
+      "related_keys": [
+        "info_openhumans"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "80036288d4bc2225",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 186
+        }
+      ]
+    },
+    {
+      "key": "this_may_take_a_few_seconds",
+      "ui_location": "Open Humans > setup wizard > finishing step",
+      "kind": "status",
+      "description": "Progress note under 'Finishing...'.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "51b8e358210fe213",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 361
+        }
+      ]
+    },
+    {
+      "key": "total_daily_doses",
+      "ui_location": "Open Humans > setup wizard > consent step > uploaded data list",
+      "kind": "label",
+      "description": "List item: total daily insulin dose (TDD) records.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9897da15274e2179",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 217
+        }
+      ]
+    },
+    {
+      "key": "uploading_proceed",
+      "ui_location": "Open Humans > setup wizard > confirm step",
+      "kind": "dialog_text",
+      "description": "Question asking the user to confirm starting the upload.",
+      "related_keys": [
+        "proceed",
+        "cancel"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "32cd552b1aa1e9b3",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 321
+        }
+      ]
+    },
+    {
+      "key": "uploading_to_open_humans",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "we_re_done",
+      "ui_location": "Open Humans > setup wizard > done step",
+      "kind": "title",
+      "description": "Heading of the final wizard page, celebratory.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0c02a70d14e2b4d4",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 396
+        }
+      ]
+    },
+    {
+      "key": "welcome_to_open_humans",
+      "ui_location": "Open Humans > setup wizard > welcome step",
+      "kind": "title",
+      "description": "Heading of the first setup wizard page.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a92e67e2fb21e8bb",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 122
+        }
+      ]
+    },
+    {
+      "key": "you_have_been_signed_out_of_open_humans",
+      "ui_location": "Open Humans > notification",
+      "kind": "notification",
+      "description": "First line of a notification when the Open Humans session ended.",
+      "related_keys": [
+        "click_here_to_sign_in_again_if_this_wasnt_on_purpose"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "90251732e7b10b77",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/OpenHumansUploaderPlugin.kt",
+          "line": 629
+        }
+      ]
+    }
+  ]
+}
