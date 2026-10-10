@@ -1,0 +1,1697 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/combov2/src/main/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "bluetooth_address",
+      "ui_location": "Pump overview > info table",
+      "kind": "label",
+      "description": "Row label for the pump's Bluetooth MAC address. Shared with Insight overview.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7a44a41b3b22291a",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 240
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 454
+        }
+      ]
+    },
+    {
+      "key": "combov2_automatic_battery_entry",
+      "ui_location": "Preferences > Pump > Accu-Chek Combo v2",
+      "kind": "preference_title",
+      "description": "Switch to automatically record battery changes as therapy events.",
+      "related_keys": [
+        "combov2_automatic_reservoir_entry"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "43bd798b60ee65fc",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/keys/ComboBooleanKey.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "combov2_automatic_reservoir_entry",
+      "ui_location": "Preferences > Pump > Accu-Chek Combo v2",
+      "kind": "preference_title",
+      "description": "Switch to automatically record insulin cartridge changes as therapy events.",
+      "related_keys": [
+        "combov2_automatic_battery_entry"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "09e260de1604036c",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/keys/ComboBooleanKey.kt",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "key": "combov2_battery_empty",
+      "ui_location": "Accu-Chek Combo overview > battery row",
+      "kind": "status",
+      "description": "Battery state value: empty.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b6a6002b3fc4e7d1",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 335
+        }
+      ]
+    },
+    {
+      "key": "combov2_battery_full",
+      "ui_location": "Accu-Chek Combo overview > battery row",
+      "kind": "status",
+      "description": "Battery state value: full.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b79d053c51c117ca",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 337
+        }
+      ]
+    },
+    {
+      "key": "combov2_battery_low",
+      "ui_location": "Accu-Chek Combo overview > battery row",
+      "kind": "status",
+      "description": "Battery state value: low.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8af0a917ce4705cb",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 336
+        }
+      ]
+    },
+    {
+      "key": "combov2_battery_low_warning",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Warning that the pump battery is low.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bc7b129f383669c2",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1779
+        }
+      ]
+    },
+    {
+      "key": "combov2_bluetooth_disabled",
+      "ui_location": "Notification",
+      "kind": "error",
+      "description": "Notification: the driver can't start because Bluetooth is off.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "736217f7426f5a96",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 356
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 740
+        }
+      ]
+    },
+    {
+      "key": "combov2_bluetooth_not_supported",
+      "ui_location": "Notification",
+      "kind": "error",
+      "description": "Notification: the driver can't run because the device has no Bluetooth.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e0a3ac126ddb12b5",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 346
+        }
+      ]
+    },
+    {
+      "key": "combov2_bolus_cancelled",
+      "ui_location": "Bolus result",
+      "kind": "status",
+      "description": "Result text: the bolus was cancelled.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9482be0f051250b2",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 999
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1012
+        }
+      ]
+    },
+    {
+      "key": "combov2_bolus_delivery_failed",
+      "ui_location": "Bolus result",
+      "kind": "error",
+      "description": "Error shown when delivery failed and apparently nothing was delivered; tells the user to check the pump to be sure. Sentences.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9f75d3477c013dd6",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1024
+        }
+      ]
+    },
+    {
+      "key": "combov2_bolus_not_delivered",
+      "ui_location": "Bolus result",
+      "kind": "error",
+      "description": "Result text: no bolus was delivered.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8cb21e09e72fd06d",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1015
+        }
+      ]
+    },
+    {
+      "key": "combov2_cancel_pairing",
+      "ui_location": "Combo pairing wizard",
+      "kind": "button",
+      "description": "Button to abort pairing. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "af4f92124d25cc33",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardScreen.kt",
+          "line": 174
+        }
+      ]
+    },
+    {
+      "key": "combov2_cancelling_tbr",
+      "ui_location": "Accu-Chek Combo overview > running command",
+      "kind": "status",
+      "description": "Describes the running command: cancelling the temporary basal rate (TBR).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4b56dee0a40b8adb",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 299
+        }
+      ]
+    },
+    {
+      "key": "combov2_cannot_access_pump_data",
+      "ui_location": "Notification",
+      "kind": "error",
+      "description": "Notification: the stored pairing data is unusable and the pump must be paired again.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "eda894d149c9f01f",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2079
+        }
+      ]
+    },
+    {
+      "key": "combov2_cannot_connect_pump_error_observed",
+      "ui_location": "Notification",
+      "kind": "error",
+      "description": "Message: the pump showed an error earlier, so the app won't connect until the user clears it on the pump. Sentences.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "49523a6ea080d01a",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 503
+        }
+      ]
+    },
+    {
+      "key": "combov2_cannot_deliver_pump_suspended",
+      "ui_location": "Command result error",
+      "kind": "error",
+      "description": "Failure reason: bolus refused because the pump is suspended.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5ef5381d85886d7f",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 948
+        }
+      ]
+    },
+    {
+      "key": "combov2_cannot_pair_driver_not_initialized_explanation",
+      "ui_location": "Combo pairing wizard",
+      "kind": "error",
+      "description": "Explanation why pairing is impossible: the driver isn't initialized (typically because Bluetooth permissions or another startup condition is missing). Sentences.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "be8534f956414a8a",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardScreen.kt",
+          "line": 137
+        }
+      ]
+    },
+    {
+      "key": "combov2_cannot_set_absolute_tbr_if_basal_zero",
+      "ui_location": "Command result",
+      "kind": "error",
+      "description": "Failure reason: an absolute TBR (in U/h) cannot be converted to a percentage when the base basal rate is zero.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e14b62a9cfeafb07",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1079
+        }
+      ]
+    },
+    {
+      "key": "combov2_checking_pump",
+      "ui_location": "Accu-Chek Combo overview > driver state",
+      "kind": "status",
+      "description": "Driver state: reading the pump's status.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "138248c3112b429d",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 283
+        }
+      ]
+    },
+    {
+      "key": "combov2_combo_alert",
+      "ui_location": "Combo alert notification",
+      "kind": "notification",
+      "description": "Prefix of the alert notification, followed by a colon and the alert text.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0244bb2612ee6cd8",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2167
+        }
+      ]
+    },
+    {
+      "key": "combov2_confirm_cancel_pairing_message",
+      "ui_location": "Combo pairing wizard > confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Question asking to confirm cancelling pairing.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b124688a4930054d",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardScreen.kt",
+          "line": 294
+        }
+      ]
+    },
+    {
+      "key": "combov2_confirm_unpair_message",
+      "ui_location": "Preferences > Combo v2 > unpair dialog",
+      "kind": "dialog_text",
+      "description": "Question asking to confirm unpairing.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f265938fb984f3b3",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2ComposeContent.kt",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "key": "combov2_connection_error",
+      "ui_location": "Notification",
+      "kind": "error",
+      "description": "Error message. %1$s is the technical error description.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9e58bbde8b14722a",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 704
+        }
+      ]
+    },
+    {
+      "key": "combov2_could_not_connect",
+      "ui_location": "Command result / notification",
+      "kind": "error",
+      "description": "Error shown when the app could not connect to the pump. Whole sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "dd5a1812b6974260",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 728
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 743
+        }
+      ]
+    },
+    {
+      "key": "combov2_current_tbr",
+      "ui_location": "Accu-Chek Combo overview > TBR row",
+      "kind": "status",
+      "description": "Active temporary basal rate. %1$d%% is the percentage, %2$d the remaining minutes.",
+      "related_keys": [
+        "combov2_current_tbr_less_than_1min"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d93003d1d1e7e2b2",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 383
+        }
+      ]
+    },
+    {
+      "key": "combov2_current_tbr_less_than_1min",
+      "ui_location": "Accu-Chek Combo overview > TBR row",
+      "kind": "status",
+      "description": "Active temporary basal rate with less than one minute left. %1$d%% is the percentage.",
+      "related_keys": [
+        "combov2_current_tbr"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "49443fb6a906aa8d",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 385
+        }
+      ]
+    },
+    {
+      "key": "combov2_datetime_changed",
+      "ui_location": "Command queue reason",
+      "kind": "log",
+      "description": "Reason text for a pump status refresh: date and/or time changed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "dca3f32490912732",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1342
+        }
+      ]
+    },
+    {
+      "key": "combov2_delivering_bolus",
+      "ui_location": "Overview status / bolus progress",
+      "kind": "status",
+      "description": "Progress text during a bolus. %1$.1f is the delivered amount, %2$.1f the total, both in units (U).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5706d4ba5deeb975",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1700
+        }
+      ]
+    },
+    {
+      "key": "combov2_discovery_duration",
+      "ui_location": "Preferences > Pump > Accu-Chek Combo v2",
+      "kind": "preference_title",
+      "description": "Number setting: how many seconds to scan for the pump. '(in seconds)' states the unit.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0af1f3a67d808e16",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/keys/ComboIntKey.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "combov2_driver_state_label",
+      "ui_location": "Accu-Chek Combo overview > info table",
+      "kind": "label",
+      "description": "Row label for the state of the driver (e.g. Ready, Suspended).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a8734a4dd252349f",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 210
+        }
+      ]
+    },
+    {
+      "key": "combov2_dst_ended",
+      "ui_location": "Command queue reason",
+      "kind": "log",
+      "description": "Reason text for a pump status refresh: daylight saving time (DST) ended.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "35e81b42f533f9fb",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1344
+        }
+      ]
+    },
+    {
+      "key": "combov2_dst_started",
+      "ui_location": "Command queue reason",
+      "kind": "log",
+      "description": "Reason text for a pump status refresh: daylight saving time (DST) started.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "67a1f7f43f80c0a9",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1343
+        }
+      ]
+    },
+    {
+      "key": "combov2_enter_pin",
+      "ui_location": "Combo pairing wizard > PIN entry",
+      "kind": "title",
+      "description": "Heading asking the user to type the PIN shown on the pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "40687e13a59eb99e",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardScreen.kt",
+          "line": 231
+        }
+      ]
+    },
+    {
+      "key": "combov2_error",
+      "ui_location": "Combo alert notification",
+      "kind": "label",
+      "description": "Word 'error' placed before the pump's error code, e.g. 'Combo error E4: ...'.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "45cf4e3f999dba23",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2151
+        }
+      ]
+    },
+    {
+      "key": "combov2_error_1",
+      "ui_location": "Combo alert notification",
+      "kind": "notification",
+      "description": "Error E1: insulin reservoir is empty. Short fragment appended after the code.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e233a03bf0679ec1",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2138
+        }
+      ]
+    },
+    {
+      "key": "combov2_error_10",
+      "ui_location": "Combo alert notification",
+      "kind": "notification",
+      "description": "Error E10: reservoir error. Short fragment appended after the code.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ed4986ae4d74e0c0",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2146
+        }
+      ]
+    },
+    {
+      "key": "combov2_error_11",
+      "ui_location": "Combo alert notification",
+      "kind": "notification",
+      "description": "Error E11: infusion set not primed. Short fragment appended after the code.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "76122815c83ec319",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2147
+        }
+      ]
+    },
+    {
+      "key": "combov2_error_2",
+      "ui_location": "Combo alert notification",
+      "kind": "notification",
+      "description": "Error E2: battery is empty. Short fragment appended after the code.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "484324567a0c55f7",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2139
+        }
+      ]
+    },
+    {
+      "key": "combov2_error_4",
+      "ui_location": "Combo alert notification",
+      "kind": "notification",
+      "description": "Error E4: occlusion, insulin delivery is blocked. Short fragment appended after the code.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7db6eddd185c3a80",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2140
+        }
+      ]
+    },
+    {
+      "key": "combov2_error_5",
+      "ui_location": "Combo alert notification",
+      "kind": "notification",
+      "description": "Error E5: end of the backup pump's operation. Short fragment appended after the code.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a3d312d6ef583b64",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2141
+        }
+      ]
+    },
+    {
+      "key": "combov2_error_6",
+      "ui_location": "Combo alert notification",
+      "kind": "notification",
+      "description": "Error E6: mechanical error. Short fragment appended after the code.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e4ec6d0f4a3c8b3a",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2142
+        }
+      ]
+    },
+    {
+      "key": "combov2_error_7",
+      "ui_location": "Combo alert notification",
+      "kind": "notification",
+      "description": "Error E7: electronic error. Short fragment appended after the code.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "99d98e0b3d08aee4",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2143
+        }
+      ]
+    },
+    {
+      "key": "combov2_error_8",
+      "ui_location": "Combo alert notification",
+      "kind": "notification",
+      "description": "Error E8: power interrupt. Short fragment appended after the code.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "955e6cbebbd06a37",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2144
+        }
+      ]
+    },
+    {
+      "key": "combov2_error_9",
+      "ui_location": "Combo alert notification",
+      "kind": "notification",
+      "description": "Error E9: end of the loan pump's operation. Short fragment appended after the code.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6eb6f80ecfb217c8",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2145
+        }
+      ]
+    },
+    {
+      "key": "combov2_establishing_bt_connection",
+      "ui_location": "Pairing wizard progress and overview status",
+      "kind": "status",
+      "description": "Progress text while connecting over Bluetooth. %1$d is the attempt number.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6644c35f79694769",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1632
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardViewModel.kt",
+          "line": 119
+        }
+      ]
+    },
+    {
+      "key": "combov2_executing_command",
+      "ui_location": "Accu-Chek Combo overview > driver state",
+      "kind": "status",
+      "description": "Driver state: a command is running.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b0f0bdababcdfd99",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 313
+        }
+      ]
+    },
+    {
+      "key": "combov2_extended_bolus_not_supported",
+      "ui_location": "Command result error",
+      "kind": "error",
+      "description": "Failure reason when an extended bolus is requested; the Combo driver does not support it.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "548a3a24715012ae",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1231
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1234
+        }
+      ]
+    },
+    {
+      "key": "combov2_fetching_tdd_history_cmddesc",
+      "ui_location": "Accu-Chek Combo overview > running command",
+      "kind": "status",
+      "description": "Describes the running command: reading total daily dose (TDD) history from the pump.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3c0a9efe425d4f9e",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 305
+        }
+      ]
+    },
+    {
+      "key": "combov2_getting_basal_profile",
+      "ui_location": "Overview status line",
+      "kind": "status",
+      "description": "Progress text. %1$d is the number of hourly basal factors read so far.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7ebc4a9b8f05edab",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1669
+        }
+      ]
+    },
+    {
+      "key": "combov2_getting_basal_profile_cmddesc",
+      "ui_location": "Accu-Chek Combo overview > running command",
+      "kind": "status",
+      "description": "Describes the running command: reading the basal profile from the pump.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7b2758a95599b276",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 290
+        }
+      ]
+    },
+    {
+      "key": "combov2_go_back",
+      "ui_location": "Combo pairing wizard",
+      "kind": "button",
+      "description": "Button to leave the screen. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0fa1dacf8329dcca",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardScreen.kt",
+          "line": 132
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardScreen.kt",
+          "line": 353
+        }
+      ]
+    },
+    {
+      "key": "combov2_hit_unexpected_tbr_limit",
+      "ui_location": "Command result",
+      "kind": "error",
+      "description": "Message about an unexpected limit when adjusting a temporary basal rate. Placeholders hold the target and actual percentages and related values.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "2d0bf09f37c47819",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1207
+        }
+      ]
+    },
+    {
+      "key": "combov2_ignoring_redundant_100_tbr",
+      "ui_location": "Command result",
+      "kind": "status",
+      "description": "Says that a 100% TBR request was ignored because normal basal is already active.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "572f9ef3436fbb11",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1193
+        }
+      ]
+    },
+    {
+      "key": "combov2_incorrect_active_basal_profile",
+      "ui_location": "Notification",
+      "kind": "error",
+      "description": "Message: the pump's active basal profile is wrong; the driver requires profile 1. %1$d is the number of the profile the pump currently uses.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "45195b94209e6ff4",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 672
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1374
+        }
+      ]
+    },
+    {
+      "key": "combov2_insufficient_insulin_in_reservoir",
+      "ui_location": "Bolus result",
+      "kind": "error",
+      "description": "Failure reason: not enough insulin in the cartridge for the bolus.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c0635ecca051d06e",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1021
+        }
+      ]
+    },
+    {
+      "key": "combov2_less_than_one_minute_ago",
+      "ui_location": "Accu-Chek Combo overview > last connection",
+      "kind": "status",
+      "description": "Value of the last-connection row when the last contact was seconds ago.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "cec4392506d01b4f",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 321
+        }
+      ]
+    },
+    {
+      "key": "combov2_letting_emulated_100_tbr_finish",
+      "ui_location": "Command result",
+      "kind": "status",
+      "description": "Says that a running emulated 100% TBR is left to finish.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5f5e550fcfaca880",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1190
+        }
+      ]
+    },
+    {
+      "key": "combov2_load_tdds_cancelled",
+      "ui_location": "Command result",
+      "kind": "error",
+      "description": "Result text: loading total daily doses (TDD) was cancelled.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "57303415a5c59caf",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1319
+        }
+      ]
+    },
+    {
+      "key": "combov2_no_connection_for_n_mins",
+      "ui_location": "Accu-Chek Combo overview > last connection",
+      "kind": "status",
+      "description": "Value of the last-connection row. %1$d is the number of minutes.",
+      "related_keys": [
+        "combov2_less_than_one_minute_ago"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "c967922612278923",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 323
+        }
+      ]
+    },
+    {
+      "key": "combov2_not_initialized",
+      "ui_location": "Accu-Chek Combo overview > driver state",
+      "kind": "status",
+      "description": "Driver state: driver not started yet.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5cb906dd04aa7a68",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 280
+        }
+      ]
+    },
+    {
+      "key": "combov2_not_paired",
+      "ui_location": "Command result / notification",
+      "kind": "error",
+      "description": "Error when a command needs a pump but none is paired.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "81468f8f150d8a33",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1254
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 189
+        }
+      ]
+    },
+    {
+      "key": "combov2_pair_with_pump_title",
+      "ui_location": "Preferences > Accu-Chek Combo v2",
+      "kind": "preference_title",
+      "description": "Title of the entry that opens the pairing wizard.",
+      "related_keys": [
+        "combov2_unpair_pump_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "87d55c97ca2dc817",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2ComposeContent.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "combov2_pairing_aborted_unknown_reasons",
+      "ui_location": "Combo pairing wizard > result",
+      "kind": "error",
+      "description": "Result text when pairing stopped without a known cause.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a1d1e67285302e35",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardViewModel.kt",
+          "line": 138
+        }
+      ]
+    },
+    {
+      "key": "combov2_pairing_cancelled",
+      "ui_location": "Combo pairing wizard > result",
+      "kind": "status",
+      "description": "Result text when the user cancelled pairing.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "23b82d2858a72338",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardViewModel.kt",
+          "line": 135
+        }
+      ]
+    },
+    {
+      "key": "combov2_pairing_combo_scan_timeout_reached",
+      "ui_location": "Combo pairing wizard > result",
+      "kind": "error",
+      "description": "Result text when no pump was found before the scan timed out.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5cbc959d25f2117c",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardViewModel.kt",
+          "line": 136
+        }
+      ]
+    },
+    {
+      "key": "combov2_pairing_failed_due_to_error",
+      "ui_location": "Combo pairing wizard > result",
+      "kind": "error",
+      "description": "Result text when pairing failed. %1$s is the technical error message.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7e073e7c750d8bc0",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardViewModel.kt",
+          "line": 137
+        }
+      ]
+    },
+    {
+      "key": "combov2_pairing_finished_successfully",
+      "ui_location": "Combo pairing wizard > last step",
+      "kind": "status",
+      "description": "Success message after pairing.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5618ec321da5d341",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardScreen.kt",
+          "line": 312
+        }
+      ]
+    },
+    {
+      "key": "combov2_pairing_finishing",
+      "ui_location": "Combo pairing wizard > progress",
+      "kind": "status",
+      "description": "Progress text while the last pairing steps complete.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "965bfff72cd34752",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardViewModel.kt",
+          "line": 128
+        }
+      ]
+    },
+    {
+      "key": "combov2_pairing_in_progress",
+      "ui_location": "Combo pairing wizard > title during pairing",
+      "kind": "title",
+      "description": "Title shown while pairing is running.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "19f5a92d67064d80",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardScreen.kt",
+          "line": 179
+        }
+      ]
+    },
+    {
+      "key": "combov2_pairing_performing_handshake",
+      "ui_location": "Pairing wizard progress and overview status",
+      "kind": "status",
+      "description": "Progress text while the app and the pump exchange keys and setup messages.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "00ac580007e7b835",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1636
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardViewModel.kt",
+          "line": 122
+        }
+      ]
+    },
+    {
+      "key": "combov2_pairing_pin_failure",
+      "ui_location": "Combo pairing wizard > PIN entry",
+      "kind": "error",
+      "description": "Message shown when the entered PIN was rejected. Advises checking for a typo and cancelling/retrying if it repeats.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "89c4dc283f2c3915",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardScreen.kt",
+          "line": 232
+        }
+      ]
+    },
+    {
+      "key": "combov2_pairing_pump_requests_pin",
+      "ui_location": "Combo pairing wizard > progress",
+      "kind": "status",
+      "description": "Progress text: the pump now displays a 10-digit PIN the user must type.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "06107ca344470739",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardViewModel.kt",
+          "line": 125
+        }
+      ]
+    },
+    {
+      "key": "combov2_pairing_start_steps",
+      "ui_location": "Combo pairing wizard > instructions",
+      "kind": "dialog_text",
+      "description": "Numbered instruction list telling the user which pump menus to open to make the pump ready for pairing. Multi-line; keep numbering and line breaks. Menu names should match the pump's display language.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b164a9fde9e40df1",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardScreen.kt",
+          "line": 155
+        }
+      ]
+    },
+    {
+      "key": "combov2_pin_hint",
+      "ui_location": "Combo pairing wizard > PIN text field",
+      "kind": "hint",
+      "description": "Placeholder in the PIN field: the PIN has 10 digits.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a90a2a1bfe81bd9f",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardScreen.kt",
+          "line": 249
+        }
+      ]
+    },
+    {
+      "key": "combov2_plugin_description",
+      "ui_location": "Config builder > Pump > Accu-Chek Combo",
+      "kind": "summary",
+      "description": "One-line plugin description in the pump list.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5d1028ce5895ec7e",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 153
+        }
+      ]
+    },
+    {
+      "key": "combov2_plugin_name",
+      "ui_location": "Config builder > Pump",
+      "kind": "title",
+      "description": "Plugin name of the Combo driver. Product name.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "66855ff152e4c091",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 147
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 152
+        }
+      ]
+    },
+    {
+      "key": "combov2_pump_is_suspended",
+      "ui_location": "Command result error",
+      "kind": "error",
+      "description": "Failure reason: the pump is suspended (stopped), so the command cannot run.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "473054c077dc2b30",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1171
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2040
+        }
+      ]
+    },
+    {
+      "key": "combov2_ready",
+      "ui_location": "Accu-Chek Combo overview > driver state",
+      "kind": "status",
+      "description": "Driver state: ready for commands.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "77c5283d6a7ace4a",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 284
+        }
+      ]
+    },
+    {
+      "key": "combov2_refresh_pump_status_after_error",
+      "ui_location": "Command queue reason",
+      "kind": "log",
+      "description": "Reason text for a pump status refresh after an error.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4c7d6a82f4b3f902",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1757
+        }
+      ]
+    },
+    {
+      "key": "combov2_reservoir_low_warning",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Warning that the insulin reservoir level is low.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a556c51cac420e13",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1783
+        }
+      ]
+    },
+    {
+      "key": "combov2_retrieving_tdds_failed",
+      "ui_location": "Command result",
+      "kind": "error",
+      "description": "Result text: reading total daily doses (TDD) from the pump failed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4eb86a08277991d3",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1328
+        }
+      ]
+    },
+    {
+      "key": "combov2_scanning_for_pump",
+      "ui_location": "Combo pairing wizard > progress",
+      "kind": "status",
+      "description": "Progress text while scanning for the pump over Bluetooth.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fcf919659065a22f",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardViewModel.kt",
+          "line": 116
+        }
+      ]
+    },
+    {
+      "key": "combov2_set_emulated_100_tbr",
+      "ui_location": "Command result",
+      "kind": "status",
+      "description": "The Combo can't set a true 100% TBR, so one is emulated; this says an emulated 100% TBR was set.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "489d472aca58aa36",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1187
+        }
+      ]
+    },
+    {
+      "key": "combov2_setting_basal_profile",
+      "ui_location": "Overview status line",
+      "kind": "status",
+      "description": "Progress text. %1$d is the number of hourly basal factors written so far.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a1ad16d5fc986128",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1684
+        }
+      ]
+    },
+    {
+      "key": "combov2_setting_basal_profile_cmddesc",
+      "ui_location": "Accu-Chek Combo overview > running command",
+      "kind": "status",
+      "description": "Describes the running command: writing the basal profile to the pump.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "75d59e5bdb1d7e61",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 293
+        }
+      ]
+    },
+    {
+      "key": "combov2_setting_current_pump_date",
+      "ui_location": "Overview status line",
+      "kind": "status",
+      "description": "Progress text while the app sets the pump's date.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1cbb9e053089daea",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1654
+        }
+      ]
+    },
+    {
+      "key": "combov2_setting_current_pump_time",
+      "ui_location": "Overview status line",
+      "kind": "status",
+      "description": "Progress text while the app sets the pump's clock to the time of the phone.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2a9752e645c37881",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1650
+        }
+      ]
+    },
+    {
+      "key": "combov2_setting_tbr_cmddesc",
+      "ui_location": "Accu-Chek Combo overview > running command",
+      "kind": "status",
+      "description": "Describes the running command: set a temporary basal rate. %1$d%% is the percentage, %2$d the duration in minutes.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "525dd22b11968041",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 297
+        }
+      ]
+    },
+    {
+      "key": "combov2_setting_tbr_failed",
+      "ui_location": "Command result",
+      "kind": "error",
+      "description": "Result text: setting the temporary basal rate (TBR) failed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "78f0c21ae364e6c5",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1214
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1221
+        }
+      ]
+    },
+    {
+      "key": "combov2_setting_tbr_succeeded",
+      "ui_location": "Command result",
+      "kind": "status",
+      "description": "Result text: the temporary basal rate (TBR) was set.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "639675eaa141c51a",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1184
+        }
+      ]
+    },
+    {
+      "key": "combov2_short_status_alert",
+      "ui_location": "Pump short status text (SMS/status)",
+      "kind": "status",
+      "description": "Line in the short pump status giving the current alert. %s is the code like W4 or E4.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "df0d08183dd0fdb0",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1269
+        }
+      ]
+    },
+    {
+      "key": "combov2_start_pairing",
+      "ui_location": "Combo pairing wizard > first step",
+      "kind": "button",
+      "description": "Button that begins pairing. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8362a18fdd2bfbaf",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardScreen.kt",
+          "line": 150
+        }
+      ]
+    },
+    {
+      "key": "combov2_steps_if_no_connection_during_pairing",
+      "ui_location": "Combo pairing wizard > instructions",
+      "kind": "dialog_text",
+      "description": "Further steps for the pump screen: the phone's name appears there and the user must press the pump's CHECK button. 'CHECK' is a label printed on the pump; keep as it is on the device.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "945a60dbfee18b5d",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardScreen.kt",
+          "line": 187
+        }
+      ]
+    },
+    {
+      "key": "combov2_suspended",
+      "ui_location": "Accu-Chek Combo overview > driver state",
+      "kind": "status",
+      "description": "Driver state: the pump is suspended (stopped).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "80c7434942961968",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 285
+        }
+      ]
+    },
+    {
+      "key": "combov2_timezone_changed",
+      "ui_location": "Command queue reason",
+      "kind": "log",
+      "description": "Reason text for a pump status refresh: time zone changed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a0efc207d17a8d96",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1341
+        }
+      ]
+    },
+    {
+      "key": "combov2_title",
+      "ui_location": "Preferences > Pump > Accu-Chek Combo v2",
+      "kind": "preference_title",
+      "description": "Title of the Combo driver's preference screen. Product name.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f9c45a1a917e6bc2",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2205
+        }
+      ]
+    },
+    {
+      "key": "combov2_unaccounted_bolus_detected_cancelling_bolus",
+      "ui_location": "Bolus result",
+      "kind": "error",
+      "description": "Safety message: the pump delivered insulin the app did not request, so the current bolus is cancelled.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0c1d1b053b075c3d",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1018
+        }
+      ]
+    },
+    {
+      "key": "combov2_unknown_tbr_detected",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Warning: a temporary basal rate not started by the app was found and stopped. %1$d%% is its percentage, %2$d the remaining duration.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "a2383da4673084c5",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1889
+        }
+      ]
+    },
+    {
+      "key": "combov2_unpair_pump_summary",
+      "ui_location": "Preferences > Accu-Chek Combo v2",
+      "kind": "preference_summary",
+      "description": "Summary under 'Unpair pump'. 'AndroidAPS' is the app name; Android means the phone's system pairing list.",
+      "related_keys": [
+        "combov2_unpair_pump_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "032768cc68d59c4e",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2ComposeContent.kt",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "key": "combov2_unpair_pump_title",
+      "ui_location": "Preferences > Accu-Chek Combo v2",
+      "kind": "preference_title",
+      "description": "Title of the entry that removes the pairing; asks for confirmation.",
+      "related_keys": [
+        "combov2_unpair_pump_summary",
+        "combov2_confirm_unpair_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a5cbcc2d7967b4b2",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2ComposeContent.kt",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "key": "combov2_unrecognized_alert",
+      "ui_location": "Combo alert notification",
+      "kind": "notification",
+      "description": "Text used when the pump shows an alert the driver can't identify.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a09fd70f5b4193c8",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2155
+        }
+      ]
+    },
+    {
+      "key": "combov2_updating_pump_datetime_cmddesc",
+      "ui_location": "Accu-Chek Combo overview > running command",
+      "kind": "status",
+      "description": "Describes the running command: updating the pump's date and time.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "adf77dbc82a03ee6",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 308
+        }
+      ]
+    },
+    {
+      "key": "combov2_updating_pump_status_cmddesc",
+      "ui_location": "Accu-Chek Combo overview > running command",
+      "kind": "status",
+      "description": "Describes the running command: reading the pump's status.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "728f6826ce26744d",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 311
+        }
+      ]
+    },
+    {
+      "key": "combov2_verbose_logging",
+      "ui_location": "Preferences > Pump > Accu-Chek Combo v2",
+      "kind": "preference_title",
+      "description": "Switch to enable extra-detailed logging for troubleshooting.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d90e6cd44cde91c0",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/keys/ComboBooleanKey.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "combov2_warning",
+      "ui_location": "Combo alert notification",
+      "kind": "label",
+      "description": "Word 'warning' placed before the pump's warning code, e.g. 'Combo warning W4: ...'. Followed by a code.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ece96579d1a49cf0",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2132
+        }
+      ]
+    },
+    {
+      "key": "combov2_warning_10",
+      "ui_location": "Combo alert notification",
+      "kind": "notification",
+      "description": "Warning W10: Bluetooth problem, the user must pair again. Appended after the code, so it is a short fragment.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "01afdbd22acdc9e6",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2128
+        }
+      ]
+    },
+    {
+      "key": "combov2_warning_4",
+      "ui_location": "Combo alert notification",
+      "kind": "notification",
+      "description": "Warning W4: asks the user to call the Accu-Chek hotline for a software update. Appended after the code, so it is a short fragment.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "94f5339212b7ffcc",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 2127
+        }
+      ]
+    }
+  ]
+}

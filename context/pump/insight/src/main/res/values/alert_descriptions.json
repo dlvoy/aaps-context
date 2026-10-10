@@ -1,0 +1,365 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/insight/src/main/res/values/alert_descriptions.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "alert_e10_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Instruction line of the rewind error alert: tells the user to replace the cartridge. Short imperative.",
+      "related_keys": [
+        "alert_e10_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "f78c30fbcfba73be",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "key": "alert_e13_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Instruction line of the language error alert: tells the user to change the pump's display language setting. Short imperative.",
+      "related_keys": [
+        "alert_e13_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "0888f3ecf798cf51",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 113
+        }
+      ]
+    },
+    {
+      "key": "alert_e6_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Instruction line of the mechanical error alert: tells the user to replace both battery and cartridge. Short imperative.",
+      "related_keys": [
+        "alert_e6_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "ea8f601b07364248",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 111
+        }
+      ]
+    },
+    {
+      "key": "alert_m20_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Instruction line of the 'Cartridge not inserted' alert: tells the user to insert an insulin cartridge. Short imperative.",
+      "related_keys": [
+        "alert_m20_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "329c77c205f189ec",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 100
+        }
+      ]
+    },
+    {
+      "key": "alert_m21_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Instruction line of the 'Cartridge empty' alert: tells the user to replace the insulin cartridge. Short imperative.",
+      "related_keys": [
+        "alert_m21_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "375990fb8fa4386f",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 101
+        }
+      ]
+    },
+    {
+      "key": "alert_m22_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Instruction line of the 'Battery empty' alert: tells the user to replace the pump battery. Short imperative.",
+      "related_keys": [
+        "alert_m22_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "7a5c64dc9e60605d",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 102
+        }
+      ]
+    },
+    {
+      "key": "alert_m23_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Instruction line of the 'Automatic off' alert: tells the user to look at the pump, which has stopped. Short imperative.",
+      "related_keys": [
+        "alert_m23_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "5815267499d779a4",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 103
+        }
+      ]
+    },
+    {
+      "key": "alert_m24_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Instruction line of the occlusion (blocked infusion set) alert: tells the user to replace the infusion set. Short imperative.",
+      "related_keys": [
+        "alert_m24_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "739a038c2a217903",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 104
+        }
+      ]
+    },
+    {
+      "key": "alert_m25_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Instruction line of the 'Loantime over' alert (a loaned pump's usage period ended): tells the user to contact Accu-Chek support. Short imperative.",
+      "related_keys": [
+        "alert_m25_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "8ee37276559b5f2c",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 105
+        }
+      ]
+    },
+    {
+      "key": "alert_m26_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Instruction line when the cartridge change was not completed: tells the user to change the cartridge (again). Short imperative.",
+      "related_keys": [
+        "alert_m26_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "70fd86ab6b2dec36",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 106
+        }
+      ]
+    },
+    {
+      "key": "alert_m27_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Instruction line when the pump's data download failed: tells the user to start the download again. Short imperative.",
+      "related_keys": [
+        "alert_m27_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "a34a49d372b6437a",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 107
+        }
+      ]
+    },
+    {
+      "key": "alert_m28_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Instruction line of the pause mode timeout alert: tells the user to check the pump, which was left paused. Short imperative.",
+      "related_keys": [
+        "alert_m28_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "abe7653ad744a1fd",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 108
+        }
+      ]
+    },
+    {
+      "key": "alert_m29_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Instruction line when the battery type is unset: tells the user to select the battery type on the pump. Short imperative.",
+      "related_keys": [
+        "alert_m29_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "24f14d3f075e80fb",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 109
+        }
+      ]
+    },
+    {
+      "key": "alert_m30_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Instruction line when the cartridge type is unset: tells the user to select the cartridge type on the pump. Short imperative.",
+      "related_keys": [
+        "alert_m30_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "13216069fe35d093",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "key": "alert_r7_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Detail line of the 'TBR completed' reminder. %1$d is the temporary basal rate percentage, %2$s the duration in hours. HTML: keep <b> tags and line break.",
+      "related_keys": [
+        "alert_r7_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "a521cda158515ddb",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 92
+        }
+      ]
+    },
+    {
+      "key": "alert_w31_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Detail of the 'Cartridge low' warning. %1$s is the remaining insulin in units (U). HTML: keep <b> tags.",
+      "related_keys": [
+        "alert_w31_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "dc77e5d7c9bc46b1",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 93
+        }
+      ]
+    },
+    {
+      "key": "alert_w32_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Instruction line of the low battery warning: tells the user to replace the pump battery. Short imperative.",
+      "related_keys": [
+        "alert_w32_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "fe64db15068ab4bc",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 94
+        }
+      ]
+    },
+    {
+      "key": "alert_w33_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Instruction line of the invalid time/date warning: tells the user to set the pump's clock. Short imperative.",
+      "related_keys": [
+        "alert_w33_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "3864876ef84baf7a",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 95
+        }
+      ]
+    },
+    {
+      "key": "alert_w34_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Instruction line of the end of warranty warning: tells the user to contact Accu-Chek customer support. Short imperative.",
+      "related_keys": [
+        "alert_w34_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "a66880a370de2c53",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "key": "alert_w36_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Detail of the 'TBR cancelled' warning. %1$d is the temporary basal rate percentage, %2$s the planned duration in hours. HTML: keep <b> and <br/> tags.",
+      "related_keys": [
+        "alert_w36_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "8c01e95da875a2b7",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "key": "alert_w38_description",
+      "ui_location": "Accu-Chek Insight pump alert > alert details",
+      "kind": "dialog_text",
+      "description": "Detail of the 'Bolus cancelled' warning. %1$s is the programmed bolus and %2$s the amount actually delivered, both in units (U). HTML: keep <b> and <br/> tags.",
+      "related_keys": [
+        "alert_w38_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "4a03d2ab3071c530",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 98
+        }
+      ]
+    }
+  ]
+}

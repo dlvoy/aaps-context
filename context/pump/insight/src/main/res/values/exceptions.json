@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/insight/src/main/res/values/exceptions.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "connection_failed",
+      "ui_location": "Accu-Chek Insight > command error message",
+      "kind": "error",
+      "description": "Error text for a failed pump command. Bluetooth connection to the pump failed. Short phrase without final period, used as the failure reason in a command result or notification.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "5b7ff69bb6935084",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/ExceptionTranslator.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "connection_lost",
+      "ui_location": "Accu-Chek Insight > command error message",
+      "kind": "error",
+      "description": "Error text for a failed pump command. Bluetooth connection to the pump was lost. Short phrase without final period, used as the failure reason in a command result or notification.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "243768553447f1e2",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/ExceptionTranslator.kt",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "key": "maximum_number_of_bolus_type_already_running",
+      "ui_location": "Accu-Chek Insight > command error message",
+      "kind": "error",
+      "description": "Error text for a failed pump command. The pump refused a new bolus because the maximum number of simultaneous boluses of that type (standard, extended, multiwave) is already running. Short phrase without final period, used as the failure reason in a command result or notification.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "eee5d56763571504",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/ExceptionTranslator.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "no_active_tbr_to_cancel",
+      "ui_location": "Accu-Chek Insight > command error message",
+      "kind": "error",
+      "description": "Error text for a failed pump command. Cancelling a temporary basal rate (TBR) failed because none is running. Short phrase without final period, used as the failure reason in a command result or notification.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "5a7f194dd0f11dbe",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/ExceptionTranslator.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "no_active_tbr_to_change",
+      "ui_location": "Accu-Chek Insight > command error message",
+      "kind": "error",
+      "description": "Error text for a failed pump command. Changing a temporary basal rate (TBR) failed because none is running. Short phrase without final period, used as the failure reason in a command result or notification.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "fc288d9013fbcaf2",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/ExceptionTranslator.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "no_such_bolus_to_cancel",
+      "ui_location": "Accu-Chek Insight > command error message",
+      "kind": "error",
+      "description": "Error text for a failed pump command. Cancelling a bolus failed because that bolus is not running. Short phrase without final period, used as the failure reason in a command result or notification.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "db2848ae48324803",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/ExceptionTranslator.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "pairing_rejected",
+      "ui_location": "Accu-Chek Insight > command error message",
+      "kind": "error",
+      "description": "Error text for a failed pump command. The pump rejected the pairing request. Short phrase without final period, used as the failure reason in a command result or notification.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "3934d3b2b3543847",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/ExceptionTranslator.kt",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "pump_already_in_that_state_exception",
+      "ui_location": "Accu-Chek Insight > command error message",
+      "kind": "error",
+      "description": "Error text for a failed pump command. Start/stop request refused because the pump is already in the requested state (running or stopped). Short phrase without final period, used as the failure reason in a command result or notification.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "fcea98bebcac0eb8",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/ExceptionTranslator.kt",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "key": "run_mode_not_allowed",
+      "ui_location": "Accu-Chek Insight > command error message",
+      "kind": "error",
+      "description": "Error text for a failed pump command. Command refused because the pump run mode (started/stopped/paused) does not allow it. Short phrase without final period, used as the failure reason in a command result or notification.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "8de95adc0e0a4ae2",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/ExceptionTranslator.kt",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "key": "socket_creation_failed",
+      "ui_location": "Accu-Chek Insight > command error message",
+      "kind": "error",
+      "description": "Error text for a failed pump command. Creating the Bluetooth socket to the pump failed. Short phrase without final period, used as the failure reason in a command result or notification.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "c9ccd554106cf65a",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/ExceptionTranslator.kt",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "key": "timeout",
+      "ui_location": "Accu-Chek Insight > command error message",
+      "kind": "error",
+      "description": "Error text for a failed pump command. The pump did not respond in time. Short phrase without final period, used as the failure reason in a command result or notification.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "6425869f3ed17e4a",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/ExceptionTranslator.kt",
+          "line": 39
+        }
+      ]
+    }
+  ]
+}

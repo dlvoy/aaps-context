@@ -1,0 +1,849 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/insight/src/main/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "bluetooth_address",
+      "ui_location": "Pump overview > info table",
+      "kind": "label",
+      "description": "Row label for the pump's Bluetooth MAC address, shown in the pump identity rows of the Insight overview and in the Combo overview.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7a44a41b3b22291a",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 240
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 454
+        }
+      ]
+    },
+    {
+      "key": "code_compare",
+      "ui_location": "Insight pairing wizard > code confirmation",
+      "kind": "dialog_text",
+      "description": "Question asking the user to compare the security code shown on the phone and on the pump and confirm they match. Answered with yes/no style buttons.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "222e3d387acd17b0",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightPairWizardScreen.kt",
+          "line": 197
+        }
+      ]
+    },
+    {
+      "key": "description_pump_insight_local",
+      "ui_location": "Config builder > Pump > Accu-Chek Insight",
+      "kind": "summary",
+      "description": "One-line plugin description under the Insight pump entry in the pump plugin list.",
+      "related_keys": [
+        "insight_local"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "211618f27194df82",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 175
+        }
+      ]
+    },
+    {
+      "key": "disable_tbr_over_notification",
+      "ui_location": "Accu-Chek Insight overview > pump action button",
+      "kind": "button",
+      "description": "Button label that turns off the pump's own notification when a temporary basal rate (TBR) ends. Keep the line break before '(pump setting)'.",
+      "related_keys": [
+        "enable_tbr_over_notification"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c154757ec3c3c9df",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 481
+        }
+      ]
+    },
+    {
+      "key": "disable_vibration",
+      "ui_location": "Preferences > Pump > Accu-Chek Insight",
+      "kind": "preference_title",
+      "description": "Switch title: turn off pump vibration when the user delivers a bolus manually.",
+      "related_keys": [
+        "disable_vibration_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "dd2e260eca3242bf",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/keys/InsightBooleanKey.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "disable_vibration_auto",
+      "ui_location": "Preferences > Pump > Accu-Chek Insight",
+      "kind": "preference_title",
+      "description": "Switch title: turn off pump vibration for automated boluses (SMB, i.e. super micro bolus from the loop).",
+      "related_keys": [
+        "disable_vibration_auto_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ac9d2de2756c7b60",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/keys/InsightBooleanKey.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "disable_vibration_auto_summary",
+      "ui_location": "Preferences > Pump > Accu-Chek Insight",
+      "kind": "preference_summary",
+      "description": "Summary of the automated vibration switch. SMB = super micro bolus; TBR emulation is the option that uses extended boluses instead of temp basals. Requires Insight firmware 3.x.",
+      "related_keys": [
+        "disable_vibration_auto"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ac9d2de2756c7b60",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/keys/InsightBooleanKey.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "disable_vibration_summary",
+      "ui_location": "Preferences > Pump > Accu-Chek Insight",
+      "kind": "preference_summary",
+      "description": "Summary under the switch, noting which boluses it covers and that it needs Insight firmware 3.x.",
+      "related_keys": [
+        "disable_vibration"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "dd2e260eca3242bf",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/keys/InsightBooleanKey.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "disconnect_delay",
+      "ui_location": "Preferences > Pump > Accu-Chek Insight",
+      "kind": "preference_title",
+      "description": "Number setting: seconds to wait before disconnecting from the pump after a command. '[s]' marks the unit, seconds.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "532ab3dd526a2a2e",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/keys/InsightIntKey.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "enable_tbr_emulation",
+      "ui_location": "Preferences > Pump > Accu-Chek Insight",
+      "kind": "preference_title",
+      "description": "Switch to emulate temporary basal rates (TBR) with extended boluses.",
+      "related_keys": [
+        "enable_tbr_emulation_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e75bc9544bb5bc08",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/keys/InsightBooleanKey.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "enable_tbr_emulation_summary",
+      "ui_location": "Preferences > Pump > Accu-Chek Insight",
+      "kind": "preference_summary",
+      "description": "Summary explaining that extended boluses replace TBRs to get past the pump's 250% TBR limit. '%%' renders a literal percent sign.",
+      "related_keys": [
+        "enable_tbr_emulation"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e75bc9544bb5bc08",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/keys/InsightBooleanKey.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "enable_tbr_over_notification",
+      "ui_location": "Accu-Chek Insight overview > pump action button",
+      "kind": "button",
+      "description": "Button label that turns on the pump's own notification when a temporary basal rate (TBR) ends. The line break splits the action from the hint '(pump setting)'; keep it. TBR = temporary basal rate.",
+      "related_keys": [
+        "disable_tbr_over_notification"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c154757ec3c3c9df",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 481
+        }
+      ]
+    },
+    {
+      "key": "insight_alert_formatter",
+      "ui_location": "Therapy event note (history)",
+      "kind": "log",
+      "description": "Format joining the alert code and alert title into one note, e.g. 'Warning W31: Cartridge low'. %1$s is the code string, %2$s the title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "96f99bfe4df5e62e",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1551
+        }
+      ]
+    },
+    {
+      "key": "insight_alert_notification_channel",
+      "ui_location": "Android system settings > app notification channels",
+      "kind": "label",
+      "description": "Name of the Android notification channel used for Insight pump alerts. Visible in system notification settings.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ff3615dd83a2376a",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 287
+        }
+      ]
+    },
+    {
+      "key": "insight_local",
+      "ui_location": "Config builder > Pump",
+      "kind": "title",
+      "description": "Plugin name for the Accu-Chek Insight pump driver. Product name, usually not translated.",
+      "related_keys": [
+        "description_pump_insight_local"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "fa109f22113bb799",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 173
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1639
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 108
+        }
+      ]
+    },
+    {
+      "key": "insight_pairing",
+      "ui_location": "Insight pairing wizard > title",
+      "kind": "title",
+      "description": "Title of the pairing wizard screen/dialog.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "68bb5a6df2e55a23",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 135
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 516
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightPairWizardScreen.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "insight_status",
+      "ui_location": "Accu-Chek Insight overview > info table",
+      "kind": "label",
+      "description": "Row label for the pump connection status. Single word/short noun.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e774d2b298078300",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 318
+        }
+      ]
+    },
+    {
+      "key": "last_connected",
+      "ui_location": "Accu-Chek Insight overview > info table",
+      "kind": "label",
+      "description": "Row label for the time of the last successful connection to the pump.",
+      "related_keys": [
+        "last_connection"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "57c08cdcd2e37b75",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 336
+        }
+      ]
+    },
+    {
+      "key": "last_connection",
+      "ui_location": "Accu-Chek Insight overview > info table",
+      "kind": "status",
+      "description": "Value of the 'Last connected' row. %1$s is a time stamp, %2$s a relative text such as minutes ago.",
+      "related_keys": [
+        "last_connected"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "42a71cce37387998",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 337
+        }
+      ]
+    },
+    {
+      "key": "log_alerts",
+      "ui_location": "Preferences > Pump > Accu-Chek Insight",
+      "kind": "preference_title",
+      "description": "Switch: record pump alerts as therapy events.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7be4d2ef035ba858",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/keys/InsightBooleanKey.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "log_battery_changes",
+      "ui_location": "Preferences > Pump > Accu-Chek Insight",
+      "kind": "preference_title",
+      "description": "Switch: record pump battery changes as therapy events.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "953b92bbe15b28e8",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/keys/InsightBooleanKey.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "log_operating_mode_changes",
+      "ui_location": "Preferences > Pump > Accu-Chek Insight",
+      "kind": "preference_title",
+      "description": "Switch: record pump start/stop (operating mode) changes as therapy events.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "198a2b1993059f6a",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/keys/InsightBooleanKey.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "log_reservoir_changes",
+      "ui_location": "Preferences > Pump > Accu-Chek Insight",
+      "kind": "preference_title",
+      "description": "Switch: record insulin cartridge (reservoir) changes as therapy events.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9c9cdc816ca0cb7d",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/keys/InsightBooleanKey.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "log_site_changes",
+      "ui_location": "Preferences > Pump > Accu-Chek Insight",
+      "kind": "preference_title",
+      "description": "Switch: record infusion set (site) changes reported by the pump as therapy events.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e2b49f82f3c2486e",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/keys/InsightBooleanKey.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "log_tube_changes",
+      "ui_location": "Preferences > Pump > Accu-Chek Insight",
+      "kind": "preference_title",
+      "description": "Switch: record tube changes as therapy events.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e55866d687394395",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/keys/InsightBooleanKey.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "manufacturing_date",
+      "ui_location": "Accu-Chek Insight overview > pump identity rows",
+      "kind": "label",
+      "description": "Row label for the pump's date of manufacture.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9ed4b77b3b5b9760",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 447
+        }
+      ]
+    },
+    {
+      "key": "max_recovery_duration",
+      "ui_location": "Preferences > Pump > Accu-Chek Insight",
+      "kind": "preference_title",
+      "description": "Number setting: longest time in seconds to wait before retrying to reconnect after a connection loss.",
+      "related_keys": [
+        "min_recovery_duration"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "3e7b830fc8dfdb26",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/keys/InsightIntKey.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "min_recovery_duration",
+      "ui_location": "Preferences > Pump > Accu-Chek Insight",
+      "kind": "preference_title",
+      "description": "Number setting: shortest time in seconds to wait before retrying to reconnect after a connection loss.",
+      "related_keys": [
+        "max_recovery_duration"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "263004092ab45d56",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/keys/InsightIntKey.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "multiwave_bolus",
+      "ui_location": "Accu-Chek Insight overview > active boluses",
+      "kind": "label",
+      "description": "Name of a bolus type that delivers part immediately and the rest extended over time (the pump's 'multiwave' bolus). Used as a label for an active bolus.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4d8e68b72dbe99e4",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 419
+        }
+      ]
+    },
+    {
+      "key": "not_inserted",
+      "ui_location": "Accu-Chek Insight overview > cartridge/battery value",
+      "kind": "status",
+      "description": "Value shown when no insulin cartridge is inserted in the pump.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "4eeb04000a7cef66",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 365
+        }
+      ]
+    },
+    {
+      "key": "not_paired",
+      "ui_location": "Accu-Chek Insight overview > status",
+      "kind": "status",
+      "description": "Connection status shown when no Insight pump is paired yet.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "598bbd71cee249b6",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 312
+        }
+      ]
+    },
+    {
+      "key": "operating_mode",
+      "ui_location": "Accu-Chek Insight overview > info table",
+      "kind": "label",
+      "description": "Row label for the pump's operating mode (started/stopped/paused).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "af9364f52d378ece",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 349
+        }
+      ]
+    },
+    {
+      "key": "pairing_completed",
+      "ui_location": "Insight pairing wizard > last step",
+      "kind": "status",
+      "description": "Success message once pairing with the pump finished.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "addb7c26fcf21b65",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightPairWizardScreen.kt",
+          "line": 232
+        }
+      ]
+    },
+    {
+      "key": "pump_alert",
+      "ui_location": "Android task switcher / activity title",
+      "kind": "title",
+      "description": "Label of the activity that shows a pump alert on screen. Short noun phrase.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "46a3cb9dba94cc14",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/AndroidManifest.xml",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "pump_started",
+      "ui_location": "Therapy event note (history)",
+      "kind": "log",
+      "description": "Note logged when the pump starts delivery again.",
+      "related_keys": [
+        "pump_stopped"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "03bb052866c7c611",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1266
+        }
+      ]
+    },
+    {
+      "key": "pump_stopped",
+      "ui_location": "Therapy event note and command error",
+      "kind": "log",
+      "description": "Short text 'pump stopped'. Logged as a note when the pump stops, and used as the error when a command fails because the pump is stopped.",
+      "related_keys": [
+        "pump_started"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "7484599452e2bb4d",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1271
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/ExceptionTranslator.kt",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "key": "recovering",
+      "ui_location": "Accu-Chek Insight overview > status",
+      "kind": "status",
+      "description": "Connection status while the driver tries to reconnect to the pump after the link dropped.",
+      "related_keys": [
+        "recovery_duration"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b356a172c006f5f4",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 315
+        }
+      ]
+    },
+    {
+      "key": "recovery_duration",
+      "ui_location": "Accu-Chek Insight overview > info table",
+      "kind": "label",
+      "description": "Row label for how long the driver has been trying to recover a lost connection.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "dcd583a37f036787",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 323
+        }
+      ]
+    },
+    {
+      "key": "release_software_version",
+      "ui_location": "Accu-Chek Insight overview > pump identity rows",
+      "kind": "label",
+      "description": "Row label for the pump's released firmware version.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d3a354a0c8f8568b",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 451
+        }
+      ]
+    },
+    {
+      "key": "reservoir_level",
+      "ui_location": "Accu-Chek Insight overview > info table",
+      "kind": "label",
+      "description": "Row label for the insulin remaining in the cartridge (reservoir).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d58712493dd9679d",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 366
+        }
+      ]
+    },
+    {
+      "key": "reset_pairing",
+      "ui_location": "Accu-Chek Insight overview > confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Confirmation dialog asking whether to delete the stored pairing information. A question.",
+      "related_keys": [
+        "unpair"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "60ccb28b1536d3e6",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 167
+        }
+      ]
+    },
+    {
+      "key": "searching_for_devices",
+      "ui_location": "Insight pairing wizard > step 1",
+      "kind": "status",
+      "description": "Progress text while the app scans for nearby Insight pumps over Bluetooth. Ends with an ellipsis.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a7f5768ed213d55a",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightPairWizardScreen.kt",
+          "line": 103
+        }
+      ]
+    },
+    {
+      "key": "start_pump",
+      "ui_location": "Command queue / pump action",
+      "kind": "other",
+      "description": "Name of the queued command that starts (resumes) insulin delivery on the pump. Shown in the queue status and as an action. Short imperative.",
+      "related_keys": [
+        "stop_pump"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "50c278e82dfe99a3",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandStartPump.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "started",
+      "ui_location": "Accu-Chek Insight overview > operating mode value",
+      "kind": "status",
+      "description": "Value of the 'Operating mode' row: pump is running/delivering insulin.",
+      "related_keys": [
+        "operating_mode",
+        "stopped"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3651c98414a82e90",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 345
+        }
+      ]
+    },
+    {
+      "key": "stop_pump",
+      "ui_location": "Command queue / pump action",
+      "kind": "other",
+      "description": "Name of the queued command that stops insulin delivery on the pump. Short imperative.",
+      "related_keys": [
+        "start_pump"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "788c17d7f04440bd",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandStopPump.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "stopped",
+      "ui_location": "Accu-Chek Insight overview > operating mode value",
+      "kind": "status",
+      "description": "Value of the 'Operating mode' row: pump is stopped and delivers no insulin.",
+      "related_keys": [
+        "operating_mode",
+        "started"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6dbd970f9cb35ee7",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 346
+        }
+      ]
+    },
+    {
+      "key": "tdd_basal",
+      "ui_location": "Accu-Chek Insight overview > info table",
+      "kind": "label",
+      "description": "Row label for today's total daily dose part delivered as basal. TDD = total daily dose of insulin.",
+      "related_keys": [
+        "tdd_bolus"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1df6e19738b978a8",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 371
+        }
+      ]
+    },
+    {
+      "key": "tdd_bolus",
+      "ui_location": "Accu-Chek Insight overview > info table",
+      "kind": "label",
+      "description": "Row label for today's total daily dose part delivered as bolus. TDD = total daily dose of insulin.",
+      "related_keys": [
+        "tdd_basal"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0005c752de357f07",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 370
+        }
+      ]
+    },
+    {
+      "key": "timeout_during_handshake",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Notification text shown when the Bluetooth handshake with the pump timed out; suggests resetting Bluetooth.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "60e1c1ae02d9a709",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1626
+        }
+      ]
+    },
+    {
+      "key": "tube_changed",
+      "ui_location": "Therapy event note (history)",
+      "kind": "log",
+      "description": "Note text logged when the pump reports a tube (cannula line) change/fill. Logged as a note event.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "def73f7c4f371274",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1230
+        }
+      ]
+    },
+    {
+      "key": "unpair",
+      "ui_location": "Accu-Chek Insight overview > pump action button",
+      "kind": "button",
+      "description": "Button that removes the pairing with the pump. Short imperative.",
+      "related_keys": [
+        "reset_pairing"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "66037487b28c46d0",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 507
+        }
+      ]
+    }
+  ]
+}

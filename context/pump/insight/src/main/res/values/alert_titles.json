@@ -1,0 +1,547 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/insight/src/main/res/values/alert_titles.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "alert_e10_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Error alert: rewind (piston reset) error. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_e10_code",
+        "alert_e10_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "68dc91edc142d4ed",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1461
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "key": "alert_e13_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Error alert: language error in the pump display. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_e13_code",
+        "alert_e13_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "8a6d4b50e2483dba",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1466
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "key": "alert_e6_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Error alert: mechanical error in the pump. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_e6_code",
+        "alert_e6_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "2fc0e18463ce5525",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1456
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "key": "alert_m20_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Maintenance alert: no cartridge in the pump. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_m20_code",
+        "alert_m20_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "544acd6db85c1f39",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1471
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "alert_m21_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Maintenance alert: cartridge empty. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_m21_code",
+        "alert_m21_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "9cffd5dc258d1dda",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1476
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 67
+        }
+      ]
+    },
+    {
+      "key": "alert_m22_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Maintenance alert: battery empty. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_m22_code",
+        "alert_m22_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "60daefc54f774d82",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1481
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "alert_m23_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Maintenance alert: pump stopped itself after its 'automatic off' time elapsed. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_m23_code",
+        "alert_m23_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "2f02c78c2b8e411c",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1486
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "key": "alert_m24_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Maintenance alert: occlusion, i.e. insulin delivery is blocked. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_m24_code",
+        "alert_m24_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "94d4a93b8a56a25b",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1491
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "alert_m25_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Maintenance alert: the loaned pump's loan time is over and operation ends. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_m25_code",
+        "alert_m25_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "77ed42ef3d635eb2",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1496
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "alert_m26_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Maintenance alert: the cartridge change was not completed. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_m26_code",
+        "alert_m26_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "b228ca90a49f1dbc",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1501
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "alert_m27_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Maintenance alert: downloading the pump's data failed. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_m27_code",
+        "alert_m27_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "7f06fab74b0793b5",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1506
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "key": "alert_m28_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Maintenance alert: the pump stayed in pause mode too long. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_m28_code",
+        "alert_m28_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "dc847b5e94be3a99",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1511
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 74
+        }
+      ]
+    },
+    {
+      "key": "alert_m29_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Maintenance alert: battery type not set. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_m29_code",
+        "alert_m29_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "b271ed46240504d7",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1516
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "alert_m30_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Maintenance alert: cartridge type not set. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_m30_code",
+        "alert_m30_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "cf415c629dddbc7b",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1521
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 76
+        }
+      ]
+    },
+    {
+      "key": "alert_r1_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Reminder to deliver a bolus (meal reminder set on the pump). Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_r1_code"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "f9a8f5df5046bb6c",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "key": "alert_r2_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Reminder that a bolus was missed. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_r2_code"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "65d4c09ad6e656dc",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "key": "alert_r3_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Alarm clock reminder set on the pump. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_r3_code"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "bce901d21d4002a8",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "alert_r4_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Reminder to change the infusion set. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_r4_code"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "b56bda58754f4e2b",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "alert_r7_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Reminder that a temporary basal rate (TBR) has finished. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_r7_code",
+        "alert_r7_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "ef3889b4f1725a81",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "key": "alert_w31_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Warning that the insulin cartridge is running low. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_w31_code",
+        "alert_w31_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "adee32392fd5d90f",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1526
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "alert_w32_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Warning that the pump battery is low. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_w32_code",
+        "alert_w32_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "2c90e10c6c19513a",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1531
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "alert_w33_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Warning that the pump time/date is invalid. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_w33_code",
+        "alert_w33_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "ef28ef11360bd9bd",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1536
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "alert_w34_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Warning that the pump warranty ends. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_w34_code",
+        "alert_w34_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "cd4d9e541c5b0a78",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1541
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "alert_w36_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Warning that a temporary basal rate (TBR) was cancelled. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_w36_code",
+        "alert_w36_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "c9cb5855a28eda9a",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "alert_w38_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Warning that a bolus was cancelled before completion. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_w38_code",
+        "alert_w38_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "f222bd5133fa4824",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "alert_w39_title",
+      "ui_location": "Accu-Chek Insight pump alert > title",
+      "kind": "title",
+      "description": "Warning about the pump's 'loan time' (loaned pump usage period) nearing its end. Short title shown with the alert code; also written into the therapy event notes as 'code: title'.",
+      "related_keys": [
+        "alert_w39_code"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "804b6a919c78b3db",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1546
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 65
+        }
+      ]
+    }
+  ]
+}

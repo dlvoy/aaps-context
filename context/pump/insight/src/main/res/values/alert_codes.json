@@ -1,0 +1,526 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/insight/src/main/res/values/alert_codes.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "alert_e10_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a error alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_e10_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "6b4fd8ae7d286427",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1460
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "key": "alert_e13_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a error alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_e13_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "ac7dbac5e70b733b",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1465
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "key": "alert_e6_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a error alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_e6_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "b0a31ed53baeae4e",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1455
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "key": "alert_m20_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a maintenance alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_m20_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "e535d20cd540301e",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1470
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "key": "alert_m21_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a maintenance alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_m21_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "55a3cb682e7c804e",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1475
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "alert_m22_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a maintenance alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_m22_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "116850cd4b7876f8",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1480
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "alert_m23_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a maintenance alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_m23_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "d59eaa9724477147",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1485
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "key": "alert_m24_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a maintenance alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_m24_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "9012638689d86609",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1490
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "key": "alert_m25_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a maintenance alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_m25_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "0bdf2daf32921a6b",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1495
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "alert_m26_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a maintenance alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_m26_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "04e3e89e4231e28c",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1500
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "alert_m27_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a maintenance alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_m27_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "cf953433dca44f85",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1505
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "alert_m28_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a maintenance alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_m28_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "50810add07bde4e0",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1510
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "alert_m29_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a maintenance alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_m29_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "9d24f44cfb44cdf7",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1515
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "key": "alert_m30_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a maintenance alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_m30_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "214872e7dcad5a91",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1520
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "key": "alert_r1_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a reminder alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_r1_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "6227781aa70c4265",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "alert_r2_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a reminder alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_r2_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "478cb816acc803e8",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "alert_r3_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a reminder alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_r3_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "34960f930f7ab38b",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "key": "alert_r4_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a reminder alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_r4_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "c531a744ca963499",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "alert_r7_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a reminder alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_r7_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "2857031e20b9ccf6",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "alert_w31_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a warning alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_w31_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "5922cc4f61dcc2c9",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1525
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "alert_w32_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a warning alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_w32_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "7110f0123465740b",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1530
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "alert_w33_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a warning alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_w33_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "c10a5a1fa06d5418",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1535
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "alert_w34_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a warning alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_w34_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "0176fab5bd9e6455",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1540
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "alert_w36_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a warning alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_w36_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "71bb19b59430b5f3",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "alert_w38_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a warning alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_w38_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "2c2897cf369744cc",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "alert_w39_code",
+      "ui_location": "Accu-Chek Insight pump alert > alert code",
+      "kind": "label",
+      "description": "Short alert code the Insight pump reports for a warning alert, shown before the alert title (e.g. 'Code: Title'). Keep the letter and number; translate only the word. The number is the pump's own code, so do not change it.",
+      "related_keys": [
+        "alert_w39_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "9d3df9c3fd4739c9",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
+          "line": 1545
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/AlertUtils.kt",
+          "line": 34
+        }
+      ]
+    }
+  ]
+}
