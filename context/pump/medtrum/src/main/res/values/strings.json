@@ -1,0 +1,2292 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/medtrum/src/main/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "activating_complete",
+      "ui_location": "Patch wizard > activation complete step",
+      "kind": "status",
+      "description": "Success message. %.2f is the remaining insulin in units.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "db2de9a57467c8a5",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/ActivateStep.kt",
+          "line": 129
+        }
+      ]
+    },
+    {
+      "key": "activating_pump",
+      "ui_location": "Patch wizard > activating step",
+      "kind": "status",
+      "description": "Shown while the pump is activated and the initial basal rate is set. Basal is the continuous background insulin.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a53848850a9f446f",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/ActivateStep.kt",
+          "line": 116
+        }
+      ]
+    },
+    {
+      "key": "activation_in_progress",
+      "ui_location": "Patch wizard > retry activation step",
+      "kind": "error",
+      "description": "Message that an activation is already in progress on the pump, shown as an unexpected-problem notice. Informal tone ('Oops').",
+      "related_keys": [
+        "press_retry_or_discard"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7953d6b86a19bcc3",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/RetryActivationStep.kt",
+          "line": 129
+        }
+      ]
+    },
+    {
+      "key": "active_alarms_label",
+      "ui_location": "Medtrum overview > info row label",
+      "kind": "label",
+      "description": "Label of an info row listing the currently active pump alarms. Short noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d3ab81577234a882",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 276
+        }
+      ]
+    },
+    {
+      "key": "active_bolus_label",
+      "ui_location": "Medtrum overview > info row label",
+      "kind": "label",
+      "description": "Label of an info row that shows the bolus currently being delivered. Short noun phrase; the value is on the right.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "58b09593f6cd4e9e",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 270
+        }
+      ]
+    },
+    {
+      "key": "alarm_auto_suspended",
+      "ui_location": "Overview > Pump state / Active alarms",
+      "kind": "status",
+      "description": "Pump state: delivery suspended automatically by the pump (not by the user). Short status label.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "08ef29dc3620940b",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 621
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "alarm_base_fault",
+      "ui_location": "Overview > Pump state / Active alarms",
+      "kind": "status",
+      "description": "Alarm name: fault of the pump base (the reusable part holding battery and electronics).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4c11b3943f57b3ab",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 631
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "alarm_battery_out",
+      "ui_location": "Overview > Pump state / Active alarms",
+      "kind": "status",
+      "description": "Alarm name: the pump battery is empty.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f0cecf81ecdcab31",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 632
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "alarm_daily_max_suspended",
+      "ui_location": "Overview > Pump state / Active alarms",
+      "kind": "status",
+      "description": "Pump state: suspended because the daily maximum insulin was exceeded. Status label.",
+      "related_keys": [
+        "daily_max_insulin_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "839a7128adde5b83",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 623
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "alarm_expired",
+      "ui_location": "Overview > Pump state / Active alarms",
+      "kind": "status",
+      "description": "Pump state: the patch lifetime has ended. Single word.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6a2c872cab7dfef4",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 627
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "alarm_hourly_max_suspended",
+      "ui_location": "Overview > Pump state / Active alarms",
+      "kind": "status",
+      "description": "Pump state: suspended because the hourly maximum insulin was exceeded. Lowercase start in English; it is a status label, shown standalone or inside a sentence.",
+      "related_keys": [
+        "hourly_max_insulin_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "20879e3d6e404f29",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 622
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "alarm_low_bg_suspended",
+      "ui_location": "Overview > Pump state / Active alarms",
+      "kind": "status",
+      "description": "Pump state: delivery suspended by the pump because of low glucose. Short status label. 'BG' is blood glucose.",
+      "related_keys": [
+        "alarm_low_bg_suspended2"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "86b7bc1f08e649e7",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 619
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "alarm_low_bg_suspended2",
+      "ui_location": "Overview > Pump state / Active alarms",
+      "kind": "status",
+      "description": "Second variant of the low glucose suspend state reported by the pump; the '2' distinguishes it from the first. Keep the distinguishing number.",
+      "related_keys": [
+        "alarm_low_bg_suspended"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "bac1683ba9b22aa7",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 620
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "alarm_no_calibration",
+      "ui_location": "Overview > Pump state / Active alarms",
+      "kind": "status",
+      "description": "Alarm name: the pump has no factory calibration data. Technical state shown rarely.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "3557bc9817de54ae",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 633
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "alarm_none",
+      "ui_location": "Medtrum overview > Pump state / Active alarms value",
+      "kind": "status",
+      "description": "Shown when the pump has no active alarm. Also the label of the 'none' pump state. Single word.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "12a6909ac97c3cf7",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 615
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 7
+        }
+      ]
+    },
+    {
+      "key": "alarm_occlusion",
+      "ui_location": "Overview > Pump state / Active alarms; urgent notification",
+      "kind": "status",
+      "description": "Alarm name: the insulin delivery path is blocked (occlusion). Medical term; keep it recognisable.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f2269d94454083af",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 626
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "alarm_patch_fault",
+      "ui_location": "Overview > Pump state / Active alarms",
+      "kind": "status",
+      "description": "Alarm name: hardware fault of the patch. Also used for a second fault code the Medtrum app also shows as plain Patch fault.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "871a6be81f13b714",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 629
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 630
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 26
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "alarm_paused",
+      "ui_location": "Overview > Pump state / Active alarms",
+      "kind": "status",
+      "description": "Pump state: pump paused. Single word status.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c96c6d6a12b0cf6f",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 625
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "alarm_pump_expires_soon",
+      "ui_location": "Notification; Active alarms value",
+      "kind": "status",
+      "description": "Alarm name and notification text: the patch will expire soon. Short fragment.",
+      "related_keys": [
+        "pump_warning_expiry_hour_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "889d25365cdeed26",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 618
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 814
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 818
+        }
+      ]
+    },
+    {
+      "key": "alarm_pump_low_battery",
+      "ui_location": "Notification; Active alarms value",
+      "kind": "status",
+      "description": "Alarm name: the pump battery is low. Inserted into 'Pump warning: %1$s'. Short fragment.",
+      "related_keys": [
+        "pump_warning"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2d1d27a02ed2624d",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 616
+        }
+      ]
+    },
+    {
+      "key": "alarm_pump_low_reservoir",
+      "ui_location": "Notification; Active alarms value",
+      "kind": "status",
+      "description": "Alarm name: insulin reservoir of the pump is running low (about 20 units). Short fragment inserted into a warning sentence.",
+      "related_keys": [
+        "pump_warning"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ec0e3ae6034864bd",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 617
+        }
+      ]
+    },
+    {
+      "key": "alarm_reservoir_empty",
+      "ui_location": "Overview > Pump state / Active alarms",
+      "kind": "status",
+      "description": "Alarm name: the insulin reservoir in the patch is empty.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e0c884006b910f8e",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 628
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "key": "alarm_setting_beep",
+      "ui_location": "Preferences > Medtrum pump settings > Alarm settings > option",
+      "kind": "label",
+      "description": "Option in the list of how the pump signals alarms: sound only. Light is the pump's LED; beep is an audible tone.",
+      "related_keys": [
+        "alarm_setting_title"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "86560ca89a471d06",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPlugin.kt",
+          "line": 471
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPlugin.kt",
+          "line": 482
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumStringKey.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "alarm_setting_light",
+      "ui_location": "Preferences > Medtrum pump settings > Alarm settings > option",
+      "kind": "label",
+      "description": "Option in the list of how the pump signals alarms: light only. Light is the pump's LED; beep is an audible tone.",
+      "related_keys": [
+        "alarm_setting_title"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "dab182a8cd2e5810",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPlugin.kt",
+          "line": 479
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumStringKey.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "alarm_setting_light_beep",
+      "ui_location": "Preferences > Medtrum pump settings > Alarm settings > option",
+      "kind": "label",
+      "description": "Option in the list of how the pump signals alarms: light and sound. Light is the pump's LED; beep is an audible tone.",
+      "related_keys": [
+        "alarm_setting_title"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "a93090ecf817f15f",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPlugin.kt",
+          "line": 478
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumStringKey.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "alarm_setting_light_vibrate",
+      "ui_location": "Preferences > Medtrum pump settings > Alarm settings > option",
+      "kind": "label",
+      "description": "Option in the list of how the pump signals alarms: light and vibration. Light is the pump's LED; beep is an audible tone.",
+      "related_keys": [
+        "alarm_setting_title"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "707a09b8bb7ac963",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPlugin.kt",
+          "line": 477
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumStringKey.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "alarm_setting_light_vibrate_beep",
+      "ui_location": "Preferences > Medtrum pump settings > Alarm settings > option",
+      "kind": "label",
+      "description": "Option in the list of how the pump signals alarms: light, vibration and sound. Light is the pump's LED; beep is an audible tone.",
+      "related_keys": [
+        "alarm_setting_title"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "54596991871271ee",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPlugin.kt",
+          "line": 476
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumStringKey.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "alarm_setting_silent",
+      "ui_location": "Preferences > Medtrum pump settings > Alarm settings > option",
+      "kind": "label",
+      "description": "Option in the list of how the pump signals alarms: no signal. Light is the pump's LED; beep is an audible tone.",
+      "related_keys": [
+        "alarm_setting_title"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "bf64ba6d6af18f01",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPlugin.kt",
+          "line": 472
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPlugin.kt",
+          "line": 483
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumStringKey.kt",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "alarm_setting_summary",
+      "ui_location": "Preferences > Medtrum pump settings > Alarm settings",
+      "kind": "preference_summary",
+      "description": "Summary under the alarm settings preference.",
+      "related_keys": [
+        "alarm_setting_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c79ded8d6cb29835",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumStringKey.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "alarm_setting_title",
+      "ui_location": "Preferences > Medtrum pump settings > Alarm settings",
+      "kind": "preference_title",
+      "description": "Title of the preference for choosing how the pump alerts on alarms.",
+      "related_keys": [
+        "alarm_setting_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "857fca5cd0abcdc2",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumStringKey.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "alarm_setting_vibrate",
+      "ui_location": "Preferences > Medtrum pump settings > Alarm settings > option",
+      "kind": "label",
+      "description": "Option in the list of how the pump signals alarms: vibration only. Light is the pump's LED; beep is an audible tone.",
+      "related_keys": [
+        "alarm_setting_title"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "41be3cbf74707658",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPlugin.kt",
+          "line": 481
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumStringKey.kt",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "key": "alarm_setting_vibrate_beep",
+      "ui_location": "Preferences > Medtrum pump settings > Alarm settings > option",
+      "kind": "label",
+      "description": "Option in the list of how the pump signals alarms: vibration and sound. Light is the pump's LED; beep is an audible tone.",
+      "related_keys": [
+        "alarm_setting_title"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "03883c33045561f6",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPlugin.kt",
+          "line": 480
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumStringKey.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "alarm_suspended",
+      "ui_location": "Overview > Pump state / Active alarms",
+      "kind": "status",
+      "description": "Pump state: insulin delivery is suspended. Single word status.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f66dea02ed7d1aca",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPump.kt",
+          "line": 624
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "basal_type_label",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "ble_scan_connect_pump_base_first",
+      "ui_location": "Patch wizard > scan step subtitle",
+      "kind": "dialog_text",
+      "description": "Instruction above the list of nearby pumps: attach the pump base to a fresh patch so it powers on, then pick it. Bluetooth scan screen.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7fa459dec13110d4",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/BleScanStepWrapper.kt",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "key": "bolus_error",
+      "ui_location": "Internal reason passed to pump status read",
+      "kind": "log",
+      "description": "Reason text recorded when a status read follows a failed bolus to see whether insulin was delivered. Appears in logs, not shown on a screen.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "3a3b20ac219ce790",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 391
+        }
+      ]
+    },
+    {
+      "key": "bolus_error_reason_already_in_progress",
+      "ui_location": "Bolus result comment",
+      "kind": "error",
+      "description": "Reason: a bolus is already being delivered.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "40572a0122958d5f",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 459
+        }
+      ]
+    },
+    {
+      "key": "bolus_error_reason_communication_lost",
+      "ui_location": "Bolus result comment",
+      "kind": "error",
+      "description": "Reason: no bolus status answer from the pump in time.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "233f8a7090eaa64e",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 498
+        }
+      ]
+    },
+    {
+      "key": "bolus_error_reason_not_connected",
+      "ui_location": "Bolus result comment",
+      "kind": "error",
+      "description": "Reason: bolus failed because the pump is not connected.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "63c97cf1f622ef33",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 449
+        }
+      ]
+    },
+    {
+      "key": "bolus_error_reason_pump_error",
+      "ui_location": "Bolus result comment",
+      "kind": "error",
+      "description": "Generic fallback reason when the pump reports an error during a bolus.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "78912377c8e6bdaf",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPlugin.kt",
+          "line": 296
+        }
+      ]
+    },
+    {
+      "key": "bolus_error_reason_unable_to_send_command",
+      "ui_location": "Bolus result comment",
+      "kind": "error",
+      "description": "Reason: the bolus command could not be sent to the pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c0cad11b6879c3d0",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 388
+        }
+      ]
+    },
+    {
+      "key": "bolus_error_reason_user",
+      "ui_location": "Bolus result comment",
+      "kind": "error",
+      "description": "Reason text: the user cancelled the bolus. Appears in the bolus result and treatment records.",
+      "related_keys": [
+        "bolus_error_reason_pump_error"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c8ed64ece02ca24f",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 454
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 529
+        }
+      ]
+    },
+    {
+      "key": "can_export_settings",
+      "ui_location": "Patch wizard > activation complete step",
+      "kind": "dialog_text",
+      "description": "Hint that settings can be exported to recover this patch session later.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "955bbea62c2bb2e5",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/ActivateStep.kt",
+          "line": 134
+        }
+      ]
+    },
+    {
+      "key": "cancel_sure",
+      "ui_location": "Patch wizard > cancel dialog text",
+      "kind": "dialog_text",
+      "description": "Question in the cancel dialog asking whether to abort the activation.",
+      "related_keys": [
+        "change_patch_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0fb7b289a1fa8924",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchScreen.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "change_patch_label",
+      "ui_location": "Medtrum overview > action button; patch wizard cancel dialog title",
+      "kind": "button",
+      "description": "Button that starts the patch change wizard, and title of the dialog asking to cancel the wizard. Short imperative.",
+      "related_keys": [
+        "cancel_sure"
+      ],
+      "confidence": 0.85,
+      "usages_hash": "7b747075e57a2dec",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 325
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchScreen.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "connect_pump_base",
+      "ui_location": "Patch wizard > connect and fill step",
+      "kind": "dialog_text",
+      "description": "Instruction: connect the pump base to the patch, remove air, fill with insulin, then tap Next. <b>Next</b> must match the Next button.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6714505e85a7018f",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/PrepareStep.kt",
+          "line": 145
+        }
+      ]
+    },
+    {
+      "key": "daily_max_insulin_summary",
+      "ui_location": "Preferences > Medtrum pump settings",
+      "kind": "preference_summary",
+      "description": "Summary: pump suspends if daily insulin exceeds the value.",
+      "related_keys": [
+        "daily_max_insulin_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "05c247c12e4ef9f9",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumIntKey.kt",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "key": "daily_max_insulin_title",
+      "ui_location": "Preferences > Medtrum pump settings",
+      "kind": "preference_title",
+      "description": "Title of a number setting for the daily insulin limit. [Units] is the insulin unit.",
+      "related_keys": [
+        "daily_max_insulin_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3d22d6fa4e5c70bf",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumIntKey.kt",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "key": "deactivate_sure",
+      "ui_location": "Deactivation wizard > confirm step",
+      "kind": "dialog_text",
+      "description": "Question confirming the user really wants to deactivate the current patch.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "76f9939d40597b2c",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/DeactivateSteps.kt",
+          "line": 94
+        }
+      ]
+    },
+    {
+      "key": "deactivating_error",
+      "ui_location": "Deactivation wizard > error banner",
+      "kind": "error",
+      "description": "Error: deactivation failed; tap Discard to forget the patch. <b>Discard</b> matches the button.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "10617514683ab0f4",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/DeactivateSteps.kt",
+          "line": 171
+        }
+      ]
+    },
+    {
+      "key": "deactivating_pump",
+      "ui_location": "Deactivation wizard > running step",
+      "kind": "status",
+      "description": "Shown while the patch is deactivated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a344f1a39ad8d4af",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/DeactivateSteps.kt",
+          "line": 174
+        }
+      ]
+    },
+    {
+      "key": "do_not_attach_to_body",
+      "ui_location": "Patch wizard > connect and prime steps",
+      "kind": "dialog_text",
+      "description": "Warning not to put the patch on the skin yet.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "48c2953c854fa631",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/PrepareStep.kt",
+          "line": 164
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/PrimeStep.kt",
+          "line": 144
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/PrimeStep.kt",
+          "line": 164
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/PrimeStep.kt",
+          "line": 184
+        }
+      ]
+    },
+    {
+      "key": "expiry_not_enabled",
+      "ui_location": "Medtrum overview > Patch expires row value",
+      "kind": "status",
+      "description": "Value shown in place of the expiry time when patch expiration is switched off in preferences. Short.",
+      "related_keys": [
+        "patch_expiration_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1efe9a242ec2612e",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 390
+        }
+      ]
+    },
+    {
+      "key": "fw_version_label",
+      "ui_location": "Medtrum overview > info row label",
+      "kind": "label",
+      "description": "Label of an info row showing the pump firmware version. FW is an abbreviation for firmware; keep it short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "013f11cddaee2aac",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 282
+        }
+      ]
+    },
+    {
+      "key": "getting_bolus_status",
+      "ui_location": "Overview > pump status line",
+      "kind": "status",
+      "description": "Status while reading the progress of a bolus.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1b57c2ec630f1a84",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 523
+        }
+      ]
+    },
+    {
+      "key": "getting_pump_status",
+      "ui_location": "Overview > pump status line",
+      "kind": "status",
+      "description": "Short status while reading pump status. Shown on a limited-width status line.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "5974e99232f846ef",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 279
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 332
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 342
+        }
+      ]
+    },
+    {
+      "key": "getting_temp_basal_status",
+      "ui_location": "Overview > pump status line",
+      "kind": "status",
+      "description": "Status while reading or changing the temporary basal rate.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9b094a36f3da0b57",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 555
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 568
+        }
+      ]
+    },
+    {
+      "key": "half_press_needle",
+      "ui_location": "Patch wizard > prime step",
+      "kind": "dialog_text",
+      "description": "Instruction to half-press the needle button on the patch, then tap Next to start priming. <b>Next</b> matches the button.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e486d8cf6f26369b",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/PrimeStep.kt",
+          "line": 139
+        }
+      ]
+    },
+    {
+      "key": "hourly_max_insulin_summary",
+      "ui_location": "Preferences > Medtrum pump settings",
+      "kind": "preference_summary",
+      "description": "Summary: pump suspends if insulin per hour exceeds the value.",
+      "related_keys": [
+        "hourly_max_insulin_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5e46f8d59eab18ec",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumIntKey.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "hourly_max_insulin_title",
+      "ui_location": "Preferences > Medtrum pump settings",
+      "kind": "preference_title",
+      "description": "Title of a number setting for the hourly insulin limit. [Units] is the insulin unit.",
+      "related_keys": [
+        "hourly_max_insulin_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "470a5a574e7b0ae0",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumIntKey.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "medtrum",
+      "ui_location": "Config builder > Pump > Medtrum; Medtrum screen title",
+      "kind": "title",
+      "description": "Product name of the Medtrum pump plugin, used as the plugin name in the pump list and as the heading of the Medtrum screen. Brand name; normally not translated.",
+      "related_keys": [
+        "medtrum_pump_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d945ba62403dc9f9",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPlugin.kt",
+          "line": 98
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPlugin.kt",
+          "line": 102
+        }
+      ]
+    },
+    {
+      "key": "medtrum_deactivate_pump_confirm",
+      "ui_location": "Deactivation and retry dialogs",
+      "kind": "dialog_text",
+      "description": "Warning that deactivation cannot be undone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0df24c69f51a01d4",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/DeactivateSteps.kt",
+          "line": 63
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/RetryActivationStep.kt",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "key": "medtrum_pump_description",
+      "ui_location": "Config builder > Pump > Medtrum > plugin description",
+      "kind": "summary",
+      "description": "One-line description of the Medtrum pump plugin under its name in the plugin list. Medtrum Nano and 300U are product models.",
+      "related_keys": [
+        "medtrum"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9e6ff7044952a50a",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPlugin.kt",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "key": "medtrum_pump_setting",
+      "ui_location": "Preferences > Pump > Medtrum pump settings",
+      "kind": "preference_title",
+      "description": "Title of the preference group holding the Medtrum settings (alarms, warnings, insulin limits). A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4b5627232d9f6e1c",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPlugin.kt",
+          "line": 422
+        }
+      ]
+    },
+    {
+      "key": "note_min_70_units",
+      "ui_location": "Patch wizard > connect and fill step",
+      "kind": "dialog_text",
+      "description": "Note that at least 70 units of insulin are needed to activate the patch.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2c2968f8043daf84",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/PrepareStep.kt",
+          "line": 150
+        }
+      ]
+    },
+    {
+      "key": "patch_activation_time_label",
+      "ui_location": "Medtrum overview > info row label",
+      "kind": "label",
+      "description": "Label of an info row showing when and how long ago the patch was activated. Single word or short noun.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4439776e989aced4",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 291
+        }
+      ]
+    },
+    {
+      "key": "patch_begin_activation",
+      "ui_location": "Patch wizard > first step",
+      "kind": "dialog_text",
+      "description": "Instruction: no patch active; tap Next to start activation. The <b> tags mark the button name; keep it matching the translated Next button.",
+      "related_keys": [
+        "press_next"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "149d9296612da82d",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/PrepareStep.kt",
+          "line": 136
+        }
+      ]
+    },
+    {
+      "key": "patch_expiration_summary",
+      "ui_location": "Preferences > Medtrum pump settings",
+      "kind": "preference_summary",
+      "description": "Summary: when enabled the patch expires after 3 days with an 8-hour grace period.",
+      "related_keys": [
+        "patch_expiration_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "587a25cda2396992",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumBooleanKey.kt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "patch_expiration_title",
+      "ui_location": "Preferences > Medtrum pump settings",
+      "kind": "preference_title",
+      "description": "Title of a switch for patch expiration (patch lifetime enforcement).",
+      "related_keys": [
+        "patch_expiration_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "09a64be87311377c",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumBooleanKey.kt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "patch_expiry_label",
+      "ui_location": "Medtrum overview > info row label",
+      "kind": "label",
+      "description": "Label of an info row showing when the current patch expires. Value is a date and time or a remaining time.",
+      "related_keys": [
+        "expiry_not_enabled"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e0f5292e7a4c2be4",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 296
+        }
+      ]
+    },
+    {
+      "key": "patch_no_label",
+      "ui_location": "Medtrum overview > info row label",
+      "kind": "label",
+      "description": "Label of an info row showing the patch identifier number. Short; 'no' means number.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ad969a059517f673",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 285
+        }
+      ]
+    },
+    {
+      "key": "patch_not_active",
+      "ui_location": "Medtrum overview > status banner; notification",
+      "kind": "status",
+      "description": "Shown when no patch pump is currently activated (patch stopped or none paired). 'Patch' is the disposable pump body worn on the skin.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4bb4c52aeec9f4f6",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 365
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 665
+        }
+      ]
+    },
+    {
+      "key": "patch_reset_after_primed_error",
+      "ui_location": "Notification > urgent; announcement in careportal log",
+      "kind": "error",
+      "description": "Error saying the patch restarted by itself after priming and lost its session, so it cannot deliver insulin. Tells the user to remove it and start a new one. Whole sentences.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9e7d4b296e248bae",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 685
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 694
+        }
+      ]
+    },
+    {
+      "key": "press_OK_to_return",
+      "ui_location": "Patch wizard > final steps",
+      "kind": "dialog_text",
+      "description": "Instruction to tap OK to go back to the main screen. <b>OK</b> matches the OK button.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fd93a7be0f7363d0",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/ActivateStep.kt",
+          "line": 140
+        }
+      ]
+    },
+    {
+      "key": "press_next",
+      "ui_location": "Patch wizard > priming complete step",
+      "kind": "dialog_text",
+      "description": "Generic instruction to tap Next to continue. <b>Next</b> matches the button name.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a56ebe145338fccf",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/PrimeStep.kt",
+          "line": 179
+        }
+      ]
+    },
+    {
+      "key": "press_next_or_OK",
+      "ui_location": "Deactivation wizard > complete step",
+      "kind": "dialog_text",
+      "description": "Instruction: OK returns to the main screen; Next starts activating a new patch. <b> names match buttons.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "240c2cbb8423647c",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/DeactivateSteps.kt",
+          "line": 226
+        }
+      ]
+    },
+    {
+      "key": "press_next_or_cancel",
+      "ui_location": "Deactivation wizard > confirm step",
+      "kind": "dialog_text",
+      "description": "Instruction: tap Next to deactivate or Cancel to return. <b>Next</b>/<b>Cancel</b> match the buttons.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8e8f2e9cd94a15e9",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/DeactivateSteps.kt",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "key": "press_next_to_start_activation",
+      "ui_location": "Patch wizard > attach step",
+      "kind": "dialog_text",
+      "description": "Instruction to tap Next to begin activation after attaching the patch. <b>Next</b> matches the button.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "859ea25fd6d32154",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/AttachStep.kt",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "key": "press_retry_or_discard",
+      "ui_location": "Patch wizard > retry activation step",
+      "kind": "dialog_text",
+      "description": "Choices: Next resumes the activation, Discard resets its status. <b> names match buttons.",
+      "related_keys": [
+        "activation_in_progress"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "47db2427ad7e08ce",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/RetryActivationStep.kt",
+          "line": 134
+        }
+      ]
+    },
+    {
+      "key": "pump_error",
+      "ui_location": "Notification > urgent pump error (with alarm sound)",
+      "kind": "notification",
+      "description": "Urgent notification when the pump reports an error state. %1$s is the alarm name, e.g. Occlusion or Patch fault. The trailing exclamation marks are intentional emphasis.",
+      "related_keys": [
+        "pump_warning"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "47075b6580dbb5ea",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 762
+        }
+      ]
+    },
+    {
+      "key": "pump_is_suspended",
+      "ui_location": "Medtrum overview > status banner; notification",
+      "kind": "status",
+      "description": "Shown when the pump has suspended insulin delivery by itself. Short sentence, used as warning banner and notification text.",
+      "related_keys": [
+        "pump_is_suspended_hour_max",
+        "pump_is_suspended_day_max"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7527863f09f7fd64",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 360
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 724
+        }
+      ]
+    },
+    {
+      "key": "pump_is_suspended_day_max",
+      "ui_location": "Notification > urgent",
+      "kind": "notification",
+      "description": "Urgent notification: the pump stopped delivering because the configured daily insulin maximum was exceeded.",
+      "related_keys": [
+        "daily_max_insulin_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "14491bba99bcc367",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 742
+        }
+      ]
+    },
+    {
+      "key": "pump_is_suspended_hour_max",
+      "ui_location": "Notification > urgent",
+      "kind": "notification",
+      "description": "Urgent notification: the pump stopped delivering because the configured hourly insulin maximum was exceeded.",
+      "related_keys": [
+        "hourly_max_insulin_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1ad0a56549c946de",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 732
+        }
+      ]
+    },
+    {
+      "key": "pump_setting_failed",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Notification when sending the user settings (alarm mode, limits) to the pump failed after connecting.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "890631218faddad5",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 154
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 163
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 172
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 181
+        }
+      ]
+    },
+    {
+      "key": "pump_state_label",
+      "ui_location": "Medtrum overview > info row label",
+      "kind": "label",
+      "description": "Label of an info row showing the pump's current state (e.g. Active, Priming). Short noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "43919cf05e9c951e",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 259
+        }
+      ]
+    },
+    {
+      "key": "pump_sync_error",
+      "ui_location": "Notification > urgent",
+      "kind": "notification",
+      "description": "Urgent notification after a history record from the pump could not be synced and was skipped. Tells the user to check the Treatments tab for the bolus, snooze, and replace the patch or pump base if it recurs. 'Pump base' is the reusable part of the pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "14e955415a1c8b95",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 608
+        }
+      ]
+    },
+    {
+      "key": "pump_time_update_failed",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Notification when updating the pump's time zone failed. Tells the user to snooze and refresh manually.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "01722a79ae05f743",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 309
+        }
+      ]
+    },
+    {
+      "key": "pump_type_label",
+      "ui_location": "Medtrum overview > info row label",
+      "kind": "label",
+      "description": "Label of an info row showing the pump model (Nano, 300U).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3abaebb05efbc760",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 279
+        }
+      ]
+    },
+    {
+      "key": "pump_warning",
+      "ui_location": "Notification > pump warning",
+      "kind": "notification",
+      "description": "Notification for a non-critical pump warning such as low battery, low reservoir or expiring soon. %1$s is the warning name.",
+      "related_keys": [
+        "pump_error",
+        "pump_warning_notification_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b4a979da3f0b36da",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 794
+        }
+      ]
+    },
+    {
+      "key": "pump_warning_expiry_hour_summary",
+      "ui_location": "Preferences > Medtrum pump settings",
+      "kind": "preference_summary",
+      "description": "Summary: notification is shown at the chosen hour after activation.",
+      "related_keys": [
+        "pump_warning_expiry_hour_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e406adaa4a937e55",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumIntKey.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "pump_warning_expiry_hour_title",
+      "ui_location": "Preferences > Medtrum pump settings",
+      "kind": "preference_title",
+      "description": "Title of a number setting: hours after activation at which to warn about expiry. [hours] is the unit.",
+      "related_keys": [
+        "pump_warning_expiry_hour_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f6c2676d2d0e1d3a",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumIntKey.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "pump_warning_notification_summary",
+      "ui_location": "Preferences > Medtrum pump settings",
+      "kind": "preference_summary",
+      "description": "Explains the switch: notifications for low battery, low reservoir (20 units) and expires soon; recommended when pump alarms are off.",
+      "related_keys": [
+        "pump_warning_notification_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "599fddb7ec70512b",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumBooleanKey.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "pump_warning_notification_title",
+      "ui_location": "Preferences > Medtrum pump settings",
+      "kind": "preference_title",
+      "description": "Title of a switch that enables phone notifications for non-critical pump warnings.",
+      "related_keys": [
+        "pump_warning_notification_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8239423cf9515128",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumBooleanKey.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "reading_activation_status",
+      "ui_location": "Patch wizard > retry activation step",
+      "kind": "status",
+      "description": "Shown while the activation status is read from the pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3e9f135f1ba9f3f3",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/RetryActivationStep.kt",
+          "line": 118
+        }
+      ]
+    },
+    {
+      "key": "remove_base_discard_patch",
+      "ui_location": "Deactivation wizard > complete step",
+      "kind": "dialog_text",
+      "description": "Instruction to remove the reusable pump base and dispose of the used patch.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e98088a6f4542f1a",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/DeactivateSteps.kt",
+          "line": 221
+        }
+      ]
+    },
+    {
+      "key": "remove_safety_lock",
+      "ui_location": "Patch wizard > attach step",
+      "kind": "dialog_text",
+      "description": "Physical steps: remove the safety lock, attach the pump to the body, press the needle button. Sentences in order.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fab795f01f21ba7a",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/AttachStep.kt",
+          "line": 74
+        }
+      ]
+    },
+    {
+      "key": "requested_by_user",
+      "ui_location": "Internal reason passed to pump status read",
+      "kind": "log",
+      "description": "Reason text recorded when the user taps refresh on the Medtrum overview and the status is read from the pump. Appears in the log, not the UI.",
+      "related_keys": [],
+      "confidence": 0.75,
+      "usages_hash": "9810695bc7b2b098",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 137
+        }
+      ]
+    },
+    {
+      "key": "reservoir_text_and_level",
+      "ui_location": "Patch wizard > connect and fill step",
+      "kind": "status",
+      "description": "Shows the reservoir fill level. %.2f is the number of insulin units; U is the unit abbreviation.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "276d9d2e1e5b8a07",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/PrepareStep.kt",
+          "line": 157
+        }
+      ]
+    },
+    {
+      "key": "reset_alarms_label",
+      "ui_location": "Medtrum overview > action button",
+      "kind": "button",
+      "description": "Button that clears the pump's active alarms. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d86b08a1c43a9eb2",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 310
+        }
+      ]
+    },
+    {
+      "key": "retract_needle",
+      "ui_location": "Deactivation wizard > complete step",
+      "kind": "dialog_text",
+      "description": "Physical instruction: retract the needle and remove the patch from the body.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "32f60798b665e95c",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/DeactivateSteps.kt",
+          "line": 216
+        }
+      ]
+    },
+    {
+      "key": "retry",
+      "ui_location": "Not used by Medtrum (the screen uses the core retry string)",
+      "kind": "button",
+      "description": "Short imperative for repeating a failed step. No Medtrum code reads this key; the Medtrum wizard uses the shared core Retry string instead.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "fc4dcc978a0d6f6f",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardScreen.kt",
+          "line": 349
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmManager.kt",
+          "line": 161
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 184
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStep.kt",
+          "line": 62
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStep.kt",
+          "line": 75
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SafetyCheckStep.kt",
+          "line": 57
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/PasswordStep.kt",
+          "line": 118
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/PrepareStep.kt",
+          "line": 126
+        },
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/ui/wizard/compose/steps/ActionStep.kt",
+          "line": 105
+        }
+      ]
+    },
+    {
+      "key": "scan_on_connection_error_summary",
+      "ui_location": "Preferences > Medtrum pump settings",
+      "kind": "preference_summary",
+      "description": "Warning-style summary: enable only with connection problems; the driver rescans before reconnecting. Keep the WARNING prefix.",
+      "related_keys": [
+        "scan_on_connection_error_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b268fa9833131763",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumBooleanKey.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "scan_on_connection_error_title",
+      "ui_location": "Preferences > Medtrum pump settings",
+      "kind": "preference_title",
+      "description": "Title of a switch to rescan for the pump after a connection error.",
+      "related_keys": [
+        "scan_on_connection_error_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "4754a6e94c3c203e",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/keys/MedtrumBooleanKey.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "setting_pump_settings",
+      "ui_location": "Overview > pump status line",
+      "kind": "status",
+      "description": "Status while sending user options to the pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "20962d6fdbe62e56",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 370
+        }
+      ]
+    },
+    {
+      "key": "status_active",
+      "ui_location": "Medtrum overview > Pump state value",
+      "kind": "status",
+      "description": "Pump state: patch is active and delivering. Single word status label.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "4e732f9fef15a487",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 14
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "status_ejected",
+      "ui_location": "Medtrum overview > Pump state value",
+      "kind": "status",
+      "description": "Pump state: patch has been ejected. Single word status label.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "1257aeef223e4ba8",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "key": "status_ejecting",
+      "ui_location": "Medtrum overview > Pump state value",
+      "kind": "status",
+      "description": "Pump state: patch is ejecting; ongoing action. Single word status label.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "25b5cdd23a1cfc2a",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "key": "status_filled",
+      "ui_location": "Medtrum overview > Pump state value",
+      "kind": "status",
+      "description": "Pump state: patch has been filled with insulin. Single word status label.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "4649298bfee5252e",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "key": "status_idle",
+      "ui_location": "Medtrum overview > Pump state value",
+      "kind": "status",
+      "description": "Pump state: patch is idle, before being filled. Single word status label.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "53f21709990d0c09",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 8
+        }
+      ]
+    },
+    {
+      "key": "status_primed",
+      "ui_location": "Medtrum overview > Pump state value",
+      "kind": "status",
+      "description": "Pump state: priming has finished. Single word status label.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "f775f8175ca4f45a",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "key": "status_priming",
+      "ui_location": "Medtrum overview > Pump state value",
+      "kind": "status",
+      "description": "Pump state: patch is priming (filling the tubing with insulin); ongoing action. Single word status label.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "35855c9b95ede515",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "key": "status_stopped",
+      "ui_location": "Medtrum overview > Pump state value",
+      "kind": "status",
+      "description": "Pump state: patch has stopped delivering. Single word status label.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "62a32bcbde1c6349",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/comm/enums/MedtrumPumpState.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "step_activate",
+      "ui_location": "Patch wizard > title",
+      "kind": "title",
+      "description": "Wizard title while the patch is being activated; ongoing action ending in an ellipsis.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d17d750e153db249",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchViewModel.kt",
+          "line": 685
+        }
+      ]
+    },
+    {
+      "key": "step_activate_complete",
+      "ui_location": "Patch wizard > title",
+      "kind": "title",
+      "description": "Wizard title when activation has finished.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "68a4639accd653fd",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchViewModel.kt",
+          "line": 686
+        }
+      ]
+    },
+    {
+      "key": "step_attach",
+      "ui_location": "Patch wizard > title",
+      "kind": "title",
+      "description": "Wizard title: attach the patch to the body. Imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6aff6878e2627754",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchViewModel.kt",
+          "line": 684
+        }
+      ]
+    },
+    {
+      "key": "step_deactivate",
+      "ui_location": "Deactivation wizard > title",
+      "kind": "title",
+      "description": "Title of the confirm-deactivation step and wizard. Imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7a13499634b7585a",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchViewModel.kt",
+          "line": 688
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/DeactivateSteps.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "step_deactivate_complete",
+      "ui_location": "Deactivation wizard > title",
+      "kind": "title",
+      "description": "Title when deactivation has finished; patch no longer active.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "842cd1b8d9be1e9a",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchViewModel.kt",
+          "line": 690
+        }
+      ]
+    },
+    {
+      "key": "step_deactivating",
+      "ui_location": "Deactivation wizard > title",
+      "kind": "title",
+      "description": "Title while deactivation is running; ongoing action with ellipsis.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "61a9422bd31afd8b",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchViewModel.kt",
+          "line": 689
+        }
+      ]
+    },
+    {
+      "key": "step_prepare_patch",
+      "ui_location": "Patch wizard > title",
+      "kind": "title",
+      "description": "Title of the first wizard step for activating a new patch. Imperative or noun phrase; shown in the app bar.",
+      "related_keys": [
+        "step_prepare_patch_connect"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "566e61ee5c071fbe",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchViewModel.kt",
+          "line": 101
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchViewModel.kt",
+          "line": 364
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchViewModel.kt",
+          "line": 678
+        }
+      ]
+    },
+    {
+      "key": "step_prepare_patch_connect",
+      "ui_location": "Patch wizard > title",
+      "kind": "title",
+      "description": "Wizard title: connect to the pump base and fill the patch with insulin.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5aaeeebdfbf63770",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchViewModel.kt",
+          "line": 679
+        }
+      ]
+    },
+    {
+      "key": "step_prime",
+      "ui_location": "Patch wizard > title",
+      "kind": "title",
+      "description": "Wizard title for the step before priming; imperative. Prime means fill the tubing with insulin.",
+      "related_keys": [
+        "step_priming"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a7de97eeb38ae266",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchViewModel.kt",
+          "line": 681
+        }
+      ]
+    },
+    {
+      "key": "step_priming",
+      "ui_location": "Patch wizard > title",
+      "kind": "title",
+      "description": "Wizard title while priming is running.",
+      "related_keys": [
+        "step_prime"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b5d1cfee3f0cc0e2",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchViewModel.kt",
+          "line": 682
+        }
+      ]
+    },
+    {
+      "key": "step_priming_complete",
+      "ui_location": "Patch wizard > title",
+      "kind": "title",
+      "description": "Wizard title when priming has finished.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3605e079a24b4367",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchViewModel.kt",
+          "line": 683
+        }
+      ]
+    },
+    {
+      "key": "step_retry_activation",
+      "ui_location": "Patch wizard > title; dialog title",
+      "kind": "title",
+      "description": "Title shown when the pump reports an activation already in progress, offering to resume or discard it.",
+      "related_keys": [
+        "activation_in_progress"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "115bb444128781c0",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchViewModel.kt",
+          "line": 692
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/RetryActivationStep.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "step_select_insulin",
+      "ui_location": "Patch wizard > title",
+      "kind": "title",
+      "description": "Wizard title: choose which insulin type is used.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c0f33d9fb2f9cc52",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchViewModel.kt",
+          "line": 680
+        }
+      ]
+    },
+    {
+      "key": "syncing_records",
+      "ui_location": "Overview > pump status line",
+      "kind": "status",
+      "description": "Status while syncing history from the pump. %1$d is the number of records left.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5588d599660b6ead",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 597
+        }
+      ]
+    },
+    {
+      "key": "unexpected_state",
+      "ui_location": "Patch wizard > error message",
+      "kind": "error",
+      "description": "Error shown when a wizard step is in a state it does not expect. %1$s is an internal state name, not translatable.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ab9be1ea61cf898d",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/ActivateStep.kt",
+          "line": 81
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/AttachStep.kt",
+          "line": 46
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/DeactivateSteps.kt",
+          "line": 141
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/PrepareStep.kt",
+          "line": 95
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/PrepareStep.kt",
+          "line": 170
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/PrimeStep.kt",
+          "line": 101
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/RetryActivationStep.kt",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "key": "unpair_confirm_message",
+      "ui_location": "Medtrum overview > unpair confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Body of the confirm dialog when forgetting the paired pump. Explains the stored serial number is cleared and a new patch must be activated to find a pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6d3358078750527a",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumComposeContent.kt",
+          "line": 119
+        }
+      ]
+    },
+    {
+      "key": "wait_for_priming",
+      "ui_location": "Patch wizard > priming step",
+      "kind": "status",
+      "description": "Tells the user to wait while priming runs.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b5446e8cb3e34a5e",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/PrimeStep.kt",
+          "line": 151
+        }
+      ]
+    }
+  ]
+}
