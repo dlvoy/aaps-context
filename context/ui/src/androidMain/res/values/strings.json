@@ -171,6 +171,40 @@
       ]
     },
     {
+      "key": "a11y_quick_launch_add",
+      "ui_location": "Preferences > Quick launch > configure actions",
+      "kind": "other",
+      "description": "Screen-reader description of the plus icon that adds an action to the quick launch bar. %1$s is the action name. Not visible on screen.",
+      "related_keys": [
+        "a11y_quick_launch_remove"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0317e7d9fef60f5b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
+          "line": 408
+        }
+      ]
+    },
+    {
+      "key": "a11y_quick_launch_remove",
+      "ui_location": "Preferences > Quick launch > configure actions",
+      "kind": "other",
+      "description": "Screen-reader description of the remove icon on a selected quick launch action. %1$s is the action name. Not visible on screen.",
+      "related_keys": [
+        "a11y_quick_launch_add"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8f2fbaeb6fc57e4a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
+          "line": 373
+        }
+      ]
+    },
+    {
       "key": "a11y_show_controls",
       "ui_location": "Overview > accessibility action",
       "kind": "other",
@@ -807,6 +841,159 @@
       ]
     },
     {
+      "key": "cal_precheck_delta_too_high",
+      "ui_location": "Calibration dialog",
+      "kind": "status",
+      "description": "Warning card shown before entry. Placeholders as in the matching error: %1$s current change, %2$s limit, %3$s glucose unit, per 5 minutes.",
+      "related_keys": [
+        "cal_reject_delta_too_high"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "da9461f23b8ca173",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/calibrationDialog/CalibrationDialogViewModel.kt",
+          "line": 191
+        }
+      ]
+    },
+    {
+      "key": "cal_precheck_mark_sensor_change",
+      "ui_location": "Calibration dialog > warning card",
+      "kind": "button",
+      "description": "Button on the warning card that records a sensor change. Short imperative.",
+      "related_keys": [
+        "cal_precheck_no_session"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "669b0c0c32aa83d1",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/calibrationDialog/CalibrationDialogScreen.kt",
+          "line": 259
+        }
+      ]
+    },
+    {
+      "key": "cal_precheck_no_pair",
+      "ui_location": "Calibration dialog",
+      "kind": "status",
+      "description": "Warning card shown before entry: no recent CGM reading in the last 10 minutes; suggests checking the sensor connection.",
+      "related_keys": [
+        "cal_reject_no_pair"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7917b5ccda714878",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/calibrationDialog/CalibrationDialogViewModel.kt",
+          "line": 197
+        }
+      ]
+    },
+    {
+      "key": "cal_precheck_no_session",
+      "ui_location": "Calibration dialog",
+      "kind": "status",
+      "description": "Warning card shown before entry: no sensor session exists.",
+      "related_keys": [
+        "cal_precheck_mark_sensor_change"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "55f56165126694f8",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/calibrationDialog/CalibrationDialogViewModel.kt",
+          "line": 188
+        }
+      ]
+    },
+    {
+      "key": "cal_precheck_warmup",
+      "ui_location": "Calibration dialog",
+      "kind": "status",
+      "description": "Warning card shown before entry while the sensor warms up. %1$s is the clock time when calibration becomes possible.",
+      "related_keys": [
+        "cal_reject_warmup"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "547f73e0a7d1fe72",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/calibrationDialog/CalibrationDialogViewModel.kt",
+          "line": 189
+        }
+      ]
+    },
+    {
+      "key": "cal_reject_delta_too_high",
+      "ui_location": "Calibration dialog",
+      "kind": "error",
+      "description": "Error after trying to save a calibration while glucose is changing fast. %1$s is the current change, %2$s the allowed limit, %3$s the glucose unit (mg/dL or mmol/L); change is per 5 minutes. Whole sentence.",
+      "related_keys": [
+        "cal_precheck_delta_too_high"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e39f919584579458",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/calibrationDialog/CalibrationDialogViewModel.kt",
+          "line": 202
+        }
+      ]
+    },
+    {
+      "key": "cal_reject_no_pair",
+      "ui_location": "Calibration dialog",
+      "kind": "error",
+      "description": "Error when saving a calibration: there is no CGM reading in the 10 minutes before now to pair the fingerstick value with.",
+      "related_keys": [
+        "cal_precheck_no_pair"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0cfded3073f1b3ce",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/calibrationDialog/CalibrationDialogViewModel.kt",
+          "line": 208
+        }
+      ]
+    },
+    {
+      "key": "cal_reject_no_session",
+      "ui_location": "Calibration dialog",
+      "kind": "error",
+      "description": "Error when saving a calibration with no active sensor session; the user must record a sensor change first.",
+      "related_keys": [
+        "cal_precheck_no_session"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8055a6e66acb8e8b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/calibrationDialog/CalibrationDialogViewModel.kt",
+          "line": 210
+        }
+      ]
+    },
+    {
+      "key": "cal_reject_warmup",
+      "ui_location": "Calibration dialog",
+      "kind": "error",
+      "description": "Error when saving a calibration while the CGM sensor is in its 2-hour warm-up period.",
+      "related_keys": [
+        "cal_precheck_warmup"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9f84051d9915d075",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/calibrationDialog/CalibrationDialogViewModel.kt",
+          "line": 209
+        }
+      ]
+    },
+    {
       "key": "calculation_in_progress",
       "ui_location": "Statistics > loading placeholder",
       "kind": "status",
@@ -834,6 +1021,21 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
           "line": 389
+        }
+      ]
+    },
+    {
+      "key": "calculation_in_progress_percent",
+      "ui_location": "Stats > TDD cycle pattern (while loading)",
+      "kind": "status",
+      "description": "Progress text while the cycle analysis runs. %1$d is a percentage; %% is a literal percent sign.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "050a68add7158fa6",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 351
         }
       ]
     },
@@ -1517,6 +1719,36 @@
       ]
     },
     {
+      "key": "cycle_day1_date",
+      "ui_location": "Stats > TDD cycle pattern",
+      "kind": "label",
+      "description": "Chart caption naming the date of the first day of the most recent cycle. %1$s is a formatted date.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "df0799eb4cca6407",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TddCyclePatternCompose.kt",
+          "line": 114
+        }
+      ]
+    },
+    {
+      "key": "cycle_lines_legend",
+      "ui_location": "Stats > TDD cycle pattern",
+      "kind": "label",
+      "description": "Legend label for the thin lines in the TDD (total daily dose) cycle chart; each line is one past cycle. Short fragment.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d947be17b48f3aeb",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TddCyclePatternCompose.kt",
+          "line": 147
+        }
+      ]
+    },
+    {
       "key": "cycle_offset",
       "ui_location": "Statistics > TDD cycle pattern",
       "kind": "label",
@@ -1528,6 +1760,23 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TddCyclePatternCompose.kt",
           "line": 167
+        }
+      ]
+    },
+    {
+      "key": "cycles_found",
+      "ui_location": "Stats > TDD cycle pattern",
+      "kind": "status",
+      "description": "Summary line above the TDD cycle chart. %1$d is the number of cycles detected, %2$d the number of days of data analysed.",
+      "related_keys": [
+        "not_enough_data_for_cycles"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c2ca53166bf60a5d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TddCyclePatternCompose.kt",
+          "line": 78
         }
       ]
     },
@@ -2296,6 +2545,59 @@
       ]
     },
     {
+      "key": "loop_accept_nav_label",
+      "ui_location": "Main navigation bar > Loop",
+      "kind": "menu_item",
+      "description": "Label of the bottom navigation item that opens the loop action sheet. Very short, one word.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6578782ac8e4a411",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainNavigationBar.kt",
+          "line": 252
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainNavigationBar.kt",
+          "line": 257
+        }
+      ]
+    },
+    {
+      "key": "loop_accept_perform",
+      "ui_location": "Overview > Loop action bottom sheet",
+      "kind": "button",
+      "description": "Button that applies the loop's proposed action. Short imperative.",
+      "related_keys": [
+        "loop_accept_set_basal_question"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "2838c13627507109",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/loopSheet/LoopActionBottomSheet.kt",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "key": "loop_accept_set_basal_question",
+      "ui_location": "Overview > Loop action bottom sheet",
+      "kind": "dialog_text",
+      "description": "Lead-in text before a proposed new temporary basal rate; the rate details follow. Ends with a colon. Basal is the background insulin rate.",
+      "related_keys": [
+        "loop_accept_perform"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "1b43a5f063895cb8",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/loopSheet/LoopActionViewModel.kt",
+          "line": 92
+        }
+      ]
+    },
+    {
       "key": "lunch_icon_label",
       "ui_location": "Scenes > icon picker > general icons",
       "kind": "label",
@@ -2465,6 +2767,23 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
           "line": 776
+        }
+      ]
+    },
+    {
+      "key": "not_enough_data_for_cycles",
+      "ui_location": "Stats > TDD cycle pattern",
+      "kind": "status",
+      "description": "Message shown instead of the chart when the history is too short to detect repeating cycles (e.g. hormonal cycles). Whole sentence.",
+      "related_keys": [
+        "cycles_found"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "056862a64acd2ebc",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 369
         }
       ]
     },
@@ -2794,6 +3113,212 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
           "line": 156
+        }
+      ]
+    },
+    {
+      "key": "quick_launch_all_selected",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "quick_launch_category_automation",
+      "ui_location": "Preferences > Quick launch > configure actions",
+      "kind": "label",
+      "description": "Section header in the available-actions list, grouping user-defined automation actions. Short noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "75d276c0f3d5f18b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
+          "line": 237
+        }
+      ]
+    },
+    {
+      "key": "quick_launch_category_care",
+      "ui_location": "Preferences > Quick launch > configure actions",
+      "kind": "label",
+      "description": "Section header in the available-actions list, grouping care portal actions such as sensor or site changes. Short noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6ae87ab28fd2e6ed",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
+          "line": 198
+        }
+      ]
+    },
+    {
+      "key": "quick_launch_category_profile",
+      "ui_location": "Preferences > Quick launch > configure actions",
+      "kind": "label",
+      "description": "Section header in the available-actions list, grouping profile switch presets. Short noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2fe590a3a42a2838",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
+          "line": 263
+        }
+      ]
+    },
+    {
+      "key": "quick_launch_category_quick_wizard",
+      "ui_location": "Preferences > Quick launch > configure actions",
+      "kind": "label",
+      "description": "Section header in the available-actions list, grouping Quick Wizard entries, saved bolus calculator shortcuts. Short noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "44902b1efbc77ffe",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
+          "line": 211
+        }
+      ]
+    },
+    {
+      "key": "quick_launch_category_temp_target",
+      "ui_location": "Preferences > Quick launch > configure actions",
+      "kind": "label",
+      "description": "Section header in the available-actions list, grouping temporary target presets (a temporary glucose target). Short noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3fa9fedeb1df670e",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
+          "line": 250
+        }
+      ]
+    },
+    {
+      "key": "quick_launch_category_treatment",
+      "ui_location": "Preferences > Quick launch > configure actions",
+      "kind": "label",
+      "description": "Section header in the available-actions list, grouping bolus, carbs and similar treatment actions. Short noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "08e36248fd55485e",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
+          "line": 182
+        }
+      ]
+    },
+    {
+      "key": "quick_launch_edit_profile_preset",
+      "ui_location": "Preferences > Quick launch > configure actions",
+      "kind": "dialog_title",
+      "description": "Title of the dialog for editing a profile-switch preset, and the screen-reader description of its edit pencil icon.",
+      "related_keys": [
+        "quick_launch_profile_permanent"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "88cace2ecb38f4ae",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
+          "line": 358
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
+          "line": 430
+        }
+      ]
+    },
+    {
+      "key": "quick_launch_no_automation",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "quick_launch_no_dynamic_items",
+      "ui_location": "Preferences > Quick launch > configure actions",
+      "kind": "hint",
+      "description": "Greyed hint shown under a section header when no entries exist for it (for example no quick wizards or automations defined).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "05aa675db111e0b3",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
+          "line": 129
+        }
+      ]
+    },
+    {
+      "key": "quick_launch_no_profiles",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "quick_launch_no_quick_wizard",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "quick_launch_no_tt_presets",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "quick_launch_profile_permanent",
+      "ui_location": "Preferences > Quick launch > configure actions > Edit profile preset",
+      "kind": "label",
+      "description": "Label of the option in the profile preset dialog meaning the profile switch has no end time (lasts until changed).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7285dd942dfb291d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
+          "line": 458
+        }
+      ]
+    },
+    {
+      "key": "quick_launch_selected_actions",
+      "ui_location": "Preferences > Quick launch > configure actions",
+      "kind": "label",
+      "description": "Section header for the list of actions the user has already placed in the quick launch bar.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "07018e46e5a27a97",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
+          "line": 124
         }
       ]
     },
@@ -3230,6 +3755,29 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneIcon.kt",
           "line": 142
+        }
+      ]
+    },
+    {
+      "key": "select_arrow",
+      "ui_location": "Site location picker / trend arrow dialog",
+      "kind": "dialog_title",
+      "description": "Dialog title for choosing an arrow (glucose trend direction), also the screen-reader description of the selector. Short.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "cb995df2a8a142e1",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/ArrowSelectionDialog.kt",
+          "line": 30
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/SiteLocationPicker.kt",
+          "line": 120
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/siteRotationDialog/SiteRotationManagementScreen.kt",
+          "line": 392
         }
       ]
     },
@@ -3921,6 +4469,66 @@
         {
           "path": "ui/src/androidMain/res/xml/glucose_circle_widget_info.xml",
           "line": 4
+        }
+      ]
+    },
+    {
+      "key": "widget_rm_disabled",
+      "ui_location": "Home screen widget > loop mode",
+      "kind": "widget",
+      "description": "The loop is disabled. Shown as the loop mode on the widget; space is very limited, keep it short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d62d081eae65c5a7",
+      "usages": [
+        {
+          "path": "ui/src/androidMain/kotlin/app/aaps/ui/widget/glance/WidgetStateLoader.kt",
+          "line": 184
+        }
+      ]
+    },
+    {
+      "key": "widget_rm_lgs",
+      "ui_location": "Home screen widget > loop mode",
+      "kind": "widget",
+      "description": "Closed loop in low glucose suspend mode (LGS). Shown as the loop mode on the widget; space is very limited, keep it short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5a0c3b91a48f2b37",
+      "usages": [
+        {
+          "path": "ui/src/androidMain/kotlin/app/aaps/ui/widget/glance/WidgetStateLoader.kt",
+          "line": 183
+        }
+      ]
+    },
+    {
+      "key": "widget_rm_resume",
+      "ui_location": "Home screen widget > loop mode",
+      "kind": "widget",
+      "description": "Resume the loop (action after a suspension). Shown as the loop mode on the widget; space is very limited, keep it short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f271fc14517e6506",
+      "usages": [
+        {
+          "path": "ui/src/androidMain/kotlin/app/aaps/ui/widget/glance/WidgetStateLoader.kt",
+          "line": 191
+        }
+      ]
+    },
+    {
+      "key": "widget_rm_suspended",
+      "ui_location": "Home screen widget > loop mode",
+      "kind": "widget",
+      "description": "The loop is suspended, here because of a daylight saving time change. Shown as the loop mode on the widget; space is very limited, keep it short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "800260c0e885d0bb",
+      "usages": [
+        {
+          "path": "ui/src/androidMain/kotlin/app/aaps/ui/widget/glance/WidgetStateLoader.kt",
+          "line": 189
         }
       ]
     },
