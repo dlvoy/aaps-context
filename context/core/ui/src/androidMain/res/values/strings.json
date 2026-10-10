@@ -354,6 +354,25 @@
       ]
     },
     {
+      "key": "absolute",
+      "ui_location": "Loop dialog / pump result",
+      "kind": "label",
+      "description": "Label for an absolute value in insulin units per hour, as opposed to a percentage; followed by a colon and value with U/h.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2ff14235c566d1ff",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopViewModel.kt",
+          "line": 143
+        },
+        {
+          "path": "pump/virtual/src/commonMain/kotlin/app/aaps/pump/virtual/extensions/PumpEnactResultExtension.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
       "key": "activate_insulin",
       "ui_location": "Fill dialog; wizard confirmation",
       "kind": "button",
@@ -515,6 +534,27 @@
       ]
     },
     {
+      "key": "adult",
+      "ui_location": "Setup wizard / preferences > Patient type",
+      "kind": "label",
+      "description": "Option for patient type: an adult. Selects which safety hard limits apply.",
+      "related_keys": [
+        "patient_type"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b40d56b0ca1e141a",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/HardLimitsImpl.kt",
+          "line": 107
+        },
+        {
+          "path": "shared/tests/src/androidMain/kotlin/app/aaps/shared/tests/HardLimitsMock.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
       "key": "advanced_settings_title",
       "ui_location": "APS plugin preferences",
       "kind": "title",
@@ -589,6 +629,23 @@
       ]
     },
     {
+      "key": "algorithm_long",
+      "ui_location": "Sensitivity details",
+      "kind": "label",
+      "description": "Line with the sensitivity ratio actually used by the algorithm, as percent.",
+      "related_keys": [
+        "autosens_long"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "62f9a140238a18a0",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/overview/SensitivityOverviewImpl.kt",
+          "line": 89
+        }
+      ]
+    },
+    {
       "key": "and",
       "ui_location": "Automation > trigger connector",
       "kind": "label",
@@ -619,6 +676,185 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/CareportalScreen.kt",
           "line": 125
+        }
+      ]
+    },
+    {
+      "key": "arrow_center",
+      "ui_location": "Site rotation > arrow selection dialog",
+      "kind": "label",
+      "description": "Direction label for the arrow marking where on a body location the site sits (center). Short one- or two-word direction. Also used as the translation of the arrow value in records.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fa8f384ce35bb899",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/ArrowSelectionDialog.kt",
+          "line": 83
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 232
+        }
+      ]
+    },
+    {
+      "key": "arrow_down",
+      "ui_location": "Site rotation > arrow selection dialog",
+      "kind": "label",
+      "description": "Direction label for the arrow marking where on a body location the site sits (down). Short one- or two-word direction. Also used as the translation of the arrow value in records. Also labels the up direction of the ISF/sensitivity change on the Overview sensitivity chip.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "63377094e9e881f5",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/ArrowSelectionDialog.kt",
+          "line": 79
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 228
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/chips/SensitivityChip.kt",
+          "line": 157
+        }
+      ]
+    },
+    {
+      "key": "arrow_down_left",
+      "ui_location": "Site rotation > arrow selection dialog",
+      "kind": "label",
+      "description": "Direction label for the arrow marking where on a body location the site sits (down and to the left). Short one- or two-word direction. Also used as the translation of the arrow value in records.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a5f1e1c8d196ff93",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/ArrowSelectionDialog.kt",
+          "line": 80
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 229
+        }
+      ]
+    },
+    {
+      "key": "arrow_down_right",
+      "ui_location": "Site rotation > arrow selection dialog",
+      "kind": "label",
+      "description": "Direction label for the arrow marking where on a body location the site sits (down and to the right). Short one- or two-word direction. Also used as the translation of the arrow value in records.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c6021721f1a20e80",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/ArrowSelectionDialog.kt",
+          "line": 78
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 227
+        }
+      ]
+    },
+    {
+      "key": "arrow_left",
+      "ui_location": "Site rotation > arrow selection dialog",
+      "kind": "label",
+      "description": "Direction label for the arrow marking where on a body location the site sits (left). Short one- or two-word direction. Also used as the translation of the arrow value in records.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c922db5a26012633",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/ArrowSelectionDialog.kt",
+          "line": 81
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 230
+        }
+      ]
+    },
+    {
+      "key": "arrow_right",
+      "ui_location": "Site rotation > arrow selection dialog",
+      "kind": "label",
+      "description": "Direction label for the arrow marking where on a body location the site sits (right). Short one- or two-word direction. Also used as the translation of the arrow value in records.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "24b1d13b78e96e70",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/ArrowSelectionDialog.kt",
+          "line": 77
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 226
+        }
+      ]
+    },
+    {
+      "key": "arrow_up",
+      "ui_location": "Site rotation > arrow selection dialog",
+      "kind": "label",
+      "description": "Direction label for the arrow marking where on a body location the site sits (up). Short one- or two-word direction. Also used as the translation of the arrow value in records. Also labels the up direction of the ISF/sensitivity change on the Overview sensitivity chip.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a11420f3a1963880",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/ArrowSelectionDialog.kt",
+          "line": 75
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 224
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/chips/SensitivityChip.kt",
+          "line": 156
+        }
+      ]
+    },
+    {
+      "key": "arrow_up_left",
+      "ui_location": "Site rotation > arrow selection dialog",
+      "kind": "label",
+      "description": "Direction label for the arrow marking where on a body location the site sits (up and to the left). Short one- or two-word direction. Also used as the translation of the arrow value in records.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b0178de652982156",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/ArrowSelectionDialog.kt",
+          "line": 82
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 231
+        }
+      ]
+    },
+    {
+      "key": "arrow_up_right",
+      "ui_location": "Site rotation > arrow selection dialog",
+      "kind": "label",
+      "description": "Direction label for the arrow marking where on a body location the site sits (up and to the right). Short one- or two-word direction. Also used as the translation of the arrow value in records.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e2e02e64d10474f1",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/ArrowSelectionDialog.kt",
+          "line": 76
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 225
         }
       ]
     },
@@ -727,6 +963,136 @@
       ]
     },
     {
+      "key": "autosens_long",
+      "ui_location": "Sensitivity details",
+      "kind": "label",
+      "description": "Line with the Autosens value; %.0f is a percent, and %% prints a percent sign.",
+      "related_keys": [
+        "autosens_short"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7fc1ea6efaa43226",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/overview/SensitivityOverviewImpl.kt",
+          "line": 80
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/overview/SensitivityOverviewImpl.kt",
+          "line": 101
+        }
+      ]
+    },
+    {
+      "key": "autosens_short",
+      "ui_location": "Overview > sensitivity chip",
+      "kind": "status",
+      "description": "Compact Autosens percent text; just a number and a percent sign.",
+      "related_keys": [
+        "autosens_long"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f54e4e8fa5b12991",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/overview/SensitivityOverviewImpl.kt",
+          "line": 79
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/overview/SensitivityOverviewImpl.kt",
+          "line": 100
+        },
+        {
+          "path": "ui/src/androidMain/kotlin/app/aaps/ui/widget/glance/WidgetStateLoader.kt",
+          "line": 160
+        }
+      ]
+    },
+    {
+      "key": "autosens_state_off",
+      "ui_location": "Overview > sensitivity chip",
+      "kind": "status",
+      "description": "Chip text shown when the Autosens feature is switched off.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "275ca92dd92fb374",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/chips/SensitivityChip.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "autotune",
+      "ui_location": "Autotune",
+      "kind": "title",
+      "description": "Name of the Autotune feature, which adjusts a profile from past data. Also the source label in records.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9e4af9d7cc752252",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 353
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/AutotunePlugin.kt",
+          "line": 106
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/AutotunePlugin.kt",
+          "line": 298
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/AutotunePlugin.kt",
+          "line": 322
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/AutotunePlugin.kt",
+          "line": 544
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneViewModel.kt",
+          "line": 323
+        }
+      ]
+    },
+    {
+      "key": "autotune_select_profile",
+      "ui_location": "Automation > run Autotune action editor",
+      "kind": "label",
+      "description": "Label of the profile picker for the profile to tune.",
+      "related_keys": [
+        "autotune_tune_days"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f6957344c8c64aa2",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 239
+        }
+      ]
+    },
+    {
+      "key": "autotune_tune_days",
+      "ui_location": "Automation > run Autotune action editor",
+      "kind": "label",
+      "description": "Label of the field for the number of past days to tune over. Ends with a colon in the original.",
+      "related_keys": [
+        "autotune_select_profile"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "dc441c8edc265dab",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 242
+        }
+      ]
+    },
+    {
       "key": "average",
       "ui_location": "Statistics screen: TDD, TIR tables",
       "kind": "label",
@@ -805,6 +1171,33 @@
       ]
     },
     {
+      "key": "basal",
+      "ui_location": "Autotune / graph legend",
+      "kind": "label",
+      "description": "Word for basal insulin; label in Autotune and for the basal element category in the overview.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "9ac816111e85fc79",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 196
+        },
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneScreen.kt",
+          "line": 207
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaHistoryScreen.kt",
+          "line": 98
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnHistoryScreen.kt",
+          "line": 102
+        }
+      ]
+    },
+    {
       "key": "basal_label",
       "ui_location": "Profile viewer",
       "kind": "label",
@@ -839,6 +1232,105 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
           "line": 551
+        }
+      ]
+    },
+    {
+      "key": "basalrate",
+      "ui_location": "Statistics > TDD table header",
+      "kind": "label",
+      "description": "Column header for basal insulin in the total daily dose table. One word, little space.",
+      "related_keys": [
+        "tdd"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ac5e7f77cd919ec7",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TddStatsCompose.kt",
+          "line": 161
+        }
+      ]
+    },
+    {
+      "key": "base_basal_rate_label",
+      "ui_location": "Pump overview > info rows",
+      "kind": "label",
+      "description": "Row label showing scheduled basal rate without temp. Short, followed by a value.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "89c7e0155b5d7832",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/pump/PumpOverviewStateBuilder.kt",
+          "line": 64
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 224
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 367
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 300
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 378
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 177
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 261
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 772
+        }
+      ]
+    },
+    {
+      "key": "battery_label",
+      "ui_location": "Pump overview > info rows",
+      "kind": "label",
+      "description": "Row label showing pump battery state. Short, followed by a value.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "16cfd1fbdc2faa86",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/pump/PumpOverviewStateBuilder.kt",
+          "line": 92
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 340
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 334
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 271
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 174
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 355
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 185
         }
       ]
     },
@@ -922,6 +1414,48 @@
       ]
     },
     {
+      "key": "bolus_advisor",
+      "ui_location": "Notification: bolus advisor reminder",
+      "kind": "notification",
+      "description": "Title of an automatic reminder to eat once glucose has fallen, from the bolus advisor feature.",
+      "related_keys": [
+        "bolus_advisor_message"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "3b15f5d5bb7f5dfd",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/AutomationRuntime.kt",
+          "line": 795
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/AutomationRuntime.kt",
+          "line": 853
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardBolusConfirmation.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "bolus_advisor_message",
+      "ui_location": "Wizard > bolus advisor confirmation",
+      "kind": "dialog_text",
+      "description": "Confirmation text: glucose is high, so waiting to eat is recommended; the escaped apostrophe is a plain apostrophe. Whole sentences.",
+      "related_keys": [
+        "bolus_advisor"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2c063a39ce816d64",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardBolusConfirmation.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
       "key": "bolus_cancelled_no_insulin",
       "ui_location": "Bolus result dialog",
       "kind": "dialog_text",
@@ -979,6 +1513,25 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/carbsDialog/CarbsDialogScreen.kt",
           "line": 368
+        }
+      ]
+    },
+    {
+      "key": "bolus_u_min",
+      "ui_location": "Overview > pump status line",
+      "kind": "status",
+      "description": "Queue status while delivering a bolus; %1$.2f is insulin units. Upper case status tag.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "883ba693c42e6a6e",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandBolus.kt",
+          "line": 39
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 291
         }
       ]
     },
@@ -1130,6 +1683,46 @@
       ]
     },
     {
+      "key": "carb_time_now",
+      "ui_location": "Wizard / carbs dialog",
+      "kind": "label",
+      "description": "Value meaning the carbs are at the current moment (zero offset). Short.",
+      "related_keys": [
+        "wizard_carb_time"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "26de7d48a3880f6b",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/CarbTimeRow.kt",
+          "line": 90
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/CarbTimeRow.kt",
+          "line": 183
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/EventTimeRow.kt",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "key": "carbs_g",
+      "ui_location": "Command queue status",
+      "kind": "status",
+      "description": "Queue status text for carbs given with a bolus; %1$d is grams. Upper case status tag.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "74f9d7b12b673d0f",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandBolus.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
       "key": "carbs_not_saved_after_bolus",
       "ui_location": "Alarm notification",
       "kind": "notification",
@@ -1141,6 +1734,102 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/CommandQueueImplementation.kt",
           "line": 566
+        }
+      ]
+    },
+    {
+      "key": "carbs_removal_cob_limit",
+      "ui_location": "Carbs dialog",
+      "kind": "hint",
+      "description": "Hint when removing carbs (negative amount): %1$d is the maximum grams that can be removed (carbs on board).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d7b4241e82577e9c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/carbsDialog/CarbsDialogScreen.kt",
+          "line": 340
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/CarbActivity.kt",
+          "line": 90
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TreatmentActivity.kt",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "key": "carbs_type_bread",
+      "ui_location": "Wizard > carb type choice",
+      "kind": "label",
+      "description": "Description of the slow-absorption food class: examples of foods that absorb at a medium pace (bread, fruit, rice...). List of foods; translate the examples to local ones where natural.",
+      "related_keys": [
+        "carbs_type_cake",
+        "carbs_type_pizza"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "38bc7e22056a05a2",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 680
+        }
+      ]
+    },
+    {
+      "key": "carbs_type_cake",
+      "ui_location": "Wizard > carb type choice",
+      "kind": "label",
+      "description": "Description of the food class of dense or fatty carbs (dumplings, pasta, pastries...) with slower absorption. List of foods; localise examples.",
+      "related_keys": [
+        "carbs_type_bread",
+        "carbs_type_pizza"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "bddadc4758746a60",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 681
+        }
+      ]
+    },
+    {
+      "key": "carbs_type_pizza",
+      "ui_location": "Wizard > carb type choice",
+      "kind": "label",
+      "description": "Description of the food class of very fat-rich meals (pizza, burgers, fries) with the slowest absorption. List of foods; localise examples.",
+      "related_keys": [
+        "carbs_type_bread",
+        "carbs_type_cake"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "657b5b90ac69bc17",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 682
+        }
+      ]
+    },
+    {
+      "key": "carbsreq",
+      "ui_location": "Overview > loop notification and loop result",
+      "kind": "notification",
+      "description": "Warning that the algorithm calls for extra carbohydrates: %1$d is grams, %2$d is the time window in minutes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "004fe36209b8e858",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/aps/DetermineBasalResult.kt",
+          "line": 125
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 666
         }
       ]
     },
@@ -1986,6 +2675,49 @@
       ]
     },
     {
+      "key": "change",
+      "ui_location": "Wizard / event dialog > time row",
+      "kind": "button",
+      "description": "Button for changing the time. One word, imperative.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "65b136d52f21bc50",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/CarbTimeRow.kt",
+          "line": 123
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/EventTimeRow.kt",
+          "line": 74
+        },
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/elements/SWEditEncryptedPassword.kt",
+          "line": 67
+        },
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/elements/SWPermissions.kt",
+          "line": 116
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileActivationScreen.kt",
+          "line": 321
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 771
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 818
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 869
+        }
+      ]
+    },
+    {
       "key": "change_insulin",
       "ui_location": "Insulin selection dialog",
       "kind": "button",
@@ -1999,6 +2731,65 @@
         {
           "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/insulin/SelectInsulin.kt",
           "line": 92
+        }
+      ]
+    },
+    {
+      "key": "child",
+      "ui_location": "Setup wizard / preferences > Patient type",
+      "kind": "label",
+      "description": "Option for patient type: a child. Selects which safety hard limits apply.",
+      "related_keys": [
+        "patient_type"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "613f32f5be5ad27d",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/HardLimitsImpl.kt",
+          "line": 105
+        },
+        {
+          "path": "shared/tests/src/androidMain/kotlin/app/aaps/shared/tests/HardLimitsMock.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "clear_alarms",
+      "ui_location": "Overview > queue status",
+      "kind": "status",
+      "description": "Status tag of a queued pump command: clearing pump alarms. Shown in the command queue list and pump status line; upper case.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "12857db9fc314602",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandClearAlarms.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "clicked_connect_to_pump",
+      "ui_location": "Command queue log",
+      "kind": "log",
+      "description": "Reason text recorded when the user taps to connect to the pump (refresh); not shown in the main UI.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bb719f434fda4d88",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 345
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 158
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 152
         }
       ]
     },
@@ -2607,6 +3398,72 @@
       ]
     },
     {
+      "key": "command_replaced",
+      "ui_location": "Command queue > result comment",
+      "kind": "status",
+      "description": "Comment recorded on a queued pump command that was removed because a newer command of the same type superseded it.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3b4c674c637469b6",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/CommandQueueImplementation.kt",
+          "line": 305
+        }
+      ]
+    },
+    {
+      "key": "comment",
+      "ui_location": "Loop dialog / records",
+      "kind": "label",
+      "description": "Label for a free text comment or reason, followed by a colon and the text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "915eaf9f831c37d0",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopViewModel.kt",
+          "line": 122
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopViewModel.kt",
+          "line": 128
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopViewModel.kt",
+          "line": 134
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopViewModel.kt",
+          "line": 141
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopViewModel.kt",
+          "line": 147
+        },
+        {
+          "path": "pump/virtual/src/commonMain/kotlin/app/aaps/pump/virtual/extensions/PumpEnactResultExtension.kt",
+          "line": 13
+        },
+        {
+          "path": "pump/virtual/src/commonMain/kotlin/app/aaps/pump/virtual/extensions/PumpEnactResultExtension.kt",
+          "line": 19
+        },
+        {
+          "path": "pump/virtual/src/commonMain/kotlin/app/aaps/pump/virtual/extensions/PumpEnactResultExtension.kt",
+          "line": 25
+        },
+        {
+          "path": "pump/virtual/src/commonMain/kotlin/app/aaps/pump/virtual/extensions/PumpEnactResultExtension.kt",
+          "line": 32
+        },
+        {
+          "path": "pump/virtual/src/commonMain/kotlin/app/aaps/pump/virtual/extensions/PumpEnactResultExtension.kt",
+          "line": 38
+        }
+      ]
+    },
+    {
       "key": "concentration_disable_blocked",
       "ui_location": "Search result / Preferences toast",
       "kind": "error",
@@ -3085,6 +3942,58 @@
       ]
     },
     {
+      "key": "connecting",
+      "ui_location": "Pump overview",
+      "kind": "status",
+      "description": "Pump connection state: connecting.",
+      "related_keys": [
+        "disconnected"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "fbc70fb2a6e38078",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 282
+        },
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpDriverState.kt",
+          "line": 11
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 282
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 386
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 316
+        }
+      ]
+    },
+    {
+      "key": "connectiontimedout",
+      "ui_location": "Overview > pump status line",
+      "kind": "error",
+      "description": "Pump status or comment shown when a queued command could not reach the pump in time, and for commands dropped when the queue is cleared. Short status phrase.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b73ba7c533e9e5a2",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/CommandExecutor.kt",
+          "line": 193
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/CommandQueueImplementation.kt",
+          "line": 436
+        }
+      ]
+    },
+    {
       "key": "constraint_applied",
       "ui_location": "Bolus wizard / loop confirmation dialog",
       "kind": "status",
@@ -3177,6 +4086,29 @@
       ]
     },
     {
+      "key": "current_basal_value",
+      "ui_location": "Hard-limit check (log/warning)",
+      "kind": "other",
+      "description": "Name of the pump's current basal rate, inserted into an out-of-hard-limits message.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "ac9021a924d033c7",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 146
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 270
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 319
+        }
+      ]
+    },
+    {
       "key": "current_insulin",
       "ui_location": "Insulin selection dialog",
       "kind": "label",
@@ -3217,6 +4149,27 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetCarouselCard.kt",
           "line": 258
+        }
+      ]
+    },
+    {
+      "key": "daily_units",
+      "ui_location": "Dana/Diaconn pump overview",
+      "kind": "label",
+      "description": "Row label for insulin units used today.",
+      "related_keys": [
+        "max_daily_units"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "046866c104c17709",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 350
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 284
         }
       ]
     },
@@ -3287,6 +4240,21 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/DexcomTirStatsCompose.kt",
           "line": 54
+        }
+      ]
+    },
+    {
+      "key": "deactivate",
+      "ui_location": "Overview > queue status",
+      "kind": "status",
+      "description": "Status tag of a queued pump command: deactivating the pump. Shown in the command queue list and pump status line; upper case.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "305cd0143cd55bc2",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandDeactivate.kt",
+          "line": 32
         }
       ]
     },
@@ -3482,6 +4450,55 @@
       ]
     },
     {
+      "key": "disconnected",
+      "ui_location": "Pump overview / automation log",
+      "kind": "status",
+      "description": "Pump connection state: disconnected.",
+      "related_keys": [
+        "connecting"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f2abcdb42adeeb3f",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/AutomationRuntime.kt",
+          "line": 565
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 281
+        },
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpDriverState.kt",
+          "line": 20
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 281
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 385
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 313
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/utils/ExceptionTranslator.kt",
+          "line": 36
+        },
+        {
+          "path": "ui/src/androidMain/kotlin/app/aaps/ui/widget/glance/WidgetStateLoader.kt",
+          "line": 186
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/TreatmentBeltGraphCompose.kt",
+          "line": 540
+        }
+      ]
+    },
+    {
       "key": "duration",
       "ui_location": "Number input rows in dialogs (e.g. temp target, temp basal)",
       "kind": "label",
@@ -3625,6 +4642,49 @@
       ]
     },
     {
+      "key": "enacted",
+      "ui_location": "Loop dialog > last run details",
+      "kind": "label",
+      "description": "Label before the text describing what the loop actually did. Followed by a colon and the value in a plain-text report.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c25c7dde3e13c2a4",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopViewModel.kt",
+          "line": 121
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopViewModel.kt",
+          "line": 127
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopViewModel.kt",
+          "line": 133
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopViewModel.kt",
+          "line": 140
+        },
+        {
+          "path": "pump/virtual/src/commonMain/kotlin/app/aaps/pump/virtual/extensions/PumpEnactResultExtension.kt",
+          "line": 12
+        },
+        {
+          "path": "pump/virtual/src/commonMain/kotlin/app/aaps/pump/virtual/extensions/PumpEnactResultExtension.kt",
+          "line": 18
+        },
+        {
+          "path": "pump/virtual/src/commonMain/kotlin/app/aaps/pump/virtual/extensions/PumpEnactResultExtension.kt",
+          "line": 24
+        },
+        {
+          "path": "pump/virtual/src/commonMain/kotlin/app/aaps/pump/virtual/extensions/PumpEnactResultExtension.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
       "key": "engineering_mode_enabled",
       "ui_location": "Text of the info e-mail/log export built from Maintenance",
       "kind": "log",
@@ -3706,6 +4766,66 @@
       ]
     },
     {
+      "key": "error_in_basal_values",
+      "ui_location": "Profile editor > validation",
+      "kind": "error",
+      "description": "Validation error shown when the basal rate entries of a profile are invalid.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bfe8c09c41ee6d70",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/profile/ProfileRepositoryImpl.kt",
+          "line": 324
+        }
+      ]
+    },
+    {
+      "key": "error_in_ic_values",
+      "ui_location": "Profile editor > validation",
+      "kind": "error",
+      "description": "Validation error shown when the IC (insulin to carb ratio) entries of a profile are invalid.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bb875e657b124105",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/profile/ProfileRepositoryImpl.kt",
+          "line": 318
+        }
+      ]
+    },
+    {
+      "key": "error_in_isf_values",
+      "ui_location": "Profile editor > validation",
+      "kind": "error",
+      "description": "Validation error shown when the ISF (insulin sensitivity factor) entries of a profile are invalid.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6e372c8c7a4d1cb1",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/profile/ProfileRepositoryImpl.kt",
+          "line": 321
+        }
+      ]
+    },
+    {
+      "key": "error_in_target_values",
+      "ui_location": "Profile editor > validation",
+      "kind": "error",
+      "description": "Validation error shown when the target glucose entries of a profile are invalid.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "eb3d51f9f0b86a37",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/profile/ProfileRepositoryImpl.kt",
+          "line": 315
+        }
+      ]
+    },
+    {
       "key": "error_mustbe4hexadidits",
       "ui_location": "Pump pairing wizard > password step (Dana RS, Equil)",
       "kind": "hint",
@@ -3721,6 +4841,37 @@
         {
           "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/PasswordStep.kt",
           "line": 54
+        }
+      ]
+    },
+    {
+      "key": "errors",
+      "ui_location": "Pump history / Medtronic overview",
+      "kind": "label",
+      "description": "Label for the count or category of pump errors/alarms.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "b9f4a09a9d276f93",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaHistoryViewModel.kt",
+          "line": 69
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 194
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 210
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 317
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 282
         }
       ]
     },
@@ -3901,6 +5052,29 @@
       ]
     },
     {
+      "key": "extended_bolus_label",
+      "ui_location": "Pump overview > info rows",
+      "kind": "label",
+      "description": "Row label showing active extended bolus. Short, followed by a value.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8cd680128eb881bc",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/pump/PumpOverviewStateBuilder.kt",
+          "line": 82
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 373
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 302
+        }
+      ]
+    },
+    {
       "key": "extended_bolus_medium",
       "ui_location": "Extended bolus display",
       "kind": "status",
@@ -3912,6 +5086,21 @@
         {
           "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/extensions/ExtendedBolusDisplay.kt",
           "line": 23
+        }
+      ]
+    },
+    {
+      "key": "extended_bolus_u_min",
+      "ui_location": "Command queue status",
+      "kind": "status",
+      "description": "Queue status for an extended bolus; %1$.2f is units, %2$d is duration in minutes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d8053ad936054b5a",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandExtendedBolus.kt",
+          "line": 27
         }
       ]
     },
@@ -3968,6 +5157,25 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/fillDialog/FillDialogViewModel.kt",
           "line": 350
+        }
+      ]
+    },
+    {
+      "key": "formatPercent",
+      "ui_location": "Overview > temp basal display",
+      "kind": "other",
+      "description": "Format of a percentage value; %1$.0f is a number. Contains a literal %% sign.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ecb4bf5ba00d2e53",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/extensions/TemporaryBasalDisplay.kt",
+          "line": 45
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/insulin/ConcentrationHelperImpl.kt",
+          "line": 55
         }
       ]
     },
@@ -4133,6 +5341,21 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/CommandQueueImplementation.kt",
           "line": 546
+        }
+      ]
+    },
+    {
+      "key": "grant",
+      "ui_location": "Setup wizard > permissions",
+      "kind": "button",
+      "description": "Button to grant an Android permission. One word.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3253202ff887ad8c",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/elements/SWPermissions.kt",
+          "line": 117
         }
       ]
     },
@@ -4337,6 +5560,27 @@
       ]
     },
     {
+      "key": "info",
+      "ui_location": "Notification shade / snackbar",
+      "kind": "notification",
+      "description": "Title or severity label for an informational (non-urgent) message. Original is upper case.",
+      "related_keys": [
+        "urgent_alarm"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "86a9e92ac5caae4a",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/GlobalSnackbarHost.kt",
+          "line": 165
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/notifications/CommonNotificationManager.kt",
+          "line": 171
+        }
+      ]
+    },
+    {
       "key": "initialization_failed",
       "ui_location": "App start screen",
       "kind": "error",
@@ -4367,6 +5611,21 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/userEntry/UserEntryPresentationHelperImpl.kt",
           "line": 364
+        }
+      ]
+    },
+    {
+      "key": "insight_set_tbr_over_notification",
+      "ui_location": "Overview > queue status",
+      "kind": "status",
+      "description": "Status tag of a queued pump command: a command specific to the Insight pump that sets a temp basal for the over-notification. Shown in the command queue list and pump status line; upper case.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "22340962e43e52d6",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandInsightSetTBROverNotification.kt",
+          "line": 33
         }
       ]
     },
@@ -4422,6 +5681,23 @@
       ]
     },
     {
+      "key": "insulin_dia",
+      "ui_location": "Insulin management > save snackbar",
+      "kind": "other",
+      "description": "Name of the insulin duration of action (DIA) value, inserted into an out-of-hard-limits snackbar.",
+      "related_keys": [
+        "insulin_peak"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "29fc852feb311f6e",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementViewModel.kt",
+          "line": 412
+        }
+      ]
+    },
+    {
       "key": "insulin_management",
       "ui_location": "Menu element list",
       "kind": "menu_item",
@@ -4450,6 +5726,23 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementScreen.kt",
           "line": 329
+        }
+      ]
+    },
+    {
+      "key": "insulin_peak",
+      "ui_location": "Insulin management > save snackbar",
+      "kind": "other",
+      "description": "Name of the insulin peak time value, inserted into an out-of-hard-limits snackbar.",
+      "related_keys": [
+        "insulin_dia"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "d20e9598085ef268",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementViewModel.kt",
+          "line": 416
         }
       ]
     },
@@ -4625,6 +5918,21 @@
       ]
     },
     {
+      "key": "invalid_profile_not_accepted",
+      "ui_location": "Profile import from Nightscout",
+      "kind": "error",
+      "description": "Says a profile received from Nightscout was rejected as invalid; %1$s is the profile data/name.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8b9d2d9509067c50",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/profile/ProfileRepositoryImpl.kt",
+          "line": 638
+        }
+      ]
+    },
+    {
       "key": "iob",
       "ui_location": "Insulin graph; automation trigger",
       "kind": "label",
@@ -4691,6 +5999,40 @@
       ]
     },
     {
+      "key": "isf_effective",
+      "ui_location": "Sensitivity details",
+      "kind": "label",
+      "description": "Line with the effective ISF after applying Autosens ratio; %1$.1f is the value.",
+      "related_keys": [
+        "isf_profile"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b160f124d04bbeba",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/overview/SensitivityOverviewImpl.kt",
+          "line": 107
+        }
+      ]
+    },
+    {
+      "key": "isf_for_carbs",
+      "ui_location": "Sensitivity details",
+      "kind": "label",
+      "description": "Line with the ISF used for the bolus calculator and carb absorption; %1$.1f is the ISF in the user's glucose units per unit insulin.",
+      "related_keys": [
+        "isf_profile"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "4d073ac0cc829b6f",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/overview/SensitivityOverviewImpl.kt",
+          "line": 91
+        }
+      ]
+    },
+    {
       "key": "isf_label",
       "ui_location": "Profile viewer",
       "kind": "label",
@@ -4729,6 +6071,28 @@
       ]
     },
     {
+      "key": "isf_profile",
+      "ui_location": "Sensitivity details",
+      "kind": "label",
+      "description": "Line with the ISF from the active profile; %1$.1f is the value.",
+      "related_keys": [
+        "isf_variable",
+        "isf_effective"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "861828c7a8214109",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/overview/SensitivityOverviewImpl.kt",
+          "line": 86
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/overview/SensitivityOverviewImpl.kt",
+          "line": 105
+        }
+      ]
+    },
+    {
       "key": "isf_short",
       "ui_location": "Autotune results",
       "kind": "label",
@@ -4750,6 +6114,143 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
           "line": 203
+        }
+      ]
+    },
+    {
+      "key": "isf_variable",
+      "ui_location": "Sensitivity details",
+      "kind": "label",
+      "description": "Line with the variable ISF computed by the dynamic ISF algorithm; %1$.1f is the value.",
+      "related_keys": [
+        "isf_effective"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "adb77389d828f089",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/overview/SensitivityOverviewImpl.kt",
+          "line": 87
+        }
+      ]
+    },
+    {
+      "key": "keepalive_basal_outdated",
+      "ui_location": "Command queue log",
+      "kind": "log",
+      "description": "Reason text given when the keep-alive worker reads the pump because the stored basal profile is old.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "18953b4627a91759",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/receivers/KeepAliveWorker.kt",
+          "line": 286
+        }
+      ]
+    },
+    {
+      "key": "keepalive_status_outdated",
+      "ui_location": "Command queue log",
+      "kind": "log",
+      "description": "Reason text given when the keep-alive worker asks the pump for status because the last status is old.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a11757214c0b9509",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/receivers/KeepAliveWorker.kt",
+          "line": 283
+        }
+      ]
+    },
+    {
+      "key": "last_bolus_label",
+      "ui_location": "Pump overview > info rows",
+      "kind": "label",
+      "description": "Row label showing last delivered bolus. Short, followed by a value.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "edbebeafb8bcb0fa",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/pump/PumpOverviewStateBuilder.kt",
+          "line": 54
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 369
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 344
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 279
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 204
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 408
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 172
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 277
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 240
+        }
+      ]
+    },
+    {
+      "key": "last_connection_label",
+      "ui_location": "Pump overview > info rows",
+      "kind": "label",
+      "description": "Row label showing time since last communication with the pump. Short, followed by a value.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "686dde38f03c0f39",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/pump/PumpOverviewStateBuilder.kt",
+          "line": 44
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 788
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 326
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 339
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 275
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 331
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 173
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 168
         }
       ]
     },
@@ -4835,6 +6336,51 @@
       ]
     },
     {
+      "key": "load_events",
+      "ui_location": "Overview > queue status",
+      "kind": "status",
+      "description": "Status tag of a queued pump command: loading events from the pump. Shown in the command queue list and pump status line; upper case.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "01fe527e3fc76baf",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandLoadEvents.kt",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "key": "load_history",
+      "ui_location": "Command queue status",
+      "kind": "status",
+      "description": "Queue status for loading pump history; %1$d is the history record type number.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e68ceb1e40cac161",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandLoadHistory.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "load_tdds",
+      "ui_location": "Overview > queue status",
+      "kind": "status",
+      "description": "Status tag of a queued pump command: loading total daily dose records from the pump. Shown in the command queue list and pump status line; upper case.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3ca1e07ea523859e",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandLoadTDDs.kt",
+          "line": 25
+        }
+      ]
+    },
+    {
       "key": "loading",
       "ui_location": "App start screen; notification",
       "kind": "status",
@@ -4895,6 +6441,21 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
           "line": 208
+        }
+      ]
+    },
+    {
+      "key": "location_back_left_lower_back",
+      "ui_location": "Care portal > site change / site location",
+      "kind": "label",
+      "description": "Body location of an infusion set or sensor: left lower back. Name of a body area picked in site rotation and shown in treatment records; use the anatomical term, keep it short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "84200c19c17ef474",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 210
         }
       ]
     },
@@ -4982,6 +6543,21 @@
       ]
     },
     {
+      "key": "location_front_left_lower_thigh",
+      "ui_location": "Care portal > site change / site location",
+      "kind": "label",
+      "description": "Body location of an infusion set or sensor: lower left front thigh. Name of a body area picked in site rotation and shown in treatment records; use the anatomical term, keep it short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5c9ce7fbc7f36490",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 214
+        }
+      ]
+    },
+    {
       "key": "location_front_left_upper_abdomen",
       "ui_location": "Site rotation location",
       "kind": "label",
@@ -5016,6 +6592,21 @@
       ]
     },
     {
+      "key": "location_front_left_upper_thigh",
+      "ui_location": "Care portal > site change / site location",
+      "kind": "label",
+      "description": "Body location of an infusion set or sensor: upper left front thigh. Name of a body area picked in site rotation and shown in treatment records; use the anatomical term, keep it short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "93bb38dbfd189cdb",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 212
+        }
+      ]
+    },
+    {
       "key": "location_front_right_lower_abdomen",
       "ui_location": "Site rotation location",
       "kind": "label",
@@ -5029,6 +6620,21 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
           "line": 205
+        }
+      ]
+    },
+    {
+      "key": "location_front_right_lower_thigh",
+      "ui_location": "Care portal > site change / site location",
+      "kind": "label",
+      "description": "Body location of an infusion set or sensor: lower right front thigh. Name of a body area picked in site rotation and shown in treatment records; use the anatomical term, keep it short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3d4ff1a4e621cea9",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 213
         }
       ]
     },
@@ -5067,6 +6673,21 @@
       ]
     },
     {
+      "key": "location_front_right_upper_thigh",
+      "ui_location": "Care portal > site change / site location",
+      "kind": "label",
+      "description": "Body location of an infusion set or sensor: upper right front thigh. Name of a body area picked in site rotation and shown in treatment records; use the anatomical term, keep it short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "46941ec8996a73cd",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 211
+        }
+      ]
+    },
+    {
       "key": "location_permission_not_granted",
       "ui_location": "Snackbar (error), when the Automation location service starts",
       "kind": "error",
@@ -5095,6 +6716,21 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
           "line": 202
+        }
+      ]
+    },
+    {
+      "key": "location_side_left_lower_thigh",
+      "ui_location": "Care portal > site change / site location",
+      "kind": "label",
+      "description": "Body location of an infusion set or sensor: lower left outer thigh. Name of a body area picked in site rotation and shown in treatment records; use the anatomical term, keep it short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "be743af44179c063",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 218
         }
       ]
     },
@@ -5133,6 +6769,21 @@
       ]
     },
     {
+      "key": "location_side_left_upper_thigh",
+      "ui_location": "Care portal > site change / site location",
+      "kind": "label",
+      "description": "Body location of an infusion set or sensor: upper left outer thigh. Name of a body area picked in site rotation and shown in treatment records; use the anatomical term, keep it short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6354d785f487a0b7",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 216
+        }
+      ]
+    },
+    {
       "key": "location_side_right_lower_abdomen",
       "ui_location": "Site rotation location",
       "kind": "label",
@@ -5146,6 +6797,21 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
           "line": 201
+        }
+      ]
+    },
+    {
+      "key": "location_side_right_lower_thigh",
+      "ui_location": "Care portal > site change / site location",
+      "kind": "label",
+      "description": "Body location of an infusion set or sensor: lower right outer thigh. Name of a body area picked in site rotation and shown in treatment records; use the anatomical term, keep it short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "74259a0f9109a095",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 217
         }
       ]
     },
@@ -5180,6 +6846,21 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
           "line": 195
+        }
+      ]
+    },
+    {
+      "key": "location_side_right_upper_thigh",
+      "ui_location": "Care portal > site change / site location",
+      "kind": "label",
+      "description": "Body location of an infusion set or sensor: upper right outer thigh. Name of a body area picked in site rotation and shown in treatment records; use the anatomical term, keep it short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "46373d28d3f6bbf4",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 215
         }
       ]
     },
@@ -5570,6 +7251,61 @@
       ]
     },
     {
+      "key": "max_bolus_title",
+      "ui_location": "Setup wizard > safety",
+      "kind": "label",
+      "description": "Label for the maximum allowed single bolus in units; keep [U].",
+      "related_keys": [
+        "max_carbs_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f6c2752c099676ad",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 279
+        }
+      ]
+    },
+    {
+      "key": "max_carbs_title",
+      "ui_location": "Setup wizard > safety",
+      "kind": "label",
+      "description": "Label for the maximum allowed carbs entry in grams; keep [g].",
+      "related_keys": [
+        "max_bolus_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8d674f5d12e4d08c",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 286
+        }
+      ]
+    },
+    {
+      "key": "max_daily_units",
+      "ui_location": "Dana/Diaconn pump overview",
+      "kind": "label",
+      "description": "Row label for the pump's maximum daily insulin units limit.",
+      "related_keys": [
+        "daily_units"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "4b2e59400469b522",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 361
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 295
+        }
+      ]
+    },
+    {
       "key": "mgdl",
       "ui_location": "Units labels across the app",
       "kind": "label",
@@ -5638,6 +7374,21 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/alerts/LocalAlertUtilsImpl.kt",
           "line": 149
+        }
+      ]
+    },
+    {
+      "key": "missing_profile_name",
+      "ui_location": "Profile editor > validation",
+      "kind": "error",
+      "description": "Validation error shown when a profile has no name.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "98f9489cdd81b37d",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/profile/ProfileRepositoryImpl.kt",
+          "line": 304
         }
       ]
     },
@@ -5956,6 +7707,53 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/DexcomTirStatsCompose.kt",
           "line": 66
+        }
+      ]
+    },
+    {
+      "key": "no_action_selected",
+      "ui_location": "Dialogs (calibration, wizard, treatment)",
+      "kind": "dialog_text",
+      "description": "Message shown on confirmation when the user left everything empty so confirming does nothing.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "caa86cbd95899727",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/clientcontrol/FailureReasonText.kt",
+          "line": 27
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/calibrationDialog/CalibrationDialogScreen.kt",
+          "line": 103
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/carbsDialog/CarbsDialogScreen.kt",
+          "line": 136
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/extendedBolusDialog/ExtendedBolusDialogScreen.kt",
+          "line": 107
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/fillDialog/FillDialogScreen.kt",
+          "line": 158
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinDialog/InsulinDialogScreen.kt",
+          "line": 140
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempBasalDialog/TempBasalDialogScreen.kt",
+          "line": 97
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatmentDialog/TreatmentDialogScreen.kt",
+          "line": 117
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 171
         }
       ]
     },
@@ -6616,6 +8414,23 @@
       ]
     },
     {
+      "key": "patient_age_summary",
+      "ui_location": "Setup wizard > Patient type",
+      "kind": "dialog_text",
+      "description": "Instruction text asking to pick the patient type which sets safety limits.",
+      "related_keys": [
+        "patient_type"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "4594cda1d06999f5",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 268
+        }
+      ]
+    },
+    {
       "key": "patient_name_default",
       "ui_location": "Preferences export, one-time password setup",
       "kind": "label",
@@ -6631,6 +8446,23 @@
         {
           "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/otp/OneTimePassword.kt",
           "line": 44
+        }
+      ]
+    },
+    {
+      "key": "patient_type",
+      "ui_location": "Setup wizard",
+      "kind": "title",
+      "description": "Title of the setup wizard screen for picking the patient type.",
+      "related_keys": [
+        "patient_age_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "78fb10afbfcafd82",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 266
         }
       ]
     },
@@ -6681,6 +8513,33 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementScreen.kt",
           "line": 365
+        }
+      ]
+    },
+    {
+      "key": "percent",
+      "ui_location": "Loop dialog / profile switch editor",
+      "kind": "label",
+      "description": "Label for a percentage value, e.g. temp basal percent or profile percentage; also the field label in the automation profile switch editor.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "de4bd1634eb15886",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopViewModel.kt",
+          "line": 136
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 210
+        },
+        {
+          "path": "pump/virtual/src/commonMain/kotlin/app/aaps/pump/virtual/extensions/PumpEnactResultExtension.kt",
+          "line": 27
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
+          "line": 440
         }
       ]
     },
@@ -6805,6 +8664,27 @@
       ]
     },
     {
+      "key": "pregnant",
+      "ui_location": "Setup wizard / preferences > Patient type",
+      "kind": "label",
+      "description": "Option for patient type: a pregnant person. Selects which safety hard limits apply.",
+      "related_keys": [
+        "patient_type"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "74276bac8161c804",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/HardLimitsImpl.kt",
+          "line": 109
+        },
+        {
+          "path": "shared/tests/src/androidMain/kotlin/app/aaps/shared/tests/HardLimitsMock.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
       "key": "preset_settings",
       "ui_location": "Temp target editor section",
       "kind": "title",
@@ -6900,6 +8780,31 @@
       ]
     },
     {
+      "key": "profile_basal_not_compatible_with_pump",
+      "ui_location": "Profile editor / Profile activation",
+      "kind": "error",
+      "description": "Error explaining the basal rates exceed or don't fit what the connected pump supports, so the profile cannot be activated; asks to reduce them.",
+      "related_keys": [
+        "profile_pump_incompatible_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "dd7091e6ef1a625f",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/profile/ProfileRepositoryImpl.kt",
+          "line": 344
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileActivationScreen.kt",
+          "line": 234
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
+          "line": 252
+        }
+      ]
+    },
+    {
       "key": "profile_management",
       "ui_location": "Element/menu list",
       "kind": "menu_item",
@@ -6911,6 +8816,84 @@
         {
           "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
           "line": 214
+        }
+      ]
+    },
+    {
+      "key": "profile_max_daily_basal_value",
+      "ui_location": "Hard-limit check (log/warning)",
+      "kind": "other",
+      "description": "Name of the highest basal rate in the profile, inserted into an out-of-hard-limits message.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "f61f732a6576d0d0",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 145
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 269
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 318
+        }
+      ]
+    },
+    {
+      "key": "profile_name_contains_dot",
+      "ui_location": "Profile editor > validation",
+      "kind": "error",
+      "description": "Warning that profile names contain dots, which Nightscout (NS) does not support so those profiles will not be uploaded. Multi-line (\\n).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "db33957f21db127d",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/profile/ProfileRepositoryImpl.kt",
+          "line": 330
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/viewmodels/ProfileEditorViewModel.kt",
+          "line": 169
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/viewmodels/ProfileManagementViewModel.kt",
+          "line": 299
+        }
+      ]
+    },
+    {
+      "key": "profile_not_saved_activate",
+      "ui_location": "Profile management > snackbar",
+      "kind": "error",
+      "description": "Snackbar shown when the user tries to activate a profile with unsaved changes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "72d74e58a090f2ef",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/viewmodels/ProfileManagementViewModel.kt",
+          "line": 640
+        }
+      ]
+    },
+    {
+      "key": "profile_pump_incompatible_label",
+      "ui_location": "Profile carousel card",
+      "kind": "label",
+      "description": "Small badge on a profile card for a basal rate that exceeds the pump limit. Very little space.",
+      "related_keys": [
+        "profile_basal_not_compatible_with_pump"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "91fabbd46cff5007",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileCarouselCard.kt",
+          "line": 157
         }
       ]
     },
@@ -7220,6 +9203,21 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/manageSheet/ManageBottomSheet.kt",
           "line": 250
+        }
+      ]
+    },
+    {
+      "key": "pump_not_configured",
+      "ui_location": "Overview > pump status line",
+      "kind": "error",
+      "description": "Message shown when pump commands are cancelled because no pump driver is set up.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1824a4f1372b7f7f",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/CommandExecutor.kt",
+          "line": 179
         }
       ]
     },
@@ -7550,6 +9548,51 @@
       ]
     },
     {
+      "key": "quick_wizard_not_available",
+      "ui_location": "Watch quick wizard > error",
+      "kind": "error",
+      "description": "Error: the quick wizard entry chosen on the watch no longer exists; asks to refresh the tile.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1089bc0def3e1168",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 229
+        }
+      ]
+    },
+    {
+      "key": "quickwizard_managemnt",
+      "ui_location": "Layout settings",
+      "kind": "label",
+      "description": "Name of the QuickWizard management element.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a553dcfef9932ee4",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 207
+        }
+      ]
+    },
+    {
+      "key": "read_status",
+      "ui_location": "Command queue status",
+      "kind": "status",
+      "description": "Queue status for reading pump status; %1$s is the reason text (e.g. who requested it).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9b45469c0ba235c2",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandReadStatus.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
       "key": "reason",
       "ui_location": "Loop/OpenAPS result and confirmation dialog lines",
       "kind": "label",
@@ -7732,6 +9775,57 @@
       ]
     },
     {
+      "key": "reservoir_label",
+      "ui_location": "Pump overview > info rows",
+      "kind": "label",
+      "description": "Row label showing amount of insulin left in the reservoir. Short, followed by a value.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7a1daa1cb0a0555c",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/pump/PumpOverviewStateBuilder.kt",
+          "line": 102
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 354
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 377
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 303
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 321
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SafeDeactivationStep.kt",
+          "line": 73
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 189
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 207
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 295
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 199
+        }
+      ]
+    },
+    {
       "key": "reset",
       "ui_location": "Profile editor; statistics screen",
       "kind": "button",
@@ -7747,6 +9841,27 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
           "line": 271
+        }
+      ]
+    },
+    {
+      "key": "resistant_adult",
+      "ui_location": "Setup wizard / preferences > Patient type",
+      "kind": "label",
+      "description": "Option for patient type: an insulin-resistant adult. Selects which safety hard limits apply.",
+      "related_keys": [
+        "patient_type"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a893b49ac5b12097",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/HardLimitsImpl.kt",
+          "line": 108
+        },
+        {
+          "path": "shared/tests/src/androidMain/kotlin/app/aaps/shared/tests/HardLimitsMock.kt",
+          "line": 60
         }
       ]
     },
@@ -9190,6 +11305,109 @@
       ]
     },
     {
+      "key": "sensitivity",
+      "ui_location": "Overview > sensitivity chip",
+      "kind": "title",
+      "description": "Title of the sensitivity (insulin sensitivity, Autosens) chip, also a category name in layout settings.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "106d86040072e29f",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 243
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/SensitivityChipBlock.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "serial_number",
+      "ui_location": "Pump overview > info rows",
+      "kind": "label",
+      "description": "Row label showing pump serial number. Short, followed by a value.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fc641e5622cfe764",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/pump/PumpOverviewStateBuilder.kt",
+          "line": 112
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 232
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 329
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 268
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 444
+        }
+      ]
+    },
+    {
+      "key": "set",
+      "ui_location": "Notification action",
+      "kind": "button",
+      "description": "Short action button on a setup notification that asks to set something up.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "4d71d9232ecf838f",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 484
+        },
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 493
+        },
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/elements/SWEditEncryptedPassword.kt",
+          "line": 67
+        }
+      ]
+    },
+    {
+      "key": "set_profile",
+      "ui_location": "Overview > queue status",
+      "kind": "status",
+      "description": "Status tag of a queued pump command: sending a profile (basal rates) to the pump. Shown in the command queue list and pump status line; upper case.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "214601e1dc6a7473",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandSetProfile.kt",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "set_user_settings",
+      "ui_location": "Overview > queue status",
+      "kind": "status",
+      "description": "Status tag of a queued pump command: sending user settings to the pump. Shown in the command queue list and pump status line; upper case.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "558676a6b1d5cf5f",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandSetUserSettings.kt",
+          "line": 35
+        }
+      ]
+    },
+    {
       "key": "settings",
       "ui_location": "Navigation toolbars",
       "kind": "other",
@@ -9503,6 +11721,83 @@
       ]
     },
     {
+      "key": "smb_bolus_u",
+      "ui_location": "Command queue status",
+      "kind": "status",
+      "description": "Queue status while delivering an SMB (small automatic bolus); %1$.2f is insulin units.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "dd6b9a4d1cc146de",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandSMBBolus.kt",
+          "line": 55
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 289
+        }
+      ]
+    },
+    {
+      "key": "smb_shortname",
+      "ui_location": "Loop dialog / user entries",
+      "kind": "label",
+      "description": "Abbreviation for SMB (super micro bolus), a small automatic bolus given by the loop. Keep the established abbreviation.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0eabbcfd2194216a",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 29
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopViewModel.kt",
+          "line": 123
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/chips/RunningModeChip.kt",
+          "line": 112
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/SmbStep.kt",
+          "line": 37
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/SmbStep.kt",
+          "line": 46
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/BolusCarbsScreen.kt",
+          "line": 332
+        }
+      ]
+    },
+    {
+      "key": "sms",
+      "ui_location": "User entries / command queue",
+      "kind": "label",
+      "description": "Name of the SMS source (remote commands by text message). Used as a source label and as a read-status reason.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3603e9228938bd35",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 357
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 583
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/BolusAction.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
       "key": "snooze",
       "ui_location": "Notification action button",
       "kind": "button",
@@ -9577,6 +11872,23 @@
         {
           "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/ws/NsFrameHandler.kt",
           "line": 249
+        }
+      ]
+    },
+    {
+      "key": "start_pump",
+      "ui_location": "Command queue status",
+      "kind": "status",
+      "description": "Queue status for a command that starts pump delivery. Short.",
+      "related_keys": [
+        "stop_pump"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "50c278e82dfe99a3",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandStartPump.kt",
+          "line": 32
         }
       ]
     },
@@ -9749,6 +12061,23 @@
         {
           "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/BolusAction.kt",
           "line": 69
+        }
+      ]
+    },
+    {
+      "key": "stop_pump",
+      "ui_location": "Command queue status",
+      "kind": "status",
+      "description": "Queue status for a command that stops pump delivery. Short.",
+      "related_keys": [
+        "start_pump"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "788c17d7f04440bd",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandStopPump.kt",
+          "line": 32
         }
       ]
     },
@@ -10009,6 +12338,27 @@
       ]
     },
     {
+      "key": "tdd",
+      "ui_location": "Statistics",
+      "kind": "title",
+      "description": "Total Daily Dose, the sum of all insulin (basal and bolus) delivered in a day. Screen title and section header.",
+      "related_keys": [
+        "tdd_short"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "4ef4c50206e6bee0",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 107
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 130
+        }
+      ]
+    },
+    {
       "key": "tdd_old_data",
       "ui_location": "Wear OS TDD reply",
       "kind": "error",
@@ -10020,6 +12370,31 @@
         {
           "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
           "line": 594
+        }
+      ]
+    },
+    {
+      "key": "tdd_short",
+      "ui_location": "Watch > confirmation dialog title",
+      "kind": "label",
+      "description": "Abbreviation of Total Daily Dose, used as a short title on the watch TDD status dialog.",
+      "related_keys": [
+        "tdd"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6c05faaf1ca87f16",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 596
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 606
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 609
         }
       ]
     },
@@ -10047,6 +12422,27 @@
       ]
     },
     {
+      "key": "teenage",
+      "ui_location": "Setup wizard / preferences > Patient type",
+      "kind": "label",
+      "description": "Option for patient type: a teenager. Selects which safety hard limits apply.",
+      "related_keys": [
+        "patient_type"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "15fd6e26234bbaee",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/HardLimitsImpl.kt",
+          "line": 106
+        },
+        {
+          "path": "shared/tests/src/androidMain/kotlin/app/aaps/shared/tests/HardLimitsMock.kt",
+          "line": 58
+        }
+      ]
+    },
+    {
       "key": "temp_basal",
       "ui_location": "Menu element and temp basal info dialog title",
       "kind": "title",
@@ -10062,6 +12458,40 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
           "line": 769
+        }
+      ]
+    },
+    {
+      "key": "temp_basal_absolute",
+      "ui_location": "Command queue status",
+      "kind": "status",
+      "description": "Queue status for a temp basal in absolute rate: %1$.2f is U/h, %2$d is minutes.",
+      "related_keys": [
+        "temp_basal_percent"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a6ea1bc2cee2e99e",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandTempBasalAbsolute.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "temp_basal_percent",
+      "ui_location": "Command queue status",
+      "kind": "status",
+      "description": "Queue status for a temp basal in percent: %1$d is the percent (the doubled %% prints one %), %2$d is minutes.",
+      "related_keys": [
+        "temp_basal_absolute"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c31429673f42b50a",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandTempBasalPercent.kt",
+          "line": 34
         }
       ]
     },
@@ -10111,6 +12541,56 @@
       ]
     },
     {
+      "key": "temp_target_high_target",
+      "ui_location": "Hard-limit check (log/warning)",
+      "kind": "other",
+      "description": "Name of the value being checked when the temp target upper bound is outside hard limits; inserted into a 'value out of hard limits' message.",
+      "related_keys": [
+        "valueoutofrange"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "2188f9f98153033a",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 163
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 292
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 347
+        }
+      ]
+    },
+    {
+      "key": "temp_target_low_target",
+      "ui_location": "Hard-limit check (log/warning)",
+      "kind": "other",
+      "description": "Name of the value being checked when the temp target lower bound is outside hard limits; inserted into a 'value out of hard limits' message.",
+      "related_keys": [
+        "valueoutofrange"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "046e1720376f12df",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 162
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 291
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 346
+        }
+      ]
+    },
+    {
       "key": "temp_target_management",
       "ui_location": "Menu element list",
       "kind": "menu_item",
@@ -10122,6 +12602,102 @@
         {
           "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
           "line": 215
+        }
+      ]
+    },
+    {
+      "key": "temp_target_value",
+      "ui_location": "Hard-limit check (log/warning)",
+      "kind": "other",
+      "description": "Name of the target value being checked against hard limits; inserted into a message about the value being out of limits.",
+      "related_keys": [
+        "valueoutofrange"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "581d42a4d77f57a1",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 157
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 164
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 287
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 293
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 556
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 560
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 342
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 348
+        }
+      ]
+    },
+    {
+      "key": "tempbasal_label",
+      "ui_location": "Pump overview; wizard confirmation",
+      "kind": "label",
+      "description": "Label for the active temporary basal rate; also an item in the wizard confirmation list of actions.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8149f60a3370b221",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/pump/PumpOverviewStateBuilder.kt",
+          "line": 73
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 509
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 973
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 387
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 370
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 301
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 388
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 181
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 266
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/loopSheet/LoopActionBottomSheet.kt",
+          "line": 54
         }
       ]
     },
@@ -10266,6 +12842,21 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinDialog/InsulinDialogScreen.kt",
           "line": 390
+        }
+      ]
+    },
+    {
+      "key": "timedetection",
+      "ui_location": "Objectives > time check",
+      "kind": "status",
+      "description": "Label of the objective step that verifies the phone clock against a network time server.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "ec4a1c2b576f81ad",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/compose/ObjectivesViewModel.kt",
+          "line": 247
         }
       ]
     },
@@ -10715,6 +13306,21 @@
       ]
     },
     {
+      "key": "ue_action",
+      "ui_location": "User entry export (CSV) > header",
+      "kind": "label",
+      "description": "CSV column header for the action type of a user entry.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "40622948e3115aaa",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/userEntry/UserEntryPresentationHelperImpl.kt",
+          "line": 321
+        }
+      ]
+    },
+    {
       "key": "ue_export_to_csv",
       "ui_location": "Maintenance > export user entries",
       "kind": "menu_item",
@@ -10738,6 +13344,1582 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/UserEntryScreen.kt",
           "line": 117
+        }
+      ]
+    },
+    {
+      "key": "ue_none",
+      "ui_location": "User entry export (CSV)",
+      "kind": "label",
+      "description": "Value in the CSV unit column when an entry has no unit.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fa842bc86ae11623",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/userEntry/UserEntryPresentationHelperImpl.kt",
+          "line": 334
+        }
+      ]
+    },
+    {
+      "key": "ue_source",
+      "ui_location": "User entries > list; CSV header",
+      "kind": "label",
+      "description": "Column header/label for the origin of a user entry (e.g. app screen, SMS, watch).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4e3fe56a9e456b44",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/userEntry/UserEntryPresentationHelperImpl.kt",
+          "line": 323
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/UserEntryScreen.kt",
+          "line": 240
+        }
+      ]
+    },
+    {
+      "key": "ue_string",
+      "ui_location": "User entry export (CSV) > header",
+      "kind": "label",
+      "description": "CSV column header for the text description of a user entry. Written to an exported file.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7067b772704c01a1",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/userEntry/UserEntryPresentationHelperImpl.kt",
+          "line": 325
+        }
+      ]
+    },
+    {
+      "key": "ue_timestamp",
+      "ui_location": "User entry export (CSV) > header",
+      "kind": "label",
+      "description": "CSV column header for the time of a user entry.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ee67aad85995b9e1",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/userEntry/UserEntryPresentationHelperImpl.kt",
+          "line": 318
+        }
+      ]
+    },
+    {
+      "key": "ue_utc_offset",
+      "ui_location": "User entry export (CSV) > header",
+      "kind": "label",
+      "description": "CSV column header for the timezone offset from UTC of an entry.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6a0b8ce30fcfdc86",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/userEntry/UserEntryPresentationHelperImpl.kt",
+          "line": 320
+        }
+      ]
+    },
+    {
+      "key": "uel_accepts_temp_basal",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: accepts temp basal. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout. Also used as the pump command queue status text while that command is pending.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "dfab17cc3dd3c40b",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandCancelTempBasal.kt",
+          "line": 52
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "key": "uel_automation_removed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: automation removed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bee0f2ad331e82b3",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "uel_bg_removed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: bg removed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ac2407a25a9c41b9",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "uel_bolus",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: bolus. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "77b6180c6d841bbf",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "uel_bolus_advisor",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: bolus advisor. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "969169d1e889907b",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "uel_bolus_calculator",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: bolus calculator. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8084f678d79e493d",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 27
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "uel_bolus_removed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: bolus removed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ae2a562b1cbb3ff5",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "uel_calibration",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: calibration. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b5d2d15925fffb51",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "uel_calibration_removed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: calibration removed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4b4b11b92da2716b",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "key": "uel_cancel_bolus",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: cancel bolus. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3d9e132848a8d110",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "uel_cancel_extended_bolus",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: cancel extended bolus. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout. Also used as the pump command queue status text while that command is pending.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9bb25911536015d0",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandCancelExtendedBolus.kt",
+          "line": 25
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "uel_cancel_temp_basal",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: cancel temp basal. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout. Also used as the pump command queue status text while that command is pending.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "af743b72c65f3e46",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "key": "uel_cancel_tt",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: cancel temp target. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "cd54013e350577db",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "key": "uel_carbs",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: carbs. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ecdd5fe1cd529da5",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "uel_carbs_removed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: carbs removed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4fcc898f31acde4e",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 76
+        }
+      ]
+    },
+    {
+      "key": "uel_careportal",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: careportal. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0c70b1fc77d5936e",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "uel_careportal_ns_refresh",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: careportal ns refresh. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "892fe58374384673",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 67
+        }
+      ]
+    },
+    {
+      "key": "uel_careportal_removed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: careportal removed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a05e873a2faf76e1",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 74
+        }
+      ]
+    },
+    {
+      "key": "uel_change_insulin_concentration",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: change insulin concentration. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "59cad7dc68ae4915",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 124
+        }
+      ]
+    },
+    {
+      "key": "uel_change_pump_insulin",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: change pump insulin. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3284eb98fc6ff368",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 123
+        }
+      ]
+    },
+    {
+      "key": "uel_cleanup_databases",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: cleanup databases. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e2088d9b8f0beaed",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 104
+        }
+      ]
+    },
+    {
+      "key": "uel_clear_pairing_keys",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: clear pairing keys. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3b0e058469e4a43b",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "key": "uel_clone_profile",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: clone profile. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d82ddc6c235a2fa2",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "key": "uel_closed_loop_mode",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: closed loop mode. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9947a5431bbaa5b9",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "uel_delete_future_treatments",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: delete future treatments. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "05ba2028bac4c3be",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 98
+        }
+      ]
+    },
+    {
+      "key": "uel_delete_logs",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: delete logs. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9e06c0d0250681a6",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "key": "uel_disconnect",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: disconnect. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "239f2966410138b4",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "uel_error_dialog_mute",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: error dialog mute. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "19fb22f09a9c929c",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 91
+        }
+      ]
+    },
+    {
+      "key": "uel_error_dialog_mute_5min",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: error dialog mute 5min. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "abf6264814c74b35",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 92
+        }
+      ]
+    },
+    {
+      "key": "uel_error_dialog_ok",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: error dialog ok. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "75f642f61a0d24f9",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 90
+        }
+      ]
+    },
+    {
+      "key": "uel_exit_aaps",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: exit aaps. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9b0828bcca6e3e3b",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "key": "uel_export_csv",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: export user entries. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "399bb5ebab79bd8a",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 109
+        }
+      ]
+    },
+    {
+      "key": "uel_export_databases",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: export databases. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "45040cce8264cdaf",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 105
+        }
+      ]
+    },
+    {
+      "key": "uel_export_settings",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: export settings. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8ef2de62e69d87eb",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "key": "uel_extended_bolus",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: extended bolus. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0e0e2f18ca5f9c9b",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "uel_extended_bolus_removed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: extended bolus removed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "34c98bed2d1234ae",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "key": "uel_food",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: food. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "cdcae55f41f49c07",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "key": "uel_food_removed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: food removed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6a88c61b1bb49bd3",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "key": "uel_hw_pump_allowed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: hw pump allowed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c591cfbf3eadecc5",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "uel_import_databases",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: import databases. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "77ae895cdb1f26d7",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 106
+        }
+      ]
+    },
+    {
+      "key": "uel_import_settings",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: import settings. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3780bbc6aef53ec6",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 100
+        }
+      ]
+    },
+    {
+      "key": "uel_insulin_removed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: insulin removed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "09c034504ab907a6",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 122
+        }
+      ]
+    },
+    {
+      "key": "uel_lgs_loop_mode",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: lgs loop mode. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "dc5f9d9c4478567d",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "uel_loop_change",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: loop changed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f0128947c45cfd41",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 115
+        }
+      ]
+    },
+    {
+      "key": "uel_loop_disabled",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: loop disabled. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "abe67b80d75201c5",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "key": "uel_loop_removed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: loop removed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6d971bb4bb5eb073",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 116
+        }
+      ]
+    },
+    {
+      "key": "uel_loop_resumed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: loop resumed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b1bae2e53680ff5e",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "key": "uel_new_insulin",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: new insulin. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d934601af893da61",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 120
+        }
+      ]
+    },
+    {
+      "key": "uel_new_profile",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: new profile. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bd329691c9264b65",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "uel_ns_paused",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: ns paused. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a37716b0b315210b",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 86
+        }
+      ]
+    },
+    {
+      "key": "uel_ns_queue_cleared",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: ns queue cleared. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b3712a43d0ee5e28",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 88
+        }
+      ]
+    },
+    {
+      "key": "uel_ns_resume",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: ns resume. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4f26dabda51b5bbd",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 87
+        }
+      ]
+    },
+    {
+      "key": "uel_ns_settings_copied",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: ns settings copied. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fb9995c4db482682",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 89
+        }
+      ]
+    },
+    {
+      "key": "uel_objective_started",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: objective started. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b084f0130191952f",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 93
+        }
+      ]
+    },
+    {
+      "key": "uel_objective_unstarted",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: objective unstarted. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "42023fe37c12702b",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 94
+        }
+      ]
+    },
+    {
+      "key": "uel_objectives_skipped",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: objectives skipped. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "beec2afe906f3885",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 95
+        }
+      ]
+    },
+    {
+      "key": "uel_open_loop_mode",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: open loop mode. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d5f08573273e6d36",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "key": "uel_otp_export",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: otp export. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9c8e9fce0c0dbd3c",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 107
+        }
+      ]
+    },
+    {
+      "key": "uel_otp_reset",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: otp reset. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "cb63b434c0e00463",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 108
+        }
+      ]
+    },
+    {
+      "key": "uel_plugin_disabled",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: plugin disabled. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1be39eb5e6592290",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 114
+        }
+      ]
+    },
+    {
+      "key": "uel_plugin_enabled",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: plugin enabled. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4b1ba96fe7288512",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 113
+        }
+      ]
+    },
+    {
+      "key": "uel_prime_bolus",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: prime bolus. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d82f45880b41f5d7",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "key": "uel_profile_removed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: profile removed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a3edae88cb7ce926",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 81
+        }
+      ]
+    },
+    {
+      "key": "uel_profile_switch",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: profile switch. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8d519b57856a0966",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "uel_profile_switch_cloned",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: profile switch cloned. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4d6db24e24ad7667",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "uel_profile_switch_ns_refresh",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: profile switch ns refresh. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "335a5b6ca7dd66b3",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "uel_profile_switch_removed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: profile switch removed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bbc0de687bd62722",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 82
+        }
+      ]
+    },
+    {
+      "key": "uel_pump_running",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: pump running. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e0648a11e5551fa5",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "key": "uel_reconnect",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: reconnect. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "434041243f94d3a8",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "key": "uel_remote_config_changed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: remote config changed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d07f22af8a35ec5a",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 127
+        }
+      ]
+    },
+    {
+      "key": "uel_reservoir_change",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: reservoir change. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bc43be505df9bf01",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "uel_reset_aps_results",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: reset aps results. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a472278acd998db7",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 103
+        }
+      ]
+    },
+    {
+      "key": "uel_reset_databases",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: reset databases. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5abd9b129e149d79",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 102
+        }
+      ]
+    },
+    {
+      "key": "uel_restart_events_removed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: restart events removed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7a053e702329c844",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 83
+        }
+      ]
+    },
+    {
+      "key": "uel_resume",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: resume. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8043604cf0138a9d",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "uel_running_mode",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: running mode. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5fafc59eb4fd3545",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 117
+        }
+      ]
+    },
+    {
+      "key": "uel_running_mode_removed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: running mode removed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b27d3cbe8e46717e",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 118
+        }
+      ]
+    },
+    {
+      "key": "uel_running_mode_updarted",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: running mode updated. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f5f64497f456746c",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 119
+        }
+      ]
+    },
+    {
+      "key": "uel_scene_activated",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: scene activated. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1f5299f689653f58",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 125
+        }
+      ]
+    },
+    {
+      "key": "uel_scene_deactivated",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: scene deactivated. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f477f34fafae4e55",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 126
+        }
+      ]
+    },
+    {
+      "key": "uel_select_directory",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: select directory. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6dcb4898124ae8bd",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 101
+        }
+      ]
+    },
+    {
+      "key": "uel_sensor_location",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: sensor location. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8ff424b93f49ae9a",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "uel_site_change",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: site change. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "241681bb793c3576",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "uel_site_location",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: site location. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "426aad790c6ea052",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "uel_start_aaps",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: start aaps. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "347ff195acee20ec",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 111
+        }
+      ]
+    },
+    {
+      "key": "uel_stat_reset",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: stat reset. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5c7983b8471f8b74",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "key": "uel_stop_sms",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: stop sms. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8616b666fa171738",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "key": "uel_store_insulin",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: store insulin. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "01f0bbc1ab06f3af",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 121
+        }
+      ]
+    },
+    {
+      "key": "uel_store_profile",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: store profile. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "acdc87aa84cb2a74",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "key": "uel_superbolus_tbr",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: superbolus tbr. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "10e4a932c8e19784",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "uel_suspend",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: suspend. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "084fec0bc1f9c8a9",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "uel_temp_basal",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: temp basal. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f7dfbf3d1fc79675",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "key": "uel_temp_basal_removed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: temp basal removed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "43907aca1a5c4612",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "key": "uel_treatment",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: treatment. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4e589a67879dfc64",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "uel_treatment_removed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: treatment removed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a2890f53e9a5cde8",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "key": "uel_treatments_ns_refresh",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: treatments ns refresh. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "099da62ecc835778",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "key": "uel_tt",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: temp target. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "04e7b8b25edb479a",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "uel_tt_ns_refresh",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: temp target ns refresh. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "643f014d7eae2261",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "uel_tt_removed",
+      "ui_location": "Treatments > User entries log",
+      "kind": "log",
+      "description": "Name of a logged user action, shown in capitals in the user entries list and its CSV export: temp target removed. Keep it short, as a log tag; the original is in upper case, mirror that if natural. 'NS' means Nightscout.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b39d0f0b3d13e29e",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 85
         }
       ]
     },
@@ -10808,6 +14990,36 @@
       ]
     },
     {
+      "key": "unlock_settings",
+      "ui_location": "Profile editor",
+      "kind": "button",
+      "description": "Button to unlock profile editing (protected by password/PIN).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "00ae65775962b50c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
+          "line": 161
+        }
+      ]
+    },
+    {
+      "key": "update_time",
+      "ui_location": "Overview > queue status",
+      "kind": "status",
+      "description": "Status tag of a queued pump command: setting the pump clock. Shown in the command queue list and pump status line; upper case.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ba4f9f657c4c905b",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandUpdateTime.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
       "key": "uploader",
       "ui_location": "Overview status > uploader dialog",
       "kind": "dialog_title",
@@ -10838,6 +15050,23 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/OverviewDataCacheImpl.kt",
           "line": 1195
+        }
+      ]
+    },
+    {
+      "key": "urgent_alarm",
+      "ui_location": "Notification shade",
+      "kind": "notification",
+      "description": "Title of an urgent-level notification.",
+      "related_keys": [
+        "info"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "626213dd8bbc8901",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/notifications/CommonNotificationManager.kt",
+          "line": 171
         }
       ]
     },
@@ -10935,6 +15164,56 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/careDialog/CareDialogViewModel.kt",
           "line": 177
+        }
+      ]
+    },
+    {
+      "key": "valuelimitedto",
+      "ui_location": "Hard-limit message",
+      "kind": "error",
+      "description": "Says a value was reduced to a limit: %1$.2f is the requested value, %2$.2f the limited one. Appended to other text.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "c62e2779f8f80dfe",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/HardLimitsImpl.kt",
+          "line": 86
+        }
+      ]
+    },
+    {
+      "key": "valueoutofrange",
+      "ui_location": "Error message",
+      "kind": "error",
+      "description": "Says the named value is outside hard limits. %1$s is the name of the value (e.g. a profile percentage or time shift). The » « quotes wrap the name.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "88dc303ddf18d144",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 422
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 424
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 426
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 434
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/HardLimitsImpl.kt",
+          "line": 84
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 663
         }
       ]
     },
@@ -11073,6 +15352,21 @@
       ]
     },
     {
+      "key": "waitingforpumpresult",
+      "ui_location": "Loop dialog",
+      "kind": "status",
+      "description": "Status shown while the loop waits for the pump to return the result of a command.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "74088334e53e45dd",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopViewModel.kt",
+          "line": 117
+        }
+      ]
+    },
+    {
       "key": "wear",
       "ui_location": "Plugin name, source, TT reason",
       "kind": "title",
@@ -11123,6 +15417,446 @@
         {
           "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/WearPlugin.kt",
           "line": 317
+        }
+      ]
+    },
+    {
+      "key": "wizard_bg_label",
+      "ui_location": "Wizard > calculation details",
+      "kind": "label",
+      "description": "Label 'BG' for blood glucose in a calculation row; followed by the value. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b6ad36f7688ba658",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/WizardInfoDialog.kt",
+          "line": 81
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/WizardInfoDialog.kt",
+          "line": 95
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 517
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 740
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 781
+        }
+      ]
+    },
+    {
+      "key": "wizard_calculation",
+      "ui_location": "Wizard > calculation details",
+      "kind": "title",
+      "description": "Heading of the breakdown of how the suggested insulin was computed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "77a61d8d93ada047",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 343
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 579
+        }
+      ]
+    },
+    {
+      "key": "wizard_carb_time",
+      "ui_location": "Wizard > carb time row",
+      "kind": "label",
+      "description": "Label of the row setting when the carbs are eaten, followed by a colon and the time.",
+      "related_keys": [
+        "carb_time_now"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "80a206a5d1273bc6",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/CarbTimeRow.kt",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "key": "wizard_carbs_constraint",
+      "ui_location": "Wizard > error",
+      "kind": "error",
+      "description": "Error: carbs were reduced by a safety limit, so the wizard refuses.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d61316d42441c3c5",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 240
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 246
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 306
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 388
+        }
+      ]
+    },
+    {
+      "key": "wizard_constraint_bolus_size",
+      "ui_location": "Wizard > error",
+      "kind": "error",
+      "description": "Error: the safety limit prevents delivering the calculated insulin; %1$.2f is units. Contains a line break.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c568f2ccbb789707",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 250
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 314
+        }
+      ]
+    },
+    {
+      "key": "wizard_correction",
+      "ui_location": "Wizard",
+      "kind": "label",
+      "description": "Label of the insulin correction amount added to bring glucose to target.",
+      "related_keys": [
+        "wizard_subtotal"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "354f36ce9ec5f53f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/WizardInfoDialog.kt",
+          "line": 153
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 586
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 708
+        }
+      ]
+    },
+    {
+      "key": "wizard_include_bg",
+      "ui_location": "Wizard > calculation toggles",
+      "kind": "label",
+      "description": "Accessibility label of the switch to include current glucose in the bolus calculation. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a57ecadf409a7f00",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 419
+        }
+      ]
+    },
+    {
+      "key": "wizard_include_cob",
+      "ui_location": "Wizard > calculation toggles",
+      "kind": "label",
+      "description": "Accessibility label of the switch to include carbs on board in the bolus calculation. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4486bc2be895410d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 472
+        }
+      ]
+    },
+    {
+      "key": "wizard_include_iob",
+      "ui_location": "Wizard > calculation toggles",
+      "kind": "label",
+      "description": "Accessibility label of the switch to include insulin on board in the bolus calculation. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6623e46b048a1f03",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 459
+        }
+      ]
+    },
+    {
+      "key": "wizard_include_trend",
+      "ui_location": "Wizard > calculation toggles",
+      "kind": "label",
+      "description": "Accessibility label of the switch to include glucose trend in the bolus calculation. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cf010a36bca5a393",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 446
+        }
+      ]
+    },
+    {
+      "key": "wizard_include_tt",
+      "ui_location": "Wizard > calculation toggles",
+      "kind": "label",
+      "description": "Accessibility label of the switch to include active temp target in the bolus calculation. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a5124c908ff04c07",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 433
+        }
+      ]
+    },
+    {
+      "key": "wizard_no_active_profile",
+      "ui_location": "Wizard > error",
+      "kind": "error",
+      "description": "Error: no profile is active.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "95c77a54cfc81187",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 231
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 292
+        }
+      ]
+    },
+    {
+      "key": "wizard_no_actual_bg",
+      "ui_location": "Wizard > error",
+      "kind": "error",
+      "description": "Error: there is no recent glucose reading to base the calculation on.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a273914d6cbb9637",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 230
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 678
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 439
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatmentsSheet/TreatmentViewModel.kt",
+          "line": 204
+        }
+      ]
+    },
+    {
+      "key": "wizard_no_insulin_required",
+      "ui_location": "Wizard > error",
+      "kind": "error",
+      "description": "Error when the calculation gives no insulin dose.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2962ca00dd2d93c7",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 253
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 319
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 462
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 451
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatmentsSheet/TreatmentViewModel.kt",
+          "line": 216
+        }
+      ]
+    },
+    {
+      "key": "wizard_pump_not_available",
+      "ui_location": "Wizard / quick wizard > error",
+      "kind": "error",
+      "description": "Error: no pump is available or initialised.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "24487f89246a168e",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 235
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 301
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 394
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 441
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 458
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 469
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 474
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 724
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 749
+        }
+      ]
+    },
+    {
+      "key": "wizard_set_alarm",
+      "ui_location": "Wizard > carb time row",
+      "kind": "label",
+      "description": "Label and accessibility text of the switch that sets an alarm reminder to eat.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c88ca3a6a01cfee0",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/CarbTimeRow.kt",
+          "line": 114
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/CarbTimeRow.kt",
+          "line": 152
+        }
+      ]
+    },
+    {
+      "key": "wizard_subtotal",
+      "ui_location": "Wizard",
+      "kind": "label",
+      "description": "Label of the partial sum of insulin before the final total.",
+      "related_keys": [
+        "wizard_total"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6711c61e5a94bdac",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/WizardInfoDialog.kt",
+          "line": 121
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 561
+        }
+      ]
+    },
+    {
+      "key": "wizard_total",
+      "ui_location": "Wizard; Dana and Diaconn pump history",
+      "kind": "label",
+      "description": "Label for total insulin; in pump history it labels the daily total.",
+      "related_keys": [
+        "wizard_subtotal"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "d9387fceef92c2c5",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaHistoryScreen.kt",
+          "line": 99
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnHistoryScreen.kt",
+          "line": 103
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/WizardInfoDialog.kt",
+          "line": 169
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 594
+        }
+      ]
+    },
+    {
+      "key": "wizard_trend_detail",
+      "ui_location": "Wizard > calculation details",
+      "kind": "label",
+      "description": "Trend over 15 minutes; %1$s signed change, %2$s glucose unit (mg/dL or mmol/L).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ace825ffd147258a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogViewModel.kt",
+          "line": 453
+        }
+      ]
+    },
+    {
+      "key": "wizard_use_percentage",
+      "ui_location": "Wizard",
+      "kind": "label",
+      "description": "Label of the option to scale the calculation by a percentage; followed by a colon.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f1fc98630605096f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 806
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 828
         }
       ]
     },
