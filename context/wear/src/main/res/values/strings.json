@@ -112,6 +112,16 @@
       ]
     },
     {
+      "key": "action_confirm_timeshift",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
       "key": "action_duration_hours",
       "ui_location": "Watch > eCarbs screen > input label",
       "kind": "label",
@@ -456,6 +466,25 @@
         {
           "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/QuickWizardSource.kt",
           "line": 51
+        }
+      ]
+    },
+    {
+      "key": "action_running_mode_selected",
+      "ui_location": "Watch > confirmation overlay after choosing a running mode",
+      "kind": "toast",
+      "description": "Brief confirmation shown on the watch after the user requests a running mode change. The change is only requested; the phone applies it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b578a3b34a100f2a",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModeTimedActivity.kt",
+          "line": 138
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/RunningModeSource.kt",
+          "line": 72
         }
       ]
     },
@@ -1211,6 +1240,141 @@
       ]
     },
     {
+      "key": "complication_br",
+      "ui_location": "Watch face > complication picker",
+      "kind": "label",
+      "description": "Name of a complication in the watch's complication picker. Short label; the picker has little space. Complication showing the current basal rate.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "086b163b2656f324",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 537
+        }
+      ]
+    },
+    {
+      "key": "complication_br_cob_iob",
+      "ui_location": "Watch face > complication picker",
+      "kind": "label",
+      "description": "Name of a complication in the watch's complication picker. Short label; the picker has little space. Basal rate (BR), carbs on board (CoB) and insulin on board (IoB) in one complication.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "78333bf19b52d1d0",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 426
+        }
+      ]
+    },
+    {
+      "key": "complication_br_cob_iob_ext1",
+      "ui_location": "Watch face > complication picker",
+      "kind": "label",
+      "description": "Name of a complication in the watch's complication picker. Short label; the picker has little space. Variant 1 of the BR, CoB and IoB complication, with a different layout. Keep 'Ext1' as a short variant marker.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9ebe12004814bfd8",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 444
+        }
+      ]
+    },
+    {
+      "key": "complication_br_cob_iob_ext2",
+      "ui_location": "Watch face > complication picker",
+      "kind": "label",
+      "description": "Name of a complication in the watch's complication picker. Short label; the picker has little space. Variant 2 of the BR, CoB and IoB complication, with a different layout. Keep 'Ext2' as a short variant marker.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c35bf9ba65507a15",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 462
+        }
+      ]
+    },
+    {
+      "key": "complication_br_iob",
+      "ui_location": "Watch face > complication picker",
+      "kind": "label",
+      "description": "Name of a complication in the watch's complication picker. Short label; the picker has little space. Complication showing the current basal rate (BR) and insulin on board (IoB).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b4a4aee1112feb9e",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 519
+        }
+      ]
+    },
+    {
+      "key": "complication_br_tt",
+      "ui_location": "Watch face > complication picker",
+      "kind": "label",
+      "description": "Name of a complication in the watch's complication picker. Short label; the picker has little space. Complication showing the basal rate (BR) and the current temporary target (TT).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e78304e54008aca4",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 480
+        }
+      ]
+    },
+    {
+      "key": "complication_cob_detailed",
+      "ui_location": "Watch face > complication picker",
+      "kind": "label",
+      "description": "Name of a complication in the watch's complication picker. Short label; the picker has little space. Complication showing carbs on board (CoB) with more detail than the icon version.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2c3facfa110dca8e",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 594
+        }
+      ]
+    },
+    {
+      "key": "complication_cob_icon",
+      "ui_location": "Watch face > complication picker",
+      "kind": "label",
+      "description": "Name of a complication in the watch's complication picker. Short label; the picker has little space. Complication showing carbs on board (CoB) with an icon.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "280a22c709f354b8",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 573
+        }
+      ]
+    },
+    {
+      "key": "complication_cob_iob",
+      "ui_location": "Watch face > complication picker",
+      "kind": "label",
+      "description": "Name of a complication in the watch's complication picker. Short label; the picker has little space. Complication showing carbs on board (CoB) and insulin on board (IoB).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e20d2aa62384415b",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 555
+        }
+      ]
+    },
+    {
       "key": "complication_cwf_ambient_bg",
       "ui_location": "Watch > complication picker; always-on",
       "kind": "label",
@@ -1225,6 +1389,21 @@
         },
         {
           "path": "wear/src/main/kotlin/app/aaps/wear/complications/CwfAmbientBgComplication.kt",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "key": "complication_cwf_ambient_cob_iob",
+      "ui_location": "Watch face > ambient (low-power) status complication",
+      "kind": "status",
+      "description": "Text in the ambient-mode complication: %1$s is carbs on board, %2$s is insulin on board, separated by spaces. Not a sentence; keep it as two values.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2bbcaf4beb30b349",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/CwfAmbientStatusComplication.kt",
           "line": 46
         }
       ]
@@ -1268,6 +1447,26 @@
       ]
     },
     {
+      "key": "complication_cwf_lower",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "complication_cwf_upper",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
       "key": "complication_full_status",
       "ui_location": "Watch > complication data source picker",
       "kind": "label",
@@ -1302,6 +1501,36 @@
       ]
     },
     {
+      "key": "complication_iob_detailed",
+      "ui_location": "Watch face > complication picker",
+      "kind": "label",
+      "description": "Name of a complication in the watch's complication picker. Short label; the picker has little space. Complication showing insulin on board (IoB) with more detail than the icon version.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a2e745d3e1ca95fa",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 633
+        }
+      ]
+    },
+    {
+      "key": "complication_iob_icon",
+      "ui_location": "Watch face > complication picker",
+      "kind": "label",
+      "description": "Name of a complication in the watch's complication picker. Short label; the picker has little space. Complication showing insulin on board (IoB) with an icon.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d62c8e8aaff9ee0e",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 612
+        }
+      ]
+    },
+    {
       "key": "complication_summary_none",
       "ui_location": "Watch > Settings > Watchface > Custom > complication slot",
       "kind": "preference_summary",
@@ -1313,6 +1542,21 @@
         {
           "path": "wear/src/main/kotlin/app/aaps/wear/interaction/ComplicationPickerSupport.kt",
           "line": 57
+        }
+      ]
+    },
+    {
+      "key": "complication_target",
+      "ui_location": "Watch face > complication picker",
+      "kind": "label",
+      "description": "Name of a complication in the watch's complication picker. Short label; the picker has little space. Complication showing the current glucose target.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "629d8c06b201d57d",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 501
         }
       ]
     },
@@ -1387,6 +1631,139 @@
         {
           "path": "wear/src/main/res/values/arrays.xml",
           "line": 138
+        }
+      ]
+    },
+    {
+      "key": "complication_uploader_phone_battery",
+      "ui_location": "Watch face > complication picker",
+      "kind": "label",
+      "description": "Name of a complication in the watch's complication picker. Short label; the picker has little space. Complication showing the battery level of the phone that runs AAPS (the uploader).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "54ad108f429731e4",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 672
+        }
+      ]
+    },
+    {
+      "key": "confirm",
+      "ui_location": "Phone > confirmation dialog sent from watch",
+      "kind": "button",
+      "description": "Title/label of a confirmation request, shown in uppercase. Used when the user must confirm an action started on the watch.",
+      "related_keys": [
+        "request"
+      ],
+      "confidence": 0.75,
+      "usages_hash": "77039447d5f1141a",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 713
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 985
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1002
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmManager.kt",
+          "line": 162
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewScreen.kt",
+          "line": 93
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewScreen.kt",
+          "line": 142
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewScreen.kt",
+          "line": 167
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 108
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 202
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveStep.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "constraint_applied",
+      "ui_location": "Phone/watch > confirmation lines",
+      "kind": "status",
+      "description": "Warning that a safety limit changed the requested value (e.g. maximum bolus).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ad54bb67b40a60ef",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 764
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 975
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 995
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 982
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 999
+        }
+      ]
+    },
+    {
+      "key": "contacting_master",
+      "ui_location": "Watch > waiting screen",
+      "kind": "status",
+      "description": "Shown while the watch waits for the phone (the 'master' running AAPS) to answer. The ellipsis shows ongoing activity.",
+      "related_keys": [
+        "contacting_master_unknown"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f727636c3840d4f4",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ContactingMasterActivity.kt",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "key": "contacting_master_unknown",
+      "ui_location": "Watch > waiting screen",
+      "kind": "status",
+      "description": "Shown when the phone did not answer and its state is unknown. Tells the user to check the phone.",
+      "related_keys": [
+        "contacting_master"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "aca31c82d772eaa5",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ContactingMasterActivity.kt",
+          "line": 85
         }
       ]
     },
@@ -1813,6 +2190,57 @@
       ]
     },
     {
+      "key": "insulin_unit_short",
+      "ui_location": "Watch face > complications showing IoB",
+      "kind": "label",
+      "description": "Abbreviated insulin unit appended directly to the insulin on board value (e.g. '1.25U'), without space. Keep it very short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "33ac90153ce9f2ae",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/BrIobComplication.kt",
+          "line": 31
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/CobIobComplication.kt",
+          "line": 32
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/IobIconComplication.kt",
+          "line": 32
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 480
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 502
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 537
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 665
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/BolusActivity.kt",
+          "line": 155
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/FillActivity.kt",
+          "line": 150
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TreatmentActivity.kt",
+          "line": 188
+        }
+      ]
+    },
+    {
       "key": "iob_0_00u",
       "ui_location": "Digital Style layout placeholder",
       "kind": "other",
@@ -1851,6 +2279,31 @@
       ]
     },
     {
+      "key": "label_bg_graph_tile",
+      "ui_location": "Watch > Tile menu > BG Graph",
+      "kind": "menu_item",
+      "description": "Name of the glucose (BG) graph tile. Used as the tile's label and as the entry in the tile settings menu.",
+      "related_keys": [
+        "tile_settings"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5450dd3de059448a",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 839
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/TileMenuActivity.kt",
+          "line": 23
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/TileMenuActivity.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
       "key": "label_quick_wizard_tile",
       "ui_location": "Wear OS watch > tile picker",
       "kind": "label",
@@ -1862,6 +2315,41 @@
         {
           "path": "wear/src/main/AndroidManifest.xml",
           "line": 780
+        }
+      ]
+    },
+    {
+      "key": "label_running_mode_title",
+      "ui_location": "Watch > Running mode picker title; also a tile/service label",
+      "kind": "title",
+      "description": "Title of the screen where the user changes the loop's running mode (closed loop, suspended, pump disconnected...). Noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ced6abf9518eecc5",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 651
+        },
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 825
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 48
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 71
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 97
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 27
         }
       ]
     },
@@ -2009,6 +2497,929 @@
         {
           "path": "wear/src/main/AndroidManifest.xml",
           "line": 80
+        }
+      ]
+    },
+    {
+      "key": "loop_status",
+      "ui_location": "Watch > Main menu entry; phone > loop status confirmation",
+      "kind": "menu_item",
+      "description": "Entry that opens the Loop status screen, and the title of the phone's loop status confirmation.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "85e23b58b4947baf",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 261
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 63
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "key": "loop_status_adjusted_target",
+      "ui_location": "Watch > Loop status > Targets",
+      "kind": "label",
+      "description": "Label for the target after the algorithm adjusted it (for example by sensitivity).",
+      "related_keys": [
+        "loop_status_target"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "958e17aa65b011c4",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 730
+        }
+      ]
+    },
+    {
+      "key": "loop_status_basal_rate",
+      "ui_location": "Watch > Loop status > Loop Result",
+      "kind": "label",
+      "description": "Row label for the suggested temporary basal rate. Short.",
+      "related_keys": [
+        "loop_status_tbr_rate"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "87f6625789e6b379",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 581
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 603
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 612
+        }
+      ]
+    },
+    {
+      "key": "loop_status_closed",
+      "ui_location": "Watch > Loop status header, running mode picker, and running mode complication",
+      "kind": "status",
+      "description": "Name of a loop mode. Loop adjusts insulin automatically. Also used on the phone's confirmation screen.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "561ecbf7a57a7410",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1686
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/RunningModeComplication.kt",
+          "line": 51
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 81
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 143
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 357
+        }
+      ]
+    },
+    {
+      "key": "loop_status_disabled",
+      "ui_location": "Watch > Loop status header, running mode picker, and running mode complication",
+      "kind": "status",
+      "description": "Name of a loop mode. The loop is switched off. Also used on the phone's confirmation screen.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fb9717c049e6543e",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1689
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/RunningModeComplication.kt",
+          "line": 54
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 84
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 146
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 360
+        }
+      ]
+    },
+    {
+      "key": "loop_status_disconnected",
+      "ui_location": "Watch > Loop status header, running mode picker, and running mode complication",
+      "kind": "status",
+      "description": "Name of a loop mode. The user disconnected the pump. In the loop status header it is shown in uppercase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2a653e2146a0d929",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/RunningModeComplication.kt",
+          "line": 59
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 88
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 364
+        }
+      ]
+    },
+    {
+      "key": "loop_status_dst_suspended",
+      "ui_location": "Watch > Loop status header, running mode picker, and running mode complication",
+      "kind": "status",
+      "description": "Name of a loop mode. The loop is paused around a daylight saving time change. In the loop status header it is shown in uppercase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ec48c32322490801",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/RunningModeComplication.kt",
+          "line": 58
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 87
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 363
+        }
+      ]
+    },
+    {
+      "key": "loop_status_duration",
+      "ui_location": "Watch > Loop status; profile switch, running mode and temp target screens",
+      "kind": "label",
+      "description": "Label for a duration value or input.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "ba42e15eb07a6bd8",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ProfileSwitchActivity.kt",
+          "line": 106
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModeTimedActivity.kt",
+          "line": 102
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TempTargetActivity.kt",
+          "line": 84
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 587
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 619
+        }
+      ]
+    },
+    {
+      "key": "loop_status_duration_remaining",
+      "ui_location": "Watch > Running mode picker subtitle; Loop status > Loop Result",
+      "kind": "status",
+      "description": "Time left. %1$s is a duration like '25 min'. Used as a value or subtitle, so a fragment.",
+      "related_keys": [
+        "loop_status_duration_until"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a66756998af22752",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 72
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 588
+        }
+      ]
+    },
+    {
+      "key": "loop_status_duration_until",
+      "ui_location": "Watch > Loop status screen (header, scene, temp target)",
+      "kind": "status",
+      "description": "Remaining time with the end time in parentheses. %1$s is a duration like '25 min', %2$s the clock time it ends. Compact.",
+      "related_keys": [
+        "loop_status_duration_remaining"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "041add82f09c7c4a",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 380
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 454
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 709
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 804
+        }
+      ]
+    },
+    {
+      "key": "loop_status_error",
+      "ui_location": "Watch > Loop status screen",
+      "kind": "error",
+      "description": "Error shown when the loop status could not be loaded from the phone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0dae48bab493323f",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 147
+        }
+      ]
+    },
+    {
+      "key": "loop_status_last_enact",
+      "ui_location": "Watch > Loop status > Loop Result",
+      "kind": "label",
+      "description": "Row label for the time the loop last applied (enacted) a decision on the pump.",
+      "related_keys": [
+        "loop_status_last_run"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f760102c1de9cac4",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 529
+        }
+      ]
+    },
+    {
+      "key": "loop_status_last_run",
+      "ui_location": "Watch > Loop status > Loop Result",
+      "kind": "label",
+      "description": "Row label for the time the loop last ran its calculation.",
+      "related_keys": [
+        "loop_status_last_enact"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e028df846c4c9086",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 523
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 536
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 543
+        }
+      ]
+    },
+    {
+      "key": "loop_status_last_run_enact",
+      "ui_location": "Watch > Loop status > Loop Result",
+      "kind": "label",
+      "description": "Row label used when the last run and last enact times are the same. 'Enact' is when the loop applied its decision to the pump.",
+      "related_keys": [
+        "loop_status_last_run",
+        "loop_status_last_enact"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "dcc8a9e9433181af",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 517
+        }
+      ]
+    },
+    {
+      "key": "loop_status_lgs",
+      "ui_location": "Watch > Loop status header, running mode picker, and running mode complication",
+      "kind": "status",
+      "description": "Name of a loop mode. Closed loop that only reduces insulin on low glucose (low glucose suspend). Also used on the phone's confirmation screen.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "16abd59f851d38b9",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1688
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/RunningModeComplication.kt",
+          "line": 53
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 83
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 144
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 359
+        }
+      ]
+    },
+    {
+      "key": "loop_status_no_last_run",
+      "ui_location": "Watch > Loop status > Last Run",
+      "kind": "status",
+      "description": "Value shown when the loop has not run yet. Short; 'not available'.",
+      "related_keys": [
+        "loop_status_last_run"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9f96d6212aa38c2f",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 544
+        }
+      ]
+    },
+    {
+      "key": "loop_status_no_profile",
+      "ui_location": "Watch > Loop status > Profile card",
+      "kind": "status",
+      "description": "Shown when no profile is active.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0390ccef4f130701",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 777
+        }
+      ]
+    },
+    {
+      "key": "loop_status_oaps_reason",
+      "ui_location": "Watch > Loop status > Loop Result",
+      "kind": "label",
+      "description": "Heading above the algorithm's explanation text. 'OpenAPS' is the name of the algorithm family; keep it.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "f61f4fdb592b298a",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 636
+        }
+      ]
+    },
+    {
+      "key": "loop_status_open",
+      "ui_location": "Watch > Loop status header, running mode picker, and running mode complication",
+      "kind": "status",
+      "description": "Name of a loop mode. Loop only suggests; the user acts. Also used on the phone's confirmation screen.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b100dd49a0f2b55a",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1687
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/RunningModeComplication.kt",
+          "line": 52
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 82
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 145
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 358
+        }
+      ]
+    },
+    {
+      "key": "loop_status_profile",
+      "ui_location": "Watch > Loop status > card",
+      "kind": "title",
+      "description": "Card title for the active insulin profile.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a4ae87cb2a3d3c98",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 773
+        }
+      ]
+    },
+    {
+      "key": "loop_status_profile_percentage",
+      "ui_location": "Watch > Loop status > Profile card",
+      "kind": "label",
+      "description": "Row label for the profile percentage, which scales insulin doses.",
+      "related_keys": [
+        "loop_status_profile_percentage_value"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9656394b324467cd",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 832
+        }
+      ]
+    },
+    {
+      "key": "loop_status_profile_percentage_value",
+      "ui_location": "Watch > Loop status > Profile card",
+      "kind": "status",
+      "description": "Profile percentage value. %1$d is the percentage; the doubled % prints one % sign.",
+      "related_keys": [
+        "loop_status_profile_percentage"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5b3b7cdea0d9ca2c",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 833
+        }
+      ]
+    },
+    {
+      "key": "loop_status_profile_returns_to",
+      "ui_location": "Watch > Loop status > Profile card",
+      "kind": "label",
+      "description": "Row label for the profile that becomes active again when a temporary profile switch ends.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "e043dc414d2de7ce",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 810
+        }
+      ]
+    },
+    {
+      "key": "loop_status_profile_timeshift",
+      "ui_location": "Watch > Loop status > Profile card",
+      "kind": "label",
+      "description": "Row label for the profile timeshift: the profile's daily schedule shifted by some hours.",
+      "related_keys": [
+        "loop_status_profile_timeshift_value"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "017acb6e02d88c4f",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 838
+        }
+      ]
+    },
+    {
+      "key": "loop_status_profile_timeshift_value",
+      "ui_location": "Watch > Loop status > Profile card",
+      "kind": "status",
+      "description": "Profile timeshift value. %1$+d is a signed number of hours (e.g. +2h); 'h' stands for hours.",
+      "related_keys": [
+        "loop_status_profile_timeshift"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ee3b88aad114ac91",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 839
+        }
+      ]
+    },
+    {
+      "key": "loop_status_pump_suspended",
+      "ui_location": "Watch > Loop status header, running mode picker, and running mode complication",
+      "kind": "status",
+      "description": "Name of a loop mode. The pump itself is suspended. In the loop status header it is shown in uppercase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "314c586ec7148f0e",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/RunningModeComplication.kt",
+          "line": 57
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 86
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 362
+        }
+      ]
+    },
+    {
+      "key": "loop_status_refresh",
+      "ui_location": "Watch > Loop status screen",
+      "kind": "button",
+      "description": "Button that reloads the loop status. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e0cb7a4e4b15b7f0",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 262
+        }
+      ]
+    },
+    {
+      "key": "loop_status_result",
+      "ui_location": "Watch > Loop status > card",
+      "kind": "title",
+      "description": "Card title for the result of the last loop run (what it decided: SMB, temp basal).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "803eb52190e315a6",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 486
+        }
+      ]
+    },
+    {
+      "key": "loop_status_scene_ended",
+      "ui_location": "Watch > Loop status > Scene card",
+      "kind": "status",
+      "description": "Shown when the scene is no longer active.",
+      "related_keys": [
+        "loop_status_scene_until_ended"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "fdf66ddb1c9a1515",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 457
+        }
+      ]
+    },
+    {
+      "key": "loop_status_scene_follow_up",
+      "ui_location": "Watch > Loop status > Scene card",
+      "kind": "label",
+      "description": "Row label for what follows after the scene ends. A scene is a preset bundle of AAPS settings.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "6bd5adcf0e8d7efe",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 467
+        }
+      ]
+    },
+    {
+      "key": "loop_status_scene_until_ended",
+      "ui_location": "Watch > Loop status > Scene card",
+      "kind": "status",
+      "description": "Shown instead of an end time when a scene runs until the user ends it.",
+      "related_keys": [
+        "loop_status_scene_ended"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3e9974e5cb90d39d",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 451
+        }
+      ]
+    },
+    {
+      "key": "loop_status_sensitivity",
+      "ui_location": "Watch > Loop status > card",
+      "kind": "title",
+      "description": "Card title for insulin sensitivity (how strongly insulin lowers glucose).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "65f1bb1038ec2d13",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 854
+        }
+      ]
+    },
+    {
+      "key": "loop_status_set_by_scene",
+      "ui_location": "Watch > Loop status (accessibility)",
+      "kind": "other",
+      "description": "Accessibility description (not visible) of an icon marking a value that the active scene set.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "4856e51dd5274acb",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 331
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 399
+        }
+      ]
+    },
+    {
+      "key": "loop_status_smb",
+      "ui_location": "Watch > Loop status > Loop Result",
+      "kind": "status",
+      "description": "Size of the super micro bolus (SMB) the loop delivers. %1$.2f is insulin units.",
+      "related_keys": [
+        "loop_status_smb_text"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "dc066755c049b415",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 565
+        }
+      ]
+    },
+    {
+      "key": "loop_status_smb_text",
+      "ui_location": "Watch > Loop status > Loop Result",
+      "kind": "label",
+      "description": "Row label for the SMB (super micro bolus) value. Usually kept as the abbreviation.",
+      "related_keys": [
+        "loop_status_smb"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "85ac1e93e62a025b",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 564
+        }
+      ]
+    },
+    {
+      "key": "loop_status_superbolus",
+      "ui_location": "Watch > Loop status header, running mode picker, and running mode complication",
+      "kind": "status",
+      "description": "Name of a loop mode. Superbolus mode: the basal insulin of the next hours is given up front as bolus, with the loop paused. In the loop status header it is shown in uppercase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d49eae9279bf63d1",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/RunningModeComplication.kt",
+          "line": 60
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 89
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 365
+        }
+      ]
+    },
+    {
+      "key": "loop_status_suspended",
+      "ui_location": "Watch > Loop status header, running mode picker, and running mode complication",
+      "kind": "status",
+      "description": "Name of a loop mode. The loop is temporarily suspended by the user. In the loop status header it is shown in uppercase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0542f180e6328f07",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/RunningModeComplication.kt",
+          "line": 56
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 85
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 361
+        }
+      ]
+    },
+    {
+      "key": "loop_status_target",
+      "ui_location": "Watch > Loop status > Targets",
+      "kind": "label",
+      "description": "Row label for a single glucose target value.",
+      "related_keys": [
+        "loop_status_target_range"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "637c874ae213f57b",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 753
+        }
+      ]
+    },
+    {
+      "key": "loop_status_target_range",
+      "ui_location": "Watch > Loop status > Targets",
+      "kind": "label",
+      "description": "Row label for the glucose target range (low to high).",
+      "related_keys": [
+        "loop_status_target"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "61f9c19b6a981343",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 747
+        }
+      ]
+    },
+    {
+      "key": "loop_status_targets",
+      "ui_location": "Watch > Loop status > card",
+      "kind": "title",
+      "description": "Card title for glucose targets.",
+      "related_keys": [
+        "loop_status_temp_target",
+        "loop_status_target"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e57ab1bc431612a5",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 675
+        }
+      ]
+    },
+    {
+      "key": "loop_status_tbr_cancel",
+      "ui_location": "Watch > Loop status > Loop Result",
+      "kind": "status",
+      "description": "The loop decided to cancel the temporary basal and return to the profile's regular basal rate.",
+      "related_keys": [
+        "loop_status_tbr_continues"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3431feeaa88b9100",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 596
+        }
+      ]
+    },
+    {
+      "key": "loop_status_tbr_continues",
+      "ui_location": "Watch > Loop status > Loop Result",
+      "kind": "status",
+      "description": "The loop decided to keep the running temporary basal unchanged.",
+      "related_keys": [
+        "loop_status_tbr_cancel"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "77198791f623af77",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 574
+        }
+      ]
+    },
+    {
+      "key": "loop_status_tbr_rate",
+      "ui_location": "Watch > Loop status > Loop Result",
+      "kind": "status",
+      "description": "Suggested temporary basal rate (TBR). %1$.2f is insulin units per hour, %2$d is the rate as a percentage of the profile basal.",
+      "related_keys": [
+        "loop_status_basal_rate"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d5791b8ab8c7ef21",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 582
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 604
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 613
+        }
+      ]
+    },
+    {
+      "key": "loop_status_temp_target",
+      "ui_location": "Watch > Loop status > Targets; Temp target screen",
+      "kind": "title",
+      "description": "Temporary target: a short-term change of the glucose target. Used as a heading and a title.",
+      "related_keys": [
+        "loop_status_targets"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f1391cd436ab59b7",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TempTargetActivity.kt",
+          "line": 88
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TempTargetActivity.kt",
+          "line": 104
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TempTargetActivity.kt",
+          "line": 117
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 695
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 68
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 102
+        }
+      ]
+    },
+    {
+      "key": "loop_status_unknown",
+      "ui_location": "Watch > Loop status header, running mode picker, and running mode complication",
+      "kind": "status",
+      "description": "Name of a loop mode. The mode could not be determined. In the loop status header it is shown in uppercase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fa0fedc61523705a",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/RunningModeComplication.kt",
+          "line": 61
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 152
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 366
         }
       ]
     },
@@ -3984,6 +5395,121 @@
       ]
     },
     {
+      "key": "quick_wizard_tile_carbs",
+      "ui_location": "Watch > Quick wizard tile button",
+      "kind": "button",
+      "description": "Carbs of a quick wizard preset shown on a tile button. %1$d is grams. Very little space.",
+      "related_keys": [
+        "quick_wizard_tile_insulin"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3aafe89798ff1f04",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/QuickWizardSource.kt",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "key": "quick_wizard_tile_insulin",
+      "ui_location": "Watch > Quick wizard tile button",
+      "kind": "button",
+      "description": "Insulin amount of a quick wizard preset shown on a tile button. %1$.2f is insulin units. Very little space.",
+      "related_keys": [
+        "quick_wizard_tile_carbs"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9bfa1d925f461431",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/QuickWizardSource.kt",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "key": "request",
+      "ui_location": "Watch > Bolus, Carbs, eCarbs confirmation screens",
+      "kind": "label",
+      "description": "Short heading on the confirmation screen saying the action will be requested from the phone.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "ad64e2cfaf722e17",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/BolusActivity.kt",
+          "line": 129
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/CarbActivity.kt",
+          "line": 137
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ECarbActivity.kt",
+          "line": 157
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/FillActivity.kt",
+          "line": 124
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ProfileSwitchActivity.kt",
+          "line": 169
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModeTimedActivity.kt",
+          "line": 158
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TempTargetActivity.kt",
+          "line": 178
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TreatmentActivity.kt",
+          "line": 161
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/WizardActivity.kt",
+          "line": 146
+        }
+      ]
+    },
+    {
+      "key": "running_mode_reconnect",
+      "ui_location": "Watch > Running mode picker",
+      "kind": "menu_item",
+      "description": "Row that reconnects the pump after a disconnect. Short imperative.",
+      "related_keys": [
+        "title_activity_disconnect_pump"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "12525790a1959fa2",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 150
+        }
+      ]
+    },
+    {
+      "key": "running_mode_resume",
+      "ui_location": "Watch > Running mode picker",
+      "kind": "menu_item",
+      "description": "Row that resumes the loop after a suspension. Short imperative.",
+      "related_keys": [
+        "title_activity_suspend_loop"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2b333cf94a18a08e",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 149
+        }
+      ]
+    },
+    {
       "key": "scene_end",
       "ui_location": "Watch > Scene tile button",
       "kind": "button",
@@ -4382,6 +5908,21 @@
       ]
     },
     {
+      "key": "tile_graph_time_range",
+      "ui_location": "Watch > Tile settings > BG Graph tile",
+      "kind": "label",
+      "description": "Label of the setting that chooses how many hours of glucose history the tile graph shows.",
+      "related_keys": [],
+      "confidence": 0.85,
+      "usages_hash": "edda336c7d6733be",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/BgGraphTileSettingsActivity.kt",
+          "line": 53
+        }
+      ]
+    },
+    {
       "key": "tile_no_config",
       "ui_location": "Watch > tile content",
       "kind": "status",
@@ -4518,6 +6059,103 @@
       ]
     },
     {
+      "key": "tile_settings",
+      "ui_location": "Watch > Tile settings screen",
+      "kind": "title",
+      "description": "Title of the screen where a tile (Actions, BG Graph, Scene) is configured.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a8f9f56165af924f",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/ActionsTileSettingsActivity.kt",
+          "line": 65
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/BgGraphTileSettingsActivity.kt",
+          "line": 71
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/SceneTileSettingsActivity.kt",
+          "line": 71
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/TempTargetTileSettingsActivity.kt",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "key": "tile_tap_action",
+      "ui_location": "Watch > Tile settings > BG Graph tile",
+      "kind": "label",
+      "description": "Label of the setting that chooses what happens when the user taps the BG graph tile.",
+      "related_keys": [
+        "tile_tap_bg_graph",
+        "tile_tap_main_menu",
+        "tile_tap_loop_status"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "44886cc48ab5bedb",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/BgGraphTileSettingsActivity.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "tile_tap_bg_graph",
+      "ui_location": "Watch > Tile settings > BG Graph tile > Tap action",
+      "kind": "label",
+      "description": "Option: tapping the tile opens the full BG graph.",
+      "related_keys": [
+        "tile_tap_action"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f7d074d7a646ff8d",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/BgGraphTileSettingsActivity.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "tile_tap_loop_status",
+      "ui_location": "Watch > Tile settings > BG Graph tile > Tap action",
+      "kind": "label",
+      "description": "Option: tapping the tile opens the Loop status screen.",
+      "related_keys": [
+        "tile_tap_action"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b47d401d5a57c3d4",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/BgGraphTileSettingsActivity.kt",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "key": "tile_tap_main_menu",
+      "ui_location": "Watch > Tile settings > BG Graph tile > Tap action",
+      "kind": "label",
+      "description": "Option: tapping the tile opens the app's main menu.",
+      "related_keys": [
+        "tile_tap_action"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "fdd60f7d3c997e31",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/BgGraphTileSettingsActivity.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
       "key": "tile_tempt_1",
       "ui_location": "Watch > Settings > Tiles > Temp Target tile",
       "kind": "label",
@@ -4574,6 +6212,48 @@
         {
           "path": "wear/src/main/kotlin/app/aaps/wear/tile/TempTargetTileSettingsActivity.kt",
           "line": 52
+        }
+      ]
+    },
+    {
+      "key": "title_activity_disconnect_pump",
+      "ui_location": "Watch > Running mode picker",
+      "kind": "menu_item",
+      "description": "Row that disconnects the pump for a chosen time. Short imperative.",
+      "related_keys": [
+        "running_mode_reconnect"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "32fadf723670e2f5",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 148
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/RunningModeSource.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "title_activity_suspend_loop",
+      "ui_location": "Watch > Running mode picker",
+      "kind": "menu_item",
+      "description": "Row that suspends the loop for a chosen time. Short imperative; 'Loop' is the AAPS closed-loop algorithm.",
+      "related_keys": [
+        "running_mode_resume"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "728dfb23c8bf9130",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 147
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/RunningModeSource.kt",
+          "line": 65
         }
       ]
     },
@@ -4699,6 +6379,341 @@
         {
           "path": "wear/src/main/kotlin/app/aaps/wear/interaction/utils/DisplayFormat.kt",
           "line": 76
+        }
+      ]
+    },
+    {
+      "key": "wizard_calculation",
+      "ui_location": "Watch > Bolus wizard > calculation details",
+      "kind": "title",
+      "description": "Heading of the wizard's breakdown of how the dose was calculated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "77a61d8d93ada047",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 343
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 579
+        }
+      ]
+    },
+    {
+      "key": "wizard_carbs_short",
+      "ui_location": "Watch > Bolus wizard / Carbs > confirmation",
+      "kind": "label",
+      "description": "Carbohydrate amount in grams. %1$d is the grams. Compact; keep the unit abbreviation.",
+      "related_keys": [
+        "wizard_result_carbs"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "bd6b1768c9947fd7",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 354
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 518
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/CarbActivity.kt",
+          "line": 163
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ECarbActivity.kt",
+          "line": 183
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TreatmentActivity.kt",
+          "line": 196
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/WizardActivity.kt",
+          "line": 172
+        }
+      ]
+    },
+    {
+      "key": "wizard_carbs_with_time",
+      "ui_location": "Watch > Bolus wizard > calculation details",
+      "kind": "status",
+      "description": "Carbs with timing offset. %1$d is grams; %2$s is a signed number of minutes (before/after now).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "abba7cb3b93e3368",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 516
+        }
+      ]
+    },
+    {
+      "key": "wizard_confirmation_sent",
+      "ui_location": "Watch > confirmation overlay after sending a bolus/wizard request",
+      "kind": "toast",
+      "description": "Brief confirmation that the request was sent to the phone. One word or short phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "34c4b4a59c979b52",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/comm/DataHandlerWear.kt",
+          "line": 162
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 300
+        }
+      ]
+    },
+    {
+      "key": "wizard_insulin_format",
+      "ui_location": "Watch > Bolus wizard > confirmation page",
+      "kind": "status",
+      "description": "Insulin amount. %1$s is the number, U is insulin units.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8b34d9066f56f4d8",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 346
+        }
+      ]
+    },
+    {
+      "key": "wizard_result_bg",
+      "ui_location": "Watch > Bolus wizard > calculation details",
+      "kind": "label",
+      "description": "Row label for the correction from current glucose (blood glucose, BG).",
+      "related_keys": [
+        "wizard_result_bg_tt"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "eabddbbd432ba6dd",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 392
+        }
+      ]
+    },
+    {
+      "key": "wizard_result_bg_tt",
+      "ui_location": "Watch > Bolus wizard > calculation details",
+      "kind": "label",
+      "description": "Row label for the glucose correction when a temp target is active. %1$s is the target value. TT = temp target.",
+      "related_keys": [
+        "wizard_result_bg"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2dad1fda43a27ac4",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 390
+        }
+      ]
+    },
+    {
+      "key": "wizard_result_carbs",
+      "ui_location": "Watch > Bolus wizard > calculation details",
+      "kind": "label",
+      "description": "Row label for insulin covering the entered carbs. %1$d is grams.",
+      "related_keys": [
+        "wizard_carbs_short"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5e2ed86e3886d531",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 400
+        }
+      ]
+    },
+    {
+      "key": "wizard_result_cob",
+      "ui_location": "Watch > Bolus wizard > calculation details",
+      "kind": "label",
+      "description": "Row label for insulin covering carbs on board (COB). %1$.1f is the grams of COB.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0542e9ea134c5676",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 398
+        }
+      ]
+    },
+    {
+      "key": "wizard_result_correction",
+      "ui_location": "Watch > Bolus wizard > calculation details",
+      "kind": "label",
+      "description": "Row label for the correction amount applied to the dose.",
+      "related_keys": [
+        "wizard_result_correction_percentage"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "64aadba071ca3579",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 632
+        }
+      ]
+    },
+    {
+      "key": "wizard_result_correction_percentage",
+      "ui_location": "Watch > Bolus wizard > calculation details",
+      "kind": "status",
+      "description": "Correction percentage applied to the dose. %1$d is the percent.",
+      "related_keys": [
+        "wizard_result_correction"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0e632b84f26fcb1c",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 622
+        }
+      ]
+    },
+    {
+      "key": "wizard_result_ecarbs",
+      "ui_location": "Watch > Bolus wizard > calculation details",
+      "kind": "status",
+      "description": "Extended carbs (eCarbs, spread over time). %1$d grams, %2$d duration in hours, %3$d delay in minutes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8f811269a586dd5d",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 548
+        }
+      ]
+    },
+    {
+      "key": "wizard_result_iob",
+      "ui_location": "Watch > Bolus wizard > calculation details",
+      "kind": "label",
+      "description": "Row label for the subtraction of insulin on board (IOB).",
+      "related_keys": [
+        "wizard_result_new_iob"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2adf4d281553fff1",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 631
+        }
+      ]
+    },
+    {
+      "key": "wizard_result_new_iob",
+      "ui_location": "Watch > Bolus wizard > calculation details",
+      "kind": "status",
+      "description": "Insulin on board after the bolus. %1$s is the number, followed by the unit U (insulin units).",
+      "related_keys": [
+        "wizard_result_iob"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c4dc3d7113c8a293",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 593
+        }
+      ]
+    },
+    {
+      "key": "wizard_result_subtotal",
+      "ui_location": "Watch > Bolus wizard > calculation details",
+      "kind": "label",
+      "description": "Row label for the sum before the correction percentage is applied.",
+      "related_keys": [
+        "wizard_result_total"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8f3b33c4cb002c95",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 619
+        }
+      ]
+    },
+    {
+      "key": "wizard_result_total",
+      "ui_location": "Watch > Bolus wizard > calculation details",
+      "kind": "label",
+      "description": "Row label for the final dose total.",
+      "related_keys": [
+        "wizard_total_insulin"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8a99b516d12f7739",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 635
+        }
+      ]
+    },
+    {
+      "key": "wizard_result_trend",
+      "ui_location": "Watch > Bolus wizard > calculation details",
+      "kind": "label",
+      "description": "Row label for the correction from the glucose trend over 15 minutes. The ' is an apostrophe for minutes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7315bd119f3e82d8",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 396
+        }
+      ]
+    },
+    {
+      "key": "wizard_settings_format",
+      "ui_location": "Watch > Bolus wizard > calculation details",
+      "kind": "status",
+      "description": "Profile settings used: IC is the insulin-to-carb ratio, ISF the insulin sensitivity factor. %1$s and %2$s are numbers; '|' separates the two. Keep IC and ISF abbreviations as in your AAPS translation.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "be113b1a9f12ba88",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 605
+        }
+      ]
+    },
+    {
+      "key": "wizard_total_insulin",
+      "ui_location": "Watch > Bolus wizard > calculation details",
+      "kind": "label",
+      "description": "Row label for the total insulin the wizard calculated.",
+      "related_keys": [
+        "wizard_result_total"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "21971fb0c7c73413",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/AcceptActivity.kt",
+          "line": 426
         }
       ]
     }
