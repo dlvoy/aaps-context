@@ -384,6 +384,21 @@
       ]
     },
     {
+      "key": "abs_insulin_shortname",
+      "ui_location": "Overview > graph settings > series chips",
+      "kind": "label",
+      "description": "Very short abbreviation (chip label) for the absolute insulin on board series, which counts basal insulin too. Keep to a few capital letters.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f1dc21a2bf0d9130",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 674
+        }
+      ]
+    },
+    {
       "key": "absolute",
       "ui_location": "Loop dialog / pump result",
       "kind": "label",
@@ -560,6 +575,21 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetPresetStorage.kt",
           "line": 21
+        }
+      ]
+    },
+    {
+      "key": "activity_shortname",
+      "ui_location": "Overview > graph settings > series chips",
+      "kind": "label",
+      "description": "Very short abbreviation (chip label) for the insulin activity series, the rate at which insulin is currently acting. Keep to a few capital letters.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f3441a2f1e360155",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 683
         }
       ]
     },
@@ -1402,6 +1432,37 @@
       ]
     },
     {
+      "key": "basal_shortname",
+      "ui_location": "Overview > graph settings > IOB / basal section title",
+      "kind": "label",
+      "description": "Short abbreviation for basal insulin, shown after 'IOB / ' in the title of the insulin graph section and its settings sheet. Keep very short.",
+      "related_keys": [
+        "iob"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b81e24babfd4884c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 472
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 491
+        }
+      ]
+    },
+    {
+      "key": "basalpct",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
       "key": "basalrate",
       "ui_location": "Statistics > TDD table header",
       "kind": "label",
@@ -1576,6 +1637,21 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/profile/ProfileUtilImpl.kt",
           "line": 42
+        }
+      ]
+    },
+    {
+      "key": "bgi_shortname",
+      "ui_location": "Overview > graph settings > series chips",
+      "kind": "label",
+      "description": "Very short abbreviation (chip label) for BGI, blood glucose impact, the expected glucose change from insulin activity. The leading minus sign is part of the label.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ff6124f6f6abb3aa",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 676
         }
       ]
     },
@@ -4147,6 +4223,16 @@
       ]
     },
     {
+      "key": "cloud_token_expired_or_invalid",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
       "key": "cob",
       "ui_location": "Overview element; notification",
       "kind": "label",
@@ -5446,6 +5532,21 @@
       ]
     },
     {
+      "key": "deviation_shortname",
+      "ui_location": "Overview > graph settings > series chips",
+      "kind": "label",
+      "description": "Very short abbreviation (chip label) for the glucose deviation series, the difference between expected and actual glucose change. Keep to a few capital letters.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "784cba32418546cd",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 677
+        }
+      ]
+    },
+    {
       "key": "device_changed",
       "ui_location": "Status line > pump status request",
       "kind": "log",
@@ -5496,6 +5597,21 @@
       ]
     },
     {
+      "key": "devslope_shortname",
+      "ui_location": "Overview > graph settings > series chips",
+      "kind": "label",
+      "description": "Very short abbreviation (chip label) for the deviation slope series used by the dynamic sensitivity algorithm. Keep as a technical abbreviation.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7d8c257fedc4f3d7",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 680
+        }
+      ]
+    },
+    {
       "key": "dia",
       "ui_location": "Autotune results table",
       "kind": "label",
@@ -5537,6 +5653,16 @@
           "line": 387
         }
       ]
+    },
+    {
+      "key": "dia_long_label",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
     },
     {
       "key": "disabled_loop",
@@ -7095,6 +7221,36 @@
       ]
     },
     {
+      "key": "graph_bg",
+      "ui_location": "Overview > graph settings > BG graph series sheet",
+      "kind": "dialog_title",
+      "description": "Title of the bottom sheet where the user chooses which overlays appear on the blood glucose graph. Noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a6a1479ac07f41af",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 440
+        }
+      ]
+    },
+    {
+      "key": "graph_height",
+      "ui_location": "Overview > graph settings > series sheet",
+      "kind": "label",
+      "description": "Label of a number input for the height of a graph, in dp (density-independent pixels, a screen unit). Keep the [dp] marker.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "68c736e5316a163b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 756
+        }
+      ]
+    },
+    {
       "key": "graph_new",
       "ui_location": "Overview graph settings > dialog",
       "kind": "dialog_title",
@@ -7136,6 +7292,21 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/DexcomTirStatsCompose.kt",
           "line": 123
+        }
+      ]
+    },
+    {
+      "key": "heartRate_shortname",
+      "ui_location": "Overview > graph settings > series chips",
+      "kind": "label",
+      "description": "Very short abbreviation (chip label) for heart rate.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a2f4c82e5edac9b8",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 681
         }
       ]
     },
@@ -11068,6 +11239,16 @@
       ]
     },
     {
+      "key": "no_profile_selected",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
       "key": "no_profile_set",
       "ui_location": "Persistent notification",
       "kind": "notification",
@@ -11132,6 +11313,16 @@
           "line": 83
         }
       ]
+    },
+    {
+      "key": "no_valid_basal_rate",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
     },
     {
       "key": "nochangerequested",
@@ -12066,6 +12257,16 @@
       ]
     },
     {
+      "key": "percent_rate_duration_formatted",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
       "key": "percentage_label",
       "ui_location": "Profile activation; wizard confirmation",
       "kind": "label",
@@ -12163,6 +12364,23 @@
       ]
     },
     {
+      "key": "predictions_shortname",
+      "ui_location": "Overview > graph settings > series chips",
+      "kind": "label",
+      "description": "Very short abbreviation (chip label) for the glucose predictions series. Keep it a few capital letters.",
+      "related_keys": [
+        "activity_shortname"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0f3dd6f740381e6e",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 684
+        }
+      ]
+    },
+    {
       "key": "pref_syncs_with_main_phone",
       "ui_location": "Preferences > small sync badge beside a setting",
       "kind": "label",
@@ -12197,6 +12415,31 @@
         {
           "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptiveIntPreference.kt",
           "line": 115
+        }
+      ]
+    },
+    {
+      "key": "preferences_export_canceled",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "prefs_range_title",
+      "ui_location": "Search results (in-app preference search)",
+      "kind": "preference_title",
+      "description": "Title of the preference group that sets the glucose range used for visualization (the low and high limits drawn on graphs). Shown as a search result title.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "c4586e8d6e827116",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 99
         }
       ]
     },
@@ -13443,6 +13686,16 @@
       ]
     },
     {
+      "key": "rate",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
       "key": "rate_percent_duration",
       "ui_location": "Loop result text",
       "kind": "status",
@@ -13456,6 +13709,16 @@
           "line": 134
         }
       ]
+    },
+    {
+      "key": "rate_percent_duration_formatted",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
     },
     {
       "key": "read_status",
@@ -15641,6 +15904,23 @@
       ]
     },
     {
+      "key": "sensitivity_shortname",
+      "ui_location": "Overview > graph settings > series chips",
+      "kind": "label",
+      "description": "Very short abbreviation (chip label) for insulin sensitivity expressed as a percentage of normal.",
+      "related_keys": [
+        "variable_sensitivity_shortname"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8b0a63cb442877ae",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 678
+        }
+      ]
+    },
+    {
       "key": "sensor_label",
       "ui_location": "Status screen / search",
       "kind": "label",
@@ -16417,6 +16697,21 @@
         {
           "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchViewModel.kt",
           "line": 676
+        }
+      ]
+    },
+    {
+      "key": "steps_shortname",
+      "ui_location": "Overview > graph settings > series chips",
+      "kind": "label",
+      "description": "Very short abbreviation (chip label) for the step count series from the activity tracker.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7ab1b9e974f1a6e8",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 682
         }
       ]
     },
@@ -19565,6 +19860,599 @@
       ]
     },
     {
+      "key": "units_days",
+      "ui_location": "Number input fields > unit suffix; Automation > Run autotune action",
+      "kind": "label",
+      "description": "Plural unit label 'days' shown next to a numeric value, for example in the automation action that runs autotune over a number of days.",
+      "related_keys": [
+        "units_format_days"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a280bb6ff2767794",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 26
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 247
+        }
+      ]
+    },
+    {
+      "key": "units_format_days",
+      "ui_location": "Value displays with a day unit",
+      "kind": "other",
+      "description": "Formats a whole number of days. %1$d is the number of days. Plural-sensitive in some languages.",
+      "related_keys": [
+        "units_days",
+        "units_format_days_range"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "899a0e45ff6f9be8",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "units_format_days_range",
+      "ui_location": "Value displays with a day unit and allowed range",
+      "kind": "other",
+      "description": "Formats a number of days with the allowed range in parentheses. %1$d is the value, %2$d the minimum, %3$d the maximum.",
+      "related_keys": [
+        "units_format_days"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "c089a1344bb915dc",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 74
+        }
+      ]
+    },
+    {
+      "key": "units_format_double",
+      "ui_location": "Value displays of decimal numbers",
+      "kind": "other",
+      "description": "Number format with one decimal place and no unit. Normally needs no translation beyond keeping the placeholder.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3cbb302c282f5a1a",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "units_format_double_2",
+      "ui_location": "Value displays of decimal numbers",
+      "kind": "other",
+      "description": "Number format with two decimal places and no unit. %1$.2f is the value.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f8435bc2ee5226a9",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "units_format_double_2_range",
+      "ui_location": "Value displays of decimal numbers with allowed range",
+      "kind": "other",
+      "description": "Number with two decimals and the allowed range in parentheses. %1$.2f is the value, %2$.2f the minimum, %3$.2f the maximum.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "df4ee718c1390218",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "key": "units_format_double_3",
+      "ui_location": "Value displays of decimal numbers",
+      "kind": "other",
+      "description": "Number format with three decimal places and no unit. %1$.3f is the value.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7baf3ddea4f0466c",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "units_format_double_3_range",
+      "ui_location": "Value displays of numbers with a unit and allowed range",
+      "kind": "other",
+      "description": "Number with a unitless decimal (3 places) unit and the allowed range in parentheses. %1$.3f is the value, %2$.3f the minimum, %3$.3f the maximum. Keep the placeholders and the parentheses layout.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "11d50d81dfbfb1fe",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 81
+        }
+      ]
+    },
+    {
+      "key": "units_format_double_range",
+      "ui_location": "Value displays of numbers with a unit and allowed range",
+      "kind": "other",
+      "description": "Number with a unitless decimal (1 place) unit and the allowed range in parentheses. %1$.1f is the value, %2$.1f the minimum, %3$.1f the maximum. Keep the placeholders and the parentheses layout.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "eb987333c3cb3d24",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "key": "units_format_grams",
+      "ui_location": "Value displays of numbers with a unit",
+      "kind": "other",
+      "description": "Number with a grams (g) unit. %1$d is the value. Keep the placeholder; the unit is abbreviated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d61938b4c544eb54",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "units_format_grams_range",
+      "ui_location": "Value displays of numbers with a unit and allowed range",
+      "kind": "other",
+      "description": "Number with a grams (g) unit and the allowed range in parentheses. %1$d is the value, %2$d the minimum, %3$d the maximum. Keep the placeholders and the parentheses layout.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f85bea47e83bfdc8",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "key": "units_format_hours",
+      "ui_location": "Value displays; pump settings lists (Carelevo, EOPatch)",
+      "kind": "other",
+      "description": "Whole number of hours with abbreviated unit. %1$d is the hours. Also used as option labels in pump settings drop-downs.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4c7a0d8e433406a6",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 54
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/CarelevoPumpPlugin.kt",
+          "line": 556
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/EopatchPumpPlugin.kt",
+          "line": 607
+        }
+      ]
+    },
+    {
+      "key": "units_format_hours_double",
+      "ui_location": "Value displays of numbers with a unit",
+      "kind": "other",
+      "description": "Number with a hours (h), one decimal unit. %1$.1f is the value. Keep the placeholder; the unit is abbreviated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5eb7340777830438",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "key": "units_format_hours_double_range",
+      "ui_location": "Value displays of numbers with a unit and allowed range",
+      "kind": "other",
+      "description": "Number with a hours (h), one decimal unit and the allowed range in parentheses. %1$.1f is the value, %2$.1f the minimum, %3$.1f the maximum. Keep the placeholders and the parentheses layout.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "82d06685a0a62320",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "key": "units_format_hours_range",
+      "ui_location": "Value displays of numbers with a unit and allowed range",
+      "kind": "other",
+      "description": "Number with a hours (h) unit and the allowed range in parentheses. %1$d is the value, %2$d the minimum, %3$d the maximum. Keep the placeholders and the parentheses layout.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6f0dc3de88571c1f",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "units_format_insulin",
+      "ui_location": "Value displays of numbers with a unit",
+      "kind": "other",
+      "description": "Number with a insulin units (U), one decimal unit. %1$.1f is the value. Keep the placeholder; the unit is abbreviated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3e4a042d85d6f5b0",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "key": "units_format_insulin_int",
+      "ui_location": "Value displays; pump settings lists (Carelevo, EOPatch)",
+      "kind": "other",
+      "description": "Whole number of insulin units with abbreviated unit U. %1$d is the amount. Also used as option labels in pump settings drop-downs, such as reservoir low-level alarms.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1082222809a00540",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 59
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/CarelevoPumpPlugin.kt",
+          "line": 553
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/EopatchPumpPlugin.kt",
+          "line": 604
+        }
+      ]
+    },
+    {
+      "key": "units_format_insulin_int_range",
+      "ui_location": "Value displays of numbers with a unit and allowed range",
+      "kind": "other",
+      "description": "Number with a insulin units (U), whole unit and the allowed range in parentheses. %1$d is the value, %2$d the minimum, %3$d the maximum. Keep the placeholders and the parentheses layout.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7481389b6a08c0d6",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "key": "units_format_insulin_range",
+      "ui_location": "Value displays of numbers with a unit and allowed range",
+      "kind": "other",
+      "description": "Number with a insulin units (U), one decimal unit and the allowed range in parentheses. %1$.1f is the value, %2$.1f the minimum, %3$.1f the maximum. Keep the placeholders and the parentheses layout.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "82e5204e8bfd034b",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 76
+        }
+      ]
+    },
+    {
+      "key": "units_format_insulin_rate",
+      "ui_location": "Value displays of numbers with a unit",
+      "kind": "other",
+      "description": "Number with a insulin rate (U/h, units per hour), one decimal unit. %1$.1f is the value. Keep the placeholder; the unit is abbreviated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "696605c626e874ee",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "units_format_insulin_rate_range",
+      "ui_location": "Value displays of numbers with a unit and allowed range",
+      "kind": "other",
+      "description": "Number with a insulin rate (U/h), one decimal unit and the allowed range in parentheses. %1$.1f is the value, %2$.1f the minimum, %3$.1f the maximum. Keep the placeholders and the parentheses layout.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c949d7b0d64ce131",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "key": "units_format_mgdl",
+      "ui_location": "Value displays of numbers with a unit",
+      "kind": "other",
+      "description": "Number with a blood glucose in mg/dL unit. %1$s is the value. Keep the placeholder; the unit is abbreviated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "585f990e14214306",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "units_format_mgdl_range",
+      "ui_location": "Value displays of numbers with a unit and allowed range",
+      "kind": "other",
+      "description": "Number with a blood glucose in mg/dL unit and the allowed range in parentheses. %1$s is the value, %2$s the minimum, %3$s the maximum. Keep the placeholders and the parentheses layout.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cfe0eda8ef2ffb88",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 82
+        }
+      ]
+    },
+    {
+      "key": "units_format_min",
+      "ui_location": "Value displays of numbers with a unit",
+      "kind": "other",
+      "description": "Number with a minutes (min) unit. %1$d is the value. Keep the placeholder; the unit is abbreviated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a8949a299e87a7a9",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "units_format_min_range",
+      "ui_location": "Value displays of numbers with a unit and allowed range",
+      "kind": "other",
+      "description": "Number with a minutes (min) unit and the allowed range in parentheses. %1$d is the value, %2$d the minimum, %3$d the maximum. Keep the placeholders and the parentheses layout.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1a908d9d280c8eaa",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "units_format_percent",
+      "ui_location": "Value displays of percentages",
+      "kind": "other",
+      "description": "Whole number percentage. %1$d is the value; %% is a literal percent sign.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b92e5b0e01efda87",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "units_format_percent_range",
+      "ui_location": "Value displays of percentages with allowed range",
+      "kind": "other",
+      "description": "Percentage with allowed range in parentheses. %1$d is the value, %2$d the minimum, %3$d the maximum; %% is a literal percent sign.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b6a63d1d56466606",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "units_format_sec",
+      "ui_location": "Value displays of numbers with a unit",
+      "kind": "other",
+      "description": "Number with a seconds (sec) unit. %1$d is the value. Keep the placeholder; the unit is abbreviated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "adc4d53301aa8d9e",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "key": "units_format_sec_range",
+      "ui_location": "Value displays of numbers with a unit and allowed range",
+      "kind": "other",
+      "description": "Number with a seconds (sec) unit and the allowed range in parentheses. %1$d is the value, %2$d the minimum, %3$d the maximum. Keep the placeholders and the parentheses layout.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bda0047885590dc0",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "units_grams",
+      "ui_location": "Automation trigger editor; Quick wizard editor > carbs",
+      "kind": "label",
+      "description": "Unit label shown next to a numeric input or value: grams of carbohydrate. Keep it very short and abbreviated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "13eba993492e18d7",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 22
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 183
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 218
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 427
+        }
+      ]
+    },
+    {
+      "key": "units_hours",
+      "ui_location": "Automation editors; Insulin management; Profile activation; Dana user options",
+      "kind": "label",
+      "description": "Unit label shown next to a numeric input or value: hours (abbreviation). Keep it very short and abbreviated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9ca76bfc9091af07",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 25
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 285
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 306
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 347
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 388
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 232
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementScreen.kt",
+          "line": 393
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileActivationScreen.kt",
+          "line": 336
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 416
+        }
+      ]
+    },
+    {
+      "key": "units_insulin",
+      "ui_location": "Automation trigger editors; Profile helper",
+      "kind": "label",
+      "description": "Unit label shown next to a numeric input or value: insulin units, usually U. Keep it very short and abbreviated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "33238c88687a6e7c",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 28
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 204
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 326
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 500
+        }
+      ]
+    },
+    {
+      "key": "units_insulin_rate",
+      "ui_location": "Number inputs and value displays",
+      "kind": "label",
+      "description": "Unit label shown next to a numeric input or value: insulin units per hour (e.g. U/h), used for basal rates. Keep it very short and abbreviated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "865a4c442a0c5766",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "units_kg",
+      "ui_location": "Profile helper > weight input",
+      "kind": "label",
+      "description": "Unit label shown next to a numeric input or value: kilograms (body weight). Keep it very short and abbreviated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "aac9ce9b4bef54d0",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 508
+        }
+      ]
+    },
+    {
       "key": "units_label",
       "ui_location": "Profile viewer",
       "kind": "label",
@@ -19576,6 +20464,204 @@
         {
           "path": "core/graph/src/commonMain/kotlin/app/aaps/core/graph/profile/ProfileViewerContent.kt",
           "line": 73
+        }
+      ]
+    },
+    {
+      "key": "units_mgdl",
+      "ui_location": "Automation editors; number inputs",
+      "kind": "label",
+      "description": "Unit label shown next to a numeric input or value: blood glucose in milligrams per decilitre; a standard unit, usually left as is. Keep it very short and abbreviated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "57d60342c939a4c3",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 31
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 264
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 129
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 163
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 461
+        }
+      ]
+    },
+    {
+      "key": "units_min",
+      "ui_location": "Carbs time row; Automation action editors; number inputs",
+      "kind": "label",
+      "description": "Unit label shown next to a numeric input or value: minutes (abbreviation). Keep it very short and abbreviated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b53ce02b12a0ee59",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/CarbTimeRow.kt",
+          "line": 144
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/FormatUtils.kt",
+          "line": 56
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/NumberInputRowPreviews.kt",
+          "line": 44
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/NumberInputRowPreviews.kt",
+          "line": 74
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/SliderWithButtonsPreviews.kt",
+          "line": 51
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 23
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 147
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 223
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 272
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 264
+        }
+      ]
+    },
+    {
+      "key": "units_mmol",
+      "ui_location": "Automation editors; number inputs",
+      "kind": "label",
+      "description": "Unit label shown next to a numeric input or value: blood glucose in millimoles per litre; a standard unit, usually left as is. Keep it very short and abbreviated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a0e5ac80c210cd8c",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 264
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 129
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 163
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 461
+        }
+      ]
+    },
+    {
+      "key": "units_percent",
+      "ui_location": "Number inputs; Automation editors; Profile helper; Profile activation",
+      "kind": "label",
+      "description": "Unit label shown next to a numeric input or value: percent sign. Keep it very short and abbreviated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7166c56d0414dd20",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/NumberInputRowPreviews.kt",
+          "line": 59
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 27
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 215
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 244
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 367
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/triggers/TriggerEditors.kt",
+          "line": 433
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 516
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileActivationScreen.kt",
+          "line": 278
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
+          "line": 445
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardEditor.kt",
+          "line": 352
+        }
+      ]
+    },
+    {
+      "key": "units_sec",
+      "ui_location": "Dana user options; number inputs",
+      "kind": "label",
+      "description": "Unit label shown next to a numeric input or value: seconds (abbreviation). Keep it very short and abbreviated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1d0b57c69b9bc483",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/UnitTypeText.kt",
+          "line": 24
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 199
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaUserOptionsScreen.kt",
+          "line": 211
+        }
+      ]
+    },
+    {
+      "key": "units_years",
+      "ui_location": "Profile helper > age input",
+      "kind": "label",
+      "description": "Unit label shown next to a numeric input or value: years (abbreviation), for the user's age. Keep it very short and abbreviated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8565250d8250ff79",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 492
         }
       ]
     },
@@ -19912,6 +20998,23 @@
         {
           "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
           "line": 663
+        }
+      ]
+    },
+    {
+      "key": "variable_sensitivity_shortname",
+      "ui_location": "Overview > graph settings > series chips",
+      "kind": "label",
+      "description": "Very short abbreviation (chip label) for variable (dynamically changing) insulin sensitivity.",
+      "related_keys": [
+        "sensitivity_shortname"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d204cec753e94bde",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 679
         }
       ]
     },
