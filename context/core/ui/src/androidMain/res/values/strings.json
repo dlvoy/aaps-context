@@ -322,6 +322,38 @@
       ]
     },
     {
+      "key": "aaps",
+      "ui_location": "Menu element list",
+      "kind": "label",
+      "description": "Short app name (AndroidAPS). Product name; usually left as is.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f3433fbdd3ce03da",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 251
+        }
+      ]
+    },
+    {
+      "key": "above",
+      "ui_location": "Statistics > TIR table header",
+      "kind": "label",
+      "description": "Table column header for time spent above the target range. Narrow column, single word.",
+      "related_keys": [
+        "below"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "4c7345f6c5d69573",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TirStatsCompose.kt",
+          "line": 203
+        }
+      ]
+    },
+    {
       "key": "activate_insulin",
       "ui_location": "Fill dialog; wizard confirmation",
       "kind": "button",
@@ -388,6 +420,23 @@
       ]
     },
     {
+      "key": "activation",
+      "ui_location": "Temp target editor section",
+      "kind": "title",
+      "description": "Heading above the fields that start the temp target (when and for how long).",
+      "related_keys": [
+        "preset_settings"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "58ecb3c1c7fd1ff3",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetEditor.kt",
+          "line": 134
+        }
+      ]
+    },
+    {
       "key": "active",
       "ui_location": "Autotune profile picker; automation action",
       "kind": "label",
@@ -415,6 +464,53 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogViewModel.kt",
           "line": 159
+        }
+      ]
+    },
+    {
+      "key": "activity",
+      "ui_location": "Temp target reason; insulin graph legend",
+      "kind": "label",
+      "description": "Temp target reason for physical activity; also the label of the insulin activity curve in the graph.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8ff86b5a742b8b87",
+      "usages": [
+        {
+          "path": "core/graph/src/commonMain/kotlin/app/aaps/core/graph/InsulinGraphCompose.kt",
+          "line": 68
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 878
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 241
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/chips/TempTargetChip.kt",
+          "line": 143
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileActivationScreen.kt",
+          "line": 370
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActionEditors.kt",
+          "line": 56
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/ActivityStatsCompose.kt",
+          "line": 65
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetCarouselCard.kt",
+          "line": 256
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetPresetStorage.kt",
+          "line": 21
         }
       ]
     },
@@ -565,6 +661,150 @@
       ]
     },
     {
+      "key": "automation",
+      "ui_location": "Navigation title, TT reason, element name",
+      "kind": "title",
+      "description": "Name of the Automation feature (rules that run actions on triggers). Also reason shown for a target set by it.",
+      "related_keys": [
+        "automation_management_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "4754d92ce7155e69",
+      "usages": [
+        {
+          "path": "appshell/src/commonMain/kotlin/app/aaps/appshell/navigation/AppNavGraph.kt",
+          "line": 927
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 229
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 242
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 351
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 130
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationScreen.kt",
+          "line": 128
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/chips/TempTargetChip.kt",
+          "line": 144
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetCarouselCard.kt",
+          "line": 259
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 336
+        }
+      ]
+    },
+    {
+      "key": "automation_management_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the automation element.",
+      "related_keys": [
+        "automation"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f15ad8b3a28f476e",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 294
+        }
+      ]
+    },
+    {
+      "key": "average",
+      "ui_location": "Statistics screen: TDD, TIR tables",
+      "kind": "label",
+      "description": "Table row or column label for the mean value of a period. Single word; once combined with a bracketed period text.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "d13096d7340ef668",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TddCyclePatternCompose.kt",
+          "line": 159
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TddStatsCompose.kt",
+          "line": 101
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TirStatsCompose.kt",
+          "line": 106
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TirStatsCompose.kt",
+          "line": 140
+        }
+      ]
+    },
+    {
+      "key": "back",
+      "ui_location": "Toolbar back arrow in plugin screens and lists",
+      "kind": "label",
+      "description": "Accessibility description (screen reader label) of the back arrow icon. Not visible text.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "766f8e9792e94d2b",
+      "usages": [
+        {
+          "path": "appshell/src/commonMain/kotlin/app/aaps/appshell/navigation/AppNavGraph.kt",
+          "line": 814
+        },
+        {
+          "path": "appshell/src/commonMain/kotlin/app/aaps/appshell/navigation/AppNavGraph.kt",
+          "line": 915
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/SelectableListToolbar.kt",
+          "line": 92
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/PluginPreferencesScreen.kt",
+          "line": 98
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/PluginPreferencesScreen.kt",
+          "line": 155
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/pump/WizardScreen.kt",
+          "line": 83
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 131
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 197
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 304
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 356
+        }
+      ]
+    },
+    {
       "key": "basal_label",
       "ui_location": "Profile viewer",
       "kind": "label",
@@ -599,6 +839,24 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
           "line": 551
+        }
+      ]
+    },
+    {
+      "key": "below",
+      "ui_location": "Statistics > TIR table header",
+      "kind": "label",
+      "description": "Table column header for time spent below the target range. Narrow column, single word.",
+      "related_keys": [
+        "in_range",
+        "above"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "fb58aeb35c289d04",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TirStatsCompose.kt",
+          "line": 189
         }
       ]
     },
@@ -664,6 +922,23 @@
       ]
     },
     {
+      "key": "bolus_cancelled_no_insulin",
+      "ui_location": "Bolus result dialog",
+      "kind": "dialog_text",
+      "description": "Message after a bolus was cancelled before delivery. \\n is a line break. %1$s is an extra comment explaining the cancel reason.",
+      "related_keys": [
+        "command_cancelled_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5bd32297df85d703",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 1366
+        }
+      ]
+    },
+    {
       "key": "bolus_iob_label",
       "ui_location": "Chips; wizard info dialog",
       "kind": "label",
@@ -708,6 +983,59 @@
       ]
     },
     {
+      "key": "boluswizard",
+      "ui_location": "Menu elements, treatment history, watch",
+      "kind": "title",
+      "description": "Name of the bolus wizard (calculator that suggests an insulin dose for carbs and glucose). Used as a title and as the source of a bolus.",
+      "related_keys": [
+        "treatment_calculator_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "32508123ce0d3f92",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 205
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 157
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 356
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 698
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 699
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 862
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 863
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/foodManagement/FoodManagementScreen.kt",
+          "line": 294
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/BolusCarbsScreen.kt",
+          "line": 229
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/WizardInfoDialog.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
       "key": "calibration",
       "ui_location": "Element list",
       "kind": "label",
@@ -719,6 +1047,35 @@
         {
           "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
           "line": 212
+        }
+      ]
+    },
+    {
+      "key": "cancel_temp",
+      "ui_location": "Loop result text, Loop screen, confirmation of a loop suggestion",
+      "kind": "status",
+      "description": "Loop suggestion to stop the temporary basal rate (temp basal) that is currently running and return to the normal basal. Short imperative phrase.",
+      "related_keys": [
+        "let_temp_basal_run"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a660e459cf3212e4",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/aps/DetermineBasalResult.kt",
+          "line": 131
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopViewModel.kt",
+          "line": 129
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1673
+        },
+        {
+          "path": "pump/virtual/src/commonMain/kotlin/app/aaps/pump/virtual/extensions/PumpEnactResultExtension.kt",
+          "line": 20
         }
       ]
     },
@@ -788,6 +1145,801 @@
       ]
     },
     {
+      "key": "careportal",
+      "ui_location": "Care portal category, Automation action name, confirmation lines",
+      "kind": "title",
+      "description": "Name of the Careportal: the area for logging therapy events such as site changes, notes and BG checks. Used as category name and in the Automation action.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4502d535a691224b",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 194
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 1041
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionCarePortalEvent.kt",
+          "line": 46
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/careDialog/CareDialogViewModel.kt",
+          "line": 244
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/fillDialog/FillDialogViewModel.kt",
+          "line": 402
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/manageSheet/ManageBottomSheet.kt",
+          "line": 375
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/CarePortalStep.kt",
+          "line": 39
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/CarePortalStep.kt",
+          "line": 48
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/CareportalScreen.kt",
+          "line": 120
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/TreatmentsScreen.kt",
+          "line": 126
+        }
+      ]
+    },
+    {
+      "key": "careportal_alcohol",
+      "ui_location": "Treatment event type",
+      "kind": "label",
+      "description": "Event type for alcohol consumed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6bc92452d72062f2",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 183
+        }
+      ]
+    },
+    {
+      "key": "careportal_announcement",
+      "ui_location": "Care portal menu, event lists",
+      "kind": "label",
+      "description": "Therapy event type for a free-text announcement the user records.",
+      "related_keys": [
+        "careportal_announcement_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b9325472a8da1ff2",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 220
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 159
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputCarePortalMenu.kt",
+          "line": 29
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/careDialog/CareDialogScreen.kt",
+          "line": 398
+        }
+      ]
+    },
+    {
+      "key": "careportal_announcement_message",
+      "ui_location": "Care portal event text",
+      "kind": "status",
+      "description": "Template for the event text. %1$s is the free text the user entered. Space before the colon is in the source.",
+      "related_keys": [
+        "careportal_announcement"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "651084cc0380a60a",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputCarePortalMenu.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "careportal_bgcheck",
+      "ui_location": "Care dialog title; care portal event list",
+      "kind": "title",
+      "description": "Therapy event for a blood glucose check made with a fingerstick meter.",
+      "related_keys": [
+        "careportal_mbg"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a01ab0bb99f61088",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 216
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 152
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/careDialog/CareDialogScreen.kt",
+          "line": 392
+        }
+      ]
+    },
+    {
+      "key": "careportal_carbscorrection",
+      "ui_location": "Treatment history event type",
+      "kind": "label",
+      "description": "Event type for carbs entered later to correct an earlier amount, or taken to treat a low.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6b1ea2465aa82dd0",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 156
+        }
+      ]
+    },
+    {
+      "key": "careportal_cgm_sensor_stop",
+      "ui_location": "Treatment history event type",
+      "kind": "label",
+      "description": "Event type for a CGM sensor being stopped or ended.",
+      "related_keys": [
+        "careportal_cgmsensorstart"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "a6ac9e80a1724b58",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 167
+        }
+      ]
+    },
+    {
+      "key": "careportal_cgm_site_management",
+      "ui_location": "Site picker and Site rotation management icons",
+      "kind": "label",
+      "description": "Accessibility description of the icon that opens management of CGM sensor sites (body locations where the sensor is worn).",
+      "related_keys": [
+        "careportal_pump_site_management"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "630975f50b5feb4d",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/SiteLocationPicker.kt",
+          "line": 195
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/SiteLocationPicker.kt",
+          "line": 345
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/siteRotationDialog/SiteRotationManagementScreen.kt",
+          "line": 277
+        }
+      ]
+    },
+    {
+      "key": "careportal_cgmsensorstart",
+      "ui_location": "Treatment history event type",
+      "kind": "label",
+      "description": "Event type for a CGM sensor being started (warm-up begins).",
+      "related_keys": [
+        "cgm_sensor_insert",
+        "careportal_cgm_sensor_stop"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "48043cedb5315f59",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 166
+        }
+      ]
+    },
+    {
+      "key": "careportal_combobolus",
+      "ui_location": "Treatment history event type",
+      "kind": "label",
+      "description": "Event type for a combo (extended/dual wave) bolus delivered partly now and partly over time.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f79bef5a8884ef6a",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 158
+        }
+      ]
+    },
+    {
+      "key": "careportal_correctionbolus",
+      "ui_location": "Treatment history event type",
+      "kind": "label",
+      "description": "Event type for a bolus given only to lower high glucose, with no carbs.",
+      "related_keys": [
+        "careportal_mealbolus"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "a65910c9a6492ef4",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 155
+        }
+      ]
+    },
+    {
+      "key": "careportal_cortisone",
+      "ui_location": "Treatment event type",
+      "kind": "label",
+      "description": "Event type for cortisone/steroid medication, which raises glucose.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "71325579bd2592f8",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 184
+        }
+      ]
+    },
+    {
+      "key": "careportal_dad_alert",
+      "ui_location": "Treatment history event type",
+      "kind": "label",
+      "description": "Event type for a Diabetes Alert Dog alert (D.A.D. means diabetic alert dog). Keep abbreviation form if natural.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "7150dfce8a863ed9",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 170
+        }
+      ]
+    },
+    {
+      "key": "careportal_exercise",
+      "ui_location": "Care portal menu, event lists",
+      "kind": "label",
+      "description": "Event type for recording physical exercise.",
+      "related_keys": [
+        "careportal_exercise_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3aa46857cf9b725d",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 218
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 163
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputCarePortalMenu.kt",
+          "line": 27
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/careDialog/CareDialogScreen.kt",
+          "line": 396
+        }
+      ]
+    },
+    {
+      "key": "careportal_exercise_message",
+      "ui_location": "Care portal event text",
+      "kind": "status",
+      "description": "Template for the event text. %1$s is the user's description of the exercise.",
+      "related_keys": [
+        "careportal_exercise"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "13a7ec7a6d1fe05a",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputCarePortalMenu.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "careportal_falling_asleep",
+      "ui_location": "Treatment event type",
+      "kind": "label",
+      "description": "Event type marking the user going to sleep.",
+      "related_keys": [
+        "careportal_waking_up"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "afdef444900fd081",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 178
+        }
+      ]
+    },
+    {
+      "key": "careportal_feeling_high",
+      "ui_location": "Treatment event type",
+      "kind": "label",
+      "description": "Event type for when the user feels they have high glucose (a feeling, not a measured value).",
+      "related_keys": [
+        "careportal_feeling_low"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "4d9f06e6768d068b",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 186
+        }
+      ]
+    },
+    {
+      "key": "careportal_feeling_low",
+      "ui_location": "Treatment event type",
+      "kind": "label",
+      "description": "Event type for when the user feels they have low glucose (a feeling, not a measured value).",
+      "related_keys": [
+        "careportal_feeling_high"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "c1b6be6ac74ffcf6",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 185
+        }
+      ]
+    },
+    {
+      "key": "careportal_insulin_cartridge_change",
+      "ui_location": "Treatment history event type",
+      "kind": "label",
+      "description": "Event type for replacing the insulin cartridge/reservoir in the pump.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d795913ccd66768c",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 169
+        }
+      ]
+    },
+    {
+      "key": "careportal_mbg",
+      "ui_location": "Treatment event type shown in lists and history",
+      "kind": "label",
+      "description": "Event type for a manually entered blood glucose value or a sensor calibration (mbg is Nightscout's term).",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "fe4a78ad5c74b714",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 177
+        }
+      ]
+    },
+    {
+      "key": "careportal_mealbolus",
+      "ui_location": "Treatment history; bolus list",
+      "kind": "label",
+      "description": "Event type for a bolus given with a meal (carbs plus insulin).",
+      "related_keys": [
+        "careportal_snackbolus",
+        "careportal_correctionbolus"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "bf8339e7c72a2cf4",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 154
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/BolusCarbsScreen.kt",
+          "line": 333
+        }
+      ]
+    },
+    {
+      "key": "careportal_note",
+      "ui_location": "Care portal menu, event lists, CSV export header",
+      "kind": "label",
+      "description": "Event type for a free-text note. Also a CSV column header in the exported action log.",
+      "related_keys": [
+        "careportal_note_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a8e09a99ecb2e978",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 217
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/userEntry/UserEntryPresentationHelperImpl.kt",
+          "line": 324
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 161
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputCarePortalMenu.kt",
+          "line": 26
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/careDialog/CareDialogScreen.kt",
+          "line": 395
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/siteRotationDialog/SiteRotationManagementScreen.kt",
+          "line": 405
+        }
+      ]
+    },
+    {
+      "key": "careportal_note_message",
+      "ui_location": "Care portal event text",
+      "kind": "status",
+      "description": "Template for the event text. %1$s is the free text the user entered.",
+      "related_keys": [
+        "careportal_note"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "e07eeb95ad356447",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputCarePortalMenu.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "careportal_openapsoffline",
+      "ui_location": "Treatment history event type",
+      "kind": "label",
+      "description": "Event type recording that the OpenAPS algorithm (loop) was offline for a period.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4056b53824a2b247",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 176
+        }
+      ]
+    },
+    {
+      "key": "careportal_pre_period",
+      "ui_location": "Treatment event type",
+      "kind": "label",
+      "description": "Event type for the days before menstruation, which may change insulin sensitivity.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "32aeda8dd7e7fab8",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 182
+        }
+      ]
+    },
+    {
+      "key": "careportal_profileswitch",
+      "ui_location": "Treatment history; note text of profile switches",
+      "kind": "label",
+      "description": "Event type and note for a profile switch (changing the active basal/ISF/IC profile or its percentage).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7250f0b595109572",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/profile/ProfileFunctionImpl.kt",
+          "line": 231
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/profile/ProfileFunctionImpl.kt",
+          "line": 252
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 173
+        },
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 317
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 286
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1024
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 746
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 428
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 467
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileHelper/ProfileHelperScreen.kt",
+          "line": 564
+        }
+      ]
+    },
+    {
+      "key": "careportal_pump_site_change",
+      "ui_location": "Care portal event type",
+      "kind": "label",
+      "description": "Event type for changing the infusion set / cannula on the pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "39703db237127002",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 223
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 164
+        }
+      ]
+    },
+    {
+      "key": "careportal_pump_site_management",
+      "ui_location": "Pump site picker icon",
+      "kind": "label",
+      "description": "Accessibility description of the icon that opens management of pump infusion sites (body locations used for the cannula).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c35abfa5a76f2a90",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/SiteLocationPicker.kt",
+          "line": 132
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/SiteLocationPicker.kt",
+          "line": 182
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/SiteLocationPicker.kt",
+          "line": 333
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/siteRotationDialog/SiteRotationManagementScreen.kt",
+          "line": 263
+        }
+      ]
+    },
+    {
+      "key": "careportal_question",
+      "ui_location": "Care portal menu, event lists",
+      "kind": "label",
+      "description": "Event type for a question the user records.",
+      "related_keys": [
+        "careportal_question_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d70a539163cb3415",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 219
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 162
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputCarePortalMenu.kt",
+          "line": 28
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/careDialog/CareDialogScreen.kt",
+          "line": 397
+        }
+      ]
+    },
+    {
+      "key": "careportal_question_message",
+      "ui_location": "Care portal event text",
+      "kind": "status",
+      "description": "Template for the event text. %1$s is the free text the user entered.",
+      "related_keys": [
+        "careportal_question"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "d5214ca2c157a913",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputCarePortalMenu.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "careportal_settings_export",
+      "ui_location": "Treatment event type in history",
+      "kind": "label",
+      "description": "Event type logged automatically when the app settings were exported.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "31ade505efd40575",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 160
+        }
+      ]
+    },
+    {
+      "key": "careportal_sickness",
+      "ui_location": "Treatment event type (Nightscout/Care portal)",
+      "kind": "label",
+      "description": "Event type for illness that may change insulin needs.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "dc698473fd6b3dad",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 180
+        }
+      ]
+    },
+    {
+      "key": "careportal_snackbolus",
+      "ui_location": "Treatment history event type",
+      "kind": "label",
+      "description": "Nightscout event type for a bolus covering a snack.",
+      "related_keys": [
+        "careportal_mealbolus"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "81231116f979b490",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 153
+        }
+      ]
+    },
+    {
+      "key": "careportal_stress",
+      "ui_location": "Treatment event type",
+      "kind": "label",
+      "description": "Event type for stress that may affect glucose.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "77f53ef98231b05f",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 181
+        }
+      ]
+    },
+    {
+      "key": "careportal_tempbasalend",
+      "ui_location": "Treatment history event type",
+      "kind": "label",
+      "description": "Event type for the end of a temporary basal rate (temp basal).",
+      "related_keys": [
+        "careportal_tempbasalstart"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "3dc93a9cc64a7cb2",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 172
+        }
+      ]
+    },
+    {
+      "key": "careportal_tempbasalstart",
+      "ui_location": "Treatment history event type",
+      "kind": "label",
+      "description": "Event type for the start of a temporary basal rate (temp basal).",
+      "related_keys": [
+        "careportal_tempbasalend"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "34fb3983e013eeb2",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 171
+        }
+      ]
+    },
+    {
+      "key": "careportal_temporarytargetcancel",
+      "ui_location": "Treatment history event type",
+      "kind": "label",
+      "description": "Event type for cancelling a temporary target.",
+      "related_keys": [
+        "temporary_target"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "2ece6e8a2f2d6d2e",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 175
+        }
+      ]
+    },
+    {
+      "key": "careportal_temporarytargetvalue",
+      "ui_location": "Automation > trigger name",
+      "kind": "label",
+      "description": "Name of an Automation trigger that checks the value of the current temporary target.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "afe7db4b84d81ef7",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerTempTargetValue.kt",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "key": "careportal_waking_up",
+      "ui_location": "Treatment event type",
+      "kind": "label",
+      "description": "Event type marking the user waking up.",
+      "related_keys": [
+        "careportal_falling_asleep"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "b3a691d144debca7",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 179
+        }
+      ]
+    },
+    {
       "key": "cgm",
       "ui_location": "Element list category",
       "kind": "label",
@@ -807,6 +1959,504 @@
         {
           "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
           "line": 211
+        }
+      ]
+    },
+    {
+      "key": "cgm_sensor_insert",
+      "ui_location": "Care dialog title; event type",
+      "kind": "label",
+      "description": "Event type for inserting a new CGM (continuous glucose monitor) sensor.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "487a39f5412416b9",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 221
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 168
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/careDialog/CareDialogScreen.kt",
+          "line": 393
+        }
+      ]
+    },
+    {
+      "key": "change_insulin",
+      "ui_location": "Insulin selection dialog",
+      "kind": "button",
+      "description": "Button in the insulin picker to switch to a different insulin. Short imperative.",
+      "related_keys": [
+        "current_insulin"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "c318052218345df9",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/insulin/SelectInsulin.kt",
+          "line": 92
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_action_activate_scene",
+      "ui_location": "Follower phone: command label",
+      "kind": "status",
+      "description": "Name of a command sent to the master to start a scene. %1$s is the scene name.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "77d6d0647d9ba714",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneActionsImpl.kt",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_action_cancel_temp_target",
+      "ui_location": "Follower phone: command label",
+      "kind": "status",
+      "description": "Name of a command sent to the master: cancel the temporary target.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bfc0dcd91dfb8468",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetManagementViewModel.kt",
+          "line": 777
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_action_deactivate_scene",
+      "ui_location": "Follower phone: command label",
+      "kind": "status",
+      "description": "Name of a command sent to the master to end the running scene.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "55c303310f9b4651",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneActionsImpl.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_action_deliver_bolus",
+      "ui_location": "Follower phone: command label",
+      "kind": "status",
+      "description": "Name of a command sent to the master to deliver a bolus (insulin dose).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3bfdefb312d0a161",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 493
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogViewModel.kt",
+          "line": 559
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_action_set_temp_target",
+      "ui_location": "Follower phone: command label in progress/result",
+      "kind": "status",
+      "description": "Name of a command a follower phone sends to the master: set a temporary target. Used in progress and result messages.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f5a07f35f8009bf7",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 721
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetManagementViewModel.kt",
+          "line": 740
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_action_update_settings",
+      "ui_location": "Follower phone: command label",
+      "kind": "status",
+      "description": "Name of a command sent to the master that changes its preferences.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9cf9f3e69f6d3867",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/PreferencesClientPublisher.kt",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_bolus_progress_stalled_body",
+      "ui_location": "Follower phone: bolus progress dialog",
+      "kind": "dialog_text",
+      "description": "Explanation for the stalled bolus: the bolus may still be delivering or done; closing the dialog does not stop the pump; check the master phone for the real delivered amount. Safety relevant, keep the meaning precise.",
+      "related_keys": [
+        "clientcontrol_bolus_progress_stalled_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6edc1caedc3b637b",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/pump/PumpActivityDialog.kt",
+          "line": 255
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_bolus_progress_stalled_title",
+      "ui_location": "Follower phone: bolus progress dialog",
+      "kind": "dialog_title",
+      "description": "Title when a follower phone loses contact with the master while a bolus is running. Delivery state is unknown.",
+      "related_keys": [
+        "clientcontrol_bolus_progress_stalled_body"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1b86a7fc213002bf",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/pump/PumpActivityDialog.kt",
+          "line": 230
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_fail_bolus_compute",
+      "ui_location": "Follower phone: failure message",
+      "kind": "error",
+      "description": "Error: the master could not compute the bolus, for example no glucose value, no profile, or the pump is not ready.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "658e56404cfc651f",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/clientcontrol/FailureReasonText.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_fail_busy",
+      "ui_location": "Follower phone: failure message",
+      "kind": "error",
+      "description": "Error: the master is already executing another remote command.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1071f88e5c925456",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/clientcontrol/FailureReasonText.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_fail_cancelled",
+      "ui_location": "Follower phone: failure message",
+      "kind": "error",
+      "description": "Message: the command was cancelled before it ran, and the pump received nothing. Reassures the user no insulin was delivered.",
+      "related_keys": [
+        "bolus_cancelled_no_insulin"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "933249109a07220c",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/clientcontrol/FailureReasonText.kt",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_fail_control_disabled",
+      "ui_location": "Follower phone: failure message",
+      "kind": "error",
+      "description": "Error: remote control is switched off on the master phone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "89156e6ea0ff89d0",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/clientcontrol/FailureReasonText.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_fail_execution",
+      "ui_location": "Follower phone: failure message",
+      "kind": "error",
+      "description": "Error: the master tried to run the command but it failed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8652c001f6bbb799",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/clientcontrol/FailureReasonText.kt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_fail_expired",
+      "ui_location": "Follower phone: failure message",
+      "kind": "error",
+      "description": "Error: the command was too old when the master saw it, so it was discarded.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "74ac6a2ca5417996",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/clientcontrol/FailureReasonText.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_fail_internal",
+      "ui_location": "Follower phone: failure message",
+      "kind": "error",
+      "description": "Generic error for an unexpected internal problem.",
+      "related_keys": [
+        "clientcontrol_fail_unknown"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "8e48ca4448192b09",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/clientcontrol/FailureReasonText.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_fail_no_active_profile",
+      "ui_location": "Follower phone: failure message",
+      "kind": "error",
+      "description": "Error: the master has no active profile, so a percentage or timeshift cannot be applied.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d99c45a54d72dec0",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/clientcontrol/FailureReasonText.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_fail_no_pending_bolus",
+      "ui_location": "Follower phone: failure message",
+      "kind": "error",
+      "description": "Error: the bolus prepared earlier timed out or was replaced by a newer one. Tells the user to press the button again.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2f33179b93e1f623",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/clientcontrol/FailureReasonText.kt",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_fail_no_reply",
+      "ui_location": "Follower phone: failure message",
+      "kind": "error",
+      "description": "Error: the master did not answer within the time limit.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7793a990537d2c7a",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/clientcontrol/FailureReasonText.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_fail_not_paired",
+      "ui_location": "Follower phone: failure message",
+      "kind": "error",
+      "description": "Error: this phone is not linked to a master (main) phone, so it cannot send commands.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1b7a438ecf49fbd5",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/clientcontrol/FailureReasonText.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_fail_not_reachable",
+      "ui_location": "Follower phone: failure message",
+      "kind": "error",
+      "description": "Error: the master phone is offline.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "754cf0031aa488cf",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/clientcontrol/FailureReasonText.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_fail_partial",
+      "ui_location": "Follower phone: failure message",
+      "kind": "error",
+      "description": "Error: part of a multi-step command was applied and part was not.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0a61d556006fca0f",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/clientcontrol/FailureReasonText.kt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_fail_scene_disabled",
+      "ui_location": "Follower phone: failure message",
+      "kind": "error",
+      "description": "Error: the scene exists but is switched off.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ea4bb141b7b3c86e",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/clientcontrol/FailureReasonText.kt",
+          "line": 22
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneAutomationApiImpl.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_fail_scene_not_found",
+      "ui_location": "Follower phone: failure message",
+      "kind": "error",
+      "description": "Error: the scene was deleted before the command ran.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0e4bb8cb8f800a9e",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/clientcontrol/FailureReasonText.kt",
+          "line": 21
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneAutomationApiImpl.kt",
+          "line": 74
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_fail_send_failed",
+      "ui_location": "Follower phone: failure message",
+      "kind": "error",
+      "description": "Error: the command could not be uploaded to Nightscout (the server relaying commands). Apostrophe is escaped in the source.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4dd8d89054ab7f3c",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/clientcontrol/FailureReasonText.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_fail_site_entry_not_found",
+      "ui_location": "Follower phone: failure message",
+      "kind": "error",
+      "description": "Error: the site (infusion/sensor location) entry being edited has been removed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6c5d2e75e09d9bde",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 1097
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_fail_unknown",
+      "ui_location": "Follower phone: failure message",
+      "kind": "error",
+      "description": "Generic fallback error when a command failed for an unknown reason.",
+      "related_keys": [
+        "clientcontrol_fail_internal"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "46f6a9a961957f73",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/clientcontrol/FailureReasonText.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_pump_out_of_sync",
+      "ui_location": "Follower phone: bolus wizard error",
+      "kind": "error",
+      "description": "Error: the follower's knowledge of the pump capabilities differs from the master's. Asks to retry.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "feccd1004377e815",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 444
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 459
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 470
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 475
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_unconfirmed_wear",
+      "ui_location": "Watch: result message",
+      "kind": "error",
+      "description": "Message on the watch when it cannot tell whether a command worked. Advises checking the phone or Nightscout before giving another bolus, to avoid double dosing.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7bf399274935dab9",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 963
         }
       ]
     },
@@ -934,6 +2584,42 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
           "line": 396
+        }
+      ]
+    },
+    {
+      "key": "command_cancelled_title",
+      "ui_location": "Dialog title after a cancelled command",
+      "kind": "dialog_title",
+      "description": "Short dialog title: the action the user started was cancelled.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a98ec47bf04ad709",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/fillDialog/FillDialogViewModel.kt",
+          "line": 349
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogViewModel.kt",
+          "line": 522
+        }
+      ]
+    },
+    {
+      "key": "concentration_disable_blocked",
+      "ui_location": "Search result / Preferences toast",
+      "kind": "error",
+      "description": "Shown when the user tries to disable insulin concentration support while insulins other than U100 are configured. Explains what to do first. U100 is standard insulin strength.",
+      "related_keys": [
+        "simple_mode_blocked_by_concentration"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "57f59998adc2f8b1",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 82
         }
       ]
     },
@@ -1075,6 +2761,27 @@
         {
           "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/PluginCategoryTitle.kt",
           "line": 20
+        }
+      ]
+    },
+    {
+      "key": "configbuilder_nightscoutversion_label",
+      "ui_location": "About dialog; also in the e-mailed logs/info text",
+      "kind": "label",
+      "description": "Label placed before the detected Nightscout server version, followed by a space and the version number or \"Not available\". Ends with a colon.",
+      "related_keys": [
+        "not_available_full"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3ecf7435e443945f",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/MaintenanceImpl.kt",
+          "line": 200
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 659
         }
       ]
     },
@@ -1470,6 +3177,50 @@
       ]
     },
     {
+      "key": "current_insulin",
+      "ui_location": "Insulin selection dialog",
+      "kind": "label",
+      "description": "Heading/chip in the insulin picker marking the insulin that is currently active in the profile.",
+      "related_keys": [
+        "change_insulin"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "3fc78d8d3463c2b3",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/insulin/SelectInsulin.kt",
+          "line": 81
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/insulin/SelectInsulin.kt",
+          "line": 139
+        }
+      ]
+    },
+    {
+      "key": "custom",
+      "ui_location": "Temporary target reason",
+      "kind": "label",
+      "description": "Reason for a temp target the user set freely, not from a preset.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f27b4015ad663490",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 238
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/chips/TempTargetChip.kt",
+          "line": 140
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetCarouselCard.kt",
+          "line": 258
+        }
+      ]
+    },
+    {
       "key": "date",
       "ui_location": "Profile viewer; date/time pickers",
       "kind": "label",
@@ -1519,6 +3270,23 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/viewmodels/ExtendedBolusViewModel.kt",
           "line": 160
+        }
+      ]
+    },
+    {
+      "key": "day_tir",
+      "ui_location": "Statistics > Dexcom TIR",
+      "kind": "label",
+      "description": "Label for time-in-range figure measured during daytime hours.",
+      "related_keys": [
+        "night_tir"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "180efb77ba575cfb",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/DexcomTirStatsCompose.kt",
+          "line": 54
         }
       ]
     },
@@ -1591,6 +3359,23 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetManagementScreen.kt",
           "line": 151
+        }
+      ]
+    },
+    {
+      "key": "detailed_14_days",
+      "ui_location": "Statistics > Dexcom TIR heading",
+      "kind": "label",
+      "description": "Part of the heading for the 14-day detailed time-in-range report in the Dexcom style. Appended to other text.",
+      "related_keys": [
+        "day_tir"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "a9224c1b53b75957",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/DexcomTirStatsCompose.kt",
+          "line": 52
         }
       ]
     },
@@ -1697,6 +3482,57 @@
       ]
     },
     {
+      "key": "duration",
+      "ui_location": "Number input rows in dialogs (e.g. temp target, temp basal)",
+      "kind": "label",
+      "description": "Label of an input row where the user enters how long something lasts, usually in minutes. Single word.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "98c84768a9236e52",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/NumberInputRowPreviews.kt",
+          "line": 39
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/NumberInputRowPreviews.kt",
+          "line": 54
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/NumberInputRowPreviews.kt",
+          "line": 69
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 770
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 802
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 871
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 925
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 974
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 994
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExecutor.kt",
+          "line": 169
+        }
+      ]
+    },
+    {
       "key": "duration_label",
       "ui_location": "Automation action editors",
       "kind": "label",
@@ -1732,6 +3568,44 @@
       ]
     },
     {
+      "key": "eatingsoon",
+      "ui_location": "Temporary target reason",
+      "kind": "label",
+      "description": "Reason of a temp target that is set before a meal so insulin begins to act earlier. Short chip label.",
+      "related_keys": [
+        "hypo",
+        "activity"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b42a0cc55246a13b",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 879
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 240
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/chips/TempTargetChip.kt",
+          "line": 142
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActionEditors.kt",
+          "line": 57
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetCarouselCard.kt",
+          "line": 255
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetPresetStorage.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
       "key": "edit_site",
       "ui_location": "Site rotation list",
       "kind": "button",
@@ -1747,6 +3621,21 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/siteRotationDialog/SiteRotationManagementScreen.kt",
           "line": 195
+        }
+      ]
+    },
+    {
+      "key": "engineering_mode_enabled",
+      "ui_location": "Text of the info e-mail/log export built from Maintenance",
+      "kind": "log",
+      "description": "Line appended to the diagnostic info that users send by e-mail, stating that engineering mode (a developer/test build option) is on. Not seen on screen.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "60c6a41b023cae52",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/MaintenanceImpl.kt",
+          "line": 201
         }
       ]
     },
@@ -2195,6 +4084,40 @@
       ]
     },
     {
+      "key": "glucosetype_finger",
+      "ui_location": "Care dialog and history, meter type",
+      "kind": "label",
+      "description": "Type of glucose measurement: taken with a fingerstick meter.",
+      "related_keys": [
+        "glucosetype_sensor"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ff83f10a2674c690",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 144
+        }
+      ]
+    },
+    {
+      "key": "glucosetype_sensor",
+      "ui_location": "Care dialog and history, meter type",
+      "kind": "label",
+      "description": "Type of glucose measurement: taken from a CGM sensor.",
+      "related_keys": [
+        "glucosetype_finger"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "10486af2b498706b",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 145
+        }
+      ]
+    },
+    {
       "key": "goingtodeliver",
       "ui_location": "Bolus progress dialog; watch",
       "kind": "status",
@@ -2214,6 +4137,21 @@
       ]
     },
     {
+      "key": "hba1c",
+      "ui_location": "Statistics > Dexcom TIR",
+      "kind": "label",
+      "description": "Label for the estimated HbA1c (long-term average blood glucose marker). Followed directly by the value; trailing space is intentional.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "dae8e0d74cb49912",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/DexcomTirStatsCompose.kt",
+          "line": 123
+        }
+      ]
+    },
+    {
       "key": "hide_invalidated",
       "ui_location": "List screens > overflow menu",
       "kind": "menu_item",
@@ -2227,6 +4165,60 @@
         {
           "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/SelectableListToolbar.kt",
           "line": 103
+        }
+      ]
+    },
+    {
+      "key": "high",
+      "ui_location": "Statistics > Dexcom TIR table header",
+      "kind": "label",
+      "description": "Table column header for time with glucose high (hyperglycemia band). Narrow column.",
+      "related_keys": [
+        "veryHigh"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "37fcb008ed67d0f7",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/DexcomTirStatsCompose.kt",
+          "line": 242
+        }
+      ]
+    },
+    {
+      "key": "hypo",
+      "ui_location": "Temporary target reason",
+      "kind": "label",
+      "description": "Reason of a temp target set for hypoglycemia (low glucose). Short chip label, abbreviation OK.",
+      "related_keys": [
+        "eatingsoon"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a07eaf5212e97dc8",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 877
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 239
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/chips/TempTargetChip.kt",
+          "line": 141
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActionEditors.kt",
+          "line": 58
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetCarouselCard.kt",
+          "line": 257
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetPresetStorage.kt",
+          "line": 22
         }
       ]
     },
@@ -2298,6 +4290,28 @@
       ]
     },
     {
+      "key": "in_range",
+      "ui_location": "Statistics > TIR table headers",
+      "kind": "label",
+      "description": "Table column header for time spent within the target glucose range. Short.",
+      "related_keys": [
+        "below",
+        "above"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "bc9a400ad7bfbea2",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/DexcomTirStatsCompose.kt",
+          "line": 235
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TirStatsCompose.kt",
+          "line": 196
+        }
+      ]
+    },
+    {
       "key": "increment",
       "ui_location": "Plus/minus control, accessibility",
       "kind": "other",
@@ -2334,6 +4348,25 @@
         {
           "path": "appshell/src/commonMain/kotlin/app/aaps/appshell/AapsAppRoot.kt",
           "line": 272
+        }
+      ]
+    },
+    {
+      "key": "ins_concentration_confirmed",
+      "ui_location": "User entries (action log) list and CSV export",
+      "kind": "log",
+      "description": "Action-log entry recording that the user confirmed an insulin type or concentration. %1$s is the insulin name or concentration (for example U100).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0786e889dcacc841",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/userEntry/UserEntryPresentationHelperImpl.kt",
+          "line": 292
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/userEntry/UserEntryPresentationHelperImpl.kt",
+          "line": 364
         }
       ]
     },
@@ -2385,6 +4418,23 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/fillDialog/FillDialogViewModel.kt",
           "line": 446
+        }
+      ]
+    },
+    {
+      "key": "insulin_management",
+      "ui_location": "Menu element list",
+      "kind": "menu_item",
+      "description": "Name of the element for insulin settings/configurations.",
+      "related_keys": [
+        "manage_insulin_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "03781ca295ab2a5d",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 213
         }
       ]
     },
@@ -2721,6 +4771,31 @@
       ]
     },
     {
+      "key": "let_temp_basal_run",
+      "ui_location": "Loop result text and treatment note",
+      "kind": "status",
+      "description": "Loop decision to leave the current temporary basal rate (temp basal) running unchanged. Short imperative phrase.",
+      "related_keys": [
+        "cancel_temp"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "56152bc3f8101b3a",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/aps/DetermineBasalResult.kt",
+          "line": 132
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 908
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 929
+        }
+      ]
+    },
+    {
       "key": "limiting_iob",
       "ui_location": "Loop / APS result text",
       "kind": "status",
@@ -2807,6 +4882,308 @@
       ]
     },
     {
+      "key": "location_back_left_buttock",
+      "ui_location": "Site rotation location",
+      "kind": "label",
+      "description": "Body location for a site: buttock, patient's left.",
+      "related_keys": [
+        "location_back_right_buttock"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "bfd67a161a477ae5",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 208
+        }
+      ]
+    },
+    {
+      "key": "location_back_left_upper_arm",
+      "ui_location": "Site rotation location",
+      "kind": "label",
+      "description": "Body location for a site: back of the upper arm, patient's left.",
+      "related_keys": [
+        "location_side_left_upper_arm"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1e5afb38c6cd8f4a",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 198
+        }
+      ]
+    },
+    {
+      "key": "location_back_right_buttock",
+      "ui_location": "Site rotation location",
+      "kind": "label",
+      "description": "Body location for a site: buttock, patient's right.",
+      "related_keys": [
+        "location_back_left_buttock"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "af9ec627bb8d870a",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 207
+        }
+      ]
+    },
+    {
+      "key": "location_back_right_lower_back",
+      "ui_location": "Site rotation location",
+      "kind": "label",
+      "description": "Body location for a site: lower back, patient's right.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ba836f1c5a512049",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 209
+        }
+      ]
+    },
+    {
+      "key": "location_back_right_upper_arm",
+      "ui_location": "Site rotation location",
+      "kind": "label",
+      "description": "Body location for a site: back of the upper arm, patient's right.",
+      "related_keys": [
+        "location_side_right_upper_arm"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e7bf8ee4c685c16e",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 197
+        }
+      ]
+    },
+    {
+      "key": "location_front_left_lower_abdomen",
+      "ui_location": "Site rotation location",
+      "kind": "label",
+      "description": "Body location for a site: lower abdomen, front, patient's left.",
+      "related_keys": [
+        "location_side_left_lower_abdomen"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "071fbee662e69f58",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 206
+        }
+      ]
+    },
+    {
+      "key": "location_front_left_upper_abdomen",
+      "ui_location": "Site rotation location",
+      "kind": "label",
+      "description": "Body location for a site: upper abdomen, front, patient's left.",
+      "related_keys": [
+        "location_side_left_upper_abdomen"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f0cff265e7d49377",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 204
+        }
+      ]
+    },
+    {
+      "key": "location_front_left_upper_chest",
+      "ui_location": "Site rotation location",
+      "kind": "label",
+      "description": "Body location for a site: chest, patient's left.",
+      "related_keys": [
+        "location_front_right_upper_chest"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1e90eb727eaa0137",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 194
+        }
+      ]
+    },
+    {
+      "key": "location_front_right_lower_abdomen",
+      "ui_location": "Site rotation location",
+      "kind": "label",
+      "description": "Body location for a site: lower abdomen, front, patient's right.",
+      "related_keys": [
+        "location_side_right_lower_abdomen"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a59de2ccd423809b",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 205
+        }
+      ]
+    },
+    {
+      "key": "location_front_right_upper_abdomen",
+      "ui_location": "Site rotation location",
+      "kind": "label",
+      "description": "Body location for a site: upper abdomen, front, patient's right.",
+      "related_keys": [
+        "location_side_right_upper_abdomen"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "261b003bf3b4e852",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 203
+        }
+      ]
+    },
+    {
+      "key": "location_front_right_upper_chest",
+      "ui_location": "Site rotation location",
+      "kind": "label",
+      "description": "Body location for a site: chest, patient's right (not the viewer's right).",
+      "related_keys": [
+        "location_front_left_upper_chest"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5f811ad2c79b5520",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 193
+        }
+      ]
+    },
+    {
+      "key": "location_permission_not_granted",
+      "ui_location": "Snackbar (error), when the Automation location service starts",
+      "kind": "error",
+      "description": "Error snackbar shown when location-based automation cannot run because the Android location permission is missing. The user is told to grant it in Android system settings.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d6f2d146656a9619",
+      "usages": [
+        {
+          "path": "plugins/automation/src/androidMain/kotlin/app/aaps/plugins/automation/services/LocationService.kt",
+          "line": 152
+        }
+      ]
+    },
+    {
+      "key": "location_side_left_lower_abdomen",
+      "ui_location": "Site rotation location",
+      "kind": "label",
+      "description": "Body location for a site: lower abdomen, side, patient's left.",
+      "related_keys": [
+        "location_front_left_lower_abdomen"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "afaf37d58e57f2e8",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 202
+        }
+      ]
+    },
+    {
+      "key": "location_side_left_upper_abdomen",
+      "ui_location": "Site rotation location",
+      "kind": "label",
+      "description": "Body location for a site: upper abdomen, side, patient's left.",
+      "related_keys": [
+        "location_front_left_upper_abdomen"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d3369bd2f8f0f75e",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 200
+        }
+      ]
+    },
+    {
+      "key": "location_side_left_upper_arm",
+      "ui_location": "Site rotation location",
+      "kind": "label",
+      "description": "Body location for a site: upper arm, outer side, patient's left.",
+      "related_keys": [
+        "location_back_left_upper_arm"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e6c0c2ba8857f441",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 196
+        }
+      ]
+    },
+    {
+      "key": "location_side_right_lower_abdomen",
+      "ui_location": "Site rotation location",
+      "kind": "label",
+      "description": "Body location for a site: lower abdomen, side, patient's right.",
+      "related_keys": [
+        "location_front_right_lower_abdomen"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f438ccfa85648563",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 201
+        }
+      ]
+    },
+    {
+      "key": "location_side_right_upper_abdomen",
+      "ui_location": "Site rotation location",
+      "kind": "label",
+      "description": "Body location for a site: upper abdomen, side, patient's right.",
+      "related_keys": [
+        "location_front_right_upper_abdomen"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "79587d465ae92796",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 199
+        }
+      ]
+    },
+    {
+      "key": "location_side_right_upper_arm",
+      "ui_location": "Site rotation location",
+      "kind": "label",
+      "description": "Body location for a site: upper arm, outer side, patient's right.",
+      "related_keys": [
+        "location_back_right_upper_arm"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7ec46c3da350ae76",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 195
+        }
+      ]
+    },
+    {
       "key": "login",
       "ui_location": "Tidepool screen; Open Humans notification",
       "kind": "button",
@@ -2845,6 +5222,33 @@
         {
           "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/compose/TidepoolScreen.kt",
           "line": 214
+        }
+      ]
+    },
+    {
+      "key": "loop",
+      "ui_location": "Menu element, source, plugin name",
+      "kind": "title",
+      "description": "Name of the loop (the automatic insulin delivery algorithm), used as a title and as source of an action.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "da70de47436e7688",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 250
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 354
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 149
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 1112
         }
       ]
     },
@@ -2946,6 +5350,23 @@
       ]
     },
     {
+      "key": "low",
+      "ui_location": "Statistics > Dexcom TIR table header",
+      "kind": "label",
+      "description": "Table column header for time with glucose low (hypoglycemia band). Narrow column.",
+      "related_keys": [
+        "veryLow"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "15eac66d783c6e5c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/DexcomTirStatsCompose.kt",
+          "line": 228
+        }
+      ]
+    },
+    {
       "key": "lowglucosesuspend",
       "ui_location": "Running mode name",
       "kind": "status",
@@ -2989,6 +5410,162 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActionEditors.kt",
           "line": 202
+        }
+      ]
+    },
+    {
+      "key": "manage_extended_bolus_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the element that starts an extended bolus (delivered over time).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6a92eb47c492f8da",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 267
+        }
+      ]
+    },
+    {
+      "key": "manage_insulin_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the insulin settings element.",
+      "related_keys": [
+        "insulin_management"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2e820b268719c779",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 260
+        }
+      ]
+    },
+    {
+      "key": "manage_profile_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the profile management element.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6fa2c43be61027f4",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 261
+        }
+      ]
+    },
+    {
+      "key": "manage_quickwizard_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the element that manages quick wizard presets (one-tap bolus wizard shortcuts).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "49271ca0744b9050",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 263
+        }
+      ]
+    },
+    {
+      "key": "manage_site_rotation_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the element that tracks infusion/sensor sites and suggests rotation.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e221c0da923dcbed",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 268
+        }
+      ]
+    },
+    {
+      "key": "manage_temp_basal_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the element that starts a temporary basal rate.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c02f80d9886de17b",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 266
+        }
+      ]
+    },
+    {
+      "key": "manage_temp_target_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the temporary target management element.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "09e96cafab0b8df7",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 262
+        }
+      ]
+    },
+    {
+      "key": "manual",
+      "ui_location": "History and event details",
+      "kind": "label",
+      "description": "Measurement type: value entered by hand.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "d062c7d785060705",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 146
+        }
+      ]
+    },
+    {
+      "key": "master_control_disabled_banner",
+      "ui_location": "Banner on editing screens (follower phone)",
+      "kind": "status",
+      "description": "Banner on a follower phone: master has turned off remote control, so editing is blocked.",
+      "related_keys": [
+        "master_offline_banner"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5d7b5d6fdcc6fab4",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/MasterOfflineBanner.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "master_offline_banner",
+      "ui_location": "Banner on editing screens (follower phone)",
+      "kind": "status",
+      "description": "Banner on a follower phone: the master phone is unreachable and editing is blocked until reconnect.",
+      "related_keys": [
+        "master_control_disabled_banner"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "4868f7e785037a30",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/MasterOfflineBanner.kt",
+          "line": 37
         }
       ]
     },
@@ -3271,6 +5848,27 @@
       ]
     },
     {
+      "key": "nav_export",
+      "ui_location": "Maintenance menu (bottom sheet) and export dialog",
+      "kind": "menu_item",
+      "description": "Menu item that starts exporting the app settings to a file; also the title of the dialog that opens when the master password is missing. Short action label.",
+      "related_keys": [
+        "maintenance_export_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "bc0d33469f3df133",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 232
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 196
+        }
+      ]
+    },
+    {
       "key": "navigation_error_screen_not_found",
       "ui_location": "Snackbar/message on navigation",
       "kind": "error",
@@ -3290,6 +5888,74 @@
         {
           "path": "appshell/src/commonMain/kotlin/app/aaps/appshell/navigation/AppNavGraph.kt",
           "line": 701
+        }
+      ]
+    },
+    {
+      "key": "next",
+      "ui_location": "Wizard steps, login and refill guide screens",
+      "kind": "button",
+      "description": "Button or accessibility label that goes to the next step of a multi-step wizard. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2283c5b575cfdd2e",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/SiteLocationWizardStep.kt",
+          "line": 43
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 148
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoInsulinRefillGuideDialog.kt",
+          "line": 127
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep01Start.kt",
+          "line": 41
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep04Attach.kt",
+          "line": 35
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoSelectInsulinStep.kt",
+          "line": 28
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoSetAmountStep.kt",
+          "line": 59
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveNeedleCapStep.kt",
+          "line": 20
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveNeedleCapStepPreviews.kt",
+          "line": 23
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStep.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "night_tir",
+      "ui_location": "Statistics > Dexcom TIR",
+      "kind": "label",
+      "description": "Label for time-in-range figure measured at night.",
+      "related_keys": [
+        "day_tir"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "24c71384d6254a15",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/DexcomTirStatsCompose.kt",
+          "line": 66
         }
       ]
     },
@@ -3375,6 +6041,29 @@
       ]
     },
     {
+      "key": "nochangerequested",
+      "ui_location": "Loop result text, Loop screen, confirmation dialog",
+      "kind": "status",
+      "description": "Loop outcome saying the algorithm decided that no basal or other change is needed this cycle. Whole phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a0501331c8b01bac",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/aps/DetermineBasalResult.kt",
+          "line": 148
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 866
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1672
+        }
+      ]
+    },
+    {
       "key": "noprofile",
       "ui_location": "Automation action result",
       "kind": "error",
@@ -3414,6 +6103,87 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatmentsSheet/TreatmentViewModel.kt",
           "line": 205
+        }
+      ]
+    },
+    {
+      "key": "not_available_full",
+      "ui_location": "Overview > About dialog; Loop, OpenAPS and Autotune status texts",
+      "kind": "status",
+      "description": "Generic status text meaning a value or result does not exist right now, for example no loop or OpenAPS result yet or no Nightscout version detected. Whole phrase, standalone.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d7a6b1a4f81d0f74",
+      "usages": [
+        {
+          "path": "plugins/aps/src/androidMain/kotlin/app/aaps/plugins/aps/autotune/compose/AutotuneViewModel.kt",
+          "line": 303
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/compose/OpenAPSViewModel.kt",
+          "line": 86
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/compose/LoopViewModel.kt",
+          "line": 81
+        },
+        {
+          "path": "plugins/automation/src/iosMain/kotlin/app/aaps/plugins/automation/compose/MapPicker.ios.kt",
+          "line": 30
+        },
+        {
+          "path": "plugins/automation/src/jvmMain/kotlin/app/aaps/plugins/automation/compose/MapPicker.jvm.kt",
+          "line": 27
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 659
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 763
+        }
+      ]
+    },
+    {
+      "key": "not_available_on_platform",
+      "ui_location": "Toast/snackbar in the app host",
+      "kind": "toast",
+      "description": "Message shown when a function does not exist on the current platform at all, as opposed to being not yet finished. Full sentence.",
+      "related_keys": [
+        "not_implemented_yet"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "f5f5ef1c755a15ed",
+      "usages": [
+        {
+          "path": "ios/shell/src/iosMain/kotlin/app/aaps/ios/shell/ui/AapsAppHost.kt",
+          "line": 264
+        }
+      ]
+    },
+    {
+      "key": "not_implemented_yet",
+      "ui_location": "Toast/snackbar when a maintenance action is used",
+      "kind": "toast",
+      "description": "Message shown when the user picks a function that is not yet built for the current platform (for example the desktop app). Full sentence.",
+      "related_keys": [
+        "not_available_on_platform"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "e9b52ba8fb5fe042",
+      "usages": [
+        {
+          "path": "ios/shell/src/iosMain/kotlin/app/aaps/ios/shell/ui/AapsAppHost.kt",
+          "line": 263
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceViewModel.kt",
+          "line": 180
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceViewModel.kt",
+          "line": 182
         }
       ]
     },
@@ -3520,6 +6290,57 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/notificationsSheet/NotificationBottomSheet.kt",
           "line": 65
+        }
+      ]
+    },
+    {
+      "key": "ns",
+      "ui_location": "Source icons for Nightscout data",
+      "kind": "label",
+      "description": "Abbreviation for Nightscout (the remote server). Accessibility text and short source label; product abbreviation.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3dc890f88927a658",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 355
+        },
+        {
+          "path": "plugins/source/src/commonMain/kotlin/app/aaps/plugins/source/compose/BgSourceScreen.kt",
+          "line": 328
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/BolusCarbsScreen.kt",
+          "line": 238
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/BolusCarbsScreen.kt",
+          "line": 343
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/BolusCarbsScreen.kt",
+          "line": 431
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/CareportalScreen.kt",
+          "line": 237
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/ExtendedBolusScreen.kt",
+          "line": 262
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/ProfileSwitchScreen.kt",
+          "line": 310
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/RunningModeScreen.kt",
+          "line": 223
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/TempBasalScreen.kt",
+          "line": 311
         }
       ]
     },
@@ -3770,6 +6591,31 @@
       ]
     },
     {
+      "key": "passwords_dont_match",
+      "ui_location": "Preferences password fields; snackbar when setting a password",
+      "kind": "error",
+      "description": "Error shown when the password typed a second time (confirmation) differs from the first. Short message.",
+      "related_keys": [
+        "pin_dont_match"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e04b640dd1903c0a",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptiveMasterPasswordPreference.kt",
+          "line": 84
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptivePasswordPreference.kt",
+          "line": 86
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/PasswordCheckImpl.kt",
+          "line": 107
+        }
+      ]
+    },
+    {
       "key": "patient_name_default",
       "ui_location": "Preferences export, one-time password setup",
       "kind": "label",
@@ -3873,6 +6719,27 @@
       ]
     },
     {
+      "key": "pin_dont_match",
+      "ui_location": "Preferences PIN field; snackbar when setting a PIN",
+      "kind": "error",
+      "description": "Error shown when the confirmation PIN differs from the first PIN entered. Short message.",
+      "related_keys": [
+        "passwords_dont_match"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6feef12a79f8d474",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptivePasswordPreference.kt",
+          "line": 86
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/PasswordCheckImpl.kt",
+          "line": 107
+        }
+      ]
+    },
+    {
       "key": "please_wait",
       "ui_location": "Progress dialogs",
       "kind": "status",
@@ -3900,6 +6767,25 @@
       ]
     },
     {
+      "key": "pref_syncs_with_main_phone",
+      "ui_location": "Preferences > small sync badge beside a setting",
+      "kind": "label",
+      "description": "Accessibility description of a small icon badge shown next to a setting that is copied from the main phone to the watch or follower phone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "558267ed35d7b795",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/SyncBadge.kt",
+          "line": 44
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/SyncBadge.kt",
+          "line": 86
+        }
+      ]
+    },
+    {
       "key": "preference_range_summary",
       "ui_location": "Preferences > numeric preference summary",
       "kind": "preference_summary",
@@ -3915,6 +6801,23 @@
         {
           "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptiveIntPreference.kt",
           "line": 115
+        }
+      ]
+    },
+    {
+      "key": "preset_settings",
+      "ui_location": "Temp target editor section",
+      "kind": "title",
+      "description": "Heading above the preset values (name, target, duration).",
+      "related_keys": [
+        "activation"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "12aef6153587c534",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetEditor.kt",
+          "line": 81
         }
       ]
     },
@@ -3993,6 +6896,21 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
           "line": 965
+        }
+      ]
+    },
+    {
+      "key": "profile_management",
+      "ui_location": "Element/menu list",
+      "kind": "menu_item",
+      "description": "Name of the profile management element in the menu of configurable shortcuts. Noun, short.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "878b6f3f5180d207",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 214
         }
       ]
     },
@@ -4213,6 +7131,29 @@
       ]
     },
     {
+      "key": "pump_battery_change",
+      "ui_location": "Care dialog title; event type",
+      "kind": "label",
+      "description": "Event type and dialog title for replacing the pump battery.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "42ef35d9059d8570",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 222
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 165
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/careDialog/CareDialogScreen.kt",
+          "line": 394
+        }
+      ]
+    },
+    {
       "key": "pump_driver_not_responding",
       "ui_location": "Alarm notification",
       "kind": "notification",
@@ -4224,6 +7165,40 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/CommandQueueImplementation.kt",
           "line": 382
+        }
+      ]
+    },
+    {
+      "key": "pump_insulin_cu",
+      "ui_location": "Formatted insulin amount on pump screens",
+      "kind": "other",
+      "description": "Format for a bolus amount with two decimals followed by a no-break space and the unit \"CU\" (concentrated units, for pumps/insulins with non-standard concentration). %1$.2f is the amount. Keep the   space.",
+      "related_keys": [
+        "pump_insulin_cu1"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "c1ef09a5619a30c0",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/DecimalFormatterImpl.kt",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "key": "pump_insulin_cu1",
+      "ui_location": "Formatted insulin amount on pump screens",
+      "kind": "other",
+      "description": "Same as the two-decimal CU format but with one decimal, used when the pump bolus step is coarser. %1$.1f is the amount. Keep the   space.",
+      "related_keys": [
+        "pump_insulin_cu"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "c1ef09a5619a30c0",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/DecimalFormatterImpl.kt",
+          "line": 38
         }
       ]
     },
@@ -4311,6 +7286,21 @@
         {
           "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/InsightPlugin.kt",
           "line": 1276
+        }
+      ]
+    },
+    {
+      "key": "pump_reconnect",
+      "ui_location": "Bolus wizard confirmation title",
+      "kind": "button",
+      "description": "Action name for connecting the pump again after a disconnection. Imperative, short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7e660931ca30bf37",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 948
         }
       ]
     },
@@ -4560,6 +7550,44 @@
       ]
     },
     {
+      "key": "reason",
+      "ui_location": "Loop/OpenAPS result and confirmation dialog lines",
+      "kind": "label",
+      "description": "Label before the explanation of why the algorithm or a temp target chose a value, shown as a \"Reason: text\" line in results and confirmation dialogs.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0c298fe686af31ba",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/aps/DetermineBasalResult.kt",
+          "line": 143
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 805
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1676
+        }
+      ]
+    },
+    {
+      "key": "record_insulin_hint",
+      "ui_location": "Insulin dialog (record insulin)",
+      "kind": "hint",
+      "description": "Help text in the dialog for manually recording insulin given outside the pump, for example with a pen. Warns that the dose always counts in International Units whatever the insulin type.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9afa76b3a35b380b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinDialog/InsulinDialogScreen.kt",
+          "line": 368
+        }
+      ]
+    },
+    {
       "key": "refresh",
       "ui_location": "Pump history screen; pump overview action",
       "kind": "button",
@@ -4775,6 +7803,21 @@
       ]
     },
     {
+      "key": "revert_to_defaults",
+      "ui_location": "Temp target management toolbar",
+      "kind": "label",
+      "description": "Accessibility description of the icon that restores the default presets.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3c569784a0ea8a96",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetManagementScreen.kt",
+          "line": 557
+        }
+      ]
+    },
+    {
       "key": "running",
       "ui_location": "Nightscout client status; profile screen",
       "kind": "status",
@@ -4792,6 +7835,76 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/viewmodels/ProfileManagementViewModel.kt",
           "line": 342
+        }
+      ]
+    },
+    {
+      "key": "running_mode",
+      "ui_location": "Menu element, confirmation dialogs, history",
+      "kind": "title",
+      "description": "Name of the loop running mode: how the loop is operating (closed loop, open loop, disconnected, suspended and so on).",
+      "related_keys": [
+        "running_mode_change_not_allowed"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "662a8c797dca0a85",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 248
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 949
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/runningMode/RunningModeManagementViewModel.kt",
+          "line": 163
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/runningMode/RunningModeScreen.kt",
+          "line": 75
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/runningMode/RunningModeScreen.kt",
+          "line": 219
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/RunningModeStep.kt",
+          "line": 34
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/RunningModeStep.kt",
+          "line": 43
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/TreatmentsScreen.kt",
+          "line": 134
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/TreatmentsScreen.kt",
+          "line": 263
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/viewmodels/RunningModeViewModel.kt",
+          "line": 167
+        }
+      ]
+    },
+    {
+      "key": "running_mode_change_not_allowed",
+      "ui_location": "Bolus wizard error",
+      "kind": "error",
+      "description": "Error shown when the wizard attempts a running mode change that is not allowed in the current state.",
+      "related_keys": [
+        "running_mode"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "0b38d37d86c4efb4",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 432
         }
       ]
     },
@@ -4843,6 +7956,1090 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/foodManagement/FoodManagementScreen.kt",
           "line": 442
+        }
+      ]
+    },
+    {
+      "key": "scene",
+      "ui_location": "Scene confirm dialog, scene badge, action log",
+      "kind": "title",
+      "description": "Singular noun for a Scene: a named preset that applies several actions (temp target, profile, mode...) at once. Used as a dialog title and an icon description.",
+      "related_keys": [
+        "scenes",
+        "scene_desc"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "f55401d6a3f81972",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneActionsImpl.kt",
+          "line": 45
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 839
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/chips/SceneBadge.kt",
+          "line": 40
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListScreen.kt",
+          "line": 135
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/NameIconStep.kt",
+          "line": 35
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/NameIconStep.kt",
+          "line": 46
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/SceneWizardScreen.kt",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "key": "scene_action_careportal",
+      "ui_location": "Scene action summary line",
+      "kind": "label",
+      "description": "Summary line of a scene action that logs a care portal event. %1$s is the translated event type.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1ac66a01be807a72",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExecutor.kt",
+          "line": 183
+        }
+      ]
+    },
+    {
+      "key": "scene_action_profile",
+      "ui_location": "Scene action summary line",
+      "kind": "label",
+      "description": "Summary line of a scene action that switches profile. %1$s is the profile name, %2$d the percentage (%% is a literal percent sign).",
+      "related_keys": [
+        "scene_action_profile_pct_only"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "11fb58f0e132f767",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExecutor.kt",
+          "line": 178
+        }
+      ]
+    },
+    {
+      "key": "scene_action_profile_pct_only",
+      "ui_location": "Scene action summary line",
+      "kind": "label",
+      "description": "Summary line of a scene action that changes only the profile percentage. %1$d is the percent.",
+      "related_keys": [
+        "scene_action_profile"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "45ade1e2f15deffb",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExecutor.kt",
+          "line": 180
+        }
+      ]
+    },
+    {
+      "key": "scene_action_running_mode",
+      "ui_location": "Scene action summary line",
+      "kind": "label",
+      "description": "Summary line of a scene action changing the running mode. %1$s is the translated mode name.",
+      "related_keys": [
+        "running_mode"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "57994edaf59a1df2",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExecutor.kt",
+          "line": 182
+        }
+      ]
+    },
+    {
+      "key": "scene_action_smb_off",
+      "ui_location": "Scene action summary line",
+      "kind": "label",
+      "description": "Summary line of an action that turns off SMB (super micro bolus). Imperative.",
+      "related_keys": [
+        "scene_action_smb_on"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e8bc7cdce2942722",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExecutor.kt",
+          "line": 181
+        }
+      ]
+    },
+    {
+      "key": "scene_action_smb_on",
+      "ui_location": "Scene action summary line",
+      "kind": "label",
+      "description": "Summary line of an action that turns on SMB (super micro bolus, an algorithm feature). Imperative.",
+      "related_keys": [
+        "scene_action_smb_off"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e8bc7cdce2942722",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExecutor.kt",
+          "line": 181
+        }
+      ]
+    },
+    {
+      "key": "scene_action_tt",
+      "ui_location": "Scene action summary line",
+      "kind": "label",
+      "description": "Summary line of a scene action that sets a temp target. %1$s is the target value with its unit.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "186c3e0fce95cb4f",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExecutor.kt",
+          "line": 176
+        }
+      ]
+    },
+    {
+      "key": "scene_activate",
+      "ui_location": "Scene list > card action and confirm dialog",
+      "kind": "button",
+      "description": "Button that starts a scene. Short imperative; also used as accessibility text.",
+      "related_keys": [
+        "scene_deactivate"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "4c868e1e86098684",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListScreen.kt",
+          "line": 314
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListScreen.kt",
+          "line": 370
+        }
+      ]
+    },
+    {
+      "key": "scene_active",
+      "ui_location": "Active scene banner",
+      "kind": "status",
+      "description": "Small badge text saying that this scene is running now.",
+      "related_keys": [
+        "scene_ended"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "d0e88ece1b4c8419",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActiveSceneBanner.kt",
+          "line": 136
+        }
+      ]
+    },
+    {
+      "key": "scene_careportal_no_revert",
+      "ui_location": "Scene end confirmation list",
+      "kind": "status",
+      "description": "Line noting that care portal events logged by the scene stay in the records.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "812a7ea7a4af048d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListViewModel.kt",
+          "line": 379
+        }
+      ]
+    },
+    {
+      "key": "scene_confirm_activate",
+      "ui_location": "Scene list > activation dialog",
+      "kind": "dialog_text",
+      "description": "Question confirming start of a scene. %1$s is the scene name (shown in quotes).",
+      "related_keys": [
+        "scene_activate"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a6880a833c143eb2",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListScreen.kt",
+          "line": 341
+        }
+      ]
+    },
+    {
+      "key": "scene_confirm_deactivate",
+      "ui_location": "Dialog before ending a scene",
+      "kind": "dialog_text",
+      "description": "Question confirming ending of a scene; the changes it made (target, profile, mode) are undone. %1$s is the scene name.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "11aef690788c4591",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 863
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListScreen.kt",
+          "line": 90
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListScreen.kt",
+          "line": 391
+        }
+      ]
+    },
+    {
+      "key": "scene_conflict_active_profile",
+      "ui_location": "Scene activation warning list",
+      "kind": "status",
+      "description": "Warning that starting the scene will replace the active profile switch.",
+      "related_keys": [
+        "scene_conflict_active_tt"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "42f1c01e759f643e",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListViewModel.kt",
+          "line": 322
+        }
+      ]
+    },
+    {
+      "key": "scene_conflict_active_running_mode",
+      "ui_location": "Scene activation warning list",
+      "kind": "status",
+      "description": "Warning that starting the scene will replace the active running mode.",
+      "related_keys": [
+        "scene_conflict_active_tt"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d44272b54369f6ff",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListViewModel.kt",
+          "line": 333
+        }
+      ]
+    },
+    {
+      "key": "scene_conflict_active_scene",
+      "ui_location": "Scene activation warning list",
+      "kind": "status",
+      "description": "Warning that another scene named %1$s is running and will be ended before this one starts.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e321df685a0f8527",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListViewModel.kt",
+          "line": 340
+        }
+      ]
+    },
+    {
+      "key": "scene_conflict_active_tt",
+      "ui_location": "Scene activation warning list",
+      "kind": "status",
+      "description": "Warning that starting the scene will replace the temporary target now active.",
+      "related_keys": [
+        "scene_conflict_active_profile"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9651be7274555ee6",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListViewModel.kt",
+          "line": 314
+        }
+      ]
+    },
+    {
+      "key": "scene_deactivate",
+      "ui_location": "Active scene confirmation dialog",
+      "kind": "button",
+      "description": "Button/title that ends the running scene.",
+      "related_keys": [
+        "scene_activate"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c303373f5d8e28dc",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 874
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 880
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 883
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActiveSceneBanner.kt",
+          "line": 159
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListScreen.kt",
+          "line": 94
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListScreen.kt",
+          "line": 307
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListScreen.kt",
+          "line": 406
+        }
+      ]
+    },
+    {
+      "key": "scene_desc",
+      "ui_location": "Scenes list top and element list",
+      "kind": "summary",
+      "description": "One-line description of what scenes are. Shown at the top of the Scenes list and as the element description.",
+      "related_keys": [
+        "scenes"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "78464f2430f10631",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 292
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListScreen.kt",
+          "line": 162
+        }
+      ]
+    },
+    {
+      "key": "scene_duration_indefinite",
+      "ui_location": "Scene list and Scene editor duration step",
+      "kind": "status",
+      "description": "Duration value meaning the scene runs until the user ends it manually.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6b9f1eb71beb2543",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneSummary.kt",
+          "line": 32
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/DurationStep.kt",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "key": "scene_editor_disabled",
+      "ui_location": "Scene editor > SMB action switch",
+      "kind": "status",
+      "description": "Value text of a switch that is off.",
+      "related_keys": [
+        "scene_editor_enabled"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f3594f254f6bc381",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActionEditors.kt",
+          "line": 163
+        }
+      ]
+    },
+    {
+      "key": "scene_editor_enabled",
+      "ui_location": "Scene editor > SMB action switch",
+      "kind": "status",
+      "description": "Value text of a switch that is on.",
+      "related_keys": [
+        "scene_editor_disabled"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f3594f254f6bc381",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActionEditors.kt",
+          "line": 163
+        }
+      ]
+    },
+    {
+      "key": "scene_editor_event_type",
+      "ui_location": "Scene editor > Care portal action",
+      "kind": "label",
+      "description": "Label of the dropdown choosing the type of care portal event to log.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7424be80144daa30",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActionEditors.kt",
+          "line": 233
+        }
+      ]
+    },
+    {
+      "key": "scene_editor_keep_current_profile",
+      "ui_location": "Scene editor > profile dropdown first entry",
+      "kind": "other",
+      "description": "Dropdown option meaning the profile stays as it is and only the percentage changes. The dashes are decoration.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "80b9ed7e29e73bd2",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActionEditors.kt",
+          "line": 128
+        }
+      ]
+    },
+    {
+      "key": "scene_editor_mode",
+      "ui_location": "Scene editor > Running mode action",
+      "kind": "label",
+      "description": "Label of the dropdown choosing a loop running mode.",
+      "related_keys": [
+        "running_mode"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ae3fcec5ac0b1796",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActionEditors.kt",
+          "line": 189
+        }
+      ]
+    },
+    {
+      "key": "scene_editor_no_tt_presets",
+      "ui_location": "Scene editor > Temp target action",
+      "kind": "status",
+      "description": "Message shown instead of the preset dropdown when no TT (temporary target) presets exist.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7cc9b24d30e89f31",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActionEditors.kt",
+          "line": 74
+        }
+      ]
+    },
+    {
+      "key": "scene_editor_note",
+      "ui_location": "Scene editor > Care portal action",
+      "kind": "label",
+      "description": "Label of the optional free-text note field.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "80bf07755ad4a121",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActionEditors.kt",
+          "line": 246
+        }
+      ]
+    },
+    {
+      "key": "scene_editor_percentage",
+      "ui_location": "Scene editor > Profile switch action",
+      "kind": "label",
+      "description": "Label of a numeric input for the profile percentage (100 = unchanged).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a60cdc6f7ef41473",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActionEditors.kt",
+          "line": 143
+        }
+      ]
+    },
+    {
+      "key": "scene_editor_profile",
+      "ui_location": "Scene editor > Profile switch action",
+      "kind": "label",
+      "description": "Label of the dropdown that selects a profile.",
+      "related_keys": [
+        "scene_editor_keep_current_profile"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b4bbf4e593591f95",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActionEditors.kt",
+          "line": 132
+        }
+      ]
+    },
+    {
+      "key": "scene_editor_select_tt_preset",
+      "ui_location": "Scene editor > Temp target action",
+      "kind": "hint",
+      "description": "Placeholder of the preset dropdown before a choice is made.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "da7251bf91cf7334",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActionEditors.kt",
+          "line": 86
+        }
+      ]
+    },
+    {
+      "key": "scene_editor_target",
+      "ui_location": "Scene editor > Temp target action",
+      "kind": "label",
+      "description": "Label for the glucose target value of a temporary target action.",
+      "related_keys": [
+        "scene_editor_tt_preset"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d44803ff8e3f9967",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActionEditors.kt",
+          "line": 109
+        }
+      ]
+    },
+    {
+      "key": "scene_editor_tt_preset",
+      "ui_location": "Scene editor > Temp target action",
+      "kind": "label",
+      "description": "Label of a dropdown to pick a saved temporary target preset. TT is the abbreviation of temporary target.",
+      "related_keys": [
+        "scene_editor_select_tt_preset"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a2551a0480c88fde",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActionEditors.kt",
+          "line": 92
+        }
+      ]
+    },
+    {
+      "key": "scene_end_active",
+      "ui_location": "Watch confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Line on the watch confirmation asking to end the currently running scene.",
+      "related_keys": [
+        "scene_skip_to_label"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "d96c9a4354dcdbc3",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 792
+        }
+      ]
+    },
+    {
+      "key": "scene_end_follow_up_not_started",
+      "ui_location": "Watch confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Info line when ending a scene: the chained follow-up scene named %1$s will not run.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "963ce9782b591ccf",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 798
+        }
+      ]
+    },
+    {
+      "key": "scene_ended",
+      "ui_location": "Active scene banner, watch error",
+      "kind": "status",
+      "description": "Status shown after a scene ended, or error on the watch when there is no scene to stop.",
+      "related_keys": [
+        "scene_active"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "0c228920fddcadf4",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 782
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActiveSceneBanner.kt",
+          "line": 124
+        }
+      ]
+    },
+    {
+      "key": "scene_icon",
+      "ui_location": "Scene editor > icon picker",
+      "kind": "label",
+      "description": "Heading of the picker where the user selects an icon for the scene.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "64774b4729a15c21",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActionEditors.kt",
+          "line": 329
+        }
+      ]
+    },
+    {
+      "key": "scene_lock_banner_control_disabled",
+      "ui_location": "Scene list banner (follower phone)",
+      "kind": "status",
+      "description": "Banner on a follower phone: the master phone has switched off remote control, so scenes cannot be controlled.",
+      "related_keys": [
+        "scene_lock_banner_master_offline"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "394d8e08857b8002",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListViewModel.kt",
+          "line": 93
+        }
+      ]
+    },
+    {
+      "key": "scene_lock_banner_master_offline",
+      "ui_location": "Scene list banner (follower phone)",
+      "kind": "status",
+      "description": "Banner on a follower/remote phone: the main (master) phone is not reachable, so scenes cannot be controlled.",
+      "related_keys": [
+        "scene_lock_banner_control_disabled"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "394d8e08857b8002",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListViewModel.kt",
+          "line": 93
+        }
+      ]
+    },
+    {
+      "key": "scene_lock_reason_control_disabled",
+      "ui_location": "Disabled scene button reason",
+      "kind": "status",
+      "description": "Short reason shown why a scene action is locked: remote control is off on the master.",
+      "related_keys": [
+        "scene_lock_reason_master_offline"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "ba7ea05953518bc0",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListViewModel.kt",
+          "line": 104
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListViewModel.kt",
+          "line": 121
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenesSheet/ScenesViewModel.kt",
+          "line": 131
+        }
+      ]
+    },
+    {
+      "key": "scene_lock_reason_master_offline",
+      "ui_location": "Disabled scene button reason",
+      "kind": "status",
+      "description": "Short reason shown why a scene action is locked: the master phone is disconnected.",
+      "related_keys": [
+        "scene_lock_reason_control_disabled"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "ba7ea05953518bc0",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListViewModel.kt",
+          "line": 104
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListViewModel.kt",
+          "line": 121
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenesSheet/ScenesViewModel.kt",
+          "line": 131
+        }
+      ]
+    },
+    {
+      "key": "scene_lock_reason_scene_active",
+      "ui_location": "Disabled scene button reason",
+      "kind": "status",
+      "description": "Short reason shown on a scene start control disabled because another scene is running.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f72f5f94336e48ef",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListViewModel.kt",
+          "line": 105
+        }
+      ]
+    },
+    {
+      "key": "scene_management",
+      "ui_location": "Menu element list",
+      "kind": "menu_item",
+      "description": "Name of the scene management element in the configurable menu. Same word as the Scenes title.",
+      "related_keys": [
+        "scenes"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "f5e61c530676c1cc",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 245
+        }
+      ]
+    },
+    {
+      "key": "scene_management_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description under the Scene management entry in the configurable element list.",
+      "related_keys": [
+        "scene_management"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "625d9fa9092db1a9",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 293
+        }
+      ]
+    },
+    {
+      "key": "scene_no_actions",
+      "ui_location": "Scene start validation error",
+      "kind": "error",
+      "description": "Error when activating a scene that has no actions defined.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "383f2d1ad9042520",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExecutor.kt",
+          "line": 120
+        }
+      ]
+    },
+    {
+      "key": "scene_no_active",
+      "ui_location": "Scene stop error",
+      "kind": "error",
+      "description": "Error when the user tries to end a scene but none is running.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c2352b699c5f4eee",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExecutor.kt",
+          "line": 278
+        }
+      ]
+    },
+    {
+      "key": "scene_no_profile_store",
+      "ui_location": "Scene start error",
+      "kind": "error",
+      "description": "Error when the profile list is not loaded, so a profile switch cannot be done. A profile store holds the user's profiles.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "50e653c86f61eba3",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExecutor.kt",
+          "line": 467
+        }
+      ]
+    },
+    {
+      "key": "scene_profile_not_found",
+      "ui_location": "Wizard and scene errors",
+      "kind": "error",
+      "description": "Error naming a profile that no longer exists. %1$s is the profile name (shown in quotes).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "031f3e56e16aebf0",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 296
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 412
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExecutor.kt",
+          "line": 125
+        }
+      ]
+    },
+    {
+      "key": "scene_revert_loop_mode",
+      "ui_location": "Scene end confirmation list",
+      "kind": "status",
+      "description": "Line: when the scene ends, the running mode override is cancelled.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3ad459ee67dc63bd",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListViewModel.kt",
+          "line": 369
+        }
+      ]
+    },
+    {
+      "key": "scene_revert_profile",
+      "ui_location": "Scene end confirmation list",
+      "kind": "status",
+      "description": "Line listing what happens when the scene ends: the profile switch is undone.",
+      "related_keys": [
+        "scene_revert_tt"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0d3b47c1544a16cb",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListViewModel.kt",
+          "line": 357
+        }
+      ]
+    },
+    {
+      "key": "scene_revert_smb_off",
+      "ui_location": "Scene end confirmation list",
+      "kind": "status",
+      "description": "Line: when the scene ends, SMB (super micro bolus) is turned back off.",
+      "related_keys": [
+        "scene_revert_smb_on"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9ac3eca80b49a15a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListViewModel.kt",
+          "line": 364
+        }
+      ]
+    },
+    {
+      "key": "scene_revert_smb_on",
+      "ui_location": "Scene end confirmation list",
+      "kind": "status",
+      "description": "Line: when the scene ends, SMB (super micro bolus) is turned back on.",
+      "related_keys": [
+        "scene_revert_smb_off"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "30704a9b80478a55",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListViewModel.kt",
+          "line": 363
+        }
+      ]
+    },
+    {
+      "key": "scene_revert_tt",
+      "ui_location": "Scene end confirmation list",
+      "kind": "status",
+      "description": "Line listing what happens when the scene ends: the temporary target is cancelled.",
+      "related_keys": [
+        "scene_revert_profile"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ff0311d3b2f525e9",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListViewModel.kt",
+          "line": 353
+        }
+      ]
+    },
+    {
+      "key": "scene_skip_to_label",
+      "ui_location": "Watch confirmation dialog",
+      "kind": "label",
+      "description": "Label before the name of the follow-up scene that will start next in a chain.",
+      "related_keys": [
+        "scene_end_follow_up_not_started"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "f7cc463d2f9430be",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 795
+        }
+      ]
+    },
+    {
+      "key": "scene_some_actions_failed",
+      "ui_location": "Scene start error",
+      "kind": "error",
+      "description": "Error when one or more actions of a scene could not be carried out on start.",
+      "related_keys": [
+        "scene_some_reverts_failed"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "855ea8a218714c6c",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExecutor.kt",
+          "line": 156
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExecutor.kt",
+          "line": 268
+        }
+      ]
+    },
+    {
+      "key": "scene_some_reverts_failed",
+      "ui_location": "Scene stop error",
+      "kind": "error",
+      "description": "Error when undoing actions at the end of a scene partly failed.",
+      "related_keys": [
+        "scene_some_actions_failed"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a48c35c434146a0a",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/scenes/SceneExecutor.kt",
+          "line": 305
+        }
+      ]
+    },
+    {
+      "key": "scene_start_from_template",
+      "ui_location": "Scene editor > new scene wizard, first step",
+      "kind": "title",
+      "description": "Heading above a list of ready-made scene templates the user can start from.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3c2ea758d40e8efd",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/wizard/TemplatePickerStep.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "scene_summary",
+      "ui_location": "Scene list card subtitle",
+      "kind": "summary",
+      "description": "Short subtitle for a scene. %1$d is the number of actions, %2$s the duration text (for example \"30 min\" or \"Indefinite\").",
+      "related_keys": [
+        "scene_duration_indefinite"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5eea60fe6df99607",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneSummary.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "scene_summary_with_chain",
+      "ui_location": "Scene list card subtitle",
+      "kind": "summary",
+      "description": "Joins a scene's summary (%1$s) with the name (%2$s) of the follow-up scene that starts afterwards; the arrow means \"then\".",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "505db27731e8c924",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneSummary.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "scenes",
+      "ui_location": "Bottom navigation bar, watch confirmations",
+      "kind": "title",
+      "description": "Plural title of the Scenes section; used as a short navigation label and watch dialog title.",
+      "related_keys": [
+        "scene"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "d2de14e31291e575",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 754
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 803
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainNavigationBar.kt",
+          "line": 120
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainNavigationBar.kt",
+          "line": 125
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
+          "line": 224
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/SceneListScreen.kt",
+          "line": 158
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenesSheet/ScenesBottomSheet.kt",
+          "line": 65
         }
       ]
     },
@@ -4901,6 +9098,37 @@
       ]
     },
     {
+      "key": "select_insulin_description",
+      "ui_location": "Pump refill/activation wizard, Select insulin step",
+      "kind": "dialog_text",
+      "description": "Instruction in a wizard asking which insulin the user fills into the pump. Choosing it triggers a profile switch afterwards. Prime means filling the infusion line.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1ee27d1fdd03b51c",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SelectInsulinStep.kt",
+          "line": 41
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/SelectInsulinStep.kt",
+          "line": 44
+        },
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/ui/wizard/compose/steps/SelectInsulinStep.kt",
+          "line": 46
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 255
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 135
+        }
+      ]
+    },
+    {
       "key": "select_site_location",
       "ui_location": "Site location summary; Omnipod wizard",
       "kind": "title",
@@ -4922,6 +9150,21 @@
         {
           "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
           "line": 137
+        }
+      ]
+    },
+    {
+      "key": "selected_insulin",
+      "ui_location": "Bolus wizard confirmation dialog",
+      "kind": "status",
+      "description": "Line in a confirmation dialog naming the insulin used for the bolus. %1$s is the insulin label.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3139a93ed8193807",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 756
         }
       ]
     },
@@ -4998,6 +9241,42 @@
       ]
     },
     {
+      "key": "settingsexport",
+      "ui_location": "Source label in history",
+      "kind": "label",
+      "description": "Source of an entry: created during a settings export.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "6f2eb716e13a1db5",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 352
+        }
+      ]
+    },
+    {
+      "key": "seven_days_short",
+      "ui_location": "Statistics > TIR table",
+      "kind": "label",
+      "description": "Very short column label meaning the last 7 days. Must stay a few characters.",
+      "related_keys": [
+        "thirty_days_short"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3467de213c0b613b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TirStatsCompose.kt",
+          "line": 116
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TirStatsCompose.kt",
+          "line": 150
+        }
+      ]
+    },
+    {
       "key": "shortgram",
       "ui_location": "User entries CSV; unit translation",
       "kind": "label",
@@ -5057,6 +9336,21 @@
       ]
     },
     {
+      "key": "show_hide_records",
+      "ui_location": "Loop records list toolbar button",
+      "kind": "label",
+      "description": "Accessibility description of a toolbar toggle that hides or shows loop run records in the list. The English text describes the current action (\"Hide\").",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5c95956b9859fdd0",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/SelectableListToolbar.kt",
+          "line": 115
+        }
+      ]
+    },
+    {
       "key": "show_invalidated",
       "ui_location": "List screens > overflow menu",
       "kind": "menu_item",
@@ -5070,6 +9364,23 @@
         {
           "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/SelectableListToolbar.kt",
           "line": 105
+        }
+      ]
+    },
+    {
+      "key": "simple_mode_blocked_by_concentration",
+      "ui_location": "Preferences toast",
+      "kind": "error",
+      "description": "Shown when the user tries to enable simple mode while a non-U100 insulin is in use.",
+      "related_keys": [
+        "concentration_disable_blocked"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "aa4a27fee6da58d5",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 77
         }
       ]
     },
@@ -5270,6 +9581,25 @@
       ]
     },
     {
+      "key": "startprofile",
+      "ui_location": "Automation action description and treatment note",
+      "kind": "status",
+      "description": "Describes an action that switches the profile to a percentage of itself for a time. %1$d is the profile percentage (the %% prints a literal percent sign), %2$d is the duration in minutes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "341422f55f15fd56",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionProfileSwitchPercent.kt",
+          "line": 44
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionProfileSwitchPercent.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
       "key": "state_collapsed",
       "ui_location": "Collapsible preference headers",
       "kind": "status",
@@ -5350,6 +9680,21 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
           "line": 278
+        }
+      ]
+    },
+    {
+      "key": "std_deviation",
+      "ui_location": "Statistics > Dexcom TIR",
+      "kind": "label",
+      "description": "Standard deviation of glucose readings. SD is the abbreviation. %1$s is the value in the user's glucose unit.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b928e7e41d30a361",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/DexcomTirStatsCompose.kt",
+          "line": 108
         }
       ]
     },
@@ -5595,6 +9940,75 @@
       ]
     },
     {
+      "key": "tbr_state_above_profile",
+      "ui_location": "Overview temp basal chip and home-screen widget",
+      "kind": "status",
+      "description": "Short state text: the running temp basal rate is higher than the profile's basal. Fits a small widget.",
+      "related_keys": [
+        "tbr_state_below_profile"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a7aa86e8f620bddf",
+      "usages": [
+        {
+          "path": "ui/src/androidMain/kotlin/app/aaps/ui/widget/glance/WidgetStateLoader.kt",
+          "line": 173
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/chips/TbrChip.kt",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "key": "tbr_state_below_profile",
+      "ui_location": "Overview temp basal chip and home-screen widget",
+      "kind": "status",
+      "description": "Short state text: the running temp basal rate is lower than the profile's basal.",
+      "related_keys": [
+        "tbr_state_above_profile"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "960198e71c1c7ec0",
+      "usages": [
+        {
+          "path": "ui/src/androidMain/kotlin/app/aaps/ui/widget/glance/WidgetStateLoader.kt",
+          "line": 174
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/chips/TbrChip.kt",
+          "line": 86
+        }
+      ]
+    },
+    {
+      "key": "tbr_state_none",
+      "ui_location": "Home-screen widget",
+      "kind": "status",
+      "description": "Short state text: no temp basal is active (or it equals the profile basal).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c05d2257ab577a10",
+      "usages": [
+        {
+          "path": "ui/src/androidMain/kotlin/app/aaps/ui/widget/glance/WidgetStateLoader.kt",
+          "line": 167
+        },
+        {
+          "path": "ui/src/androidMain/kotlin/app/aaps/ui/widget/glance/WidgetStateLoader.kt",
+          "line": 171
+        },
+        {
+          "path": "ui/src/androidMain/kotlin/app/aaps/ui/widget/glance/WidgetStateLoader.kt",
+          "line": 172
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/chips/TbrChip.kt",
+          "line": 87
+        }
+      ]
+    },
+    {
       "key": "tdd_old_data",
       "ui_location": "Wear OS TDD reply",
       "kind": "error",
@@ -5629,6 +10043,25 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TddStatsCompose.kt",
           "line": 175
+        }
+      ]
+    },
+    {
+      "key": "temp_basal",
+      "ui_location": "Menu element and temp basal info dialog title",
+      "kind": "title",
+      "description": "Short name for temp basal (temporary basal rate: a time-limited change of the background insulin rate).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4ddb5d4eac550a6c",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 226
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 769
         }
       ]
     },
@@ -5674,6 +10107,112 @@
         {
           "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/extensions/TemporaryBasalDisplay.kt",
           "line": 29
+        }
+      ]
+    },
+    {
+      "key": "temp_target_management",
+      "ui_location": "Menu element list",
+      "kind": "menu_item",
+      "description": "Name of the element for managing temporary targets.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1825022102076c99",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 215
+        }
+      ]
+    },
+    {
+      "key": "temporary_target",
+      "ui_location": "Bolus wizard confirmation, treatment history",
+      "kind": "label",
+      "description": "Name of a temporary target: a short-term change of the glucose target (e.g. for exercise). Shown as a label, sometimes before a value or Cancel.",
+      "related_keys": [
+        "temporary_targets"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "97c3a1c4c6acd3af",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 788
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 795
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 174
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/actions/ActionEditors.kt",
+          "line": 258
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerTempTarget.kt",
+          "line": 57
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 292
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1046
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 728
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 737
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileActivationScreen.kt",
+          "line": 366
+        }
+      ]
+    },
+    {
+      "key": "temporary_targets",
+      "ui_location": "Setup wizard consent step (sync)",
+      "kind": "label",
+      "description": "Plural list item naming the temporary targets data type among items shared during sync set-up.",
+      "related_keys": [
+        "temporary_target"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "e772f1db2507073e",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 219
+        }
+      ]
+    },
+    {
+      "key": "thirty_days_short",
+      "ui_location": "Statistics > TIR table",
+      "kind": "label",
+      "description": "Very short column label meaning the last 30 days. Must stay a few characters.",
+      "related_keys": [
+        "seven_days_short"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "25218d0973701ea5",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TirStatsCompose.kt",
+          "line": 126
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TirStatsCompose.kt",
+          "line": 160
         }
       ]
     },
@@ -5750,6 +10289,262 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileActivationScreen.kt",
           "line": 331
+        }
+      ]
+    },
+    {
+      "key": "tir",
+      "ui_location": "Statistics screen > Time in Range",
+      "kind": "title",
+      "description": "Section title. TIR is the share of time glucose stays within the target range. Standard diabetes term.",
+      "related_keys": [
+        "in_range"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "59c0e5b919ee463d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/DexcomTirStatsCompose.kt",
+          "line": 162
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 163
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 181
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TirStatsCompose.kt",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "key": "treatment_announcement_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the element that posts an announcement.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "42e0fdaabd9c73b4",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 277
+        }
+      ]
+    },
+    {
+      "key": "treatment_battery_change_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the element that records a pump battery change.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2cf9d5521fc0a007",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 279
+        }
+      ]
+    },
+    {
+      "key": "treatment_bg_check_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the element that records a fingerstick blood glucose check.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "611534a212000def",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 275
+        }
+      ]
+    },
+    {
+      "key": "treatment_calculator_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the bolus wizard element.",
+      "related_keys": [
+        "boluswizard"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "255250b2be68f373",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 258
+        }
+      ]
+    },
+    {
+      "key": "treatment_calibration_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the element that calibrates the CGM sensor.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "31b814ed4ad2ac8f",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 274
+        }
+      ]
+    },
+    {
+      "key": "treatment_cannula_change_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the element that records a cannula (infusion set) change.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4ea0a23b7cf87b68",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 280
+        }
+      ]
+    },
+    {
+      "key": "treatment_carbs_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the element that records carbs without insulin.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d1d20a59321620da",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 257
+        }
+      ]
+    },
+    {
+      "key": "treatment_cgm_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the element that opens the CGM (glucose sensor) companion app.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d168c947ca9c3c40",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 272
+        }
+      ]
+    },
+    {
+      "key": "treatment_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the element combining insulin and carbs entry.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8b88dfa0b58c1504",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 259
+        }
+      ]
+    },
+    {
+      "key": "treatment_exercise_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the element that logs exercise.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "60a0a77b5e7d8834",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 276
+        }
+      ]
+    },
+    {
+      "key": "treatment_fill_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the element that primes the pump and fills the cannula. Prime means pushing insulin through the line.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1edff4bba35fd4cf",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 281
+        }
+      ]
+    },
+    {
+      "key": "treatment_insulin_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the element that gives a manual bolus.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d5322ed268bd121f",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 256
+        }
+      ]
+    },
+    {
+      "key": "treatment_note_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the element that adds a note.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "de307ed2e9f12e1f",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 269
+        }
+      ]
+    },
+    {
+      "key": "treatment_question_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the element that logs a question to the care team.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "364f2dc10ed017e9",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 270
+        }
+      ]
+    },
+    {
+      "key": "treatment_sensor_insert_desc",
+      "ui_location": "Menu element list",
+      "kind": "summary",
+      "description": "Description for the element that records a CGM sensor insertion.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "acd32e5d1672c985",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 278
         }
       ]
     },
@@ -5962,6 +10757,57 @@
       ]
     },
     {
+      "key": "unknown",
+      "ui_location": "Insulin/concentration lists, trend arrow chooser",
+      "kind": "label",
+      "description": "Fallback word when a value is not known, or the \"no arrow\" option.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "4702bca3f9c3e17f",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/insulin/ConcentrationType.kt",
+          "line": 7
+        },
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/insulin/InsulinType.kt",
+          "line": 9
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/ArrowSelectionDialog.kt",
+          "line": 84
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 128
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 148
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 187
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 189
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 219
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 220
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 233
+        }
+      ]
+    },
+    {
       "key": "uploader",
       "ui_location": "Overview status > uploader dialog",
       "kind": "dialog_title",
@@ -5992,6 +10838,29 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/OverviewDataCacheImpl.kt",
           "line": 1195
+        }
+      ]
+    },
+    {
+      "key": "user_entry",
+      "ui_location": "Menu element, Treatments screen tab",
+      "kind": "title",
+      "description": "Name of the user entries list: the log of actions the user made in the app.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5bf7dc42cd2fcccb",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 249
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/TreatmentsScreen.kt",
+          "line": 142
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/TreatmentsScreen.kt",
+          "line": 271
         }
       ]
     },
@@ -6066,6 +10935,40 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/careDialog/CareDialogViewModel.kt",
           "line": 177
+        }
+      ]
+    },
+    {
+      "key": "veryHigh",
+      "ui_location": "Statistics > Dexcom TIR table header",
+      "kind": "label",
+      "description": "Table column header for time with glucose very high (the most severe band). Narrow column.",
+      "related_keys": [
+        "high"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "3df5122789890b3a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/DexcomTirStatsCompose.kt",
+          "line": 249
+        }
+      ]
+    },
+    {
+      "key": "veryLow",
+      "ui_location": "Statistics > Dexcom TIR table header",
+      "kind": "label",
+      "description": "Table column header for time with glucose very low (the most severe hypoglycemia band). Narrow column.",
+      "related_keys": [
+        "low"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "907d6445bc45621c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/DexcomTirStatsCompose.kt",
+          "line": 221
         }
       ]
     },
@@ -6170,6 +11073,45 @@
       ]
     },
     {
+      "key": "wear",
+      "ui_location": "Plugin name, source, TT reason",
+      "kind": "title",
+      "description": "Name of the Wear OS watch integration. Also marks a temp target or action created from the watch.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "98ab553a105b8aed",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 243
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
+          "line": 358
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/WearPlugin.kt",
+          "line": 97
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/WearPlugin.kt",
+          "line": 311
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 96
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/chips/TempTargetChip.kt",
+          "line": 145
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetCarouselCard.kt",
+          "line": 260
+        }
+      ]
+    },
+    {
       "key": "wear_wizard_settings",
       "ui_location": "Preferences > Wear",
       "kind": "title",
@@ -6196,6 +11138,49 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/pump/PumpSyncImplementation.kt",
           "line": 120
+        }
+      ]
+    },
+    {
+      "key": "wrongpassword",
+      "ui_location": "Password fields in Preferences, password prompt, Maintenance export dialog",
+      "kind": "error",
+      "description": "Error shown when the entered master password is incorrect. Short message; appears as snackbar or under the input field.",
+      "related_keys": [
+        "wrongpin",
+        "passwords_dont_match"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b71efb9c613ba913",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptiveMasterPasswordPreference.kt",
+          "line": 83
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/PasswordCheckImpl.kt",
+          "line": 81
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 218
+        }
+      ]
+    },
+    {
+      "key": "wrongpin",
+      "ui_location": "Snackbar from the PIN prompt",
+      "kind": "error",
+      "description": "Error snackbar shown when the entered PIN is incorrect. Same as the wrong password message but for a PIN.",
+      "related_keys": [
+        "wrongpassword"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e170ba8254b8e6f5",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/PasswordCheckImpl.kt",
+          "line": 81
         }
       ]
     }
