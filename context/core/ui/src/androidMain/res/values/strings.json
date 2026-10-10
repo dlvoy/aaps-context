@@ -337,6 +337,36 @@
       ]
     },
     {
+      "key": "aaps_directory",
+      "ui_location": "Maintenance sheet",
+      "kind": "label",
+      "description": "Row title for the local AAPS folder.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5e616ffbdb1bd631",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 191
+        }
+      ]
+    },
+    {
+      "key": "about_link_urls",
+      "ui_location": "About / startup message",
+      "kind": "other",
+      "description": "Block listing documentation and Facebook group URLs; keep the URLs unchanged, translate only the labels. Contains newlines.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8864c8e4be1da8b3",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 662
+        }
+      ]
+    },
+    {
       "key": "above",
       "ui_location": "Statistics > TIR table header",
       "kind": "label",
@@ -534,6 +564,67 @@
       ]
     },
     {
+      "key": "add",
+      "ui_location": "Management screens",
+      "kind": "button",
+      "description": "Add a new item; also icon description. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3bebd84f70ca6537",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/foodManagement/FoodManagementScreen.kt",
+          "line": 112
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/statusLights/StatusComponents.kt",
+          "line": 49
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardManagementScreen.kt",
+          "line": 503
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetManagementScreen.kt",
+          "line": 547
+        }
+      ]
+    },
+    {
+      "key": "add_food",
+      "ui_location": "Food screen > editor",
+      "kind": "dialog_title",
+      "description": "Editor title for a new food.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "43b044217642dc5c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/foodManagement/FoodManagementScreen.kt",
+          "line": 332
+        }
+      ]
+    },
+    {
+      "key": "add_time_block",
+      "ui_location": "Profile editor > accessibility",
+      "kind": "button",
+      "description": "Accessibility description of button adding a time segment to a profile.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "16b98ff8596ef7a8",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/TimeValueList.kt",
+          "line": 188
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/TimeValueList.kt",
+          "line": 375
+        }
+      ]
+    },
+    {
       "key": "adult",
       "ui_location": "Setup wizard / preferences > Patient type",
       "kind": "label",
@@ -629,6 +720,21 @@
       ]
     },
     {
+      "key": "alert",
+      "ui_location": "Settings import summary",
+      "kind": "label",
+      "description": "Severity label for an alert-level entry in the import summary list.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "23c10b71004ccf2c",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/ImportSummaryComponents.kt",
+          "line": 125
+        }
+      ]
+    },
+    {
       "key": "algorithm_long",
       "ui_location": "Sensitivity details",
       "kind": "label",
@@ -676,6 +782,21 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/CareportalScreen.kt",
           "line": 125
+        }
+      ]
+    },
+    {
+      "key": "appearance",
+      "ui_location": "Preferences search",
+      "kind": "title",
+      "description": "Name of the preferences section for the app's look (theme, layout).",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "79feb813b60402be",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 93
         }
       ]
     },
@@ -855,6 +976,36 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/TranslatorImpl.kt",
           "line": 225
+        }
+      ]
+    },
+    {
+      "key": "audio_playback_attribution",
+      "ui_location": "Android system (privacy indicator)",
+      "kind": "other",
+      "description": "Label Android shows when the app plays audio (alarm sounds). The quotes are part of the text.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "1921001a7962bea1",
+      "usages": [
+        {
+          "path": "core/ui/src/androidMain/AndroidManifest.xml",
+          "line": 5
+        }
+      ]
+    },
+    {
+      "key": "authorization_status",
+      "ui_location": "Cloud directory sheet",
+      "kind": "label",
+      "description": "Heading of the area showing whether cloud access is authorized.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "57f2cb01c4db665f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/CloudDirectorySheet.kt",
+          "line": 126
         }
       ]
     },
@@ -1236,6 +1387,21 @@
       ]
     },
     {
+      "key": "basal_short",
+      "ui_location": "Profile editor > tabs",
+      "kind": "label",
+      "description": "Tab label for basal profile. Abbreviated; tab space is tiny.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cc9abc1787539c1b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
+          "line": 211
+        }
+      ]
+    },
+    {
       "key": "basalrate",
       "ui_location": "Statistics > TDD table header",
       "kind": "label",
@@ -1414,6 +1580,120 @@
       ]
     },
     {
+      "key": "ble_not_enabled",
+      "ui_location": "Bluetooth check dialogs",
+      "kind": "error",
+      "description": "Bluetooth is switched off; the user must turn it on.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a75d2a4378369c66",
+      "usages": [
+        {
+          "path": "core/ui/src/androidMain/kotlin/app/aaps/core/ui/compose/pump/BlePreCheckHost.kt",
+          "line": 62
+        },
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/pump/BlePreCheckImpl.kt",
+          "line": 59
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1443
+        }
+      ]
+    },
+    {
+      "key": "ble_not_supported",
+      "ui_location": "Bluetooth check dialogs",
+      "kind": "error",
+      "description": "Phone has no Bluetooth Low Energy hardware; the pump cannot be used. Sentence with full stop.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "878b0e4af19ad2c6",
+      "usages": [
+        {
+          "path": "core/ui/src/androidMain/kotlin/app/aaps/core/ui/compose/pump/BlePreCheckHost.kt",
+          "line": 51
+        },
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/pump/BlePreCheckImpl.kt",
+          "line": 41
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 194
+        }
+      ]
+    },
+    {
+      "key": "ble_not_supported_or_not_paired",
+      "ui_location": "Pump status banner / snackbar",
+      "kind": "error",
+      "description": "Either the phone lacks Bluetooth Low Energy or the pump is not paired yet.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "333990654a5d3381",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSOverviewViewModel.kt",
+          "line": 92
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/MedtrumPlugin.kt",
+          "line": 201
+        }
+      ]
+    },
+    {
+      "key": "ble_permissions_missing",
+      "ui_location": "Bluetooth check dialogs / pairing wizard",
+      "kind": "error",
+      "description": "Bluetooth permissions were not granted; the user must grant them in Android's app settings.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b290dcebc9a50b3d",
+      "usages": [
+        {
+          "path": "core/ui/src/androidMain/kotlin/app/aaps/core/ui/compose/pump/BlePreCheckHost.kt",
+          "line": 73
+        },
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardScreen.kt",
+          "line": 358
+        }
+      ]
+    },
+    {
+      "key": "ble_scan_scanning",
+      "ui_location": "Pump pairing wizards > BLE scan step",
+      "kind": "status",
+      "description": "Progress text. Ellipsis.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2944896747b75cf8",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/pump/BleScanStep.kt",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "ble_scan_select_pump",
+      "ui_location": "Pump pairing wizards > BLE scan step",
+      "kind": "title",
+      "description": "Instruction heading above found devices.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b95300fb01f7ce2a",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/pump/BleScanStep.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
       "key": "bolus_advisor",
       "ui_location": "Notification: bolus advisor reminder",
       "kind": "notification",
@@ -1494,6 +1774,25 @@
       ]
     },
     {
+      "key": "bolus_ok",
+      "ui_location": "Status line > pump status request",
+      "kind": "log",
+      "description": "Reason text for a status read performed after a bolus was delivered successfully on a Dana pump. Short status phrase.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "a8684f64ca16a8f4",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/services/DanaRExecutionService.kt",
+          "line": 276
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/services/DanaRKoreanExecutionService.kt",
+          "line": 222
+        }
+      ]
+    },
+    {
       "key": "bolus_reminder",
       "ui_location": "Automation reminder notification",
       "kind": "notification",
@@ -1532,6 +1831,25 @@
         {
           "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
           "line": 291
+        }
+      ]
+    },
+    {
+      "key": "bolusspeed",
+      "ui_location": "Preferences > Dana / Diaconn pump",
+      "kind": "preference_title",
+      "description": "Title of the preference selecting how fast the pump delivers a bolus (insulin dose for food or correction).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c067b1bac1fc5cfe",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/keys/DanaIntKey.kt",
+          "line": 21
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/keys/DiaconnIntKey.kt",
+          "line": 21
         }
       ]
     },
@@ -1600,6 +1918,57 @@
         {
           "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
           "line": 212
+        }
+      ]
+    },
+    {
+      "key": "cancel",
+      "ui_location": "Dialogs",
+      "kind": "button",
+      "description": "Button that closes a dialog without acting. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7bd3209d111f0bc3",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/DatePickerModal.kt",
+          "line": 43
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/OkCancelDialog.kt",
+          "line": 104
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/OkCancelDialog.kt",
+          "line": 177
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/QueryAnyPasswordDialog.kt",
+          "line": 144
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/QueryPasswordDialog.kt",
+          "line": 110
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/SetPasswordDialog.kt",
+          "line": 122
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/ThreeButtonDialog.kt",
+          "line": 68
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/TimePickerModal.kt",
+          "line": 53
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/UnifiedAuthDialog.kt",
+          "line": 142
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/ValueInputDialog.kt",
+          "line": 220
         }
       ]
     },
@@ -1679,6 +2048,27 @@
         {
           "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/EopatchPumpPlugin.kt",
           "line": 246
+        }
+      ]
+    },
+    {
+      "key": "cannula",
+      "ui_location": "Status screen / search",
+      "kind": "label",
+      "description": "Label for the cannula (infusion set) age row, used for tube pumps.",
+      "related_keys": [
+        "patch_pump"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "e533d359170ef054",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/statusLights/StatusViewModel.kt",
+          "line": 216
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 251
         }
       ]
     },
@@ -2629,6 +3019,164 @@
       ]
     },
     {
+      "key": "carousel_move_earlier",
+      "ui_location": "Management carousels > accessibility",
+      "kind": "button",
+      "description": "Accessibility action to move a card one position earlier in the list.",
+      "related_keys": [
+        "carousel_move_later"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "0a5e600181e9afa3",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileManagementScreen.kt",
+          "line": 318
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardManagementScreen.kt",
+          "line": 372
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetManagementScreen.kt",
+          "line": 391
+        }
+      ]
+    },
+    {
+      "key": "carousel_move_later",
+      "ui_location": "Management carousels > accessibility",
+      "kind": "button",
+      "description": "Accessibility action to move a card one position later.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "37c47cd58b67f22c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileManagementScreen.kt",
+          "line": 319
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardManagementScreen.kt",
+          "line": 373
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetManagementScreen.kt",
+          "line": 392
+        }
+      ]
+    },
+    {
+      "key": "carousel_position",
+      "ui_location": "Management carousels",
+      "kind": "label",
+      "description": "Page indicator; %1$d current, %2$d total, e.g. '2 / 5'.",
+      "related_keys": [
+        "carousel_position_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3e4b5237c1db8b56",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileManagementScreen.kt",
+          "line": 339
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardManagementScreen.kt",
+          "line": 389
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetManagementScreen.kt",
+          "line": 412
+        }
+      ]
+    },
+    {
+      "key": "carousel_position_description",
+      "ui_location": "Management carousels > accessibility",
+      "kind": "label",
+      "description": "Spoken version of the page indicator; %1$d current, %2$d total.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8af59e560b7746dc",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileManagementScreen.kt",
+          "line": 342
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardManagementScreen.kt",
+          "line": 392
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetManagementScreen.kt",
+          "line": 419
+        }
+      ]
+    },
+    {
+      "key": "carousel_show_card",
+      "ui_location": "Site location picker > accessibility",
+      "kind": "button",
+      "description": "Accessibility description of a button that shows the card with details.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "007d10007315b6bf",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/SiteLocationPicker.kt",
+          "line": 157
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/SiteLocationPicker.kt",
+          "line": 218
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/SiteLocationPicker.kt",
+          "line": 368
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementScreen.kt",
+          "line": 561
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileManagementScreen.kt",
+          "line": 321
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/siteRotationDialog/SiteRotationManagementScreen.kt",
+          "line": 300
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetManagementScreen.kt",
+          "line": 394
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 495
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 698
+        }
+      ]
+    },
+    {
+      "key": "category",
+      "ui_location": "Food screen > editor",
+      "kind": "label",
+      "description": "Field label: food category.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "515dbb543b91069c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/foodManagement/FoodManagementScreen.kt",
+          "line": 349
+        }
+      ]
+    },
+    {
       "key": "cgm",
       "ui_location": "Element list category",
       "kind": "label",
@@ -2756,6 +3304,112 @@
       ]
     },
     {
+      "key": "chip_cloud",
+      "ui_location": "Maintenance sheet",
+      "kind": "label",
+      "description": "Small chip label meaning the cloud storage target. Very short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "af1322b816066d9e",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 168
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 244
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 271
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 291
+        }
+      ]
+    },
+    {
+      "key": "chip_email",
+      "ui_location": "Maintenance sheet",
+      "kind": "label",
+      "description": "Small chip label meaning logs are sent by email. Very short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ff61c64b3b37a240",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 170
+        }
+      ]
+    },
+    {
+      "key": "chip_local",
+      "ui_location": "Maintenance sheet",
+      "kind": "label",
+      "description": "Small chip label meaning the local device storage target. Very short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a7f815bd58a34148",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 454
+        }
+      ]
+    },
+    {
+      "key": "cleanup_db_confirm",
+      "ui_location": "Maintenance > cleanup confirmation",
+      "kind": "dialog_text",
+      "description": "Asks to confirm database cleanup that removes tracked changes and old historic data. Two lines.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "47c20412e8fe38d0",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 159
+        }
+      ]
+    },
+    {
+      "key": "cleanup_db_confirm_sync",
+      "ui_location": "NS Client > cleanup confirmation",
+      "kind": "dialog_text",
+      "description": "Same as the maintenance confirmation, shown in the Nightscout client screen.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "847931c00490957c",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/compose/NSClientComposeContent.kt",
+          "line": 87
+        }
+      ]
+    },
+    {
+      "key": "clear",
+      "ui_location": "Search field",
+      "kind": "button",
+      "description": "Accessibility description of clear-text icon.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e6df98aeb45f0046",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/AapsSearchField.kt",
+          "line": 69
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/SearchBar.kt",
+          "line": 145
+        }
+      ]
+    },
+    {
       "key": "clear_alarms",
       "ui_location": "Overview > queue status",
       "kind": "status",
@@ -2767,6 +3421,70 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandClearAlarms.kt",
           "line": 32
+        }
+      ]
+    },
+    {
+      "key": "clear_cloud_action",
+      "ui_location": "Maintenance sheet > cloud row",
+      "kind": "button",
+      "description": "Accessibility description of an icon button that clears cloud settings.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c173e17b9f161588",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 224
+        }
+      ]
+    },
+    {
+      "key": "clear_cloud_settings",
+      "ui_location": "Cloud directory sheet > dialog",
+      "kind": "dialog_title",
+      "description": "Title of confirmation dialog to remove cloud storage settings.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f6ef27100ac8d589",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/CloudDirectorySheet.kt",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "key": "clear_cloud_settings_message",
+      "ui_location": "Cloud directory sheet > dialog",
+      "kind": "dialog_text",
+      "description": "Explains that clearing cloud settings switches to local storage and removes authorization, then asks to continue.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7542f49c10a75c8f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/CloudDirectorySheet.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "cleared_entries",
+      "ui_location": "Cleanup result",
+      "kind": "label",
+      "description": "Label before the number of removed entries, shown in bold.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2ff5f2eba6a0a1e4",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/compose/NSClientComposeContent.kt",
+          "line": 68
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 233
         }
       ]
     },
@@ -3252,6 +3970,57 @@
       ]
     },
     {
+      "key": "close",
+      "ui_location": "Toolbars, dialogs",
+      "kind": "button",
+      "description": "Close action; also an accessibility description for a close icon. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bd66dbac6743e1c3",
+      "usages": [
+        {
+          "path": "appshell/src/commonMain/kotlin/app/aaps/appshell/AapsAppRoot.kt",
+          "line": 288
+        },
+        {
+          "path": "core/graph/src/commonMain/kotlin/app/aaps/core/graph/profile/ProfileViewerScreen.kt",
+          "line": 157
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/SelectableListToolbar.kt",
+          "line": 69
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/SiteLocationPickerScreen.kt",
+          "line": 50
+        },
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SetupWizardScreen.kt",
+          "line": 203
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 74
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHLoginScreen.kt",
+          "line": 414
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 81
+        },
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 332
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoInsulinRefillGuideDialog.kt",
+          "line": 135
+        }
+      ]
+    },
+    {
       "key": "closedloop",
       "ui_location": "Running mode name",
       "kind": "status",
@@ -3295,6 +4064,85 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/scenes/ActionEditors.kt",
           "line": 201
+        }
+      ]
+    },
+    {
+      "key": "cloud_auth_success",
+      "ui_location": "Maintenance > snackbar",
+      "kind": "toast",
+      "description": "Cloud storage sign-in worked.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3a8d4b149d985cdc",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceViewModel.kt",
+          "line": 393
+        }
+      ]
+    },
+    {
+      "key": "cloud_connection_failed",
+      "ui_location": "Cloud directory sheet > dialog",
+      "kind": "dialog_title",
+      "description": "Title of dialog shown when connecting to cloud storage failed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2ee8e89c6742a1ba",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/CloudDirectorySheet.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "cloud_directory",
+      "ui_location": "Maintenance sheet > File management",
+      "kind": "label",
+      "description": "Row title for selecting the cloud storage folder (Google Drive) used for backups.",
+      "related_keys": [
+        "maintenance_cloud_directory_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1ada013b05240328",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 205
+        }
+      ]
+    },
+    {
+      "key": "cloud_reauthorize_message",
+      "ui_location": "Cloud directory sheet > dialog",
+      "kind": "dialog_text",
+      "description": "Asks whether to sign in to cloud storage again after a connection failure.",
+      "related_keys": [
+        "reauthorize"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2cd5372a51211793",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/CloudDirectorySheet.kt",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "key": "cloud_revoke_incomplete",
+      "ui_location": "Maintenance > snackbar",
+      "kind": "toast",
+      "description": "Cloud settings were removed locally, but the account could not be contacted to revoke access, so the user should revoke manually.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6ec09efa3c2ff361",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceViewModel.kt",
+          "line": 365
         }
       ]
     },
@@ -3942,6 +4790,57 @@
       ]
     },
     {
+      "key": "confirmation",
+      "ui_location": "Setup wizard / configuration dialogs",
+      "kind": "dialog_title",
+      "description": "Title of a dialog asking the user to confirm an action. One word.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e34a8d1f5c9ff260",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SetupWizardScreen.kt",
+          "line": 186
+        },
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/elements/SWPlugin.kt",
+          "line": 112
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/configuration/ConfigurationScreen.kt",
+          "line": 47
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/configuration/PluginCategoryScreen.kt",
+          "line": 63
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainScreen.kt",
+          "line": 333
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 134
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 146
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 158
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 170
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 182
+        }
+      ]
+    },
+    {
       "key": "connecting",
       "ui_location": "Pump overview",
       "kind": "status",
@@ -3971,6 +4870,29 @@
         {
           "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
           "line": 316
+        }
+      ]
+    },
+    {
+      "key": "connection_error",
+      "ui_location": "Pump status / pairing wizard error",
+      "kind": "error",
+      "description": "Error that the app could not connect to the pump, shown in pairing wizards and as pump connection status.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b9616bcb79117940",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSPairWizardViewModel.kt",
+          "line": 332
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/BLEComm.kt",
+          "line": 586
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/BLEComm.kt",
+          "line": 588
         }
       ]
     },
@@ -4086,6 +5008,76 @@
       ]
     },
     {
+      "key": "critical",
+      "ui_location": "Status chips, notification sheet",
+      "kind": "label",
+      "description": "Severity level label for a critical/urgent condition, the highest level. One word.",
+      "related_keys": [
+        "warning"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "09113aa9a19a1b6f",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/StatusLevel.kt",
+          "line": 54
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/notificationsSheet/NotificationBottomSheet.kt",
+          "line": 165
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/aapsClient/AapsClientStatusChip.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "csv_export_failed",
+      "ui_location": "Maintenance > Export CSV result",
+      "kind": "error",
+      "description": "Result: export of user entries failed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a9584a0dc69252a7",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceViewModel.kt",
+          "line": 282
+        }
+      ]
+    },
+    {
+      "key": "csv_exported",
+      "ui_location": "Maintenance > Export CSV result",
+      "kind": "toast",
+      "description": "Result: user entries (log of user actions) were exported as a CSV file.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1f62efdd85b37806",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceViewModel.kt",
+          "line": 281
+        }
+      ]
+    },
+    {
+      "key": "cta_dont_kill_my_app_info",
+      "ui_location": "About dialog",
+      "kind": "button",
+      "description": "Link text to a website about preventing Android from killing background apps. Question form.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "66932f9d2cab534a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/aboutDialog/AboutDialog.kt",
+          "line": 107
+        }
+      ]
+    },
+    {
       "key": "current_basal_value",
       "ui_location": "Hard-limit check (log/warning)",
       "kind": "other",
@@ -4174,6 +5166,51 @@
       ]
     },
     {
+      "key": "data_choices",
+      "ui_location": "Preferences search / settings",
+      "kind": "title",
+      "description": "Name of the settings section about data collection and privacy choices.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "1b00bf7eda009b9a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 162
+        }
+      ]
+    },
+    {
+      "key": "database_cleanup",
+      "ui_location": "Maintenance sheet > database",
+      "kind": "button",
+      "description": "Row title: clean old entries.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ce3e173ac186334c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 304
+        }
+      ]
+    },
+    {
+      "key": "database_management",
+      "ui_location": "Maintenance sheet",
+      "kind": "label",
+      "description": "Section header grouping database maintenance actions.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9d92cf6fe3aa1fea",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 301
+        }
+      ]
+    },
+    {
       "key": "date",
       "ui_location": "Profile viewer; date/time pickers",
       "kind": "label",
@@ -4240,6 +5277,37 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/DexcomTirStatsCompose.kt",
           "line": 54
+        }
+      ]
+    },
+    {
+      "key": "days",
+      "ui_location": "Durations",
+      "kind": "label",
+      "description": "Plural-style duration; %1$d is number of days.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bc15954cbc90e0e9",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/FileListProviderImpl.kt",
+          "line": 269
+        },
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/AndroidDurationText.kt",
+          "line": 31
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 384
+        },
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 318
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/statusLights/StatusViewModel.kt",
+          "line": 278
         }
       ]
     },
@@ -4331,6 +5399,36 @@
       ]
     },
     {
+      "key": "delete_logs",
+      "ui_location": "Maintenance sheet",
+      "kind": "button",
+      "description": "Row title: delete old log files.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4570d386280956a5",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 178
+        }
+      ]
+    },
+    {
+      "key": "description_maintenance",
+      "ui_location": "Navigation menu > item subtitle",
+      "kind": "summary",
+      "description": "Subtitle of Maintenance.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "350c24075022b70f",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 288
+        }
+      ]
+    },
+    {
       "key": "detailed_14_days",
       "ui_location": "Statistics > Dexcom TIR heading",
       "kind": "label",
@@ -4344,6 +5442,56 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/DexcomTirStatsCompose.kt",
           "line": 52
+        }
+      ]
+    },
+    {
+      "key": "device_changed",
+      "ui_location": "Status line > pump status request",
+      "kind": "log",
+      "description": "Reason text for a status read triggered because the pump device (a different physical pump) was changed or paired. Shown in the command queue and logs.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "022a0401aeaeb201",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/AbstractDanaRPlugin.kt",
+          "line": 111
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRPairWizardViewModel.kt",
+          "line": 154
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 180
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 184
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/MedtronicPumpPlugin.kt",
+          "line": 234
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/services/MedtrumService.kt",
+          "line": 766
+        }
+      ]
+    },
+    {
+      "key": "device_maintenance",
+      "ui_location": "Manage sheet > section",
+      "kind": "label",
+      "description": "Section header for actions on devices (pump, sensor, etc.).",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "62cc9e57fc529487",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 195
         }
       ]
     },
@@ -4450,6 +5598,49 @@
       ]
     },
     {
+      "key": "discard",
+      "ui_location": "Dialogs and wizards",
+      "kind": "button",
+      "description": "Throw away changes or a patch. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "db238172a4e0570e",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 172
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 257
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveNeedleCapStep.kt",
+          "line": 27
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RemoveNeedleCapStepPreviews.kt",
+          "line": 24
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/DeactivateSteps.kt",
+          "line": 162
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/RetryActivationStep.kt",
+          "line": 113
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementScreen.kt",
+          "line": 509
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
+          "line": 415
+        }
+      ]
+    },
+    {
       "key": "disconnected",
       "ui_location": "Pump overview / automation log",
       "kind": "status",
@@ -4495,6 +5686,37 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/TreatmentBeltGraphCompose.kt",
           "line": 540
+        }
+      ]
+    },
+    {
+      "key": "dismiss",
+      "ui_location": "Error dialogs, snackbars",
+      "kind": "button",
+      "description": "Button that closes an error message or snackbar. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bfad5b0cfe931f59",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/ErrorDialog.kt",
+          "line": 71
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/ErrorDialog.kt",
+          "line": 121
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/GlobalSnackbarHost.kt",
+          "line": 104
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/pump/PumpActivityDialog.kt",
+          "line": 270
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/notificationsSheet/NotificationBottomSheet.kt",
+          "line": 140
         }
       ]
     },
@@ -4619,6 +5841,53 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetPresetStorage.kt",
           "line": 20
+        }
+      ]
+    },
+    {
+      "key": "ebstopsloop",
+      "ui_location": "Overview > Extended bolus dialog > warning",
+      "kind": "dialog_text",
+      "description": "Confirmation question shown before an extended bolus (insulin delivered slowly over a period) is started, warning that the closed loop (automatic insulin dosing) will pause meanwhile. Whole sentence ending in a question to confirm.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b5fb5c2f2f807fa1",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/extendedBolusDialog/ExtendedBolusDialogScreen.kt",
+          "line": 83
+        }
+      ]
+    },
+    {
+      "key": "edit_food",
+      "ui_location": "Food screen > editor",
+      "kind": "dialog_title",
+      "description": "Editor title for an existing food.",
+      "related_keys": [
+        "add_food"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "43b044217642dc5c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/foodManagement/FoodManagementScreen.kt",
+          "line": 332
+        }
+      ]
+    },
+    {
+      "key": "edit_profile_name",
+      "ui_location": "Profile editor > accessibility",
+      "kind": "button",
+      "description": "Accessibility description of the pencil icon.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0f61761081a8280b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
+          "line": 374
         }
       ]
     },
@@ -4876,6 +6145,21 @@
       ]
     },
     {
+      "key": "event_time_label",
+      "ui_location": "Exported user entries CSV",
+      "kind": "label",
+      "description": "Column header in the CSV export of user entries: the time the event happened.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8ebe51fcc596f1a7",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/userEntry/UserEntryPresentationHelperImpl.kt",
+          "line": 326
+        }
+      ]
+    },
+    {
       "key": "event_type",
       "ui_location": "Careportal event details; user entries CSV",
       "kind": "label",
@@ -4956,6 +6240,226 @@
       ]
     },
     {
+      "key": "export_alert",
+      "ui_location": "Settings export result / alert text",
+      "kind": "status",
+      "description": "Uppercase prefix for an alert about the export, followed by status in brackets and a message. Keep uppercase.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "465b1396a658821b",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSettingsExport.kt",
+          "line": 131
+        }
+      ]
+    },
+    {
+      "key": "export_cloud_failed",
+      "ui_location": "Maintenance > export result",
+      "kind": "error",
+      "description": "Part of an export result: upload to cloud storage failed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "630eaa653167f6fb",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceViewModel.kt",
+          "line": 497
+        }
+      ]
+    },
+    {
+      "key": "export_cloud_success",
+      "ui_location": "Maintenance > export result",
+      "kind": "toast",
+      "description": "Part of an export result: the file was also uploaded to cloud storage.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2fe788fd68dd94d2",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceViewModel.kt",
+          "line": 496
+        }
+      ]
+    },
+    {
+      "key": "export_disabled",
+      "ui_location": "Settings export result",
+      "kind": "status",
+      "description": "Short status: unattended (automatic) settings export is not enabled.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "54bbd13752199d0b",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSettingsExport.kt",
+          "line": 109
+        }
+      ]
+    },
+    {
+      "key": "export_expired",
+      "ui_location": "Settings export result",
+      "kind": "status",
+      "description": "Short status: settings export did not run because the master password expired.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2e3f4681583b1baf",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSettingsExport.kt",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "key": "export_failed",
+      "ui_location": "Settings export result",
+      "kind": "status",
+      "description": "Short status: settings export failed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "769f01781b13735f",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSettingsExport.kt",
+          "line": 92
+        }
+      ]
+    },
+    {
+      "key": "export_ok",
+      "ui_location": "Settings export result",
+      "kind": "status",
+      "description": "Short result status of an automatic settings export: succeeded.",
+      "related_keys": [
+        "export_failed"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "55056316d4d2fd98",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSettingsExport.kt",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "key": "export_result_message_about_to_expire",
+      "ui_location": "Automation / export result",
+      "kind": "notification",
+      "description": "Export worked, but the stored master password will soon expire, so the user must export manually and re-enter it. Whole sentences.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1f3da4916319ab59",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSettingsExport.kt",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "key": "export_result_message_disabled",
+      "ui_location": "Automation / export result",
+      "kind": "error",
+      "description": "An automation tried to export settings but the unattended export option is off. Prefix 'Warning (automation)'.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "940361b970dbf4c9",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSettingsExport.kt",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "key": "export_result_message_expired",
+      "ui_location": "Automation / export result",
+      "kind": "error",
+      "description": "Automatic export was canceled because the master password expired; user must act manually.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2d1bf020111f758e",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSettingsExport.kt",
+          "line": 100
+        }
+      ]
+    },
+    {
+      "key": "export_result_message_exported",
+      "ui_location": "Maintenance / export result",
+      "kind": "toast",
+      "description": "Result message: settings export succeeded.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7b6586dc6372d77a",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSettingsExport.kt",
+          "line": 85
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceViewModel.kt",
+          "line": 488
+        }
+      ]
+    },
+    {
+      "key": "export_result_message_failed",
+      "ui_location": "Maintenance / export result",
+      "kind": "error",
+      "description": "Result message: settings export failed. Uppercase FAILED stresses the error.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7e15e387233f11af",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSettingsExport.kt",
+          "line": 93
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceViewModel.kt",
+          "line": 488
+        }
+      ]
+    },
+    {
+      "key": "export_to",
+      "ui_location": "Maintenance > Export settings > dialog",
+      "kind": "dialog_title",
+      "description": "Dialog title; a destination choice follows. Fragment.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "78ed3e8701d07952",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 205
+        }
+      ]
+    },
+    {
+      "key": "export_warning",
+      "ui_location": "Settings export result",
+      "kind": "status",
+      "description": "Short result status of a settings export that succeeded with a warning (e.g. password about to expire).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a16572f48230b5ba",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionSettingsExport.kt",
+          "line": 79
+        }
+      ]
+    },
+    {
       "key": "exportsettings",
       "ui_location": "Automation action name",
       "kind": "label",
@@ -5018,6 +6522,21 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/extendedBolusDialog/ExtendedBolusDialogViewModel.kt",
           "line": 158
+        }
+      ]
+    },
+    {
+      "key": "extended_bolus_button",
+      "ui_location": "Manage sheet",
+      "kind": "button",
+      "description": "Button to start an extended bolus (insulin delivered gradually). Title case, short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "22afc9abdd8b4e34",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/manageSheet/ManageBottomSheet.kt",
+          "line": 357
         }
       ]
     },
@@ -5105,6 +6624,21 @@
       ]
     },
     {
+      "key": "fabric_upload_disabled",
+      "ui_location": "Startup message",
+      "kind": "status",
+      "description": "Line stating that crash log upload is turned off. Appended to a longer message.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "f932c70d82c96bbb",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 660
+        }
+      ]
+    },
+    {
       "key": "failed_update_basal_profile",
       "ui_location": "Command queue result",
       "kind": "error",
@@ -5146,6 +6680,21 @@
       ]
     },
     {
+      "key": "file_management",
+      "ui_location": "Maintenance sheet",
+      "kind": "label",
+      "description": "Section header grouping file and backup actions.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f6abdc11571bd15f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 188
+        }
+      ]
+    },
+    {
       "key": "fill_prime_failed_insulin_not_switched",
       "ui_location": "Fill dialog error",
       "kind": "error",
@@ -5157,6 +6706,90 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/fillDialog/FillDialogViewModel.kt",
           "line": 350
+        }
+      ]
+    },
+    {
+      "key": "finish",
+      "ui_location": "Pump setup wizards",
+      "kind": "button",
+      "description": "Button on the last wizard step to complete the setup. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7dd27240f6ad641a",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/BasalScheduleStep.kt",
+          "line": 24
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/ConfirmStep.kt",
+          "line": 53
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/UnpairConfirmStep.kt",
+          "line": 59
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/UnpairConfirmStep.kt",
+          "line": 71
+        },
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/ui/wizard/compose/steps/InfoStep.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "firmware",
+      "ui_location": "Pump overview > info",
+      "kind": "label",
+      "description": "Row label for the pump's firmware (software version). Value follows next to it.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "64755c98806c1ee4",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 391
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 312
+        }
+      ]
+    },
+    {
+      "key": "food_deleted",
+      "ui_location": "Food screen > snackbar",
+      "kind": "toast",
+      "description": "Confirmation that a food item was deleted, with Undo action.",
+      "related_keys": [
+        "undo"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2204a8f070a67323",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/foodManagement/FoodManagementScreen.kt",
+          "line": 76
+        }
+      ]
+    },
+    {
+      "key": "food_management",
+      "ui_location": "Navigation menu",
+      "kind": "menu_item",
+      "description": "Name of the food database screen (carb content of foods).",
+      "related_keys": [
+        "manage_food_desc"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "1a7a5b8f6eefa57b",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 208
         }
       ]
     },
@@ -5199,6 +6832,27 @@
       ]
     },
     {
+      "key": "format_hour_minute",
+      "ui_location": "Durations (e.g. temp basal remaining)",
+      "kind": "label",
+      "description": "Compact duration; %1$d hours then %2$d minutes. h and min are unit abbreviations.",
+      "related_keys": [
+        "format_hours_only"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ac173d4231723dae",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/FormatUtils.kt",
+          "line": 23
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/FormatUtils.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
       "key": "format_hours",
       "ui_location": "Insulin profile details",
       "kind": "status",
@@ -5214,6 +6868,55 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinCarouselCard.kt",
           "line": 83
+        }
+      ]
+    },
+    {
+      "key": "format_hours_only",
+      "ui_location": "Durations",
+      "kind": "label",
+      "description": "Compact duration with whole hours; h is the hour abbreviation.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3e4485d60b1610d8",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/FormatUtils.kt",
+          "line": 22
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/FormatUtils.kt",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "key": "format_insulin_units1",
+      "ui_location": "Insulin amounts",
+      "kind": "label",
+      "description": "Insulin amount with one decimal; U is units of insulin. %1$.1f is the number.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e568afb32cf7cdcc",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/utils/DecimalFormatterImpl.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "format_insulin_units_signed",
+      "ui_location": "Bolus wizard",
+      "kind": "label",
+      "description": "Signed insulin amount with two decimals, e.g. +0.50 U.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0f9e122b72fb50e9",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/wizardDialog/WizardDialogScreen.kt",
+          "line": 380
         }
       ]
     },
@@ -5265,6 +6968,23 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/BolusCarbsScreen.kt",
           "line": 410
+        }
+      ]
+    },
+    {
+      "key": "from_label",
+      "ui_location": "Time range picker",
+      "kind": "label",
+      "description": "Label of the start time field. Short.",
+      "related_keys": [
+        "to_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "39eaf93966dced49",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/TimeRangePicker.kt",
+          "line": 77
         }
       ]
     },
@@ -5360,6 +7080,51 @@
       ]
     },
     {
+      "key": "graph_add",
+      "ui_location": "Overview graph settings",
+      "kind": "button",
+      "description": "Button to add another chart.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a10d3c3ddbcf72ef",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 594
+        }
+      ]
+    },
+    {
+      "key": "graph_new",
+      "ui_location": "Overview graph settings > dialog",
+      "kind": "dialog_title",
+      "description": "Title for a new chart.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "91eb8f3778963ff5",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 600
+        }
+      ]
+    },
+    {
+      "key": "graph_number",
+      "ui_location": "Overview graph settings",
+      "kind": "label",
+      "description": "Chart title with number %1$d.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a0d20df2e8bb8d9c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 548
+        }
+      ]
+    },
+    {
       "key": "hba1c",
       "ui_location": "Statistics > Dexcom TIR",
       "kind": "label",
@@ -5409,6 +7174,56 @@
       ]
     },
     {
+      "key": "history",
+      "ui_location": "Pump overview / RileyLink status",
+      "kind": "label",
+      "description": "Label or tab title for a history list. Single word.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "05b01439ebce4538",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 250
+        },
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusScreen.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "hours",
+      "ui_location": "Durations",
+      "kind": "label",
+      "description": "Duration; %1$d is a number of hours.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bc541b75548a01f0",
+      "usages": [
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/maintenance/FileListProviderImpl.kt",
+          "line": 267
+        },
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/AndroidDurationText.kt",
+          "line": 32
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 385
+        },
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 319
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/statusLights/StatusViewModel.kt",
+          "line": 278
+        }
+      ]
+    },
+    {
       "key": "hypo",
       "ui_location": "Temporary target reason",
       "kind": "label",
@@ -5442,6 +7257,23 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetPresetStorage.kt",
           "line": 22
+        }
+      ]
+    },
+    {
+      "key": "ic_dynamic_label_warning",
+      "ui_location": "Profile editor",
+      "kind": "hint",
+      "description": "Warning shown when the algorithm computes IC (insulin-to-carb ratio) dynamically; the values are only a fallback. The source has typo 'cen'.",
+      "related_keys": [
+        "isf_dynamic_label_warning"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b24795d9268c7ce9",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
+          "line": 432
         }
       ]
     },
@@ -5509,6 +7341,479 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
           "line": 195
+        }
+      ]
+    },
+    {
+      "key": "import_anyway_btn",
+      "ui_location": "Import settings screen",
+      "kind": "button",
+      "description": "Button to import despite warnings.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "50e9a9938b4b5eb0",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 513
+        }
+      ]
+    },
+    {
+      "key": "import_applied_message",
+      "ui_location": "Import settings screen > dialog",
+      "kind": "dialog_text",
+      "description": "Success message.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0659a06250e2b8fd",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 179
+        }
+      ]
+    },
+    {
+      "key": "import_applied_title",
+      "ui_location": "Import settings screen > dialog",
+      "kind": "dialog_title",
+      "description": "Success title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d1ca7747f0717d8d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 178
+        }
+      ]
+    },
+    {
+      "key": "import_apply_message",
+      "ui_location": "Import settings screen > dialog",
+      "kind": "dialog_text",
+      "description": "%1$d is the count of settings to change; plugins that changed restart.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b58a53b0a1c72383",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 168
+        }
+      ]
+    },
+    {
+      "key": "import_apply_message_pump_kept",
+      "ui_location": "Import settings screen > dialog",
+      "kind": "dialog_text",
+      "description": "%1$d settings change; %2$d pump settings are kept so the pump continues to work.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "df87a9dbc1046fe8",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 164
+        }
+      ]
+    },
+    {
+      "key": "import_apply_pump_busy",
+      "ui_location": "Import settings screen",
+      "kind": "error",
+      "description": "Settings not applied because the pump stayed busy.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e990949367a787a6",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportViewModel.kt",
+          "line": 553
+        }
+      ]
+    },
+    {
+      "key": "import_apply_pump_changed",
+      "ui_location": "Command queue",
+      "kind": "log",
+      "description": "Reason text for cancelled queued commands because the import changed the pump.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4903538e782b93ba",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportViewModel.kt",
+          "line": 585
+        }
+      ]
+    },
+    {
+      "key": "import_apply_retry_question",
+      "ui_location": "Import settings screen > dialog",
+      "kind": "dialog_text",
+      "description": "Second line after the busy error; asks to retry.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5ec4246937ce28b2",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 194
+        }
+      ]
+    },
+    {
+      "key": "import_apply_title",
+      "ui_location": "Import settings screen > dialog",
+      "kind": "dialog_title",
+      "description": "Confirmation dialog title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "74187ee77817f3e4",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 161
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 192
+        }
+      ]
+    },
+    {
+      "key": "import_apply_waiting",
+      "ui_location": "Import settings screen > progress",
+      "kind": "status",
+      "description": "Progress text while waiting for the pump to be idle. Ellipsis.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e1877552911e003d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 149
+        }
+      ]
+    },
+    {
+      "key": "import_applying",
+      "ui_location": "Import settings screen > progress",
+      "kind": "status",
+      "description": "Progress text. Ellipsis.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0e823378ba540673",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 150
+        }
+      ]
+    },
+    {
+      "key": "import_btn",
+      "ui_location": "Import settings screen",
+      "kind": "button",
+      "description": "Button to start import.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7f59cc6ddd37158e",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 512
+        }
+      ]
+    },
+    {
+      "key": "import_decrypt",
+      "ui_location": "Import settings screen",
+      "kind": "button",
+      "description": "Short button to decrypt the file.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4b01ae5bbb7ae9f2",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 616
+        }
+      ]
+    },
+    {
+      "key": "import_decrypt_error",
+      "ui_location": "Import settings screen",
+      "kind": "error",
+      "description": "Decryption succeeded; file cannot be imported.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "771304b8f71bdbc2",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 698
+        }
+      ]
+    },
+    {
+      "key": "import_decrypt_ok",
+      "ui_location": "Import settings screen",
+      "kind": "status",
+      "description": "Decryption succeeded without warnings.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "eeffe7ee9c8d250a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 686
+        }
+      ]
+    },
+    {
+      "key": "import_decrypt_review",
+      "ui_location": "Import settings screen",
+      "kind": "button",
+      "description": "Button that decrypts the selected file and shows what it contains.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "83f3958814fbe83c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 568
+        }
+      ]
+    },
+    {
+      "key": "import_decrypt_warn",
+      "ui_location": "Import settings screen",
+      "kind": "status",
+      "description": "Decryption succeeded; warnings present.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b1ad6ef1c45cfe52",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 692
+        }
+      ]
+    },
+    {
+      "key": "import_decryption_password",
+      "ui_location": "Import settings screen",
+      "kind": "label",
+      "description": "Field label for a different password the file was encrypted with.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4d0ec78104589408",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 589
+        }
+      ]
+    },
+    {
+      "key": "import_different_password_hint",
+      "ui_location": "Import settings screen",
+      "kind": "hint",
+      "description": "Explains why another password is needed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f113737c67fbe379",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 581
+        }
+      ]
+    },
+    {
+      "key": "import_load_more",
+      "ui_location": "Import settings screen",
+      "kind": "button",
+      "description": "Loads more files in the list.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d5e1a5dc115cb017",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 306
+        }
+      ]
+    },
+    {
+      "key": "import_master_password",
+      "ui_location": "Import settings screen",
+      "kind": "label",
+      "description": "Field label for the master password.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ebdaa4475762cfc4",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 539
+        }
+      ]
+    },
+    {
+      "key": "import_no_files",
+      "ui_location": "Import settings screen",
+      "kind": "status",
+      "description": "Empty-state.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c7fef8ab58542985",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 244
+        }
+      ]
+    },
+    {
+      "key": "import_pump_fell_back",
+      "ui_location": "Snackbar after import",
+      "kind": "dialog_text",
+      "description": "Imported settings named a pump this phone does not have; %1$s is the pump now active. Prompts the user to check pump settings.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1ca70128a2fe5a31",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportViewModel.kt",
+          "line": 427
+        }
+      ]
+    },
+    {
+      "key": "import_replace_pump_settings",
+      "ui_location": "Import settings screen",
+      "kind": "label",
+      "description": "Switch title.",
+      "related_keys": [
+        "import_replace_pump_settings_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "18b4b49815beed23",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 653
+        }
+      ]
+    },
+    {
+      "key": "import_replace_pump_settings_summary",
+      "ui_location": "Import settings screen",
+      "kind": "summary",
+      "description": "Explains the switch: off keeps the paired pump, on is for restoring onto a new phone.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c733833604a14e7d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 655
+        }
+      ]
+    },
+    {
+      "key": "import_setting",
+      "ui_location": "Import settings screen / Setup wizard",
+      "kind": "title",
+      "description": "Screen title and wizard button for importing a settings backup.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d60be4e8ca1b57b5",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 194
+        },
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 197
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 81
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 137
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 227
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 487
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 252
+        }
+      ]
+    },
+    {
+      "key": "import_source_cloud",
+      "ui_location": "Import settings screen > source chip",
+      "kind": "label",
+      "description": "Filter chip: files in cloud storage.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "028324749bd12fa5",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 449
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 450
+        }
+      ]
+    },
+    {
+      "key": "import_source_local",
+      "ui_location": "Import settings screen > source chip",
+      "kind": "label",
+      "description": "Filter chip: files on the phone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8e0ab88390cef62a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 448
+        }
+      ]
+    },
+    {
+      "key": "import_wrong_password",
+      "ui_location": "Import settings screen",
+      "kind": "error",
+      "description": "Error under password field.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "62097a01c691b6a0",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 545
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/ImportSettingsScreen.kt",
+          "line": 595
         }
       ]
     },
@@ -5592,6 +7897,37 @@
         {
           "path": "appshell/src/commonMain/kotlin/app/aaps/appshell/AapsAppRoot.kt",
           "line": 272
+        }
+      ]
+    },
+    {
+      "key": "initializing",
+      "ui_location": "Startup / Wizard error",
+      "kind": "status",
+      "description": "Shown while the app is starting up; also the error returned if a bolus calculation is attempted before startup finishes. Ends with an ellipsis.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8b312b338a4d3dab",
+      "usages": [
+        {
+          "path": "app/src/main/kotlin/app/aaps/MainApp.kt",
+          "line": 267
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 224
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/bolus/WizardBolusExecutorImpl.kt",
+          "line": 282
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
+          "line": 438
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatmentsSheet/TreatmentViewModel.kt",
+          "line": 203
         }
       ]
     },
@@ -5694,6 +8030,45 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementViewModel.kt",
           "line": 412
+        }
+      ]
+    },
+    {
+      "key": "insulin_label",
+      "ui_location": "Profile viewer, input rows",
+      "kind": "label",
+      "description": "Label for the insulin type.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1a229c06dbc55ce4",
+      "usages": [
+        {
+          "path": "core/graph/src/commonMain/kotlin/app/aaps/core/graph/profile/ProfileViewerContent.kt",
+          "line": 86
+        },
+        {
+          "path": "core/graph/src/commonMain/kotlin/app/aaps/core/graph/profile/ProfileViewerContent.kt",
+          "line": 271
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/NumberInputRowPreviews.kt",
+          "line": 23
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementScreen.kt",
+          "line": 216
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/statusLights/StatusViewModel.kt",
+          "line": 191
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 219
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 257
         }
       ]
     },
@@ -5999,6 +8374,21 @@
       ]
     },
     {
+      "key": "isf_dynamic_label_warning",
+      "ui_location": "Profile editor",
+      "kind": "hint",
+      "description": "Warning shown when the algorithm computes ISF (insulin sensitivity factor) dynamically; profile values are only a fallback.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fbc99412ecb18fa8",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
+          "line": 488
+        }
+      ]
+    },
+    {
       "key": "isf_effective",
       "ui_location": "Sensitivity details",
       "kind": "label",
@@ -6135,6 +8525,31 @@
       ]
     },
     {
+      "key": "itmustbepositivevalue",
+      "ui_location": "Constraint reason",
+      "kind": "log",
+      "description": "Reason fragment inserted as %2$s in limiting messages when a value would be negative. Lowercase fragment, not a sentence.",
+      "related_keys": [
+        "limitingbolus"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "404066eaef1d9039",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 105
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 150
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 167
+        }
+      ]
+    },
+    {
       "key": "keepalive_basal_outdated",
       "ui_location": "Command queue log",
       "kind": "log",
@@ -6161,6 +8576,66 @@
         {
           "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/receivers/KeepAliveWorker.kt",
           "line": 283
+        }
+      ]
+    },
+    {
+      "key": "label_carbs_g",
+      "ui_location": "Food screen > editor",
+      "kind": "label",
+      "description": "Field label: carbohydrates in grams.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e11bae807ab8d857",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/foodManagement/FoodManagementScreen.kt",
+          "line": 383
+        }
+      ]
+    },
+    {
+      "key": "label_energy_kj",
+      "ui_location": "Food screen > editor",
+      "kind": "label",
+      "description": "Field label: energy in kilojoules.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0f25768cdaae997a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/foodManagement/FoodManagementScreen.kt",
+          "line": 409
+        }
+      ]
+    },
+    {
+      "key": "label_fat_g",
+      "ui_location": "Food screen > editor",
+      "kind": "label",
+      "description": "Field label: fat in grams.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "53b770dc0bebc9db",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/foodManagement/FoodManagementScreen.kt",
+          "line": 393
+        }
+      ]
+    },
+    {
+      "key": "label_protein_g",
+      "ui_location": "Food screen > editor",
+      "kind": "label",
+      "description": "Field label: protein in grams.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "05aa240218b563fb",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/foodManagement/FoodManagementScreen.kt",
+          "line": 401
         }
       ]
     },
@@ -6336,6 +8811,108 @@
       ]
     },
     {
+      "key": "limitingbasalratio",
+      "ui_location": "Treatment result / loop log",
+      "kind": "log",
+      "description": "Message that the maximum basal rate was lowered by a safety limit. %1$.2f is rate in U/h (insulin units per hour), %2$s is the reason, such as the pump limit. Read as: Limiting ... because of <reason>.",
+      "related_keys": [
+        "pumplimit",
+        "itmustbepositivevalue"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8eeb50b424de2c4c",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 293
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 300
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
+          "line": 305
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 500
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 507
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAutoISF/OpenAPSAutoISFPlugin.kt",
+          "line": 512
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 542
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 549
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
+          "line": 554
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/ConstraintsCheckerImpl.kt",
+          "line": 143
+        }
+      ]
+    },
+    {
+      "key": "limitingbolus",
+      "ui_location": "Treatment result / bolus wizard",
+      "kind": "log",
+      "description": "Message that a bolus was reduced by a safety limit. %1$.1f is insulin units, %2$s the reason fragment (e.g. pump limit).",
+      "related_keys": [
+        "pumplimit"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e7e2659446c35dbb",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/ConstraintsCheckerImpl.kt",
+          "line": 168
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/ConstraintsCheckerImpl.kt",
+          "line": 183
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 150
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 152
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 153
+        }
+      ]
+    },
+    {
+      "key": "limitingpercentrate",
+      "ui_location": "Treatment result / loop log",
+      "kind": "log",
+      "description": "Message that the maximum temporary basal percent rate was lowered. %1$d is the percentage, %2$s the reason fragment. %% is a literal percent sign.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8294439c95d5500e",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 141
+        }
+      ]
+    },
+    {
       "key": "load_events",
       "ui_location": "Overview > queue status",
       "kind": "status",
@@ -6424,6 +9001,36 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
           "line": 284
+        }
+      ]
+    },
+    {
+      "key": "localalertsettings_title",
+      "ui_location": "Preferences search",
+      "kind": "title",
+      "description": "Name of the preferences section for local alerts (alarms generated on the phone).",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "7ab12aa2917815da",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 184
+        }
+      ]
+    },
+    {
+      "key": "localprofile",
+      "ui_location": "Profile editor top bar",
+      "kind": "title",
+      "description": "Screen title for editing the local profile (a user's basal, ISF, IC and target settings). Noun.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8401779ffbe44eeb",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
+          "line": 110
         }
       ]
     },
@@ -6865,6 +9472,21 @@
       ]
     },
     {
+      "key": "log_files",
+      "ui_location": "Maintenance sheet",
+      "kind": "label",
+      "description": "Section header for logging actions.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "12ef865860dbad7c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 145
+        }
+      ]
+    },
+    {
       "key": "login",
       "ui_location": "Tidepool screen; Open Humans notification",
       "kind": "button",
@@ -6903,6 +9525,51 @@
         {
           "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/compose/TidepoolScreen.kt",
           "line": 214
+        }
+      ]
+    },
+    {
+      "key": "logs_deleted",
+      "ui_location": "Maintenance > snackbar",
+      "kind": "toast",
+      "description": "Confirmation logs were removed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "919f48f21499f761",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceViewModel.kt",
+          "line": 215
+        }
+      ]
+    },
+    {
+      "key": "logs_send_failed",
+      "ui_location": "Maintenance > Send logs result",
+      "kind": "error",
+      "description": "Result: sending of log files failed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cd8a3dc11e23f1a3",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceViewModel.kt",
+          "line": 205
+        }
+      ]
+    },
+    {
+      "key": "logs_sent",
+      "ui_location": "Maintenance > Send logs result",
+      "kind": "toast",
+      "description": "Result: log files were prepared and sent via email.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "323ee74a48efa4b9",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceViewModel.kt",
+          "line": 204
         }
       ]
     },
@@ -7095,6 +9762,235 @@
       ]
     },
     {
+      "key": "maintenance",
+      "ui_location": "Navigation menu / search",
+      "kind": "menu_item",
+      "description": "Name of maintenance tools screen.",
+      "related_keys": [
+        "description_maintenance"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d4e35f89c1ab50bf",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 239
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 156
+        }
+      ]
+    },
+    {
+      "key": "maintenance_aaps_directory_desc",
+      "ui_location": "Maintenance sheet",
+      "kind": "summary",
+      "description": "Subtitle of the AAPS directory row: choose the folder on the phone where backups are stored. Short description line below a title.",
+      "related_keys": [
+        "aaps_directory"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e1ae9a72a5957b16",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 192
+        }
+      ]
+    },
+    {
+      "key": "maintenance_cleanup_db_desc",
+      "ui_location": "Maintenance sheet",
+      "kind": "summary",
+      "description": "Subtitle of the database cleanup row. Short description line below a title.",
+      "related_keys": [
+        "database_cleanup"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "48f10483ebc74e84",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 305
+        }
+      ]
+    },
+    {
+      "key": "maintenance_cloud_directory_desc",
+      "ui_location": "Maintenance sheet",
+      "kind": "summary",
+      "description": "Subtitle of the Cloud directory row. Short description line below a title.",
+      "related_keys": [
+        "cloud_directory"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "cf15f590c02b22c5",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 206
+        }
+      ]
+    },
+    {
+      "key": "maintenance_delete_logs_desc",
+      "ui_location": "Maintenance sheet",
+      "kind": "summary",
+      "description": "Subtitle of the Delete logs row. Short description line below a title.",
+      "related_keys": [
+        "delete_logs"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ab4d1983533a5a33",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 179
+        }
+      ]
+    },
+    {
+      "key": "maintenance_export_csv_desc",
+      "ui_location": "Maintenance sheet",
+      "kind": "summary",
+      "description": "Subtitle of the export CSV row: treatment history opens in spreadsheet software. Short description line below a title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "665082fb82b40bb1",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 280
+        }
+      ]
+    },
+    {
+      "key": "maintenance_export_desc",
+      "ui_location": "Maintenance sheet",
+      "kind": "summary",
+      "description": "Subtitle of the export settings row: the backup file is encrypted. Short description line below a title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "58f14c9a11be5973",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 233
+        }
+      ]
+    },
+    {
+      "key": "maintenance_import_desc",
+      "ui_location": "Maintenance sheet",
+      "kind": "summary",
+      "description": "Subtitle of the import settings row. Short description line below a title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b275c87266eab6ad",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 253
+        }
+      ]
+    },
+    {
+      "key": "maintenance_log_settings_desc",
+      "ui_location": "Maintenance sheet",
+      "kind": "summary",
+      "description": "Log settings row subtitle: set how detailed the logs are. Short description line below a title.",
+      "related_keys": [
+        "nav_logsettings"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "541eeb3ab70a1c39",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 149
+        }
+      ]
+    },
+    {
+      "key": "maintenance_reset_aps_results_desc",
+      "ui_location": "Maintenance sheet",
+      "kind": "summary",
+      "description": "Subtitle of the Reset APS results row (APS is the algorithm computing dosing). Short description line below a title.",
+      "related_keys": [
+        "reset_aps_results"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "83541776bdbf48bb",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 313
+        }
+      ]
+    },
+    {
+      "key": "maintenance_reset_db_desc",
+      "ui_location": "Maintenance sheet",
+      "kind": "summary",
+      "description": "Subtitle of the Reset databases row; destructive action. Short description line below a title.",
+      "related_keys": [
+        "nav_resetdb"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "86b0e5393ccfcf00",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 322
+        }
+      ]
+    },
+    {
+      "key": "maintenance_send_logs_desc",
+      "ui_location": "Maintenance sheet",
+      "kind": "summary",
+      "description": "Subtitle of the Send logs row. Short description line below a title.",
+      "related_keys": [
+        "send_logs"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9be9bc4f0447a029",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 157
+        }
+      ]
+    },
+    {
+      "key": "manage",
+      "ui_location": "Bottom navigation bar",
+      "kind": "label",
+      "description": "Tab label of the screen to manage pump, treatments and tools. One short word because bottom bar space is limited.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0b6bc7acd4c4f3a7",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 193
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainNavigationBar.kt",
+          "line": 137
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainNavigationBar.kt",
+          "line": 140
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/manageSheet/ManageBottomSheet.kt",
+          "line": 170
+        }
+      ]
+    },
+    {
       "key": "manage_extended_bolus_desc",
       "ui_location": "Menu element list",
       "kind": "summary",
@@ -7106,6 +10002,21 @@
         {
           "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
           "line": 267
+        }
+      ]
+    },
+    {
+      "key": "manage_food_desc",
+      "ui_location": "Navigation menu > item subtitle",
+      "kind": "summary",
+      "description": "Subtitle of the food entry.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ede23d64a7627eca",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 264
         }
       ]
     },
@@ -7251,6 +10162,21 @@
       ]
     },
     {
+      "key": "master_password_missing",
+      "ui_location": "Maintenance > Export settings > dialog",
+      "kind": "dialog_text",
+      "description": "Tells the user that exporting needs a master password that was not yet set. Two paragraphs separated by a blank line (\\n\\n).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a386120fe3726e2f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 197
+        }
+      ]
+    },
+    {
       "key": "max_bolus_title",
       "ui_location": "Setup wizard > safety",
       "kind": "label",
@@ -7306,6 +10232,37 @@
       ]
     },
     {
+      "key": "message",
+      "ui_location": "Bluetooth check dialogs",
+      "kind": "dialog_title",
+      "description": "Generic title of an informational dialog (here shown above Bluetooth problem messages). One word.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "46fe29e0465f426b",
+      "usages": [
+        {
+          "path": "core/ui/src/androidMain/kotlin/app/aaps/core/ui/compose/pump/BlePreCheckHost.kt",
+          "line": 50
+        },
+        {
+          "path": "core/ui/src/androidMain/kotlin/app/aaps/core/ui/compose/pump/BlePreCheckHost.kt",
+          "line": 61
+        },
+        {
+          "path": "core/ui/src/androidMain/kotlin/app/aaps/core/ui/compose/pump/BlePreCheckHost.kt",
+          "line": 72
+        },
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/pump/BlePreCheckImpl.kt",
+          "line": 41
+        },
+        {
+          "path": "implementation/src/androidMain/kotlin/app/aaps/implementation/pump/BlePreCheckImpl.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
       "key": "mgdl",
       "ui_location": "Units labels across the app",
       "kind": "label",
@@ -7343,6 +10300,21 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/careDialog/CareDialogViewModel.kt",
           "line": 175
+        }
+      ]
+    },
+    {
+      "key": "minutes",
+      "ui_location": "Durations",
+      "kind": "label",
+      "description": "Duration; %1$d is a number of minutes.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5ca294f995138707",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/androidMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/AndroidDurationText.kt",
+          "line": 33
         }
       ]
     },
@@ -7542,6 +10514,21 @@
       ]
     },
     {
+      "key": "name",
+      "ui_location": "Food screen > editor",
+      "kind": "label",
+      "description": "Field label: name of the food.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fce4407ed21bd313",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/foodManagement/FoodManagementScreen.kt",
+          "line": 339
+        }
+      ]
+    },
+    {
       "key": "name_short",
       "ui_location": "Trigger editors; temp target editor",
       "kind": "label",
@@ -7557,6 +10544,38 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetEditor.kt",
           "line": 92
+        }
+      ]
+    },
+    {
+      "key": "nav_about",
+      "ui_location": "Navigation menu",
+      "kind": "menu_item",
+      "description": "Menu entry for the About screen (version information).",
+      "related_keys": [
+        "nav_about_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c36578e8c7947991",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 241
+        }
+      ]
+    },
+    {
+      "key": "nav_about_desc",
+      "ui_location": "Navigation menu > item subtitle",
+      "kind": "summary",
+      "description": "Short description under the About menu entry.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bb8bf8871c9dca78",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 290
         }
       ]
     },
@@ -7599,6 +10618,21 @@
       ]
     },
     {
+      "key": "nav_exit",
+      "ui_location": "Navigation menu",
+      "kind": "menu_item",
+      "description": "Menu entry to close the app. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ab45e94b07fab084",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 252
+        }
+      ]
+    },
+    {
       "key": "nav_export",
       "ui_location": "Maintenance menu (bottom sheet) and export dialog",
       "kind": "menu_item",
@@ -7616,6 +10650,179 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
           "line": 196
+        }
+      ]
+    },
+    {
+      "key": "nav_history_browser",
+      "ui_location": "Navigation menu",
+      "kind": "menu_item",
+      "description": "Menu entry for the screen where past data graphs can be browsed.",
+      "related_keys": [
+        "nav_history_browser_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7138a90760663b30",
+      "usages": [
+        {
+          "path": "appshell/src/commonMain/kotlin/app/aaps/appshell/navigation/AppNavGraph.kt",
+          "line": 533
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 237
+        }
+      ]
+    },
+    {
+      "key": "nav_history_browser_desc",
+      "ui_location": "Navigation menu > item subtitle",
+      "kind": "summary",
+      "description": "Subtitle of the history browser entry.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "69f02ad755c35eef",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 286
+        }
+      ]
+    },
+    {
+      "key": "nav_logsettings",
+      "ui_location": "Maintenance sheet",
+      "kind": "menu_item",
+      "description": "Name of the log level settings screen.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4bdd3ed62d902936",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/LogSettingBottomSheet.kt",
+          "line": 79
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 148
+        }
+      ]
+    },
+    {
+      "key": "nav_plugin_preferences",
+      "ui_location": "Toolbars",
+      "kind": "button",
+      "description": "Accessibility description of the settings icon that opens a plugin's preferences.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e56e4407d6f540c8",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/SelectableListToolbar.kt",
+          "line": 130
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 132
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/compose/TidepoolScreen.kt",
+          "line": 87
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 134
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/xdrip/compose/XdripScreen.kt",
+          "line": 82
+        },
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/compose/NSClientScreen.kt",
+          "line": 109
+        }
+      ]
+    },
+    {
+      "key": "nav_profile_helper",
+      "ui_location": "Navigation menu",
+      "kind": "menu_item",
+      "description": "Name of the tool that builds a profile from body weight or TDD.",
+      "related_keys": [
+        "nav_profile_helper_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9bc6ac65e14f7469",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 236
+        }
+      ]
+    },
+    {
+      "key": "nav_profile_helper_desc",
+      "ui_location": "Navigation menu > item subtitle",
+      "kind": "summary",
+      "description": "Subtitle of the profile helper entry. TDD is total daily dose of insulin.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bd524fa785c2184d",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 285
+        }
+      ]
+    },
+    {
+      "key": "nav_resetdb",
+      "ui_location": "Maintenance sheet > database",
+      "kind": "button",
+      "description": "Row title: erase databases.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "aa52f99a3c1614c0",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 321
+        }
+      ]
+    },
+    {
+      "key": "nav_setupwizard",
+      "ui_location": "Navigation menu / Setup wizard",
+      "kind": "menu_item",
+      "description": "Name of the guided first-time setup wizard.",
+      "related_keys": [
+        "nav_setupwizard_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e0bf7ebcae35f094",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 238
+        },
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SetupWizardScreen.kt",
+          "line": 200
+        }
+      ]
+    },
+    {
+      "key": "nav_setupwizard_desc",
+      "ui_location": "Navigation menu > item subtitle",
+      "kind": "summary",
+      "description": "Subtitle of the setup wizard entry.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "75d2754c705dfe32",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 287
         }
       ]
     },
@@ -7639,6 +10846,37 @@
         {
           "path": "appshell/src/commonMain/kotlin/app/aaps/appshell/navigation/AppNavGraph.kt",
           "line": 701
+        }
+      ]
+    },
+    {
+      "key": "need_connect_permission",
+      "ui_location": "Snackbar / automation",
+      "kind": "error",
+      "description": "Error that the app lacks Android's Bluetooth connect permission.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "01b82c3acce79c17",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/CommandExecutor.kt",
+          "line": 185
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationComposeContent.kt",
+          "line": 267
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/BLEComm.kt",
+          "line": 102
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/service/BLECommonService.kt",
+          "line": 95
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/ble/MedtrumBleTransportImpl.kt",
+          "line": 141
         }
       ]
     },
@@ -7711,6 +10949,33 @@
       ]
     },
     {
+      "key": "no",
+      "ui_location": "Dialogs, objective questions",
+      "kind": "button",
+      "description": "Negative answer button. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d1132403b7d44b92",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/YesNoCancelDialog.kt",
+          "line": 59
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/YesNoCancelDialog.kt",
+          "line": 101
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 299
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightPairWizardScreen.kt",
+          "line": 191
+        }
+      ]
+    },
+    {
       "key": "no_action_selected",
       "ui_location": "Dialogs (calibration, wizard, treatment)",
       "kind": "dialog_text",
@@ -7769,6 +11034,21 @@
         {
           "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/PluginPreferencesScreen.kt",
           "line": 113
+        }
+      ]
+    },
+    {
+      "key": "no_data",
+      "ui_location": "Lists",
+      "kind": "status",
+      "description": "Empty-state text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "36e9ae741346da6a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/foodManagement/FoodManagementScreen.kt",
+          "line": 167
         }
       ]
     },
@@ -7835,6 +11115,21 @@
         {
           "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSAMA/OpenAPSAMAPlugin.kt",
           "line": 121
+        }
+      ]
+    },
+    {
+      "key": "no_search_results",
+      "ui_location": "Search results",
+      "kind": "status",
+      "description": "Empty-state message.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "278640e19eaeb83c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/SearchResults.kt",
+          "line": 83
         }
       ]
     },
@@ -8185,6 +11480,72 @@
       ]
     },
     {
+      "key": "ok",
+      "ui_location": "Dialogs",
+      "kind": "button",
+      "description": "Confirmation button of dialogs. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "187dd626507c2c48",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/ImportSummaryComponents.kt",
+          "line": 167
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/DatePickerModal.kt",
+          "line": 38
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/OkCancelDialog.kt",
+          "line": 99
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/OkCancelDialog.kt",
+          "line": 172
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/OkDialog.kt",
+          "line": 55
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/OkDialog.kt",
+          "line": 90
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/QueryAnyPasswordDialog.kt",
+          "line": 139
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/QueryPasswordDialog.kt",
+          "line": 105
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/SetPasswordDialog.kt",
+          "line": 117
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/TimePickerModal.kt",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "key": "open_navigation",
+      "ui_location": "Main toolbar",
+      "kind": "button",
+      "description": "Accessibility description of the hamburger icon opening the navigation drawer.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fd5299228c40ef6c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainTopBar.kt",
+          "line": 70
+        }
+      ]
+    },
+    {
       "key": "open_plugin",
       "ui_location": "Configuration > plugin card",
       "kind": "button",
@@ -8308,6 +11669,29 @@
       ]
     },
     {
+      "key": "overview_reservoir_concentration_value_over",
+      "ui_location": "Pump overview > reservoir",
+      "kind": "status",
+      "description": "Reservoir level when more than 50 units are left in a patch pump whose exact level is not reported. %1$s is the amount with unit, e.g. '50 U'.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a36f3f028ffe9cc0",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 316
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 540
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 528
+        }
+      ]
+    },
+    {
       "key": "overview_treatment_label",
       "ui_location": "Element list category",
       "kind": "label",
@@ -8389,6 +11773,93 @@
       ]
     },
     {
+      "key": "pairing",
+      "ui_location": "Pump overview > actions",
+      "kind": "button",
+      "description": "Label of an action or screen title for pairing (establishing a bluetooth link with) the pump. Gerund used as a noun/title.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8c5ada5b4cd062b7",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 176
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 225
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRComposeContent.kt",
+          "line": 85
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRPairWizardScreen.kt",
+          "line": 110
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSComposeContent.kt",
+          "line": 89
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSOverviewViewModel.kt",
+          "line": 122
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSPairWizardScreen.kt",
+          "line": 256
+        }
+      ]
+    },
+    {
+      "key": "password_cleared",
+      "ui_location": "Snackbar > after clearing master password",
+      "kind": "toast",
+      "description": "Confirmation that the master password was removed. Short sentence with exclamation mark.",
+      "related_keys": [
+        "pin_cleared"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6b67f16a8f8c3bff",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptiveMasterPasswordPreference.kt",
+          "line": 86
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptivePasswordPreference.kt",
+          "line": 88
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/PasswordCheckImpl.kt",
+          "line": 121
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/BLEComm.kt",
+          "line": 590
+        }
+      ]
+    },
+    {
+      "key": "password_preferences_encrypt_prompt",
+      "ui_location": "Maintenance > Export settings > dialog",
+      "kind": "dialog_text",
+      "description": "Explains that the master password will be used to encrypt the exported preferences file.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8cc814a97a9a7653",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 207
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 217
+        }
+      ]
+    },
+    {
       "key": "passwords_dont_match",
       "ui_location": "Preferences password fields; snackbar when setting a password",
       "kind": "error",
@@ -8410,6 +11881,21 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/PasswordCheckImpl.kt",
           "line": 107
+        }
+      ]
+    },
+    {
+      "key": "patch_pump",
+      "ui_location": "Status screen",
+      "kind": "label",
+      "description": "Replaces 'Cannula' for patch pumps, where the pump itself is placed on the body.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6a2d2679cf062e5c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/statusLights/StatusViewModel.kt",
+          "line": 216
         }
       ]
     },
@@ -8492,6 +11978,25 @@
       ]
     },
     {
+      "key": "pb_label",
+      "ui_location": "Status screen / search",
+      "kind": "label",
+      "description": "Label for pump battery status. Abbreviated 'pb' in key; keep short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "898f17bd744fdec5",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/statusLights/StatusViewModel.kt",
+          "line": 257
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 269
+        }
+      ]
+    },
+    {
       "key": "peak_label",
       "ui_location": "Insulin details",
       "kind": "label",
@@ -8540,6 +12045,23 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
           "line": 440
+        }
+      ]
+    },
+    {
+      "key": "percent_rate_duration",
+      "ui_location": "Loop result text",
+      "kind": "status",
+      "description": "Temporary basal suggestion. %1$.2f%% percent, %2$.2f U/h, %3$d minutes.",
+      "related_keys": [
+        "rate_percent_duration"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "41f996a489b73656",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/aps/DetermineBasalResult.kt",
+          "line": 133
         }
       ]
     },
@@ -8626,6 +12148,21 @@
       ]
     },
     {
+      "key": "portion",
+      "ui_location": "Food screen > editor",
+      "kind": "label",
+      "description": "Field label: portion size of the food.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "37f22ef7a6485f52",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/foodManagement/FoodManagementScreen.kt",
+          "line": 366
+        }
+      ]
+    },
+    {
       "key": "pref_syncs_with_main_phone",
       "ui_location": "Preferences > small sync badge beside a setting",
       "kind": "label",
@@ -8698,6 +12235,25 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetEditor.kt",
           "line": 81
+        }
+      ]
+    },
+    {
+      "key": "presets_changed_reorder_aborted",
+      "ui_location": "Quick wizard / temp target management > snackbar",
+      "kind": "error",
+      "description": "Error: another device changed the presets meanwhile, so the new order was discarded.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5e61d0c3f206a9cc",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/viewmodels/QuickWizardManagementViewModel.kt",
+          "line": 303
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetManagementViewModel.kt",
+          "line": 373
         }
       ]
     },
@@ -8839,6 +12395,21 @@
         {
           "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
           "line": 318
+        }
+      ]
+    },
+    {
+      "key": "profile_name",
+      "ui_location": "Profile editor",
+      "kind": "label",
+      "description": "Label before the profile name, also placeholder when empty. Ends with colon.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b3b26014b0998a41",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
+          "line": 363
         }
       ]
     },
@@ -9052,6 +12623,21 @@
       ]
     },
     {
+      "key": "pump_actions",
+      "ui_location": "Manage sheet",
+      "kind": "label",
+      "description": "Section header for actions concerning the pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5d0d17deffd543e4",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/manageSheet/ManageBottomSheet.kt",
+          "line": 437
+        }
+      ]
+    },
+    {
       "key": "pump_base_basal_rate",
       "ui_location": "Notification, temp basal display",
       "kind": "status",
@@ -9137,6 +12723,68 @@
       ]
     },
     {
+      "key": "pump_busy",
+      "ui_location": "Loop status / watch",
+      "kind": "status",
+      "description": "Short status saying the pump is occupied with another command, so the loop run is skipped. Shown as the last loop run result and as watch status.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1a4e5f951375f698",
+      "usages": [
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 574
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/LoopPlugin.kt",
+          "line": 575
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 595
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 334
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/BLEComm.kt",
+          "line": 580
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/BLEComm.kt",
+          "line": 582
+        }
+      ]
+    },
+    {
+      "key": "pump_driver_change",
+      "ui_location": "Status line > pump status request",
+      "kind": "log",
+      "description": "Reason text passed when the app forces a fresh status read from the pump after the pump driver was changed. Appears in the queue/log history, not as a dialog. Fragment, ends with a full stop.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "11b6c09ec55b44c1",
+      "usages": [
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/comm/MsgInitConnStatusTime.kt",
+          "line": 31
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarkorean/comm/MsgInitConnStatusTimeK.kt",
+          "line": 32
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/comm/MsgCheckValueV2.kt",
+          "line": 38
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/comm/MsgCheckValueV2.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
       "key": "pump_driver_not_responding",
       "ui_location": "Alarm notification",
       "kind": "notification",
@@ -9148,6 +12796,57 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/CommandQueueImplementation.kt",
           "line": 382
+        }
+      ]
+    },
+    {
+      "key": "pump_history",
+      "ui_location": "Pump overview > actions",
+      "kind": "button",
+      "description": "Label of the pump action that opens the pump's own history log (not the app's treatment history). Short noun phrase; also used as a screen title and an icon description.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "57882380fcdbe538",
+      "usages": [
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 408
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/compose/DanaRComposeContent.kt",
+          "line": 83
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSComposeContent.kt",
+          "line": 87
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnComposeContent.kt",
+          "line": 78
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 325
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicComposeContent.kt",
+          "line": 79
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 327
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/BolusCarbsScreen.kt",
+          "line": 353
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/BolusCarbsScreen.kt",
+          "line": 441
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/ExtendedBolusScreen.kt",
+          "line": 251
         }
       ]
     },
@@ -9269,6 +12968,38 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatmentsSheet/TreatmentViewModel.kt",
           "line": 156
+        }
+      ]
+    },
+    {
+      "key": "pump_pair",
+      "ui_location": "Pump overview > actions",
+      "kind": "button",
+      "description": "Action to pair (link) with a pump. Short imperative.",
+      "related_keys": [
+        "pump_unpair"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "8a7ca2b363e4f298",
+      "usages": [
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 356
+        }
+      ]
+    },
+    {
+      "key": "pump_paired",
+      "ui_location": "Status line",
+      "kind": "log",
+      "description": "Reason text for status read after a successful pairing with the pump.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "9b10db3dde50f507",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/ComboV2Plugin.kt",
+          "line": 1467
         }
       ]
     },
@@ -9432,6 +13163,58 @@
       ]
     },
     {
+      "key": "pump_unpair",
+      "ui_location": "Pump overview > actions",
+      "kind": "button",
+      "description": "Action to unpair (remove the link to) the pump. Short imperative.",
+      "related_keys": [
+        "pump_pair"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7fb97e7f6513e90f",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 169
+        },
+        {
+          "path": "pump/dana/common/src/main/kotlin/app/aaps/pump/dana/compose/DanaOverviewViewModel.kt",
+          "line": 216
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/compose/DanaRSOverviewViewModel.kt",
+          "line": 113
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/compose/DiaconnOverviewViewModel.kt",
+          "line": 347
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 334
+        }
+      ]
+    },
+    {
+      "key": "pump_unpair_confirm_title",
+      "ui_location": "Pump overview > unpair confirmation",
+      "kind": "dialog_title",
+      "description": "Question title of the dialog confirming that the pump be unpaired.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3ba27ac165c6e36c",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardStep.kt",
+          "line": 30
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumComposeContent.kt",
+          "line": 118
+        }
+      ]
+    },
+    {
       "key": "pump_unreachable",
       "ui_location": "Alarm notification; announcement",
       "kind": "notification",
@@ -9548,6 +13331,88 @@
       ]
     },
     {
+      "key": "pumplimit",
+      "ui_location": "Constraint reason",
+      "kind": "log",
+      "description": "Reason fragment inserted as %2$s in limiting messages: the limit comes from the pump's configured maximum. Lowercase fragment, not a sentence.",
+      "related_keys": [
+        "limitingbasalratio",
+        "limitingbolus"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "67e72c89b10838b9",
+      "usages": [
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/ConstraintsCheckerImpl.kt",
+          "line": 143
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/ConstraintsCheckerImpl.kt",
+          "line": 168
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/ConstraintsCheckerImpl.kt",
+          "line": 183
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 113
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 141
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 144
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 162
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/safety/SafetyPlugin.kt",
+          "line": 178
+        }
+      ]
+    },
+    {
+      "key": "quick_launch_configure",
+      "ui_location": "Navigation menu / config screen",
+      "kind": "menu_item",
+      "description": "Name of the screen for choosing which quick-action buttons appear on the Overview.",
+      "related_keys": [
+        "quick_launch_configure_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "abf0b36c93a701f1",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 232
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
+          "line": 104
+        }
+      ]
+    },
+    {
+      "key": "quick_launch_configure_desc",
+      "ui_location": "Navigation menu > item subtitle",
+      "kind": "summary",
+      "description": "Subtitle of the QuickLaunch configuration entry.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1b512638fd637c63",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 291
+        }
+      ]
+    },
+    {
       "key": "quick_wizard_not_available",
       "ui_location": "Watch quick wizard > error",
       "kind": "error",
@@ -9578,6 +13443,21 @@
       ]
     },
     {
+      "key": "rate_percent_duration",
+      "ui_location": "Loop result text",
+      "kind": "status",
+      "description": "Temporary basal suggestion. %1$.2f U/h, %2$.2f%% of normal, %3$d minutes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a75b4ca56ea82abf",
+      "usages": [
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/aps/DetermineBasalResult.kt",
+          "line": 134
+        }
+      ]
+    },
+    {
       "key": "read_status",
       "ui_location": "Command queue status",
       "kind": "status",
@@ -9589,6 +13469,21 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandReadStatus.kt",
           "line": 36
+        }
+      ]
+    },
+    {
+      "key": "reading_pump_history",
+      "ui_location": "Pump status line",
+      "kind": "status",
+      "description": "Transient status shown while the app downloads the history of events from the Dana RS pump. Gerund phrase.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7764348cc08b7c35",
+      "usages": [
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/services/DanaRSService.kt",
+          "line": 280
         }
       ]
     },
@@ -9612,6 +13507,21 @@
         {
           "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
           "line": 1676
+        }
+      ]
+    },
+    {
+      "key": "reauthorize",
+      "ui_location": "Cloud directory sheet > dialog",
+      "kind": "button",
+      "description": "Positive button to sign in again. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1983e2373d053a31",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/CloudDirectorySheet.kt",
+          "line": 66
         }
       ]
     },
@@ -9678,6 +13588,76 @@
         {
           "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
           "line": 357
+        }
+      ]
+    },
+    {
+      "key": "remove",
+      "ui_location": "Automation editor",
+      "kind": "button",
+      "description": "Remove an item; icon description of a delete icon. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "50dc06f4b07a95d1",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationEditScreen.kt",
+          "line": 325
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationEditTriggerScreen.kt",
+          "line": 174
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationEditTriggerScreen.kt",
+          "line": 291
+        },
+        {
+          "path": "plugins/source/src/commonMain/kotlin/app/aaps/plugins/source/compose/BgSourceScreen.kt",
+          "line": 257
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/graphs/GraphsSection.kt",
+          "line": 750
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/BolusCarbsScreen.kt",
+          "line": 199
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/CareportalScreen.kt",
+          "line": 202
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/ExtendedBolusScreen.kt",
+          "line": 180
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/ProfileSwitchScreen.kt",
+          "line": 223
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/RunningModeScreen.kt",
+          "line": 169
+        }
+      ]
+    },
+    {
+      "key": "remove_entry",
+      "ui_location": "Profile editor > accessibility",
+      "kind": "button",
+      "description": "Accessibility description of button deleting a time segment.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "464ce75f98a98c2e",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/TimeValueList.kt",
+          "line": 205
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/TimeValueList.kt",
+          "line": 392
         }
       ]
     },
@@ -9752,6 +13732,57 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/ExtendedBolusScreen.kt",
           "line": 96
+        }
+      ]
+    },
+    {
+      "key": "reorder",
+      "ui_location": "Management screens",
+      "kind": "menu_item",
+      "description": "Switches to the mode where items can be reordered; also a title. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1797307600e082ea",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/compose/AutomationScreen.kt",
+          "line": 265
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileManagementScreen.kt",
+          "line": 188
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileManagementScreen.kt",
+          "line": 246
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileManagementScreen.kt",
+          "line": 320
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickLaunch/QuickLaunchConfigScreen.kt",
+          "line": 341
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardManagementScreen.kt",
+          "line": 211
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardManagementScreen.kt",
+          "line": 284
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetManagementScreen.kt",
+          "line": 227
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetManagementScreen.kt",
+          "line": 294
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/tempTarget/TempTargetManagementScreen.kt",
+          "line": 393
         }
       ]
     },
@@ -9845,6 +13876,66 @@
       ]
     },
     {
+      "key": "reset_aps_results",
+      "ui_location": "Maintenance sheet > database",
+      "kind": "button",
+      "description": "Row title: clear stored APS results.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "582fb14cc56e4c5b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 312
+        }
+      ]
+    },
+    {
+      "key": "reset_aps_results_confirm",
+      "ui_location": "Maintenance > confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Asks to confirm deleting stored APS (algorithm) results.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "58ea8a1004f30175",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 135
+        }
+      ]
+    },
+    {
+      "key": "reset_db_confirm",
+      "ui_location": "Maintenance > confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Asks to confirm erasing the databases; destructive.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d2ce59a0e4337e39",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 147
+        }
+      ]
+    },
+    {
+      "key": "resettodefaults",
+      "ui_location": "Log settings sheet",
+      "kind": "button",
+      "description": "Button restoring default log levels.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1956a2bbadf83f7d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/LogSettingBottomSheet.kt",
+          "line": 121
+        }
+      ]
+    },
+    {
       "key": "resistant_adult",
       "ui_location": "Setup wizard / preferences > Patient type",
       "kind": "label",
@@ -9914,6 +14005,53 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/main/MainViewModel.kt",
           "line": 582
+        }
+      ]
+    },
+    {
+      "key": "retry",
+      "ui_location": "Pump pairing wizards / alarm dialogs",
+      "kind": "button",
+      "description": "Button to repeat a failed action. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fc4dcc978a0d6f6f",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2PairWizardScreen.kt",
+          "line": 349
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/alarm/AlarmManager.kt",
+          "line": 161
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchPatchScreen.kt",
+          "line": 184
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStep.kt",
+          "line": 62
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/RotateKnobStep.kt",
+          "line": 75
+        },
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/steps/SafetyCheckStep.kt",
+          "line": 57
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/PasswordStep.kt",
+          "line": 118
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/steps/PrepareStep.kt",
+          "line": 126
+        },
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/ui/wizard/compose/steps/ActionStep.kt",
+          "line": 105
         }
       ]
     },
@@ -11159,6 +15297,134 @@
       ]
     },
     {
+      "key": "search",
+      "ui_location": "Search field",
+      "kind": "hint",
+      "description": "Placeholder and title of search. One word.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "73ff167b1f6cbbf1",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/AapsSearchField.kt",
+          "line": 42
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/SearchBar.kt",
+          "line": 125
+        }
+      ]
+    },
+    {
+      "key": "search_category_categories",
+      "ui_location": "Search results > group header",
+      "kind": "label",
+      "description": "Header for results that are preference categories.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bd06699605613823",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/SearchResults.kt",
+          "line": 152
+        }
+      ]
+    },
+    {
+      "key": "search_category_dialogs",
+      "ui_location": "Search results > group header",
+      "kind": "label",
+      "description": "Header for results that are dialogs.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "51f14fd03ac661e5",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/SearchResults.kt",
+          "line": 154
+        }
+      ]
+    },
+    {
+      "key": "search_category_plugins",
+      "ui_location": "Search results > group header",
+      "kind": "label",
+      "description": "Header for results that are plugins (modules of the app).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "466fbcaaac9f3b5a",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/SearchResults.kt",
+          "line": 151
+        }
+      ]
+    },
+    {
+      "key": "search_category_preferences",
+      "ui_location": "Search results > group header",
+      "kind": "label",
+      "description": "Header for results that are single preferences.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f9ea0c8a365336f8",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/SearchResults.kt",
+          "line": 153
+        }
+      ]
+    },
+    {
+      "key": "search_category_wiki",
+      "ui_location": "Search results > group header",
+      "kind": "label",
+      "description": "Header for results from online documentation; an ellipsis may be appended while loading.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6f4fcdd84e067e24",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/SearchResults.kt",
+          "line": 155
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/SearchResults.kt",
+          "line": 309
+        }
+      ]
+    },
+    {
+      "key": "search_plugin_disabled",
+      "ui_location": "Search results",
+      "kind": "status",
+      "description": "Note next to a result; %1$s is the plugin name.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "641b4830737a5b58",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/SearchResults.kt",
+          "line": 261
+        }
+      ]
+    },
+    {
+      "key": "secs",
+      "ui_location": "Insight pump status",
+      "kind": "label",
+      "description": "Duration in seconds; %1$d is a number. Keep short, unit abbreviation for seconds.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "390237d1bddd9cac",
+      "usages": [
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightComposeContent.kt",
+          "line": 324
+        }
+      ]
+    },
+    {
       "key": "select_arrow",
       "ui_location": "Body picker dialog",
       "kind": "dialog_title",
@@ -11244,6 +15510,21 @@
       ]
     },
     {
+      "key": "select_location",
+      "ui_location": "Site location picker",
+      "kind": "hint",
+      "description": "Instruction to tap the body picture to choose a site (where cannula or sensor is placed).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "96049d57c3c7d7b3",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/siteRotation/SiteLocationPicker.kt",
+          "line": 110
+        }
+      ]
+    },
+    {
       "key": "select_site_location",
       "ui_location": "Site location summary; Omnipod wizard",
       "kind": "title",
@@ -11265,6 +15546,21 @@
         {
           "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
           "line": 137
+        }
+      ]
+    },
+    {
+      "key": "select_storage_type",
+      "ui_location": "Cloud directory sheet",
+      "kind": "title",
+      "description": "Heading asking the user to choose where backups are stored (local or cloud).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e6a8f4ec967d389b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/CloudDirectorySheet.kt",
+          "line": 84
         }
       ]
     },
@@ -11305,6 +15601,27 @@
       ]
     },
     {
+      "key": "send_logs",
+      "ui_location": "Maintenance sheet > Log files",
+      "kind": "button",
+      "description": "Row title and confirmation prompt base (a question mark is appended in code) for sending log files for support.",
+      "related_keys": [
+        "maintenance_send_logs_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f41078a7cdc7128d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceBottomSheet.kt",
+          "line": 156
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/maintenance/MaintenanceDialogs.kt",
+          "line": 171
+        }
+      ]
+    },
+    {
       "key": "sensitivity",
       "ui_location": "Overview > sensitivity chip",
       "kind": "title",
@@ -11320,6 +15637,25 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/SensitivityChipBlock.kt",
           "line": 30
+        }
+      ]
+    },
+    {
+      "key": "sensor_label",
+      "ui_location": "Status screen / search",
+      "kind": "label",
+      "description": "Label for the glucose sensor (CGM) status row.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "09a60bc4c9bf4a2f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/statusLights/StatusViewModel.kt",
+          "line": 154
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 263
         }
       ]
     },
@@ -11977,6 +16313,61 @@
       ]
     },
     {
+      "key": "statistics",
+      "ui_location": "Navigation menu / Statistics screen",
+      "kind": "menu_item",
+      "description": "Name of the screen with glucose and insulin statistics.",
+      "related_keys": [
+        "statistics_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6144e4e03975f9e4",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 234
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "statistics_desc",
+      "ui_location": "Navigation menu > item subtitle",
+      "kind": "summary",
+      "description": "Subtitle of Statistics.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fd010be803f5d61a",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 283
+        }
+      ]
+    },
+    {
+      "key": "status",
+      "ui_location": "Pump overview",
+      "kind": "label",
+      "description": "Row label for pump status. One word.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "35710f3b07a6b39d",
+      "usages": [
+        {
+          "path": "pump/eopatch/src/main/kotlin/app/aaps/pump/eopatch/compose/EopatchOverviewViewModel.kt",
+          "line": 298
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/overview/OverviewStatusSection.kt",
+          "line": 109
+        }
+      ]
+    },
+    {
       "key": "statuslights",
       "ui_location": "Overview status section; settings",
       "kind": "title",
@@ -12007,6 +16398,25 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/DexcomTirStatsCompose.kt",
           "line": 108
+        }
+      ]
+    },
+    {
+      "key": "step_ble_scan",
+      "ui_location": "Pump pairing wizards > step title",
+      "kind": "title",
+      "description": "Step title for finding the pump over Bluetooth.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d9a089b7eccf1037",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardStep.kt",
+          "line": 16
+        },
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumPatchViewModel.kt",
+          "line": 676
         }
       ]
     },
@@ -12097,6 +16507,21 @@
         {
           "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionStopTempTarget.kt",
           "line": 24
+        }
+      ]
+    },
+    {
+      "key": "subcategory",
+      "ui_location": "Food screen > editor",
+      "kind": "label",
+      "description": "Field label: food subcategory.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5f3be7bb315df642",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/foodManagement/FoodManagementScreen.kt",
+          "line": 356
         }
       ]
     },
@@ -12227,6 +16652,21 @@
       ]
     },
     {
+      "key": "target_high_label",
+      "ui_location": "Profile editor > target",
+      "kind": "label",
+      "description": "Label of high glucose target field.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "03eab7964237f3f6",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/TimeValueList.kt",
+          "line": 340
+        }
+      ]
+    },
+    {
       "key": "target_label",
       "ui_location": "Profile viewer",
       "kind": "label",
@@ -12265,6 +16705,38 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
           "line": 611
+        }
+      ]
+    },
+    {
+      "key": "target_low_label",
+      "ui_location": "Profile editor > target",
+      "kind": "label",
+      "description": "Label of low glucose target field.",
+      "related_keys": [
+        "target_high_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "760c068d89d3a934",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/TimeValueList.kt",
+          "line": 339
+        }
+      ]
+    },
+    {
+      "key": "target_short",
+      "ui_location": "Profile editor > tabs",
+      "kind": "label",
+      "description": "Tab label for glucose target. Abbreviated; tab space is tiny.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ef15a83b258ebf07",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
+          "line": 219
         }
       ]
     },
@@ -12355,6 +16827,42 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
           "line": 130
+        }
+      ]
+    },
+    {
+      "key": "tdd_cycle_pattern",
+      "ui_location": "Navigation menu / Statistics",
+      "kind": "menu_item",
+      "description": "Name of a chart overlaying total daily doses (TDD, total insulin per day) across 28-day cycles.",
+      "related_keys": [
+        "tdd_cycle_pattern_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "822e93f145435fe9",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 235
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/StatsScreen.kt",
+          "line": 321
+        }
+      ]
+    },
+    {
+      "key": "tdd_cycle_pattern_desc",
+      "ui_location": "Navigation menu > item subtitle",
+      "kind": "summary",
+      "description": "Explains the TDD cycle pattern chart.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6a4397cc79d6447b",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/navigation/ElementTypeStyle.kt",
+          "line": 284
         }
       ]
     },
@@ -12475,6 +16983,49 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/commands/CommandTempBasalAbsolute.kt",
           "line": 30
+        }
+      ]
+    },
+    {
+      "key": "temp_basal_delivery_error",
+      "ui_location": "Snackbar / Overview > error message",
+      "kind": "error",
+      "description": "Error shown when the pump failed to start or cancel a temporary basal rate (TBR, a temporary change of the basal insulin rate). Also used as a result comment of the failed command.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d66d50c5af44fa1a",
+      "usages": [
+        {
+          "path": "appshell/src/commonMain/kotlin/app/aaps/appshell/navigation/AppNavGraph.kt",
+          "line": 367
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/runningMode/RunningModeReconciler.kt",
+          "line": 177
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/runningMode/RunningModeReconciler.kt",
+          "line": 281
+        },
+        {
+          "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/loop/runningMode/RunningModeReconciler.kt",
+          "line": 369
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danar/AbstractDanaRPlugin.kt",
+          "line": 230
+        },
+        {
+          "path": "pump/dana/danar/src/main/kotlin/app/aaps/pump/danarv2/DanaRv2Plugin.kt",
+          "line": 289
+        },
+        {
+          "path": "pump/dana/danars/src/main/kotlin/app/aaps/pump/danars/DanaRSPlugin.kt",
+          "line": 474
+        },
+        {
+          "path": "pump/diaconn/src/main/kotlin/app/aaps/pump/diaconn/DiaconnG8Plugin.kt",
+          "line": 392
         }
       ]
     },
@@ -12647,6 +17198,21 @@
         {
           "path": "plugins/aps/src/commonMain/kotlin/app/aaps/plugins/aps/openAPSSMB/OpenAPSSMBPlugin.kt",
           "line": 348
+        }
+      ]
+    },
+    {
+      "key": "tempbasal_button",
+      "ui_location": "Manage sheet",
+      "kind": "button",
+      "description": "Button to set a temporary basal rate (a temporary change of background insulin). Title case, short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6d2f175d3ce5595f",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/manageSheet/ManageBottomSheet.kt",
+          "line": 334
         }
       ]
     },
@@ -12909,6 +17475,21 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TirStatsCompose.kt",
           "line": 73
+        }
+      ]
+    },
+    {
+      "key": "to_label",
+      "ui_location": "Time range picker",
+      "kind": "label",
+      "description": "Label of the end time field. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2f3f8d5bab24a433",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/TimeRangePicker.kt",
+          "line": 102
         }
       ]
     },
@@ -14924,6 +19505,66 @@
       ]
     },
     {
+      "key": "unattended_settings_export",
+      "ui_location": "Preferences search / settings",
+      "kind": "title",
+      "description": "Name of the setting allowing automated settings exports without user interaction.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "f47183da144e73b9",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/BuiltInSearchables.kt",
+          "line": 170
+        }
+      ]
+    },
+    {
+      "key": "undo",
+      "ui_location": "Snackbars",
+      "kind": "button",
+      "description": "Action to revert the last change. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c02eb9733724ab7b",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/foodManagement/FoodManagementScreen.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "unit_label",
+      "ui_location": "Food screen > editor",
+      "kind": "label",
+      "description": "Field label: unit of the portion (g, ml, piece).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "284a7641c98e70dd",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/foodManagement/FoodManagementScreen.kt",
+          "line": 374
+        }
+      ]
+    },
+    {
+      "key": "units_colon",
+      "ui_location": "Profile editor",
+      "kind": "label",
+      "description": "Label before glucose units (mg/dL or mmol/L). Ends with colon.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4defb027e178919d",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
+          "line": 382
+        }
+      ]
+    },
+    {
       "key": "units_label",
       "ui_location": "Profile viewer",
       "kind": "label",
@@ -15001,6 +19642,48 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
           "line": 161
+        }
+      ]
+    },
+    {
+      "key": "unsaved_changes",
+      "ui_location": "Editor screens > dialog",
+      "kind": "dialog_title",
+      "description": "Title of dialog when leaving an editor with unsaved edits.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fea4f3a9219d3936",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementScreen.kt",
+          "line": 495
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
+          "line": 399
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/quickWizard/QuickWizardManagementScreen.kt",
+          "line": 143
+        }
+      ]
+    },
+    {
+      "key": "unsaved_changes_message",
+      "ui_location": "Editor screens > dialog",
+      "kind": "dialog_text",
+      "description": "Asks what to do with unsaved edits; the buttons are save, discard, cancel.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4eed166af6dc2bde",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/insulinManagement/InsulinManagementScreen.kt",
+          "line": 496
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/profileManagement/ProfileEditorScreen.kt",
+          "line": 400
         }
       ]
     },
@@ -15090,6 +19773,21 @@
         {
           "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/treatments/TreatmentsScreen.kt",
           "line": 271
+        }
+      ]
+    },
+    {
+      "key": "user_request",
+      "ui_location": "Status line > pump status request",
+      "kind": "log",
+      "description": "Reason text for a status read triggered manually by the user (refresh).",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "df43ec3cd0f5b36c",
+      "usages": [
+        {
+          "path": "pump/combov2/src/main/kotlin/info/nightscout/pump/combov2/compose/ComboV2OverviewViewModel.kt",
+          "line": 150
         }
       ]
     },
@@ -15367,6 +20065,59 @@
       ]
     },
     {
+      "key": "warning",
+      "ui_location": "Status chips, banners, import summary",
+      "kind": "label",
+      "description": "Severity level label for a warning (less urgent than critical). Also an icon description. One word.",
+      "related_keys": [
+        "critical"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "32ace25f098dec22",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/ImportSummaryComponents.kt",
+          "line": 58
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/StatusLevel.kt",
+          "line": 53
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/banner/Banner.kt",
+          "line": 57
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/GlobalSnackbarHost.kt",
+          "line": 162
+        },
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/elements/SWPermissions.kt",
+          "line": 92
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/MedtronicPumpPlugin.kt",
+          "line": 690
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 395
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 570
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 565
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/notificationsSheet/NotificationBottomSheet.kt",
+          "line": 166
+        }
+      ]
+    },
+    {
       "key": "wear",
       "ui_location": "Plugin name, source, TT reason",
       "kind": "title",
@@ -15417,6 +20168,126 @@
         {
           "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/WearPlugin.kt",
           "line": 317
+        }
+      ]
+    },
+    {
+      "key": "weekday_friday_short",
+      "ui_location": "Automation > days of week selector",
+      "kind": "label",
+      "description": "Abbreviated name of Friday in a row of day toggles; three letters or fewer where possible.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "65e56f7d6b5a951b",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/elements/WeekDay.kt",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "key": "weekday_monday_short",
+      "ui_location": "Automation > days of week selector",
+      "kind": "label",
+      "description": "Abbreviated name of Monday in a row of day toggles; three letters or fewer where possible.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0fc077dc51294fea",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/elements/WeekDay.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "weekday_saturday_short",
+      "ui_location": "Automation > days of week selector",
+      "kind": "label",
+      "description": "Abbreviated name of Saturday in a row of day toggles; three letters or fewer where possible.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b8da4f7d40777149",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/elements/WeekDay.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "weekday_sunday_short",
+      "ui_location": "Automation > days of week selector",
+      "kind": "label",
+      "description": "Abbreviated name of Sunday in a row of day toggles; three letters or fewer where possible.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ce0b62e2d7dfc6f2",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/elements/WeekDay.kt",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "weekday_thursday_short",
+      "ui_location": "Automation > days of week selector",
+      "kind": "label",
+      "description": "Abbreviated name of Thursday in a row of day toggles; three letters or fewer where possible.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "504c458ec454875d",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/elements/WeekDay.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "weekday_tuesday_short",
+      "ui_location": "Automation > days of week selector",
+      "kind": "label",
+      "description": "Abbreviated name of Tuesday in a row of day toggles; three letters or fewer where possible.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7914885b8e11ee6a",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/elements/WeekDay.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "weekday_wednesday_short",
+      "ui_location": "Automation > days of week selector",
+      "kind": "label",
+      "description": "Abbreviated name of Wednesday in a row of day toggles; three letters or fewer where possible.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "73e014edf8025a67",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/elements/WeekDay.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "wiki_search_offline",
+      "ui_location": "Search results",
+      "kind": "status",
+      "description": "Documentation search needs internet; shown when offline.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3d86d4a8b0e82613",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/search/SearchResults.kt",
+          "line": 335
         }
       ]
     },
@@ -15915,6 +20786,33 @@
         {
           "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/protection/PasswordCheckImpl.kt",
           "line": 81
+        }
+      ]
+    },
+    {
+      "key": "yes",
+      "ui_location": "Dialogs, objective questions",
+      "kind": "button",
+      "description": "Positive answer button. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "65495d4220ac71d3",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/YesNoCancelDialog.kt",
+          "line": 50
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/YesNoCancelDialog.kt",
+          "line": 92
+        },
+        {
+          "path": "plugins/constraints/src/commonMain/kotlin/app/aaps/plugins/constraints/objectives/objectives/Objective2.kt",
+          "line": 298
+        },
+        {
+          "path": "pump/insight/src/main/kotlin/app/aaps/pump/insight/compose/InsightPairWizardScreen.kt",
+          "line": 187
         }
       ]
     }
