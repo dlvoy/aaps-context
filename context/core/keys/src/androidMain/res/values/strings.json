@@ -5,6 +5,91 @@
   "generated_by": "claude-code skill aaps-string-context",
   "entries": [
     {
+      "key": "absorption_cutoff_summary",
+      "ui_location": "Preferences > Absorption settings > Absorption cutoff",
+      "kind": "preference_summary",
+      "description": "Explains that remaining carbs are dropped after this time.",
+      "related_keys": [
+        "pref_title_absorption_cutoff"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "5b52c3e748e29f3c",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 163
+        }
+      ]
+    },
+    {
+      "key": "absorption_max_time_summary",
+      "ui_location": "Preferences > Absorption settings > Absorption max time",
+      "kind": "preference_summary",
+      "description": "Explains the setting as the time in hours in which all carbs from a meal are expected to be absorbed.",
+      "related_keys": [
+        "pref_title_absorption_maxtime"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "75dfcf4762d0563f",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 173
+        }
+      ]
+    },
+    {
+      "key": "automation_location_gps",
+      "ui_location": "Automation preferences > Location service > option list",
+      "kind": "label",
+      "description": "One option in the list of location providers; Locates the phone through satellite GPS, the most accurate and most battery-hungry option. Short imperative-style phrase.",
+      "related_keys": [
+        "pref_title_automation_location"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "24bb5f044bc930c2",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 149
+        }
+      ]
+    },
+    {
+      "key": "automation_location_network",
+      "ui_location": "Automation preferences > Location service > option list",
+      "kind": "label",
+      "description": "One option in the list of location providers; Locates the phone through mobile network and WiFi. Short imperative-style phrase.",
+      "related_keys": [
+        "pref_title_automation_location"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "ad065157c7e8e787",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 148
+        }
+      ]
+    },
+    {
+      "key": "automation_location_passive",
+      "ui_location": "Automation preferences > Location service > option list",
+      "kind": "label",
+      "description": "One option in the list of location providers; Uses locations that other apps have already requested, so it costs no extra battery. Short imperative-style phrase.",
+      "related_keys": [
+        "pref_title_automation_location"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "62d258ec21e042fa",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 147
+        }
+      ]
+    },
+    {
       "key": "autotune_default_tune_days_summary",
       "ui_location": "Preferences > Autotune",
       "kind": "preference_summary",
@@ -191,6 +276,31 @@
         {
           "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
           "line": 355
+        }
+      ]
+    },
+    {
+      "key": "insulin_increment_button_message",
+      "ui_location": "Preferences > Overview > Buttons",
+      "kind": "preference_summary",
+      "description": "Shared summary for the three insulin button increment settings: the units of insulin added each time the button is pressed.",
+      "related_keys": [
+        "pref_title_insulin_button_increment_1"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "8e4cdef8fbfb50f6",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 32
+        },
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 44
+        },
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 56
         }
       ]
     },
@@ -637,6 +747,23 @@
       ]
     },
     {
+      "key": "lgs_threshold_summary",
+      "ui_location": "Preferences > OpenAPS SMB > LGS threshold",
+      "kind": "preference_summary",
+      "description": "Explains the LGS threshold, allowed between 60 mg/dL (3.3 mmol/L) and 100 mg/dL (5.5 mmol/L); lower values fall back to the default model.",
+      "related_keys": [
+        "pref_title_lgs_threshold"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "3bfcb19d1827ec48",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/UnitDoubleKey.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
       "key": "loop_open_mode_min_change_summary",
       "ui_location": "Preferences > Loop",
       "kind": "preference_summary",
@@ -650,6 +777,21 @@
         {
           "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
           "line": 306
+        }
+      ]
+    },
+    {
+      "key": "maintenance_email",
+      "ui_location": "Preferences > Maintenance > Email recipient",
+      "kind": "preference_title",
+      "description": "Title of the text setting for the address that exported logs and settings are emailed to. Noun phrase.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6715caa715105229",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 136
         }
       ]
     },
@@ -704,6 +846,214 @@
       ]
     },
     {
+      "key": "ns_client_secret_summary",
+      "ui_location": "Preferences > NSClient > Nightscout API secret",
+      "kind": "preference_summary",
+      "description": "Prompt telling the user to enter the API secret; the secret must be at least 12 characters.",
+      "related_keys": [
+        "ns_client_secret_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "61304c3ca7db5996",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 203
+        }
+      ]
+    },
+    {
+      "key": "ns_client_secret_title",
+      "ui_location": "Preferences > NSClient > Nightscout API secret",
+      "kind": "preference_title",
+      "description": "Title of the password field for the Nightscout API secret.",
+      "related_keys": [
+        "ns_client_secret_summary"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "b0336c6698a932de",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 202
+        }
+      ]
+    },
+    {
+      "key": "ns_client_url_summary",
+      "ui_location": "Preferences > NSClient > Nightscout URL",
+      "kind": "preference_summary",
+      "description": "Prompt under the Nightscout URL field with an example address. Keep the example URL unchanged.",
+      "related_keys": [
+        "ns_client_url_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "f55bba55fab0350b",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 196
+        }
+      ]
+    },
+    {
+      "key": "ns_client_url_title",
+      "ui_location": "Preferences > NSClient > Nightscout URL",
+      "kind": "preference_title",
+      "description": "Title of the text field for the web address of the user's Nightscout site. Nightscout is a product name; do not translate.",
+      "related_keys": [
+        "ns_client_url_summary"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "0a105bc6c5c8c756",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 195
+        }
+      ]
+    },
+    {
+      "key": "ns_wifi_ssids",
+      "ui_location": "Preferences > NSClient > WiFi SSID",
+      "kind": "preference_title",
+      "description": "Title of a text setting listing WiFi network names (SSIDs); enabled only when NSClient is restricted to WiFi. Short noun phrase.",
+      "related_keys": [
+        "ns_wifi_ssids_summary"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "7dd9ca35413926b4",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 210
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/triggers/TriggerWifiSsid.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "ns_wifi_ssids_summary",
+      "ui_location": "Preferences > NSClient > WiFi SSID",
+      "kind": "preference_summary",
+      "description": "Hint that several WiFi network names are allowed, separated by semicolons.",
+      "related_keys": [
+        "ns_wifi_ssids"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "57b9690d443bdb36",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 211
+        }
+      ]
+    },
+    {
+      "key": "nsclient_token_summary",
+      "ui_location": "Preferences > NSClient > Nightscout access token",
+      "kind": "preference_summary",
+      "description": "Prompt telling the user to enter the access token; the token must be at least 17 characters.",
+      "related_keys": [
+        "nsclient_token_title"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "d33a7c12d8b0042e",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 218
+        }
+      ]
+    },
+    {
+      "key": "nsclient_token_title",
+      "ui_location": "Preferences > NSClient > Nightscout access token",
+      "kind": "preference_title",
+      "description": "Title of the password field for a Nightscout access token (an alternative to the API secret).",
+      "related_keys": [
+        "nsclient_token_summary"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "8e589d8d34115796",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 217
+        }
+      ]
+    },
+    {
+      "key": "openapsama_autoISF_max_summary",
+      "ui_location": "Preferences > OpenAPS AutoISF > AutoISF max",
+      "kind": "preference_summary",
+      "description": "Explains the upper AutoISF limit with a warning against values above 2.5. Keep the warning prominent.",
+      "related_keys": [
+        "pref_title_autoisf_max"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "cc7f6cb8b3990152",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 216
+        }
+      ]
+    },
+    {
+      "key": "openapsama_autoISF_min_summary",
+      "ui_location": "Preferences > OpenAPS AutoISF > AutoISF min",
+      "kind": "preference_summary",
+      "description": "Explains the lower AutoISF limit; default 1.0 turns the effect off. Contains a paragraph break.",
+      "related_keys": [
+        "pref_title_autoisf_min"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "df00888ce82aec04",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 205
+        }
+      ]
+    },
+    {
+      "key": "openapsama_autosens_max_summary",
+      "ui_location": "Preferences > OpenAPS > Autosens max",
+      "kind": "preference_summary",
+      "description": "Explains the upper autosens limit (default 1.2, 20%). The %% is a literal percent sign.",
+      "related_keys": [
+        "pref_title_autosens_max"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "ed817466f84939d3",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 194
+        }
+      ]
+    },
+    {
+      "key": "openapsama_autosens_min_summary",
+      "ui_location": "Preferences > OpenAPS > Autosens min",
+      "kind": "preference_summary",
+      "description": "Explains the lower autosens limit (default 0.7): caps how low basal can go and how high ISF (insulin sensitivity factor) and BG targets can be raised.",
+      "related_keys": [
+        "pref_title_autosens_min"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "602e7dc73a842452",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 183
+        }
+      ]
+    },
+    {
       "key": "openapsama_autosens_period_summary",
       "ui_location": "Preferences > Algorithm (APS) > Autosens",
       "kind": "preference_summary",
@@ -719,6 +1069,108 @@
       ]
     },
     {
+      "key": "openapsama_bgAccel_ISF_weight_summary",
+      "ui_location": "Preferences > OpenAPS AutoISF > BG acceleration ISF weight",
+      "kind": "preference_summary",
+      "description": "Explains the weight applied while glucose accelerates, strengthening ISF. Default 0.0 turns the effect off. Contains paragraph breaks.",
+      "related_keys": [
+        "pref_title_bg_accel_weight"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "adafda3836979477",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 227
+        }
+      ]
+    },
+    {
+      "key": "openapsama_bgBrake_ISF_weight_summary",
+      "ui_location": "Preferences > OpenAPS AutoISF > BG brake ISF weight",
+      "kind": "preference_summary",
+      "description": "Explains the weight applied while glucose decelerates, weakening ISF. Default 0.0 turns the effect off. Contains paragraph breaks.",
+      "related_keys": [
+        "pref_title_bg_brake_weight"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "2c41ae20ade72856",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 238
+        }
+      ]
+    },
+    {
+      "key": "openapsama_bolus_snooze_dia_divisor_summary",
+      "ui_location": "Preferences > OpenAPS AMA > Bolus snooze DIA divisor",
+      "kind": "preference_summary",
+      "description": "Explains bolus snooze: after a meal bolus the loop does not counteract with low temporary basals, phasing out over DIA divided by this value (default 2).",
+      "related_keys": [
+        "pref_title_bolus_snooze_divisor"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "fa75573899761f22",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 130
+        }
+      ]
+    },
+    {
+      "key": "openapsama_current_basal_safety_multiplier_summary",
+      "ui_location": "Preferences > OpenAPS > Current basal safety multiplier",
+      "kind": "preference_summary",
+      "description": "Long explanation (default 4) of the 'current' half of the '3x max daily; 4x current' safety cap.",
+      "related_keys": [
+        "pref_title_current_basal_multiplier"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "51a328096d2e28fd",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 119
+        }
+      ]
+    },
+    {
+      "key": "openapsama_dura_ISF_weight_summary",
+      "ui_location": "Preferences > OpenAPS AutoISF > Duration ISF weight",
+      "kind": "preference_summary",
+      "description": "Explains the weight applied during long elevated glucose plateaus, strengthening ISF. Default 0.0 turns the effect off. Contains paragraph breaks.",
+      "related_keys": [
+        "pref_title_dura_weight"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "0745d4ee00e05812",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 293
+        }
+      ]
+    },
+    {
+      "key": "openapsama_higher_ISFrange_weight_summary",
+      "ui_location": "Preferences > OpenAPS AutoISF > High BG range weight",
+      "kind": "preference_summary",
+      "description": "Explains the weight applied while glucose is above target, strengthening ISF. Default 0.0 turns the effect off. Contains paragraph breaks.",
+      "related_keys": [
+        "pref_title_high_bg_weight"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "0454c9b8c1e2754e",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 260
+        }
+      ]
+    },
+    {
       "key": "openapsama_iob_threshold_percent_summary",
       "ui_location": "Preferences > Algorithm (APS) > SMB",
       "kind": "preference_summary",
@@ -730,6 +1182,216 @@
         {
           "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
           "line": 366
+        }
+      ]
+    },
+    {
+      "key": "openapsama_lower_ISFrange_weight_summary",
+      "ui_location": "Preferences > OpenAPS AutoISF > Low BG range weight",
+      "kind": "preference_summary",
+      "description": "Explains the weight applied while glucose is below target, weakening ISF. Default 0.0 turns the effect off. Contains paragraph breaks.",
+      "related_keys": [
+        "pref_title_low_bg_weight"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "49653c9c0a207bce",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 249
+        }
+      ]
+    },
+    {
+      "key": "openapsama_max_daily_safety_multiplier_summary",
+      "ui_location": "Preferences > OpenAPS > Max daily safety multiplier",
+      "kind": "preference_summary",
+      "description": "Long explanation (default 3) of the '3x max daily; 4x current' safety cap on basal. Keep that quoted phrase consistent with the next summary.",
+      "related_keys": [
+        "pref_title_max_daily_multiplier"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "33ceae5cca6f8bab",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 108
+        }
+      ]
+    },
+    {
+      "key": "openapsama_min_5m_carb_impact_summary",
+      "ui_location": "Preferences > OpenAPS AMA/SMB > Min 5m carbs impact",
+      "kind": "preference_summary",
+      "description": "Shared long explanation of default carb absorption impact per 5 minutes (3.0 AMA, 8.0 SMB); affects how fast COB (carbs on board) decays and the glucose prediction.",
+      "related_keys": [
+        "pref_title_ama_min_5m_carbs_impact"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "807c5c73065dab9b",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 141
+        },
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 152
+        }
+      ]
+    },
+    {
+      "key": "openapsama_pp_ISF_weight_summary",
+      "ui_location": "Preferences > OpenAPS AutoISF > Post-prandial ISF weight",
+      "kind": "preference_summary",
+      "description": "Explains the weight applied while glucose is rising after a meal, strengthening ISF. Default 0.0 turns the effect off. Contains paragraph breaks.",
+      "related_keys": [
+        "pref_title_pp_weight"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "beab934bdeb0e337",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 282
+        }
+      ]
+    },
+    {
+      "key": "openapsama_smb_delivery_ratio_bg_range_summary",
+      "ui_location": "Preferences > OpenAPS AutoISF > SMB delivery ratio BG range",
+      "kind": "preference_summary",
+      "description": "Explains the range [target_bg, target_bg+bg_range]; 0 disables the linear ratio. Parameter names such as smb_delivery_ratio_min are code identifiers; keep them untranslated.",
+      "related_keys": [
+        "pref_title_smb_delivery_ratio_bg_range",
+        "pref_title_smb_delivery_ratio_min",
+        "pref_title_smb_delivery_ratio_max"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "53869d8c18ad46ba",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 271
+        }
+      ]
+    },
+    {
+      "key": "openapsama_smb_delivery_ratio_max_summary",
+      "ui_location": "Preferences > OpenAPS AutoISF > SMB delivery ratio max",
+      "kind": "preference_summary",
+      "description": "Explains the upper end of the ratio range used instead of the fixed value (default 0.5).",
+      "related_keys": [
+        "pref_title_smb_delivery_ratio_max"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "49f6b6a09522ba58",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 326
+        }
+      ]
+    },
+    {
+      "key": "openapsama_smb_delivery_ratio_min_summary",
+      "ui_location": "Preferences > OpenAPS AutoISF > SMB delivery ratio min",
+      "kind": "preference_summary",
+      "description": "Explains the lower end of the ratio range used instead of the fixed value (default 0.5).",
+      "related_keys": [
+        "pref_title_smb_delivery_ratio_min"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "5637b0678475216c",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 315
+        }
+      ]
+    },
+    {
+      "key": "openapsama_smb_delivery_ratio_summary",
+      "ui_location": "Preferences > OpenAPS AutoISF > SMB delivery ratio",
+      "kind": "preference_summary",
+      "description": "Explains the SMB delivery ratio safety cap (default 0.5); warns to increase this experimental value slowly.",
+      "related_keys": [
+        "pref_title_smb_delivery_ratio"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "d32ceb3a4b570ddc",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 304
+        }
+      ]
+    },
+    {
+      "key": "openapsama_smb_max_range_extension_summary",
+      "ui_location": "Preferences > OpenAPS AutoISF > SMB max range extension",
+      "kind": "preference_summary",
+      "description": "Explains the range extension factor (default 1) as a safety cap; warns to increase slowly and with caution. maxSMB/maxUAM are code identifiers.",
+      "related_keys": [
+        "pref_title_smb_max_range_extension"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "4c910a360dc9eefd",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 337
+        }
+      ]
+    },
+    {
+      "key": "openapsma_max_basal_summary",
+      "ui_location": "Preferences > OpenAPS > Maximum basal rate",
+      "kind": "preference_summary",
+      "description": "Note that the value is known as 'max basal' (max_basal) in the OpenAPS algorithm; keep that term recognisable.",
+      "related_keys": [
+        "pref_title_max_basal"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "f1964f33b520f8b4",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "openapsma_max_iob_summary",
+      "ui_location": "Preferences > OpenAPS AMA > Max IOB",
+      "kind": "preference_summary",
+      "description": "Explains the OpenAPS 'Max IOB' limit as the most insulin in units the APS can deliver at once. Two lines separated by a newline.",
+      "related_keys": [
+        "pref_title_ama_max_iob"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "27448c0b05fb5163",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "key": "openapssmb_max_iob_summary",
+      "ui_location": "Preferences > OpenAPS SMB > Max IOB",
+      "kind": "preference_summary",
+      "description": "Explains the OpenAPS 'Max IOB' limit: no more insulin is added once current IOB exceeds it. Two lines separated by a newline.",
+      "related_keys": [
+        "pref_title_smb_max_iob"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "e10d7550c526b2cb",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 84
         }
       ]
     },
@@ -1712,6 +2374,40 @@
       ]
     },
     {
+      "key": "pref_title_absorption_cutoff",
+      "ui_location": "Preferences > Absorption settings > Absorption cutoff",
+      "kind": "preference_title",
+      "description": "Title of a setting (hours) after which any meal is treated as fully absorbed.",
+      "related_keys": [
+        "absorption_cutoff_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "cfc4db5f02b7907c",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 162
+        }
+      ]
+    },
+    {
+      "key": "pref_title_absorption_maxtime",
+      "ui_location": "Preferences > Absorption settings > Absorption max time",
+      "kind": "preference_title",
+      "description": "Title of a setting (hours) for the expected maximum time to absorb all carbs of a meal.",
+      "related_keys": [
+        "absorption_max_time_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "c988f25ad24f9dcb",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 172
+        }
+      ]
+    },
+    {
       "key": "pref_title_alarm_stale_data",
       "ui_location": "Preferences > Synchronization > Nightscout",
       "kind": "preference_title",
@@ -1823,6 +2519,40 @@
         {
           "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
           "line": 80
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ama_max_iob",
+      "ui_location": "Preferences > OpenAPS AMA > Max IOB",
+      "kind": "preference_title",
+      "description": "Title of the setting for the maximum insulin on board (IOB) in the older AMA (advanced meal assist) algorithm.",
+      "related_keys": [
+        "openapsma_max_iob_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "739590659adf680c",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 95
+        }
+      ]
+    },
+    {
+      "key": "pref_title_ama_min_5m_carbs_impact",
+      "ui_location": "Preferences > OpenAPS AMA > Min 5m carbs impact",
+      "kind": "preference_title",
+      "description": "Title of the AMA setting for the minimum assumed carb absorption per 5 minutes (mg/dL/5min). 'Carbs' = carbohydrates.",
+      "related_keys": [
+        "openapsama_min_5m_carb_impact_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "680bb14ce7bfe5c4",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 140
         }
       ]
     },
@@ -2178,6 +2908,93 @@
       ]
     },
     {
+      "key": "pref_title_autoisf_max",
+      "ui_location": "Preferences > OpenAPS AutoISF > AutoISF max",
+      "kind": "preference_title",
+      "description": "Title of the upper limit of the AutoISF ratio.",
+      "related_keys": [
+        "openapsama_autoISF_max_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "74cdf9eb5c83732c",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 215
+        }
+      ]
+    },
+    {
+      "key": "pref_title_autoisf_min",
+      "ui_location": "Preferences > OpenAPS AutoISF > AutoISF min",
+      "kind": "preference_title",
+      "description": "Title of the lower limit of the AutoISF ratio (how weak ISF can become). AutoISF is an algorithm variant that adapts the insulin sensitivity factor.",
+      "related_keys": [
+        "openapsama_autoISF_min_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "39be2ad859ca45db",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 204
+        }
+      ]
+    },
+    {
+      "key": "pref_title_automation_location",
+      "ui_location": "Config builder > Automation > Preferences > Location service",
+      "kind": "preference_title",
+      "description": "Title of a list setting that selects how the Automation plugin obtains the phone's location for location triggers. The options are the three automation_location_* strings.",
+      "related_keys": [
+        "automation_location_passive",
+        "automation_location_network",
+        "automation_location_gps"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "bd5e068d689a9e2f",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 144
+        }
+      ]
+    },
+    {
+      "key": "pref_title_autosens_max",
+      "ui_location": "Preferences > OpenAPS > Autosens max",
+      "kind": "preference_title",
+      "description": "Title of the upper limit of the autosens ratio.",
+      "related_keys": [
+        "openapsama_autosens_max_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "04402e2d438d5162",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 193
+        }
+      ]
+    },
+    {
+      "key": "pref_title_autosens_min",
+      "ui_location": "Preferences > OpenAPS > Autosens min",
+      "kind": "preference_title",
+      "description": "Title of the lower limit of the autosens ratio. Autosens automatically adjusts basal and sensitivity to detected insulin sensitivity.",
+      "related_keys": [
+        "openapsama_autosens_min_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "75ac701312dd8a3d",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 182
+        }
+      ]
+    },
+    {
       "key": "pref_title_autosens_period",
       "ui_location": "Preferences > Algorithm (APS) > Autosens",
       "kind": "preference_title",
@@ -2361,6 +3178,40 @@
       ]
     },
     {
+      "key": "pref_title_bg_accel_weight",
+      "ui_location": "Preferences > OpenAPS AutoISF > BG acceleration ISF weight",
+      "kind": "preference_title",
+      "description": "Title of an AutoISF weight setting. Short noun phrase; 'weight' is a numeric factor.",
+      "related_keys": [
+        "openapsama_bgAccel_ISF_weight_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "7607b8085263860f",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 226
+        }
+      ]
+    },
+    {
+      "key": "pref_title_bg_brake_weight",
+      "ui_location": "Preferences > OpenAPS AutoISF > BG brake ISF weight",
+      "kind": "preference_title",
+      "description": "Title of an AutoISF weight setting. Short noun phrase; 'weight' is a numeric factor.",
+      "related_keys": [
+        "openapsama_bgBrake_ISF_weight_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "95dd3c94cf76050b",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 237
+        }
+      ]
+    },
+    {
       "key": "pref_title_bg_source_create_sensor_change",
       "ui_location": "Preferences > BG source",
       "kind": "preference_title",
@@ -2436,6 +3287,23 @@
         {
           "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
           "line": 128
+        }
+      ]
+    },
+    {
+      "key": "pref_title_bolus_snooze_divisor",
+      "ui_location": "Preferences > OpenAPS AMA > Bolus snooze DIA divisor",
+      "kind": "preference_title",
+      "description": "Title of the setting dividing the duration of insulin action (DIA) to set how long bolus snooze lasts.",
+      "related_keys": [
+        "openapsama_bolus_snooze_dia_divisor_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "a97a468a0c376280",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 129
         }
       ]
     },
@@ -2559,6 +3427,40 @@
       ]
     },
     {
+      "key": "pref_title_current_basal_multiplier",
+      "ui_location": "Preferences > OpenAPS > Current basal safety multiplier",
+      "kind": "preference_title",
+      "description": "Title of the safety multiplier limiting temporary basal to a multiple of the current profile basal.",
+      "related_keys": [
+        "openapsama_current_basal_safety_multiplier_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "3076114d70410a87",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 118
+        }
+      ]
+    },
+    {
+      "key": "pref_title_dura_weight",
+      "ui_location": "Preferences > OpenAPS AutoISF > Duration ISF weight",
+      "kind": "preference_title",
+      "description": "Title of an AutoISF weight setting. Short noun phrase; 'weight' is a numeric factor.",
+      "related_keys": [
+        "openapsama_dura_ISF_weight_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "ec510820efd110f5",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 292
+        }
+      ]
+    },
+    {
       "key": "pref_title_dynisf_adjustment_factor",
       "ui_location": "Preferences > Algorithm (APS) > DynamicISF",
       "kind": "preference_title",
@@ -2576,6 +3478,51 @@
       ]
     },
     {
+      "key": "pref_title_fill_button_1",
+      "ui_location": "Preferences > Actions > Fill button 1",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting for the insulin amount (units, U) of a preset button in the Fill/Prime dialog, used to fill the pump tubing or cannula.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "aeec7f29bf119d62",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "pref_title_fill_button_2",
+      "ui_location": "Preferences > Actions > Fill button 2",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting for the insulin amount (units, U) of a preset button in the Fill/Prime dialog, used to fill the pump tubing or cannula.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "9f616dafce6ac27c",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "pref_title_fill_button_3",
+      "ui_location": "Preferences > Actions > Fill button 3",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting for the insulin amount (units, U) of a preset button in the Fill/Prime dialog, used to fill the pump tubing or cannula.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "7ac96da44164fb45",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
       "key": "pref_title_half_basal_exercise_target",
       "ui_location": "Preferences > Algorithm (APS)",
       "kind": "preference_title",
@@ -2589,6 +3536,40 @@
         {
           "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
           "line": 354
+        }
+      ]
+    },
+    {
+      "key": "pref_title_high_bg_weight",
+      "ui_location": "Preferences > OpenAPS AutoISF > High BG range weight",
+      "kind": "preference_title",
+      "description": "Title of an AutoISF weight setting. Short noun phrase; 'weight' is a numeric factor.",
+      "related_keys": [
+        "openapsama_higher_ISFrange_weight_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "0f9ce7a743533787",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 259
+        }
+      ]
+    },
+    {
+      "key": "pref_title_high_mark",
+      "ui_location": "Preferences > Overview > High mark",
+      "kind": "preference_title",
+      "description": "Title of the glucose value above which readings are shown as high on the main graph.",
+      "related_keys": [
+        "pref_title_low_mark"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "807abda3980681f8",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/UnitDoubleKey.kt",
+          "line": 24
         }
       ]
     },
@@ -2623,6 +3604,72 @@
         {
           "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
           "line": 93
+        }
+      ]
+    },
+    {
+      "key": "pref_title_identification",
+      "ui_location": "Preferences > Maintenance > Identification for crash reports",
+      "kind": "preference_title",
+      "description": "Title of a text field where the user enters an identifier (such as a name or contact) that is attached to crash reports. Noun phrase.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c5e9656436a541c8",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 140
+        }
+      ]
+    },
+    {
+      "key": "pref_title_insulin_button_increment_1",
+      "ui_location": "Preferences > Overview > Buttons > Insulin button increment 1",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting for the insulin amount (in units, U) added by the first quick-add button in the insulin dialog.",
+      "related_keys": [
+        "insulin_increment_button_message"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "d18775160d7b3410",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "pref_title_insulin_button_increment_2",
+      "ui_location": "Preferences > Overview > Buttons > Insulin button increment 2",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting for the insulin amount (in units, U) added by the second quick-add button in the insulin dialog.",
+      "related_keys": [
+        "insulin_increment_button_message"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "581d98069cc1a688",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "pref_title_insulin_button_increment_3",
+      "ui_location": "Preferences > Overview > Buttons > Insulin button increment 3",
+      "kind": "preference_title",
+      "description": "Title of a numeric setting for the insulin amount (in units, U) added by the third quick-add button in the insulin dialog.",
+      "related_keys": [
+        "insulin_increment_button_message"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "d772346bfb684b97",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 55
         }
       ]
     },
@@ -2693,6 +3740,23 @@
       ]
     },
     {
+      "key": "pref_title_lgs_threshold",
+      "ui_location": "Preferences > OpenAPS SMB > LGS threshold",
+      "kind": "preference_title",
+      "description": "Title of the low glucose suspend (LGS) threshold setting: insulin is suspended below this glucose.",
+      "related_keys": [
+        "lgs_threshold_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "5e107f758aa8dc82",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/UnitDoubleKey.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
       "key": "pref_title_logs_amount",
       "ui_location": "Preferences > Maintenance",
       "kind": "preference_title",
@@ -2704,6 +3768,40 @@
         {
           "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
           "line": 393
+        }
+      ]
+    },
+    {
+      "key": "pref_title_low_bg_weight",
+      "ui_location": "Preferences > OpenAPS AutoISF > Low BG range weight",
+      "kind": "preference_title",
+      "description": "Title of an AutoISF weight setting. Short noun phrase; 'weight' is a numeric factor.",
+      "related_keys": [
+        "openapsama_lower_ISFrange_weight_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "b11b100a59ac5c7a",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 248
+        }
+      ]
+    },
+    {
+      "key": "pref_title_low_mark",
+      "ui_location": "Preferences > Overview > Low mark",
+      "kind": "preference_title",
+      "description": "Title of the glucose value (mg/dL or mmol/L) below which readings are shown as low on the main graph. 'Mark' = threshold line.",
+      "related_keys": [
+        "pref_title_high_mark"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "80f9a63ac6ea3260",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/UnitDoubleKey.kt",
+          "line": 23
         }
       ]
     },
@@ -2753,6 +3851,38 @@
       ]
     },
     {
+      "key": "pref_title_max_basal",
+      "ui_location": "Preferences > OpenAPS > Maximum basal rate",
+      "kind": "preference_title",
+      "description": "Title of the numeric setting capping the temporary basal rate (U/h) the algorithm may set. Basal is the continuous background insulin.",
+      "related_keys": [
+        "openapsma_max_basal_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "ec57a3951f113ef4",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "pref_title_max_bolus",
+      "ui_location": "Preferences > Safety > Maximum bolus",
+      "kind": "preference_title",
+      "description": "Title of the numeric safety limit for the largest single bolus (meal or correction insulin dose) in units. Noun phrase.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a405519fc5747420",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 65
+        }
+      ]
+    },
+    {
       "key": "pref_title_max_carbs",
       "ui_location": "Preferences > Safety",
       "kind": "preference_title",
@@ -2764,6 +3894,23 @@
         {
           "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
           "line": 299
+        }
+      ]
+    },
+    {
+      "key": "pref_title_max_daily_multiplier",
+      "ui_location": "Preferences > OpenAPS > Max daily safety multiplier",
+      "kind": "preference_title",
+      "description": "Title of the safety multiplier limiting basal to a multiple of the largest basal rate in the profile.",
+      "related_keys": [
+        "openapsama_max_daily_safety_multiplier_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "ad54287f1fcda4ee",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 107
         }
       ]
     },
@@ -3216,6 +4363,23 @@
       ]
     },
     {
+      "key": "pref_title_pp_weight",
+      "ui_location": "Preferences > OpenAPS AutoISF > Post-prandial ISF weight",
+      "kind": "preference_title",
+      "description": "Title of an AutoISF weight setting. Short noun phrase; 'weight' is a numeric factor.",
+      "related_keys": [
+        "openapsama_pp_ISF_weight_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "0a3b63564c82669d",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 281
+        }
+      ]
+    },
+    {
       "key": "pref_title_protection_timeout",
       "ui_location": "Preferences > Protection",
       "kind": "preference_title",
@@ -3647,6 +4811,74 @@
       ]
     },
     {
+      "key": "pref_title_smb_delivery_ratio",
+      "ui_location": "Preferences > OpenAPS AutoISF > SMB delivery ratio",
+      "kind": "preference_title",
+      "description": "Title of the fixed share of the required insulin that may be delivered as SMB (super micro bolus).",
+      "related_keys": [
+        "openapsama_smb_delivery_ratio_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "c78c272edb2fb479",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 303
+        }
+      ]
+    },
+    {
+      "key": "pref_title_smb_delivery_ratio_bg_range",
+      "ui_location": "Preferences > OpenAPS AutoISF > SMB delivery ratio BG range",
+      "kind": "preference_title",
+      "description": "Title of the glucose range over which the SMB delivery ratio rises linearly.",
+      "related_keys": [
+        "openapsama_smb_delivery_ratio_bg_range_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "48d2c56c37f4ba4e",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 270
+        }
+      ]
+    },
+    {
+      "key": "pref_title_smb_delivery_ratio_max",
+      "ui_location": "Preferences > OpenAPS AutoISF > SMB delivery ratio max",
+      "kind": "preference_title",
+      "description": "Title of the upper end of the linearly increasing SMB delivery ratio.",
+      "related_keys": [
+        "openapsama_smb_delivery_ratio_max_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "06231ab842b0dca1",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 325
+        }
+      ]
+    },
+    {
+      "key": "pref_title_smb_delivery_ratio_min",
+      "ui_location": "Preferences > OpenAPS AutoISF > SMB delivery ratio min",
+      "kind": "preference_title",
+      "description": "Title of the lower end of the linearly increasing SMB delivery ratio.",
+      "related_keys": [
+        "openapsama_smb_delivery_ratio_min_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "9865dde2b4b11247",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 314
+        }
+      ]
+    },
+    {
       "key": "pref_title_smb_frequency",
       "ui_location": "Preferences > Algorithm (APS) > SMB",
       "kind": "preference_title",
@@ -3662,6 +4894,23 @@
       ]
     },
     {
+      "key": "pref_title_smb_max_iob",
+      "ui_location": "Preferences > OpenAPS SMB > Max IOB",
+      "kind": "preference_title",
+      "description": "Title of the setting for the maximum insulin on board (IOB, active insulin) allowed in the SMB algorithm. SMB = super micro bolus.",
+      "related_keys": [
+        "openapssmb_max_iob_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "97b8b2c2737e1977",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 83
+        }
+      ]
+    },
+    {
       "key": "pref_title_smb_max_minutes",
       "ui_location": "Preferences > Algorithm (APS) > SMB",
       "kind": "preference_title",
@@ -3673,6 +4922,40 @@
         {
           "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
           "line": 326
+        }
+      ]
+    },
+    {
+      "key": "pref_title_smb_max_range_extension",
+      "ui_location": "Preferences > OpenAPS AutoISF > SMB max range extension",
+      "kind": "preference_title",
+      "description": "Title of the factor by which SMB may exceed the regular 120 maxSMB/maxUAM minutes.",
+      "related_keys": [
+        "openapsama_smb_max_range_extension_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "39777f58ae80eac8",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 336
+        }
+      ]
+    },
+    {
+      "key": "pref_title_smb_min_5m_carbs_impact",
+      "ui_location": "Preferences > OpenAPS SMB > Min 5m carbs impact",
+      "kind": "preference_title",
+      "description": "Same setting as the AMA one, shown for the SMB algorithm (default 8.0).",
+      "related_keys": [
+        "openapsama_min_5m_carb_impact_summary"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "3e20ee956c45ce60",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/DoubleKey.kt",
+          "line": 151
         }
       ]
     },
@@ -3850,6 +5133,21 @@
         {
           "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/BooleanKey.kt",
           "line": 220
+        }
+      ]
+    },
+    {
+      "key": "pref_title_virtual_pump_type",
+      "ui_location": "Preferences > Virtual pump > Pump type",
+      "kind": "preference_title",
+      "description": "Title of a list setting choosing which real pump model the virtual (simulated) pump imitates. Noun phrase.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f797fd47bd83738c",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 171
         }
       ]
     },
@@ -4109,6 +5407,74 @@
         {
           "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/IntKey.kt",
           "line": 444
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_allowednumbers",
+      "ui_location": "Preferences > SMS Communicator > Allowed phone numbers",
+      "kind": "preference_title",
+      "description": "Title of the text setting listing the phone numbers allowed to send remote commands by SMS.",
+      "related_keys": [
+        "smscommunicator_allowednumbers_summary"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "6702c5a3c2b81249",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 157
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_allowednumbers_summary",
+      "ui_location": "Preferences > SMS Communicator > Allowed phone numbers",
+      "kind": "preference_summary",
+      "description": "Format example for the phone number list, not a sentence: numbers in international format separated by semicolons. Keep the placeholders +XXXXXXXXXX and the separator; do not translate them.",
+      "related_keys": [
+        "smscommunicator_allowednumbers"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "349343468e720d11",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 158
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_otp_pin",
+      "ui_location": "Preferences > SMS Communicator > Additional PIN",
+      "kind": "preference_title",
+      "description": "Title of the setting for a PIN appended to the one-time password (OTP) token that authorises SMS commands. Shown only when remote commands are allowed.",
+      "related_keys": [
+        "smscommunicator_otp_pin_summary"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "ac24e95b62bdfb88",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 164
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_otp_pin_summary",
+      "ui_location": "Preferences > SMS Communicator > Additional PIN",
+      "kind": "preference_summary",
+      "description": "Explains that the user must memorise extra digits and append them to every generated one-time password (OTP).",
+      "related_keys": [
+        "smscommunicator_otp_pin"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "dd332d92abb24a94",
+      "usages": [
+        {
+          "path": "core/keys/src/commonMain/kotlin/app/aaps/core/keys/StringKey.kt",
+          "line": 165
         }
       ]
     },
