@@ -1,0 +1,4706 @@
+{
+  "schema_version": 1,
+  "source_path": "wear/src/main/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "abbreviation_average",
+      "ui_location": "Layout preview only (custom watch face)",
+      "kind": "other",
+      "description": "Preview text for the average delta field in a layout; not shown to users at runtime.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "0e4f3374a9326cac",
+      "usages": [
+        {
+          "path": "wear/src/main/res/layout/activity_custom.xml",
+          "line": 202
+        },
+        {
+          "path": "wear/src/main/res/layout/activity_custom.xml",
+          "line": 420
+        },
+        {
+          "path": "wear/src/main/res/layout/activity_custom.xml",
+          "line": 632
+        },
+        {
+          "path": "wear/src/main/res/layout/activity_digitalstyle.xml",
+          "line": 513
+        }
+      ]
+    },
+    {
+      "key": "action_bolus_confirmation",
+      "ui_location": "Watch > confirmation screen",
+      "kind": "toast",
+      "description": "Short confirmation after a bolus (insulin dose) request was sent to the phone. Request, not yet delivered.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e39660ea616be543",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/BolusActivity.kt",
+          "line": 108
+        }
+      ]
+    },
+    {
+      "key": "action_carbs",
+      "ui_location": "Watch > Carbs screen title; activity label",
+      "kind": "dialog_title",
+      "description": "Title of the carbs entry screen.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c0f300ba103adfbd",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 983
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/CarbActivity.kt",
+          "line": 95
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/ActionSource.kt",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "action_carbs_gram",
+      "ui_location": "Watch > Carbs and eCarbs screens > input label",
+      "kind": "label",
+      "description": "Label of the carbs amount input; [g] stands for grams. Keep brackets.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1ad9b70566803cb8",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/CarbActivity.kt",
+          "line": 89
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ECarbActivity.kt",
+          "line": 82
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TreatmentActivity.kt",
+          "line": 111
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/WizardActivity.kt",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "key": "action_confirm",
+      "ui_location": "Watch > confirmation screen title; activity label",
+      "kind": "button",
+      "description": "Button/title asking the user to confirm an action. Capitalized in the source.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "dd0e85c84aab8277",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 965
+        }
+      ]
+    },
+    {
+      "key": "action_duration_hours",
+      "ui_location": "Watch > eCarbs screen > input label",
+      "kind": "label",
+      "description": "Input label, two lines: name, then unit [hours]: how long the carbs are spread over.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "24e2c3d3b3418e76",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ECarbActivity.kt",
+          "line": 108
+        }
+      ]
+    },
+    {
+      "key": "action_duration_hours_format",
+      "ui_location": "Watch > eCarbs confirm screen; duration input",
+      "kind": "other",
+      "description": "Whole hours of a duration. %1$d is the number of hours; 'h' is the unit.",
+      "related_keys": [
+        "action_duration_hours_minutes_format"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "fdaf61516833af7f",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ECarbActivity.kt",
+          "line": 193
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/PlusMinusInputScreen.kt",
+          "line": 387
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ProfileSwitchActivity.kt",
+          "line": 157
+        }
+      ]
+    },
+    {
+      "key": "action_duration_hours_minutes_format",
+      "ui_location": "Watch > duration input",
+      "kind": "other",
+      "description": "Duration as hours and minutes: %1$d hours, %2$d minutes. Keep short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "19eed46514d421a3",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/PlusMinusInputScreen.kt",
+          "line": 388
+        }
+      ]
+    },
+    {
+      "key": "action_ecarb_confirmation",
+      "ui_location": "Watch > confirmation screen",
+      "kind": "toast",
+      "description": "Short confirmation after a carbs or extended carbs request was sent to the phone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c8271c082a7ddbc0",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/CarbActivity.kt",
+          "line": 117
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ECarbActivity.kt",
+          "line": 137
+        }
+      ]
+    },
+    {
+      "key": "action_ecarbs",
+      "ui_location": "Watch > eCarbs screen title; activity label",
+      "kind": "dialog_title",
+      "description": "Title of the extended carbs entry screen. eCarbs = carbs absorbed over a duration.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c4c12258e49c29e4",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 977
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ECarbActivity.kt",
+          "line": 87
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ECarbActivity.kt",
+          "line": 100
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ECarbActivity.kt",
+          "line": 113
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/ActionSource.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "action_fill_confirmation",
+      "ui_location": "Watch > confirmation screen",
+      "kind": "toast",
+      "description": "Short confirmation after a Fill (prime) request was sent to the phone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7d1e68d8f14bb4a6",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/FillActivity.kt",
+          "line": 103
+        }
+      ]
+    },
+    {
+      "key": "action_free_amount",
+      "ui_location": "Watch > Prime/Fill menu",
+      "kind": "menu_item",
+      "description": "Entry in the Prime/Fill menu that opens an input for any amount.",
+      "related_keys": [
+        "action_preset_1"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "719411c250560483",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/FillMenuActivity.kt",
+          "line": 23
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/FillMenuActivity.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "action_high_unit",
+      "ui_location": "Watch > Temp Target screen > input label",
+      "kind": "label",
+      "description": "Label of the upper target input. %s is the glucose unit. Keep brackets.",
+      "related_keys": [
+        "action_low_unit"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3f5cdf782d9adcce",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TempTargetActivity.kt",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "key": "action_insulin",
+      "ui_location": "Watch > Bolus screen title; activity label",
+      "kind": "dialog_title",
+      "description": "Title of the screen for entering an insulin amount.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "33a5ed8cbd874cd2",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 953
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/BolusActivity.kt",
+          "line": 86
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/ActionSource.kt",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "key": "action_insulin_units",
+      "ui_location": "Watch > Bolus and Fill screens > input label",
+      "kind": "label",
+      "description": "Label of the insulin amount input; [U] stands for units. Keep brackets.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f5a04756729a8f67",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/BolusActivity.kt",
+          "line": 81
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/FillActivity.kt",
+          "line": 76
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TreatmentActivity.kt",
+          "line": 98
+        }
+      ]
+    },
+    {
+      "key": "action_low_unit",
+      "ui_location": "Watch > Temp Target screen > input label",
+      "kind": "label",
+      "description": "Label of the lower target input when a range is used. %s is the glucose unit. Keep brackets.",
+      "related_keys": [
+        "action_high_unit"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "544857506a173cf7",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TempTargetActivity.kt",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "key": "action_minutes_format",
+      "ui_location": "Watch > duration input",
+      "kind": "other",
+      "description": "Duration in minutes. %1$d is the number of minutes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "05732166ca620e45",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/PlusMinusInputScreen.kt",
+          "line": 386
+        }
+      ]
+    },
+    {
+      "key": "action_percentage",
+      "ui_location": "Watch > Profile switch and Calculator screens > input label",
+      "kind": "label",
+      "description": "Input label, two lines: name on the first, unit [%] on the second (newline). Keep the line break and brackets.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4f4b870ccc951e5e",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ProfileSwitchActivity.kt",
+          "line": 91
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/WizardActivity.kt",
+          "line": 98
+        }
+      ]
+    },
+    {
+      "key": "action_preset_1",
+      "ui_location": "Watch > Prime/Fill menu",
+      "kind": "menu_item",
+      "description": "Entry in the Prime/Fill menu that fills with a preset insulin amount configured in the phone app. The number is the preset slot.",
+      "related_keys": [
+        "action_free_amount"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3fe1c82a7ae134ad",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/FillMenuActivity.kt",
+          "line": 20
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/FillMenuActivity.kt",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "action_preset_2",
+      "ui_location": "Watch > Prime/Fill menu",
+      "kind": "menu_item",
+      "description": "Entry in the Prime/Fill menu that fills with a preset insulin amount configured in the phone app. The number is the preset slot.",
+      "related_keys": [
+        "action_free_amount"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "57eef67683526dac",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/FillMenuActivity.kt",
+          "line": 21
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/FillMenuActivity.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "action_preset_3",
+      "ui_location": "Watch > Prime/Fill menu",
+      "kind": "menu_item",
+      "description": "Entry in the Prime/Fill menu that fills with a preset insulin amount configured in the phone app. The number is the preset slot.",
+      "related_keys": [
+        "action_free_amount"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e20ac29b71091750",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/FillMenuActivity.kt",
+          "line": 22
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/FillMenuActivity.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "action_profile_switch_confirmation",
+      "ui_location": "Watch > confirmation screen",
+      "kind": "toast",
+      "description": "Short confirmation after a profile switch request was sent to the phone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "361eb2e2e2019f57",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ProfileSwitchActivity.kt",
+          "line": 140
+        }
+      ]
+    },
+    {
+      "key": "action_quick_wizard_confirmation",
+      "ui_location": "Watch > confirmation screen",
+      "kind": "toast",
+      "description": "Short confirmation after a Quick Wizard request was sent to the phone. Request, not yet done.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2589b33e93719758",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/QuickWizardSource.kt",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "action_scene_confirmation",
+      "ui_location": "Watch > confirmation screen",
+      "kind": "toast",
+      "description": "Short confirmation after a scene activation was requested from the phone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6c12aae4e3babf11",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/SceneSource.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "action_start_minutes",
+      "ui_location": "Watch > eCarbs screen > input label",
+      "kind": "label",
+      "description": "Input label, two lines: name, then unit [minutes] on the second (newline): delay before the extended carbs start.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "045fd3d8cc02f0cd",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ECarbActivity.kt",
+          "line": 95
+        }
+      ]
+    },
+    {
+      "key": "action_target_unit",
+      "ui_location": "Watch > Temp Target screen > input label",
+      "kind": "label",
+      "description": "Label of the single target input. %s is the glucose unit (mg/dl or mmol/l). Keep the square brackets.",
+      "related_keys": [
+        "action_low_unit"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "544857506a173cf7",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TempTargetActivity.kt",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "key": "action_tempt_confirmation",
+      "ui_location": "Watch > confirmation screen (checkmark with text)",
+      "kind": "toast",
+      "description": "Short confirmation after the user sent a temp target request to the phone. Request, not yet done.",
+      "related_keys": [
+        "action_treatment_confirmation"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e6627efc94f381b0",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TempTargetActivity.kt",
+          "line": 147
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/TempTargetSource.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "action_timeshift_hours",
+      "ui_location": "Watch > Profile switch screen > input label",
+      "kind": "label",
+      "description": "Input label, two lines: name then [hours] on the second (newline). Timeshift moves the profile by whole hours, for time zone changes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cd31893f1ce6b4c8",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ProfileSwitchActivity.kt",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "key": "action_treatment_confirmation",
+      "ui_location": "Watch > confirmation screen",
+      "kind": "toast",
+      "description": "Short confirmation after a treatment (insulin and/or carbs) request was sent to the phone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b71576c83260eb9d",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TreatmentActivity.kt",
+          "line": 140
+        }
+      ]
+    },
+    {
+      "key": "action_user_action_confirmation",
+      "ui_location": "Watch > confirmation screen",
+      "kind": "toast",
+      "description": "Short confirmation after a user action was requested from the phone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a44541adb87594d2",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/UserActionSource.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "action_wizard_confirmation",
+      "ui_location": "Watch > confirmation screen",
+      "kind": "toast",
+      "description": "Short confirmation after a bolus calculation request was sent to the phone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9965ea94c2eeebfe",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/WizardActivity.kt",
+          "line": 126
+        }
+      ]
+    },
+    {
+      "key": "activity_IOB",
+      "ui_location": "Watch face > IOB label",
+      "kind": "label",
+      "description": "Label shown on the watch face for IOB (insulin on board). Very short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2d5bf8f0a9bc5ea3",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/utils/BaseWatchFace.kt",
+          "line": 604
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/utils/BaseWatchFace.kt",
+          "line": 660
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/utils/BaseWatchFace.kt",
+          "line": 715
+        },
+        {
+          "path": "wear/src/main/res/layout/activity_custom.xml",
+          "line": 138
+        },
+        {
+          "path": "wear/src/main/res/layout/activity_custom.xml",
+          "line": 356
+        },
+        {
+          "path": "wear/src/main/res/layout/activity_custom.xml",
+          "line": 573
+        },
+        {
+          "path": "wear/src/main/res/layout/activity_digitalstyle.xml",
+          "line": 247
+        }
+      ]
+    },
+    {
+      "key": "activity_carb",
+      "ui_location": "Watch face > carbs label",
+      "kind": "label",
+      "description": "Label shown on the watch face next to carbs on board (COB). Very short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "19b9f25cd76249c0",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/utils/BaseWatchFace.kt",
+          "line": 600
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/utils/BaseWatchFace.kt",
+          "line": 656
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/utils/BaseWatchFace.kt",
+          "line": 711
+        },
+        {
+          "path": "wear/src/main/res/layout/activity_custom.xml",
+          "line": 160
+        },
+        {
+          "path": "wear/src/main/res/layout/activity_custom.xml",
+          "line": 378
+        },
+        {
+          "path": "wear/src/main/res/layout/activity_custom.xml",
+          "line": 594
+        },
+        {
+          "path": "wear/src/main/res/layout/activity_digitalstyle.xml",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "activity_no_status",
+      "ui_location": "Circle watch face > status line placeholder",
+      "kind": "status",
+      "description": "Placeholder shown while no loop status has been received. Short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b014d1a58daa6fbd",
+      "usages": [
+        {
+          "path": "wear/src/main/res/layout/activity_circle.xml",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "key": "bolus_progress",
+      "ui_location": "Watch > notification during bolus",
+      "kind": "notification",
+      "description": "Title of the notification displayed on the watch while a bolus (insulin dose) is being delivered.",
+      "related_keys": [
+        "press_to_cancel"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6042d65640b26f86",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/comm/DataHandlerWear.kt",
+          "line": 339
+        }
+      ]
+    },
+    {
+      "key": "bolus_progress_channel_description",
+      "ui_location": "Android system settings > Notifications > channel",
+      "kind": "other",
+      "description": "Description of the bolus progress notification channel.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a2d5abca193ef7f8",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/comm/DataHandlerWear.kt",
+          "line": 360
+        }
+      ]
+    },
+    {
+      "key": "bolus_progress_channel_name",
+      "ui_location": "Android system settings > Notifications > channel",
+      "kind": "other",
+      "description": "Name of the notification channel for bolus progress. Shown in Android notification settings.",
+      "related_keys": [
+        "bolus_progress_silent_channel_name"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5a2ec7fda20d7a8e",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/comm/DataHandlerWear.kt",
+          "line": 359
+        }
+      ]
+    },
+    {
+      "key": "bolus_progress_silent_channel_description",
+      "ui_location": "Android system settings > Notifications > channel",
+      "kind": "other",
+      "description": "Description of the silent bolus progress channel; it vibrates less.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "73f473345a2acb55",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/comm/DataHandlerWear.kt",
+          "line": 367
+        }
+      ]
+    },
+    {
+      "key": "bolus_progress_silent_channel_name",
+      "ui_location": "Android system settings > Notifications > channel",
+      "kind": "other",
+      "description": "Name of the quieter variant of the bolus progress notification channel.",
+      "related_keys": [
+        "bolus_progress_channel_name"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "265c4d549baae7f3",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/comm/DataHandlerWear.kt",
+          "line": 366
+        }
+      ]
+    },
+    {
+      "key": "cancel_bolus",
+      "ui_location": "Watch > notification during bolus > action button",
+      "kind": "button",
+      "description": "Notification action button that cancels the running bolus. Capitalized; short imperative.",
+      "related_keys": [
+        "press_to_cancel"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9d5fd54cf827cbd2",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/comm/DataHandlerWear.kt",
+          "line": 346
+        }
+      ]
+    },
+    {
+      "key": "carbs_removal_cob_limit",
+      "ui_location": "Watch > Carbs screen > hint (negative carbs)",
+      "kind": "hint",
+      "description": "Hint shown when the user enters negative carbs to remove some: the maximum that can be removed, limited by COB (carbs on board). %1$d is grams.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d7b4241e82577e9c",
+      "usages": [
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/carbsDialog/CarbsDialogScreen.kt",
+          "line": 340
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/CarbActivity.kt",
+          "line": 90
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TreatmentActivity.kt",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "key": "cob_000g",
+      "ui_location": "Digital Style layout placeholder",
+      "kind": "other",
+      "description": "Layout placeholder for a COB value in grams; sizing sample only. Do not translate digits.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "b8fe695842c1098c",
+      "usages": [
+        {
+          "path": "wear/src/main/res/layout/activity_digitalstyle.xml",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "key": "color_name_amber",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "18584f525c384b0d",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "color_name_blue",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bcdee1920bb8b808",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "color_name_bluegray",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "53a2159c1501d675",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "key": "color_name_brown",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3c06360475a53d9e",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "color_name_cyan",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "77639191199ce01b",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "color_name_deeporange",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ac07719f0f3582da",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "color_name_deeppurple",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "33acc33ec71fe9bc",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "color_name_gray",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "019d7332423c582b",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "color_name_green",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a7c0621a62ae8b8d",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "color_name_indigo",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0903626bb2b9f110",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "color_name_lightblue",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4100d3b58aa35287",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "color_name_lightgreen",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ad894e9c6c5a7b94",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "color_name_lime",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "10805555d97b4cc7",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "color_name_multicolor",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7de0b4b935994c3e",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "color_name_orange",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5f0588cd1dbb6130",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "color_name_pink",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5c8fdea2bf93324b",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "color_name_purple",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "61b976d1efef8c35",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "color_name_red",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "10561a81ba402271",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "color_name_teal",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "17c1d42419cc8b3d",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "key": "color_name_white",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "13f68e12bbd81bb6",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "color_name_yellow",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your color",
+      "kind": "label",
+      "description": "Name of a color in the color choice list (Material palette name). Lowercase noun/adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a1bb9effa4c04852",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "complication_bg_graph",
+      "ui_location": "Watch > complication picker; accessibility description",
+      "kind": "label",
+      "description": "Name of the glucose graph complication; also its content description for screen readers.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b6d20a6ab336f2bc",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 351
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/BgGraphComplication.kt",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "key": "complication_blood_glucose",
+      "ui_location": "Watch > complication data source picker",
+      "kind": "label",
+      "description": "Name of the glucose complication data source.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1eded4ee3fe1beea",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 207
+        }
+      ]
+    },
+    {
+      "key": "complication_blood_glucose_ext1",
+      "ui_location": "Watch > complication data source picker",
+      "kind": "label",
+      "description": "Name of the glucose complication for the first external data source (second data set, 'Ext1').",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ded6efb2085c1996",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 390
+        }
+      ]
+    },
+    {
+      "key": "complication_blood_glucose_ext2",
+      "ui_location": "Watch > complication data source picker",
+      "kind": "label",
+      "description": "Name of the glucose complication for the second external data source ('Ext2').",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4b9bf93a6667d093",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 408
+        }
+      ]
+    },
+    {
+      "key": "complication_blood_glucose_large",
+      "ui_location": "Watch > complication data source picker",
+      "kind": "label",
+      "description": "Name of a larger-size variant of the glucose complication.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b432b0c73085b14d",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 372
+        }
+      ]
+    },
+    {
+      "key": "complication_cwf_ambient_bg",
+      "ui_location": "Watch > complication picker; always-on",
+      "kind": "label",
+      "description": "Name of a source showing the custom watch face glucose in always-on mode; also its text.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cd3a8daa21e831ff",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 231
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/CwfAmbientBgComplication.kt",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "key": "complication_cwf_ambient_status",
+      "ui_location": "Watch > complication picker; always-on",
+      "kind": "label",
+      "description": "Name of a source showing the custom watch face status in always-on mode; also its text.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f4e33baab7939062",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 252
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/CwfAmbientStatusComplication.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "complication_cwf_image",
+      "ui_location": "Watch > complication data source picker",
+      "kind": "label",
+      "description": "Name of the source that shows the custom watch face as an image.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b4cb8098aa9a58dd",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 283
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/CwfImageComplication.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "complication_full_status",
+      "ui_location": "Watch > complication data source picker",
+      "kind": "label",
+      "description": "Name of the data source showing the full AAPS status in one complication.",
+      "related_keys": [
+        "complication_full_status_flipped"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ce0ec3b851e40362",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 171
+        }
+      ]
+    },
+    {
+      "key": "complication_full_status_flipped",
+      "ui_location": "Watch > complication data source picker",
+      "kind": "label",
+      "description": "Name of the full status source with the layout flipped.",
+      "related_keys": [
+        "complication_full_status"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2897d55f3f9e4cf8",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 189
+        }
+      ]
+    },
+    {
+      "key": "complication_summary_none",
+      "ui_location": "Watch > Settings > Watchface > Custom > complication slot",
+      "kind": "preference_summary",
+      "description": "Summary of an empty complication slot telling the user to tap to choose what it shows.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "27c37c6b971fb1f0",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/ComplicationPickerSupport.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "complication_type_priority_icon",
+      "ui_location": "Watch > Complication type priority > options",
+      "kind": "label",
+      "description": "Option: prefer an icon complication type.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7cafec64e7a3b11b",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 127
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 140
+        }
+      ]
+    },
+    {
+      "key": "complication_type_priority_text",
+      "ui_location": "Watch > Complication type priority > options",
+      "kind": "label",
+      "description": "Option: prefer a text complication type.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "249994e6329b5d33",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 126
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 139
+        }
+      ]
+    },
+    {
+      "key": "complication_type_priority_use_default",
+      "ui_location": "Watch > Complication type priority > per-slot options",
+      "kind": "label",
+      "description": "Option: use the default priority set for all slots.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4bd760d1b70508e7",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 137
+        }
+      ]
+    },
+    {
+      "key": "complication_type_priority_value",
+      "ui_location": "Watch > Complication type priority > options",
+      "kind": "label",
+      "description": "Option: prefer a value or gauge complication type.",
+      "related_keys": [
+        "complication_type_priority_text"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "32a762f8ddd24de1",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 125
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 138
+        }
+      ]
+    },
+    {
+      "key": "custom_pref_show_seconds",
+      "ui_location": "Watch > Settings > Watchface > Custom",
+      "kind": "preference_title",
+      "description": "Checkbox title: show seconds in the time.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b9f581ddd5fb8047",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "key": "cwf_complication_layout",
+      "ui_location": "Watch > Settings > Watchface > Custom",
+      "kind": "preference_title",
+      "description": "Title of an entry about the position and size of complications, taken from the loaded custom watch face.",
+      "related_keys": [
+        "cwf_complication_layout_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2062365ba282bd23",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 173
+        }
+      ]
+    },
+    {
+      "key": "cwf_complication_layout_description",
+      "ui_location": "Watch > Settings > Watchface > Custom",
+      "kind": "preference_summary",
+      "description": "Summary explaining that the layout comes from the loaded custom watch face. Whole sentence.",
+      "related_keys": [
+        "cwf_complication_layout"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "51510176c71fdc8f",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 174
+        }
+      ]
+    },
+    {
+      "key": "datalayer_notification_text",
+      "ui_location": "Watch > foreground service notification",
+      "kind": "notification",
+      "description": "Body explaining AAPS runs in the foreground and how to hide the notification. Whole sentence.",
+      "related_keys": [
+        "datalayer_notification_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f160374af06ca732",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/comm/DataLayerListenerServiceWear.kt",
+          "line": 173
+        }
+      ]
+    },
+    {
+      "key": "datalayer_notification_title",
+      "ui_location": "Watch > foreground service notification",
+      "kind": "notification",
+      "description": "Title of the persistent notification of the sync service that runs on the watch.",
+      "related_keys": [
+        "datalayer_notification_text"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "58a2d88b55764604",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/comm/DataLayerListenerServiceWear.kt",
+          "line": 172
+        }
+      ]
+    },
+    {
+      "key": "day_short",
+      "ui_location": "Watch face and complications > time since last reading",
+      "kind": "other",
+      "description": "Single-letter unit for days, appended to a number, e.g. '3d'.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e93dbb8ca4e8987b",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/utils/DisplayFormat.kt",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "key": "digitalstyle_pref_your_color",
+      "ui_location": "Watch > Settings > Watchface > Digital Style",
+      "kind": "preference_title",
+      "description": "Title of a list choice for the accent color of the Digital Style watch face.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5031b4fb89e64262",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_digitalstyle.xml",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "digitalstyle_pref_your_color_opacity",
+      "ui_location": "Watch > Settings > Watchface > Digital Style",
+      "kind": "preference_title",
+      "description": "Title of a list choice for how opaque the chosen color is.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0b3d5d234f6c058e",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_digitalstyle.xml",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "digitalstyle_pref_your_color_saturation",
+      "ui_location": "Watch > Settings > Watchface > Digital Style",
+      "kind": "preference_title",
+      "description": "Title of a list choice for how saturated the chosen color is.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "477b13497443e32f",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_digitalstyle.xml",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "key": "digitalstyle_pref_your_style",
+      "ui_location": "Watch > Settings > Watchface > Digital Style",
+      "kind": "preference_title",
+      "description": "Title of a list choice for the frame style of the Digital Style watch face.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e2313e3375f19137",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_digitalstyle.xml",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "key": "digitalstyle_style_full",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your style",
+      "kind": "label",
+      "description": "Option for the frame style of the Digital Style watch face, from no frame to full.",
+      "related_keys": [
+        "digitalstyle_pref_your_style"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0e7de72db10ed563",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 7
+        }
+      ]
+    },
+    {
+      "key": "digitalstyle_style_minimal",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your style",
+      "kind": "label",
+      "description": "Option for the frame style of the Digital Style watch face, from no frame to full.",
+      "related_keys": [
+        "digitalstyle_pref_your_style"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "63e0bbb80bdee597",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 5
+        }
+      ]
+    },
+    {
+      "key": "digitalstyle_style_none",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your style",
+      "kind": "label",
+      "description": "Option for the frame style of the Digital Style watch face, from no frame to full.",
+      "related_keys": [
+        "digitalstyle_pref_your_style"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b957eb2ce818d076",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 4
+        }
+      ]
+    },
+    {
+      "key": "digitalstyle_style_shape",
+      "ui_location": "Watch > Settings > Watchface > Digital Style > Your style",
+      "kind": "label",
+      "description": "Option for the frame style of the Digital Style watch face, from no frame to full.",
+      "related_keys": [
+        "digitalstyle_pref_your_style"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3f06acd2ca5617c1",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/digitalstyle_arrays.xml",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "key": "duration_1_hour",
+      "ui_location": "Watch > Settings > Complication > BG graph time range; BG graph tile settings",
+      "kind": "label",
+      "description": "Option for a graph time range in hours, used in the complication list and the BG graph tile settings. Keep short.",
+      "related_keys": [
+        "pref_complication_bg_graph_hours"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "97821006aa9f5e31",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/BgGraphTileSettingsActivity.kt",
+          "line": 47
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "duration_3_hours",
+      "ui_location": "Watch > Settings > Complication > BG graph time range; BG graph tile settings",
+      "kind": "label",
+      "description": "Option for a graph time range in hours, used in the complication list and the BG graph tile settings. Keep short.",
+      "related_keys": [
+        "pref_complication_bg_graph_hours"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6e7cd598c9524e42",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/BgGraphTileSettingsActivity.kt",
+          "line": 48
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "duration_6_hours",
+      "ui_location": "Watch > Settings > Complication > BG graph time range; BG graph tile settings",
+      "kind": "label",
+      "description": "Option for a graph time range in hours, used in the complication list and the BG graph tile settings. Keep short.",
+      "related_keys": [
+        "pref_complication_bg_graph_hours"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "885761fd6f31e981",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/BgGraphTileSettingsActivity.kt",
+          "line": 49
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "ecarbs_start_format",
+      "ui_location": "Watch > eCarbs confirm screen",
+      "kind": "other",
+      "description": "Delay before the extended carbs start. %1$d is minutes; may be prefixed with + by the app.",
+      "related_keys": [
+        "action_start_minutes"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b2875e209199d37e",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ECarbActivity.kt",
+          "line": 189
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ECarbActivity.kt",
+          "line": 190
+        }
+      ]
+    },
+    {
+      "key": "error",
+      "ui_location": "Phone AAPS > status label (shared string)",
+      "kind": "status",
+      "description": "General word 'Error' used as a label for a failed item. Used in several modules.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "595cb7b7ef1f1aef",
+      "usages": [
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/ImportSummaryComponents.kt",
+          "line": 59
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/NumberInputRow.kt",
+          "line": 157
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/banner/Banner.kt",
+          "line": 38
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/GlobalSnackbarHost.kt",
+          "line": 161
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/dialogs/ValueInputDialog.kt",
+          "line": 83
+        },
+        {
+          "path": "core/ui/src/commonMain/kotlin/app/aaps/core/ui/compose/preference/AdaptiveSwitchPreference.kt",
+          "line": 94
+        },
+        {
+          "path": "implementation/src/commonMain/kotlin/app/aaps/implementation/queue/CommandExecutor.kt",
+          "line": 271
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionDisableScene.kt",
+          "line": 48
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionEnableScene.kt",
+          "line": 48
+        },
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/actions/ActionRunScene.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "hour_minute",
+      "ui_location": "Custom watch face > time text",
+      "kind": "other",
+      "description": "Time format joining hours and minutes; %1$s hour, %2$s minute. Keep placeholders and separator.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2809baf5937246de",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 902
+        }
+      ]
+    },
+    {
+      "key": "hour_minute_second",
+      "ui_location": "Custom watch face > time text",
+      "kind": "other",
+      "description": "Time format joining hours, minutes, seconds; %1$s, %2$s, %3$s.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c70c9cbbe05bb29b",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 900
+        }
+      ]
+    },
+    {
+      "key": "hour_short",
+      "ui_location": "Watch complications and tiles > durations",
+      "kind": "other",
+      "description": "Single-letter unit for hours, appended to a number, e.g. '2h'.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "40c66a93c67fac7f",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/BrTtComplication.kt",
+          "line": 67
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/TargetComplication.kt",
+          "line": 55
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/BgGraphActivity.kt",
+          "line": 82
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/utils/DisplayFormat.kt",
+          "line": 69
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/BgGraphTileService.kt",
+          "line": 227
+        }
+      ]
+    },
+    {
+      "key": "iob_0_00u",
+      "ui_location": "Digital Style layout placeholder",
+      "kind": "other",
+      "description": "Layout placeholder for an IOB value in units; sizing sample only.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "f8dbb6b6a3be3b9f",
+      "usages": [
+        {
+          "path": "wear/src/main/res/layout/activity_digitalstyle.xml",
+          "line": 263
+        }
+      ]
+    },
+    {
+      "key": "label_actions_tile",
+      "ui_location": "Wear OS watch > tile picker; Settings > Tiles",
+      "kind": "label",
+      "description": "Name of the Actions tile, which holds quick action buttons. Also an entry in the watch's tile settings list. Short noun.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b19fea3139608284",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 746
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/TileMenuActivity.kt",
+          "line": 21
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/TileMenuActivity.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "label_quick_wizard_tile",
+      "ui_location": "Wear OS watch > tile picker",
+      "kind": "label",
+      "description": "Name of the tile with Quick Wizard buttons (preset bolus calculator entries configured on the phone). Product feature name. Short label.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9a985ddf32fd4f63",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 780
+        }
+      ]
+    },
+    {
+      "key": "label_scene_tile",
+      "ui_location": "Wear OS watch > tile picker; Settings > Tiles; Loop status screen card title",
+      "kind": "label",
+      "description": "Name of the Scene tile. A scene is a named preset that applies several settings at once. Also the title of the scene card on the watch's loop status screen.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "826eeb1baec61824",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 808
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 431
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/TileMenuActivity.kt",
+          "line": 24
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/TileMenuActivity.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "label_temp_target_tile",
+      "ui_location": "Wear OS watch > tile picker; Settings > Tiles",
+      "kind": "label",
+      "description": "Name of the tile with temporary target buttons. Temp target is a temporary change of the glucose target range. Short label.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9ff85a5b92055704",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 763
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/TileMenuActivity.kt",
+          "line": 22
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/TileMenuActivity.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "label_user_action_tile",
+      "ui_location": "Wear OS watch > tile picker",
+      "kind": "label",
+      "description": "Name of the tile with buttons for user-defined actions configured in the AAPS phone app. Short label.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e572612470f1d0aa",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 794
+        }
+      ]
+    },
+    {
+      "key": "label_watchface_circle",
+      "ui_location": "Wear OS watch > watch face picker",
+      "kind": "label",
+      "description": "Name of the Circle watch face as listed in the Wear OS watch face picker. Part of a proper name pattern 'AAPS(Style)'; keep the brackets and the style name short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2179c016b5a30f32",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "key": "label_watchface_custom",
+      "ui_location": "Wear OS watch > watch face picker; Settings > Watchface > main menu entry; complication picker",
+      "kind": "label",
+      "description": "Name of the Custom watch face. Shown in the watch face picker, as an entry in the watch's Settings menu and as the label of the custom watch face complication. Short label.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8c5f166b6a6ed908",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 105
+        },
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 307
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/cwf/CwfFaceComplication.kt",
+          "line": 380
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/PreferenceMenuActivity.kt",
+          "line": 40
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/PreferenceMenuActivity.kt",
+          "line": 90
+        }
+      ]
+    },
+    {
+      "key": "label_watchface_custom_ambient",
+      "ui_location": "Wear OS watch > complication data source picker",
+      "kind": "label",
+      "description": "Name of the complication data source that shows the custom watch face in always-on (ambient) mode. Short label.",
+      "related_keys": [
+        "label_watchface_custom"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6b7dbcc3ed39cf1d",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 331
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/cwf/CwfAmbientFaceComplication.kt",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "key": "label_watchface_digital_style",
+      "ui_location": "Wear OS watch > watch face picker",
+      "kind": "label",
+      "description": "Name of the Digital Style watch face in the watch face picker. Pattern 'AAPS(Style)'; keep it short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ff2a133f6a616b39",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "key": "menu_bg_graph",
+      "ui_location": "Watch > main menu",
+      "kind": "menu_item",
+      "description": "Menu entry showing the glucose graph. BG is blood glucose.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "595b78e5be3525e0",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 72
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 98
+        }
+      ]
+    },
+    {
+      "key": "menu_bolus",
+      "ui_location": "Watch > Settings > Complication tap action list",
+      "kind": "label",
+      "description": "Option in a list of actions to run on tap: open the bolus (insulin dose) entry.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "748c9097dae7b960",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "menu_carb",
+      "ui_location": "Watch > Settings > Complication tap action list",
+      "kind": "label",
+      "description": "Option in a list of actions to run on tap: open the carbs entry.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bcd6c08175fa5bbd",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "menu_default",
+      "ui_location": "Watch > Settings > Complication tap action list",
+      "kind": "label",
+      "description": "Option meaning use the default tap action.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f52df8f9a3d1a587",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "menu_ecarb",
+      "ui_location": "Watch > main menu",
+      "kind": "menu_item",
+      "description": "Menu entry for extended carbs (eCarbs): carbs entered with a delayed start and a duration, absorbed over time. Short; keep 'eCarbs' brand term.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a5918a6d02404b25",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 66
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 100
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 25
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "key": "menu_install_watchface",
+      "ui_location": "Watch > main menu",
+      "kind": "menu_item",
+      "description": "Menu entry that installs the AAPS watch face on the watch. Imperative.",
+      "related_keys": [
+        "menu_installing_watchface"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a4e3a4ebbafbe67e",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 90
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 108
+        }
+      ]
+    },
+    {
+      "key": "menu_installing_watchface",
+      "ui_location": "Watch > main menu",
+      "kind": "status",
+      "description": "Replaces the Install watchface entry while installation is running. Progress wording.",
+      "related_keys": [
+        "menu_install_watchface"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c728bf98c5a1b106",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 90
+        }
+      ]
+    },
+    {
+      "key": "menu_menu",
+      "ui_location": "Watch > Settings > Complication tap action list",
+      "kind": "label",
+      "description": "Option meaning open the watch main menu on tap.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e1fbae60de25e894",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "menu_none",
+      "ui_location": "Watch > Settings > Complication tap action list",
+      "kind": "label",
+      "description": "Option meaning no action on tap.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1e34939c6ae1ac29",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "menu_prime_fill",
+      "ui_location": "Watch > main menu; activity title",
+      "kind": "menu_item",
+      "description": "Menu entry and screen title for Prime/Fill: delivering insulin to fill the tubing or cannula after a set change.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "dbda82299ba0e98f",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 911
+        },
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 971
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/FillActivity.kt",
+          "line": 81
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/FillMenuActivity.kt",
+          "line": 14
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 76
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 106
+        }
+      ]
+    },
+    {
+      "key": "menu_resync",
+      "ui_location": "Watch > main menu",
+      "kind": "menu_item",
+      "description": "Menu entry that asks the phone to resend all data to the watch. Imperative; Re-Sync wording.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7141326e99933fc9",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 61
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 107
+        }
+      ]
+    },
+    {
+      "key": "menu_settings",
+      "ui_location": "Watch > main menu; settings screen title",
+      "kind": "menu_item",
+      "description": "Menu entry and screen title for the watch app settings.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bb2210acc3a3bf89",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 879
+        },
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 938
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 60
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 73
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 104
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/PreferenceMenuActivity.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "menu_status",
+      "ui_location": "Watch > main menu",
+      "kind": "menu_item",
+      "description": "Menu entry opening the status submenu (pump, loop, profile switch, TDD).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "824e5922b795822e",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 916
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 74
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 105
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/StatusMenuActivity.kt",
+          "line": 15
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "menu_tempt",
+      "ui_location": "Watch > Temp Target screens (activity title); action button",
+      "kind": "button",
+      "description": "Very short label for temp target (temporary glucose target) on an action button. Space is tight.",
+      "related_keys": [
+        "menu_tempt_long"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "4130ea5acae2bb57",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 989
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/ActionSource.kt",
+          "line": 62
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 74
+        }
+      ]
+    },
+    {
+      "key": "menu_tempt_long",
+      "ui_location": "Watch > Actions settings (tile configuration)",
+      "kind": "label",
+      "description": "Full name of the temp target action, used where there is more room, for example in the tile setting list.",
+      "related_keys": [
+        "menu_tempt"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "4a1874568dbd00f3",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/ActionSource.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "menu_treatment",
+      "ui_location": "Watch > main menu > Treatment (title)",
+      "kind": "menu_item",
+      "description": "Name of the treatment entry (insulin and carbs entry) in the watch main menu and the screen title.",
+      "related_keys": [
+        "menu_treatment_short"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5b08f54c53c5288a",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 947
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TreatmentActivity.kt",
+          "line": 103
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/TreatmentActivity.kt",
+          "line": 117
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 67
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 101
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/ActionSource.kt",
+          "line": 38
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 24
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "menu_treatment_short",
+      "ui_location": "Watch > Actions tile button",
+      "kind": "button",
+      "description": "Very short form of Treatment for a small button on the Actions tile.",
+      "related_keys": [
+        "menu_treatment"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "afe7b0608d80a582",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/ActionSource.kt",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "menu_wizard",
+      "ui_location": "Watch > main menu > Calculator (title)",
+      "kind": "menu_item",
+      "description": "Name of the bolus calculator on the watch: menu entry and screen title. Computes an insulin dose from carbs and glucose.",
+      "related_keys": [
+        "menu_wizard_short"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "37999230a7ada5b4",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 892
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/WizardActivity.kt",
+          "line": 90
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/WizardActivity.kt",
+          "line": 103
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 65
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 99
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/ActionSource.kt",
+          "line": 31
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 23
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "key": "menu_wizard_short",
+      "ui_location": "Watch > Actions tile button",
+      "kind": "button",
+      "description": "Very short form of Calculator for a small button on the Actions tile.",
+      "related_keys": [
+        "menu_wizard"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "03bb7d99a2d76289",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/ActionSource.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "minute_short",
+      "ui_location": "Watch BG graph screen and tile > time units",
+      "kind": "other",
+      "description": "Single-letter unit for minutes, appended to a number, e.g. '5m'.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8d6c3a05b56c3c23",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/BgGraphActivity.kt",
+          "line": 83
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/BgGraphTileService.kt",
+          "line": 228
+        }
+      ]
+    },
+    {
+      "key": "msg_warning_old",
+      "ui_location": "Wear OS watch > complication tap > toast/message",
+      "kind": "toast",
+      "description": "Warning shown after tapping a complication whose glucose data is stale. %1$s is a short elapsed time such as '12m'. xDrip+ and NS (Nightscout) are product names. Whole sentence.",
+      "related_keys": [
+        "msg_warning_sync"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8355a4837436b18b",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/ComplicationTapActivity.kt",
+          "line": 166
+        }
+      ]
+    },
+    {
+      "key": "msg_warning_sync",
+      "ui_location": "Wear OS watch > complication tap > toast/message",
+      "kind": "toast",
+      "description": "Warning shown after tapping a complication that signals missing sync. %1$s is a short elapsed time such as '12m' or '2h'. Whole sentence.",
+      "related_keys": [
+        "msg_warning_old"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8355a4837436b18b",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/ComplicationTapActivity.kt",
+          "line": 166
+        }
+      ]
+    },
+    {
+      "key": "no_cob_g",
+      "ui_location": "Custom watch face > external COB placeholder",
+      "kind": "status",
+      "description": "Placeholder shown when no COB (carbs on board) value is available; g is grams.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "d5d05368dcf34729",
+      "usages": [
+        {
+          "path": "wear/src/main/res/layout/activity_custom.xml",
+          "line": 172
+        },
+        {
+          "path": "wear/src/main/res/layout/activity_custom.xml",
+          "line": 390
+        },
+        {
+          "path": "wear/src/main/res/layout/activity_custom.xml",
+          "line": 605
+        }
+      ]
+    },
+    {
+      "key": "no_iob_u",
+      "ui_location": "Layout preview only (custom watch face)",
+      "kind": "other",
+      "description": "Placeholder for an unknown IOB (insulin on board) in layout previews, ending in unit U.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "d3b4d7e116ebdace",
+      "usages": [
+        {
+          "path": "wear/src/main/res/layout/activity_custom.xml",
+          "line": 151
+        },
+        {
+          "path": "wear/src/main/res/layout/activity_custom.xml",
+          "line": 369
+        },
+        {
+          "path": "wear/src/main/res/layout/activity_custom.xml",
+          "line": 585
+        }
+      ]
+    },
+    {
+      "key": "no_tmp_basal_u_h",
+      "ui_location": "Layout preview only (custom watch face)",
+      "kind": "other",
+      "description": "Placeholder for an unknown temporary basal rate in U/h (units per hour).",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "5b0adae5ac7fef8b",
+      "usages": [
+        {
+          "path": "wear/src/main/res/layout/activity_custom.xml",
+          "line": 256
+        },
+        {
+          "path": "wear/src/main/res/layout/activity_custom.xml",
+          "line": 474
+        },
+        {
+          "path": "wear/src/main/res/layout/activity_custom.xml",
+          "line": 698
+        },
+        {
+          "path": "wear/src/main/res/layout/activity_digitalstyle.xml",
+          "line": 550
+        }
+      ]
+    },
+    {
+      "key": "off",
+      "ui_location": "Watch > Settings > Watchface > Custom > switch summary",
+      "kind": "status",
+      "description": "Summary text of a switch in the off state.",
+      "related_keys": [
+        "on"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "1585c6dcdfb9a3d6",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputDropdownOnOffMenu.kt",
+          "line": 21
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/CustomWatchfaceConfigurationFragment.kt",
+          "line": 83
+        },
+        {
+          "path": "wear/src/main/res/xml/complication_preferences.xml",
+          "line": 26
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 11
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 20
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 30
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 40
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 50
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 60
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "on",
+      "ui_location": "Watch > Settings > Watchface > Custom > switch summary",
+      "kind": "status",
+      "description": "Summary text of a switch in the on state. Shared with the phone automation dropdown.",
+      "related_keys": [
+        "off"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "3d19e774cda88916",
+      "usages": [
+        {
+          "path": "plugins/automation/src/commonMain/kotlin/app/aaps/plugins/automation/elements/InputDropdownOnOffMenu.kt",
+          "line": 20
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/CustomWatchfaceConfigurationFragment.kt",
+          "line": 82
+        },
+        {
+          "path": "wear/src/main/res/xml/complication_preferences.xml",
+          "line": 25
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 10
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 19
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 29
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 39
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 49
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 59
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "key": "pref_10_min",
+      "ui_location": "Watch > Settings > Others > HR Smoothing",
+      "kind": "label",
+      "description": "Option in the heart rate smoothing list: the time window in minutes over which heart rate samples are averaged. Keep short.",
+      "related_keys": [
+        "pref_heartRateSmoothing"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "717d1954f3f02da5",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 111
+        }
+      ]
+    },
+    {
+      "key": "pref_15_min",
+      "ui_location": "Watch > Settings > Others > HR Smoothing",
+      "kind": "label",
+      "description": "Option in the heart rate smoothing list: the time window in minutes over which heart rate samples are averaged. Keep short.",
+      "related_keys": [
+        "pref_heartRateSmoothing"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8633eb7a84f3cefa",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "key": "pref_1_hour",
+      "ui_location": "Watch > Settings > Graph > Chart Timeframe",
+      "kind": "label",
+      "description": "One option in the chart timeframe list, a number of hours of graph history. Keep short.",
+      "related_keys": [
+        "pref_chart_timeframe"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c085f975e5f8e56e",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 5
+        }
+      ]
+    },
+    {
+      "key": "pref_1_min",
+      "ui_location": "Watch > Settings > Others > HR Smoothing",
+      "kind": "label",
+      "description": "Option in the heart rate smoothing list for the value 1 minute, so it effectively means no smoothing. The English text is 'disabled' although the source key says 1 min.",
+      "related_keys": [
+        "pref_heartRateSmoothing"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "25d4f849508c86a9",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 109
+        }
+      ]
+    },
+    {
+      "key": "pref_2_hours",
+      "ui_location": "Watch > Settings > Graph > Chart Timeframe",
+      "kind": "label",
+      "description": "One option in the chart timeframe list, a number of hours of graph history. Keep short.",
+      "related_keys": [
+        "pref_chart_timeframe"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "475d810dbf1adb67",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "key": "pref_3_hours",
+      "ui_location": "Watch > Settings > Graph > Chart Timeframe",
+      "kind": "label",
+      "description": "One option in the chart timeframe list, a number of hours of graph history. Keep short.",
+      "related_keys": [
+        "pref_chart_timeframe"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "29b9ee8ea05ac6bc",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 7
+        }
+      ]
+    },
+    {
+      "key": "pref_4_hours",
+      "ui_location": "Watch > Settings > Graph > Chart Timeframe",
+      "kind": "label",
+      "description": "One option in the chart timeframe list, a number of hours of graph history. Keep short.",
+      "related_keys": [
+        "pref_chart_timeframe"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "32314d2b691e0183",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 8
+        }
+      ]
+    },
+    {
+      "key": "pref_5_hours",
+      "ui_location": "Watch > Settings > Graph > Chart Timeframe",
+      "kind": "label",
+      "description": "One option in the chart timeframe list, a number of hours of graph history. Keep short.",
+      "related_keys": [
+        "pref_chart_timeframe"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f140e5df6d70fe02",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "key": "pref_5_min",
+      "ui_location": "Watch > Settings > Others > HR Smoothing",
+      "kind": "label",
+      "description": "Option in the heart rate smoothing list: the time window in minutes over which heart rate samples are averaged. Keep short.",
+      "related_keys": [
+        "pref_heartRateSmoothing"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "06745e508d37c72a",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "key": "pref_animations",
+      "ui_location": "Watch > Settings > Watchface > Circle",
+      "kind": "preference_title",
+      "description": "Checkbox title: enable animations on the Circle watch face.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "920f7002bdc9c0da",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_circle.xml",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "pref_big_numbers",
+      "ui_location": "Watch > Settings > Watchface > Circle",
+      "kind": "preference_title",
+      "description": "Checkbox title: show the glucose value in larger digits on the Circle watch face.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "63f8389b90d30d2d",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_circle.xml",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "pref_chart_timeframe",
+      "ui_location": "Watch > Settings > Graph",
+      "kind": "preference_title",
+      "description": "Title of a list choice: how many hours of glucose history the graph shows. Options are 1 to 5 hours.",
+      "related_keys": [
+        "pref_1_hour"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9144401dba8b2e94",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/graph_preferences.xml",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "key": "pref_complication_1",
+      "ui_location": "Watch > Settings > Watchface > Custom",
+      "kind": "preference_title",
+      "description": "Title of a complication slot entry of the custom watch face; the number is the slot. Tapping lets the user choose the data source.",
+      "related_keys": [
+        "complication_summary_none"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1de3a7e288bd03d9",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 1301
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 94
+        }
+      ]
+    },
+    {
+      "key": "pref_complication_2",
+      "ui_location": "Watch > Settings > Watchface > Custom",
+      "kind": "preference_title",
+      "description": "Title of a complication slot entry of the custom watch face; the number is the slot. Tapping lets the user choose the data source.",
+      "related_keys": [
+        "complication_summary_none"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8d59ceabc3c6a5a4",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 1302
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 108
+        }
+      ]
+    },
+    {
+      "key": "pref_complication_3",
+      "ui_location": "Watch > Settings > Watchface > Custom",
+      "kind": "preference_title",
+      "description": "Title of a complication slot entry of the custom watch face; the number is the slot. Tapping lets the user choose the data source.",
+      "related_keys": [
+        "complication_summary_none"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "bf47d8bc3a1370c5",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 1303
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 122
+        }
+      ]
+    },
+    {
+      "key": "pref_complication_4",
+      "ui_location": "Watch > Settings > Watchface > Custom",
+      "kind": "preference_title",
+      "description": "Title of a complication slot entry of the custom watch face; the number is the slot. Tapping lets the user choose the data source.",
+      "related_keys": [
+        "complication_summary_none"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "845602d28660bc83",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 1304
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 136
+        }
+      ]
+    },
+    {
+      "key": "pref_complication_5",
+      "ui_location": "Watch > Settings > Watchface > Custom",
+      "kind": "preference_title",
+      "description": "Title of a complication slot entry of the custom watch face; the number is the slot. Tapping lets the user choose the data source.",
+      "related_keys": [
+        "complication_summary_none"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3793e8c4b2d275e5",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 1305
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 150
+        }
+      ]
+    },
+    {
+      "key": "pref_complication_bg_graph_hours",
+      "ui_location": "Watch > Settings > Complication",
+      "kind": "preference_title",
+      "description": "Title of a list choice: time range of the glucose graph complication, in hours.",
+      "related_keys": [
+        "duration_1_hour"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "4138327a0dccfb0e",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/complication_preferences.xml",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "pref_complication_settings",
+      "ui_location": "Watch > Settings > main menu",
+      "kind": "menu_item",
+      "description": "Entry in the watch's Settings menu that opens the complication options. Complications are small data widgets on a watch face. Short noun.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "82bfd18a65930d72",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/PreferenceMenuActivity.kt",
+          "line": 32
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/PreferenceMenuActivity.kt",
+          "line": 82
+        }
+      ]
+    },
+    {
+      "key": "pref_complication_tap_action",
+      "ui_location": "Watch > Settings > Complication",
+      "kind": "preference_title",
+      "description": "Title of a list choice: what happens when the user taps a complication (for example open the menu or the wizard).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "020297b7c1b0a6f3",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/complication_preferences.xml",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "key": "pref_complication_type_priority",
+      "ui_location": "Watch > Settings > Complication; activity title",
+      "kind": "preference_title",
+      "description": "Title of the setting that decides which complication type (value, text, icon) is preferred for each slot.",
+      "related_keys": [
+        "pref_complication_type_priority_all"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6ed167d65ae284b6",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 885
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/ComplicationTypeSettingsActivity.kt",
+          "line": 43
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 243
+        }
+      ]
+    },
+    {
+      "key": "pref_complication_type_priority_all",
+      "ui_location": "Watch > Settings > Complication type priority",
+      "kind": "label",
+      "description": "Entry that sets the default type priority for all slots.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0dbe5d546884a21b",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 278
+        }
+      ]
+    },
+    {
+      "key": "pref_complication_type_priority_warning",
+      "ui_location": "Watch > Settings > Complication type priority",
+      "kind": "preference_summary",
+      "description": "Info note: a change only takes effect the next time a data source is chosen in a slot. Whole sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "37a44677742f7071",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 274
+        }
+      ]
+    },
+    {
+      "key": "pref_dark",
+      "ui_location": "Watch > Settings > Watchface > Circle (and Custom)",
+      "kind": "preference_title",
+      "description": "Checkbox title: use the dark variant of the watch face. Adjective.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6ca752cde61934c1",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 1855
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_circle.xml",
+          "line": 10
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "pref_display_settings",
+      "ui_location": "Watch > Settings > main menu",
+      "kind": "menu_item",
+      "description": "Entry in the watch's Settings menu that opens the display options (which values the watch face shows). Short noun.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6c4b09ceb749e7f1",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/PreferenceMenuActivity.kt",
+          "line": 28
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/PreferenceMenuActivity.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "pref_graph_settings",
+      "ui_location": "Watch > Settings > main menu",
+      "kind": "menu_item",
+      "description": "Entry in the watch's Settings menu that opens the graph options. Short noun.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "98eba87b6f867e3b",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/PreferenceMenuActivity.kt",
+          "line": 29
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/PreferenceMenuActivity.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "pref_heartRateSampling",
+      "ui_location": "Watch > Settings > Others",
+      "kind": "preference_title",
+      "description": "Checkbox title: measure heart rate and send it to the phone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d1634f6c9fe7e113",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/others_preferences.xml",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "key": "pref_heartRateSmoothing",
+      "ui_location": "Watch > Settings > Others",
+      "kind": "preference_title",
+      "description": "Title of a list choice: how long heart rate samples are averaged.",
+      "related_keys": [
+        "pref_5_min"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "168090060b43506e",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/others_preferences.xml",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "pref_highlight_basals",
+      "ui_location": "Watch > Settings > Graph",
+      "kind": "preference_title",
+      "description": "Checkbox title: emphasize the basal rate area in the graph. Basal is the background insulin delivery.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c22d96efd6ed1e71",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/graph_preferences.xml",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "pref_include_external",
+      "ui_location": "Watch > Settings > Watchface > Custom",
+      "kind": "preference_title",
+      "description": "Checkbox title: include views from external data (for example other follower data) in the custom watch face template.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "3ccc9abe3cc879b9",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 255
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "pref_interface_settings",
+      "ui_location": "Watch > Settings > main menu",
+      "kind": "menu_item",
+      "description": "Entry in the watch's Settings menu that opens the interface options (menu entries, vibration, calculator). Short noun.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8df93fa8bac10366",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/PreferenceMenuActivity.kt",
+          "line": 30
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/PreferenceMenuActivity.kt",
+          "line": 76
+        }
+      ]
+    },
+    {
+      "key": "pref_light_ring_history",
+      "ui_location": "Watch > Settings > Watchface > Circle",
+      "kind": "preference_title",
+      "description": "Checkbox title: draw the ring history in a softer, lighter style.",
+      "related_keys": [
+        "pref_ring_history"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "c2d9c3c6a5d25a08",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_circle.xml",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "pref_lookInYourWatchfaceConfiguration",
+      "ui_location": "Watch > Settings > Display > More watch face settings",
+      "kind": "preference_summary",
+      "description": "Summary text telling the user to open the watch face's own configuration for more options. Whole sentence.",
+      "related_keys": [
+        "pref_moreWatchfaceSettings"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "31427d841b9667bb",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/preference/WatchfaceSettingsPreference.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "pref_matching_divider",
+      "ui_location": "Watch > Settings > Watchface > Custom",
+      "kind": "preference_title",
+      "description": "Checkbox title: color the divider line of the custom watch face to match the current glucose range.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "a6b33aaaa57b16de",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 1856
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "key": "pref_moreWatchfaceSettings",
+      "ui_location": "Watch > Settings > Display (phone-style preference)",
+      "kind": "preference_title",
+      "description": "Title of an entry pointing to further settings specific to the active watch face.",
+      "related_keys": [
+        "pref_lookInYourWatchfaceConfiguration"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "e1649e6a5afbf3df",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/preference/WatchfaceSettingsPreference.kt",
+          "line": 14
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 161
+        }
+      ]
+    },
+    {
+      "key": "pref_others_settings",
+      "ui_location": "Watch > Settings > main menu",
+      "kind": "menu_item",
+      "description": "Entry in the watch's Settings menu for miscellaneous options (heart rate, steps, version). Short noun.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cb0802610bdc85f2",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/PreferenceMenuActivity.kt",
+          "line": 33
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/PreferenceMenuActivity.kt",
+          "line": 86
+        }
+      ]
+    },
+    {
+      "key": "pref_prediction_lines",
+      "ui_location": "Watch > Settings > Graph",
+      "kind": "preference_title",
+      "description": "Checkbox title: draw the predicted glucose curves on the graph.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "606a65c9c0a558b4",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/graph_preferences.xml",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "pref_prime_in_menu",
+      "ui_location": "Watch > Settings > Interface",
+      "kind": "preference_title",
+      "description": "Checkbox title: show the Prime/Fill entry in the watch main menu. Prime/fill pushes insulin to fill the infusion set tubing or cannula.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "563500468151ddaf",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/interface_preferences.xml",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "key": "pref_ring_history",
+      "ui_location": "Watch > Settings > Watchface > Circle",
+      "kind": "preference_title",
+      "description": "Checkbox title: draw recent glucose history as colored dots on the ring around the Circle watch face.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "32744e97e9cfdbd7",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_circle.xml",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "pref_show_ago",
+      "ui_location": "Watch > Settings > Display",
+      "kind": "preference_title",
+      "description": "Checkbox title in watch settings (Display or Custom watch face configuration): turns the named value on the watch face on or off. Space is limited on a watch screen. Minutes since the last glucose reading.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "061cd0da2d955ba1",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 29
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 101
+        }
+      ]
+    },
+    {
+      "key": "pref_show_avgdelta",
+      "ui_location": "Watch > Settings > Display",
+      "kind": "preference_title",
+      "description": "Checkbox title in watch settings (Display or Custom watch face configuration): turns the named value on the watch face on or off. Space is limited on a watch screen. AvgDelta is the average glucose change over several readings.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a3c65898d88ee066",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 22
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "pref_show_basal_rate",
+      "ui_location": "Watch > Settings > Display",
+      "kind": "preference_title",
+      "description": "Checkbox title in watch settings (Display or Custom watch face configuration): turns the named value on the watch face on or off. Space is limited on a watch screen. Basal rate is the background insulin rate; shows the current or temporary basal.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "df12ee98e5eff5cf",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 27
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 128
+        },
+        {
+          "path": "wear/src/main/res/xml/graph_preferences.xml",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "pref_show_bg",
+      "ui_location": "Watch > Settings > Display",
+      "kind": "preference_title",
+      "description": "Checkbox title in watch settings (Display or Custom watch face configuration): turns the named value on the watch face on or off. Space is limited on a watch screen. BG is blood glucose.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a32e01601815f185",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 30
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "key": "pref_show_bgi",
+      "ui_location": "Watch > Settings > Display",
+      "kind": "preference_title",
+      "description": "Checkbox title in watch settings (Display or Custom watch face configuration): turns the named value on the watch face on or off. Space is limited on a watch screen. BGI is the blood glucose impact, the expected glucose change from insulin activity.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f50689a2274cc0bb",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 18
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "pref_show_bolus",
+      "ui_location": "Watch > Settings > Graph",
+      "kind": "preference_title",
+      "description": "Checkbox title: draw boluses and SMB (super micro bolus, small automatic doses) on the glucose graph. Keep the ampersand.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "43fc67ae9a5cc505",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/graph_preferences.xml",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "pref_show_cob",
+      "ui_location": "Watch > Settings > Display",
+      "kind": "preference_title",
+      "description": "Checkbox title in watch settings (Display or Custom watch face configuration): turns the named value on the watch face on or off. Space is limited on a watch screen. COB is carbs on board, the carbohydrates not yet absorbed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6c3d53525dd02949",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 20
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 41
+        },
+        {
+          "path": "wear/src/main/res/xml/graph_preferences.xml",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "key": "pref_show_date",
+      "ui_location": "Watch > Settings > Display",
+      "kind": "preference_title",
+      "description": "Checkbox title in watch settings (Display or Custom watch face configuration): turns the named value on the watch face on or off. Space is limited on a watch screen. Also used in the Custom watch face configuration.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b6ad9e710567182a",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 33
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 47
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_digitalstyle.xml",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "pref_show_delta",
+      "ui_location": "Watch > Settings > Display",
+      "kind": "preference_title",
+      "description": "Checkbox title in watch settings (Display or Custom watch face configuration): turns the named value on the watch face on or off. Space is limited on a watch screen. Delta is the glucose change since the previous reading.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fd581c1e28ed9597",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 21
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "pref_show_detailed_delta",
+      "ui_location": "Watch > Settings > Display",
+      "kind": "preference_title",
+      "description": "Checkbox title in watch settings (Display or Custom watch face configuration): turns the named value on the watch face on or off. Space is limited on a watch screen. Detailed shows delta with an extra decimal.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "277768a1a8cabb91",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 17
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 81
+        }
+      ]
+    },
+    {
+      "key": "pref_show_detailed_iob",
+      "ui_location": "Watch > Settings > Display",
+      "kind": "preference_title",
+      "description": "Checkbox title in watch settings (Display or Custom watch face configuration): turns the named value on the watch face on or off. Space is limited on a watch screen. IOB is insulin on board; detailed shows the bolus and basal parts separately.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5b1af83ed037e224",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 16
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "pref_show_direction_arrow",
+      "ui_location": "Watch > Settings > Display",
+      "kind": "preference_title",
+      "description": "Checkbox title in watch settings (Display or Custom watch face configuration): turns the named value on the watch face on or off. Space is limited on a watch screen. The trend arrow next to the glucose value.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8f0895b3b9b34082",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 28
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 91
+        }
+      ]
+    },
+    {
+      "key": "pref_show_grid",
+      "ui_location": "Watch > Settings > Graph",
+      "kind": "preference_title",
+      "description": "Checkbox title: draw grid lines on the glucose graph.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ecd74f2444a6a06c",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/graph_preferences.xml",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "pref_show_iob",
+      "ui_location": "Watch > Settings > Display",
+      "kind": "preference_title",
+      "description": "Checkbox title in watch settings (Display or Custom watch face configuration): turns the named value on the watch face on or off. Space is limited on a watch screen. IOB is insulin on board, the active insulin still working.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "61f36cc9a4115401",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 19
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "pref_show_loop_status",
+      "ui_location": "Watch > Settings > Display",
+      "kind": "preference_title",
+      "description": "Checkbox title in watch settings (Display or Custom watch face configuration): turns the named value on the watch face on or off. Space is limited on a watch screen. Loop is the automatic insulin dosing algorithm.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ade82845b8ed8b9a",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 31
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 155
+        }
+      ]
+    },
+    {
+      "key": "pref_show_phone_battery",
+      "ui_location": "Watch > Settings > Display",
+      "kind": "preference_title",
+      "description": "Checkbox title in watch settings (Display or Custom watch face configuration): turns the named value on the watch face on or off. Space is limited on a watch screen. Battery level of the phone running AAPS.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "07a8e8a51ac9a8ba",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 25
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "key": "pref_show_reservoir_level",
+      "ui_location": "Watch > Settings > Display",
+      "kind": "preference_title",
+      "description": "Checkbox title in watch settings (Display or Custom watch face configuration): turns the named value on the watch face on or off. Space is limited on a watch screen. Insulin remaining in the pump reservoir.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "98f4105d0f5ec987",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 24
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 146
+        }
+      ]
+    },
+    {
+      "key": "pref_show_rig_battery",
+      "ui_location": "Watch > Settings > Display",
+      "kind": "preference_title",
+      "description": "Checkbox title in watch settings (Display or Custom watch face configuration): turns the named value on the watch face on or off. Space is limited on a watch screen. Rig is the uploader device (for example a separate phone) battery.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b1b8f38f6706f5f4",
+      "usages": [
+        {
+          "path": "core/interfaces/src/commonMain/kotlin/app/aaps/core/interfaces/rx/weardata/CwfMetaDataKey.kt",
+          "line": 26
+        },
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 119
+        }
+      ]
+    },
+    {
+      "key": "pref_show_temp_basal",
+      "ui_location": "Watch > Settings > Graph",
+      "kind": "preference_title",
+      "description": "Checkbox title: draw temporary basal rates (TBR) on the glucose graph. TBR is a temporary basal rate; abbreviation is acceptable.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d7d9c20fb3a4193b",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/graph_preferences.xml",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "pref_show_temp_target",
+      "ui_location": "Watch > Settings > Display",
+      "kind": "preference_title",
+      "description": "Checkbox title in watch settings (Display or Custom watch face configuration): turns the named value on the watch face on or off. Space is limited on a watch screen. Temp target is a temporary glucose target.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6f1c5a86e268fb83",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/display_preferences.xml",
+          "line": 137
+        }
+      ]
+    },
+    {
+      "key": "pref_show_weeknumber",
+      "ui_location": "Watch > Settings > Watchface > Custom and Digital Style",
+      "kind": "preference_title",
+      "description": "Checkbox title: show the calendar week number.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6dd7f4a133feffcf",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 19
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_digitalstyle.xml",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "pref_simplify_ui",
+      "ui_location": "Watch > Settings > Watchface > Custom",
+      "kind": "preference_title",
+      "description": "Title of a list choice: when the watch face shows a simplified layout (off, while charging, always-on mode, or both).",
+      "related_keys": [
+        "simple_ui_off"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f603ef72a26d6b76",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 247
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 74
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_digitalstyle.xml",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "pref_single_target",
+      "ui_location": "Watch > Settings > Interface",
+      "kind": "preference_title",
+      "description": "Checkbox title: temp target entry uses one target value instead of a low and high range.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "eba1f2794b1a8758",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/interface_preferences.xml",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "pref_stepsSampling",
+      "ui_location": "Watch > Settings > Others",
+      "kind": "preference_title",
+      "description": "Checkbox title: count steps and send them to the phone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c08f758c88284d34",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/others_preferences.xml",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "pref_switch_external",
+      "ui_location": "Watch > Settings > Watchface > Custom",
+      "kind": "preference_title",
+      "description": "Checkbox title: switch between normal and external data in the watch face.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "4b2b788d68dee8e1",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CustomWatchface.kt",
+          "line": 227
+        },
+        {
+          "path": "wear/src/main/res/xml/watch_face_configuration_custom.xml",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "key": "pref_tile_settings",
+      "ui_location": "Watch > Settings > main menu",
+      "kind": "menu_item",
+      "description": "Entry in the watch's Settings menu that opens the tile configuration. Tiles are the swipe-in panels of Wear OS. Short noun.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "24edf650bb92a9f8",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/PreferenceMenuActivity.kt",
+          "line": 31
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/PreferenceMenuActivity.kt",
+          "line": 80
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/TileMenuActivity.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "pref_unicode_in_complications",
+      "ui_location": "Watch > Settings > Complication",
+      "kind": "preference_title",
+      "description": "Checkbox title: use Unicode symbols (for example arrows) in complication text. Some watches cannot render all symbols.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2483d4d33c9f7ad8",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/complication_preferences.xml",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "pref_version",
+      "ui_location": "Watch > Settings > Others",
+      "kind": "preference_title",
+      "description": "Label in front of the app version number, for example 'Version: 3.4'. Followed by the version, so keep the colon.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "234ec5b93dd9d4c6",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/others_preferences.xml",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "key": "pref_vibrate_hourly",
+      "ui_location": "Watch > Settings > Interface",
+      "kind": "preference_title",
+      "description": "Checkbox title: vibrate each full hour.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d14c89c8be2c57fe",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/interface_preferences.xml",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "pref_vibrate_on_bolus",
+      "ui_location": "Watch > Settings > Interface",
+      "kind": "preference_title",
+      "description": "Checkbox title: the watch vibrates when a bolus (insulin dose) is delivered.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3b6ae833bb2b6282",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/interface_preferences.xml",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "pref_wizard_in_menu",
+      "ui_location": "Watch > Settings > Interface",
+      "kind": "preference_title",
+      "description": "Checkbox title: show the bolus calculator (wizard) entry in the watch main menu. The calculator proposes an insulin dose from carbs and glucose.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c116516607fcbe4d",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/interface_preferences.xml",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "key": "pref_wizard_percentage",
+      "ui_location": "Watch > Settings > Interface",
+      "kind": "preference_title",
+      "description": "Checkbox title: the calculator on the watch asks for a percentage of the calculated dose.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "98da63cde595b1f4",
+      "usages": [
+        {
+          "path": "wear/src/main/res/xml/interface_preferences.xml",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "press_to_cancel",
+      "ui_location": "Watch > notification during bolus",
+      "kind": "notification",
+      "description": "Subtext telling the user to tap the notification to cancel the bolus.",
+      "related_keys": [
+        "cancel_bolus"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "01ee9a75127a5b0c",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/comm/DataHandlerWear.kt",
+          "line": 341
+        }
+      ]
+    },
+    {
+      "key": "scene_end",
+      "ui_location": "Watch > Scene tile button",
+      "kind": "button",
+      "description": "Button to end the active scene. Short imperative.",
+      "related_keys": [
+        "scene_skip"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9b0406cb2ec70bdc",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/SceneSource.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "scene_skip",
+      "ui_location": "Watch > Scene tile button",
+      "kind": "button",
+      "description": "Button to skip the current scene step or phase. Short imperative.",
+      "related_keys": [
+        "scene_end"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "4493e1b8fa32995b",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/SceneSource.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "sending_snooze",
+      "ui_location": "Watch > toast after quick snooze",
+      "kind": "toast",
+      "description": "Toast shown while the snooze request is sent to the phone.",
+      "related_keys": [
+        "snooze_alert"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "302ac3b21c099a52",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/QuickSnoozeActivity.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "simple_ui_always_on",
+      "ui_location": "Watch > Settings > Watchface > Custom > Simplify UI",
+      "kind": "label",
+      "description": "Option: simplified layout in always-on (ambient) mode.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e9fa31d329a1cbbe",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "simple_ui_always_on_charging",
+      "ui_location": "Watch > Settings > Watchface > Custom > Simplify UI",
+      "kind": "label",
+      "description": "Option: simplified layout in always-on mode and while charging.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6eb31b0d47e52151",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "key": "simple_ui_charging",
+      "ui_location": "Watch > Settings > Watchface > Custom > Simplify UI",
+      "kind": "label",
+      "description": "Option: simplified layout while the watch is charging.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4e83e38a5f8dae86",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "simple_ui_off",
+      "ui_location": "Watch > Settings > Watchface > Custom > Simplify UI",
+      "kind": "label",
+      "description": "Option: simplified layout is never used.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "760deda47ce38fd3",
+      "usages": [
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "key": "snooze_alert",
+      "ui_location": "Watch > quick snooze activity label",
+      "kind": "label",
+      "description": "Name of the activity that snoozes AAPS alerts from the watch.",
+      "related_keys": [
+        "sending_snooze"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f7abab30bd16becb",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 1074
+        }
+      ]
+    },
+    {
+      "key": "status_loop",
+      "ui_location": "Watch > Status menu",
+      "kind": "menu_item",
+      "description": "Entry that shows the loop status (the automatic dosing algorithm).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d19ff045e1f1343c",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/StatusMenuActivity.kt",
+          "line": 22
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/StatusMenuActivity.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "status_profile_switch",
+      "ui_location": "Watch > Status menu; screen title",
+      "kind": "menu_item",
+      "description": "Entry and screen title for switching the insulin profile (settings set).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7754a14d374accb7",
+      "usages": [
+        {
+          "path": "wear/src/main/AndroidManifest.xml",
+          "line": 959
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ProfileSwitchActivity.kt",
+          "line": 83
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ProfileSwitchActivity.kt",
+          "line": 97
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/ProfileSwitchActivity.kt",
+          "line": 110
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 69
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 103
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/ActionSource.kt",
+          "line": 69
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "status_pump",
+      "ui_location": "Watch > Status menu",
+      "kind": "menu_item",
+      "description": "Entry that requests the pump status from the phone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "90254705cc88b2f8",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/StatusMenuActivity.kt",
+          "line": 21
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/StatusMenuActivity.kt",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "status_tdd",
+      "ui_location": "Watch > Status menu",
+      "kind": "menu_item",
+      "description": "Entry showing total daily dose (TDD) of insulin. Medical abbreviation, short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "39ecefabecab56c1",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/StatusMenuActivity.kt",
+          "line": 23
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/StatusMenuActivity.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "svg_00_0",
+      "ui_location": "Digital Style layout placeholder",
+      "kind": "other",
+      "description": "Layout placeholder for a glucose value; sizing sample only. Key name misspells SGV.",
+      "related_keys": [],
+      "confidence": 0.6,
+      "usages_hash": "5743b36939d5add5",
+      "usages": [
+        {
+          "path": "wear/src/main/res/layout/activity_digitalstyle.xml",
+          "line": 197
+        }
+      ]
+    },
+    {
+      "key": "temp_target_activity",
+      "ui_location": "Watch > Temp Target tile/screen buttons",
+      "kind": "button",
+      "description": "Button for the activity temp target (raised target during exercise). Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a1700ea11ff64c17",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/TempTargetSource.kt",
+          "line": 26
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 91
+        }
+      ]
+    },
+    {
+      "key": "temp_target_cancel",
+      "ui_location": "Watch > Temp Target tile/screen buttons",
+      "kind": "button",
+      "description": "Button that cancels the active temp target. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0243c754e4025fca",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/TempTargetSource.kt",
+          "line": 63
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 95
+        }
+      ]
+    },
+    {
+      "key": "temp_target_eating_soon",
+      "ui_location": "Watch > Temp Target tile/screen buttons",
+      "kind": "button",
+      "description": "Button for the 'eating soon' temp target, a lower target set before a meal. Short to fit the button.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a3df31bd8bdea44c",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/TempTargetSource.kt",
+          "line": 36
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 92
+        }
+      ]
+    },
+    {
+      "key": "temp_target_hypo",
+      "ui_location": "Watch > Temp Target tile/screen buttons",
+      "kind": "button",
+      "description": "Button for the hypo temp target (raised target to avoid or treat low glucose). Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3cafb763fb319f2e",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/TempTargetSource.kt",
+          "line": 46
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 93
+        }
+      ]
+    },
+    {
+      "key": "temp_target_manual",
+      "ui_location": "Watch > Temp Target tile/screen buttons",
+      "kind": "button",
+      "description": "Button to enter a custom temp target manually. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4f1ae55aaa878517",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/source/TempTargetSource.kt",
+          "line": 56
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 94
+        }
+      ]
+    },
+    {
+      "key": "tile_action_1",
+      "ui_location": "Watch > Settings > Tiles > Actions tile",
+      "kind": "label",
+      "description": "Name of an action slot in the tile's configuration; the user assigns an action to each slot.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "39a37349dd7e6ac0",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/ActionsTileSettingsActivity.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "tile_action_2",
+      "ui_location": "Watch > Settings > Tiles > Actions tile",
+      "kind": "label",
+      "description": "Name of an action slot in the tile's configuration; the user assigns an action to each slot.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ac0889d6b06bf3a9",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/ActionsTileSettingsActivity.kt",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "tile_action_3",
+      "ui_location": "Watch > Settings > Tiles > Actions tile",
+      "kind": "label",
+      "description": "Name of an action slot in the tile's configuration; the user assigns an action to each slot.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "95499e1791b1d53b",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/ActionsTileSettingsActivity.kt",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "tile_action_4",
+      "ui_location": "Watch > Settings > Tiles > Actions tile",
+      "kind": "label",
+      "description": "Name of an action slot in the tile's configuration; the user assigns an action to each slot.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1e5775e7478c8ea7",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/ActionsTileSettingsActivity.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "tile_no_config",
+      "ui_location": "Watch > tile content",
+      "kind": "status",
+      "description": "Shown inside a tile that has nothing configured yet.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "038d412d7f82d4b3",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/TileBase.kt",
+          "line": 317
+        }
+      ]
+    },
+    {
+      "key": "tile_none",
+      "ui_location": "Watch > Settings > Tiles > slot options",
+      "kind": "label",
+      "description": "Option meaning no action or scene assigned to this tile slot.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "79cb4ca42c2768ec",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/ActionsTileSettingsActivity.kt",
+          "line": 28
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/SceneTileSettingsActivity.kt",
+          "line": 53
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/TempTargetTileSettingsActivity.kt",
+          "line": 28
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 76
+        },
+        {
+          "path": "wear/src/main/res/values/arrays.xml",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "key": "tile_scene_1",
+      "ui_location": "Watch > Settings > Tiles > Scene tile",
+      "kind": "label",
+      "description": "Name of a scene slot in the tile's configuration.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "abd21056a1420663",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/SceneTileSettingsActivity.kt",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "key": "tile_scene_2",
+      "ui_location": "Watch > Settings > Tiles > Scene tile",
+      "kind": "label",
+      "description": "Name of a scene slot in the tile's configuration.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a2eca0239a4e7827",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/SceneTileSettingsActivity.kt",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "key": "tile_scene_3",
+      "ui_location": "Watch > Settings > Tiles > Scene tile",
+      "kind": "label",
+      "description": "Name of a scene slot in the tile's configuration.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bbb285f648737b43",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/SceneTileSettingsActivity.kt",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "key": "tile_scene_4",
+      "ui_location": "Watch > Settings > Tiles > Scene tile",
+      "kind": "label",
+      "description": "Name of a scene slot in the tile's configuration.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6d1a3aeba260c870",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/SceneTileSettingsActivity.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "tile_scene_auto",
+      "ui_location": "Watch > Settings > Tiles > Scene tile slot options",
+      "kind": "label",
+      "description": "Option: the slot picks the scene automatically.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a2f8ee07d471cf7f",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/SceneTileSettingsActivity.kt",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "tile_scene_unavailable",
+      "ui_location": "Watch > Settings > Tiles > Scene tile slot options",
+      "kind": "label",
+      "description": "Shown for a scene that no longer exists or is not available.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c502b2b25e3843eb",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/SceneTileSettingsActivity.kt",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "key": "tile_tempt_1",
+      "ui_location": "Watch > Settings > Tiles > Temp Target tile",
+      "kind": "label",
+      "description": "Name of a temp target slot in the tile's configuration; the user assigns a temp target to each slot.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "47b0bc4100ffa44e",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/TempTargetTileSettingsActivity.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "tile_tempt_2",
+      "ui_location": "Watch > Settings > Tiles > Temp Target tile",
+      "kind": "label",
+      "description": "Name of a temp target slot in the tile's configuration; the user assigns a temp target to each slot.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "791bd3366d8d37eb",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/TempTargetTileSettingsActivity.kt",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "tile_tempt_3",
+      "ui_location": "Watch > Settings > Tiles > Temp Target tile",
+      "kind": "label",
+      "description": "Name of a temp target slot in the tile's configuration; the user assigns a temp target to each slot.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "29e8f8a70c14588c",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/TempTargetTileSettingsActivity.kt",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "tile_tempt_4",
+      "ui_location": "Watch > Settings > Tiles > Temp Target tile",
+      "kind": "label",
+      "description": "Name of a temp target slot in the tile's configuration; the user assigns a temp target to each slot.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f07eb19a8c521d9d",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/TempTargetTileSettingsActivity.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "units_short",
+      "ui_location": "Phone AAPS > Prime/Fill confirmation message (sent from watch request)",
+      "kind": "other",
+      "description": "Abbreviation for insulin units, appended to an amount such as '0.5U'. Keep as short as possible, no space.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c1c2a67004ebb826",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 981
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 998
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CircleWatchface.kt",
+          "line": 181
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/utils/BaseWatchFace.kt",
+          "line": 619
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/utils/BaseWatchFace.kt",
+          "line": 673
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/utils/BaseWatchFace.kt",
+          "line": 728
+        }
+      ]
+    },
+    {
+      "key": "watchface_install_failed",
+      "ui_location": "Watch > toast after installing watch face",
+      "kind": "error",
+      "description": "Error message: the watch face installation did not work.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "44827f1e4ebe4f2f",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 141
+        }
+      ]
+    },
+    {
+      "key": "watchface_installed_active",
+      "ui_location": "Watch > toast after installing watch face",
+      "kind": "toast",
+      "description": "Success message: the watch face was installed and is now the active one.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6fb30e58142f0c8b",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 142
+        }
+      ]
+    },
+    {
+      "key": "watchface_installed_select",
+      "ui_location": "Watch > toast after installing watch face",
+      "kind": "toast",
+      "description": "Success message: installed, but the user must choose it in the watch face picker themselves.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0f2f079159cd7ab7",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 143
+        }
+      ]
+    },
+    {
+      "key": "wear_control_no_data",
+      "ui_location": "Watch > tile content",
+      "kind": "status",
+      "description": "Shown in a tile when no data has arrived from the phone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6a05b331068eb09d",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/TileBase.kt",
+          "line": 295
+        }
+      ]
+    },
+    {
+      "key": "wear_control_not_enabled",
+      "ui_location": "Watch > tile content",
+      "kind": "status",
+      "description": "Shown in a tile when remote control from the watch is disabled in the phone app.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "049df9a2f5cc2e8a",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/TileBase.kt",
+          "line": 291
+        }
+      ]
+    },
+    {
+      "key": "week_short",
+      "ui_location": "Watch face and complications > time since last reading",
+      "kind": "other",
+      "description": "Single-letter unit for weeks, appended to a number, e.g. '2w'.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "021f6312403a830c",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/utils/DisplayFormat.kt",
+          "line": 76
+        }
+      ]
+    }
+  ]
+}
