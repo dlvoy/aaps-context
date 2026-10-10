@@ -1,0 +1,4282 @@
+{
+  "schema_version": 1,
+  "source_path": "plugins/sync/src/androidMain/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "a11y_otp_qr_code",
+      "ui_location": "Preferences > SMS Communicator > Authenticator setup > QR code",
+      "kind": "label",
+      "description": "Accessibility description of the QR code image for the authenticator app. Read aloud only.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b747b3856e6d15b9",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "key": "aps",
+      "ui_location": "Watch: confirmation/status screen line (loop status)",
+      "kind": "label",
+      "description": "Label before the active APS algorithm name (e.g. SMB). Keep as abbreviation.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "495c2477de6875a9",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1695
+        }
+      ]
+    },
+    {
+      "key": "aps_only",
+      "ui_location": "Watch: confirmation/status screen line (APS result)",
+      "kind": "error",
+      "description": "Shown when AAPS isn't in APS mode, so the APS result cannot be shown. Sentence-like despite the key name.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "556dbc55d38653f6",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1667
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_add",
+      "ui_location": "Nightscout client v3 > Authorized clients > add button",
+      "kind": "button",
+      "description": "Accessibility description of the round plus button that starts pairing a new client. Short imperative; not visible as text.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b28dee66747390df",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 119
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_comm_switch_summary",
+      "ui_location": "Nightscout client v3 > Authorized clients > switch",
+      "kind": "summary",
+      "description": "Explanation under the client-control switch. 'Master' is the AAPS phone that runs the loop; clients are paired devices. Two full sentences.",
+      "related_keys": [
+        "authorized_clients_comm_switch_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "65715f0f8016f893",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 249
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_comm_switch_title",
+      "ui_location": "Nightscout client v3 > Authorized clients > switch",
+      "kind": "label",
+      "description": "Title of the switch that enables or disables receiving commands from paired clients.",
+      "related_keys": [
+        "authorized_clients_comm_switch_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "987c862816f895cd",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 244
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_delete_dialog_message",
+      "ui_location": "Nightscout client v3 > Authorized clients > delete confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Body of the revoke confirmation. %1$s is the name the user gave the client device.",
+      "related_keys": [
+        "authorized_clients_delete_dialog_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "43507875144a5051",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 321
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_delete_dialog_title",
+      "ui_location": "Nightscout client v3 > Authorized clients > delete confirmation dialog",
+      "kind": "dialog_title",
+      "description": "Title of the confirmation asking whether to remove a paired client's permission to send commands. Phrased as a question.",
+      "related_keys": [
+        "authorized_clients_delete_dialog_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c53f5c85e33e9114",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 320
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_empty_subtitle",
+      "ui_location": "Nightscout client v3 > Authorized clients > empty list",
+      "kind": "summary",
+      "description": "Hint under the empty-list heading telling the user to pair a device. 'Master' is the AAPS phone running the loop.",
+      "related_keys": [
+        "authorized_clients_empty_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f46b35d4adbd1275",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 270
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_empty_title",
+      "ui_location": "Nightscout client v3 > Authorized clients > empty list",
+      "kind": "title",
+      "description": "Heading shown when no client has been paired yet.",
+      "related_keys": [
+        "authorized_clients_empty_subtitle"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "112b25b9df1c8fe4",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 266
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_last_seen",
+      "ui_location": "Nightscout client v3 > Authorized clients > client row",
+      "kind": "status",
+      "description": "Line on a client row. %1$s is a relative time such as '5 min ago' that is already localized, so it is a fragment ending the sentence.",
+      "related_keys": [
+        "authorized_clients_never_seen"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e52440f8f37d5f82",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsViewModel.kt",
+          "line": 262
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_name_dialog_title",
+      "ui_location": "Nightscout client v3 > Authorized clients > add client dialog",
+      "kind": "dialog_title",
+      "description": "Title of the dialog asking for a name for the new client device before pairing.",
+      "related_keys": [
+        "authorized_clients_name_placeholder"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "605cbf7e226958aa",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 287
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_name_placeholder",
+      "ui_location": "Nightscout client v3 > Authorized clients > add client dialog > text field",
+      "kind": "hint",
+      "description": "Placeholder in the text field where the user types a name for the client device, e.g. 'Anna's phone'.",
+      "related_keys": [
+        "authorized_clients_name_dialog_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "45581287d03d6593",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 294
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_needs_websocket",
+      "ui_location": "Nightscout client v3 > Authorized clients > warning",
+      "kind": "status",
+      "description": "Warning shown when the websocket option is off, so commands cannot be received. 'Master' is the AAPS phone running the loop. Two full sentences.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "123faf72502fde15",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 136
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_never_seen",
+      "ui_location": "Nightscout client v3 > Authorized clients > client row",
+      "kind": "status",
+      "description": "Shown on a client row instead of 'Last seen' when that client has never sent a command.",
+      "related_keys": [
+        "authorized_clients_last_seen"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "fdb46105cd89b5ea",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsViewModel.kt",
+          "line": 263
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_pending_expires_in",
+      "ui_location": "Nightscout client v3 > Authorized clients > pending client row",
+      "kind": "status",
+      "description": "Countdown on a pending client row. %1$s is the number of seconds left, followed directly by an 's' unit in the English text.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "781542773510d604",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsViewModel.kt",
+          "line": 268
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_pin_dialog_title",
+      "ui_location": "Nightscout client v3 > Authorized clients > pairing PIN dialog",
+      "kind": "dialog_title",
+      "description": "Title of the dialog that shows a one-time PIN the user types on the other (client) device to pair it.",
+      "related_keys": [
+        "authorized_clients_pin_instructions"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "09b3e97b723ef323",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 376
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_pin_done",
+      "ui_location": "Nightscout client v3 > Authorized clients > pairing PIN dialog",
+      "kind": "button",
+      "description": "Button closing the PIN dialog. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9c3ab6c869931351",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 401
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_pin_expires_in",
+      "ui_location": "Nightscout client v3 > Authorized clients > pairing PIN dialog",
+      "kind": "status",
+      "description": "Countdown below the PIN. %1$s is the number of seconds left, directly followed by an 's' unit in English.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f134575b1cd117f7",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 394
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_pin_instructions",
+      "ui_location": "Nightscout client v3 > Authorized clients > pairing PIN dialog",
+      "kind": "dialog_text",
+      "description": "Instruction shown above the PIN. The PIN works for a single pairing only.",
+      "related_keys": [
+        "authorized_clients_pin_dialog_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6f05af8d85f16f54",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 381
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_pin_publish_failed",
+      "ui_location": "Nightscout client v3 > Authorized clients > pairing PIN dialog > status banner",
+      "kind": "error",
+      "description": "Banner shown when uploading the pairing offer to Nightscout failed. A retry button follows.",
+      "related_keys": [
+        "authorized_clients_pin_retry"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c4fa7938a08745c9",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 431
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_pin_published",
+      "ui_location": "Nightscout client v3 > Authorized clients > pairing PIN dialog > status banner",
+      "kind": "status",
+      "description": "Banner shown when the pairing offer was uploaded successfully.",
+      "related_keys": [
+        "authorized_clients_pin_publishing"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "bfdda58c3b1245ba",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 421
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_pin_publishing",
+      "ui_location": "Nightscout client v3 > Authorized clients > pairing PIN dialog > status banner",
+      "kind": "status",
+      "description": "Progress banner while the pairing offer is uploaded to Nightscout.",
+      "related_keys": [
+        "authorized_clients_pin_published",
+        "authorized_clients_pin_publish_failed"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "89e136ec421fde95",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 415
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_pin_retry",
+      "ui_location": "Nightscout client v3 > Authorized clients > pairing PIN dialog > status banner",
+      "kind": "button",
+      "description": "Button next to the failure banner to upload the pairing offer again. Short imperative.",
+      "related_keys": [
+        "authorized_clients_pin_publish_failed"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3f4b84aa19dbc6df",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 436
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_state_active",
+      "ui_location": "Nightscout client v3 > Authorized clients > client list badge",
+      "kind": "status",
+      "description": "Small badge on a client row: pairing is complete and the client may send commands. One word, limited space.",
+      "related_keys": [
+        "authorized_clients_state_pending"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c33f83937b66b2bd",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 213
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_state_pending",
+      "ui_location": "Nightscout client v3 > Authorized clients > client list badge",
+      "kind": "status",
+      "description": "Small badge on a client row: pairing was started but not completed yet. One word, limited space.",
+      "related_keys": [
+        "authorized_clients_state_active"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "66907b011711bbf8",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 214
+        }
+      ]
+    },
+    {
+      "key": "authorized_clients_title",
+      "ui_location": "Nightscout client v3 > Authorized clients",
+      "kind": "title",
+      "description": "Title of the screen listing client devices (e.g. a follower phone) that are paired to send signed commands to this master AAPS. A noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "dba74dbab3cce7ee",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/AuthorizedClientsScreen.kt",
+          "line": 108
+        }
+      ]
+    },
+    {
+      "key": "blocked_by_charging",
+      "ui_location": "Nightscout client v3 > connection status line",
+      "kind": "status",
+      "description": "Status shown when sync is paused because the phone's charging state does not match the user's charging-only option. Short fragment for a status line.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "eab9d8add74eaf70",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/ReceiverDelegate.kt",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "key": "blocked_by_connectivity",
+      "ui_location": "Nightscout client v3 > connection status line",
+      "kind": "status",
+      "description": "Status shown when sync is paused because the current network type (e.g. mobile data or the wrong Wi-Fi) is not allowed by the user's connectivity options. Short fragment.",
+      "related_keys": [
+        "no_connectivity"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6f237e2bd45f67b9",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/ReceiverDelegate.kt",
+          "line": 90
+        }
+      ]
+    },
+    {
+      "key": "calibration_sent",
+      "ui_location": "Snackbar / log when calibrating",
+      "kind": "toast",
+      "description": "Short confirmation that a glucose calibration was handed to xDrip+.",
+      "related_keys": [
+        "xdrip_not_installed"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e3641a3cf725d2cc",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/xdrip/XdripPlugin.kt",
+          "line": 283
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/xdrip/XdripPlugin.kt",
+          "line": 284
+        }
+      ]
+    },
+    {
+      "key": "clear_log",
+      "ui_location": "Tidepool / xDrip screen > overflow menu",
+      "kind": "menu_item",
+      "description": "Menu item that empties the on-screen log. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e1f6e2b7c30e1133",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/compose/TidepoolScreen.kt",
+          "line": 242
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/xdrip/compose/XdripScreen.kt",
+          "line": 197
+        },
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/compose/NSClientScreen.kt",
+          "line": 405
+        }
+      ]
+    },
+    {
+      "key": "clientcontrol_orphan_notification",
+      "ui_location": "Notification in the app's notification list (Overview)",
+      "kind": "notification",
+      "description": "Warning shown on a paired client when the master no longer lists it. 'Manage sheet' is the app's management bottom sheet; its menu entry 'Pair with master' should match pair_with_master_title. The arrow separates menu steps.",
+      "related_keys": [
+        "pair_with_master_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9fe388baf3069d25",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/OrphanDetector.kt",
+          "line": 115
+        }
+      ]
+    },
+    {
+      "key": "connection_settings_title",
+      "ui_location": "Preferences > Tidepool / Nightscout client v3 > Connection settings",
+      "kind": "preference_title",
+      "description": "Heading of the group of connection preferences (server address, network options) inside the Tidepool and Nightscout v3 preference screens. A short noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "954c083427a38e7e",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/TidepoolPlugin.kt",
+          "line": 220
+        },
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/NSClientV3Plugin.kt",
+          "line": 1240
+        }
+      ]
+    },
+    {
+      "key": "cwf_infos_pref_locked",
+      "ui_location": "Wear screen > watchface info dialog",
+      "kind": "dialog_title",
+      "description": "Heading of a list of preferences the watchface forces to a fixed value.",
+      "related_keys": [
+        "cwf_infos_pref_required"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "52b0bf0ef4494dc0",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearViewModel.kt",
+          "line": 237
+        }
+      ]
+    },
+    {
+      "key": "cwf_infos_pref_required",
+      "ui_location": "Wear screen > watchface info dialog",
+      "kind": "dialog_title",
+      "description": "Heading of a list of preferences that the watchface needs to be enabled in order to show data. 'Prefs' means preferences.",
+      "related_keys": [
+        "cwf_infos_pref_locked"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "52b0bf0ef4494dc0",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearViewModel.kt",
+          "line": 237
+        }
+      ]
+    },
+    {
+      "key": "cwf_infos_view_title",
+      "ui_location": "Wear screen > watchface info dialog",
+      "kind": "dialog_title",
+      "description": "Heading of the list of data fields the watchface displays.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "80e8a6309a1eefb0",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 530
+        }
+      ]
+    },
+    {
+      "key": "default_range",
+      "ui_location": "Watch: confirmation/status screen line (targets status)",
+      "kind": "label",
+      "description": "Label shown uppercase when no temp target is active; the value is the default target range.",
+      "related_keys": [
+        "temp_target"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b9de1b2459459c63",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1660
+        }
+      ]
+    },
+    {
+      "key": "deliver_now",
+      "ui_location": "Nightscout client screen > overflow menu",
+      "kind": "menu_item",
+      "description": "Menu item that sends queued data to Nightscout immediately. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c46cac5fd988f497",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/compose/NSClientScreen.kt",
+          "line": 412
+        }
+      ]
+    },
+    {
+      "key": "description_ns_client_v3",
+      "ui_location": "Config builder > Synchronization > Nightscout client v3",
+      "kind": "summary",
+      "description": "Description of the Nightscout client v3 plugin shown in the plugin list. A full sentence; 'v3 API' is the Nightscout API version.",
+      "related_keys": [
+        "ns_client_v3_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "64c25f0f6051343f",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/NSClientV3Plugin.kt",
+          "line": 160
+        }
+      ]
+    },
+    {
+      "key": "description_sms_communicator",
+      "ui_location": "Config builder > Synchronization > SMS Communicator",
+      "kind": "summary",
+      "description": "Description in the plugin list.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "490510e7b548f7b2",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 151
+        }
+      ]
+    },
+    {
+      "key": "description_tidepool",
+      "ui_location": "Config builder > Synchronization > Tidepool",
+      "kind": "summary",
+      "description": "Description of the Tidepool plugin in the plugin list.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e65c2105674b4ade",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/TidepoolPlugin.kt",
+          "line": 92
+        }
+      ]
+    },
+    {
+      "key": "description_wear",
+      "ui_location": "Config builder > Synchronization > Wear",
+      "kind": "summary",
+      "description": "Description of the WearOS plugin: monitor and control AAPS from a WearOS smartwatch.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5e28eaee1653135f",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/WearPlugin.kt",
+          "line": 98
+        }
+      ]
+    },
+    {
+      "key": "description_xdrip",
+      "ui_location": "Config builder > Synchronization > xDrip+",
+      "kind": "summary",
+      "description": "Description of the xDrip+ sync plugin.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cdd9d9c40b56e408",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/xdrip/XdripPlugin.kt",
+          "line": 125
+        }
+      ]
+    },
+    {
+      "key": "disabled",
+      "ui_location": "Wear screen > watchface info > preference state",
+      "kind": "status",
+      "description": "Accessibility text for a preference marked off. Single word; the opposite of 'Enabled'.",
+      "related_keys": [
+        "enabled"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6c1626e8afc0fdbd",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 517
+        }
+      ]
+    },
+    {
+      "key": "enabled",
+      "ui_location": "Wear screen > watchface info > preference state",
+      "kind": "status",
+      "description": "Accessibility text for a preference marked on. Single word; the opposite of 'Disabled'.",
+      "related_keys": [
+        "disabled"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6c1626e8afc0fdbd",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 517
+        }
+      ]
+    },
+    {
+      "key": "full_sync",
+      "ui_location": "Tidepool / xDrip screen > overflow menu",
+      "kind": "menu_item",
+      "description": "Menu item that re-uploads all data from the beginning. Short; a noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "76171f9c624cf6a0",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/compose/TidepoolScreen.kt",
+          "line": 228
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/xdrip/compose/XdripScreen.kt",
+          "line": 204
+        },
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/compose/NSClientScreen.kt",
+          "line": 419
+        }
+      ]
+    },
+    {
+      "key": "full_sync_comment",
+      "ui_location": "Nightscout client screen > confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Question confirming a full resync. 'NS' is Nightscout. Mind the warning that new data won't appear until it finishes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "18cdec6e6816c5a1",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/compose/NSClientComposeContent.kt",
+          "line": 74
+        }
+      ]
+    },
+    {
+      "key": "full_xdrip_sync_comment",
+      "ui_location": "xDrip+ screen > confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Question confirming a full resync to xDrip+.",
+      "related_keys": [
+        "full_sync_comment"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7aa1c0b719321910",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/xdrip/compose/XdripComposeContent.kt",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "key": "garmin",
+      "ui_location": "Config builder > Synchronization > Garmin; Preferences",
+      "kind": "title",
+      "description": "Name of the Garmin sync plugin. Brand name; keep as is.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "eceac182d5910e19",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/garmin/GarminPlugin.kt",
+          "line": 74
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/garmin/GarminPlugin.kt",
+          "line": 477
+        }
+      ]
+    },
+    {
+      "key": "garmin_description",
+      "ui_location": "Config builder > Synchronization > Garmin",
+      "kind": "summary",
+      "description": "Description in the plugin list. Fenix and Edge are Garmin product lines; keep names.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d9eccc3e7d1f612a",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/garmin/GarminPlugin.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "garmin_local_http_server",
+      "ui_location": "Preferences > Garmin",
+      "kind": "preference_title",
+      "description": "Switch title that enables an HTTP server on the phone for Garmin devices to fetch data.",
+      "related_keys": [
+        "garmin_local_http_server_port"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "797f3e2d59e0df77",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/garmin/keys/GarminBooleanKey.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "garmin_local_http_server_port",
+      "ui_location": "Preferences > Garmin > Local HTTP server port",
+      "kind": "preference_title",
+      "description": "Title of a numeric preference for the TCP port of the local HTTP server (1001-65535).",
+      "related_keys": [
+        "garmin_local_http_server"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2ca85705d19bfcc8",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/garmin/keys/GarminIntKey.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "garmin_request_key",
+      "ui_location": "Preferences > Garmin",
+      "kind": "preference_title",
+      "description": "Title of a text preference with the key a Garmin app sends in requests to authenticate with the phone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "407c35befd421568",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/garmin/keys/GarminStringKey.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "hour_short",
+      "ui_location": "Watch: complication (temp basal / target duration)",
+      "kind": "label",
+      "description": "Single-letter abbreviation for hours used in a very narrow complication, appended to a number.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "40c66a93c67fac7f",
+      "usages": [
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/BrTtComplication.kt",
+          "line": 67
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/TargetComplication.kt",
+          "line": 55
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/BgGraphActivity.kt",
+          "line": 82
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/utils/DisplayFormat.kt",
+          "line": 69
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/tile/BgGraphTileService.kt",
+          "line": 227
+        }
+      ]
+    },
+    {
+      "key": "last_aps_result_na",
+      "ui_location": "Watch: confirmation/status screen line (APS result)",
+      "kind": "error",
+      "description": "Shown when the algorithm has not produced a result yet.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "adb19ae53bd2a98f",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1668
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1669
+        }
+      ]
+    },
+    {
+      "key": "last_enact",
+      "ui_location": "Watch: confirmation/status screen line (loop status)",
+      "kind": "label",
+      "description": "Label before the time of the last temp basal command that was enacted (sent to the pump).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c1313e7c2dce961c",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1698
+        }
+      ]
+    },
+    {
+      "key": "last_run",
+      "ui_location": "Watch: confirmation/status screen line (loop status)",
+      "kind": "label",
+      "description": "Label before the time the loop last ran.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fb40abd5fd044e89",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1697
+        }
+      ]
+    },
+    {
+      "key": "loop_status",
+      "ui_location": "Watch: main menu > Loop status",
+      "kind": "menu_item",
+      "description": "Menu entry and title of the loop-status view on the watch. Limited space.",
+      "related_keys": [
+        "pump_status"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "85e23b58b4947baf",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 261
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 63
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/menus/MainMenuActivity.kt",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "key": "loop_status_closed",
+      "ui_location": "Watch: loop status line and running-mode complication",
+      "kind": "status",
+      "description": "Loop mode in capital letters: automated insulin delivery is active. Very limited space on the watch.",
+      "related_keys": [
+        "loop_status_open",
+        "loop_status_lgs",
+        "loop_status_disabled"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "561ecbf7a57a7410",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1686
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/RunningModeComplication.kt",
+          "line": 51
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 81
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 143
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 357
+        }
+      ]
+    },
+    {
+      "key": "loop_status_disabled",
+      "ui_location": "Watch: loop status line and running-mode complication",
+      "kind": "status",
+      "description": "Loop mode in capital letters: loop is turned off. Limited space.",
+      "related_keys": [
+        "loop_status_closed"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "fb9717c049e6543e",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1689
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/RunningModeComplication.kt",
+          "line": 54
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 84
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 146
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 360
+        }
+      ]
+    },
+    {
+      "key": "loop_status_lgs",
+      "ui_location": "Watch: loop status line and running-mode complication",
+      "kind": "status",
+      "description": "Abbreviation of 'Low glucose suspend': the loop only reduces insulin when glucose is low. Limited space.",
+      "related_keys": [
+        "loop_status_closed"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "16abd59f851d38b9",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1688
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/RunningModeComplication.kt",
+          "line": 53
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 83
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 144
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 359
+        }
+      ]
+    },
+    {
+      "key": "loop_status_open",
+      "ui_location": "Watch: loop status line and running-mode complication",
+      "kind": "status",
+      "description": "Loop mode in capital letters: the loop suggests, the user must enact. Limited space.",
+      "related_keys": [
+        "loop_status_closed"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b100dd49a0f2b55a",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1687
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/complications/RunningModeComplication.kt",
+          "line": 52
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 82
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/actions/RunningModePickerActivity.kt",
+          "line": 145
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/interaction/activities/LoopStatusActivity.kt",
+          "line": 358
+        }
+      ]
+    },
+    {
+      "key": "no_active_profile",
+      "ui_location": "Watch: error message",
+      "kind": "error",
+      "description": "Error shown when there is no active profile switch (the currently applied profile).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8208eab31e3d374a",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1013
+        }
+      ]
+    },
+    {
+      "key": "no_connectivity",
+      "ui_location": "Nightscout client v3 > connection status line",
+      "kind": "status",
+      "description": "Status shown when the phone has no network connection at all. Short fragment.",
+      "related_keys": [
+        "blocked_by_connectivity"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9449a48687d0df55",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/ReceiverDelegate.kt",
+          "line": 89
+        }
+      ]
+    },
+    {
+      "key": "no_history",
+      "ui_location": "Watch: TDD status",
+      "kind": "error",
+      "description": "Shown when no insulin history is available to compute total daily dose.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1e07f356e200baee",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1738
+        }
+      ]
+    },
+    {
+      "key": "no_profile",
+      "ui_location": "Watch: status message",
+      "kind": "error",
+      "description": "Shown when no profile is loaded, so targets or TDD cannot be computed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "854a2c5cfce1964f",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1653
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1736
+        }
+      ]
+    },
+    {
+      "key": "no_watch_connected",
+      "ui_location": "Wear screen > connected device",
+      "kind": "status",
+      "description": "Placeholder shown in the connected-device line when no watch is paired. Keep the parentheses.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2f9085c46c779f28",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearViewModel.kt",
+          "line": 138
+        }
+      ]
+    },
+    {
+      "key": "not_connected",
+      "ui_location": "Nightscout client v3 > connection status (also 'WS: ' prefix)",
+      "kind": "status",
+      "description": "Connection status when the Nightscout server was not reached. May be prefixed by 'WS: ' for websocket. Short fragment.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b34828df1d5755b4",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/NSClientV3Plugin.kt",
+          "line": 209
+        },
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/NSClientV3Plugin.kt",
+          "line": 211
+        }
+      ]
+    },
+    {
+      "key": "ns_alarm_options",
+      "ui_location": "Preferences > Nightscout client v3 > Alarm options",
+      "kind": "preference_title",
+      "description": "Heading of a preference group about Nightscout alarms.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "623e6aacb647f122",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/NSClientV3Plugin.kt",
+          "line": 1219
+        }
+      ]
+    },
+    {
+      "key": "ns_client",
+      "ui_location": "Nightscout client screen > title (also in the NSClient dialog titles)",
+      "kind": "title",
+      "description": "Short name of the Nightscout client sync plugin, used as a screen title. Brand-like name; usually kept as is.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "697a42d382a23c21",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/compose/NSClientComposeContent.kt",
+          "line": 73
+        },
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/compose/NSClientComposeContent.kt",
+          "line": 86
+        }
+      ]
+    },
+    {
+      "key": "ns_client_url",
+      "ui_location": "Nightscout client screen > status area",
+      "kind": "label",
+      "description": "Label before the Nightscout server address. Ends with a colon; the value follows.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "049203ac08988dbf",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/compose/NSClientScreen.kt",
+          "line": 154
+        }
+      ]
+    },
+    {
+      "key": "ns_client_v3_title",
+      "ui_location": "Config builder > Synchronization > list; Nightscout client v3 screen",
+      "kind": "title",
+      "description": "Name of the Nightscout client plugin using API v3. Product name; usually kept as is.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "abdc1e544067ed57",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/NSClientV3Plugin.kt",
+          "line": 159
+        },
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/NSClientV3Plugin.kt",
+          "line": 169
+        },
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/NSClientV3Plugin.kt",
+          "line": 1195
+        }
+      ]
+    },
+    {
+      "key": "ns_remote_control_options",
+      "ui_location": "Preferences > Nightscout client v3 > Remote control",
+      "kind": "preference_title",
+      "description": "Heading of a preference group about remote control (commands sent from other devices).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2d8564c777c3e3b2",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/NSClientV3Plugin.kt",
+          "line": 1233
+        }
+      ]
+    },
+    {
+      "key": "ns_sync_options",
+      "ui_location": "Preferences > Nightscout client v3 > Synchronization",
+      "kind": "preference_title",
+      "description": "Heading of a preference group about what data is synced.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "de8b3a2ee16a4a64",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/NSClientV3Plugin.kt",
+          "line": 1202
+        }
+      ]
+    },
+    {
+      "key": "open_settings_on_wear",
+      "ui_location": "Wear screen > button",
+      "kind": "button",
+      "description": "Button that opens the settings on the watch app. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c5714a9935044c88",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 266
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_already_paired_master",
+      "ui_location": "Nightscout client v3 > Pair with master",
+      "kind": "status",
+      "description": "%1$s is the master's technical install ID, not a name. Full sentences.",
+      "related_keys": [
+        "pair_with_master_unpair"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9fdaa67533a08c50",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 315
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_already_paired_title",
+      "ui_location": "Nightscout client v3 > Pair with master",
+      "kind": "title",
+      "description": "Heading when this device is already paired with a master.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "909c1e7f5aec87e0",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 311
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_confirm_master",
+      "ui_location": "Nightscout client v3 > Pair with master > confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Line showing the master's identity. %1$s is the master's technical install ID, not a name.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9ce91c857896f837",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 225
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_confirm_pair",
+      "ui_location": "Nightscout client v3 > Pair with master > confirmation dialog",
+      "kind": "button",
+      "description": "Confirm button of the pairing dialog. Short imperative.",
+      "related_keys": [
+        "pair_with_master_confirm_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "4c3acf1fb1c06d11",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 238
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_confirm_title",
+      "ui_location": "Nightscout client v3 > Pair with master > confirmation dialog",
+      "kind": "dialog_title",
+      "description": "Title of the dialog asking the user to confirm pairing. A question.",
+      "related_keys": [
+        "pair_with_master_confirm_pair"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "61d1c74f097bc68d",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 221
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_confirm_warning",
+      "ui_location": "Nightscout client v3 > Pair with master > confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Security warning: after pairing the master can control this device with signed commands.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "322fe06fdc4102b1",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 229
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_error_ambiguous_pin",
+      "ui_location": "Nightscout client v3 > Pair with master > error",
+      "kind": "error",
+      "description": "Shown when several pairing offers share the typed PIN. Tells the user to make a new PIN on the master.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8b0759c009c7c6ba",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 257
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_error_expired",
+      "ui_location": "Nightscout client v3 > Pair with master > error",
+      "kind": "error",
+      "description": "Shown when the PIN's time window has passed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "756e6674460c2c61",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 258
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_error_network",
+      "ui_location": "Nightscout client v3 > Pair with master > error",
+      "kind": "error",
+      "description": "Shown when Nightscout cannot be reached (no connection or server down).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "08cded63ef3ddb07",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 259
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_error_secret_store",
+      "ui_location": "Nightscout client v3 > Pair with master > error",
+      "kind": "error",
+      "description": "Shown when saving the pairing secret on the phone failed, so pairing was cancelled and nothing changed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f294fc7c9a197178",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 260
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_error_title",
+      "ui_location": "Nightscout client v3 > Pair with master > error",
+      "kind": "title",
+      "description": "Heading shown above a pairing error message.",
+      "related_keys": [
+        "pair_with_master_error_wrong_pin"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a081bf882083bc10",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 270
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_error_wrong_pin",
+      "ui_location": "Nightscout client v3 > Pair with master > error",
+      "kind": "error",
+      "description": "Shown when no pairing offer matches the PIN typed. Full sentences.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "05b022222f546783",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 256
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_fetching",
+      "ui_location": "Nightscout client v3 > Pair with master",
+      "kind": "status",
+      "description": "Progress text while the app looks up the pairing offer on Nightscout.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d9f77a4f91de783e",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 186
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_pin_entry_label",
+      "ui_location": "Nightscout client v3 > Pair with master",
+      "kind": "hint",
+      "description": "Label of the numeric text field for the PIN. Little space.",
+      "related_keys": [
+        "pair_with_master_pin_entry_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a303a950cf4c29a2",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 155
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_pin_entry_message",
+      "ui_location": "Nightscout client v3 > Pair with master",
+      "kind": "dialog_text",
+      "description": "Instruction on the client device. 'Authorized clients' is the screen named by authorized_clients_title and should be translated the same way.",
+      "related_keys": [
+        "authorized_clients_title",
+        "pair_with_master_pin_entry_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "971a2e531e65ce69",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 145
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_pin_entry_submit",
+      "ui_location": "Nightscout client v3 > Pair with master",
+      "kind": "button",
+      "description": "Button submitting the PIN. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f3abf19a8d5afb5a",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 170
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_pin_entry_title",
+      "ui_location": "Nightscout client v3 > Pair with master",
+      "kind": "title",
+      "description": "Heading above the PIN entry field.",
+      "related_keys": [
+        "pair_with_master_pin_entry_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "50574d4277333a79",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 141
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_retry",
+      "ui_location": "Nightscout client v3 > Pair with master > error",
+      "kind": "button",
+      "description": "Button after a pairing error to start over. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9323ff12edf2dc01",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 286
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_sending",
+      "ui_location": "Nightscout client v3 > Pair with master",
+      "kind": "status",
+      "description": "Progress text while the pairing message is sent to the master through Nightscout.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b5e649fdb41b2e4d",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 205
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_title",
+      "ui_location": "Nightscout client v3 > Pair with master",
+      "kind": "title",
+      "description": "Screen title. Run on the client device (e.g. a follower phone) to pair with the master AAPS phone that runs the loop. 'Master' is the main AAPS instance.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "441229fa1f56c142",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 82
+        }
+      ]
+    },
+    {
+      "key": "pair_with_master_unpair",
+      "ui_location": "Nightscout client v3 > Pair with master",
+      "kind": "button",
+      "description": "Button that removes the existing pairing. Short imperative.",
+      "related_keys": [
+        "pair_with_master_already_paired_master"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0a16b9e0e6936c58",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/clientcontrol/compose/PairWithMasterScreen.kt",
+          "line": 326
+        }
+      ]
+    },
+    {
+      "key": "permission_sms_description",
+      "ui_location": "Permission request dialog",
+      "kind": "dialog_text",
+      "description": "Explains why the SMS permission is needed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "54ab74ecb46ddfc7",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 192
+        }
+      ]
+    },
+    {
+      "key": "permission_sms_title",
+      "ui_location": "Permission request dialog",
+      "kind": "dialog_title",
+      "description": "Title of the explanation for the Android SMS permission. One word/abbreviation.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cf0ab47edb172a2a",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 191
+        }
+      ]
+    },
+    {
+      "key": "pump_fetching_data",
+      "ui_location": "Watch: TDD status message",
+      "kind": "status",
+      "description": "Message sent to the watch while the phone asks the pump for data. Lowercase fragment, TDD is total daily dose of insulin.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "abd46ee13afee467",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 595
+        }
+      ]
+    },
+    {
+      "key": "pump_old_data",
+      "ui_location": "Watch: TDD status message",
+      "kind": "error",
+      "description": "Message that the pump only returned outdated history. TDD means total daily dose of insulin; keep the abbreviation.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "412a6bfdeaa3218e",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 603
+        }
+      ]
+    },
+    {
+      "key": "pump_status",
+      "ui_location": "Watch: main menu > Pump status",
+      "kind": "menu_item",
+      "description": "Title of the pump-status view on the watch, shown uppercase. Limited space.",
+      "related_keys": [
+        "loop_status"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2970f5057b0eb406",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 251
+        }
+      ]
+    },
+    {
+      "key": "queue",
+      "ui_location": "Nightscout client / xDrip screen > status area",
+      "kind": "label",
+      "description": "Label before the number of items waiting to be uploaded. Ends with a colon.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0925aa0294120a7a",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/xdrip/compose/XdripScreen.kt",
+          "line": 124
+        },
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/compose/NSClientScreen.kt",
+          "line": 172
+        }
+      ]
+    },
+    {
+      "key": "rate_duration",
+      "ui_location": "Watch: confirmation/status screen line (APS result)",
+      "kind": "status",
+      "description": "Suggested temp basal. %1$.2f is U/h, %2$.2f the percent of the current basal, %3$d the duration in minutes. 'U' is insulin units. Contains a line break.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e99ad4eb79a2af05",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1674
+        }
+      ]
+    },
+    {
+      "key": "read_only",
+      "ui_location": "Nightscout client v3 > connection status",
+      "kind": "status",
+      "description": "Status when the Nightscout token only allows reading, so uploads are not possible. Short fragment.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e1ee57c23cf8889d",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/NSClientV3Plugin.kt",
+          "line": 214
+        }
+      ]
+    },
+    {
+      "key": "resend_all_data",
+      "ui_location": "Wear screen > button",
+      "kind": "button",
+      "description": "Button that resends all data to the watch. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "20320b9772cc0dbb",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 265
+        }
+      ]
+    },
+    {
+      "key": "scene_not_available",
+      "ui_location": "Watch: error message",
+      "kind": "error",
+      "description": "Error sent to the watch. %1$s is a scene name (a saved profile of settings). 'Tile' is a WearOS tile.",
+      "related_keys": [
+        "user_action_not_available"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "973f7882888a8e5c",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 769
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 770
+        }
+      ]
+    },
+    {
+      "key": "sms_actual_bg",
+      "ui_location": "SMS reply to the BG command",
+      "kind": "label",
+      "description": "Label before the current glucose value; a fragment ending with a colon. BG is blood glucose.",
+      "related_keys": [
+        "sms_last_bg"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "aea462d418c25970",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 401
+        }
+      ]
+    },
+    {
+      "key": "sms_basal",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "sms_bolus",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "sms_delta",
+      "ui_location": "SMS reply to the BG command",
+      "kind": "label",
+      "description": "Label before the glucose change since the previous reading. Colon at the end.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8df733f04e34abc9",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 408
+        }
+      ]
+    },
+    {
+      "key": "sms_iob",
+      "ui_location": "SMS reply to the BG command",
+      "kind": "label",
+      "description": "Label before insulin on board (IOB), the active insulin amount. Colon at the end.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6e2b40a16a2e0d37",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 412
+        }
+      ]
+    },
+    {
+      "key": "sms_last_bg",
+      "ui_location": "SMS reply to the BG command",
+      "kind": "label",
+      "description": "Label before the last known glucose value when the newest is old. Followed by sms_min_ago.",
+      "related_keys": [
+        "sms_min_ago"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d54d5794838bb82b",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 405
+        }
+      ]
+    },
+    {
+      "key": "sms_loop_suspended_for",
+      "ui_location": "SMS reply sent to the requesting phone (loop status)",
+      "kind": "status",
+      "description": "Loop state with remaining suspend time. %1$d is minutes, 'm' the abbreviation.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8d298a527e7fb5cb",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 464
+        }
+      ]
+    },
+    {
+      "key": "sms_min_ago",
+      "ui_location": "SMS reply to the BG command",
+      "kind": "other",
+      "description": "Age of the reading. %1$d is minutes, written without a space before 'min' in English; keep it very short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d54d5794838bb82b",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 405
+        }
+      ]
+    },
+    {
+      "key": "sms_profile_switch_created",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply after a profile switch was created.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ca80af9f47c1a737",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/ProfileSwitchAction.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "sms_read_status_failed",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "error",
+      "description": "Reply when reading the pump status failed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e018a7970c8ceb1e",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 588
+        }
+      ]
+    },
+    {
+      "key": "sms_tbr_absolute_only",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "error",
+      "description": "Reply when the pump supports absolute (U/h) temp basals only.",
+      "related_keys": [
+        "sms_tbr_percent_only"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6ce1307719c6bf24",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 721
+        }
+      ]
+    },
+    {
+      "key": "sms_tbr_percent_only",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "error",
+      "description": "Reply when the pump supports percent temp basals only.",
+      "related_keys": [
+        "sms_tbr_absolute_only"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6ce1307719c6bf24",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 721
+        }
+      ]
+    },
+    {
+      "key": "sms_timeout_while_waiting",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply when the pump was busy with a previous communication too long, so the command was not run.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1ae624098a6a7a83",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/AuthRequest.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "sms_wrong_code",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply when the confirmation code was wrong; the pending command is cancelled.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "211659c1159ddc72",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/AuthRequest.kt",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "key": "sms_wrong_tbr_duration",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "error",
+      "description": "Reply when a temp basal duration is not valid. TBR = temp basal rate. %1$d is the allowed step in minutes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "72a359f98fec9674",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 722
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator",
+      "ui_location": "Config builder > Synchronization > SMS Communicator; Preferences",
+      "kind": "title",
+      "description": "Name of the plugin that lets followers control AAPS by SMS.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cd30e110bb736fbe",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 150
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 1064
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_another_bolus_in_queue",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "error",
+      "description": "Reply when a bolus is already waiting in the command queue.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6c7ca5052af09fb1",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 345
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_basal_pct_reply_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm a temp basal as percent by replying with a one-time code. %1$d percent of basal, %2$d minutes, %3$s the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "758c8202ab6a1c65",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 737
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_basal_reply_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm a temp basal as rate by replying with a one-time code. %1$.2f U/h rate, %2$d minutes, %3$s the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b5572628dd450d68",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 738
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_basal_stop_reply_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm stopping the temp basal by replying with a one-time code. %1$s is the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3706abb3e88234cd",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 693
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_bolus_delivered",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply after a successful bolus. %1$.2f is insulin units.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "322508dbe6035200",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/BolusAction.kt",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_bolus_failed",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "error",
+      "description": "Reply when bolus delivery failed. Warns to verify actual state first.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b2fad0c67f38b983",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/BolusAction.kt",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_bolus_reply_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm a bolus by replying with a one-time code. %1$.2f is insulin units (U), %2$s the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3651ea680e9b051a",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 826
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_calibration_failed",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "error",
+      "description": "Reply when xDrip+ isn't accepting calibrations.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0186364b85225843",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/CalibrationAction.kt",
+          "line": 26
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/CalibrationAction.kt",
+          "line": 35
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/CalibrationAction.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_calibration_reply_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm sending a calibration by replying with a one-time code. %1$.2f is the glucose value, %2$s the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8087bf3419f9fbe0",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 974
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_calibration_sent",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply after a calibration was handed to xDrip+; the second sentence reminds that xDrip+ must accept calibrations.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "dab22fab8d89cb87",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/CalibrationAction.kt",
+          "line": 26
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/CalibrationAction.kt",
+          "line": 30
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/CalibrationAction.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_carbs_failed",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "error",
+      "description": "Reply when entering carbs failed. %1$d is grams.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9b92e79ae4b24f09",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/CarbsAction.kt",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_carbs_reply_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm entering carbs by replying with a one-time code. %1$d grams, %2$s a time, %3$s the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "58780265e7162964",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 884
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_carbs_set",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply after carbs were entered. %1$d is grams; note the space before 'g' in English.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3dbaed1ba2404d37",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/CarbsAction.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_code_from_authenticator_for",
+      "ui_location": "SMS reply text",
+      "kind": "other",
+      "description": "Part of an SMS asking for a confirmation code. %1$s is the authenticator account name. Fragment, followed by the PIN.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e6f7a437bdbde065",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 1036
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_code_verify_hint",
+      "ui_location": "Preferences > SMS Communicator > Authenticator setup > step 3",
+      "kind": "hint",
+      "description": "Placeholder in the test field: OTP is the one-time password from the authenticator app, then the PIN. Short.",
+      "related_keys": [
+        "smscommunicator_code_verify_label"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b3be72792a9b6b40",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 141
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_code_verify_info",
+      "ui_location": "Preferences > SMS Communicator > Authenticator setup > step 3",
+      "kind": "summary",
+      "description": "Explains the code format: 6-digit OTP from the authenticator, then at least 3 digits of PIN.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "eedb4094e9969815",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 123
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_code_verify_label",
+      "ui_location": "Preferences > SMS Communicator > Authenticator setup > step 3",
+      "kind": "label",
+      "description": "Label of the field for typing a code to test. Ends with a colon.",
+      "related_keys": [
+        "smscommunicator_code_verify_hint"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e007b800a7a74c00",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 135
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_current_loop_mode",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "status",
+      "description": "Reply stating the running mode. %1$s is a mode name such as Closed loop or LGS.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "97f12bf3d73bf406",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 518
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 535
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_extended_cancel_failed",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "error",
+      "description": "Reply when cancelling the extended bolus failed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1d58c6263accdeb4",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/ExtendedCancelAction.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_extended_canceled",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply after an extended bolus was cancelled; a status summary follows.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "857ff369d3909720",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/ExtendedCancelAction.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_extended_failed",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "error",
+      "description": "Reply when starting an extended bolus failed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "dc84c94a7ae3c369",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/ExtendedSetAction.kt",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_extended_reply_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm an extended bolus by replying with a one-time code. %1$.2f insulin units, %2$d minutes, %3$s the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9c17b699ea39e44c",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 789
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_extended_set",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply after an extended bolus started. %1$.2f insulin units, %2$d minutes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d90b36a6d100462c",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/ExtendedSetAction.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_extended_stop_reply_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm stopping the extended bolus by replying with a one-time code. %1$s is the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e6ca1ee90941d21b",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 761
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_invalid_phone_number",
+      "ui_location": "Notification list",
+      "kind": "notification",
+      "description": "Notification that a configured SMS phone number is invalid.",
+      "related_keys": [
+        "smscommunicator_message_body"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ed978be79f6a4b0c",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 1024
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_loop_disable_reply_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm disabling the loop by replying with a one-time code. %1$s is the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "48d7f271753a48fa",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 442
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_loop_has_been_disabled",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply after the loop was disabled.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e7f88508c81cc2eb",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 446
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_loop_is_enabled",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply stating the loop is on. Followed by ' - ' and the mode (open or closed loop).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ee1c654ffb09811f",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 457
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 458
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 459
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_loop_resume_reply_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm resuming the loop by replying with a one-time code. %1$s is the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0d6cfeb21c9f66d5",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 474
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_loop_resumed",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply after the loop resumed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ae15fc839ca3abfb",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 478
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_loop_suspended",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply after the loop was suspended.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "db10cf30e756f1fb",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 501
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_meal_bolus_delivered",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply after a successful meal bolus. %1$.2f is insulin units.",
+      "related_keys": [
+        "smscommunicator_meal_bolus_delivered_tt"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "cdd4e404c98470b0",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/BolusAction.kt",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_meal_bolus_delivered_tt",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Second line of the meal bolus reply. %1$s is the target, %2$d the duration in minutes.",
+      "related_keys": [
+        "smscommunicator_meal_bolus_delivered"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "04821f250c53d510",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/BolusAction.kt",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_meal_bolus_reply_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm a meal bolus (bolus with a meal temp target) by replying with a one-time code. %1$.2f is insulin units (U), %2$s the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "133171e26cee244a",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 824
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_message_body",
+      "ui_location": "Notification list",
+      "kind": "notification",
+      "description": "Notification that an SMS body could not be sent (invalid text).",
+      "related_keys": [
+        "smscommunicator_invalid_phone_number"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "952a70ddc6b58cea",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 1021
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_otp_install_info",
+      "ui_location": "Preferences > SMS Communicator > Authenticator setup > step 1",
+      "kind": "summary",
+      "description": "Tells the user to install a TOTP authenticator app on each follower phone. App names and RFC 6238 stay untranslated; keep line breaks and bullets.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "809074c16b83857c",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_otp_reset_btn",
+      "ui_location": "Preferences > SMS Communicator > Authenticator setup > reset section",
+      "kind": "button",
+      "description": "Button opening the reset confirmation. Short imperative.",
+      "related_keys": [
+        "smscommunicator_otp_reset_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ce8d4c754677d458",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 177
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_otp_reset_header",
+      "ui_location": "Preferences > SMS Communicator > Authenticator setup > section header",
+      "kind": "title",
+      "description": "Header of the reset section.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "aeb0caac1a1f92b8",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 165
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_otp_reset_prompt",
+      "ui_location": "Preferences > SMS Communicator > Authenticator setup > reset confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Question warning that existing authenticators become invalid.",
+      "related_keys": [
+        "smscommunicator_otp_reset_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f913287f3c101e8e",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 187
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_otp_reset_title",
+      "ui_location": "Preferences > SMS Communicator > Authenticator setup > reset confirmation dialog",
+      "kind": "dialog_title",
+      "description": "Title of the confirmation.",
+      "related_keys": [
+        "smscommunicator_otp_reset_prompt"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c0498eca9421acf5",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 186
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_otp_reset_warning",
+      "ui_location": "Preferences > SMS Communicator > Authenticator setup > reset section",
+      "kind": "summary",
+      "description": "Warning that resetting invalidates all set-up authenticators.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "79b355434be271f8",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 167
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_otp_step1_install_header",
+      "ui_location": "Preferences > SMS Communicator > Authenticator setup > section header",
+      "kind": "title",
+      "description": "Header of step 1. Keep the number prefix.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "dd5a4cfb7ff46218",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_otp_step2_provisioning_header",
+      "ui_location": "Preferences > SMS Communicator > Authenticator setup > section header",
+      "kind": "title",
+      "description": "Header of step 2: scan the QR code shown below to add AAPS to the authenticator app. Keep the number.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5fd1561dec0c1fc7",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 105
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_otp_step3_test_header",
+      "ui_location": "Preferences > SMS Communicator > Authenticator setup > section header",
+      "kind": "title",
+      "description": "Header of step 3: test a one-time password. Keep the number.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9e2ab8b370c0b46b",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 121
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_otp_verification_ivalid_size",
+      "ui_location": "Preferences > SMS Communicator > Authenticator setup > step 3 result",
+      "kind": "status",
+      "description": "Result of the test: wrong number of digits. Uppercase, short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "52d4ece018fb9bf8",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 149
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_otp_verification_ok",
+      "ui_location": "Preferences > SMS Communicator > Authenticator setup > step 3 result",
+      "kind": "status",
+      "description": "Result of the test: code accepted. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7384eb8d8f218692",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 148
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_otp_verification_wrong_otp",
+      "ui_location": "Preferences > SMS Communicator > Authenticator setup > step 3 result",
+      "kind": "status",
+      "description": "Result of the test: one-time password wrong. Uppercase, short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "392501fdeb122c71",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 151
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_otp_verification_wrong_pin",
+      "ui_location": "Preferences > SMS Communicator > Authenticator setup > step 3 result",
+      "kind": "status",
+      "description": "Result of the test: OTP fine but PIN wrong. Uppercase, short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5b6104df63c284fb",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 150
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_profile_reply_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm a profile switch by replying with a one-time code. %1$s profile name, %2$d percentage (percent sign is literal), %3$s the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a7956b099e2f567c",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 670
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_pump_connect_fail",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "smscommunicator_pump_connect_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm reconnecting the pump by replying with a one-time code. %1$s is the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "70778de789110a88",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 595
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_pump_disconnect_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm disconnecting the pump by replying with a one-time code. %1$d is minutes, %2$s the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a85cebfb509f4bf9",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 615
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_pump_disconnected",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply after the pump was set to disconnected.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "24a2b3fdefa866aa",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 620
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_reconnect",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply after the pump was reconnected.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6fdcfa47a7036c01",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 599
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_remote_bolus_not_allowed",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "error",
+      "description": "Reply when a bolus was requested too soon after the last remote bolus.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d9ebcbad546695a7",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 348
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_remote_command_not_allowed",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "error",
+      "description": "Reply when remote commands are off in the SMS preferences.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e6949312a4c78925",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 319
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 324
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 329
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 334
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 339
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 344
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 353
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 358
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 363
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 368
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_remote_command_not_possible",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "error",
+      "description": "Reply when the command can't run in the current state.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9315df7d4899e1e0",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 481
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 504
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 523
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 538
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/RunningModeAction.kt",
+          "line": 45
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/TempTargetCancelAction.kt",
+          "line": 30
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/TempTargetSetAction.kt",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_restart_reply_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm restarting AAPS by replying with a one-time code. %1$s is the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "aa754d75e79d2a4f",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 567
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_restarting",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply and treatment-log text when AAPS restarts.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1195ef41dcdcd384",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/RestartAction.kt",
+          "line": 26
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/RestartAction.kt",
+          "line": 27
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/RestartAction.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_set_closed_loop_reply_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm switching the loop to closed loop by replying with a one-time code. %1$s is the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "df91c55f66a44170",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 531
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_set_lgs_reply_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm switching the loop to LGS (low glucose suspend) by replying with a one-time code. %1$s is the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c1fc09377f879a2a",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 512
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_stopped_sms",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply confirming the SMS remote service is off. 'Master smartphone' is the phone that runs the loop.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5698b90a32707404",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/SmsDisableAction.kt",
+          "line": 25
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/SmsDisableAction.kt",
+          "line": 28
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/SmsDisableAction.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_stops_ns_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm disabling the SMS service by replying with a one-time code. %1$s is the code. Contains a warning that only the master phone can re-enable it. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "145d188eaa14bb30",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 955
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_suspend_reply_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm suspending the loop by replying with a one-time code. %1$d minutes, %2$s the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f06770b3b98e1a1f",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 497
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_tab_otp_label",
+      "ui_location": "Preferences > SMS Communicator > Authenticator setup",
+      "kind": "title",
+      "description": "Title of the Authenticator (one-time password) setup screen and its preference entry.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "be37b8cb82c4beda",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/compose/SmsCommunicatorOtpScreen.kt",
+          "line": 78
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/keys/SmsIntentKey.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_tempbasal_cancel_failed",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "error",
+      "description": "Reply when cancelling the temp basal failed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "55c9a1253289e06a",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/BasalCancelAction.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_tempbasal_canceled",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply after a temp basal was cancelled; a status summary follows.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1e8a2da91e4e9110",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/BasalCancelAction.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_tempbasal_failed",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "error",
+      "description": "Reply when starting a temp basal failed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "49a187bc9727c3cd",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/TempBasalAction.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_tempbasal_set",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply after a temp basal started. %1$.2f U/h, %2$d minutes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2c0e4117c860d71d",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/TempBasalAction.kt",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_tempbasal_set_percent",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply after a percent temp basal started. %1$d percent, %2$d minutes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "26995c8588c5d411",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/TempBasalAction.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_temptarget_cancel",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm cancelling the temp target by replying with a one-time code. %1$s is the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fe8f001fb9ae38e7",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 934
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_temptarget_with_code",
+      "ui_location": "SMS asking the requester to confirm",
+      "kind": "other",
+      "description": "Text of an SMS asking the follower to confirm a temp target by replying with a one-time code. %1$s is the target, %2$s the code. Whole sentence; the code follows the last words.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1931050308f8bca7",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 910
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_tt_canceled",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply after a temp target was cancelled.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0a04f0216005dce4",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/TempTargetCancelAction.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_tt_set",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "other",
+      "description": "Reply after a temp target was set. %1$s is the target, %2$d minutes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d3f78c1b1b58f5d1",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/actions/TempTargetSetAction.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_unknown_command",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "error",
+      "description": "Reply when the SMS text matches no command or a pending confirmation.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "060bcc5cfeefe500",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 388
+        }
+      ]
+    },
+    {
+      "key": "smscommunicator_wrong_duration",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "error",
+      "description": "Reply when the duration value is invalid.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6935529f03e20a08",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 493
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 611
+        }
+      ]
+    },
+    {
+      "key": "status_label",
+      "ui_location": "Tidepool screen; Setup wizard > Nightscout step",
+      "kind": "label",
+      "description": "Label before the current sync status. Ends with a colon.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8eb7470553980328",
+      "usages": [
+        {
+          "path": "plugins/configuration/src/commonMain/kotlin/app/aaps/plugins/configuration/setupwizard/SWDefinition.kt",
+          "line": 209
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/compose/TidepoolScreen.kt",
+          "line": 132
+        },
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/compose/NSClientScreen.kt",
+          "line": 171
+        }
+      ]
+    },
+    {
+      "key": "summary_tidepool_dev_servers",
+      "ui_location": "Preferences > Tidepool > Use Integration (test) servers",
+      "kind": "preference_summary",
+      "description": "Summary of a switch; the test servers are Tidepool's non-production servers.",
+      "related_keys": [
+        "title_tidepool_dev_servers"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "44c684b29d80964e",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/keys/TidepoolBooleanKey.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "target",
+      "ui_location": "Watch: confirmation/status screen line (targets status)",
+      "kind": "label",
+      "description": "Label before the target glucose value or range, lowercase.",
+      "related_keys": [
+        "temp_target"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1799e2b80245b804",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1661
+        }
+      ]
+    },
+    {
+      "key": "target_only_aps_mode",
+      "ui_location": "Watch: targets status",
+      "kind": "error",
+      "description": "Shown instead of target info when AAPS is not in APS mode (APS = automated insulin dosing; the pump-only build has no targets).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d6fcedcf080ec084",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1652
+        }
+      ]
+    },
+    {
+      "key": "tdd_line",
+      "ui_location": "Watch: TDD message",
+      "kind": "other",
+      "description": "Value line: %1$.2f insulin units and the percent relative to a reference total daily dose. Placeholders are numbers; keep them and 'U'.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "186344fdb93c8457",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1747
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1767
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1768
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1769
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1775
+        }
+      ]
+    },
+    {
+      "key": "temp_target",
+      "ui_location": "Watch: confirmation/status screen line (targets status)",
+      "kind": "label",
+      "description": "Label for the active temporary glucose target. Combined with a value via a 'label: value' template.",
+      "related_keys": [
+        "until",
+        "default_range",
+        "target"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "96f7437caf7f7e78",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1657
+        }
+      ]
+    },
+    {
+      "key": "tidepool",
+      "ui_location": "Config builder > Synchronization > Tidepool; Preferences > Tidepool",
+      "kind": "title",
+      "description": "Name of the Tidepool upload plugin. Product name; usually kept as is.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1782c86ca317047f",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/TidepoolPlugin.kt",
+          "line": 76
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/TidepoolPlugin.kt",
+          "line": 216
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/compose/TidepoolScreen.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "tidepool_purge_data",
+      "ui_location": "Tidepool screen > overflow menu",
+      "kind": "menu_item",
+      "description": "Menu item (and confirmation dialog title) that deletes everything AAPS uploaded to Tidepool.",
+      "related_keys": [
+        "tidepool_purge_data_confirm"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "60df6a4f14110645",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/compose/TidepoolScreen.kt",
+          "line": 235
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/compose/TidepoolScreen.kt",
+          "line": 253
+        }
+      ]
+    },
+    {
+      "key": "tidepool_purge_data_confirm",
+      "ui_location": "Tidepool screen > purge confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Destructive-action warning. \"Full synchronization\" in quotes must match the full_sync menu item translation.",
+      "related_keys": [
+        "full_sync",
+        "tidepool_purge_data"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8f10d063a8f473f7",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/compose/TidepoolScreen.kt",
+          "line": 254
+        }
+      ]
+    },
+    {
+      "key": "title_tidepool_dev_servers",
+      "ui_location": "Preferences > Tidepool",
+      "kind": "preference_title",
+      "description": "Title of a switch for developers; 'Integration' names Tidepool's test environment.",
+      "related_keys": [
+        "summary_tidepool_dev_servers"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "44c684b29d80964e",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/keys/TidepoolBooleanKey.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "tizen",
+      "ui_location": "Config builder > Synchronization > External companion apps",
+      "kind": "title",
+      "description": "Plugin name for broadcasts to external watch/companion apps (originally Tizen smartwatches).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7b5339ce0635a707",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tizen/TizenPlugin.kt",
+          "line": 81
+        }
+      ]
+    },
+    {
+      "key": "tizen_description",
+      "ui_location": "Config builder > Synchronization",
+      "kind": "summary",
+      "description": "Description of the companion-app broadcast plugin.",
+      "related_keys": [
+        "tizen"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "99ca96938c6ca8ab",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tizen/TizenPlugin.kt",
+          "line": 82
+        }
+      ]
+    },
+    {
+      "key": "today",
+      "ui_location": "Watch: TDD message",
+      "kind": "label",
+      "description": "Label for today's total daily dose, followed by a colon and the value.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c8b722cfdeaa563d",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1747
+        },
+        {
+          "path": "shared/impl/src/commonMain/kotlin/app/aaps/shared/impl/utils/DateUtilImpl.kt",
+          "line": 123
+        },
+        {
+          "path": "ui/src/commonMain/kotlin/app/aaps/ui/compose/stats/TddStatsCompose.kt",
+          "line": 122
+        }
+      ]
+    },
+    {
+      "key": "units_short",
+      "ui_location": "Watch: bolus/fill confirmation",
+      "kind": "label",
+      "description": "Short symbol for insulin units, appended directly to a number (e.g. 0.5U). One or two characters.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c1c2a67004ebb826",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 981
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 998
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/CircleWatchface.kt",
+          "line": 181
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/utils/BaseWatchFace.kt",
+          "line": 619
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/utils/BaseWatchFace.kt",
+          "line": 673
+        },
+        {
+          "path": "wear/src/main/kotlin/app/aaps/wear/watchfaces/utils/BaseWatchFace.kt",
+          "line": 728
+        }
+      ]
+    },
+    {
+      "key": "unsupported_ns_version",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "until",
+      "ui_location": "Watch: confirmation/status screen line (targets status)",
+      "kind": "label",
+      "description": "Label before the time a temp target ends. Lowercase, used as a label with a time value.",
+      "related_keys": [
+        "temp_target"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "bb4efc40cab03b1f",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1658
+        }
+      ]
+    },
+    {
+      "key": "upload_now",
+      "ui_location": "Tidepool screen > overflow menu; OpenHumans screen",
+      "kind": "menu_item",
+      "description": "Action that starts an upload immediately. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b4346a1d04c4e1a1",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/openhumans/compose/OHScreen.kt",
+          "line": 138
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/tidepool/compose/TidepoolScreen.kt",
+          "line": 221
+        }
+      ]
+    },
+    {
+      "key": "user_action_not_available",
+      "ui_location": "Watch: error message",
+      "kind": "error",
+      "description": "Error sent to the watch. %1$s is the title of a user action (a custom action defined in AAPS). 'Tile' is a WearOS tile.",
+      "related_keys": [
+        "scene_not_available"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "048b41c24be42d18",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 718
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 721
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 746
+        }
+      ]
+    },
+    {
+      "key": "wear_action_loop_state_invalid",
+      "ui_location": "Watch: error message",
+      "kind": "error",
+      "description": "Shown when the watch requested a running mode that doesn't exist (list outdated).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0dfdb21852e5f4db",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1170
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1171
+        }
+      ]
+    },
+    {
+      "key": "wear_action_loop_state_unauthorized",
+      "ui_location": "Watch: error message",
+      "kind": "error",
+      "description": "Shown on the watch when a running-mode change was not authorized in time. Asks to repeat.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e32ac835d40927d0",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1169
+        }
+      ]
+    },
+    {
+      "key": "wear_action_running_mode_title",
+      "ui_location": "Watch: running mode confirmation",
+      "kind": "title",
+      "description": "Title of the running mode (loop mode, e.g. Closed loop, Suspended) change confirmation. Noun phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "68761b12e8f18758",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1175
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1187
+        }
+      ]
+    },
+    {
+      "key": "wear_action_tempt_max_bg_error",
+      "ui_location": "Watch: error message",
+      "kind": "error",
+      "description": "Error when the maximum glucose of a temp target is outside the allowed range.",
+      "related_keys": [
+        "wear_action_tempt_min_bg_error"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b516d16f67a92be6",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1078
+        }
+      ]
+    },
+    {
+      "key": "wear_action_tempt_min_bg_error",
+      "ui_location": "Watch: error message",
+      "kind": "error",
+      "description": "Error when the minimum glucose of a temp target is outside the allowed range.",
+      "related_keys": [
+        "wear_action_tempt_max_bg_error"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c1b221ea3908d48f",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1074
+        }
+      ]
+    },
+    {
+      "key": "wear_action_tempt_range_error",
+      "ui_location": "Watch: error message",
+      "kind": "error",
+      "description": "Error for a temp target whose low value exceeds the high value. %1$s and %2$s are glucose values already formatted with unit.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "58079a3b8f29b64d",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1082
+        }
+      ]
+    },
+    {
+      "key": "wear_action_tempt_unit_error",
+      "ui_location": "Watch: error message",
+      "kind": "error",
+      "description": "Error: the watch's glucose unit (mg/dL or mmol/L) differs from the phone's. 'Tempt' in the key means temp target.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8ffbe68fbfdaf1ae",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1064
+        }
+      ]
+    },
+    {
+      "key": "wear_control_disabled",
+      "ui_location": "Watch: error message",
+      "kind": "error",
+      "description": "Error shown on the watch when remote control from the watch is off in the Wear preferences.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "09e3d65cbbd96787",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 664
+        }
+      ]
+    },
+    {
+      "key": "wear_custom_watchface",
+      "ui_location": "Wear screen > watchface card",
+      "kind": "label",
+      "description": "%1$s is the name of the selected custom watchface.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8ea5ed4eb3c168d6",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 341
+        }
+      ]
+    },
+    {
+      "key": "wear_custom_watchface_not_shown",
+      "ui_location": "Wear screen > message",
+      "kind": "dialog_text",
+      "description": "%1$s is a watchface name. 'Complications watchface' and 'Custom watchface' are watch face types and should match other keys.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6865ad75a6060d69",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 234
+        }
+      ]
+    },
+    {
+      "key": "wear_custom_watchface_settings",
+      "ui_location": "Preferences > Wear > Custom Watchface Settings",
+      "kind": "preference_title",
+      "description": "Heading of the preference group for the Custom Watchface (a user-configurable watch face).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fa9249915ebcdda6",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/WearPlugin.kt",
+          "line": 329
+        }
+      ]
+    },
+    {
+      "key": "wear_export_watchface",
+      "ui_location": "Wear screen > button",
+      "kind": "button",
+      "description": "Button exporting a template file for designing your own custom watchface. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "578e9044de89b6d9",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 357
+        }
+      ]
+    },
+    {
+      "key": "wear_general_settings",
+      "ui_location": "Preferences > Wear > General Settings",
+      "kind": "preference_title",
+      "description": "Heading of a preference group.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a0040f6c417fefdc",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/WearPlugin.kt",
+          "line": 336
+        }
+      ]
+    },
+    {
+      "key": "wear_import_custom_watchface_title",
+      "ui_location": "Wear screen > file picker",
+      "kind": "dialog_title",
+      "description": "Title of the file chooser for picking a custom watchface file (.zip).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "80774d7bd863d4e5",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "key": "wear_infos_watchface",
+      "ui_location": "Wear screen > button",
+      "kind": "button",
+      "description": "Button showing info about the custom watchface. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b1720121368dd51c",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 350
+        }
+      ]
+    },
+    {
+      "key": "wear_link_to_more_cwf_doc",
+      "ui_location": "Wear screen > link",
+      "kind": "other",
+      "description": "URL of the English documentation page for custom watchfaces; replace only with a localized docs URL if one exists, otherwise keep.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "362e5b6ed9afa2cb",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 143
+        }
+      ]
+    },
+    {
+      "key": "wear_load_watchface",
+      "ui_location": "Wear screen > button",
+      "kind": "button",
+      "description": "Button that uploads the custom watchface to the watch. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0b4635a1d4aab790",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 348
+        }
+      ]
+    },
+    {
+      "key": "wear_new_custom_watchface_exported",
+      "ui_location": "Toast on Wear screen",
+      "kind": "toast",
+      "description": "Confirmation that the template file was saved.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "180d1b0d7d4f81c1",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearViewModel.kt",
+          "line": 173
+        }
+      ]
+    },
+    {
+      "key": "wear_phone_not_ready",
+      "ui_location": "Watch: error message",
+      "kind": "error",
+      "description": "Error shown on the watch when the phone app is still starting or applying settings.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "867a70d717ef5359",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 644
+        }
+      ]
+    },
+    {
+      "key": "wear_pushed_watchface_confirm_message",
+      "ui_location": "Wear screen > confirmation dialog",
+      "kind": "dialog_text",
+      "description": "%1$s is the new watchface name and %2$s the current one.",
+      "related_keys": [
+        "wear_pushed_watchface_confirm_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "41810fec092499b4",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 217
+        }
+      ]
+    },
+    {
+      "key": "wear_pushed_watchface_confirm_message_from_complications",
+      "ui_location": "Wear screen > confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Same as the plain confirm message, plus a warning that user-edited complications (small data widgets on a watch face) are reset.",
+      "related_keys": [
+        "wear_pushed_watchface_confirm_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d6ad869efe092141",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 216
+        }
+      ]
+    },
+    {
+      "key": "wear_pushed_watchface_confirm_title",
+      "ui_location": "Wear screen > confirmation dialog",
+      "kind": "dialog_title",
+      "description": "Question asking to confirm changing the watchface on the watch.",
+      "related_keys": [
+        "wear_pushed_watchface_confirm_message"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "62f60543ae3a2c3b",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 219
+        }
+      ]
+    },
+    {
+      "key": "wear_pushed_watchface_installing",
+      "ui_location": "Wear screen > watchface selection hint",
+      "kind": "status",
+      "description": "Small hint while a watchface is being installed on the watch.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cf220e163eb3538c",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/compose/WearScreen.kt",
+          "line": 303
+        }
+      ]
+    },
+    {
+      "key": "wear_remote_insulin_not_allowed_in_client",
+      "ui_location": "Watch: error message",
+      "kind": "error",
+      "description": "Error shown on the watch when a bolus/insulin command is sent while the phone runs as an AAPS client (follower), which cannot dose insulin.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2833a7a0631467e7",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 615
+        }
+      ]
+    },
+    {
+      "key": "wear_wizard_settings_summary",
+      "ui_location": "Preferences > Wear > Wizard settings",
+      "kind": "preference_summary",
+      "description": "Introduction above switches that select which calculations the watch's bolus wizard includes. 'Wizard' is the bolus calculator. Ends with a colon.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "59cfb9cd0d7801b9",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/WearPlugin.kt",
+          "line": 318
+        }
+      ]
+    },
+    {
+      "key": "weighted",
+      "ui_location": "Watch: TDD message",
+      "kind": "label",
+      "description": "Label for the weighted average of total daily dose, followed by a colon. Lowercase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a30f5bb3e7cf07d8",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/wear/wearintegration/DataHandlerMobile.kt",
+          "line": 1766
+        }
+      ]
+    },
+    {
+      "key": "working",
+      "ui_location": "Nightscout client v3 > connection status",
+      "kind": "status",
+      "description": "Status while a load or sync run is in progress. Short fragment.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "114fb7de4f7ef933",
+      "usages": [
+        {
+          "path": "plugins/sync/src/commonMain/kotlin/app/aaps/plugins/sync/nsclientV3/NSClientV3Plugin.kt",
+          "line": 212
+        }
+      ]
+    },
+    {
+      "key": "wrong_format",
+      "ui_location": "SMS reply sent to the requesting phone",
+      "kind": "error",
+      "description": "Reply when the SMS command has the wrong syntax.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e58dc9436e4b7d15",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 316
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 321
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 326
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 331
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 336
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 341
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 350
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 355
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 360
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/smsCommunicator/SmsCommunicatorPlugin.kt",
+          "line": 365
+        }
+      ]
+    },
+    {
+      "key": "xdrip",
+      "ui_location": "Config builder > Synchronization > xDrip+; Preferences",
+      "kind": "title",
+      "description": "Name of the xDrip+ app (an Android CGM app). Product name; keep as is.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5ae4518f76c81ab9",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/xdrip/XdripPlugin.kt",
+          "line": 124
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/xdrip/XdripPlugin.kt",
+          "line": 406
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/xdrip/compose/XdripComposeContent.kt",
+          "line": 43
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/xdrip/compose/XdripScreen.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "xdrip_local_broadcasts_summary",
+      "ui_location": "Preferences > xDrip+ > Enable broadcasts",
+      "kind": "preference_summary",
+      "description": "Instructions: \"xDrip+ Sync Follower\" is a data source name and 'Settings - Inter-app settings - Accept Glucose/Treatments' are xDrip+ menu names; translate them like xDrip+ does where possible.",
+      "related_keys": [
+        "xdrip_local_broadcasts_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1586e191af88c57a",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/xdrip/keys/XdripIntentKey.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "xdrip_local_broadcasts_title",
+      "ui_location": "Preferences > xDrip+",
+      "kind": "preference_title",
+      "description": "Title of a switch enabling local data broadcasts to xDrip+.",
+      "related_keys": [
+        "xdrip_local_broadcasts_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9197b003b6db8a36",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/xdrip/keys/XdripIntentKey.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "xdrip_not_installed",
+      "ui_location": "Snackbar / log when calibrating",
+      "kind": "error",
+      "description": "Error that the xDrip+ app is missing on the phone when sending a calibration.",
+      "related_keys": [
+        "calibration_sent"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "38cc8cd8008191c4",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/xdrip/XdripPlugin.kt",
+          "line": 279
+        },
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/xdrip/XdripPlugin.kt",
+          "line": 280
+        }
+      ]
+    },
+    {
+      "key": "xdrip_status_settings",
+      "ui_location": "Preferences > xDrip+ > status line",
+      "kind": "preference_title",
+      "description": "Heading of the advanced settings for the status line shown on the xDrip+ watch face/widget. 'Status line' is a small text line with loop info.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "36cb0a98d4b8514a",
+      "usages": [
+        {
+          "path": "plugins/sync/src/androidMain/kotlin/app/aaps/plugins/sync/xdrip/XdripPlugin.kt",
+          "line": 412
+        }
+      ]
+    }
+  ]
+}
