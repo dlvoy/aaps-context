@@ -1,0 +1,3448 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/carelevo/src/main/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "alarm_feat_btn_patch_discard",
+      "ui_location": "Carelevo alarm notification > action button",
+      "kind": "button",
+      "description": "Notification button that deactivates the patch after a critical alarm. Short imperative; the alarm text refers to it as [Deactivate Patch].",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8372a96beed9fd3b",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 25
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 32
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 44
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 62
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 68
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 74
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 80
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 86
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_btn_patch_force_discard",
+      "ui_location": "Carelevo alarm notification > action button",
+      "kind": "button",
+      "description": "Notification button that discards the patch (used when the patch can no longer be contacted properly, such as dead battery or lost Bluetooth). Short imperative; the alarm text calls it [Discard Patch].",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7218c424864ba47c",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 38
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_btn_resume_infusion",
+      "ui_location": "Carelevo alarm notification > action button",
+      "kind": "button",
+      "description": "Notification button that restarts insulin delivery after Auto-Off or a pause. The alarm text calls it [Start Insulin].",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0a569edfd4212af2",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 50
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 140
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_desc_unknown",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Body of the fallback alarm for an unrecognised patch error.",
+      "related_keys": [
+        "alarm_feat_title_notice_unknown"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "39bde249db70a492",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 229
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_msg_check_patch_connect",
+      "ui_location": "Bolus result message; Carelevo alarm handling > toast",
+      "kind": "error",
+      "description": "Short message telling the user the patch connection must be checked. Shown as the bolus failure comment or as a toast when an alarm action fails.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1e20946e764c51a5",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/common/CarelevoAlarmActionHandler.kt",
+          "line": 141
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/coordinator/CarelevoBolusCoordinator.kt",
+          "line": 313
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/coordinator/CarelevoBolusCoordinator.kt",
+          "line": 551
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_alert_expired_patch_phase1",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Alert: patch is close to the end of its life. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f1ddc545aa59cb48",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_alert_expired_patch_phase2",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Alert: patch has passed its operating life. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "cc8a5dcd2c8e1e56",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 102
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_alert_incomplete_patch_setting",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Alert: patch activation has not been completed. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f7c90c776b7f79db",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 132
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_alert_invalid_temperature",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Alert: patch is outside the allowed temperature range and delivery paused. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9f4145dc81d2ca97",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 114
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_alert_low_battery",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Alert: patch battery is low. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "20c0deb539de3117",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 108
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_alert_low_insulin",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Mid-level alert: insulin is running low. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8810dcec4c646eca",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 90
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_alert_not_connected_ble",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Alert: patch has not connected over Bluetooth for a while. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5d39884682eac916",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 126
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_alert_not_used_app",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Alert: Auto-Off warning that becomes critical if ignored. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1658bf347b5f6e1e",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 120
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_alert_off_bluetooth",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Alert: Bluetooth is off and the app needs it for the patch. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "08fb05c20cc8f1ff",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 144
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_alert_resume_infusion",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Alert: the pause has ended and the user must restart insulin delivery. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6c519b5a20794a2d",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 138
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_notice_change_time_zone",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Informational notice: the phone's time zone changed. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "aaebd9db907f7e2d",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 174
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_notice_check_bg",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Informational notice: reminder to check blood glucose after a bolus. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f7b688bd30c249d4",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 168
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_notice_check_patch",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Informational notice asking the user to check the patch. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "96c04a9bf092b139",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 162
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_notice_expired_patch",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Informational notice: patch usage time reminder. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "71465546a00d58be",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 156
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_notice_lgs_ended",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Informational notice: LGS (low glucose suspend) ended; the reason is in the body text. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f03dfe8d5309631b",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 186
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 192
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 198
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 204
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 210
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 216
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_notice_lgs_error",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Informational notice: LGS could not run. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "035ad713d4fb83b9",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 222
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_notice_lgs_started",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Informational notice: LGS (low glucose suspend) started. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a3b03f1efd227c64",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 180
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_notice_low_insulin",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Informational notice: reservoir level reached the user's reminder threshold. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d82d0b1d4fea8380",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 150
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_notice_unknown",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Fallback title for an unrecognised patch alarm. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "41b0d521a06a8abc",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 228
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_warning_expired_patch",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Critical alarm: the patch has reached the end of its life and delivery stopped. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e506e114c4661f5e",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_warning_failed_safety_check",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Critical alarm: the patch self-test failed. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c7a7f355da9f6abc",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_warning_incomplete_patch_setting",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Critical alarm: the patch was not applied in time after activation. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "52a3d1c8d8d38887",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_warning_infusion_clogged",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Critical alarm: blockage in the insulin path (occlusion); delivery stopped. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8103295dbabee786",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_warning_invalid_temperature",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Critical alarm: patch is outside the allowed temperature range and delivery stopped. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "58c2a4c1c1b74e48",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_warning_low_battery",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Critical alarm: patch battery is nearly empty and delivery stopped. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5a2e4ea17c453be3",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_warning_low_insulin",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Critical alarm: reservoir almost empty and delivery has stopped. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2d3df9ca97553ce3",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_warning_needle_injection_error",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Critical alarm: the needle could not be inserted. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1bd52e9b86f79ff2",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_warning_not_connected_ble",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Critical alarm: the patch has not been reachable over Bluetooth for too long. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bd1ebc0386b6e964",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_warning_not_used_app",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Critical alarm: the app was not used for a long time, so the patch stopped delivering as a safety measure (Auto-Off). Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e4c16f05fcf3da71",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "key": "alarm_feat_title_warning_patch_error",
+      "ui_location": "Carelevo alarm notification and full-screen alarm > title",
+      "kind": "notification",
+      "description": "Critical alarm: unexpected patch malfunction. Title only, short; the details follow in the body text.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "47d9650950e17e03",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_alert_expired_patch_phase1",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Alert body: patch will expire soon. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5b76e38e5127543e",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_alert_expired_patch_phase2",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Alert body: patch expired. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cda4dd1fea6dd688",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 103
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_alert_incomplete_patch_setting",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Alert body: tap [OK] to complete patch activation. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "73bcc3d01127af07",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 133
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_alert_invalid_temperature",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Alert body: delivery paused until the temperature returns to 40-99 F (the source uses the ℉ sign). Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "61cfa6d95686f0e6",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 115
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_alert_low_battery",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Alert body: battery low, prepare to change the patch. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e4847f22f1b5ddee",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 109
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_alert_low_insulin",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Alert body: %s is the insulin amount remaining in units (a bare number; 'U' is in the text). Full sentence.",
+      "related_keys": [
+        "alarm_notification_desc_notice_low_insulin"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "31baa7e8afd81079",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 91
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_alert_not_used_app",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Alert body: the user must tap [OK]; ignoring it escalates to a critical alarm and delivery will stop (Auto-Off). Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6e98ba46627e1ab8",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 121
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_alert_off_bluetooth",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Alert body: Bluetooth is needed; tap [OK] and turn it on. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "76bea4189e491faa",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 145
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_alert_resume_infusion",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Alert body: the pause has ended; tap [Start Insulin] (alarm_feat_btn_resume_infusion) to start. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7e6b7f2d3343e2f8",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 139
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_notice_change_time_zone",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Notice body: %1$s old time zone name, %2$s its UTC offset, %3$s new time zone name, %4$s its UTC offset. Keep the placeholder order or reorder with positions.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0a64a0d82c3d9cc8",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 175
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_notice_check_bg",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Notice body: %s is a duration since the bolus such as '1 hrs 30 min' (already formatted by common_label_unit_value_* strings). Grammar of 'have passed' must work with that text.",
+      "related_keys": [
+        "common_label_unit_value_duration_hour_and_minute"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5646931a92b6faa8",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 169
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_notice_expired_patch",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Notice body: %1$s is whole days and %2$s whole hours the patch has been used. Full sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3363cf98b8c0c54b",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 157
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_notice_lgs_ended_disconnected_patch_or_cgm",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Notice body: LGS ended because the patch or CGM disconnected. CGM is the continuous glucose monitor. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "606bff304ccc3f81",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 187
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_notice_lgs_ended_high_bg",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Notice body: LGS ended because CGM glucose exceeded the set threshold. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "12ad7d9ed5ff8714",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 211
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_notice_lgs_ended_off_lgs",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Notice body: LGS ended because it was switched off. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "929d7165d55bb669",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 205
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_notice_lgs_ended_pause_lgs",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Notice body: LGS ended because the user paused LGS. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d5c7970d17fdcb4d",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 193
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_notice_lgs_ended_time_over",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Notice body: LGS ended because its scheduled time elapsed. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8b4da6eeb58d6d4b",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 199
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_notice_lgs_ended_unknown",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Notice body: LGS ended for an unknown reason. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bc2a682ec391db25",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 217
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_notice_lgs_error",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Notice body: asks the user to check the patch and CGM connection. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f329ef099099bf62",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 223
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_notice_lgs_started",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Notice body: LGS started. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6ca8a62e9501fa22",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 181
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_notice_low_insulin",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Notice body: %s is the insulin amount remaining in units (a bare number; 'U' is in the text). Full sentence.",
+      "related_keys": [
+        "alarm_notification_desc_alert_low_insulin"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "67d3e9dfb9a87086",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 151
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_warning_expired_patch",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Critical alarm body: patch expired and delivery stopped. [Deactivate Patch] names the notification button. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "771926985d523308",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_warning_failed_safety_check",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Critical alarm body: self-diagnosis failed. [Deactivate Patch] names the button. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "422f08c067b58a9b",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 67
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_warning_incomplete_patch_setting",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Critical alarm body: the patch application time ran out. [Deactivate Patch] names the button. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "00338acb555e4c60",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_warning_infusion_clogged",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Critical alarm body: occlusion (blockage) stopped delivery. [Deactivate Patch] names the button. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d0dd87ac247398c6",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_warning_invalid_temperature",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Critical alarm body: delivery stopped; the temperature range is given in Fahrenheit (40-99 F), which the source writes with the ℉ sign. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "38b8b95701d2acc2",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_warning_low_battery",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Critical alarm body: battery low, delivery stopped. [Discard Patch] names the notification button. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2761fa5fedd8a1de",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_warning_low_insulin",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Critical alarm body: under 10 units are left and delivery stopped. [Deactivate Patch] names the notification button. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c904dc9237ec8582",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_warning_needle_injection_error",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Critical alarm body: needle insertion failed. [Deactivate Patch] names the button. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "873d3c960dc94b6e",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_warning_not_used_app",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Critical alarm body: Auto-Off stopped delivery. [Start Insulin] names the notification button. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "62ebd5a9a7f40061",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "alarm_notification_desc_warning_patch_error",
+      "ui_location": "Carelevo alarm notification > body",
+      "kind": "notification",
+      "description": "Critical alarm body: delivery stopped because of an unexpected error. [Deactivate Patch] names the button. Full sentence(s) shown under the alarm title.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8f5b69ccd4ff63f9",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "key": "carelevo",
+      "ui_location": "Config builder > Pump > Carelevo; Carelevo preferences",
+      "kind": "title",
+      "description": "Name of the Carelevo insulin pump plugin. Shown in the plugin list, as the title of its preference screen, the Carelevo screen header and as the title of Carelevo alarm popups. A brand name; normally not translated.",
+      "related_keys": [
+        "carelevo_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "15a9a61db90af8a5",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/CarelevoPumpPlugin.kt",
+          "line": 159
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/CarelevoPumpPlugin.kt",
+          "line": 538
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/CarelevoPumpPlugin.kt",
+          "line": 548
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoComposeContent.kt",
+          "line": 89
+        }
+      ]
+    },
+    {
+      "key": "carelevo_alarm_channel_description",
+      "ui_location": "Android system notification settings > Carelevo alarms",
+      "kind": "summary",
+      "description": "Explanation under the Carelevo notification channel in the Android system settings.",
+      "related_keys": [
+        "carelevo_alarm_channel_name"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7ae29f100ecc3bcf",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/common/CarelevoAlarmNotifier.kt",
+          "line": 252
+        }
+      ]
+    },
+    {
+      "key": "carelevo_alarm_channel_name",
+      "ui_location": "Android system notification settings > Carelevo alarms",
+      "kind": "title",
+      "description": "Name of the Android notification channel used for Carelevo patch alarms. Users see it in the system settings for the app, where they can change sound and importance.",
+      "related_keys": [
+        "carelevo_alarm_channel_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "83bfda5d0452adf1",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/common/CarelevoAlarmNotifier.kt",
+          "line": 251
+        }
+      ]
+    },
+    {
+      "key": "carelevo_basal_rate_key",
+      "ui_location": "Overview > Carelevo pump tab > pump info table",
+      "kind": "label",
+      "description": "Label of the row with the current basal rate in units per hour. Basal is the continuous background insulin delivery.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "662aec86ce1f14a1",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 229
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 818
+        }
+      ]
+    },
+    {
+      "key": "carelevo_bluetooth_state_key",
+      "ui_location": "Overview > Carelevo pump tab > pump info table",
+      "kind": "label",
+      "description": "Label of the row showing whether the app is connected to the patch over Bluetooth. Value is Connected, Disconnected or No Active Patch.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "58d4507bdcdc1fe5",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 209
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 291
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 776
+        }
+      ]
+    },
+    {
+      "key": "carelevo_boot_date_time_key",
+      "ui_location": "Overview > Carelevo pump tab > pump info table",
+      "kind": "label",
+      "description": "Label of the row with the date and time the patch was activated (powered on and started).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1beb7b3a2d94628a",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 217
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 800
+        }
+      ]
+    },
+    {
+      "key": "carelevo_btn_cancel",
+      "ui_location": "Carelevo dialogs",
+      "kind": "button",
+      "description": "Cancel button in Carelevo confirmation dialogs (resume, suspend duration, discard, cancel activation). Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c85b33e2da0f0e6b",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 122
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 137
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoPumpStopDurationDialog.kt",
+          "line": 59
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep02Connect.kt",
+          "line": 128
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 133
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 118
+        }
+      ]
+    },
+    {
+      "key": "carelevo_btn_confirm",
+      "ui_location": "Carelevo dialogs",
+      "kind": "button",
+      "description": "Confirm button in Carelevo dialogs, including pause-duration selection and patch detection confirmation. Short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2f01bd61f67116a7",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 117
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 132
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoPumpStopDurationDialog.kt",
+          "line": 54
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep02Connect.kt",
+          "line": 91
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 128
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 113
+        }
+      ]
+    },
+    {
+      "key": "carelevo_btn_input_search_patch",
+      "ui_location": "Carelevo patch activation wizard > Connect Patch step",
+      "kind": "button",
+      "description": "Button that starts scanning over Bluetooth for the nearby new patch. Referred to as [Search Patch] in the connect instructions, so keep the wording consistent.",
+      "related_keys": [
+        "carelevo_patch_connect_step_2_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f57e42e7f50bc8bc",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep02Connect.kt",
+          "line": 124
+        }
+      ]
+    },
+    {
+      "key": "carelevo_btn_insulin_guide",
+      "ui_location": "Carelevo patch activation wizard > Fill Patch with Insulin step; insulin refill guide",
+      "kind": "button",
+      "description": "Button that opens the step-by-step guide for filling the patch with insulin using a syringe. Short label.",
+      "related_keys": [
+        "carelevo_insulin_refill_step1"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6d6ff3918f17dd3b",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoInsulinRefillGuideDialog.kt",
+          "line": 69
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep01Start.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "carelevo_btn_needle_insert_check",
+      "ui_location": "Carelevo patch activation wizard > Insert Needle step",
+      "kind": "button",
+      "description": "Button the user presses after pushing the applicator button to have the app verify the needle was inserted. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cf646876452ab309",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 184
+        }
+      ]
+    },
+    {
+      "key": "carelevo_btn_next",
+      "ui_location": "Carelevo patch activation wizard > Safety Check step",
+      "kind": "button",
+      "description": "Button shown after the safety check completes, moving to the Apply Patch step. Referred to as the Next button in the completion text.",
+      "related_keys": [
+        "carelevo_patch_safety_check_end_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "744bf4f16a59f021",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 209
+        }
+      ]
+    },
+    {
+      "key": "carelevo_btn_patch_expiration",
+      "ui_location": "Carelevo patch activation wizard > Safety Check and Insert Needle steps",
+      "kind": "button",
+      "description": "Button that deactivates the patch and abandons activation. Short imperative.",
+      "related_keys": [
+        "carelevo_dialog_patch_discard_unused_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "80edc0b7a27d4926",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 215
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 149
+        }
+      ]
+    },
+    {
+      "key": "carelevo_btn_research",
+      "ui_location": "Carelevo patch activation wizard > Connect Patch step",
+      "kind": "button",
+      "description": "Button that scans again for patches when none was found or the wrong one was shown. Short.",
+      "related_keys": [
+        "carelevo_btn_input_search_patch"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "719e807f1b3a7b37",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep02Connect.kt",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "key": "carelevo_btn_retry",
+      "ui_location": "Carelevo patch activation wizard > Safety Check and Insert Needle steps",
+      "kind": "button",
+      "description": "Button to repeat the safety check or the needle insertion check. Referred to as [Retry] in carelevo_patch_safety_check_retry_desc.",
+      "related_keys": [
+        "carelevo_patch_safety_check_retry_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7c4ee1730a7f4226",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 277
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 182
+        }
+      ]
+    },
+    {
+      "key": "carelevo_btn_safety_check",
+      "ui_location": "Carelevo patch activation wizard > Safety Check step",
+      "kind": "button",
+      "description": "Button that starts the patch self-test. Referred to as [Safety Check] in the instruction text.",
+      "related_keys": [
+        "carelevo_patch_safety_check_start_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a930cafc7be7c002",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 204
+        }
+      ]
+    },
+    {
+      "key": "carelevo_connect_needle_check_title",
+      "ui_location": "Carelevo patch activation wizard > screen title",
+      "kind": "title",
+      "description": "Title of one step in the patch activation wizard. Insert Needle step title: insert the cannula. Short noun or imperative phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7cea42c3536ff954",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowSupport.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "carelevo_connect_patch_attach_title",
+      "ui_location": "Carelevo patch activation wizard > screen title",
+      "kind": "title",
+      "description": "Title of one step in the patch activation wizard. Apply Patch step title: stick the patch on the skin. Short noun or imperative phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cb60bf6eb1e19ece",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowSupport.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "carelevo_connect_patch_title",
+      "ui_location": "Carelevo patch activation wizard > screen title",
+      "kind": "title",
+      "description": "Title of one step in the patch activation wizard. Connect Patch step title: pair the app with the new patch. Short noun or imperative phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fb6f2def18737add",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowSupport.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "carelevo_connect_prepare_title",
+      "ui_location": "Carelevo patch activation wizard > screen title",
+      "kind": "title",
+      "description": "Title of one step in the patch activation wizard. Patch Started step title: first step of the wizard, where the user fills the patch with insulin. Short noun or imperative phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c13ec5a8a04c699e",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowSupport.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "carelevo_connect_safety_check_title",
+      "ui_location": "Carelevo patch activation wizard > screen title",
+      "kind": "title",
+      "description": "Title of one step in the patch activation wizard. Safety Check step title: patch self-test. Short noun or imperative phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a91b6b25d3a90261",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowSupport.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "carelevo_description",
+      "ui_location": "Config builder > Pump > Carelevo",
+      "kind": "summary",
+      "description": "Short description of the Carelevo pump plugin, shown under its name in the plugin list.",
+      "related_keys": [
+        "carelevo"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "da63c6f5df0e7519",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/CarelevoPumpPlugin.kt",
+          "line": 160
+        }
+      ]
+    },
+    {
+      "key": "carelevo_dialog_connect_detach_applicator_guide",
+      "ui_location": "Carelevo patch activation wizard > Insert Needle step",
+      "kind": "dialog_text",
+      "description": "Instruction to press the grips on both sides of the applicator, detach it and press the Applicator removed button. Contains a line break; the text is rendered as HTML, so newlines become line breaks.",
+      "related_keys": [
+        "carelevo_dialog_connect_detached"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "bfd6e57af9b859dc",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 169
+        }
+      ]
+    },
+    {
+      "key": "carelevo_dialog_connect_detached",
+      "ui_location": "Carelevo patch activation wizard > Insert Needle step > button",
+      "kind": "button",
+      "description": "Button the user presses after removing the applicator from the patch. Insulin delivery starts afterwards. The guide text calls it 'Applicator removed'.",
+      "related_keys": [
+        "carelevo_dialog_connect_detach_applicator_guide"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "35029f08bb1c3e01",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 157
+        }
+      ]
+    },
+    {
+      "key": "carelevo_dialog_patch_activation_cancel_desc",
+      "ui_location": "Carelevo patch activation wizard > exit dialog",
+      "kind": "dialog_text",
+      "description": "Warns that confirming discards the data entered so far. [OK] names the confirm button.",
+      "related_keys": [
+        "carelevo_dialog_patch_activation_cancel_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3cbb0471a53e0db7",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowScreen.kt",
+          "line": 134
+        }
+      ]
+    },
+    {
+      "key": "carelevo_dialog_patch_activation_cancel_title",
+      "ui_location": "Carelevo patch activation wizard > exit dialog",
+      "kind": "dialog_title",
+      "description": "Question shown when the user cancels the wizard early.",
+      "related_keys": [
+        "carelevo_dialog_patch_activation_cancel_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "357c2be56ba392e3",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowScreen.kt",
+          "line": 130
+        }
+      ]
+    },
+    {
+      "key": "carelevo_dialog_patch_connect_message_title",
+      "ui_location": "Carelevo patch activation wizard > Connect Patch step > found patch dialog",
+      "kind": "dialog_title",
+      "description": "Prompt shown with the patch found by the scan, asking the user to confirm it is the right one by tapping Confirm.",
+      "related_keys": [
+        "carelevo_btn_confirm"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "eb4ea5b148733b5c",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep02Connect.kt",
+          "line": 89
+        }
+      ]
+    },
+    {
+      "key": "carelevo_dialog_patch_connect_needle_injected",
+      "ui_location": "Carelevo patch activation wizard > Insert Needle step",
+      "kind": "status",
+      "description": "Title of the last step: the needle has been inserted and the applicator must now be removed.",
+      "related_keys": [
+        "carelevo_dialog_connect_detached",
+        "carelevo_dialog_connect_detach_applicator_guide"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "df04e07661b35d96",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 164
+        }
+      ]
+    },
+    {
+      "key": "carelevo_dialog_patch_discard_message_desc",
+      "ui_location": "Overview > Carelevo pump tab > discard patch dialog",
+      "kind": "dialog_text",
+      "description": "Warns that confirming stops insulin delivery. [OK] names the dialog's confirm button.",
+      "related_keys": [
+        "carelevo_dialog_patch_discard_message_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a4512810a19e31d5",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 115
+        }
+      ]
+    },
+    {
+      "key": "carelevo_dialog_patch_discard_message_title",
+      "ui_location": "Overview > Carelevo pump tab > discard patch dialog",
+      "kind": "dialog_title",
+      "description": "Question shown when the user discards the active patch so a new one can be started.",
+      "related_keys": [
+        "carelevo_dialog_patch_discard_message_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d480310e0486d78f",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 114
+        }
+      ]
+    },
+    {
+      "key": "carelevo_dialog_patch_discard_unused_desc",
+      "ui_location": "Carelevo patch activation wizard > Safety Check and Insert Needle steps > exit dialog",
+      "kind": "dialog_text",
+      "description": "Warns that confirming makes the already activated patch permanently unusable. [OK] names the confirm button.",
+      "related_keys": [
+        "carelevo_dialog_patch_discard_unused_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "83964366c0707e3f",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowScreen.kt",
+          "line": 135
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 127
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "key": "carelevo_dialog_patch_discard_unused_title",
+      "ui_location": "Carelevo patch activation wizard > Safety Check and Insert Needle steps > exit dialog",
+      "kind": "dialog_title",
+      "description": "Question shown when the user leaves the wizard after the patch was connected but before insulin delivery began.",
+      "related_keys": [
+        "carelevo_dialog_patch_discard_unused_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1fb1e12caf2db769",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowScreen.kt",
+          "line": 131
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 126
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 111
+        }
+      ]
+    },
+    {
+      "key": "carelevo_dialog_patch_needle_retry_count",
+      "ui_location": "Carelevo patch activation wizard > Insert Needle step",
+      "kind": "status",
+      "description": "Shows how many more needle insertion attempts remain; %d is a count. The '(s)' marks an optional plural.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bf6811bd2deb0bf5",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 223
+        }
+      ]
+    },
+    {
+      "key": "carelevo_expiration_key",
+      "ui_location": "Overview > Carelevo pump tab > pump info table",
+      "kind": "label",
+      "description": "Label of the row with the date and time the patch expires. A patch is usable for a limited time (up to 168 hours).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "90071cd0415b4ec3",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 221
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 806
+        }
+      ]
+    },
+    {
+      "key": "carelevo_insulin_refill_step1",
+      "ui_location": "Insulin refill guide dialog",
+      "kind": "dialog_text",
+      "description": "Instruction 1 of 12 in the guide for filling the patch with insulin with a syringe. Full imperative sentence with its step number; Peel off the backing paper from the blister.",
+      "related_keys": [
+        "carelevo_insulin_refill_step_position"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e479b51712449ff1",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoInsulinRefillGuideDialog.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "carelevo_insulin_refill_step10",
+      "ui_location": "Insulin refill guide dialog",
+      "kind": "dialog_text",
+      "description": "Instruction 10 of 12 in the guide for filling the patch with insulin with a syringe. Full imperative sentence with its step number; Removing the syringe and bubbles.",
+      "related_keys": [
+        "carelevo_insulin_refill_step_position"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f999b43b72168b78",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoInsulinRefillGuideDialog.kt",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "carelevo_insulin_refill_step11",
+      "ui_location": "Insulin refill guide dialog",
+      "kind": "dialog_text",
+      "description": "Instruction 11 of 12 in the guide for filling the patch with insulin with a syringe. Full imperative sentence with its step number; Adjusting the dose with the plunger scale.",
+      "related_keys": [
+        "carelevo_insulin_refill_step_position"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d148a4c741653558",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoInsulinRefillGuideDialog.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "carelevo_insulin_refill_step12",
+      "ui_location": "Insulin refill guide dialog",
+      "kind": "dialog_text",
+      "description": "Instruction 12 of 12 in the guide for filling the patch with insulin with a syringe. Full imperative sentence with its step number; Injecting the insulin into the patch fill port. The circled number ① refers to a marking in the guide's picture.",
+      "related_keys": [
+        "carelevo_insulin_refill_step_position"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6dd9e8c958323eb4",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoInsulinRefillGuideDialog.kt",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "key": "carelevo_insulin_refill_step2",
+      "ui_location": "Insulin refill guide dialog",
+      "kind": "dialog_text",
+      "description": "Instruction 2 of 12 in the guide for filling the patch with insulin with a syringe. Full imperative sentence with its step number; Disinfecting the vial's rubber cap.",
+      "related_keys": [
+        "carelevo_insulin_refill_step_position"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9758382d422bced9",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoInsulinRefillGuideDialog.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "carelevo_insulin_refill_step3",
+      "ui_location": "Insulin refill guide dialog",
+      "kind": "dialog_text",
+      "description": "Instruction 3 of 12 in the guide for filling the patch with insulin with a syringe. Full imperative sentence with its step number; Removing the syringe needle cap.",
+      "related_keys": [
+        "carelevo_insulin_refill_step_position"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7d07ad551ecae931",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoInsulinRefillGuideDialog.kt",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "key": "carelevo_insulin_refill_step4",
+      "ui_location": "Insulin refill guide dialog",
+      "kind": "dialog_text",
+      "description": "Instruction 4 of 12 in the guide for filling the patch with insulin with a syringe. Full imperative sentence with its step number; Drawing air into the syringe.",
+      "related_keys": [
+        "carelevo_insulin_refill_step_position"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "196be0d449157638",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoInsulinRefillGuideDialog.kt",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "key": "carelevo_insulin_refill_step5",
+      "ui_location": "Insulin refill guide dialog",
+      "kind": "dialog_text",
+      "description": "Instruction 5 of 12 in the guide for filling the patch with insulin with a syringe. Full imperative sentence with its step number; Injecting air into the vial.",
+      "related_keys": [
+        "carelevo_insulin_refill_step_position"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f312232398a52d4c",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoInsulinRefillGuideDialog.kt",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "key": "carelevo_insulin_refill_step6",
+      "ui_location": "Insulin refill guide dialog",
+      "kind": "dialog_text",
+      "description": "Instruction 6 of 12 in the guide for filling the patch with insulin with a syringe. Full imperative sentence with its step number; Flipping vial and syringe and drawing insulin.",
+      "related_keys": [
+        "carelevo_insulin_refill_step_position"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f06bf0894d6d7c0d",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoInsulinRefillGuideDialog.kt",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "key": "carelevo_insulin_refill_step7",
+      "ui_location": "Insulin refill guide dialog",
+      "kind": "dialog_text",
+      "description": "Instruction 7 of 12 in the guide for filling the patch with insulin with a syringe. Full imperative sentence with its step number; Inserting the needle into the patch fill port. The circled number ① refers to a marking in the guide's picture.",
+      "related_keys": [
+        "carelevo_insulin_refill_step_position"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d4a462389ca5e308",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoInsulinRefillGuideDialog.kt",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "key": "carelevo_insulin_refill_step8",
+      "ui_location": "Insulin refill guide dialog",
+      "kind": "dialog_text",
+      "description": "Instruction 8 of 12 in the guide for filling the patch with insulin with a syringe. Full imperative sentence with its step number; Removing air bubbles.",
+      "related_keys": [
+        "carelevo_insulin_refill_step_position"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "840c7da44c9fda88",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoInsulinRefillGuideDialog.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "carelevo_insulin_refill_step9",
+      "ui_location": "Insulin refill guide dialog",
+      "kind": "dialog_text",
+      "description": "Instruction 9 of 12 in the guide for filling the patch with insulin with a syringe. Full imperative sentence with its step number; Returning air to the vial.",
+      "related_keys": [
+        "carelevo_insulin_refill_step_position"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1e6bc29a3d6f574a",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoInsulinRefillGuideDialog.kt",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "carelevo_insulin_refill_step_position",
+      "ui_location": "Insulin refill guide dialog",
+      "kind": "status",
+      "description": "Position in the refill guide, for example '7 / 12': %1$d is the current step, %2$d the total.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7e5195956b62a71c",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoInsulinRefillGuideDialog.kt",
+          "line": 113
+        }
+      ]
+    },
+    {
+      "key": "carelevo_insulin_remain_key",
+      "ui_location": "Overview > Carelevo pump tab > pump info table",
+      "kind": "label",
+      "description": "Label of the row with the insulin left in the patch reservoir, shown as remaining / total filled.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f1b67294b03c3197",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 237
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 830
+        }
+      ]
+    },
+    {
+      "key": "carelevo_insulin_remain_value",
+      "ui_location": "Overview > Carelevo pump tab > Insulin Remaining row",
+      "kind": "other",
+      "description": "Joins remaining and total insulin, for example '42.5 U / 300 U'. Both values already include the unit.",
+      "related_keys": [
+        "carelevo_insulin_remain_key"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "677940c3f1310260",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 304
+        }
+      ]
+    },
+    {
+      "key": "carelevo_low_reservoir_reminders_title_value",
+      "ui_location": "Preferences > Pump > Carelevo",
+      "kind": "preference_title",
+      "description": "List preference for the remaining insulin amount (in units) at which the user is warned that the reservoir is low.",
+      "related_keys": [
+        "alarm_notification_desc_notice_low_insulin"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "82a252404afe80f5",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/common/keys/CarelevoIntPreferenceKey.kt",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "key": "carelevo_notice_fill_insulin_amount",
+      "ui_location": "Carelevo patch activation wizard > Patch Started step",
+      "kind": "dialog_text",
+      "description": "Instruction with the allowed fill range in units: %1$d minimum, %2$d maximum. The patch lasts up to 168 hours (7 days); the full text goes on to mention the Insulin Guide button.",
+      "related_keys": [
+        "carelevo_btn_insulin_guide"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "a6753b8d960dd379",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep01Start.kt",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "key": "carelevo_overview_connect_btn_label",
+      "ui_location": "Overview > Carelevo pump tab > bottom button",
+      "kind": "button",
+      "description": "Button on the overview that starts the wizard to activate a new patch. Shown when there is no active patch. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "aa5d828337c96405",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 297
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 852
+        }
+      ]
+    },
+    {
+      "key": "carelevo_overview_pump_discard_btn_label",
+      "ui_location": "Overview > Carelevo pump tab > bottom button",
+      "kind": "button",
+      "description": "Button on the overview that discards the current patch (stops insulin delivery) so a new one can be started. Short imperative.",
+      "related_keys": [
+        "carelevo_dialog_patch_discard_message_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "099b3889837317f8",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 248
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 867
+        }
+      ]
+    },
+    {
+      "key": "carelevo_overview_pump_resume_btn_label",
+      "ui_location": "Overview > Carelevo pump tab > bottom button",
+      "kind": "button",
+      "description": "Button shown instead of Suspend while delivery is paused; it resumes insulin delivery. Short imperative.",
+      "related_keys": [
+        "carelevo_pump_resume_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "cc2bc0e4c9a8b7da",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 874
+        }
+      ]
+    },
+    {
+      "key": "carelevo_overview_pump_suspend_btn_label",
+      "ui_location": "Overview > Carelevo pump tab > bottom button",
+      "kind": "button",
+      "description": "Button that temporarily pauses insulin delivery. It opens the pause-duration dialog. Short imperative.",
+      "related_keys": [
+        "carelevo_pump_stop_duration_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "499026e7ffac6eb4",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 256
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 876
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_attach_step1_desc",
+      "ui_location": "Carelevo patch activation wizard > Apply Patch step > STEP 1",
+      "kind": "dialog_text",
+      "description": "Instruction to clean the skin thoroughly with an alcohol swab.",
+      "related_keys": [
+        "carelevo_patch_attach_step1_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "cde1983e538816b4",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep04Attach.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_attach_step1_title",
+      "ui_location": "Carelevo patch activation wizard > Apply Patch step > STEP 1",
+      "kind": "title",
+      "description": "Title of the first sub-step: clean the skin site where the patch goes.",
+      "related_keys": [
+        "carelevo_patch_attach_step1_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "163e4645e9ef14a0",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep04Attach.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_attach_step2_desc",
+      "ui_location": "Carelevo patch activation wizard > Apply Patch step > STEP 2",
+      "kind": "dialog_text",
+      "description": "Instruction under the 'Remove Backing Tape' title. The source text repeats the blister and needle cap wording of the Connect step, which looks like an upstream copy mistake; translate it as written.",
+      "related_keys": [
+        "carelevo_patch_attach_step2_title"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "19f62f8372de5d7e",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep04Attach.kt",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_attach_step2_title",
+      "ui_location": "Carelevo patch activation wizard > Apply Patch step > STEP 2",
+      "kind": "title",
+      "description": "Title of the second sub-step: peel the adhesive backing tape off the patch.",
+      "related_keys": [
+        "carelevo_patch_attach_step2_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2b0acbd3fb71596e",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep04Attach.kt",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_attach_step3_desc",
+      "ui_location": "Carelevo patch activation wizard > Apply Patch step > STEP 3",
+      "kind": "dialog_text",
+      "description": "Instruction: attach the patch with the marked dot facing upward.",
+      "related_keys": [
+        "carelevo_patch_attach_step3_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "14c7046897da7c07",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep04Attach.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_attach_step3_title",
+      "ui_location": "Carelevo patch activation wizard > Apply Patch step > STEP 3",
+      "kind": "title",
+      "description": "Title of the third sub-step: stick the patch on the skin.",
+      "related_keys": [
+        "carelevo_patch_attach_step3_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "af2fa58f140f54e8",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep04Attach.kt",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_attach_step4_desc",
+      "ui_location": "Carelevo patch activation wizard > Apply Patch step",
+      "kind": "dialog_text",
+      "description": "Closing instruction to press the Ready button once the patch is attached.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2dcfde6790f3256a",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep04Attach.kt",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_buzzer_alarm_title",
+      "ui_location": "Preferences > Pump > Carelevo",
+      "kind": "preference_title",
+      "description": "Switch that turns the patch's beeps for informational events on or off. Shown as a preference title.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d753202827c1095e",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/common/keys/CarelevoBooleanPreferenceKey.kt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_connect_step_1_desc",
+      "ui_location": "Carelevo patch activation wizard > Connect Patch step > STEP 1",
+      "kind": "dialog_text",
+      "description": "Instruction under the title: take the patch out of its blister pack and remove the needle cap.",
+      "related_keys": [
+        "carelevo_patch_connect_step_1_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "173fc6fbb515f4d7",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep02Connect.kt",
+          "line": 136
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_connect_step_1_title",
+      "ui_location": "Carelevo patch activation wizard > Connect Patch step > STEP 1",
+      "kind": "title",
+      "description": "Title of the first sub-step on the connect screen: remove the needle protection cap.",
+      "related_keys": [
+        "carelevo_patch_connect_step_1_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "abf020d81be8ee45",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep02Connect.kt",
+          "line": 135
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_connect_step_2_desc",
+      "ui_location": "Carelevo patch activation wizard > Connect Patch step > STEP 2",
+      "kind": "dialog_text",
+      "description": "Instruction: hold the patch power button, wait for the beep, then tap the Search Patch button. The bracketed name must match carelevo_btn_input_search_patch.",
+      "related_keys": [
+        "carelevo_btn_input_search_patch"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5bb3e234f7ab9bde",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep02Connect.kt",
+          "line": 141
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_connect_step_2_title",
+      "ui_location": "Carelevo patch activation wizard > Connect Patch step > STEP 2",
+      "kind": "title",
+      "description": "Title of the second sub-step: switch the patch on and connect to it.",
+      "related_keys": [
+        "carelevo_patch_connect_step_2_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "58b8d150e6b53c79",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep02Connect.kt",
+          "line": 140
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_expiration_reminders_title_value",
+      "ui_location": "Preferences > Pump > Carelevo",
+      "kind": "preference_title",
+      "description": "List preference for how many hours of patch usage pass before the user is reminded of the patch age.",
+      "related_keys": [
+        "alarm_feat_title_notice_expired_patch"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b01c56a368577536",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/common/keys/CarelevoIntPreferenceKey.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_needle_insertion_desc_warning",
+      "ui_location": "Carelevo patch activation wizard > Insert Needle step",
+      "kind": "dialog_text",
+      "description": "Short warning to hold the applicator button down for 10 seconds.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "459c2d8206bc99c9",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 213
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_needle_insertion_step1_desc",
+      "ui_location": "Carelevo patch activation wizard > Insert Needle step > STEP 1",
+      "kind": "dialog_text",
+      "description": "Instruction: turn the safety cap in the direction of the arrow printed on it and remove it.",
+      "related_keys": [
+        "carelevo_patch_needle_insertion_step1_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d85fb4c8605b43f8",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 194
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_needle_insertion_step1_title",
+      "ui_location": "Carelevo patch activation wizard > Insert Needle step > STEP 1",
+      "kind": "title",
+      "description": "Title of the first sub-step: remove the safety cap from the applicator.",
+      "related_keys": [
+        "carelevo_patch_needle_insertion_step1_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "bdbdbac6e002b32c",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 193
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_needle_insertion_step2_desc",
+      "ui_location": "Carelevo patch activation wizard > Insert Needle step > STEP 2",
+      "kind": "dialog_text",
+      "description": "Instruction: press the applicator button all the way down; a beep confirms insertion.",
+      "related_keys": [
+        "carelevo_patch_needle_insertion_step2_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2932a90ce9302d02",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 199
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_needle_insertion_step2_title",
+      "ui_location": "Carelevo patch activation wizard > Insert Needle step > STEP 2",
+      "kind": "title",
+      "description": "Title of the second sub-step: insert the needle (cannula) into the skin.",
+      "related_keys": [
+        "carelevo_patch_needle_insertion_step2_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2d57d1c9021f451a",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 198
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_safety_check_desc_warning",
+      "ui_location": "Carelevo patch activation wizard > Safety Check step",
+      "kind": "dialog_text",
+      "description": "Warning asking the user to look at the needle tip for a visible insulin droplet, which shows the patch primed correctly.",
+      "related_keys": [
+        "carelevo_patch_safety_check_retry_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "2abe23ad8b9784b3",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 265
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_safety_check_end_desc",
+      "ui_location": "Carelevo patch activation wizard > Safety Check step",
+      "kind": "dialog_text",
+      "description": "Text after a successful check, asking the user to press Next. Contains a line break; Next matches carelevo_btn_next.",
+      "related_keys": [
+        "carelevo_btn_next"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8b404edd49b597ce",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 147
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 329
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_safety_check_end_title",
+      "ui_location": "Carelevo patch activation wizard > Safety Check step",
+      "kind": "title",
+      "description": "Heading shown once the safety check has succeeded.",
+      "related_keys": [
+        "carelevo_patch_safety_check_end_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d96ad14cb36733e8",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 142
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 328
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_safety_check_progress_desc",
+      "ui_location": "Carelevo patch activation wizard > Safety Check step",
+      "kind": "status",
+      "description": "Status shown while the patch self-test is running.",
+      "related_keys": [
+        "common_unit_remain_min_sec"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6b69d17e3ef5b1ee",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 146
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_safety_check_retry_desc",
+      "ui_location": "Carelevo patch activation wizard > Safety Check step",
+      "kind": "dialog_text",
+      "description": "Follow-up when no droplet is visible: press Retry. The bracketed name must match carelevo_btn_retry.",
+      "related_keys": [
+        "carelevo_btn_retry"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b335e0c1c9fe7bfd",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 270
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_safety_check_start_desc",
+      "ui_location": "Carelevo patch activation wizard > Safety Check step",
+      "kind": "dialog_text",
+      "description": "Text shown after the patch connected, asking the user to press the Safety Check button. Contains a line break. The bracketed name must match carelevo_btn_safety_check.",
+      "related_keys": [
+        "carelevo_btn_safety_check"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "53374670a48aafe8",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 145
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 307
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_safety_check_start_title",
+      "ui_location": "Carelevo patch activation wizard > Safety Check step",
+      "kind": "title",
+      "description": "Heading before the safety check is started.",
+      "related_keys": [
+        "carelevo_patch_safety_check_start_desc"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "beb079d1926c2571",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 140
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 306
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_step_1",
+      "ui_location": "Carelevo patch activation wizard > Connect, Apply and Insert Needle steps",
+      "kind": "label",
+      "description": "Label 'STEP 1.' placed before the title of sub-step 1 on a wizard screen. Keep the number and a trailing period.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4891355e740500bb",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep02Connect.kt",
+          "line": 134
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep04Attach.kt",
+          "line": 40
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 192
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_step_2",
+      "ui_location": "Carelevo patch activation wizard > Connect, Apply and Insert Needle steps",
+      "kind": "label",
+      "description": "Label 'STEP 2.' placed before the title of sub-step 2 on a wizard screen. Keep the number and a trailing period.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "df08f22b011af162",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep02Connect.kt",
+          "line": 139
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep04Attach.kt",
+          "line": 45
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 197
+        }
+      ]
+    },
+    {
+      "key": "carelevo_patch_step_3",
+      "ui_location": "Carelevo patch activation wizard > Connect, Apply and Insert Needle steps",
+      "kind": "label",
+      "description": "Label 'STEP 3.' placed before the title of sub-step 3 on a wizard screen. Keep the number and a trailing period.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e66ed4774fe880f4",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep04Attach.kt",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "carelevo_profile_update_skip_comment",
+      "ui_location": "Pump command result comment (history and logs)",
+      "kind": "log",
+      "description": "Comment on the result of a basal profile update that was skipped because another update ran within the last 30 seconds. Not an error.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3a269c4d672cec8f",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/coordinator/CarelevoBasalProfileUpdateCoordinator.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "carelevo_progress_of_100",
+      "ui_location": "Carelevo patch activation wizard > Safety Check step > progress",
+      "kind": "status",
+      "description": "Progress of the safety check; %1$d is a percentage from 0 to 100. Example: 42/100.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c3af34f343684c66",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 299
+        }
+      ]
+    },
+    {
+      "key": "carelevo_pump_resume_description",
+      "ui_location": "Overview > Carelevo pump tab > resume confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Body of the resume dialog. Confirm is the dialog's confirm button, labelled by carelevo_btn_confirm.",
+      "related_keys": [
+        "carelevo_pump_resume_title",
+        "carelevo_btn_confirm"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "55b10a1a9e942b39",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 130
+        }
+      ]
+    },
+    {
+      "key": "carelevo_pump_resume_title",
+      "ui_location": "Overview > Carelevo pump tab > resume confirmation dialog",
+      "kind": "dialog_title",
+      "description": "Question asking whether to resume insulin delivery after it was suspended.",
+      "related_keys": [
+        "carelevo_pump_resume_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f365b4c35f78a493",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 129
+        }
+      ]
+    },
+    {
+      "key": "carelevo_pump_stop_duration_label_1_hour",
+      "ui_location": "Overview > Carelevo pump tab > suspend infusion dialog > duration list",
+      "kind": "label",
+      "description": "One option in the pause-duration list (1 hour). Short duration label, shown with the others as choices.",
+      "related_keys": [
+        "carelevo_pump_stop_duration_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b2acceec30211b74",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "carelevo_pump_stop_duration_label_1_hour_30_min",
+      "ui_location": "Overview > Carelevo pump tab > suspend infusion dialog > duration list",
+      "kind": "label",
+      "description": "One option in the pause-duration list (1 hour 30 minutes). Short duration label, shown with the others as choices.",
+      "related_keys": [
+        "carelevo_pump_stop_duration_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "adec7b49d5f07388",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "key": "carelevo_pump_stop_duration_label_2_hour",
+      "ui_location": "Overview > Carelevo pump tab > suspend infusion dialog > duration list",
+      "kind": "label",
+      "description": "One option in the pause-duration list (2 hours). Short duration label, shown with the others as choices.",
+      "related_keys": [
+        "carelevo_pump_stop_duration_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c390d0d190045531",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "carelevo_pump_stop_duration_label_2_hour_30_min",
+      "ui_location": "Overview > Carelevo pump tab > suspend infusion dialog > duration list",
+      "kind": "label",
+      "description": "One option in the pause-duration list (2 hours 30 minutes). Short duration label, shown with the others as choices.",
+      "related_keys": [
+        "carelevo_pump_stop_duration_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "da0906671f72a523",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "key": "carelevo_pump_stop_duration_label_30_min",
+      "ui_location": "Overview > Carelevo pump tab > suspend infusion dialog > duration list",
+      "kind": "label",
+      "description": "One option in the pause-duration list (30 minutes). Short duration label, shown with the others as choices.",
+      "related_keys": [
+        "carelevo_pump_stop_duration_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9126ca9fad2b4fbc",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 67
+        }
+      ]
+    },
+    {
+      "key": "carelevo_pump_stop_duration_label_3_hour",
+      "ui_location": "Overview > Carelevo pump tab > suspend infusion dialog > duration list",
+      "kind": "label",
+      "description": "One option in the pause-duration list (3 hours). Short duration label, shown with the others as choices.",
+      "related_keys": [
+        "carelevo_pump_stop_duration_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c20a1b0f5f98f07a",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "carelevo_pump_stop_duration_label_3_hour_30_min",
+      "ui_location": "Overview > Carelevo pump tab > suspend infusion dialog > duration list",
+      "kind": "label",
+      "description": "One option in the pause-duration list (3 hours 30 minutes). Short duration label, shown with the others as choices.",
+      "related_keys": [
+        "carelevo_pump_stop_duration_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "66555de7e9254942",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "key": "carelevo_pump_stop_duration_label_4_hour",
+      "ui_location": "Overview > Carelevo pump tab > suspend infusion dialog > duration list",
+      "kind": "label",
+      "description": "One option in the pause-duration list (4 hours). Short duration label, shown with the others as choices.",
+      "related_keys": [
+        "carelevo_pump_stop_duration_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c716c8b76cdb9a1e",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 74
+        }
+      ]
+    },
+    {
+      "key": "carelevo_pump_stop_duration_title",
+      "ui_location": "Overview > Carelevo pump tab > suspend infusion dialog",
+      "kind": "dialog_title",
+      "description": "Title of the dialog where the user picks how long insulin delivery stays paused.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "726b0781d80f8165",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/dialog/CarelevoPumpStopDurationDialog.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "carelevo_running_remain_time",
+      "ui_location": "Overview > Carelevo pump tab > pump info table",
+      "kind": "label",
+      "description": "Label of the row with the time left until the patch expires, shown as days and hours:minutes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "455aad2b0d8697e1",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 225
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 812
+        }
+      ]
+    },
+    {
+      "key": "carelevo_serial_number_key",
+      "ui_location": "Overview > Carelevo pump tab > pump info table",
+      "kind": "label",
+      "description": "Label of the row with the patch serial number (a Bluetooth address, for example 04:CD:15:D0:10:05). Short; space is limited.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "077f57825f0510cc",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 213
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 794
+        }
+      ]
+    },
+    {
+      "key": "carelevo_state_connected_value",
+      "ui_location": "Overview > Carelevo pump tab > Bluetooth status row",
+      "kind": "status",
+      "description": "Value shown when the phone is connected to the patch over Bluetooth.",
+      "related_keys": [
+        "carelevo_bluetooth_state_key"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9b48aedd6ff5a59b",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 204
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 210
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 899
+        }
+      ]
+    },
+    {
+      "key": "carelevo_state_disconnected_value",
+      "ui_location": "Overview > Carelevo pump tab > Bluetooth status row",
+      "kind": "status",
+      "description": "Value shown when a patch exists but the phone is not currently connected over Bluetooth.",
+      "related_keys": [
+        "carelevo_bluetooth_state_key"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "de1ad0833f5094e0",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 292
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 900
+        }
+      ]
+    },
+    {
+      "key": "carelevo_state_none_value",
+      "ui_location": "Overview > Carelevo pump tab > status row",
+      "kind": "status",
+      "description": "Status shown when no patch is activated or paired. Value of the connection row.",
+      "related_keys": [
+        "carelevo_bluetooth_state_key"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "47372886625c7731",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 286
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 760
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 898
+        }
+      ]
+    },
+    {
+      "key": "carelevo_temp_basal_rate_key",
+      "ui_location": "Overview > Carelevo pump tab > pump info table",
+      "kind": "label",
+      "description": "Label of the row with the active temporary basal rate in units per hour. Temp basal is a short-term change to the basal rate.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b35dd81d3dcaf68e",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 233
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 824
+        }
+      ]
+    },
+    {
+      "key": "carelevo_title_fill_insulin",
+      "ui_location": "Carelevo patch activation wizard > Patch Started step",
+      "kind": "title",
+      "description": "Heading telling the user to fill the patch with insulin before activating it.",
+      "related_keys": [
+        "carelevo_notice_fill_insulin_amount"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "427665cfae52c305",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep01Start.kt",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "carelevo_toast_mag_set_basal_resume_fail",
+      "ui_location": "Carelevo screens > message",
+      "kind": "toast",
+      "description": "Error shown when resuming delivery after a pause fails. A full sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5d794b37453a9d58",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "key": "carelevo_toast_mag_set_basal_suspend_fail",
+      "ui_location": "Carelevo screens > message",
+      "kind": "toast",
+      "description": "Error shown when pausing delivery fails. A full sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4904f4d0eabef71a",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "key": "carelevo_toast_msg_bluetooth_not_enabled",
+      "ui_location": "Carelevo screens > message",
+      "kind": "toast",
+      "description": "Error shown when the user tries to connect or control the pump while Bluetooth is turned off. A full sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b16d745c23c66db1",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 76
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep02Connect.kt",
+          "line": 49
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 76
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "carelevo_toast_msg_connect_failed",
+      "ui_location": "Carelevo screens > message",
+      "kind": "toast",
+      "description": "Error shown when connecting to the found patch fails. A full sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d528328e8b72812f",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep02Connect.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "carelevo_toast_msg_discard_failed",
+      "ui_location": "Carelevo screens > message",
+      "kind": "toast",
+      "description": "Error shown when discarding the patch fails. A full sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "57fcfc3c8aca367c",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 78
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowScreen.kt",
+          "line": 72
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep02Connect.kt",
+          "line": 78
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 115
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 92
+        }
+      ]
+    },
+    {
+      "key": "carelevo_toast_msg_needle_check_failed",
+      "ui_location": "Carelevo screens > message",
+      "kind": "toast",
+      "description": "Error shown when the app could not verify the needle insertion. A full sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f33adbf77640a146",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 82
+        }
+      ]
+    },
+    {
+      "key": "carelevo_toast_msg_not_connected_waiting_retry",
+      "ui_location": "Carelevo screens > message",
+      "kind": "toast",
+      "description": "Error shown when the patch has not finished connecting yet during safety check or needle insertion. A full sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f8ab404c9ea6d048",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 80
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 99
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "carelevo_toast_msg_patch_not_connected",
+      "ui_location": "Carelevo screens > message",
+      "kind": "toast",
+      "description": "Error shown when a pump action is requested but no patch is connected. A full sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "84a7f1cea8ce2b5c",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "key": "carelevo_toast_msg_patch_not_found",
+      "ui_location": "Carelevo screens > message",
+      "kind": "toast",
+      "description": "Error shown when a scan finishes without finding any patch. A full sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a7eb679b8b3f6e86",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep02Connect.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "carelevo_toast_msg_profile_not_set",
+      "ui_location": "Carelevo screens > message",
+      "kind": "toast",
+      "description": "Error shown when the basal profile required to start delivery is missing. A full sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ee76fa832e51f36a",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep02Connect.kt",
+          "line": 55
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 67
+        }
+      ]
+    },
+    {
+      "key": "carelevo_toast_msg_safety_check_failed",
+      "ui_location": "Carelevo screens > message",
+      "kind": "toast",
+      "description": "Error shown when the patch safety check fails. A full sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "398883c69eea4111",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 94
+        }
+      ]
+    },
+    {
+      "key": "carelevo_toast_msg_scan_failed",
+      "ui_location": "Carelevo screens > message",
+      "kind": "toast",
+      "description": "Error shown when the Bluetooth scan for patches fails. A full sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a1c73a32e41f4c5e",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep02Connect.kt",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "key": "carelevo_toast_msg_set_basal_failed",
+      "ui_location": "Carelevo screens > message",
+      "kind": "toast",
+      "description": "Error shown when the request to start basal delivery fails at the end of activation. A full sentence.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "737cd23b245c9d73",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep05NeedleInsertion.kt",
+          "line": 100
+        }
+      ]
+    },
+    {
+      "key": "carelevo_total_insulin_key",
+      "ui_location": "Overview > Carelevo pump tab > pump info table",
+      "kind": "label",
+      "description": "Label of the row with the total insulin delivered by the patch so far, in units.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ae26942dd4b93d46",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 241
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 836
+        }
+      ]
+    },
+    {
+      "key": "common_btn_ok",
+      "ui_location": "Carelevo alarm notification > action button",
+      "kind": "button",
+      "description": "Short confirm button on Carelevo alarm notifications that only need acknowledging (low battery, expiring patch, Bluetooth off and so on). Tapping it clears the alarm.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1da661d1aa8c1368",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 92
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 98
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 104
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 110
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 116
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 122
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 128
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 134
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 146
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/ext/AlarmExt.kt",
+          "line": 152
+        }
+      ]
+    },
+    {
+      "key": "common_label_unit_value_dose_per_speed_with_space",
+      "ui_location": "Overview > Carelevo pump tab > pump info table",
+      "kind": "other",
+      "description": "Basal rate; %.2f is insulin units per hour (U/hr). Used for the basal and temp basal rate rows.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8bb10f7eb9671987",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 230
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 234
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 819
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 825
+        }
+      ]
+    },
+    {
+      "key": "common_label_unit_value_dose_with_space",
+      "ui_location": "Overview > Carelevo pump tab > pump info table",
+      "kind": "other",
+      "description": "Insulin amount with its unit; %s is a number of insulin units (U). Used for remaining, total and delivered insulin. Keep the space between value and unit if your language uses one.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "65088661eaed7cb2",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/CarelevoOverviewScreen.kt",
+          "line": 242
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 305
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 306
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 838
+        }
+      ]
+    },
+    {
+      "key": "common_label_unit_value_duration_hour",
+      "ui_location": "Carelevo notification > check blood glucose",
+      "kind": "other",
+      "description": "Duration text, %d hours. Inserted into the 'check blood glucose' notice as the time since the last bolus.",
+      "related_keys": [
+        "alarm_notification_desc_notice_check_bg"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "d63786658030b09d",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/common/CarelevoAlarmNotifier.kt",
+          "line": 304
+        }
+      ]
+    },
+    {
+      "key": "common_label_unit_value_duration_hour_and_minute",
+      "ui_location": "Carelevo notification > check blood glucose",
+      "kind": "other",
+      "description": "Duration text, %1$d hours and %2$d minutes. Inserted into the 'check blood glucose' notice as the time since the last bolus.",
+      "related_keys": [
+        "alarm_notification_desc_notice_check_bg"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "074e3112e22646c9",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/common/CarelevoAlarmNotifier.kt",
+          "line": 202
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/common/CarelevoAlarmNotifier.kt",
+          "line": 301
+        }
+      ]
+    },
+    {
+      "key": "common_label_unit_value_minute",
+      "ui_location": "Carelevo notification > check blood glucose",
+      "kind": "other",
+      "description": "Duration text, %d minutes. Inserted into the 'check blood glucose' notice as the time since the last bolus.",
+      "related_keys": [
+        "alarm_notification_desc_notice_check_bg"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "5a17d0f3536627e0",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/common/CarelevoAlarmNotifier.kt",
+          "line": 207
+        },
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/common/CarelevoAlarmNotifier.kt",
+          "line": 307
+        }
+      ]
+    },
+    {
+      "key": "common_unit_remain_min_sec",
+      "ui_location": "Carelevo patch activation wizard > Safety Check step > progress",
+      "kind": "status",
+      "description": "Countdown while the safety check runs: %1$d minutes and %2$02d seconds left.",
+      "related_keys": [
+        "carelevo_progress_of_100"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "cb309f57e424ff72",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowStep03SafetyCheck.kt",
+          "line": 294
+        }
+      ]
+    },
+    {
+      "key": "common_unit_value_day_hour_min",
+      "ui_location": "Overview > Carelevo pump tab > Patch Time Remaining row",
+      "kind": "other",
+      "description": "Time left on the patch: %1$d days, then hours and minutes as hh:mm. Example: 3 days 04:15.",
+      "related_keys": [
+        "carelevo_running_remain_time"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "eb5f494c96b51fa7",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 916
+        }
+      ]
+    },
+    {
+      "key": "common_unit_value_hour_min",
+      "ui_location": "Overview > Carelevo pump tab > Patch Time Remaining row",
+      "kind": "other",
+      "description": "Time left on the patch as hh:mm, both zero-padded, used when less than a day remains. Example: 03:07. Usually not translated.",
+      "related_keys": [
+        "carelevo_running_remain_time"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5ebe785b3145cf81",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/presentation/viewmodel/CarelevoOverviewViewModel.kt",
+          "line": 918
+        }
+      ]
+    },
+    {
+      "key": "patch_prepare_dialog_msg_insulin_range",
+      "ui_location": "Carelevo patch activation wizard > Set insulin amount step",
+      "kind": "hint",
+      "description": "Allowed fill range in insulin units: %1$d is the minimum, %2$d the maximum. Example: Range : 50 ~ 300 U.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0b6cf58697a84a83",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoSetAmountStep.kt",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "key": "patch_prepare_dialog_title_insulin_amount",
+      "ui_location": "Carelevo patch activation wizard > Set insulin amount step",
+      "kind": "title",
+      "description": "Title asking the user to choose how much insulin they filled into the patch.",
+      "related_keys": [
+        "patch_prepare_dialog_msg_insulin_range"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "93cc920b53a0df31",
+      "usages": [
+        {
+          "path": "pump/carelevo/src/main/kotlin/app/aaps/pump/carelevo/compose/patchflow/CarelevoPatchFlowSupport.kt",
+          "line": 15
+        }
+      ]
+    }
+  ]
+}
