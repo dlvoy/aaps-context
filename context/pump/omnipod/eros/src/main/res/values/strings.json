@@ -1,0 +1,660 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/omnipod/eros/src/main/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "omnipod_eros_error_automatic_time_or_timezone_change_failed",
+      "ui_location": "Notification (Eros)",
+      "kind": "error",
+      "description": "Error that the automatic Pod time update after a time or time zone change failed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4e5c0b3a5cdf4bef",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 727
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_bolus_failed_uncertain",
+      "ui_location": "Bolus result (Eros)",
+      "kind": "error",
+      "description": "Warning that it cannot be verified whether a bolus ran. Contains HTML bold and escaped apostrophes; refers to the Treatments screen and the Cancel bolus button.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fe6dff2f9b4451af",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 414
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_bolus_failed_uncertain_smb",
+      "ui_location": "Bolus result (Eros)",
+      "kind": "error",
+      "description": "Warning for an unverified SMB. %1$.2f is the amount in units. Contains HTML bold.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "411a6d403b8b6795",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 412
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_cancel_temp_basal_failed_uncertain",
+      "ui_location": "TBR result (Eros)",
+      "kind": "error",
+      "description": "Warning that cancelling the temp basal may have failed; user should refresh the Pod status on the Omnipod tab.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e205acd8a11f7efd",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 558
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_communication_failed_no_response_from_pod",
+      "ui_location": "Command error (Eros)",
+      "kind": "error",
+      "description": "Error: the Pod did not answer.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "da5ee6311bb05c33",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 999
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_communication_failed_no_response_from_riley_link",
+      "ui_location": "Command error (Eros)",
+      "kind": "error",
+      "description": "Error: the RileyLink did not answer.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "23ac4c26fff51e8a",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 995
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_communication_failed_riley_link_interrupted",
+      "ui_location": "Command error (Eros)",
+      "kind": "error",
+      "description": "Error: the RileyLink communication was interrupted.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "568b70c0878b63d6",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 997
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_crc_mismatch",
+      "ui_location": "Command error (Eros)",
+      "kind": "error",
+      "description": "Error: communication with the Pod failed because a message failed its integrity (CRC) check. Fragment after \"Communication failed:\" is part of one sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2d59f25f1431bed0",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 963
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_invalid_message_address",
+      "ui_location": "Command error (Eros)",
+      "kind": "error",
+      "description": "Error: communication with the Pod failed because the Pod message had a wrong address. Fragment after \"Communication failed:\" is part of one sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "aa87a2e8fdf2e347",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 978
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_invalid_message_sequence_number",
+      "ui_location": "Command error (Eros)",
+      "kind": "error",
+      "description": "Error: communication with the Pod failed because the Pod message had a wrong sequence number. Fragment after \"Communication failed:\" is part of one sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "941d3d239284dfa9",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 976
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_invalid_packet_type",
+      "ui_location": "Command error (Eros)",
+      "kind": "error",
+      "description": "Error: communication with the Pod failed because the Pod sent an invalid packet. Fragment after \"Communication failed:\" is part of one sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ac493b7f2ed6a6a5",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 965
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_invalid_progress_state",
+      "ui_location": "Command error (Eros)",
+      "kind": "error",
+      "description": "Error: communication with the Pod failed because the Pod is in a state that does not fit the command. Fragment after \"Communication failed:\" is part of one sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b92a7b5bdc944905",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 968
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_invalid_response",
+      "ui_location": "Command error (Eros)",
+      "kind": "error",
+      "description": "Error: communication with the Pod failed because the Pod sent an invalid response. Fragment after \"Communication failed:\" is part of one sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0d1f01757c5b4a25",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 972
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 974
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_message_decoding_failed",
+      "ui_location": "Command error (Eros)",
+      "kind": "error",
+      "description": "Error: communication with the Pod failed because a message from the Pod could not be decoded. Fragment after \"Communication failed:\" is part of one sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "004ddfedab2eacc6",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 980
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_nonce_out_of_sync",
+      "ui_location": "Command error (Eros)",
+      "kind": "error",
+      "description": "Error: communication with the Pod failed because the security nonce is out of sync. Fragment after \"Communication failed:\" is part of one sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "db8e6ac31e496f4e",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 982
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_nonce_resync_failed",
+      "ui_location": "Command error (Eros)",
+      "kind": "error",
+      "description": "Error: communication with the Pod failed because resynchronising the security nonce failed. Fragment after \"Communication failed:\" is part of one sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "46743001f2ab39d2",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 984
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_not_enough_data",
+      "ui_location": "Command error (Eros)",
+      "kind": "error",
+      "description": "Error: communication with the Pod failed because the Pod response was incomplete. Fragment after \"Communication failed:\" is part of one sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a23e9617894a1241",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 986
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_pod_fault",
+      "ui_location": "Command error (Eros)",
+      "kind": "error",
+      "description": "Pod fault error. %1$03d is the fault code, %2$s the fault description (untranslated). Tells the user to deactivate the Pod.",
+      "related_keys": [
+        "omnipod_common_pod_status_pod_fault_description"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "2e0b6b2627e4612e",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 1012
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_pod_returned_error_response",
+      "ui_location": "Command error (Eros)",
+      "kind": "error",
+      "description": "Error: communication with the Pod failed because the Pod returned an error response. Fragment after \"Communication failed:\" is part of one sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d1c9b7ef967a8b54",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 993
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_riley_link_address_invalid",
+      "ui_location": "Pump status (Eros)",
+      "kind": "error",
+      "description": "Error when the configured RileyLink device address is missing or invalid.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a7d1895d0f355e19",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/rileylink/service/RileyLinkOmnipodService.kt",
+          "line": 92
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/rileylink/service/RileyLinkOmnipodService.kt",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_set_basal_failed_delivery_might_be_suspended",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "omnipod_eros_error_set_basal_failed_delivery_suspended",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "omnipod_eros_error_set_basal_might_have_failed_delivery_might_be_suspended",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "omnipod_eros_error_set_temp_basal_failed_old_tbr_cancelled_new_might_have_failed",
+      "ui_location": "TBR result (Eros)",
+      "kind": "error",
+      "description": "Warning that an earlier TBR was cancelled and the new one may have failed. Source has odd wording \"might have basal failed\".",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e3579b335993bc08",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 526
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_set_temp_basal_failed_old_tbr_might_be_cancelled",
+      "ui_location": "TBR result (Eros)",
+      "kind": "error",
+      "description": "Error that setting a TBR failed; an earlier TBR may have been cancelled.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "24a3ecd23b8f8bbe",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 516
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_set_temp_basal_failed_validation",
+      "ui_location": "TBR request validation (Eros)",
+      "kind": "error",
+      "description": "Error when requested TBR duration is invalid. %1$s is the step in minutes (30).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "68f8f17461aa36d0",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 570
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_set_time_failed_delivery_might_be_suspended",
+      "ui_location": "Set time result (Eros)",
+      "kind": "error",
+      "description": "Warning that setting the time may have failed and delivery may be suspended.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9f427057f24e1539",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 630
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 637
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_set_time_failed_delivery_suspended",
+      "ui_location": "Set time result (Eros)",
+      "kind": "error",
+      "description": "Error that setting the time failed and delivery is suspended; user must resume it.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1c2e70ac06222c81",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 623
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_error_tbr_running_but_aaps_not_aware",
+      "ui_location": "Notification (Eros)",
+      "kind": "error",
+      "description": "Warning that a TBR runs on the Pod but AAPS has no record of it; user must cancel it manually.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f511c1f0ef6118f1",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 365
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_history_bolus_value",
+      "ui_location": "Pod history > value column (Eros)",
+      "kind": "label",
+      "description": "Bolus amount in units. %1$.2f is the amount.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "76bbce42709d0d0d",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosPodHistoryScreen.kt",
+          "line": 248
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_history_bolus_value_with_carbs",
+      "ui_location": "Pod history > value column (Eros)",
+      "kind": "label",
+      "description": "Bolus amount with carbs. %1$.2f units, %2$.1f grams; CH abbreviates carbohydrates.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f1f6f5d8052f44db",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosPodHistoryScreen.kt",
+          "line": 246
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_history_tbr_value",
+      "ui_location": "Pod history > value column (Eros)",
+      "kind": "label",
+      "description": "TBR entry. %1$.2f is the rate in U/h (units per hour), %2$d the duration in minutes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ce188d308df1ee58",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosPodHistoryScreen.kt",
+          "line": 224
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_pod_activation_wizard_initialize_pod_text",
+      "ui_location": "Pod activation wizard > step 2 text (Eros)",
+      "kind": "dialog_text",
+      "description": "Progress text while pairing and priming an Eros Pod. HTML bold; \\n line breaks.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "fb6f225c3bde016c",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 136
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_pod_activation_wizard_start_pod_activation_text",
+      "ui_location": "Pod activation wizard > step 1 text (Eros)",
+      "kind": "dialog_text",
+      "description": "Instructions for filling an Eros Pod. 80U is the minimum fill in units. Mentions placing the RileyLink upright near the Pod. HTML bold; \\n line breaks.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c3eee3529b80914c",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 134
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_pod_management_button_reset_riley_link_config",
+      "ui_location": "Omnipod tab (pump overview) > Pod Management (Eros)",
+      "kind": "button",
+      "description": "Label of the button that resets the stored RileyLink configuration.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "de05ab5a13388c18",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 384
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_pod_management_button_riley_link_stats",
+      "ui_location": "Omnipod tab (pump overview) > Pod Management (Eros)",
+      "kind": "button",
+      "description": "Label of the button that opens RileyLink statistics.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2d6d2de2685dfa04",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 373
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_pod_management_pulse_log",
+      "ui_location": "Omnipod tab (pump overview) > Pod Management > Pulse Log (Eros)",
+      "kind": "title",
+      "description": "Title of the pulse log result (diagnostic log of Pod events).",
+      "related_keys": [
+        "omnipod_eros_pod_management_pulse_log_value"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f41f8630216672b4",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 663
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_pod_management_pulse_log_value",
+      "ui_location": "Omnipod tab (pump overview) > Pod Management > Pulse Log (Eros)",
+      "kind": "status",
+      "description": "Label shown when the pulse log was copied to the clipboard.",
+      "related_keys": [
+        "omnipod_eros_pod_management_pulse_log"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f41f8630216672b4",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 663
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_preferences_battery_change_logging_enabled",
+      "ui_location": "Preferences > Pump > Omnipod > Other (Eros)",
+      "kind": "preference_title",
+      "description": "Switch title; adds battery change logging to the Actions screen (RileyLink battery).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "117569a1175c8f96",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/keys/ErosBooleanPreferenceKey.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_preferences_category_riley_link",
+      "ui_location": "Preferences > Pump > Omnipod",
+      "kind": "title",
+      "description": "Heading of the preference group for RileyLink (device name kept as is).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "44d220c922d22be1",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 920
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_preferences_pulse_log_button_enabled",
+      "ui_location": "Preferences > Pump > Omnipod > Other (Eros)",
+      "kind": "preference_title",
+      "description": "Switch title; shows the Pulse Log button in the Pod Management menu.",
+      "related_keys": [
+        "omnipod_eros_pod_management_pulse_log"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6e274a0acd6049e7",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/keys/ErosBooleanPreferenceKey.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_preferences_riley_link_stats_button_enabled",
+      "ui_location": "Preferences > Pump > Omnipod > Other (Eros)",
+      "kind": "preference_title",
+      "description": "Switch title; shows the RileyLink Stats button in the Pod Management menu.",
+      "related_keys": [
+        "omnipod_eros_pod_management_button_riley_link_stats"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b1f944cec499951a",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/keys/ErosBooleanPreferenceKey.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "omnipod_eros_pump_description",
+      "ui_location": "Config builder > Pump > Omnipod Eros (plugin description)",
+      "kind": "summary",
+      "description": "Plugin description. Eros is the older model with a transparent needle cap and requires a RileyLink (radio bridge device).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "31e44e4743a9aca6",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 171
+        }
+      ]
+    }
+  ]
+}

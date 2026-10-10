@@ -1,0 +1,638 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/omnipod/dash/src/main/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "bolus_delivery_status_uncertain",
+      "ui_location": "Bolus result (Dash)",
+      "kind": "error",
+      "description": "Warning that it is unknown whether the bolus was delivered; user must refresh Pod status to find out.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c449d8c448dd8310",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 732
+        }
+      ]
+    },
+    {
+      "key": "cancel_temp_basal_result_is_uncertain",
+      "ui_location": "TBR result (Dash)",
+      "kind": "error",
+      "description": "Short warning that cancelling the temp basal could not be confirmed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0292cc248e250e57",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 1033
+        }
+      ]
+    },
+    {
+      "key": "cancelling_temp_basal_might_have_failed",
+      "ui_location": "TBR result (Dash)",
+      "kind": "error",
+      "description": "Warning that cancelling the temp basal may have failed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "311c637897bf2622",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 993
+        }
+      ]
+    },
+    {
+      "key": "checking_delivery_status",
+      "ui_location": "Bolus progress dialog (Dash)",
+      "kind": "status",
+      "description": "Progress text while the app verifies how much of a bolus was delivered.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "3cede9e4492f5e1a",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 806
+        }
+      ]
+    },
+    {
+      "key": "failed_to_set_the_new_basal_profile",
+      "ui_location": "Profile switch result (Dash)",
+      "kind": "error",
+      "description": "Error after a failed basal profile change; delivery is suspended.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a9fb2d215fe61f30",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 459
+        }
+      ]
+    },
+    {
+      "key": "insulin_delivery_suspended",
+      "ui_location": "Notification (Dash pump warning)",
+      "kind": "notification",
+      "description": "Warning that insulin delivery is suspended.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2305cdc67188b567",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 224
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_alert_delivery_suspended",
+      "ui_location": "Omnipod tab (pump overview) > Active Pod Alerts (Dash)",
+      "kind": "status",
+      "description": "Alert name shown while insulin delivery is suspended.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e6b98de66671cebd",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 550
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 551
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_bolus_type_basal_correction",
+      "ui_location": "Pod history > bolus type",
+      "kind": "label",
+      "description": "Bolus type for a small correction of basal insulin.",
+      "related_keys": [
+        "omnipod_common_history_bolus_value_labeled"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "cb2fabcfef2018e4",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashPodHistoryScreen.kt",
+          "line": 234
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_bolus_type_priming",
+      "ui_location": "Pod history > bolus type",
+      "kind": "label",
+      "description": "Bolus type for filling the Pod's cannula with insulin during activation (priming).",
+      "related_keys": [
+        "omnipod_common_history_bolus_value_labeled"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7c9dec23c1486a9b",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashPodHistoryScreen.kt",
+          "line": 235
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_bolus_type_smb",
+      "ui_location": "Pod history > bolus type",
+      "kind": "label",
+      "description": "Bolus type: SMB, short for super micro bolus (automatic small bolus). Usually kept as an abbreviation.",
+      "related_keys": [
+        "omnipod_common_history_bolus_value_labeled"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "51702d2ca77ef969",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashPodHistoryScreen.kt",
+          "line": 233
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_history_bolus_value",
+      "ui_location": "Pod history > value column (Dash)",
+      "kind": "label",
+      "description": "Bolus amount in units (U = insulin units). %1$.2f is the amount.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "22d69f512f9514fd",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashPodHistoryScreen.kt",
+          "line": 230
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_history_bolus_value_labeled",
+      "ui_location": "Pod history > value column (Dash)",
+      "kind": "label",
+      "description": "Bolus amount with its type in parentheses. %1$s is the amount, %2$s a type such as SMB, Basal correction or Priming.",
+      "related_keys": [
+        "omnipod_common_bolus_type_smb",
+        "omnipod_common_bolus_type_basal_correction",
+        "omnipod_common_bolus_type_priming"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "494c21625be685e4",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashPodHistoryScreen.kt",
+          "line": 233
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashPodHistoryScreen.kt",
+          "line": 234
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashPodHistoryScreen.kt",
+          "line": 235
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_history_tbr_value",
+      "ui_location": "Pod history > value column (Dash)",
+      "kind": "label",
+      "description": "Value of a TBR history entry. %1$.2f is rate in units of insulin per hour (U/h), %2$d the duration in minutes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6571e1367e4a0016",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashPodHistoryScreen.kt",
+          "line": 224
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_history_total_delivered",
+      "ui_location": "Pod history > summary card (Dash)",
+      "kind": "label",
+      "description": "Summary line. %1$.2f is the total insulin delivered in units (U).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8db76b453dfba1c4",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashPodHistoryScreen.kt",
+          "line": 139
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_bolus_already_in_progress",
+      "ui_location": "Bolus result (Dash)",
+      "kind": "error",
+      "description": "Error when a bolus is requested while another one is still being delivered.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f19b0f20250daa46",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 679
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_command_not_received_by_the_pod",
+      "ui_location": "Pod history > result column (Dash)",
+      "kind": "status",
+      "description": "Result of a history entry: the Pod did not receive the command. Short status phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0d2c38f3f744e8e4",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashPodHistoryScreen.kt",
+          "line": 255
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_command_not_sent",
+      "ui_location": "Pod history > result column (Dash)",
+      "kind": "status",
+      "description": "Result of a history entry: the command was never sent. Short status phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4c007c82dba27bf4",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashPodHistoryScreen.kt",
+          "line": 254
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_connection_lost",
+      "ui_location": "Pod activation wizard / error text (Dash)",
+      "kind": "error",
+      "description": "Short error text: The Bluetooth connection to the Pod was lost.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9ed71d68173f9904",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/util/I8n.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_failed_to_connect",
+      "ui_location": "Pod activation wizard / error text (Dash)",
+      "kind": "error",
+      "description": "Short error text: Bluetooth connection to the Pod could not be established.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "af1fc34373ba96db",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/util/I8n.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_failed_to_send",
+      "ui_location": "Pod history > result column (Dash)",
+      "kind": "status",
+      "description": "Result of a history entry: sending the command failed. Short status phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ad5afbe6c6d4414a",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashPodHistoryScreen.kt",
+          "line": 253
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_found_too_many_pods",
+      "ui_location": "Pod activation wizard / error text (Dash)",
+      "kind": "error",
+      "description": "Short error text: More than one Pod was found nearby while scanning.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "05bf676e602e6474",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/util/I8n.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_generic_error",
+      "ui_location": "Pod activation wizard / error text (Dash)",
+      "kind": "error",
+      "description": "Generic error. %1$s is a technical detail, untranslated.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e5b4b155f824f0af",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/util/I8n.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_not_enough_insulin",
+      "ui_location": "Bolus result (Dash)",
+      "kind": "error",
+      "description": "Error when the requested bolus exceeds the insulin remaining in the Pod.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "576fb6d99186b624",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 672
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_overview_bluetooth_address",
+      "ui_location": "Omnipod tab (pump overview) > info table (Dash)",
+      "kind": "label",
+      "description": "Row label for the Pod's Bluetooth MAC address.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2e0053f7c3d7d8a3",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 162
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_overview_bluetooth_connection_quality",
+      "ui_location": "Omnipod tab (pump overview) > info table (Dash)",
+      "kind": "label",
+      "description": "Row label for the Bluetooth signal quality.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "175221f691aeccf4",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 178
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_overview_delivery_status",
+      "ui_location": "Omnipod tab (pump overview) > info table (Dash)",
+      "kind": "label",
+      "description": "Row label for the Pod delivery state (e.g. basal active, bolus in progress).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "51dd4a8f33ce9f75",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 187
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_overview_firmware_version_value",
+      "ui_location": "Omnipod tab (pump overview) > Firmware Version row (Dash)",
+      "kind": "other",
+      "description": "Value text. %1$s is Pod firmware version, %2$s Bluetooth firmware version.",
+      "related_keys": [
+        "omnipod_common_overview_firmware_version"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "aaaf2c632512db1a",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 218
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_pod_activation_wizard_initialize_pod_text",
+      "ui_location": "Pod activation wizard > step 2 text (Dash)",
+      "kind": "dialog_text",
+      "description": "Progress text while pairing and priming. <b>Next</b> matches the button.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "22868591fae5efac",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 256
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_pod_activation_wizard_start_pod_activation_text",
+      "ui_location": "Pod activation wizard > step 1 text (Dash)",
+      "kind": "dialog_text",
+      "description": "Instructions for filling a Dash Pod with insulin. 80U is the minimum fill in units. HTML <b>Next</b> matches the button. \\n line breaks.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "721c87cde9f9cc79",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 254
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_pump_description",
+      "ui_location": "Config builder > Pump > Omnipod Dash (plugin description)",
+      "kind": "summary",
+      "description": "Plugin description. Dash is the Bluetooth model, recognisable by its blue needle cap.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5159ad5c6cb5a555",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 148
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_scan_failed",
+      "ui_location": "Pod activation wizard / error text (Dash)",
+      "kind": "error",
+      "description": "Short error text: The Bluetooth scan for the Pod failed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a306c1ba03026acf",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/util/I8n.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_unknown",
+      "ui_location": "Pod history > result column (Dash)",
+      "kind": "status",
+      "description": "Result of a history entry: the outcome is unknown. Short status phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "84df24df8582e81f",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashPodHistoryScreen.kt",
+          "line": 256
+        }
+      ]
+    },
+    {
+      "key": "requested_by_user",
+      "ui_location": "Command queue (status read reason)",
+      "kind": "log",
+      "description": "Reason text for a status refresh the user requested (here from the Medtrum overview but defined in the Omnipod strings). Appears in the queue/logs.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "9810695bc7b2b098",
+      "usages": [
+        {
+          "path": "pump/medtrum/src/main/kotlin/app/aaps/pump/medtrum/compose/MedtrumOverviewViewModel.kt",
+          "line": 137
+        }
+      ]
+    },
+    {
+      "key": "setting_basal_profile_might_have_failed",
+      "ui_location": "Profile switch result (Dash)",
+      "kind": "error",
+      "description": "Warning that the basal profile change could not be confirmed; delivery may be suspended.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e734304d22163ce5",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 460
+        }
+      ]
+    },
+    {
+      "key": "setting_temp_basal_might_have_basal_failed",
+      "ui_location": "TBR result (Dash)",
+      "kind": "error",
+      "description": "Warning that setting a temp basal could not be confirmed. Source text contains an odd \"might have basal failed\"; translate the intended meaning.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "023b93edf7d4e09a",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 935
+        }
+      ]
+    },
+    {
+      "key": "suspend_delivery_is_unconfirmed",
+      "ui_location": "Notification / error (Dash)",
+      "kind": "error",
+      "description": "Warning that suspending delivery could not be confirmed; user should refresh Pod status on the Omnipod tab and resume if needed.",
+      "related_keys": [
+        "omnipod_common_overview_button_resume_delivery"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "1805cff543c91e6b",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 489
+        }
+      ]
+    },
+    {
+      "key": "temp_basal_out_of_sync",
+      "ui_location": "Notification (Dash)",
+      "kind": "error",
+      "description": "Warning that the Pod's temp basal state differed from what the app expected; any TBR was cancelled.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "74b3a39584784932",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 1540
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 1554
+        }
+      ]
+    },
+    {
+      "key": "timezone_on_pod_is_different_from_the_timezone",
+      "ui_location": "Notification (Dash pump warning)",
+      "kind": "notification",
+      "description": "Warning that Pod and phone time zones differ so basal rates will be wrong; fix by switching profile.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3e520ef540169946",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 232
+        }
+      ]
+    },
+    {
+      "key": "unconfirmed_command",
+      "ui_location": "Command queue (status read reason, Dash)",
+      "kind": "log",
+      "description": "Reason text passed to a status read triggered when a previous command is unconfirmed. Appears in the queue/logs.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "6325eca8d87f17e3",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 247
+        }
+      ]
+    },
+    {
+      "key": "unconfirmed_resumedelivery_command_please_refresh_pod_status",
+      "ui_location": "Resume delivery result (Dash)",
+      "kind": "error",
+      "description": "Warning that resuming delivery could not be confirmed. \"resumeDelivery\" names the command; keep it untranslated or paraphrase.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7d5437688251d593",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 1156
+        }
+      ]
+    }
+  ]
+}

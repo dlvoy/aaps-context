@@ -1,0 +1,2863 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/omnipod/common/src/main/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "omnipod_common_alert_expiration",
+      "ui_location": "Omnipod tab (pump overview) > Active Pod Alerts",
+      "kind": "status",
+      "description": "Name of the Pod alert \"expiration imminent\". Short.",
+      "related_keys": [
+        "omnipod_common_alert_expiration_advisory"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9ce5f84b0a7930d6",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 547
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/util/AapsOmnipodUtil.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_alert_expiration_advisory",
+      "ui_location": "Omnipod tab (pump overview) > Active Pod Alerts",
+      "kind": "status",
+      "description": "Name of the earlier expiration advisory alert (and the user-set expiration alert).",
+      "related_keys": [
+        "omnipod_common_alert_expiration"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d6fec8bbe6d1009d",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 546
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 548
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/util/AapsOmnipodUtil.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_alert_finish_pairing_reminder",
+      "ui_location": "Pod alert list",
+      "kind": "status",
+      "description": "Name of the reminder to finish pairing the Pod during activation.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a817662cbd23d20f",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/util/AapsOmnipodUtil.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_alert_finish_setup_reminder_reminder",
+      "ui_location": "Pod alert list",
+      "kind": "status",
+      "description": "Name of the reminder to finish Pod setup (insert cannula).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "24ad96e06566fced",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/util/AapsOmnipodUtil.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_alert_low_reservoir",
+      "ui_location": "Omnipod tab (pump overview) > Active Pod Alerts",
+      "kind": "status",
+      "description": "Name of the alert for low insulin in the Pod.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5c06efb0be1dfc38",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 545
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/util/AapsOmnipodUtil.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_alert_shutdown_imminent",
+      "ui_location": "Omnipod tab (pump overview) > Active Pod Alerts",
+      "kind": "status",
+      "description": "Name of the alert before the Pod's automatic shutdown.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "386b50dff160187c",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 549
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/util/AapsOmnipodUtil.kt",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_alert_unknown_alert",
+      "ui_location": "Omnipod tab (pump overview) > Active Pod Alerts",
+      "kind": "status",
+      "description": "Fallback name for an alert type the app does not recognise.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3759af43b8277903",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 552
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/util/AapsOmnipodUtil.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_cancel_bolus",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: cancelling a bolus. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e45a98c84b064238",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/definition/OmnipodCommandType.kt",
+          "line": 15
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_cancel_fake_suspended_tbr",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: cancelling that emulated suspension. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b8e2c1f2aeb6dbcf",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_cancel_tbr",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: cancelling a TBR on user request. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d4f84d161feebb07",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_cancel_tbr_by_driver",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: cancelling a TBR by the pump driver. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "12224b4ae6537077",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/definition/OmnipodCommandType.kt",
+          "line": 17
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_configure_alerts",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: configuring Pod alerts. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8c868bd7b383344b",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/definition/OmnipodCommandType.kt",
+          "line": 21
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_deactivate_pod",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: deactivating the Pod. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "329e8d94fe946a3c",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/definition/OmnipodCommandType.kt",
+          "line": 12
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_discard_pod",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: discarding the Pod. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3e991c73c92d9837",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/definition/OmnipodCommandType.kt",
+          "line": 18
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_get_pod_info",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: reading detailed Pod info. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4f7088c4c2e92964",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_get_pod_status",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: reading the Pod status. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "88397731b5c784c7",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/definition/OmnipodCommandType.kt",
+          "line": 19
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_initialize_pod",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: Pod pairing and priming. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e584553f2d0fa46c",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/definition/OmnipodCommandType.kt",
+          "line": 10
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_insert_cannula",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: inserting the cannula. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "620e0abbb80f9304",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/definition/OmnipodCommandType.kt",
+          "line": 11
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_play_test_beep",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: playing a test beep. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fc4d8e1a93fb7ada",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/definition/OmnipodCommandType.kt",
+          "line": 24
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_read_pulse_log",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: reading the Pod pulse log (diagnostic). Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e796b73d39e9a3b4",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/definition/OmnipodCommandType.kt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_resume_delivery",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: resuming insulin delivery. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "13517fab74605364",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/definition/OmnipodCommandType.kt",
+          "line": 24
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_set_basal_schedule",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: writing the basal schedule to the Pod. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "45e9d588348df837",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/definition/OmnipodCommandType.kt",
+          "line": 13
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_set_bolus",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: delivering a bolus. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d7945037aff24b61",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/definition/OmnipodCommandType.kt",
+          "line": 14
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_set_fake_suspended_tbr",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: setting a zero TBR to emulate suspension. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "353f2f31cf48131e",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_set_tbr",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: starting a temporary basal rate (TBR). Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "71fbb6a10bc0d394",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/definition/OmnipodCommandType.kt",
+          "line": 16
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_set_time",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: setting the Pod clock. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "05d62efa4684feaa",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/definition/OmnipodCommandType.kt",
+          "line": 20
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_silence_alerts",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: silencing Pod alerts. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "06eccaa6388ab04b",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/definition/OmnipodCommandType.kt",
+          "line": 22
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_split_tbr",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: splitting a TBR that spans a profile or time change. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1099ef7cba5ab466",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_suspend_delivery",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Name of a Pod command in the history list: suspending insulin delivery. Short noun phrase or label; not a sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5263615c37c3e97b",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/definition/OmnipodCommandType.kt",
+          "line": 24
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_cmd_unknown_entry",
+      "ui_location": "Pod history > command column",
+      "kind": "label",
+      "description": "Fallback label for a history entry whose type is unknown.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d207be12a40f1f18",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/definition/PodHistoryEntryType.java",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_composite_time",
+      "ui_location": "Relative time labels (Omnipod overview \"Last Connection\", \"Last Bolus\")",
+      "kind": "other",
+      "description": "Joins two time amounts, e.g. \"2 hours and 5 minutes\". %1$s is the larger unit, %2$s the smaller.",
+      "related_keys": [
+        "omnipod_common_time_ago"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7a54fdfc91f08655",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/OmnipodDurationLabels.kt",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_confirmation_expiration_alerts_updated",
+      "ui_location": "Pod alert settings confirmation (Eros)",
+      "kind": "status",
+      "description": "Confirmation that alert preferences were written to the Pod.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "742ae3bbe55b4e0f",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 689
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_confirmation_time_on_pod_updated",
+      "ui_location": "Time change confirmation (Eros)",
+      "kind": "status",
+      "description": "Confirmation that the time on the Pod was synchronised with the phone.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3ff10eb53f266816",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 716
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_days",
+      "ui_location": "Relative time labels (Omnipod overview \"Last Connection\", \"Last Bolus\")",
+      "kind": "other",
+      "description": "Duration in days; %1$d is the count.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "08f6560c72022c8d",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/OmnipodDurationLabels.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_disable_suspend_alerts",
+      "ui_location": "Command queue (pump command description)",
+      "kind": "log",
+      "description": "Description of the queued command that disables the suspend alerts on the Pod. Shown in the queue/status.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "22cc7dc0d06d6541",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/queue/command/CommandDisableSuspendAlerts.kt",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_bolus_did_not_succeed",
+      "ui_location": "Bolus result message (Eros)",
+      "kind": "error",
+      "description": "Part of the message shown when a bolus command failed; a full sentence.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "96e873e1526b2865",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 474
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_failed_to_initialize_pod",
+      "ui_location": "Pod activation wizard > Initialize Pod (Eros)",
+      "kind": "error",
+      "description": "Error shown when pairing and priming the new Pod fails.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "fa54e1cc1a0b16cb",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 214
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_failed_to_insert_cannula",
+      "ui_location": "Pod activation wizard > Insert Cannula (Eros)",
+      "kind": "error",
+      "description": "Error shown when inserting the cannula (the small flexible tube placed under the skin) fails.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e3849fe5e936a8ab",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 241
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_failed_to_play_test_beep",
+      "ui_location": "Omnipod tab (pump overview) > Pod Management > Play Test Beep",
+      "kind": "error",
+      "description": "Error shown when the test beep command failed.",
+      "related_keys": [
+        "omnipod_common_pod_management_button_play_test_beep"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6f70c7752286f3a0",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 415
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 358
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_failed_to_refresh_status",
+      "ui_location": "Omnipod tab (pump overview) > error message after tapping the Refresh button on the Omnipod tab",
+      "kind": "error",
+      "description": "Short error shown (toast or snackbar) when the app could not refresh the Pod status.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "605dcb97c14d64c7",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 299
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_failed_to_refresh_status_on_startup",
+      "ui_location": "Pump status / notification at startup (Eros)",
+      "kind": "error",
+      "description": "Error when the Pod status could not be read after the RileyLink connected during startup.",
+      "related_keys": [
+        "omnipod_common_error_failed_to_refresh_status"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "26323da55d7611c4",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 837
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_failed_to_resume_delivery",
+      "ui_location": "Omnipod tab (pump overview) > error message after tapping the Resume Delivery button",
+      "kind": "error",
+      "description": "Short error shown (toast or snackbar) when the app could not resume insulin delivery.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "720d50a736d5ce1c",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 372
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 313
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_failed_to_set_profile_empty_profile",
+      "ui_location": "Profile switch result (Eros)",
+      "kind": "error",
+      "description": "Error shown when the basal profile sent to the Pod is empty. Tells the user to activate a basal profile in the app.",
+      "related_keys": [
+        "omnipod_common_error_set_initial_basal_schedule_no_profile"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "fe14c0003931d6f0",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 325
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_failed_to_set_time",
+      "ui_location": "Omnipod tab (pump overview) > error message after tapping the Set time button",
+      "kind": "error",
+      "description": "Short error shown (toast or snackbar) when the app could not set the time on the Pod.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e77ac0753029ff3b",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 385
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 327
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_failed_to_silence_alerts",
+      "ui_location": "Omnipod tab (pump overview) > error message after tapping the Silence Alerts button",
+      "kind": "error",
+      "description": "Short error shown (toast or snackbar) when the app could not silence the Pod alerts.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "10967c125e7f47b5",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 365
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 306
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_failed_to_suspend_delivery",
+      "ui_location": "Omnipod tab (pump overview) > error message after tapping the Suspend button",
+      "kind": "error",
+      "description": "Short error shown (toast or snackbar) when the app could not suspend insulin delivery.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5b201fc07351d768",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 378
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 320
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_failed_to_verify_activation_progress",
+      "ui_location": "Pod activation wizard error (Eros)",
+      "kind": "error",
+      "description": "Shown when the app cannot confirm how far Pod activation has progressed; user is asked to retry.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7c5d1fda1cfeda3a",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 970
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_pod_fault_activation_time_exceeded",
+      "ui_location": "Pod activation wizard error (Eros)",
+      "kind": "error",
+      "description": "Shown when a Pod was not activated within the allowed time after being filled, so it must be discarded. Contains an escaped apostrophe.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "551e12a1f19512df",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 991
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_pod_not_attached",
+      "ui_location": "Notification (pump warning)",
+      "kind": "notification",
+      "description": "Warning raised when no Pod is paired or active. Short status phrase.",
+      "related_keys": [
+        "omnipod_common_pod_status_no_active_pod"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "4499729fb8983367",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 425
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_pod_suspended",
+      "ui_location": "Notification (pump warning, Eros)",
+      "kind": "notification",
+      "description": "Warning that insulin delivery on the Pod is suspended. Short status phrase.",
+      "related_keys": [
+        "omnipod_common_pod_status_suspended"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "7de0e866e055fdf9",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 430
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_set_basal_failed",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "omnipod_common_error_set_initial_basal_schedule_no_profile",
+      "ui_location": "Pod activation wizard > insert cannula (Eros) result",
+      "kind": "error",
+      "description": "Error shown during activation when the app has no active basal profile to program into the Pod.",
+      "related_keys": [
+        "omnipod_common_error_failed_to_set_profile_empty_profile"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "697b0bcbc8bdda9c",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 227
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_time_out_of_sync",
+      "ui_location": "Notification (pump warning, Eros)",
+      "kind": "notification",
+      "description": "Warning that the clock on the Pod differs from the phone. Refers to the \"Omnipod\" tab, keep that name consistent with the tab title.",
+      "related_keys": [
+        "omnipod_common_overview_button_set_time"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "24287cb0a73b224e",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 435
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_unexpected_exception",
+      "ui_location": "Error message (Eros)",
+      "kind": "error",
+      "description": "Catch-all error for unexpected failures. %1$s is the exception class and %2$s its message (technical, untranslated).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "895073c993f6a265",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 1002
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/manager/AapsOmnipodErosManager.java",
+          "line": 1005
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_error_unsupported_custom_command",
+      "ui_location": "Custom command result",
+      "kind": "error",
+      "description": "Error when the pump is asked to run a command it does not support. %1$s is the command name (technical, do not translate).",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e4ebe0a97fb7b496",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 1104
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 652
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_hours",
+      "ui_location": "Relative time labels (Omnipod overview \"Last Connection\", \"Last Bolus\")",
+      "kind": "other",
+      "description": "Duration in hours; %1$d is the count.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1802d3a77afca060",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/OmnipodDurationLabels.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_less_than_a_minute_ago",
+      "ui_location": "Relative time labels (Omnipod overview \"Last Connection\", \"Last Bolus\")",
+      "kind": "status",
+      "description": "Used when an event happened less than a minute ago. Complete phrase.",
+      "related_keys": [
+        "omnipod_common_moments_ago"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a6fd3efb409a394d",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/OmnipodDurationLabels.kt",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_minutes",
+      "ui_location": "Relative time labels (Omnipod overview \"Last Connection\", \"Last Bolus\")",
+      "kind": "other",
+      "description": "Duration in minutes; %1$d is the count. Plain unit phrase, joined by composite_time or time_ago.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "be77fb6117fd472d",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/OmnipodDurationLabels.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_moments_ago",
+      "ui_location": "Relative time labels (Omnipod overview \"Last Connection\", \"Last Bolus\")",
+      "kind": "status",
+      "description": "Used when an event happened seconds ago. Complete phrase.",
+      "related_keys": [
+        "omnipod_common_less_than_a_minute_ago"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d0112a971cefd9fb",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/OmnipodDurationLabels.kt",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_overview_base_basal_rate",
+      "ui_location": "Omnipod tab (pump overview) > info table",
+      "kind": "label",
+      "description": "Row label in the Pod info table. The scheduled basal rate from the active profile right now. Value is shown to its right; keep short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1dd4f01f28d933d7",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 205
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 287
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 197
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 250
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_overview_button_resume_delivery",
+      "ui_location": "Omnipod tab (pump overview) > action buttons",
+      "kind": "button",
+      "description": "Button label. Resume insulin delivery after a suspension.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "20f7daee46b68637",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 368
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 309
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_overview_button_set_time",
+      "ui_location": "Omnipod tab (pump overview) > action buttons",
+      "kind": "button",
+      "description": "Button label. Set the Pod clock to match the phone.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f6737fe1bca1fb39",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 381
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 323
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_overview_button_silence_alerts",
+      "ui_location": "Omnipod tab (pump overview) > action buttons",
+      "kind": "button",
+      "description": "Button label. Silence the active Pod alerts (beeps).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c83923a12a9b8f01",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 361
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 302
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_overview_button_suspend_delivery",
+      "ui_location": "Omnipod tab (pump overview) > action buttons",
+      "kind": "button",
+      "description": "Button label. Suspend insulin delivery. Very short, space is limited.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b00a7dc9f2a5f8ba",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 375
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 316
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_overview_firmware_version",
+      "ui_location": "Omnipod tab (pump overview) > info table",
+      "kind": "label",
+      "description": "Row label in the Pod info table. Pod firmware version. Value is shown to its right; keep short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a6aa0f009eae03f6",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 198
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 217
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 190
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 208
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_overview_last_bolus",
+      "ui_location": "Omnipod tab (pump overview) > info table",
+      "kind": "label",
+      "description": "Row label in the Pod info table. Amount and time of the last bolus. Value is shown to its right; keep short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e32de3c603b90571",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 204
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 196
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_overview_last_connection",
+      "ui_location": "Omnipod tab (pump overview) > info table",
+      "kind": "label",
+      "description": "Row label in the Pod info table. Time since the app last communicated with the Pod. Value is shown to its right; keep short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5d2f5370aef455c2",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 203
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 272
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 195
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 235
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_overview_lot_number",
+      "ui_location": "Omnipod tab (pump overview) > info table",
+      "kind": "label",
+      "description": "Row label in the Pod info table. The Pod's manufacturing lot number (LOT). Value is shown to its right; keep short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9b9cdfa14a00c8f5",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 196
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 213
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 188
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 204
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_overview_pod_active_alerts",
+      "ui_location": "Omnipod tab (pump overview) > info table",
+      "kind": "label",
+      "description": "Row label in the Pod info table. List of alerts currently active on the Pod. Value is shown to its right; keep short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "59620b6602676854",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 209
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 307
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 201
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 270
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_overview_pod_expiry_date",
+      "ui_location": "Omnipod tab (pump overview) > info table",
+      "kind": "label",
+      "description": "Row label in the Pod info table. Date and time when the Pod's 72-hour life ends and a warning applies. Value is shown to its right; keep short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "97295e2a1636688c",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 200
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 253
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 192
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 222
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_overview_pod_hard_end_date",
+      "ui_location": "Omnipod tab (pump overview) > info table",
+      "kind": "label",
+      "description": "Row label (see Pod Hard End); date/time of the hard shutdown.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d702541f8650f974",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 201
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 263
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 193
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 228
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_overview_pod_sequence_number",
+      "ui_location": "Omnipod tab (pump overview) > info table",
+      "kind": "label",
+      "description": "Row label in the Pod info table. The Pod's serial (sequence) number. Value is shown to its right; keep short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e1d811d0b31f2e7a",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 197
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 214
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 189
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 205
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_overview_pod_status",
+      "ui_location": "Omnipod tab (pump overview) > info table",
+      "kind": "label",
+      "description": "Row label in the Pod info table. Current state of the Pod (running, suspended, ...). Value is shown to its right; keep short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "df4c5753a40aa715",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 202
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 266
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 194
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 231
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_overview_pod_unique_id",
+      "ui_location": "Omnipod tab (pump overview) > info table",
+      "kind": "label",
+      "description": "Row label in the Pod info table. The Pod's unique identifier number. Value is shown to its right; keep short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e2b76be9a342f0cf",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 195
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 212
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 187
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 203
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_overview_temp_basal_rate",
+      "ui_location": "Omnipod tab (pump overview) > info table",
+      "kind": "label",
+      "description": "Row label in the Pod info table. The currently running temporary basal rate (TBR), a short-term change of the basal insulin rate. Value is shown to its right; keep short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f708a5204ae0c7aa",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 206
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 291
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 198
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 254
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_overview_time_on_pod",
+      "ui_location": "Omnipod tab (pump overview) > info table",
+      "kind": "label",
+      "description": "Row label in the Pod info table. The clock time currently kept by the Pod. Value is shown to its right; keep short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "54cbe93c98c9f295",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 199
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 243
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 191
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 216
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_overview_total_delivered",
+      "ui_location": "Omnipod tab (pump overview) > info table",
+      "kind": "label",
+      "description": "Row label in the Pod info table. Total insulin delivered by the Pod since activation, in units. Value is shown to its right; keep short.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "7a04e2ee2820d78a",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 208
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 301
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 200
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 264
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pdm_notification_header_auto_off",
+      "ui_location": "Omnipod tab (pump overview) > PDM Notification row (Dash)",
+      "kind": "title",
+      "description": "First line of the PDM-style fault message: the Auto-Off safety shut-off (Pod not contacted by the PDM for hours). Short header; mirrors Insulet PDM wording.",
+      "related_keys": [
+        "omnipod_common_pdm_notification_text_auto_off"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1d9bcb9bea0c9cea",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 328
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pdm_notification_header_occluded",
+      "ui_location": "Omnipod tab (pump overview) > PDM Notification row (Dash)",
+      "kind": "title",
+      "description": "First line of the PDM-style fault message: an occlusion (blockage) was detected. Short header; mirrors Insulet PDM wording.",
+      "related_keys": [
+        "omnipod_common_pdm_notification_text_occluded"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "cff864ad5aec1d96",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 332
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pdm_notification_header_pod_error",
+      "ui_location": "Omnipod tab (pump overview) > PDM Notification row (Dash)",
+      "kind": "title",
+      "description": "First line of the PDM-style fault message: a generic Pod error. Short header; mirrors Insulet PDM wording.",
+      "related_keys": [
+        "omnipod_common_pdm_notification_text_pod_error"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "401b28e02b6f4041",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 334
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pdm_notification_header_pod_expired",
+      "ui_location": "Omnipod tab (pump overview) > PDM Notification row (Dash)",
+      "kind": "title",
+      "description": "First line of the PDM-style fault message: the Pod has expired. Short header; mirrors Insulet PDM wording.",
+      "related_keys": [
+        "omnipod_common_pdm_notification_text_pod_expired"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f424463b81994ace",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 330
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pdm_notification_header_reservoir_empty",
+      "ui_location": "Omnipod tab (pump overview) > PDM Notification row (Dash)",
+      "kind": "title",
+      "description": "First line of the PDM-style fault message: the reservoir is empty. Short header; mirrors Insulet PDM wording.",
+      "related_keys": [
+        "omnipod_common_pdm_notification_text_reservoir_empty"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "202e0221cf642f0d",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 326
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pdm_notification_label",
+      "ui_location": "Omnipod tab (pump overview) > info table (Dash)",
+      "kind": "label",
+      "description": "Row label. PDM is the Personal Diabetes Manager, the handheld Omnipod controller; this row mimics the message a PDM would show for a fault.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b21bcf70a1b37bef",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 338
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pdm_notification_text_auto_off",
+      "ui_location": "Omnipod tab (pump overview) > PDM Notification row (Dash)",
+      "kind": "status",
+      "description": "Body of the PDM-style fault message for the Auto-Off safety shut-off (Pod not contacted by the PDM for hours). Insulin delivery has stopped and the Pod must be changed.",
+      "related_keys": [
+        "omnipod_common_pdm_notification_header_auto_off"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ba9cfb8f64cf58cf",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 329
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pdm_notification_text_occluded",
+      "ui_location": "Omnipod tab (pump overview) > PDM Notification row (Dash)",
+      "kind": "status",
+      "description": "Body of the PDM-style fault message for an occlusion (blockage) was detected. Insulin delivery has stopped and the Pod must be changed.",
+      "related_keys": [
+        "omnipod_common_pdm_notification_header_occluded"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9707bb9632380f0b",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 333
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pdm_notification_text_pod_error",
+      "ui_location": "Omnipod tab (pump overview) > PDM Notification row (Dash)",
+      "kind": "status",
+      "description": "Body of the PDM-style fault message for a generic Pod error. Insulin delivery has stopped and the Pod must be changed.",
+      "related_keys": [
+        "omnipod_common_pdm_notification_header_pod_error"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "88c434c5cc39dc9c",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 335
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pdm_notification_text_pod_expired",
+      "ui_location": "Omnipod tab (pump overview) > PDM Notification row (Dash)",
+      "kind": "status",
+      "description": "Body of the PDM-style fault message for the Pod has expired. Insulin delivery has stopped and the Pod must be changed.",
+      "related_keys": [
+        "omnipod_common_pdm_notification_header_pod_expired"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "62d798adf5969024",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 331
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pdm_notification_text_reservoir_empty",
+      "ui_location": "Omnipod tab (pump overview) > PDM Notification row (Dash)",
+      "kind": "status",
+      "description": "Body of the PDM-style fault message for the reservoir is empty. Insulin delivery has stopped and the Pod must be changed.",
+      "related_keys": [
+        "omnipod_common_pdm_notification_header_reservoir_empty"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "28c05fcd9b0e1656",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 327
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pdm_ref",
+      "ui_location": "Omnipod tab (pump overview) > PDM Notification row (Dash)",
+      "kind": "other",
+      "description": "Reference code line. %1$s is a code the user can quote to Insulet support. \"Ref\" abbreviates reference.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1f5a2157cb59b70b",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 401
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 337
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_activation_wizard_attach_pod_confirm_insert_cannula_text",
+      "ui_location": "Pod activation wizard > step 3 > confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Confirmation shown before the cannula is inserted. <b>OK</b> must match the dialog button.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "276fd9267355bc3b",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/ui/wizard/compose/steps/AttachPodStep.kt",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_activation_wizard_attach_pod_text",
+      "ui_location": "Pod activation wizard > step 3 text",
+      "kind": "dialog_text",
+      "description": "Instructions for attaching the Pod. HTML bold marks button names (<b>Cancel</b>, <b>Next</b>): they must match the button translations. Contains \\n line breaks.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "496582770ec20c62",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 258
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 138
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_activation_wizard_attach_pod_title",
+      "ui_location": "Pod activation wizard > step 3 title",
+      "kind": "title",
+      "description": "Title of the step where the user sticks the Pod on the body.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5a3d83f6f29ee879",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 241
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 121
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_activation_wizard_initialize_pod_title",
+      "ui_location": "Pod activation wizard > step 2 title",
+      "kind": "title",
+      "description": "Title of the step that pairs with and primes the new Pod.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c37c2a3cf665c51c",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 239
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 119
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_activation_wizard_insert_cannula_text",
+      "ui_location": "Pod activation wizard > step 4 text",
+      "kind": "dialog_text",
+      "description": "Progress text while the app programs the initial basal schedule and inserts the cannula. <b>Next</b> matches the button.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "60a30a22279d84bf",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 259
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 139
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_activation_wizard_insert_cannula_title",
+      "ui_location": "Pod activation wizard > step 4 title",
+      "kind": "title",
+      "description": "Title of the step where the cannula is inserted and basal delivery starts.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "70367ab7ef70408e",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 242
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 122
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_activation_wizard_pod_activated_text",
+      "ui_location": "Pod activation wizard > final step text",
+      "kind": "dialog_text",
+      "description": "Success text; tells the user to check the cannula and change the Pod if it is wrong.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "25515edbfa21daac",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 260
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 140
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_activation_wizard_pod_activated_title",
+      "ui_location": "Pod activation wizard > final step title / progress message",
+      "kind": "title",
+      "description": "Title of the final activation step, also used as a success status.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0432b41273504acb",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 203
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 243
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 123
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_activation_wizard_start_pod_activation_title",
+      "ui_location": "Pod activation wizard > step 1 title",
+      "kind": "title",
+      "description": "Title of the first activation step, where the user fills the Pod with insulin. Short noun/verb phrase.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "07875485026659da",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 237
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 117
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_alerts",
+      "ui_location": "Notification (pump warning, Eros)",
+      "kind": "notification",
+      "description": "Notification text listing the Pod alerts. %1$s is the alert list. Plural form depends on the number of alerts.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9418444165fe008a",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 380
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_deactivation_wizard_deactivating_pod_text",
+      "ui_location": "Pod deactivation wizard > step 2 text",
+      "kind": "dialog_text",
+      "description": "Progress text while deactivating. <b>Next</b> matches the button.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "efd68ff9b28c6e6c",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 262
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 142
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_deactivation_wizard_deactivating_pod_title",
+      "ui_location": "Pod deactivation wizard > step 2 title",
+      "kind": "title",
+      "description": "Title shown while the Pod is being deactivated (progressive form).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "11f9abecd3a35898",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 245
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 125
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_deactivation_wizard_discard_pod",
+      "ui_location": "Pod deactivation wizard > Discard Pod button / dialog title",
+      "kind": "button",
+      "description": "Button and dialog title for discarding the Pod. Imperative.",
+      "related_keys": [
+        "omnipod_common_pod_deactivation_wizard_discard_pod_confirmation"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "80ce03e3747d29ad",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/ui/wizard/compose/steps/DeactivatePodStep.kt",
+          "line": 55
+        },
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/ui/wizard/compose/steps/DeactivatePodStep.kt",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_deactivation_wizard_discard_pod_confirmation",
+      "ui_location": "Pod deactivation wizard > Discard Pod > confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Confirmation question before discarding the Pod without communicating with it.",
+      "related_keys": [
+        "omnipod_common_pod_deactivation_wizard_discard_pod"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "54baa2deec3e3b9f",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/ui/wizard/compose/steps/DeactivatePodStep.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_deactivation_wizard_pod_deactivated_text",
+      "ui_location": "Pod deactivation wizard > final step text",
+      "kind": "dialog_text",
+      "description": "Tells the user to remove the Pod from their body and recycle it.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e11f577f8fe62594",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 263
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 143
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_deactivation_wizard_pod_deactivated_title",
+      "ui_location": "Pod deactivation wizard > final step title",
+      "kind": "title",
+      "description": "Title shown after the Pod was deactivated successfully.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d01b2aff88803e20",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 246
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 126
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_deactivation_wizard_pod_discarded_text",
+      "ui_location": "Pod deactivation wizard > final step text (after discard)",
+      "kind": "dialog_text",
+      "description": "Warns that insulin delivery was not suspended because the Pod was not properly deactivated, and asks to remove the Pod.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d0047a5ffec548d9",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 264
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 144
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_deactivation_wizard_pod_discarded_title",
+      "ui_location": "Pod deactivation wizard > final step title (after discard)",
+      "kind": "title",
+      "description": "Title shown after the Pod state was discarded rather than deactivated.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ef98de36db847fd1",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 247
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 127
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_deactivation_wizard_start_pod_deactivation_text",
+      "ui_location": "Pod deactivation wizard > step 1 text",
+      "kind": "dialog_text",
+      "description": "Explains that deactivation suspends all insulin delivery. <b>Next</b> and <b>Note:</b> use HTML bold.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f77eac326c3075a2",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 261
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 141
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_deactivation_wizard_start_pod_deactivation_title",
+      "ui_location": "Pod deactivation wizard > step 1 title",
+      "kind": "title",
+      "description": "Title of the first deactivation step.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ae7fa4c80cf6811d",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/wizard/compose/DashOmnipodWizardViewModel.kt",
+          "line": 244
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/wizard/compose/ErosOmnipodWizardViewModel.kt",
+          "line": 124
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_management_button_activate_pod",
+      "ui_location": "Omnipod tab (pump overview) > Pod Management",
+      "kind": "button",
+      "description": "Label of the Pod Management action that starts the Pod activation wizard. Short imperative; \"Pod\" is the Omnipod insulin pump unit worn on the body.",
+      "related_keys": [
+        "omnipod_common_pod_management_button_deactivate_pod"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "64af0b972e44694f",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 395
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 337
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_management_button_deactivate_pod",
+      "ui_location": "Omnipod tab (pump overview) > Pod Management",
+      "kind": "button",
+      "description": "Label of the Pod Management action that starts the Pod deactivation wizard. Short imperative.",
+      "related_keys": [
+        "omnipod_common_pod_management_button_activate_pod"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6d35e619554a0ac5",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 402
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 345
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_management_button_discard_pod",
+      "ui_location": "Omnipod tab (pump overview) > Pod Management / discard confirmation dialog",
+      "kind": "button",
+      "description": "Label of the Pod Management action that throws away the Pod state without talking to the Pod. Also the title of the confirmation dialog that follows.",
+      "related_keys": [
+        "omnipod_common_pod_management_discard_pod_confirmation"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "94cddee40fa38d7d",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 424
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 451
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 393
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 420
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_management_button_play_test_beep",
+      "ui_location": "Omnipod tab (pump overview) > Pod Management",
+      "kind": "button",
+      "description": "Label of the action that makes the Pod emit a test beep. Short imperative.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cc4bf622327afac1",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 410
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 353
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_management_button_pod_history",
+      "ui_location": "Omnipod tab (pump overview) > Pod Management",
+      "kind": "button",
+      "description": "Label of the action opening the Pod history screen (list of commands sent to the Pod). Also used as a button on the Dash overview.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "938b684357c37805",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 418
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/OmnipodDashComposeContent.kt",
+          "line": 51
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 361
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/OmnipodErosComposeContent.kt",
+          "line": 245
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_management_discard_pod_confirmation",
+      "ui_location": "Omnipod tab (pump overview) > Pod Management > Discard Pod > confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Warning body of the discard confirmation dialog. Contains HTML (<b>) and \\n line breaks; <b>Deactivate Pod</b> must match the translation of the Deactivate Pod button.",
+      "related_keys": [
+        "omnipod_common_pod_management_button_discard_pod",
+        "omnipod_common_pod_management_button_deactivate_pod"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6dc59763ca2eb475",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 452
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 421
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_status_inactive",
+      "ui_location": "Omnipod tab (pump overview) > Pod Status (Eros)",
+      "kind": "status",
+      "description": "Status when the Pod is inactive (deactivated).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "704c603985f47dd2",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 461
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_status_no_active_pod",
+      "ui_location": "Omnipod tab (pump overview) > Pod Status / notification",
+      "kind": "status",
+      "description": "Status when no Pod is active.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "61fa6d1368277aa7",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 218
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 467
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 436
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_status_pod_fault",
+      "ui_location": "Omnipod tab (pump overview) > Pod Status (Eros)",
+      "kind": "status",
+      "description": "Status when the Pod reported a fault.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "15a9be147a50f8eb",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 459
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_status_pod_fault_description",
+      "ui_location": "Omnipod tab (pump overview) > Pod Status / notification",
+      "kind": "status",
+      "description": "Description of a Pod fault. %1$03d is a three-digit fault code, %2$s the fault name (untranslated).",
+      "related_keys": [
+        "omnipod_common_pdm_ref"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9cd1dbf8ea6d7034",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 400
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 312
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 393
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 277
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_status_running",
+      "ui_location": "Omnipod tab (pump overview) > Pod Status",
+      "kind": "status",
+      "description": "Status when the Pod is delivering insulin normally.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "dbfe7b2ec663e5a6",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 483
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 452
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_status_suspended",
+      "ui_location": "Omnipod tab (pump overview) > Pod Status",
+      "kind": "status",
+      "description": "Status when insulin delivery is suspended.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2970179bbc4a9836",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 481
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 450
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_status_waiting_for_activation",
+      "ui_location": "Omnipod tab (pump overview) > Pod Status",
+      "kind": "status",
+      "description": "Status while activation is unfinished (Pod must still be activated).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "41807c94ddcdf4bd",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 470
+        },
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 473
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 439
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 442
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_pod_status_waiting_for_cannula_insertion",
+      "ui_location": "Omnipod tab (pump overview) > Pod Status",
+      "kind": "status",
+      "description": "Status while activation is unfinished (cannula not inserted yet).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b13db2ba7b324a49",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 475
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 444
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_automatically_silence_alerts",
+      "ui_location": "Preferences > Pump > Omnipod > Alerts",
+      "kind": "preference_title",
+      "description": "Switch title: the app silences Pod alerts (beeps) on its own.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1daa634ed44fb548",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/OmnipodBooleanPreferenceKey.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_basal_beeps_enabled",
+      "ui_location": "Preferences > Pump > Omnipod > Confirmation Beeps",
+      "kind": "preference_title",
+      "description": "Switch title. Whether the Pod beeps to confirm basal profile changes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d2b9089c6b1ff9ce",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/OmnipodBooleanPreferenceKey.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_bolus_beeps_enabled",
+      "ui_location": "Preferences > Pump > Omnipod > Confirmation Beeps",
+      "kind": "preference_title",
+      "description": "Switch title. Whether the Pod beeps to confirm bolus delivery.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "66bf3ba11617fb91",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/OmnipodBooleanPreferenceKey.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_category_alerts",
+      "ui_location": "Preferences > Pump > Omnipod",
+      "kind": "title",
+      "description": "Heading of the preference group about Pod alerts.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "42206ead0bdeeded",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 1607
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 941
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_category_confirmation_beeps",
+      "ui_location": "Preferences > Pump > Omnipod",
+      "kind": "title",
+      "description": "Heading of the preference group for confirmation beeps.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "3015c0d592c1be38",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 1596
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 930
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_category_notifications",
+      "ui_location": "Preferences > Pump > Omnipod",
+      "kind": "title",
+      "description": "Heading of the preference group for app notifications.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "74df7b340df0ce57",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/OmnipodDashPumpPlugin.kt",
+          "line": 1620
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 953
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_category_other",
+      "ui_location": "Preferences > Pump > Omnipod",
+      "kind": "title",
+      "description": "Heading of the preference group \"Other\".",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b687381745d115e2",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 963
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_expiration_alarm_enabled",
+      "ui_location": "Preferences > Pump > Omnipod > Alerts",
+      "kind": "preference_title",
+      "description": "Switch title for the expiration alert (stronger alarm).",
+      "related_keys": [
+        "omnipod_common_preferences_expiration_alarm_enabled_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "57598331f3e387b0",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/OmnipodBooleanPreferenceKey.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_expiration_alarm_enabled_summary",
+      "ui_location": "Preferences > Pump > Omnipod > Alerts",
+      "kind": "preference_summary",
+      "description": "Summary under the expiration alert switch. \"Shutdown\" is when the Pod stops at its hard end.",
+      "related_keys": [
+        "omnipod_common_preferences_expiration_alarm_enabled"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9cd30ebd6a302e83",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/OmnipodBooleanPreferenceKey.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_expiration_alarm_hours_before_shutdown",
+      "ui_location": "Preferences > Pump > Omnipod > Alerts",
+      "kind": "preference_title",
+      "description": "Title of the number setting for hours before shutdown at which the alert fires; parenthesised number is a limit.",
+      "related_keys": [
+        "omnipod_common_preferences_expiration_alarm_enabled"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "0e40a3cc8e3338f4",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/OmnipodIntPreferenceKey.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_expiration_reminder_enabled",
+      "ui_location": "Preferences > Pump > Omnipod > Alerts",
+      "kind": "preference_title",
+      "description": "Switch title for a reminder beep before the Pod expires.",
+      "related_keys": [
+        "omnipod_common_preferences_expiration_reminder_enabled_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "3bbffd1898b7bda6",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/OmnipodBooleanPreferenceKey.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_expiration_reminder_enabled_summary",
+      "ui_location": "Preferences > Pump > Omnipod > Alerts",
+      "kind": "preference_summary",
+      "description": "Summary under the expiration reminder switch.",
+      "related_keys": [
+        "omnipod_common_preferences_expiration_reminder_enabled"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "fb181f5fbca86b1a",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/OmnipodBooleanPreferenceKey.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_expiration_reminder_hours_before_expiry",
+      "ui_location": "Preferences > Pump > Omnipod > Alerts",
+      "kind": "preference_title",
+      "description": "Title of the number setting for when the reminder fires; the number in parentheses is a default/limit and not translatable in value.",
+      "related_keys": [
+        "omnipod_common_preferences_expiration_reminder_enabled"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "2238c83abee834ba",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/OmnipodIntPreferenceKey.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_low_reservoir_alert_enabled",
+      "ui_location": "Preferences > Pump > Omnipod > Alerts",
+      "kind": "preference_title",
+      "description": "Switch title for the low reservoir (little insulin left) alert.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9906a6a961b4fc08",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/OmnipodBooleanPreferenceKey.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_low_reservoir_alert_units",
+      "ui_location": "Preferences > Pump > Omnipod > Alerts",
+      "kind": "preference_title",
+      "description": "Title of the number of insulin units at which the low reservoir alert fires. Context is the low reservoir alert.",
+      "related_keys": [
+        "omnipod_common_preferences_low_reservoir_alert_enabled"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "1ab77814064493e9",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/OmnipodIntPreferenceKey.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_notification_delivery_suspended_sound_enabled",
+      "ui_location": "Preferences > Pump > Omnipod > Notifications (Dash)",
+      "kind": "preference_title",
+      "description": "Switch title: play a sound when the delivery suspended notification appears.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "631f66f6676e6ade",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/DashBooleanPreferenceKey.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_notification_uncertain_bolus_sound_enabled",
+      "ui_location": "Preferences > Pump > Omnipod > Notifications",
+      "kind": "preference_title",
+      "description": "Switch title: play a sound when an uncertain (unconfirmed) bolus notification appears.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "aa66af7cac1ec6f9",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/OmnipodBooleanPreferenceKey.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_notification_uncertain_smb_sound_enabled",
+      "ui_location": "Preferences > Pump > Omnipod > Notifications",
+      "kind": "preference_title",
+      "description": "Switch title: play a sound when an uncertain (unconfirmed) SMB (automatic small bolus) notification appears.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "46a49d54fc5093c8",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/OmnipodBooleanPreferenceKey.kt",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_notification_uncertain_tbr_sound_enabled",
+      "ui_location": "Preferences > Pump > Omnipod > Notifications",
+      "kind": "preference_title",
+      "description": "Switch title: play a sound when an uncertain (unconfirmed) temporary basal (TBR) notification appears.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "2c1d3d25aa483160",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/OmnipodBooleanPreferenceKey.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_smb_beeps_enabled",
+      "ui_location": "Preferences > Pump > Omnipod > Confirmation Beeps",
+      "kind": "preference_title",
+      "description": "Switch title. Whether the Pod beeps to confirm an SMB (super micro bolus, an automatic small bolus).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6598915156033f2f",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/OmnipodBooleanPreferenceKey.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_suspend_delivery_button_enabled",
+      "ui_location": "Preferences > Pump > Omnipod > Other (Eros)",
+      "kind": "preference_title",
+      "description": "Switch title; controls whether the Suspend Delivery button appears on the Omnipod tab.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "c04147f4673e2f87",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/keys/ErosBooleanPreferenceKey.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_tbr_beeps_enabled",
+      "ui_location": "Preferences > Pump > Omnipod > Confirmation Beeps",
+      "kind": "preference_title",
+      "description": "Switch title. Whether the Pod beeps to confirm a temporary basal rate (TBR).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ec4bd7b7252f168a",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/OmnipodBooleanPreferenceKey.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_preferences_time_change_enabled",
+      "ui_location": "Preferences > Pump > Omnipod > Other (Eros)",
+      "kind": "preference_title",
+      "description": "Switch title; enables automatic detection of daylight saving time or time zone changes and adjusting the Pod clock. DST = daylight saving time.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6aec34dbc822a68c",
+      "usages": [
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/keys/ErosBooleanPreferenceKey.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_time_ago",
+      "ui_location": "Relative time labels (Omnipod overview \"Last Connection\", \"Last Bolus\")",
+      "kind": "other",
+      "description": "Appends \"ago\" to a duration. %1$s is a duration like \"5 minutes\".",
+      "related_keys": [
+        "omnipod_common_composite_time"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "20ba91591964409d",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/OmnipodDurationLabels.kt",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_uncertain",
+      "ui_location": "Omnipod tab (pump overview) > Last Bolus / Pod Status value",
+      "kind": "status",
+      "description": "Lowercase qualifier appended in parentheses after a bolus amount or status when the Pod did not confirm the command, e.g. \"0.50 U 2 min ago (uncertain)\".",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ceacaa99d5caabea",
+      "usages": [
+        {
+          "path": "pump/omnipod/dash/src/main/kotlin/app/aaps/pump/omnipod/dash/ui/compose/DashOverviewViewModel.kt",
+          "line": 505
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 455
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 493
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 513
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 521
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_wizard_button_deactivate_pod",
+      "ui_location": "Pod wizard > action step",
+      "kind": "button",
+      "description": "Button that deactivates the Pod inside the wizard. Imperative.",
+      "related_keys": [
+        "omnipod_common_pod_management_button_deactivate_pod"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f1d598db83819ca2",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/ui/wizard/compose/steps/ActionStep.kt",
+          "line": 100
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_wizard_exit_confirmation_text",
+      "ui_location": "Pod wizard > exit confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Question asked when the user leaves the activation/deactivation wizard before finishing.",
+      "related_keys": [
+        "omnipod_common_wizard_exit_confirmation_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7b108102cc4c6f30",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/ui/wizard/compose/OmnipodWizardScreen.kt",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "key": "omnipod_common_wizard_exit_confirmation_title",
+      "ui_location": "Pod wizard > exit confirmation dialog",
+      "kind": "dialog_title",
+      "description": "Title of the dialog asked when leaving the wizard early. One word.",
+      "related_keys": [
+        "omnipod_common_wizard_exit_confirmation_text"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "abafac3d6d3e2cbc",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/ui/wizard/compose/OmnipodWizardScreen.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_use_bonding",
+      "ui_location": "Preferences > Pump > Omnipod > Other (Dash)",
+      "kind": "preference_title",
+      "description": "Switch title for Bluetooth bonding (pairing) with the Pod.",
+      "related_keys": [
+        "omnipod_dash_use_bonding_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "fe2d0220180b84b2",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/DashBooleanPreferenceKey.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "omnipod_dash_use_bonding_summary",
+      "ui_location": "Preferences > Pump > Omnipod > Other (Dash)",
+      "kind": "preference_summary",
+      "description": "Explains when to use Bluetooth bonding; mentions Android 15, pairing requests the user must accept.",
+      "related_keys": [
+        "omnipod_dash_use_bonding"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "fe2d0220180b84b2",
+      "usages": [
+        {
+          "path": "pump/omnipod/common/src/main/kotlin/app/aaps/pump/omnipod/common/keys/DashBooleanPreferenceKey.kt",
+          "line": 15
+        }
+      ]
+    }
+  ]
+}
