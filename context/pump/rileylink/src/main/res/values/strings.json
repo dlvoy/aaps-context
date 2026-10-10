@@ -1,0 +1,981 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/rileylink/src/main/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "duration_days",
+      "ui_location": "Medtronic overview > time since last contact",
+      "kind": "status",
+      "description": "Plural-style quantity; %1$d is a number of days.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9158045861efca40",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 248
+        }
+      ]
+    },
+    {
+      "key": "duration_hours",
+      "ui_location": "Medtronic overview > time since last contact",
+      "kind": "status",
+      "description": "Plural-style quantity; %1$d is a number of hours.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "ddcd828fba9aeec7",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 243
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_encoding_4b6b_local",
+      "ui_location": "Preferences > Medtronic Encoding > options",
+      "kind": "preference_title",
+      "description": "Choice: encoding done by the app's software. '4b6b' is a fixed technical name.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "937a4b125efb7d5e",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/ble/defs/RileyLinkEncodingType.kt",
+          "line": 9
+        },
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/keys/RileyLinkStringPreferenceKey.kt",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_encoding_4b6b_rileylink",
+      "ui_location": "Preferences > Medtronic Encoding > options",
+      "kind": "preference_title",
+      "description": "Choice: encoding done by the RileyLink hardware. '4b6b' is a fixed technical name.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "898bcbfff296da46",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/ble/defs/RileyLinkEncodingType.kt",
+          "line": 10
+        },
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/keys/RileyLinkStringPreferenceKey.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_encoding_title",
+      "ui_location": "Preferences > Pump > Medtronic > RileyLink > Medtronic Encoding",
+      "kind": "preference_title",
+      "description": "Title of the option choosing where the 4b6b radio encoding is done (in the app or in the RileyLink hardware). Technical term, keep '4b6b' as is.",
+      "related_keys": [
+        "medtronic_pump_encoding_4b6b_local",
+        "medtronic_pump_encoding_4b6b_rileylink"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "34b954c8901c9e93",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/keys/RileyLinkStringPreferenceKey.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_frequency_us_ca",
+      "ui_location": "Preferences > Medtronic > Pump frequency options",
+      "kind": "preference_title",
+      "description": "Radio frequency choice for pumps sold in the US and Canada; the MHz value is fixed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4ec027cc74c782ee",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 54
+        },
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/ble/defs/RileyLinkTargetFrequency.kt",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_frequency_worldwide",
+      "ui_location": "Preferences > Medtronic > Pump frequency options",
+      "kind": "preference_title",
+      "description": "Radio frequency choice for pumps sold outside the US and Canada; the MHz value is fixed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d6f97137771d142b",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 55
+        },
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/ble/defs/RileyLinkTargetFrequency.kt",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_status",
+      "ui_location": "Overview (Medtronic) > pump status line",
+      "kind": "label",
+      "description": "Label of the Medtronic pump status line on the overview.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f91613fd6d3319e0",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 164
+        }
+      ]
+    },
+    {
+      "key": "orange_use_scanning_level",
+      "ui_location": "Preferences > Pump > RileyLink > use scanning",
+      "kind": "preference_title",
+      "description": "Switch title for scanning before connecting to an OrangeLink.",
+      "related_keys": [
+        "orange_use_scanning_level_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f79ce58f668ac732",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/keys/RileylinkBooleanPreferenceKey.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "orange_use_scanning_level_summary",
+      "ui_location": "Preferences > Pump > RileyLink",
+      "kind": "preference_summary",
+      "description": "Explains scanning before connecting to an OrangeLink.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6d26c2ce23aa9c18",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/keys/RileylinkBooleanPreferenceKey.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "pump_status_active",
+      "ui_location": "Pump status line (Medtronic and Omnipod Eros overview)",
+      "kind": "status",
+      "description": "Short pump communication status. The pump is awake and communicating.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "9e0fb8255bacef91",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/extensions/PumpDeviceStateExtension.kt",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "key": "pump_status_error_comm",
+      "ui_location": "Pump status line (Medtronic and Omnipod Eros overview)",
+      "kind": "status",
+      "description": "Short pump communication status. A communication with the pump failed.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "c20c58bbbd76347f",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/extensions/PumpDeviceStateExtension.kt",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "key": "pump_status_invalid_config",
+      "ui_location": "Pump status line (Medtronic and Omnipod Eros overview)",
+      "kind": "status",
+      "description": "Short pump communication status. The pump driver configuration is invalid.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "66eef903238963d0",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/extensions/PumpDeviceStateExtension.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "pump_status_never_contacted",
+      "ui_location": "Pump status line (Medtronic and Omnipod Eros overview)",
+      "kind": "status",
+      "description": "Short pump communication status. The pump has not been reached yet since start.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "d9523ef52c3012c0",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/extensions/PumpDeviceStateExtension.kt",
+          "line": 8
+        }
+      ]
+    },
+    {
+      "key": "pump_status_sleeping",
+      "ui_location": "Pump status line (Medtronic and Omnipod Eros overview)",
+      "kind": "status",
+      "description": "Short pump communication status. The pump radio is asleep between communication windows.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "c27a31a9da4083ad",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/extensions/PumpDeviceStateExtension.kt",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "key": "pump_status_timeout_comm",
+      "ui_location": "Pump status line (Medtronic and Omnipod Eros overview)",
+      "kind": "status",
+      "description": "Short pump communication status. A communication with the pump timed out.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "b3d60b9f54dd3b76",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/extensions/PumpDeviceStateExtension.kt",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "key": "pump_status_waking_up",
+      "ui_location": "Pump status line (Medtronic and Omnipod Eros overview)",
+      "kind": "status",
+      "description": "Short pump communication status. The app is waking the pump radio to talk to it. Ongoing action.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "ba1a04022e14c64a",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/extensions/PumpDeviceStateExtension.kt",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "key": "riley_link_ble_config_connected_never",
+      "ui_location": "RileyLink status screen > last contact",
+      "kind": "status",
+      "description": "Value shown when the RileyLink has never connected; replaces a date and time.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7b1491fdc1e5a4c0",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusViewModel.kt",
+          "line": 114
+        }
+      ]
+    },
+    {
+      "key": "riley_link_ble_config_scan_scanning",
+      "ui_location": "RileyLink pairing wizard > scan step",
+      "kind": "status",
+      "description": "Shown while the app scans for nearby RileyLink Bluetooth devices. Ongoing action.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4997cde41b136980",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkPairWizardScreen.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "riley_link_show_battery_level",
+      "ui_location": "Preferences > Pump > RileyLink > show battery level",
+      "kind": "preference_title",
+      "description": "Switch title. OrangeLink, EmaLink and DiaLink are RileyLink-compatible devices; names stay as is.",
+      "related_keys": [
+        "riley_link_show_battery_level_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5b9176181da5d71c",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/keys/RileylinkBooleanPreferenceKey.kt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "riley_link_show_battery_level_summary",
+      "ui_location": "Preferences > Pump > RileyLink",
+      "kind": "preference_summary",
+      "description": "Warning that the option does not work on original RileyLink devices.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d22202eadb205c1a",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/keys/RileylinkBooleanPreferenceKey.kt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "rileylink_address",
+      "ui_location": "RileyLink status screen > field label",
+      "kind": "label",
+      "description": "Row label ending with a colon, value follows. Bluetooth address of the RileyLink.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "19db8a81ff17000e",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusScreen.kt",
+          "line": 83
+        }
+      ]
+    },
+    {
+      "key": "rileylink_battery_level",
+      "ui_location": "RileyLink status screen > field label",
+      "kind": "label",
+      "description": "Row label ending with a colon, value follows. Battery charge of the RileyLink device.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "aba568e289e82fcb",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusScreen.kt",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "key": "rileylink_battery_level_value",
+      "ui_location": "RileyLink status screen > battery value",
+      "kind": "status",
+      "description": "Battery percentage; %1$d is the level 0-100, %% is a literal percent sign.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "76447dd2efae2667",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusViewModel.kt",
+          "line": 92
+        }
+      ]
+    },
+    {
+      "key": "rileylink_config_reset",
+      "ui_location": "Overview (Medtronic and Omnipod Eros) > after reset",
+      "kind": "toast",
+      "description": "Confirmation that the stored RileyLink configuration was cleared.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3e10afe546932533",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 373
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 389
+        }
+      ]
+    },
+    {
+      "key": "rileylink_configured_device_model",
+      "ui_location": "RileyLink status screen > field label",
+      "kind": "label",
+      "description": "Row label ending with a colon, value follows. RileyLink model the user selected in settings.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e1814be867aca1f5",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusScreen.kt",
+          "line": 102
+        }
+      ]
+    },
+    {
+      "key": "rileylink_connected_device_model",
+      "ui_location": "RileyLink status screen > field label",
+      "kind": "label",
+      "description": "Row label ending with a colon, value follows. RileyLink model actually detected on connection.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cafb2ea9cb4e46a1",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusScreen.kt",
+          "line": 103
+        }
+      ]
+    },
+    {
+      "key": "rileylink_connection_error",
+      "ui_location": "RileyLink status screen > field label",
+      "kind": "label",
+      "description": "Row label ending with a colon, value follows. Last connection error of the RileyLink.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "61813db6bee4ff4f",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusScreen.kt",
+          "line": 87
+        }
+      ]
+    },
+    {
+      "key": "rileylink_connection_status",
+      "ui_location": "RileyLink status screen > field label",
+      "kind": "label",
+      "description": "Row label ending with a colon, value follows. Current connection state of the RileyLink.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6e3992ef6e5d00b6",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusScreen.kt",
+          "line": 86
+        }
+      ]
+    },
+    {
+      "key": "rileylink_device",
+      "ui_location": "RileyLink status screen > section header",
+      "kind": "title",
+      "description": "Header of the section about the RileyLink device.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6ccd0ab20352ee15",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusScreen.kt",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "key": "rileylink_device_type",
+      "ui_location": "RileyLink status screen > field label",
+      "kind": "label",
+      "description": "Row label ending with a colon, value follows. Type of device the RileyLink talks to.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "447c874c6342ef15",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusScreen.kt",
+          "line": 101
+        }
+      ]
+    },
+    {
+      "key": "rileylink_error_bt_disabled",
+      "ui_location": "RileyLink status > connection error",
+      "kind": "error",
+      "description": "Short error text. Bluetooth is turned off on the phone.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "928e07f582a4aba5",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/defs/RileyLinkError.kt",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "key": "rileylink_error_no_bt_adapter",
+      "ui_location": "RileyLink status > connection error",
+      "kind": "error",
+      "description": "Short error text. The phone has no Bluetooth adapter.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0076064f60b41919",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/defs/RileyLinkError.kt",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "key": "rileylink_error_not_rl",
+      "ui_location": "RileyLink status > connection error",
+      "kind": "error",
+      "description": "Short error text. The chosen Bluetooth device is not a RileyLink.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "08628c2f3f55599b",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/defs/RileyLinkError.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "rileylink_error_pod_unreachable",
+      "ui_location": "RileyLink status > connection error",
+      "kind": "error",
+      "description": "Short error text. The Omnipod cannot be reached.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "aa1b0655e5254bd5",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/defs/RileyLinkError.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "rileylink_error_tuneup_failed",
+      "ui_location": "RileyLink status > connection error",
+      "kind": "error",
+      "description": "Short error text. Frequency tune-up with the pump failed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6e3127f8a68f02f2",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/defs/RileyLinkError.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "rileylink_error_unreachable",
+      "ui_location": "RileyLink status > connection error",
+      "kind": "error",
+      "description": "Short error text. The RileyLink cannot be reached over Bluetooth.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7af181df5befabd4",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/defs/RileyLinkError.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "rileylink_firmware_version",
+      "ui_location": "RileyLink status screen > field label",
+      "kind": "label",
+      "description": "Row label ending with a colon, value follows. Firmware versions of the RileyLink.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b19b7940cfaa0e2d",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusScreen.kt",
+          "line": 88
+        }
+      ]
+    },
+    {
+      "key": "rileylink_firmware_version_value",
+      "ui_location": "RileyLink status screen > firmware value",
+      "kind": "status",
+      "description": "Two lines (\\n): firmware versions of the BLE113 and CC110 chips of a RileyLink. %1$s BLE113 version, %2$s CC110 version. Chip names are fixed.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bd332093a3a4dbd9",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusViewModel.kt",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "key": "rileylink_firmware_version_value_orange",
+      "ui_location": "RileyLink status screen > firmware value",
+      "kind": "status",
+      "description": "Two lines (\\n) for OrangeLink-type devices: %1$s firmware version, %2$s hardware version.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "492a9b1326317c3c",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusViewModel.kt",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "key": "rileylink_last_device_contact",
+      "ui_location": "RileyLink status screen > field label",
+      "kind": "label",
+      "description": "Row label ending with a colon, value follows. Time of the last contact with the device.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "597d251c8b937fd6",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusScreen.kt",
+          "line": 107
+        }
+      ]
+    },
+    {
+      "key": "rileylink_last_used_frequency",
+      "ui_location": "RileyLink status screen > field label",
+      "kind": "label",
+      "description": "Row label ending with a colon, value follows. Radio frequency last used, in MHz.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "54f957263a0703c7",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusScreen.kt",
+          "line": 106
+        }
+      ]
+    },
+    {
+      "key": "rileylink_name",
+      "ui_location": "RileyLink status screen > field label",
+      "kind": "label",
+      "description": "Row label ending with a colon, value follows. Bluetooth name of the RileyLink.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5f35843752865345",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusScreen.kt",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "key": "rileylink_pair",
+      "ui_location": "Overview (Medtronic and Omnipod Eros) > menu",
+      "kind": "menu_item",
+      "description": "Short imperative: start pairing a RileyLink with the phone.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "79cbc5a4652a762f",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 321
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 367
+        },
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkPairWizardScreen.kt",
+          "line": 44
+        },
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkPairWizardScreen.kt",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "key": "rileylink_pair_success",
+      "ui_location": "RileyLink pairing wizard > result",
+      "kind": "status",
+      "description": "Confirmation after a successful pairing.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "04f1391ad3cd1d3e",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkPairWizardScreen.kt",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "key": "rileylink_pump_frequency",
+      "ui_location": "RileyLink status screen > field label",
+      "kind": "label",
+      "description": "Row label ending with a colon, value follows. Radio frequency used to talk to the pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "93874dd2f6cb092f",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusScreen.kt",
+          "line": 105
+        }
+      ]
+    },
+    {
+      "key": "rileylink_pump_frequency_value",
+      "ui_location": "RileyLink status screen > frequency value",
+      "kind": "status",
+      "description": "Frequency in MHz; %1$.2f is the number with two decimals.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "da3daab956937f32",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusViewModel.kt",
+          "line": 109
+        }
+      ]
+    },
+    {
+      "key": "rileylink_pump_serial_number",
+      "ui_location": "RileyLink status screen > field label",
+      "kind": "label",
+      "description": "Row label ending with a colon, value follows. Serial number of the paired pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8e9107c6d8a1ae26",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusScreen.kt",
+          "line": 104
+        }
+      ]
+    },
+    {
+      "key": "rileylink_state_bt_error",
+      "ui_location": "RileyLink status (service state)",
+      "kind": "status",
+      "description": "State of the RileyLink service, shown as a short status. Bluetooth failed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "af1251cff2dc45a9",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/defs/RileyLinkServiceState.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "rileylink_state_bt_init",
+      "ui_location": "RileyLink status (service state)",
+      "kind": "status",
+      "description": "State of the RileyLink service, shown as a short status. Bluetooth is being initialized. Ongoing action.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7bd0c342fe5a75df",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/defs/RileyLinkServiceState.kt",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "key": "rileylink_state_bt_ready",
+      "ui_location": "RileyLink status (service state)",
+      "kind": "status",
+      "description": "State of the RileyLink service, shown as a short status. Bluetooth is ready.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e042c0c8bc84aaa6",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/defs/RileyLinkServiceState.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "rileylink_state_connected",
+      "ui_location": "RileyLink status (service state)",
+      "kind": "status",
+      "description": "State of the RileyLink service, shown as a short status. Connected to the pump.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "594f12c64199adaa",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/defs/RileyLinkServiceState.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "rileylink_state_not_started",
+      "ui_location": "RileyLink status (service state)",
+      "kind": "status",
+      "description": "State of the RileyLink service, shown as a short status. The RileyLink service has not started.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "082c35849068e3ff",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/defs/RileyLinkServiceState.kt",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "key": "rileylink_state_pc_error",
+      "ui_location": "RileyLink status (service state)",
+      "kind": "status",
+      "description": "State of the RileyLink service, shown as a short status. The RileyLink cannot reach the pump.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1caf18d09d6328af",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/defs/RileyLinkServiceState.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "rileylink_state_pc_tune_up",
+      "ui_location": "RileyLink status (service state)",
+      "kind": "status",
+      "description": "State of the RileyLink service, shown as a short status. Searching for the best radio frequency to reach the pump. Ongoing action.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d93ea5b4d94bdcd3",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/defs/RileyLinkServiceState.kt",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "rileylink_state_rl_error",
+      "ui_location": "RileyLink status (service state)",
+      "kind": "status",
+      "description": "State of the RileyLink service, shown as a short status. The RileyLink reported an error.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d0c0f0bdd20ab245",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/defs/RileyLinkServiceState.kt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "rileylink_state_rl_init",
+      "ui_location": "RileyLink status (service state)",
+      "kind": "status",
+      "description": "State of the RileyLink service, shown as a short status. The RileyLink is being initialized. Ongoing action.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "73e9a11a471671e8",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/defs/RileyLinkServiceState.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "rileylink_state_rl_ready",
+      "ui_location": "RileyLink status (service state)",
+      "kind": "status",
+      "description": "State of the RileyLink service, shown as a short status. The RileyLink is ready.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "89359850f4e31472",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/defs/RileyLinkServiceState.kt",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "key": "rileylink_status",
+      "ui_location": "Overview > RileyLink status line",
+      "kind": "label",
+      "description": "Label of the status line for the RileyLink radio bridge on the pump overview. Product name RileyLink stays untranslated.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2810fa0a12e28e10",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 154
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/ui/compose/ErosOverviewViewModel.kt",
+          "line": 180
+        }
+      ]
+    },
+    {
+      "key": "rileylink_target_device_medtronic",
+      "ui_location": "RileyLink status screen > device type",
+      "kind": "status",
+      "description": "Name of the kind of pump the RileyLink is used with.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a832623df19f9f89",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/defs/RileyLinkTargetDevice.kt",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "key": "rileylink_target_device_omnipod",
+      "ui_location": "RileyLink status screen > device type",
+      "kind": "status",
+      "description": "Name of the kind of pump the RileyLink is used with. 'Eros' is the Omnipod model name.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6a8d85544f54582e",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/hw/rileylink/defs/RileyLinkTargetDevice.kt",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "key": "rileylink_title",
+      "ui_location": "RileyLink status screen > title",
+      "kind": "title",
+      "description": "Screen title. Product name, normally not translated.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d99e688bea7e7c50",
+      "usages": [
+        {
+          "path": "pump/rileylink/src/main/kotlin/app/aaps/pump/common/compose/RileyLinkStatusScreen.kt",
+          "line": 78
+        }
+      ]
+    }
+  ]
+}

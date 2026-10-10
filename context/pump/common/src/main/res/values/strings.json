@@ -1,0 +1,798 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/common/src/main/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "history_group_alarm",
+      "ui_location": "Pump history screen > filter chips",
+      "kind": "button",
+      "description": "Plural noun on a filter chip that limits the pump history list by entry type. Alarm entries. Keep short, chips share one row.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "11e8c22a31e7e870",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpHistoryEntryGroup.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "history_group_all",
+      "ui_location": "Pump history screen > filter chips",
+      "kind": "button",
+      "description": "Plural noun on a filter chip that limits the pump history list by entry type. No filter: every entry. Keep short, chips share one row.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4ddd70d58fb996ec",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpHistoryEntryGroup.kt",
+          "line": 15
+        },
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/history/PumpHistoryDataProvider.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "history_group_basal",
+      "ui_location": "Pump history screen > filter chips",
+      "kind": "button",
+      "description": "Plural noun on a filter chip that limits the pump history list by entry type. Basal rate entries (e.g. temp basal, profile changes). Keep short, chips share one row.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "27b04af64cd24307",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpHistoryEntryGroup.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "history_group_base",
+      "ui_location": "Pump history screen > filter chips",
+      "kind": "button",
+      "description": "Plural noun on a filter chip that limits the pump history list by entry type. Base pump entries. Keep short, chips share one row.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "47b49bf900738613",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpHistoryEntryGroup.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "history_group_bolus",
+      "ui_location": "Pump history screen > filter chips",
+      "kind": "button",
+      "description": "Plural noun on a filter chip that limits the pump history list by entry type. Bolus delivery entries. Keep short, chips share one row.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "06d286f8949e9600",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpHistoryEntryGroup.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "history_group_configuration",
+      "ui_location": "Pump history screen > filter chips",
+      "kind": "button",
+      "description": "Plural noun on a filter chip that limits the pump history list by entry type. Entries about changes to pump settings. Keep short, chips share one row.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1da3997d33c98bf7",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpHistoryEntryGroup.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "history_group_events",
+      "ui_location": "Pump history screen > filter chips",
+      "kind": "button",
+      "description": "Plural noun on a filter chip that limits the pump history list by entry type. All event entries, statistics included. Keep short, chips share one row.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "12537aab2033328c",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpHistoryEntryGroup.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "history_group_events_no_stat",
+      "ui_location": "Pump history screen > filter chips",
+      "kind": "button",
+      "description": "Plural noun on a filter chip that limits the pump history list by entry type. Events with statistics entries left out. Keep short, chips share one row.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "681abba09cba85e9",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpHistoryEntryGroup.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "history_group_glucose",
+      "ui_location": "Pump history screen > filter chips",
+      "kind": "button",
+      "description": "Plural noun on a filter chip that limits the pump history list by entry type. Glucose reading entries. Keep short, chips share one row.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2371ee7af496fa0d",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpHistoryEntryGroup.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "history_group_notification",
+      "ui_location": "Pump history screen > filter chips",
+      "kind": "button",
+      "description": "Plural noun on a filter chip that limits the pump history list by entry type. Notification entries. Keep short, chips share one row.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "07064fef9606f635",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpHistoryEntryGroup.kt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "history_group_other",
+      "ui_location": "Pump history screen > filter chips",
+      "kind": "button",
+      "description": "Plural noun on a filter chip that limits the pump history list by entry type. Other entries. Keep short, chips share one row.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "39040679db15112f",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpHistoryEntryGroup.kt",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "key": "history_group_prime",
+      "ui_location": "Pump history screen > filter chips",
+      "kind": "button",
+      "description": "Plural noun on a filter chip that limits the pump history list by entry type. Priming and fill entries (filling tubing or cannula). Keep short, chips share one row.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "eec34ad25791d441",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpHistoryEntryGroup.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "history_group_statistic",
+      "ui_location": "Pump history screen > filter chips",
+      "kind": "button",
+      "description": "Plural noun on a filter chip that limits the pump history list by entry type. Statistics entries such as daily totals. Keep short, chips share one row.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "92112e2cf00b2029",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpHistoryEntryGroup.kt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "history_group_unknown",
+      "ui_location": "Pump history screen > filter chips",
+      "kind": "button",
+      "description": "Plural noun on a filter chip that limits the pump history list by entry type. Entries the driver could not classify. Keep short, chips share one row.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f560396d0060a6ca",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpHistoryEntryGroup.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "pump_cmd_desc_cancel_bolus",
+      "ui_location": "Pump driver > command description (shown in pump command log/progress)",
+      "kind": "label",
+      "description": "Short imperative-style description of a pump command: cancelling a bolus in progress. Exact screen not confirmed in code; it is the description of a pump command type.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "0d109322a73c6526",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/connector/defs/PumpCommandType.kt",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "key": "pump_cmd_desc_cancel_tbr",
+      "ui_location": "Pump driver > command description (shown in pump command log/progress)",
+      "kind": "label",
+      "description": "Short imperative-style description of a pump command: cancelling the running temporary basal rate (TBR). Exact screen not confirmed in code; it is the description of a pump command type.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "8fb2e7864f31f94d",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/connector/defs/PumpCommandType.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "pump_cmd_desc_custom",
+      "ui_location": "Pump driver > command description",
+      "kind": "label",
+      "description": "Description for a driver-specific command that has no standard name. Exact screen not confirmed.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "1a55d498f1385960",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/connector/defs/PumpCommandType.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "pump_cmd_desc_get_basal_profile",
+      "ui_location": "Pump driver > command description (shown in pump command log/progress)",
+      "kind": "label",
+      "description": "Short imperative-style description of a pump command: reading the basal profile stored on the pump. Exact screen not confirmed in code; it is the description of a pump command type.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "57fbe9bd8a49647b",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/connector/defs/PumpCommandType.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "pump_cmd_desc_get_battery_status",
+      "ui_location": "Pump driver > command description (shown in pump command log/progress)",
+      "kind": "label",
+      "description": "Short imperative-style description of a pump command: reading the pump battery status. Exact screen not confirmed in code; it is the description of a pump command type.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "31d4e48830ff0e3e",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/connector/defs/PumpCommandType.kt",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "key": "pump_cmd_desc_get_bolus",
+      "ui_location": "Pump driver > command description (shown in pump command log/progress)",
+      "kind": "label",
+      "description": "Short imperative-style description of a pump command: reading bolus data. Exact screen not confirmed in code; it is the description of a pump command type.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "fa6cf40b1a1dea67",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/connector/defs/PumpCommandType.kt",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "key": "pump_cmd_desc_get_firmware",
+      "ui_location": "Pump driver > command description (shown in pump command log/progress)",
+      "kind": "label",
+      "description": "Short imperative-style description of a pump command: reading the pump firmware version. Exact screen not confirmed in code; it is the description of a pump command type.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "4e68e788436fa79a",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/connector/defs/PumpCommandType.kt",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "key": "pump_cmd_desc_get_history",
+      "ui_location": "Pump driver > command description (shown in pump command log/progress)",
+      "kind": "label",
+      "description": "Short imperative-style description of a pump command: reading the pump history. Exact screen not confirmed in code; it is the description of a pump command type.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "e771ddf101057dd7",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/connector/defs/PumpCommandType.kt",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "key": "pump_cmd_desc_get_history_params",
+      "ui_location": "Pump driver > command description",
+      "kind": "label",
+      "description": "Description of a history-reading command; %s is the history parameters (for example the range requested). Exact screen not confirmed.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "8c6fb86a536326b6",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/connector/defs/PumpCommandType.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "pump_cmd_desc_get_pump_status",
+      "ui_location": "Pump driver > command description (shown in pump command log/progress)",
+      "kind": "label",
+      "description": "Short imperative-style description of a pump command: reading the overall pump status. Exact screen not confirmed in code; it is the description of a pump command type.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "a37075af106ba994",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/connector/defs/PumpCommandType.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "pump_cmd_desc_get_remaining_insulin",
+      "ui_location": "Pump driver > command description (shown in pump command log/progress)",
+      "kind": "label",
+      "description": "Short imperative-style description of a pump command: reading the insulin left in the reservoir. Exact screen not confirmed in code; it is the description of a pump command type.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "e3fcbf0c96feee27",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/connector/defs/PumpCommandType.kt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "pump_cmd_desc_get_settings",
+      "ui_location": "Pump driver > command description (shown in pump command log/progress)",
+      "kind": "label",
+      "description": "Short imperative-style description of a pump command: reading the pump's settings. Exact screen not confirmed in code; it is the description of a pump command type.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "7fb79fca633ae92e",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/connector/defs/PumpCommandType.kt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "pump_cmd_desc_get_tbr",
+      "ui_location": "Pump driver > command description (shown in pump command log/progress)",
+      "kind": "label",
+      "description": "Short imperative-style description of a pump command: reading the running temporary basal rate (TBR). Exact screen not confirmed in code; it is the description of a pump command type.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "3bcb7c36cee473c1",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/connector/defs/PumpCommandType.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "pump_cmd_desc_get_time",
+      "ui_location": "Pump driver > command description (shown in pump command log/progress)",
+      "kind": "label",
+      "description": "Short imperative-style description of a pump command: reading the pump clock. Exact screen not confirmed in code; it is the description of a pump command type.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "811d83e22b5bcf96",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/connector/defs/PumpCommandType.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "pump_cmd_desc_set_basal_profile",
+      "ui_location": "Pump driver > command description (shown in pump command log/progress)",
+      "kind": "label",
+      "description": "Short imperative-style description of a pump command: writing a basal profile to the pump. Exact screen not confirmed in code; it is the description of a pump command type.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "44673777e4cb35f5",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/connector/defs/PumpCommandType.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "pump_cmd_desc_set_bolus",
+      "ui_location": "Pump driver > command description (shown in pump command log/progress)",
+      "kind": "label",
+      "description": "Short imperative-style description of a pump command: delivering a bolus. Exact screen not confirmed in code; it is the description of a pump command type.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "f5bf88e19e860c8c",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/connector/defs/PumpCommandType.kt",
+          "line": 8
+        }
+      ]
+    },
+    {
+      "key": "pump_cmd_desc_set_tbr",
+      "ui_location": "Pump driver > command description (shown in pump command log/progress)",
+      "kind": "label",
+      "description": "Short imperative-style description of a pump command: starting a temporary basal rate (TBR). Exact screen not confirmed in code; it is the description of a pump command type.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "cdc0f2623af57e87",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/connector/defs/PumpCommandType.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "pump_cmd_desc_set_time",
+      "ui_location": "Pump driver > command description (shown in pump command log/progress)",
+      "kind": "label",
+      "description": "Short imperative-style description of a pump command: setting the pump clock. Exact screen not confirmed in code; it is the description of a pump command type.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "7b72db6e677e855c",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/connector/defs/PumpCommandType.kt",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "pump_operation_not_supported_by_pump_driver",
+      "ui_location": "Pump driver > result of an unsupported command",
+      "kind": "error",
+      "description": "Message returned as the failure comment when AAPS asks a pump driver for something it cannot do (temp basal, extended bolus, profile change, TDD loading). A full sentence ending in a period.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b39dda377a0013a4",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/PumpPluginAbstract.kt",
+          "line": 204
+        },
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/PumpPluginAbstract.kt",
+          "line": 235
+        },
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/PumpPluginAbstract.kt",
+          "line": 240
+        },
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/PumpPluginAbstract.kt",
+          "line": 245
+        },
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/PumpPluginAbstract.kt",
+          "line": 252
+        },
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/PumpPluginAbstract.kt",
+          "line": 257
+        },
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/PumpPluginAbstract.kt",
+          "line": 274
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 805
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 810
+        },
+        {
+          "path": "pump/omnipod/eros/src/main/java/app/aaps/pump/omnipod/eros/OmnipodErosPumpPlugin.kt",
+          "line": 815
+        }
+      ]
+    },
+    {
+      "key": "pump_status_busy",
+      "ui_location": "Pump status text (driver connection state)",
+      "kind": "status",
+      "description": "Short status label for the pump driver's state. Driver state: pump is occupied with another operation.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "206cd3a74c42a2ff",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpDriverState.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "pump_status_encrypt",
+      "ui_location": "Pump status text (driver connection state)",
+      "kind": "status",
+      "description": "Short status label for the pump driver's state. Driver state while the link to the pump is being encrypted (key exchange). Describes an ongoing action.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "f3fe42a36f61a40c",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpDriverState.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "pump_status_executing_command",
+      "ui_location": "Pump status text (driver connection state)",
+      "kind": "status",
+      "description": "Short status label for the pump driver's state. Driver state: a command is currently being sent to the pump. Describes an ongoing action.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "7f14c9484c999051",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpDriverState.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "pump_status_initialized",
+      "ui_location": "Pump status text (driver connection state)",
+      "kind": "status",
+      "description": "Short status label for the pump driver's state. Driver state: pump is set up. Rarely shown.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "276b876fae94bb33",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpDriverState.kt",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "key": "pump_status_not_initialized",
+      "ui_location": "Pump status text (driver connection state)",
+      "kind": "status",
+      "description": "Short status label for the pump driver's state. Initial state, set only when the driver has just been created and not yet talked to the pump.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "456ee090c45b1dd4",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpDriverState.kt",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "key": "pump_status_ready",
+      "ui_location": "Pump status text (driver connection state)",
+      "kind": "status",
+      "description": "Short status label for the pump driver's state. Driver state: pump is idle and ready for commands.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "366f5a88bcd959b5",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpDriverState.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "pump_status_suspended",
+      "ui_location": "Pump status text (driver connection state)",
+      "kind": "status",
+      "description": "Short status label for the pump driver's state. Driver state: pump delivery is suspended. Refers to the pump's insulin delivery being paused.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "0ee2958f6db6c89a",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/defs/PumpDriverState.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "time_last_12_hours",
+      "ui_location": "Pump history > time period selection",
+      "kind": "menu_item",
+      "description": "Option for the time range of pump history shown: the last 12 hours. Short label.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "97d757fdea0c95b7",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/history/PumpHistoryDataProvider.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "time_last_24_hours",
+      "ui_location": "Pump history > time period selection",
+      "kind": "menu_item",
+      "description": "Option for the time range of pump history shown: the last 24 hours. Short label.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "a08c64b468fe4b9d",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/history/PumpHistoryDataProvider.kt",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "key": "time_last_2_days",
+      "ui_location": "Pump history > time period selection",
+      "kind": "menu_item",
+      "description": "Option for the time range of pump history shown: the last 2 days. Short label.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "e1a8a0f41ccd8b5c",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/history/PumpHistoryDataProvider.kt",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "key": "time_last_3_hours",
+      "ui_location": "Pump history > time period selection",
+      "kind": "menu_item",
+      "description": "Option for the time range of pump history shown: the last 3 hours. Short label.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "264c146c7faa3006",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/history/PumpHistoryDataProvider.kt",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "key": "time_last_4_days",
+      "ui_location": "Pump history > time period selection",
+      "kind": "menu_item",
+      "description": "Option for the time range of pump history shown: the last 4 days. Short label.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "45578c87d9da2215",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/history/PumpHistoryDataProvider.kt",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "key": "time_last_6_hours",
+      "ui_location": "Pump history > time period selection",
+      "kind": "menu_item",
+      "description": "Option for the time range of pump history shown: the last 6 hours. Short label.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "44a3a2f0d35abc83",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/history/PumpHistoryDataProvider.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "time_last_hour",
+      "ui_location": "Pump history > time period selection",
+      "kind": "menu_item",
+      "description": "Option for the time range of pump history shown: the last hour. Short label.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "a715958bed773ca9",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/history/PumpHistoryDataProvider.kt",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "key": "time_last_month",
+      "ui_location": "Pump history > time period selection",
+      "kind": "menu_item",
+      "description": "Option for the time range of pump history shown: the last month. Short label.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "d2aa31b7ec9d77a8",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/history/PumpHistoryDataProvider.kt",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "key": "time_last_week",
+      "ui_location": "Pump history > time period selection",
+      "kind": "menu_item",
+      "description": "Option for the time range of pump history shown: the last week. Short label.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "8f10a1a74efb812a",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/history/PumpHistoryDataProvider.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "time_today",
+      "ui_location": "Pump history > time period selection",
+      "kind": "menu_item",
+      "description": "Option for the time range of pump history shown: Today. Short label.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "89cfe2976b07a1a2",
+      "usages": [
+        {
+          "path": "pump/common/src/main/kotlin/app/aaps/pump/common/driver/history/PumpHistoryDataProvider.kt",
+          "line": 53
+        }
+      ]
+    }
+  ]
+}

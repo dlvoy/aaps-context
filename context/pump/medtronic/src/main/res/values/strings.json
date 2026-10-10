@@ -1,0 +1,1240 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/medtronic/src/main/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "ago",
+      "ui_location": "Medtronic overview > last contact",
+      "kind": "status",
+      "description": "Word after a count of hours or days, e.g. '3 hours ago'. Count comes first, so the order in the target language must fit.",
+      "related_keys": [
+        "duration_hours",
+        "duration_days"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9120141d3e2f4391",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 243
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 248
+        }
+      ]
+    },
+    {
+      "key": "clicked_refresh",
+      "ui_location": "Command queue / treatment log",
+      "kind": "log",
+      "description": "Reason text recorded when the user taps refresh on the Medtronic overview.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "52b7887882478ddd",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 389
+        }
+      ]
+    },
+    {
+      "key": "description_pump_medtronic",
+      "ui_location": "Config builder > Pump > plugin list",
+      "kind": "summary",
+      "description": "Description of the Medtronic pump plugin in the plugin list. Mentions the RileyLink bridge device and specific pump models/firmware.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "eb2c6e6105479929",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/MedtronicPumpPlugin.kt",
+          "line": 164
+        }
+      ]
+    },
+    {
+      "key": "invalid_history_data",
+      "ui_location": "Notification / warning",
+      "kind": "notification",
+      "description": "Warning that the pump history data is invalid and asks the user to open an issue with logs.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "73c158de535b00a2",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/data/MedtronicHistoryData.kt",
+          "line": 787
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/data/MedtronicHistoryData.kt",
+          "line": 831
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/data/MedtronicHistoryData.kt",
+          "line": 1103
+        }
+      ]
+    },
+    {
+      "key": "medtronic_bolus_delay_10s",
+      "ui_location": "Preferences > Pump > Medtronic > bolus delay options",
+      "kind": "preference_title",
+      "description": "Option for the bolus start delay: 10 seconds. Short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4575faa99a15aeda",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicIntPreferenceKey.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "medtronic_bolus_delay_15s",
+      "ui_location": "Preferences > Pump > Medtronic > bolus delay options",
+      "kind": "preference_title",
+      "description": "Option for the bolus start delay: 15 seconds. Short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "adabc910982d67b4",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicIntPreferenceKey.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "medtronic_bolus_delay_5s",
+      "ui_location": "Preferences > Pump > Medtronic > bolus delay options",
+      "kind": "preference_title",
+      "description": "Option for the bolus start delay: 5 seconds. Short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "617a5e1eb17c5331",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicIntPreferenceKey.kt",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_basal_profile_could_not_be_set",
+      "ui_location": "Result comment of a pump command (treatment log / command queue result)",
+      "kind": "error",
+      "description": "Result message. Writing the basal profile to the pump failed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "3f33ce6028662ee8",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/MedtronicPumpPlugin.kt",
+          "line": 1162
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_basal_profile_not_set_is_same",
+      "ui_location": "Result comment of a pump command (treatment log / command queue result)",
+      "kind": "status",
+      "description": "Result message. The profile on the pump already matches, so nothing was sent.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "dfa6e4c2b17f2149",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/MedtronicPumpPlugin.kt",
+          "line": 1134
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_bolus_could_not_be_delivered",
+      "ui_location": "Result comment of a pump command (treatment log / command queue result)",
+      "kind": "error",
+      "description": "Result message. Bolus delivery failed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "2ebaf93d6310025b",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/MedtronicPumpPlugin.kt",
+          "line": 684
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_bolus_could_not_be_delivered_no_insulin",
+      "ui_location": "Result comment of a pump command (treatment log / command queue result)",
+      "kind": "error",
+      "description": "Bolus refused; %1$.2f is the insulin in the reservoir and %2$.2f the bolus needed, both in units.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e8f6c57a828bfea4",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/MedtronicPumpPlugin.kt",
+          "line": 645
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_cancel_bolus_not_supported",
+      "ui_location": "Alarm dialog after cancelling a bolus on Medtronic",
+      "kind": "dialog_text",
+      "description": "Long warning alarm. Medtronic pumps cannot cancel a bolus once sent; explains how to cancel manually by suspending then resuming the pump. Mentions the app updates within 5 minutes.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "42904e91b17c680d",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/MedtronicPumpPlugin.kt",
+          "line": 690
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_cant_cancel_tbr",
+      "ui_location": "Result comment of a pump command (treatment log / command queue result)",
+      "kind": "error",
+      "description": "Result message. Current TBR could not be cancelled.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d788595043f10be3",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/MedtronicPumpPlugin.kt",
+          "line": 1074
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_cant_cancel_tbr_stop_op",
+      "ui_location": "Result comment of a pump command (treatment log / command queue result)",
+      "kind": "error",
+      "description": "Result message. Current TBR could not be cancelled so the operation stops.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "361e39b49fbb9d02",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/MedtronicPumpPlugin.kt",
+          "line": 783
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_cant_read_tbr",
+      "ui_location": "Result comment of a pump command (treatment log / command queue result)",
+      "kind": "error",
+      "description": "Result message. Current temporary basal rate (TBR) could not be read.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7089b941abc16daf",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/MedtronicPumpPlugin.kt",
+          "line": 752
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/MedtronicPumpPlugin.kt",
+          "line": 1066
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_desc_cancel_tbr",
+      "ui_location": "Medtronic command progress/log text",
+      "kind": "status",
+      "description": "Description of a Medtronic command: cancelling the temporary basal rate. Exact screen not confirmed in code.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "dba4c35952f78282",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicCommandType.kt",
+          "line": 158
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_desc_get_basal_profile",
+      "ui_location": "Medtronic command progress/log text",
+      "kind": "status",
+      "description": "Description of a Medtronic command: reading the basal profile. Exact screen not confirmed in code.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "f5e2405b9e0a7448",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicCommandType.kt",
+          "line": 105
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicCommandType.kt",
+          "line": 109
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicCommandType.kt",
+          "line": 113
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_desc_get_battery_status",
+      "ui_location": "Medtronic command progress/log text",
+      "kind": "status",
+      "description": "Description of a Medtronic command: reading the battery status. Exact screen not confirmed in code.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "7cc21cfff33dfd05",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicCommandType.kt",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_desc_get_history",
+      "ui_location": "Medtronic command progress/log text",
+      "kind": "status",
+      "description": "Progress text while reading the pump history page by page. %1$d is the page number, %2$d the part of 16 done.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "01bb8d8ac9e4ea10",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicCommandType.kt",
+          "line": 101
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_desc_get_history_request",
+      "ui_location": "Medtronic command progress/log text",
+      "kind": "status",
+      "description": "Progress text for reading history. %1$d is the page number.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "66d320d970c48d41",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 219
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_desc_get_model",
+      "ui_location": "Medtronic command progress/log text",
+      "kind": "status",
+      "description": "Description of a Medtronic command: reading the pump model. Exact screen not confirmed in code.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "f998b98c366c72b8",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicCommandType.kt",
+          "line": 83
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_desc_get_remaining_insulin",
+      "ui_location": "Medtronic command progress/log text",
+      "kind": "status",
+      "description": "Description of a Medtronic command: reading the insulin left in the reservoir. Exact screen not confirmed in code.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "85367b5e06ff3d8c",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicCommandType.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_desc_get_settings",
+      "ui_location": "Medtronic command progress/log text",
+      "kind": "status",
+      "description": "Description of a Medtronic command: reading pump settings. Exact screen not confirmed in code.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "76a436f4a182c5ca",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicCommandType.kt",
+          "line": 94
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicCommandType.kt",
+          "line": 132
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_desc_get_tbr",
+      "ui_location": "Medtronic command progress/log text",
+      "kind": "status",
+      "description": "Description of a Medtronic command: reading the temporary basal rate. Exact screen not confirmed in code.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "0d7b16826d30c17b",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicCommandType.kt",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_desc_get_time",
+      "ui_location": "Medtronic command progress/log text",
+      "kind": "status",
+      "description": "Description of a Medtronic command: reading the pump clock. Exact screen not confirmed in code.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "86cade9a2f5ca743",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicCommandType.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_desc_set_basal_profile",
+      "ui_location": "Medtronic command progress/log text",
+      "kind": "status",
+      "description": "Description of a Medtronic command: writing the basal profile. Exact screen not confirmed in code.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "d34f4b0b6439e1ce",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicCommandType.kt",
+          "line": 117
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicCommandType.kt",
+          "line": 121
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicCommandType.kt",
+          "line": 125
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_desc_set_bolus",
+      "ui_location": "Medtronic command progress/log text",
+      "kind": "status",
+      "description": "Description of a Medtronic command: delivering a bolus. Exact screen not confirmed in code.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "732a58f0193d5085",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicCommandType.kt",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_desc_set_tbr",
+      "ui_location": "Medtronic command progress/log text",
+      "kind": "status",
+      "description": "Description of a Medtronic command: setting a temporary basal rate. Exact screen not confirmed in code.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "c2e76234ca856637",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicCommandType.kt",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_desc_set_time",
+      "ui_location": "Medtronic command progress/log text",
+      "kind": "status",
+      "description": "Description of a Medtronic command: setting the pump clock. Exact screen not confirmed in code.",
+      "related_keys": [],
+      "confidence": 0.5,
+      "usages_hash": "d2649b8798d85b88",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicCommandType.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_set_profile_pattern_overflow",
+      "ui_location": "Result comment of a pump command (treatment log / command queue result)",
+      "kind": "error",
+      "description": "Setting the profile failed; %1$s is the list of pump basal patterns with a rate above the pump's limit.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "aa46a21667da13f7",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/MedtronicPumpPlugin.kt",
+          "line": 1152
+        }
+      ]
+    },
+    {
+      "key": "medtronic_cmd_tbr_could_not_be_delivered",
+      "ui_location": "Result comment of a pump command (treatment log / command queue result)",
+      "kind": "error",
+      "description": "Result message. Setting a temporary basal rate failed.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "0d2b22100d5d8a9c",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/MedtronicPumpPlugin.kt",
+          "line": 800
+        }
+      ]
+    },
+    {
+      "key": "medtronic_custom_action_clear_bolus_block",
+      "ui_location": "Medtronic overview > menu / progress",
+      "kind": "menu_item",
+      "description": "Action that clears a blocking state that prevents bolusing after a failed delivery. Also used as a progress text.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "0647999c652d6d3f",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 358
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 364
+        }
+      ]
+    },
+    {
+      "key": "medtronic_custom_action_reset_rileylink",
+      "ui_location": "Medtronic overview > menu",
+      "kind": "menu_item",
+      "description": "Action that resets the RileyLink connection.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "a3209819af56d81b",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 368
+        }
+      ]
+    },
+    {
+      "key": "medtronic_custom_action_wake_and_tune",
+      "ui_location": "Medtronic overview > menu / progress",
+      "kind": "menu_item",
+      "description": "Action that wakes the pump and searches for the best radio frequency. Also used as a progress text.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "da42320f4b14c09a",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 345
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 351
+        }
+      ]
+    },
+    {
+      "key": "medtronic_error_operation_not_possible_no_configuration",
+      "ui_location": "Medtronic overview > dialog when an action is chosen before setup",
+      "kind": "dialog_text",
+      "description": "Dialog text (contains literal line breaks) telling the user to configure the Medtronic pump before using the action.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "41c7d560c6d89622",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 396
+        }
+      ]
+    },
+    {
+      "key": "medtronic_error_pump_24h_time_change_requested",
+      "ui_location": "Notification (Medtronic pump alarm)",
+      "kind": "notification",
+      "description": "Notification text. A pump clock change of more than 24 hours was requested.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b0668e8cef3b7e88",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicNotificationType.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "medtronic_error_pump_basal_profiles_not_enabled",
+      "ui_location": "Notification (Medtronic pump alarm)",
+      "kind": "notification",
+      "description": "Notification text. The pump's own basal profiles/patterns setting is off; the user must enable it on the pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ae55c896a00586ab",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicNotificationType.kt",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "key": "medtronic_error_pump_incorrect_basal_profile_selected",
+      "ui_location": "Notification (Medtronic pump alarm)",
+      "kind": "notification",
+      "description": "Notification text. The wrong basal profile is active on the pump; STD is a pump profile name.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "540688a8648c1b86",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicNotificationType.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "medtronic_error_pump_type_invalid",
+      "ui_location": "Error shown when starting the Medtronic pump driver",
+      "kind": "error",
+      "description": "Short problem message. The chosen pump model is not supported.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "9cecd2e75866d3b3",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/service/RileyLinkMedtronicService.kt",
+          "line": 151
+        }
+      ]
+    },
+    {
+      "key": "medtronic_error_pump_type_not_set",
+      "ui_location": "Error shown when starting the Medtronic pump driver",
+      "kind": "error",
+      "description": "Short problem message. No pump model chosen.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "89918f2e27246ca8",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/service/RileyLinkMedtronicService.kt",
+          "line": 146
+        }
+      ]
+    },
+    {
+      "key": "medtronic_error_pump_type_set_differs_from_detected",
+      "ui_location": "Notification (Medtronic pump alarm)",
+      "kind": "notification",
+      "description": "Notification text. The pump model detected differs from the one set in preferences.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e436dd4aba2f82b7",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicNotificationType.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "medtronic_error_pump_wrong_max_basal_set",
+      "ui_location": "Notification (Medtronic pump alarm)",
+      "kind": "notification",
+      "description": "Max basal on the pump differs from what is required; %1$.2f is the required value in units per hour.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5aa61a97439b9fa6",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicNotificationType.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "medtronic_error_pump_wrong_max_bolus_set",
+      "ui_location": "Notification (Medtronic pump alarm)",
+      "kind": "notification",
+      "description": "Max bolus on the pump differs from what is required; %1$.2f is the required value in units.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f41148446307bc5c",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicNotificationType.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "medtronic_error_pump_wrong_tbr_type_set",
+      "ui_location": "Notification (Medtronic pump alarm)",
+      "kind": "notification",
+      "description": "Notification text. The pump's temp basal type must be Absolute (units/hour), not percent; TBR means temporary basal rate.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "5bedb8fcbbb7cefb",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicNotificationType.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "medtronic_error_rileylink_address_invalid",
+      "ui_location": "Error shown when starting the Medtronic pump driver",
+      "kind": "error",
+      "description": "Short problem message. The RileyLink Bluetooth address is invalid.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8ca877116c96d3a7",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/service/RileyLinkMedtronicService.kt",
+          "line": 165
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/service/RileyLinkMedtronicService.kt",
+          "line": 169
+        }
+      ]
+    },
+    {
+      "key": "medtronic_error_serial_invalid",
+      "ui_location": "Error shown when starting the Medtronic pump driver",
+      "kind": "error",
+      "description": "Short problem message. The pump serial number is invalid.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "b96efb944728db74",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/service/RileyLinkMedtronicService.kt",
+          "line": 137
+        }
+      ]
+    },
+    {
+      "key": "medtronic_notification_check_time_date",
+      "ui_location": "Notification (Medtronic pump alarm)",
+      "kind": "notification",
+      "description": "Tells the user the pump clock differs from the phone and needs updating.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cbbe4925a93bc92f",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicNotificationType.kt",
+          "line": 20
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/MedtronicNotificationType.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_battery_alkaline",
+      "ui_location": "Preferences > Pump > Medtronic > battery type options",
+      "kind": "preference_title",
+      "description": "Choice: alkaline battery, extended display. Chemistry names stay as they are; the view name in brackets refers to the battery display mode.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7e194738d37b7e08",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/BatteryType.kt",
+          "line": 13
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_battery_lithium",
+      "ui_location": "Preferences > Pump > Medtronic > battery type options",
+      "kind": "preference_title",
+      "description": "Choice: lithium battery, extended display. Chemistry names stay as they are; the view name in brackets refers to the battery display mode.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "53df7380e6259344",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/BatteryType.kt",
+          "line": 14
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_battery_nimh",
+      "ui_location": "Preferences > Pump > Medtronic > battery type options",
+      "kind": "preference_title",
+      "description": "Choice: NiMH (nickel-metal hydride) battery, extended display. Chemistry names stay as they are; the view name in brackets refers to the battery display mode.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "22cd1899e25b9fe9",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/BatteryType.kt",
+          "line": 16
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_battery_nizn",
+      "ui_location": "Preferences > Pump > Medtronic > battery type options",
+      "kind": "preference_title",
+      "description": "Choice: NiZn (nickel-zinc) battery, extended display. Chemistry names stay as they are; the view name in brackets refers to the battery display mode.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "649aa7d834e324bf",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/BatteryType.kt",
+          "line": 15
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 67
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_battery_no",
+      "ui_location": "Preferences > Pump > Medtronic > battery type options",
+      "kind": "preference_title",
+      "description": "Choice: no battery type, simple battery display. Chemistry names stay as they are; the view name in brackets refers to the battery display mode.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "66d4e16f688243d7",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/defs/BatteryType.kt",
+          "line": 12
+        },
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_battery_select",
+      "ui_location": "Preferences > Pump > Medtronic",
+      "kind": "preference_title",
+      "description": "Title of the list choosing the type of AA battery in the pump, used to show battery level. '(Power View)' refers to a display mode.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "34ed4fecdd8e5822",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_bolus_delay",
+      "ui_location": "Preferences > Pump > Medtronic",
+      "kind": "preference_title",
+      "description": "Title of the list choosing the wait before a bolus starts; (s) means seconds.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c16c8fe7988cec98",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicIntPreferenceKey.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_connected_now",
+      "ui_location": "Medtronic overview > last contact",
+      "kind": "status",
+      "description": "Shown when the last contact with the pump was just now.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "427260a9d3d9d39f",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 235
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_frequency",
+      "ui_location": "Preferences > Pump > Medtronic",
+      "kind": "preference_title",
+      "description": "Title of the list choosing the pump's radio frequency region.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f33a54e90a84254f",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_max_basal",
+      "ui_location": "Preferences > Pump > Medtronic",
+      "kind": "preference_title",
+      "description": "Title of the field with the pump's maximum basal rate; (U/h) means units per hour.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "cf0c137e5a21fba5",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicIntPreferenceKey.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_max_bolus",
+      "ui_location": "Preferences > Pump > Medtronic",
+      "kind": "preference_title",
+      "description": "Title of the field with the pump's maximum bolus setting; (U) means insulin units.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bfd2c4ac57ac7949",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicIntPreferenceKey.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_type",
+      "ui_location": "Preferences > Pump > Medtronic",
+      "kind": "preference_title",
+      "description": "Title of the list choosing the Medtronic pump model.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "208fc975b38ce974",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_type_512",
+      "ui_location": "Preferences > Pump > Medtronic > pump type options",
+      "kind": "preference_title",
+      "description": "Medtronic pump model number. Model numbers stay as they are.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "d127be211a5e6084",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_type_515",
+      "ui_location": "Preferences > Pump > Medtronic > pump type options",
+      "kind": "preference_title",
+      "description": "Medtronic pump model number. Model numbers stay as they are.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "48abfcbc99cf6a28",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_type_522",
+      "ui_location": "Preferences > Pump > Medtronic > pump type options",
+      "kind": "preference_title",
+      "description": "Medtronic pump model number. Model numbers stay as they are.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "712e131b230ceaf5",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_type_523_24a",
+      "ui_location": "Preferences > Pump > Medtronic > pump type options",
+      "kind": "preference_title",
+      "description": "Medtronic pump model number with the firmware (Fw) or region (EU/CA) it applies to. Model numbers stay as they are.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "4ea60b59053dc520",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_type_554_ca",
+      "ui_location": "Preferences > Pump > Medtronic > pump type options",
+      "kind": "preference_title",
+      "description": "Medtronic pump model number with the firmware (Fw) or region (EU/CA) it applies to. Model numbers stay as they are.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "094865fe1b7bbbcd",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_type_554_eu",
+      "ui_location": "Preferences > Pump > Medtronic > pump type options",
+      "kind": "preference_title",
+      "description": "Medtronic pump model number with the firmware (Fw) or region (EU/CA) it applies to. Model numbers stay as they are.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "901836e59c523d06",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_type_712",
+      "ui_location": "Preferences > Pump > Medtronic > pump type options",
+      "kind": "preference_title",
+      "description": "Medtronic pump model number. Model numbers stay as they are.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "1db16d79e2af1608",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_type_715",
+      "ui_location": "Preferences > Pump > Medtronic > pump type options",
+      "kind": "preference_title",
+      "description": "Medtronic pump model number. Model numbers stay as they are.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "857fbf36682e29dc",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_type_722",
+      "ui_location": "Preferences > Pump > Medtronic > pump type options",
+      "kind": "preference_title",
+      "description": "Medtronic pump model number. Model numbers stay as they are.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "530f406394187197",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_type_723_24a",
+      "ui_location": "Preferences > Pump > Medtronic > pump type options",
+      "kind": "preference_title",
+      "description": "Medtronic pump model number with the firmware (Fw) or region (EU/CA) it applies to. Model numbers stay as they are.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "6c0e938ab436892e",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_type_754_ca",
+      "ui_location": "Preferences > Pump > Medtronic > pump type options",
+      "kind": "preference_title",
+      "description": "Medtronic pump model number with the firmware (Fw) or region (EU/CA) it applies to. Model numbers stay as they are.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "015d484ce85e7726",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_type_754_eu",
+      "ui_location": "Preferences > Pump > Medtronic > pump type options",
+      "kind": "preference_title",
+      "description": "Medtronic pump model number with the firmware (Fw) or region (EU/CA) it applies to. Model numbers stay as they are.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5da4f142bf14b6c4",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "medtronic_pump_type_unsupported",
+      "ui_location": "Preferences > Pump > Medtronic > pump type options",
+      "kind": "preference_title",
+      "description": "Choice for pump models the plugin does not support.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bcba61d95656250b",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "key": "medtronic_serial_number",
+      "ui_location": "Preferences > Pump > Medtronic",
+      "kind": "preference_title",
+      "description": "Title of the field for the pump's serial number (six digits).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ee48bbb52c09170d",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicStringPreferenceKey.kt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "riley_statistics",
+      "ui_location": "Medtronic overview > RileyLink statistics row",
+      "kind": "label",
+      "description": "Short label for RileyLink communication statistics; 'RL' abbreviates RileyLink.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "5f4b776d1a2467f9",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 333
+        }
+      ]
+    },
+    {
+      "key": "rl_battery_label",
+      "ui_location": "Medtronic overview > RileyLink battery row",
+      "kind": "label",
+      "description": "Label of the row that shows the RileyLink's battery level.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "8158ceab469a6318",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/compose/MedtronicOverviewViewModel.kt",
+          "line": 159
+        }
+      ]
+    },
+    {
+      "key": "set_neutral_temps_summary",
+      "ui_location": "Preferences > Pump > Medtronic",
+      "kind": "preference_summary",
+      "description": "Explains that cancelling temp basals before the hour can stop some pumps beeping or vibrating on the hour.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "03691be24a6890e2",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicBooleanPreferenceKey.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "set_neutral_temps_title",
+      "ui_location": "Preferences > Pump > Medtronic",
+      "kind": "preference_title",
+      "description": "Switch title for cancelling a temporary basal before each hour ends.",
+      "related_keys": [
+        "set_neutral_temps_summary"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "1ed3653ca8dd8452",
+      "usages": [
+        {
+          "path": "pump/medtronic/src/main/kotlin/app/aaps/pump/medtronic/keys/MedtronicBooleanPreferenceKey.kt",
+          "line": 17
+        }
+      ]
+    }
+  ]
+}
