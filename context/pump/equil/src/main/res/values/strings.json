@@ -1,0 +1,2235 @@
+{
+  "schema_version": 1,
+  "source_path": "pump/equil/src/main/res/values/strings.xml",
+  "repo_commit": "b2909904e5df95b93036b3015c3e5bfd64676401",
+  "generated_by": "claude-code skill aaps-string-context",
+  "entries": [
+    {
+      "key": "equil_air",
+      "ui_location": "Equil wizard > Prime cannula step",
+      "kind": "button",
+      "description": "Button that purges air from the cannula. Short imperative.",
+      "related_keys": [
+        "equil_hint1",
+        "equil_hint2"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "04860c3599ba0e07",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/AirStep.kt",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "key": "equil_assemble",
+      "ui_location": "Equil wizard > Assemble step",
+      "kind": "dialog_text",
+      "description": "Instruction to put together the pump, the filled reservoir and the charged battery. Imperative sentence.",
+      "related_keys": [
+        "equil_title_assemble"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "af7ee1b072da2f0d",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/AssembleStep.kt",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "key": "equil_attach",
+      "ui_location": "Equil wizard > Attach step",
+      "kind": "dialog_text",
+      "description": "Instruction to attach the pump to the base on the body. Imperative sentence.",
+      "related_keys": [
+        "equil_title_attach"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e67103cc1cd68f15",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/AttachStep.kt",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "key": "equil_basal_exceeds_max",
+      "ui_location": "",
+      "kind": "other",
+      "description": "No usage found in code.",
+      "related_keys": [],
+      "confidence": 0.0,
+      "usages_hash": "e3b0c44298fc1c14",
+      "usages": []
+    },
+    {
+      "key": "equil_basal_speed",
+      "ui_location": "Pump overview > Equil > info table",
+      "kind": "label",
+      "description": "Row label in the pump info table. The value is the pump's base basal rate (units per hour). Short label.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f1c37224936dd28c",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 178
+        }
+      ]
+    },
+    {
+      "key": "equil_ble_config_confirmation_title",
+      "ui_location": "Equil wizard > Assemble step heading",
+      "kind": "title",
+      "description": "Heading of the first pairing step (shown instead of the reservoir change heading). Names the Equil patch pump being paired.",
+      "related_keys": [
+        "equil_title_dressing"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c5f5ad7311165a34",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/AssembleStep.kt",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "key": "equil_change",
+      "ui_location": "Equil wizard > step title (reservoir change flow)",
+      "kind": "title",
+      "description": "Title of the first step of the reservoir change flow. Source text says 'Change pump' though the flow replaces the insulin reservoir; keep it short.",
+      "related_keys": [
+        "equil_change_content",
+        "equil_dressing"
+      ],
+      "confidence": 0.7,
+      "usages_hash": "3852192a79a39840",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardStep.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "equil_change_content",
+      "ui_location": "Equil wizard > Change reservoir and Detach pump steps",
+      "kind": "dialog_text",
+      "description": "Instruction to detach the pump from the base plate on the body. Imperative sentence.",
+      "related_keys": [
+        "equil_title_unpair_detach"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a73fe68cb837371c",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/ChangeInsulinStep.kt",
+          "line": 66
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/UnpairDetachStep.kt",
+          "line": 67
+        }
+      ]
+    },
+    {
+      "key": "equil_command__unknown",
+      "ui_location": "Equil history > command history > result",
+      "kind": "error",
+      "description": "Command result: the outcome of the command could not be determined.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b4f3cb59c96d3050",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryViewModel.kt",
+          "line": 201
+        }
+      ]
+    },
+    {
+      "key": "equil_command_connect_error",
+      "ui_location": "Equil history result; pump command result",
+      "kind": "error",
+      "description": "Command result: Bluetooth connection to the pump failed. Also used as comment for a failed bolus.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "359e8cbe9fa2f249",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryViewModel.kt",
+          "line": 197
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/EquilManager.kt",
+          "line": 281
+        }
+      ]
+    },
+    {
+      "key": "equil_command_connect_no_response",
+      "ui_location": "Equil history > command history > result",
+      "kind": "error",
+      "description": "Command result: the pump was reached but did not answer.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "0930139a47babfb0",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryViewModel.kt",
+          "line": 198
+        }
+      ]
+    },
+    {
+      "key": "equil_command_not_found",
+      "ui_location": "Equil history > command history > result",
+      "kind": "error",
+      "description": "Command result: the pump device could not be found, e.g. out of Bluetooth range.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8394951549df3be2",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryViewModel.kt",
+          "line": 196
+        }
+      ]
+    },
+    {
+      "key": "equil_common_change_insulin",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: the plunger was retracted to allow a reservoir change. Short list label.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ac9eee432c6dd402",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "key": "equil_common_cmd_cancel_bolus",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: a running bolus was cancelled. Short noun-phrase label in a list; it may also appear in the history filter.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "35429bfb8ea22cd7",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "key": "equil_common_cmd_cancel_extended_bolus",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: an extended bolus was cancelled. Short noun-phrase label in a list; it may also appear in the history filter.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "04e218e85ecc435b",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "key": "equil_common_cmd_cancel_tbr",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: a temporary basal rate was cancelled. Short noun-phrase label in a list; it may also appear in the history filter.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "6e925df1f24f7270",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "key": "equil_common_cmd_fill",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: the reservoir was primed (filled). Short noun-phrase label in a list; it may also appear in the history filter.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e1d673ec34e5836f",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "equil_common_cmd_insert_cannula",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: the cannula insertion step of pump activation. Short noun-phrase label in a list; it may also appear in the history filter.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "99f6faab5accc5ca",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "equil_common_cmd_pair",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: the first pairing step with a pump. Short noun-phrase label in a list; it may also appear in the history filter.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "55ab549e13633831",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "key": "equil_common_cmd_resume_delivery",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: insulin delivery was resumed. Short noun-phrase label in a list; it may also appear in the history filter.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e82b850f7cb1b560",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "key": "equil_common_cmd_set_basal_schedule",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: the basal profile (schedule of hourly rates) was sent to the pump. Short noun-phrase label in a list; it may also appear in the history filter.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "99f8be6d1b952f00",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "equil_common_cmd_set_bolus",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: a bolus was sent to the pump. Short noun-phrase label in a list; it may also appear in the history filter.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a4090011df8d3bd8",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "equil_common_cmd_set_extended_bolus",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: an extended bolus was sent to the pump. Short noun-phrase label in a list; it may also appear in the history filter.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b80546c715352ae0",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "key": "equil_common_cmd_set_tbr",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: a temporary basal rate was set on the pump. Short noun-phrase label in a list; it may also appear in the history filter.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e6bd8b2525ebf20a",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "key": "equil_common_cmd_set_time",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: the pump clock was set. Short noun-phrase label in a list; it may also appear in the history filter.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d89491bcf36deea8",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "key": "equil_common_cmd_suspend_delivery",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: insulin delivery was suspended. Short noun-phrase label in a list; it may also appear in the history filter.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d0649b53ea95f866",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "key": "equil_common_cmd_unpair",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: the pump was unpaired from the app. Short noun-phrase label in a list; it may also appear in the history filter.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "4766dc0850eab80f",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "key": "equil_common_history_bolus_value",
+      "ui_location": "Equil history > command history",
+      "kind": "label",
+      "description": "Detail text for a bolus command. %1$.2f is the insulin amount; U stands for insulin units.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c0ab877c74019e99",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryScreen.kt",
+          "line": 205
+        }
+      ]
+    },
+    {
+      "key": "equil_common_history_tbr_value",
+      "ui_location": "Equil history > command history",
+      "kind": "label",
+      "description": "Detail text for a temporary basal command. %1$.2f is the rate in units per hour, %2$d the duration in minutes. Uses full-width punctuation in the source; use the natural punctuation of your language.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "ce34bc9cb55037db",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryScreen.kt",
+          "line": 194
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryScreen.kt",
+          "line": 201
+        }
+      ]
+    },
+    {
+      "key": "equil_common_overview_button_resume_delivery",
+      "ui_location": "Pump overview > Equil > primary action buttons",
+      "kind": "button",
+      "description": "Button that restarts insulin delivery after a pause. Short imperative.",
+      "related_keys": [
+        "equil_common_overview_button_suspend_delivery"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "b889d56e08718f30",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 222
+        }
+      ]
+    },
+    {
+      "key": "equil_common_overview_button_suspend_delivery",
+      "ui_location": "Pump overview > Equil > primary action buttons",
+      "kind": "button",
+      "description": "Button that pauses insulin delivery. Short imperative, limited width.",
+      "related_keys": [
+        "equil_common_overview_button_resume_delivery"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a337f0f1adefdec4",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 214
+        }
+      ]
+    },
+    {
+      "key": "equil_common_read_devices",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: the app read device information (serial, firmware) from the pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "897795f9c38f46af",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "key": "equil_common_set_alarm_mute",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: the pump alarm was configured to be silent.",
+      "related_keys": [
+        "equil_tone"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e80118aac225ceb5",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "key": "equil_common_set_alarm_shake",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: the pump alarm was configured to vibration only.",
+      "related_keys": [
+        "equil_tone"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "751944acbdca7c19",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "key": "equil_common_set_alarm_tone",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: the pump alarm was configured to sound only.",
+      "related_keys": [
+        "equil_tone"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "07d89493fb22ecc9",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "key": "equil_common_set_alarm_tone_and_shake",
+      "ui_location": "Equil history > command history > command name",
+      "kind": "label",
+      "description": "Command name: the pump alarm was configured for sound and vibration.",
+      "related_keys": [
+        "equil_tone"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "4e6b15399d2067ea",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/database/EquilHistoryRecord.kt",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "key": "equil_common_wizard_exit_confirmation_text",
+      "ui_location": "Equil wizard > exit confirmation dialog",
+      "kind": "dialog_text",
+      "description": "Question when the user leaves the wizard before finishing all steps.",
+      "related_keys": [
+        "equil_common_wizard_exit_confirmation_title"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8b42cb13917c93eb",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardScreen.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "equil_common_wizard_exit_confirmation_title",
+      "ui_location": "Equil wizard > exit confirmation dialog",
+      "kind": "dialog_title",
+      "description": "Title of the dialog confirming that the user wants to leave the wizard.",
+      "related_keys": [
+        "equil_common_wizard_exit_confirmation_text"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a31217d83cb21a61",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardScreen.kt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "key": "equil_device_unpaired",
+      "ui_location": "Snackbar / wizard message after unpair",
+      "kind": "status",
+      "description": "Message confirming the pump was unpaired successfully.",
+      "related_keys": [
+        "equil_removed_anyway"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "437c337928612e3f",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 943
+        }
+      ]
+    },
+    {
+      "key": "equil_dressing",
+      "ui_location": "Pump overview > Equil > management actions",
+      "kind": "button",
+      "description": "Action button that starts the reservoir change workflow, in which the user replaces the insulin reservoir. Short imperative.",
+      "related_keys": [
+        "equil_title_dressing"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "eea5633a9d532318",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 243
+        }
+      ]
+    },
+    {
+      "key": "equil_dressing_onkey_msg",
+      "ui_location": "Equil wizard > Prime / Fill step",
+      "kind": "dialog_text",
+      "description": "Explains that the pump automatically moves the plunger to the bottom of the reservoir and stops there; the user may press the Stop button to interrupt. Whole sentences. The quoted word is the label of the Stop button.",
+      "related_keys": [
+        "equil_stop",
+        "equil_title_fill"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a3eb7b9712f19639",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/FillStep.kt",
+          "line": 103
+        }
+      ]
+    },
+    {
+      "key": "equil_error",
+      "ui_location": "Snackbar; Equil wizard error banner",
+      "kind": "error",
+      "description": "Generic error message meaning the app could not connect to the pump or a command failed. Short.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "bde9bb3a864600df",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/EquilPumpPlugin.kt",
+          "line": 157
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/EquilPumpPlugin.kt",
+          "line": 180
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 605
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 618
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 653
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 680
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 702
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 717
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 727
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 748
+        }
+      ]
+    },
+    {
+      "key": "equil_error_set_temp_basal_failed_validation",
+      "ui_location": "Pump command result (shown in treatment result dialogs, logs)",
+      "kind": "error",
+      "description": "Error comment when a temporary basal is rejected: the duration must be above zero and a multiple of the given step. %1$s is a number of minutes (30). 'TBR' means temporary basal rate.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "da4820513909196c",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/EquilPumpPlugin.kt",
+          "line": 306
+        }
+      ]
+    },
+    {
+      "key": "equil_fill",
+      "ui_location": "Equil wizard > Prime / Fill step",
+      "kind": "button",
+      "description": "Button that starts priming the reservoir (moves the plunger). Short imperative.",
+      "related_keys": [
+        "equil_title_fill",
+        "equil_stop"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "90aaee51640e93a0",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/FillStep.kt",
+          "line": 117
+        }
+      ]
+    },
+    {
+      "key": "equil_firmware_version",
+      "ui_location": "Pump overview > Equil > info table",
+      "kind": "label",
+      "description": "Row label in the pump info table. The value is the pump's firmware version.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c99207008cf11d64",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 154
+        }
+      ]
+    },
+    {
+      "key": "equil_hint1",
+      "ui_location": "Equil wizard > Prime cannula step",
+      "kind": "dialog_text",
+      "description": "Explains that after the pump is on the base plate the user decides whether to purge air from the cannula (indwelling needle). The button for it is 'Purge air'.",
+      "related_keys": [
+        "equil_hint2",
+        "equil_air"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a558692c5b23da7e",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/AirStep.kt",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "key": "equil_hint2",
+      "ui_location": "Equil wizard > Prime cannula step",
+      "kind": "title",
+      "description": "Heading of the cannula priming step, above its explanation.",
+      "related_keys": [
+        "equil_hint1",
+        "equil_title_air"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d10755653cf4db20",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/AirStep.kt",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "key": "equil_hint_dressing",
+      "ui_location": "Equil wizard > Detach pump step (unpair flow)",
+      "kind": "dialog_text",
+      "description": "Warning that the next operation stops insulin delivery and retracts the pump plunger to the bottom of the reservoir.",
+      "related_keys": [
+        "equil_unbind_content"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d0d019cc726cef92",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/UnpairDetachStep.kt",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "key": "equil_history_group_all",
+      "ui_location": "Equil history > filter",
+      "kind": "label",
+      "description": "Filter option showing all history entries. Single word.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "afba3f3c66ee4e02",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/driver/definition/EquilHistoryEntryGroup.kt",
+          "line": 8
+        }
+      ]
+    },
+    {
+      "key": "equil_history_group_basal",
+      "ui_location": "Equil history > filter",
+      "kind": "label",
+      "description": "Filter option showing basal entries. Plural.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9b591f315be9500e",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/driver/definition/EquilHistoryEntryGroup.kt",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "key": "equil_history_group_bolus",
+      "ui_location": "Equil history > filter",
+      "kind": "label",
+      "description": "Filter option showing bolus entries. Plural.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bda00d19c1044e78",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/driver/definition/EquilHistoryEntryGroup.kt",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "key": "equil_history_group_configuration",
+      "ui_location": "Equil history > filter",
+      "kind": "label",
+      "description": "Filter option showing configuration entries (time, alarm settings). Plural.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "78a3f8c2c78b4772",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/driver/definition/EquilHistoryEntryGroup.kt",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "key": "equil_history_group_pair",
+      "ui_location": "Equil history > filter",
+      "kind": "label",
+      "description": "Filter option showing pairing-related entries. Single word.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f80edbccccf10536",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/driver/definition/EquilHistoryEntryGroup.kt",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "key": "equil_history_item1",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Alarm event: the insulin level in the reservoir is low. Pump-reported event text, a list row.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a5b058f3b106d80d",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "key": "equil_history_item10",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Event: the reservoir was primed. Pump-reported event text, a list row.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "36ac1f87e130667a",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "equil_history_item11",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Event: the plunger was retracted (rewound). Pump-reported event text, a list row.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "17d5662c2128fec0",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "key": "equil_history_item12",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Event: a quick bolus was started on the pump. Pump-reported event text, a list row.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "49bf6e9fa098d295",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "key": "equil_history_item13",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Event: a temporary basal was started. Pump-reported event text, a list row.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c80f4643ff868e82",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "equil_history_item14",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Event: a temporary basal ended. Pump-reported event text, a list row.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "8291c0e640ebb683",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "key": "equil_history_item15",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Alarm event: the pump battery level is low. Pump-reported event text, a list row.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "de36a050e0fc7c59",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "key": "equil_history_item16",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Alarm event: the pump battery is empty. Pump-reported event text, a list row.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "33ba83d7d81b128e",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "equil_history_item17",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Event: the pump restarted after a power-on reset. Pump-reported event text, a list row.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "f3e3fdbe86aa316c",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "equil_history_item18",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Alarm event: infusion was stopped because of an abnormal condition. Pump-reported event text, a list row.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "f4b874861f6d3e72",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 28
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "key": "equil_history_item2",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Alarm event: the reservoir is empty. Pump-reported event text, a list row.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "25b2fcd61f4ece4c",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "key": "equil_history_item3",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Alarm event: the pump detected a blockage in the infusion line (occlusion). Pump-reported event text, a list row.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "20e0192d76aec125",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 13
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "key": "equil_history_item4",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Alarm event: the pump detected the motor turning back. Pump-reported event text, a list row.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "aa736b6eae9453e3",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 14
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "key": "equil_history_item5",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Alarm event: the pump detected a motor fault. Pump-reported event text, a list row.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c121583e26ef4d9d",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 15
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "key": "equil_history_item6",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Event: infusion pausing is starting. Pump-reported event text, a list row.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "e110fffdcff82f01",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "key": "equil_history_item7",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Event: infusion is already paused. Pump-reported event text, a list row.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "7b73c9f2887d9a6a",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "equil_history_item8",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Event: the pump will shut off automatically soon. Pump-reported event text, a list row.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "d1a6f39582895eb6",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "key": "equil_history_item9",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Event: the pump has shut itself off automatically. Pump-reported event text, a list row.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "c01ee485b33f19ad",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "equil_init_insulin_error",
+      "ui_location": "Pump overview > Equil > status banner and running mode value",
+      "kind": "status",
+      "description": "Shown when pairing has not been fully finished, i.e. the reservoir has not been initialised. Appears as a banner and in the running mode row.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "9b12bf3e3874437c",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 129
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 159
+        }
+      ]
+    },
+    {
+      "key": "equil_insert",
+      "ui_location": "Equil wizard > Prime / Fill step",
+      "kind": "dialog_text",
+      "description": "Instruction to prime the reservoir until a drop of insulin shows at the needle tip.",
+      "related_keys": [
+        "equil_insert2"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "6d179f9e5670c964",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/FillStep.kt",
+          "line": 81
+        }
+      ]
+    },
+    {
+      "key": "equil_insert2",
+      "ui_location": "Equil wizard > Prime / Fill step",
+      "kind": "dialog_text",
+      "description": "Condition for priming: the pump must not yet be placed on the base plate.",
+      "related_keys": [
+        "equil_insert"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e547087a45e60d96",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/FillStep.kt",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "key": "equil_install",
+      "ui_location": "Equil wizard > Confirm step",
+      "kind": "dialog_text",
+      "description": "Instruction for the last wizard step: the user applies the pump to the body. Imperative sentence.",
+      "related_keys": [
+        "equil_attach"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "25d24971b75660e8",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/ConfirmStep.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "equil_insulin_reservoir",
+      "ui_location": "Pump overview > Equil > info table",
+      "kind": "label",
+      "description": "Row label in the pump info table. The value is the insulin amount left in the reservoir, in units.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "1856d8971f34999a",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 175
+        }
+      ]
+    },
+    {
+      "key": "equil_low_battery",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Alarm text for low pump battery. The battery percentage and a % sign are appended directly with no space, so the text may need a trailing colon or space.",
+      "related_keys": [
+        "equil_settings_alarm_battery"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "6f60ba313a395edc",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/EquilPumpPlugin.kt",
+          "line": 428
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/EquilPumpPlugin.kt",
+          "line": 436
+        }
+      ]
+    },
+    {
+      "key": "equil_low_insulin",
+      "ui_location": "Notification",
+      "kind": "notification",
+      "description": "Alarm text for low insulin in the reservoir. The remaining units and 'U' are appended directly with no separator, so the translation may need a trailing colon or space. Source text is the same as equil_not_enough_insulin.",
+      "related_keys": [
+        "equil_settings_alarm_insulin",
+        "equil_not_enough_insulin"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "9102eb78c2edecc8",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/EquilPumpPlugin.kt",
+          "line": 452
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/EquilPumpPlugin.kt",
+          "line": 465
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/EquilPumpPlugin.kt",
+          "line": 476
+        }
+      ]
+    },
+    {
+      "key": "equil_mode",
+      "ui_location": "Pump overview > Equil > info table",
+      "kind": "label",
+      "description": "Row label in the pump info table. The value is the pump's run state: running, stopped, suspended.",
+      "related_keys": [
+        "equil_mode_running",
+        "equil_mode_stopped",
+        "equil_mode_suspended"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "62cb43b4192052d4",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 157
+        }
+      ]
+    },
+    {
+      "key": "equil_mode_running",
+      "ui_location": "Pump overview > Equil > info table > running mode",
+      "kind": "status",
+      "description": "Value shown when the pump is delivering insulin normally. Single word.",
+      "related_keys": [
+        "equil_mode"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "8437afe758a3d7da",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 160
+        }
+      ]
+    },
+    {
+      "key": "equil_mode_stopped",
+      "ui_location": "Pump overview > Equil > status banner and info table",
+      "kind": "status",
+      "description": "Pump run state 'stopped': shown in a red critical banner and as the running mode value. Short.",
+      "related_keys": [
+        "equil_mode"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "04cf86574220451f",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 142
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 161
+        }
+      ]
+    },
+    {
+      "key": "equil_mode_suspended",
+      "ui_location": "Pump overview > Equil > status banner and info table",
+      "kind": "status",
+      "description": "Pump run state 'suspended': delivery is paused by the user. Shown in a warning banner and as the running mode value. Short.",
+      "related_keys": [
+        "equil_mode"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "69131cf907e046a9",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 137
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 162
+        }
+      ]
+    },
+    {
+      "key": "equil_name",
+      "ui_location": "Config builder > Pump > Equil; Preferences > Equil",
+      "kind": "title",
+      "description": "Name of the Equil pump driver. Shown in the plugin list and as the title of its settings screen. A product name; usually not translated.",
+      "related_keys": [
+        "equil_pump_description"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c0901a7de088a8dc",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/EquilPumpPlugin.kt",
+          "line": 111
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/EquilPumpPlugin.kt",
+          "line": 118
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/EquilPumpPlugin.kt",
+          "line": 492
+        }
+      ]
+    },
+    {
+      "key": "equil_none",
+      "ui_location": "Equil history lists; command result",
+      "kind": "status",
+      "description": "Placeholder shown when a list is empty, and the result value for commands with no result. Lowercase in the source.",
+      "related_keys": [],
+      "confidence": 0.8,
+      "usages_hash": "a5ce578f2f0eea33",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryScreen.kt",
+          "line": 137
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryScreen.kt",
+          "line": 270
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryViewModel.kt",
+          "line": 200
+        }
+      ]
+    },
+    {
+      "key": "equil_not_enough_insulin",
+      "ui_location": "Pump command result (bolus)",
+      "kind": "error",
+      "description": "Comment returned when a bolus is refused because the reservoir holds less insulin than requested.",
+      "related_keys": [
+        "equil_low_insulin"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "73750697e0144e5b",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/EquilPumpPlugin.kt",
+          "line": 288
+        }
+      ]
+    },
+    {
+      "key": "equil_pair",
+      "ui_location": "Overview > management actions; wizard > password step",
+      "kind": "button",
+      "description": "Button that starts pairing with a new pump or confirms pairing in the password step. Short imperative.",
+      "related_keys": [
+        "equil_unbind"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "9cd849d9d8ab902a",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 235
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/PasswordStep.kt",
+          "line": 90
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/PasswordStep.kt",
+          "line": 119
+        }
+      ]
+    },
+    {
+      "key": "equil_pair_error",
+      "ui_location": "Equil wizard > scan and pairing steps",
+      "kind": "error",
+      "description": "Error banner shown when Bluetooth scanning, version read or pairing fails.",
+      "related_keys": [
+        "equil_password_error",
+        "equil_support_error"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "29abd64bd2e42003",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 438
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 510
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 532
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 553
+        }
+      ]
+    },
+    {
+      "key": "equil_pair_password_title",
+      "ui_location": "Equil wizard > password step",
+      "kind": "dialog_text",
+      "description": "Prompt above the password field. %1$s is the name of the selected pump.",
+      "related_keys": [
+        "equil_set_pair_password"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "f0d9390a11f29f14",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/PasswordStep.kt",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "key": "equil_password_error",
+      "ui_location": "Equil wizard > password step",
+      "kind": "error",
+      "description": "Error banner when the pairing password entered was wrong.",
+      "related_keys": [
+        "equil_set_pair_password"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "44e4dcbb46dc3b73",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 528
+        }
+      ]
+    },
+    {
+      "key": "equil_password_tips",
+      "ui_location": "Equil wizard > password step",
+      "kind": "dialog_text",
+      "description": "Explains the optional pairing password. The same password is needed to unpair later, so it must be remembered. Ends with the password rule (length and allowed characters); see the source text. Longer text.",
+      "related_keys": [
+        "equil_set_pair_password"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "de9f0c59397590ed",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/PasswordStep.kt",
+          "line": 83
+        }
+      ]
+    },
+    {
+      "key": "equil_pump_description",
+      "ui_location": "Config builder > Pump > Equil",
+      "kind": "summary",
+      "description": "Short description of the Equil pump plugin in the plugin list. Names the supported hardware (Equil patch pump, version 5.3 or newer).",
+      "related_keys": [
+        "equil_name"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5caa88ff300915cf",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/EquilPumpPlugin.kt",
+          "line": 119
+        }
+      ]
+    },
+    {
+      "key": "equil_pump_not_run",
+      "ui_location": "Pump command result",
+      "kind": "error",
+      "description": "Comment returned when a basal profile, bolus or temp basal is refused because the pump is stopped or suspended.",
+      "related_keys": [
+        "equil_mode_stopped"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "c7d20d7ccea72778",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/EquilPumpPlugin.kt",
+          "line": 253
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/EquilPumpPlugin.kt",
+          "line": 283
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/EquilPumpPlugin.kt",
+          "line": 311
+        }
+      ]
+    },
+    {
+      "key": "equil_pump_updated",
+      "ui_location": "Snackbar",
+      "kind": "status",
+      "description": "Brief message after settings or profile were sent to the pump successfully.",
+      "related_keys": [
+        "equil_error"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "73f4cc87b10cdcca",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/EquilPumpPlugin.kt",
+          "line": 156
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/EquilPumpPlugin.kt",
+          "line": 179
+        }
+      ]
+    },
+    {
+      "key": "equil_record_basal",
+      "ui_location": "Equil history > pump events",
+      "kind": "label",
+      "description": "Event list line for a basal rate change. %1$s is the rate number; the unit 'U/H' is units of insulin per hour.",
+      "related_keys": [
+        "equil_record_basal_temp"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a7e0195ec87f8396",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryScreen.kt",
+          "line": 290
+        }
+      ]
+    },
+    {
+      "key": "equil_record_basal_temp",
+      "ui_location": "Equil history > pump events",
+      "kind": "label",
+      "description": "Event list line for a temporary basal rate. %1$s is the rate number; unit is units of insulin per hour.",
+      "related_keys": [
+        "equil_record_basal"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a7e0195ec87f8396",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryScreen.kt",
+          "line": 290
+        }
+      ]
+    },
+    {
+      "key": "equil_record_bolus",
+      "ui_location": "Equil history > pump events",
+      "kind": "label",
+      "description": "Event list line for a bolus. %1$s is the insulin amount in units (U).",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "457f6791dae9d73f",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryScreen.kt",
+          "line": 286
+        }
+      ]
+    },
+    {
+      "key": "equil_removed_anyway",
+      "ui_location": "Equil wizard > unpair result",
+      "kind": "error",
+      "description": "Shown when the unpair command to the pump failed; the app forgets the pump anyway. The pairing password stays stored in the pump.",
+      "related_keys": [
+        "equil_device_unpaired"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "437c337928612e3f",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 943
+        }
+      ]
+    },
+    {
+      "key": "equil_replace_reservoir",
+      "ui_location": "Equil wizard > Prime / Fill step",
+      "kind": "error",
+      "description": "Error when priming ends because the reservoir is empty and has to be replaced.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "bc19e42208eed16d",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 632
+        }
+      ]
+    },
+    {
+      "key": "equil_serialnumber",
+      "ui_location": "Pump overview > Equil > info table",
+      "kind": "label",
+      "description": "Row label in the pump info table. The value is the pump's serial number / device name, as seen when pairing.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "b89de4b168340d44",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 153
+        }
+      ]
+    },
+    {
+      "key": "equil_set_pair_password",
+      "ui_location": "Equil wizard > password step",
+      "kind": "hint",
+      "description": "Label of the text field for the pairing password.",
+      "related_keys": [
+        "equil_password_tips"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "75e8d6eb740a7967",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/PasswordStep.kt",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "key": "equil_settings_alarm_battery",
+      "ui_location": "Preferences > Equil",
+      "kind": "preference_title",
+      "description": "Switch title: enable a notification when the pump battery is low.",
+      "related_keys": [
+        "equil_low_battery"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "d20154ce1eb19fca",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/keys/EquilBooleanPreferenceKey.kt",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "key": "equil_settings_alarm_insulin",
+      "ui_location": "Preferences > Equil",
+      "kind": "preference_title",
+      "description": "Switch title: enable a notification when the insulin in the reservoir is low. Source says 'drug storage', meaning the reservoir.",
+      "related_keys": [
+        "equil_low_insulin"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "5ffe977efe7ff878",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/keys/EquilBooleanPreferenceKey.kt",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "key": "equil_shutdown",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Event shown in the pump event history: the pump turned itself off automatically.",
+      "related_keys": [
+        "equil_shutdown_be",
+        "equil_history_item9"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "949b79b4d5ed00f9",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 41
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "key": "equil_shutdown_be",
+      "ui_location": "Equil history > pump events",
+      "kind": "status",
+      "description": "Event shown in the pump event history: the pump warns that it will shut itself off automatically soon.",
+      "related_keys": [
+        "equil_shutdown",
+        "equil_history_item8"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "762eca2fc928ce95",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/manager/command/PumpEvent.kt",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "key": "equil_stop",
+      "ui_location": "Equil wizard > Prime / Fill step",
+      "kind": "button",
+      "description": "Button that interrupts the automatic plunger movement during priming. Short imperative.",
+      "related_keys": [
+        "equil_dressing_onkey_msg"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e0caec8ed438e22f",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/FillStep.kt",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "key": "equil_success",
+      "ui_location": "Equil history > command history",
+      "kind": "status",
+      "description": "Result of a pump command in the history list: the command completed successfully. Single word.",
+      "related_keys": [
+        "equil_command_connect_error",
+        "equil_none"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "63f14c019fda47e2",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryScreen.kt",
+          "line": 219
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryViewModel.kt",
+          "line": 199
+        }
+      ]
+    },
+    {
+      "key": "equil_support_error",
+      "ui_location": "Equil wizard > scan step",
+      "kind": "error",
+      "description": "Error shown when the pump's firmware is too old to be used with AAPS.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "a68c7756dab82b14",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 506
+        }
+      ]
+    },
+    {
+      "key": "equil_tab_action",
+      "ui_location": "Equil history > tab",
+      "kind": "label",
+      "description": "Tab label for the list of commands the app sent to the pump. Tab, so keep it short.",
+      "related_keys": [
+        "equil_tab_equil"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "aa930c4cb7325ba1",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryScreen.kt",
+          "line": 95
+        }
+      ]
+    },
+    {
+      "key": "equil_tab_equil",
+      "ui_location": "Equil history > tab",
+      "kind": "label",
+      "description": "Tab label for the list of events recorded by the pump itself, such as alarms. Keep it short.",
+      "related_keys": [
+        "equil_tab_action"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "85e65bed8b4aa14b",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryScreen.kt",
+          "line": 100
+        }
+      ]
+    },
+    {
+      "key": "equil_temp_basal_rate",
+      "ui_location": "Pump overview > Equil > info table",
+      "kind": "label",
+      "description": "Row label in the pump info table. The value is the active temporary basal rate.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "e680755c585de811",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 188
+        }
+      ]
+    },
+    {
+      "key": "equil_title_air",
+      "ui_location": "Equil wizard > step title",
+      "kind": "title",
+      "description": "Title of the wizard step for priming the cannula (removing air from the cannula). Short step name.",
+      "related_keys": [
+        "equil_air",
+        "equil_hint1"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "7e98c8e114baacd3",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardStep.kt",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "key": "equil_title_assemble",
+      "ui_location": "Equil wizard > step title",
+      "kind": "title",
+      "description": "Title of the first wizard step in the pairing flow, where the user assembles the pump, reservoir and battery. Short noun phrase or imperative.",
+      "related_keys": [
+        "equil_assemble"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "37561896df437f33",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardStep.kt",
+          "line": 15
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 117
+        }
+      ]
+    },
+    {
+      "key": "equil_title_attach",
+      "ui_location": "Equil wizard > step title",
+      "kind": "title",
+      "description": "Title of the wizard step in which the user attaches the pump to the base plate on the body. Short step name.",
+      "related_keys": [
+        "equil_attach"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "37b67777f68d1809",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardStep.kt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "key": "equil_title_dressing",
+      "ui_location": "Equil wizard > Assemble step (reservoir change)",
+      "kind": "title",
+      "description": "Heading of the assemble step when the workflow is a reservoir change; the user fits a new insulin reservoir. Note the source text says 'cartridge' while the related button says 'reservoir'; both mean the insulin container.",
+      "related_keys": [
+        "equil_dressing",
+        "equil_title_assemble"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "4ab324472f3c38ed",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardViewModel.kt",
+          "line": 336
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/AssembleStep.kt",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "key": "equil_title_fill",
+      "ui_location": "Equil wizard > step title and Prime / Fill step heading",
+      "kind": "title",
+      "description": "Title of the step where the reservoir is primed so that insulin reaches the needle. Appears in the progress indicator, so keep it short.",
+      "related_keys": [
+        "equil_fill"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "aaa87ebc00b4df48",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardStep.kt",
+          "line": 18
+        },
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/FillStep.kt",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "key": "equil_title_history_events",
+      "ui_location": "Equil history screen",
+      "kind": "title",
+      "description": "Top bar title of the Equil history screen, which lists pump commands and events.",
+      "related_keys": [
+        "equil_tab_action",
+        "equil_tab_equil"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "0d797273ff10e45c",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryScreen.kt",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "key": "equil_title_serial",
+      "ui_location": "Equil wizard > step title",
+      "kind": "title",
+      "description": "Title of the wizard step in which the user enters the pump's pairing password and pairs. Used as a short step name in the progress indicator.",
+      "related_keys": [
+        "equil_set_pair_password"
+      ],
+      "confidence": 0.8,
+      "usages_hash": "94a489dcf8a18185",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardStep.kt",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "key": "equil_title_unpair_detach",
+      "ui_location": "Equil wizard > step title (unpair flow)",
+      "kind": "title",
+      "description": "Title of the unpair-flow step in which the user detaches the pump from the base plate. Short step name.",
+      "related_keys": [
+        "equil_change_content"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "780fde1f25d0c6cf",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilWizardStep.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "equil_tone",
+      "ui_location": "Preferences > Equil",
+      "kind": "preference_title",
+      "description": "Title of the preference that selects how the pump signals alarms: mute, vibration, tone, or both.",
+      "related_keys": [
+        "equil_tone_mode_mute",
+        "equil_tone_mode_tone",
+        "equil_tone_mode_shake",
+        "equil_tone_mode_tone_and_shake"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "a63778d3a7f40bd0",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/keys/EquilIntPreferenceKey.kt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "key": "equil_tone_mode_mute",
+      "ui_location": "Preferences > Equil > Alert tone",
+      "kind": "preference_title",
+      "description": "One choice in the alert tone list: the pump gives no alarm sound or vibration.",
+      "related_keys": [
+        "equil_tone"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "de1a0a642f2bdfc7",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/keys/EquilIntPreferenceKey.kt",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "key": "equil_tone_mode_shake",
+      "ui_location": "Preferences > Equil > Alert tone",
+      "kind": "preference_title",
+      "description": "One choice in the alert tone list: the pump alarms by vibration only.",
+      "related_keys": [
+        "equil_tone"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "798985e4be8ecae3",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/keys/EquilIntPreferenceKey.kt",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "key": "equil_tone_mode_tone",
+      "ui_location": "Preferences > Equil > Alert tone",
+      "kind": "preference_title",
+      "description": "One choice in the alert tone list: the pump alarms by sound only.",
+      "related_keys": [
+        "equil_tone"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "e6054300b9ffab71",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/keys/EquilIntPreferenceKey.kt",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "key": "equil_tone_mode_tone_and_shake",
+      "ui_location": "Preferences > Equil > Alert tone",
+      "kind": "preference_title",
+      "description": "One choice in the alert tone list: the pump alarms by both sound and vibration.",
+      "related_keys": [
+        "equil_tone"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "014468eb8d5ba87f",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/keys/EquilIntPreferenceKey.kt",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "key": "equil_total_delivered",
+      "ui_location": "Pump overview > Equil > info table",
+      "kind": "label",
+      "description": "Row label in the pump info table. The value is the total insulin delivered by the pump.",
+      "related_keys": [],
+      "confidence": 0.9,
+      "usages_hash": "22f8d2423355fe00",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 194
+        }
+      ]
+    },
+    {
+      "key": "equil_unbind",
+      "ui_location": "Pump overview > Equil > management actions",
+      "kind": "button",
+      "description": "Button that starts the unpair workflow, removing the pump from the app. Short imperative.",
+      "related_keys": [
+        "equil_pair"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "ae86a6bb51dd9893",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilOverviewViewModel.kt",
+          "line": 257
+        }
+      ]
+    },
+    {
+      "key": "equil_unbind_content",
+      "ui_location": "Equil wizard > Confirm unpair step",
+      "kind": "dialog_text",
+      "description": "Warning shown before unpairing: insulin delivery stops, the plunger retracts to the bottom, and the pairing is deleted.",
+      "related_keys": [
+        "equil_unpair_alert",
+        "equil_hint_dressing"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "eef0a994a5f9de83",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/UnpairConfirmStep.kt",
+          "line": 86
+        }
+      ]
+    },
+    {
+      "key": "equil_unpair_alert",
+      "ui_location": "Equil wizard > Confirm unpair step",
+      "kind": "dialog_text",
+      "description": "Confirmation question before unpairing. %1$s is the pump's serial number / device name. 'Relinquish control' means the app will stop managing this pump.",
+      "related_keys": [
+        "equil_unbind_content"
+      ],
+      "confidence": 0.9,
+      "usages_hash": "16579ea7702c7d90",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/steps/UnpairConfirmStep.kt",
+          "line": 81
+        }
+      ]
+    },
+    {
+      "key": "history_manual_confirm",
+      "ui_location": "Equil history > command history",
+      "kind": "status",
+      "description": "Result value shown when the user confirmed the command manually, since the pump gave no definite answer. Short.",
+      "related_keys": [],
+      "confidence": 0.7,
+      "usages_hash": "1921a0c5e2b259bf",
+      "usages": [
+        {
+          "path": "pump/equil/src/main/kotlin/app/aaps/pump/equil/compose/EquilHistoryScreen.kt",
+          "line": 208
+        }
+      ]
+    }
+  ]
+}
