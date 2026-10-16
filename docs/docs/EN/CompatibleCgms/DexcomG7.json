@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatibleCgms/DexcomG7.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Using a Dexcom G7, ONE+ or Stelo with AAPS. Four ways are covered: xDrip connecting directly, BYODA, xDrip as a companion to the Dexcom app, and Juggluco. Most steps happen in xDrip, Android or Juggluco; in AAPS the reader selects the xDrip+ BG source.",
+  "features": [
+    "BG source",
+    "CGM setup"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > BG Source",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_bgsource"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Dexcom G7, ONE+ and Stelo",
+      "anchor": "dexcom-g7-one-and-stelo",
+      "source_hash": "0e28c323d33b815f",
+      "summary": "Page title.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Fundamental in advance",
+      "anchor": "fundamental-in-advance",
+      "source_hash": "ec77c687f9db46d7",
+      "summary": "Notes that G7, ONE+ and Stelo values are not smoothed and points to the smoothing page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "1. xDrip (direct connection to G7, ONE+ or Stelo)",
+      "anchor": "1-xdrip-direct-connection-to-g7-one-or-stelo",
+      "source_hash": "d8f6097cad69af7e",
+      "summary": "Connecting xDrip directly to the sensor in place of the Dexcom app, then selecting xDrip+ as the BG source in AAPS.",
+      "dialogs": [
+        "Configuration > BG Source"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "ConfigBuilder",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_bgsource",
+          "as_written": "BG Source",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "source_xdrip",
+          "as_written": "xDrip",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "2. Build Your Own Dexcom App (G7 only)",
+      "anchor": "2-build-your-own-dexcom-app-g7-only",
+      "source_hash": "a5041827a6adde9b",
+      "summary": "Installing BYODA for the G7 in place of the official Dexcom app and entering the sensor code.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "dexcom_app_patched",
+          "as_written": "BYODA",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "3. xDrip Companion App (G7, ONE+ and Stelo)",
+      "anchor": "DexcomG7-xdrip-companion-app",
+      "source_hash": "7288470c6b69a1d8",
+      "summary": "Explains companion mode: the Dexcom app keeps the sensor and xDrip forwards its values to AAPS. AAPS does not treat this as a trusted BG source, so SMBs are restricted.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Read the Dexcom app notifications",
+      "anchor": "read-the-dexcom-app-notifications",
+      "source_hash": "ebce796c29054281",
+      "summary": "Setting xDrip's hardware data source to Companion App and allowing it notification access in Android, including the restricted-settings workaround. All labels belong to xDrip or Android.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Companion Bluetooth (G7)",
+      "anchor": "companion-bluetooth-g7",
+      "source_hash": "cd57f7da74a1ff76",
+      "summary": "Turning on Companion Bluetooth in xDrip's Bluetooth settings so it reads the G7's readings directly, and forgetting old sensors in Android Bluetooth settings. xDrip and Android labels only.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Configuration in AAPS",
+      "anchor": "configuration-in-aaps",
+      "source_hash": "0892bb2280b955dc",
+      "summary": "Selecting xDrip+ as the BG source in AAPS for companion mode.",
+      "dialogs": [
+        "Configuration > BG Source"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "ConfigBuilder",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_bgsource",
+          "as_written": "BG Source",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "source_xdrip",
+          "as_written": "xDrip",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "4. Juggluco (G7 and ONE+)",
+      "anchor": "4-juggluco-g7-and-one",
+      "source_hash": "d86aefefe0865d13",
+      "summary": "Moving the sensor to Juggluco: stopping the previous app, forgetting the sensor in Android Bluetooth, and pairing in Juggluco by scanning the applicator. No AAPS labels.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

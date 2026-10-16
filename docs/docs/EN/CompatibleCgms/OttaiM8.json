@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatibleCgms/OttaiM8.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Using an Ottai M8 sensor: installing the Ottai app, starting the sensor, selecting the matching BG source in AAPS and turning on 'Share glucose data with AAPS' in the Ottai app.",
+  "features": [
+    "BG source",
+    "CGM setup"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > BG Source",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_bgsource"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Ottai M8",
+      "anchor": "ottai-m8",
+      "source_hash": "632143792dc6c9dc",
+      "summary": "Page title.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Using M8 with Ottai app",
+      "anchor": "using-m8-with-ottai-app",
+      "source_hash": "72ccbb19052dda37",
+      "summary": "Installing the Ottai app, selecting the Ottai/Syai source in Configuration > BG Source, and enabling data sharing with AAPS in the Ottai hub. The Ottai app labels are not AAPS strings.",
+      "dialogs": [
+        "Configuration > BG Source"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "syai_tag_app",
+          "as_written": "Ottai",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "ConfigBuilder",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_bgsource",
+          "as_written": "BG Source",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": "The page says to select Ottai as the BG source; the app has no source named Ottai. The source that receives Ottai data is listed as \"Syai\" (syai_tag_app, described as \"Receive glucose data from Syai/Ottai App\")."
+}

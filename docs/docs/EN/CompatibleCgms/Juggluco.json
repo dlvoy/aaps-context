@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatibleCgms/Juggluco.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Settings in the Juggluco app for use with AAPS: turning off Juggluco's Nightscout upload, then sending glucose either directly to AAPS (xDrip broadcast) or through xDrip (Patched Libre). Either way the reader selects the xDrip+ BG source and applies smoothing in AAPS.",
+  "features": [
+    "BG source",
+    "CGM setup",
+    "Smoothing"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > BG Source",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_bgsource"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Juggluco settings",
+      "anchor": "juggluco-settings",
+      "source_hash": "544ad3c7732ebd5c",
+      "summary": "Downloading Juggluco and connecting the sensor following its own instructions.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Basic settings for all CGM systems",
+      "anchor": "basic-settings-for-all-cgm-systems",
+      "source_hash": "02005213d65e2e32",
+      "summary": "Heading for settings that apply to every sensor.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Disable Nightscout uploader",
+      "anchor": "disable-nightscout-uploader",
+      "source_hash": "8ab8a81cf57aace9",
+      "summary": "Turning off any Nightscout upload in Juggluco, since AAPS 3.2+ uploads the data itself.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Juggluco to AAPS",
+      "anchor": "juggluco-to-aaps",
+      "source_hash": "4cf2667de93232d4",
+      "summary": "Sending glucose straight from Juggluco to AAPS with the xDrip broadcast, selecting the xDrip+ BG source in AAPS and applying smoothing there. Libre minute readings do not trigger minute calculations.",
+      "dialogs": [
+        "Configuration > BG Source",
+        "Configuration > Smoothing"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "source_xdrip",
+          "as_written": "xDrip BG",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_smoothing",
+          "as_written": "smoothing",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Juggluco to xDrip",
+      "anchor": "juggluco-to-xdrip",
+      "source_hash": "f587b8dfd71721cd",
+      "summary": "Sending glucose from Juggluco to xDrip with Patched Libre; xDrip averages and smooths Libre readings before passing them to AAPS, where the xDrip+ BG source is selected.",
+      "dialogs": [
+        "Configuration > BG Source",
+        "Configuration > Smoothing"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "source_xdrip",
+          "as_written": "xDrip BG",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_smoothing",
+          "as_written": "smoothing",
+          "confidence": 0.5
+        }
+      ]
+    }
+  ],
+  "manual_note": null
+}

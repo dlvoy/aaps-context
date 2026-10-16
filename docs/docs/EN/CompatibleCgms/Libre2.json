@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatibleCgms/Libre2.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Using a Freestyle Libre 2 or 2+ with AAPS: through a Bluetooth bridge with an OOP app, a direct xDrip connection (EU sensors), Diabox, or Juggluco. Most steps are in xDrip; in AAPS the reader selects xDrip+ under Configuration > BG Source.",
+  "features": [
+    "BG source",
+    "CGM setup"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > BG Source",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_bgsource"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Freestyle Libre 2 and 2+",
+      "anchor": "freestyle-libre-2-and-2",
+      "source_hash": "aa2e8f943d4d8aca",
+      "summary": "Introduction: LibreLink cannot feed AAPS, so other apps are needed.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "1. Use a Bluetooth bridge and OOP",
+      "anchor": "1-use-a-bluetooth-bridge-and-oop",
+      "source_hash": "3c58b659c06c98f1",
+      "summary": "Using a Bluetooth bridge with the OOP2 algorithm in xDrip and choosing an OOP2 calibration strategy in xDrip's settings. The calibration options and menu path are xDrip's, not AAPS's.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Start sensor",
+      "anchor": "start-sensor",
+      "source_hash": "0839fd21d75aac13",
+      "summary": "Starting a sensor in xDrip's menu so it accepts readings from the bridge, with optional initial calibration.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Configure AAPS (for looping only)",
+      "anchor": "configure-aaps-for-looping-only",
+      "source_hash": "a5f15c8dc99653e9",
+      "summary": "Opening the AAPS main menu and selecting xDrip+ under Configuration > BG Source; using xDrip's Identify receiver if values stop in airplane mode.",
+      "dialogs": [
+        "Configuration > BG Source"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_bgsource",
+          "as_written": "BG Source",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "source_xdrip",
+          "as_written": "xDrip+",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "2. Use xDrip direct connection",
+      "anchor": "2-use-xdrip-direct-connection",
+      "source_hash": "8330111a4a372b06",
+      "summary": "Connecting xDrip directly to an EU Libre 2 sensor and selecting xDrip+ as the BG source in AAPS.",
+      "dialogs": [
+        "Configuration > BG Source"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_bgsource",
+          "as_written": "BG Source",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "source_xdrip",
+          "as_written": "xDrip+",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Value smoothing & raw values",
+      "anchor": "libre2-value-smoothing-raw-values",
+      "source_hash": "6c227405eade08db",
+      "summary": "xDrip's own smoothing period for Libre readings and showing raw values in xDrip's graph, set in xDrip's NFC Scan and Libre 2 advanced settings. xDrip labels only.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Calibration",
+      "anchor": "calibration",
+      "source_hash": "9cf87c29a36ab952",
+      "summary": "Limits for calibrating a Libre 2 in xDrip (offset only) and how often to check against fingerpricks.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "3. Use Diabox",
+      "anchor": "3-use-diabox",
+      "source_hash": "784255577938a831",
+      "summary": "Turning on data sharing in Diabox and selecting xDrip+ as the BG source in AAPS.",
+      "dialogs": [
+        "Configuration > BG Source"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_bgsource",
+          "as_written": "BG Source",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "source_xdrip",
+          "as_written": "xDrip+",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "4. Use Juggluco",
+      "anchor": "4-use-juggluco",
+      "source_hash": "ef2308603e1883da",
+      "summary": "Points to the Juggluco page.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

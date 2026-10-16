@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatibleCgms/Libre3.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Getting Freestyle Libre 3/3+ readings into AAPS through Juggluco: either sending 1-minute readings straight to AAPS, or passing them through xDrip, which turns them into 5-minute values. Also covers sensor changes in Juggluco, switching between the Libre 3 app and Juggluco, and troubleshooting.",
+  "features": [
+    "BG source",
+    "CGM setup",
+    "Smoothing"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > BG Source",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_bgsource"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "**Freestyle Libre 3** and 3+",
+      "anchor": "freestyle-libre-3-and-3",
+      "source_hash": "ba5f422ed2267139",
+      "summary": "Introduction: Juggluco reads the sensor's 1-minute data and passes it to xDrip or AAPS; calibration range in xDrip.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Method 1: use 1-minute readings directly",
+      "anchor": "method-1-use-1-minute-readings-directly",
+      "source_hash": "e86389f93f4e4b28",
+      "summary": "Sending 1-minute readings from Juggluco directly to AAPS; points to the Juggluco page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Method 2: convert 1-minute readings into 5-minute values via xDrip",
+      "anchor": "method-2-convert-1-minute-readings-into-5-minute-values-via-xdrip",
+      "source_hash": "3738e6e06eaa880b",
+      "summary": "Introduces the four-step setup where xDrip smooths Juggluco's 1-minute data into 5-minute values for AAPS.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 1: Setup Juggluco",
+      "anchor": "step-1-setup-juggluco",
+      "source_hash": "5a20fd3d5c746a9c",
+      "summary": "Installing Juggluco and enabling its Patched Libre broadcast to xDrip.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 2: Setup xDrip",
+      "anchor": "step-2-setup-xdrip",
+      "source_hash": "4e15a2940da332dc",
+      "summary": "Choosing 'Libre2 (patched app)' as xDrip's data source, optional extra logging, and xDrip's Libre smoothing period. xDrip labels only.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 3: Start sensor within xDrip",
+      "anchor": "step-3-start-sensor-within-xdrip",
+      "source_hash": "da40b9e724e499d4",
+      "summary": "Starting the sensor in xDrip ('Start Sensor', 'not today') so it accepts readings, with optional initial calibration.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 4: Configure AndroidAPS",
+      "anchor": "step-4-configure-androidaps",
+      "source_hash": "91cf70bacc0a70fd",
+      "summary": "Selecting the xDrip+ BG source in AAPS (via the Juggluco page) and turning off AAPS smoothing because xDrip already smooths. 'Identify receiver' is an xDrip setting.",
+      "dialogs": [
+        "Configuration > BG Source",
+        "Configuration > Smoothing"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_smoothing",
+          "as_written": "Smoothing",
+          "confidence": 0.7
+        },
+        {
+          "file": "plugins/smoothing/src/androidMain/res/values/strings.xml",
+          "key": "no_smoothing_name",
+          "as_written": "Turn off Smoothing",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Subsequent sensor changes",
+      "anchor": "subsequent-sensor-changes",
+      "source_hash": "ce196101f60ae051",
+      "summary": "Starting a new sensor in Juggluco by NFC scan and terminating the old one from Juggluco's menu.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Switch sensor between Libre 3 and Juggluco app",
+      "anchor": "switch-sensor-between-libre-3-and-juggluco-app",
+      "source_hash": "f3f70905c217f727",
+      "summary": "Moving a running sensor from Juggluco to the Libre 3 app and back by force-stopping one app. 'Start Sensor' and 'Next' are Libre 3 app buttons.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Experiences and Troubleshooting",
+      "anchor": "libre3-experiences-and-troubleshooting",
+      "source_hash": "0f7e2fba35bcdde3",
+      "summary": "Heading for troubleshooting.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Troubleshooting Libre3 -> Juggluco Connection",
+      "anchor": "troubleshooting-libre3-juggluco-connection",
+      "source_hash": "21ec0d82b666f875",
+      "summary": "Fixes for Juggluco connection problems: update, force stop, toggle Bluetooth, resend data.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Further help",
+      "anchor": "further-help",
+      "source_hash": "e8da1afe261fa29f",
+      "summary": "Links to the original Juggluco instructions and a GitHub repository.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

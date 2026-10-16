@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatibleCgms/GeneralCGMRecommendation.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "General advice for any CGM: when and how to calibrate, how to insert a G6 sensor, and troubleshooting connection problems, sensor errors and jumpy values. The last part fixes a negative sensor age shown in AAPS by deleting a wrong Careportal entry.",
+  "features": [
+    "CGM setup",
+    "Treatments history"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "General CGM recommendations",
+      "anchor": "general-cgm-recommendations",
+      "source_hash": "03d5043108ba078c",
+      "summary": "Page title.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "CGM hygiene",
+      "anchor": "cgm-hygiene",
+      "source_hash": "dac767a431040892",
+      "summary": "Rules for blood-based calibration: clean hands, stable glucose, enough calibrations at low and higher levels.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Setting sensor (G6)",
+      "anchor": "setting-sensor-g6",
+      "source_hash": "98e33080626e3b0e",
+      "summary": "How to insert a G6 sensor and click in the transmitter; hardware only.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Troubleshooting",
+      "anchor": "general-cgm-troubleshooting",
+      "source_hash": "659a188b36f9c326",
+      "summary": "Heading for the troubleshooting subsections.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Connection problems",
+      "anchor": "connection-problems",
+      "source_hash": "2046b33e08624d37",
+      "summary": "Bluetooth interference from nearby devices and backfill after reconnecting.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Sensor Errors",
+      "anchor": "sensor-errors",
+      "source_hash": "9b2f035b434a8da2",
+      "summary": "What to try when the sensor reports errors: another body site, drinking, massage. 'Sensor Error' is the CGM's message, not an AAPS label.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Jumpy values",
+      "anchor": "jumpy-values",
+      "source_hash": "2957f7ca682fb2c6",
+      "summary": "Changing noise blocking in xDrip's Inter-App settings, and a pointer to the smoothing page. xDrip labels only.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Negative Sensor Age",
+      "anchor": "negative-sensor-age",
+      "source_hash": "b9ee5072d7ec5eba",
+      "summary": "Reading the sensor age on the Sensor row of the main-screen status panel, and fixing a negative age by deleting the duplicate or wrongly dated Sensor Insert entry under Treatments history > Careportal.",
+      "dialogs": [
+        "Overview > Status panel",
+        "Treatments history > Careportal"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "sensor_label",
+          "as_written": "Sensor",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cgm_sensor_insert",
+          "as_written": "CGM Sensor Insert",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments_history",
+          "as_written": "Treatments history",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal",
+          "as_written": "Careportal",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": null
+}

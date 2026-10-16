@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatibleCgms/xDrip.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Recommended xDrip settings for use with AAPS: turning off xDrip's Nightscout upload, enabling local broadcast to AAPS, accepting treatments and calibrations from AAPS, and sensor-specific setup for Dexcom and Libre. Almost all labels on this page are xDrip's own menus and options, not AAPS strings.",
+  "features": [
+    "CGM setup",
+    "xDrip+"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "xDrip settings",
+      "anchor": "xdrip-settings",
+      "source_hash": "2bb7782e8ffc74d2",
+      "summary": "Installing xDrip and exempting it from battery optimisation.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Basic settings for all CGM & FGM systems",
+      "anchor": "basic-settings-for-all-cgm-fgm-systems",
+      "source_hash": "e95d799efd2c4742",
+      "summary": "Heading for xDrip settings that apply to every sensor.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Disable Nightscout upload",
+      "anchor": "disable-nightscout-upload",
+      "source_hash": "5807c8174ebf4caa",
+      "summary": "Turning off xDrip's Nightscout Sync upload, since AAPS 3.2+ uploads the data itself. The menu path and the 'Enabled' switch are xDrip's.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Disable automatic calibration and treatments",
+      "anchor": "disable-automatic-calibration-and-treatments",
+      "source_hash": "33221b3b9aca6637",
+      "summary": "In xDrip's Nightscout sync options: turning off Automatic Calibration (older AAPS), Upload treatments, Back-fill data and Alert on failures to avoid doubled treatments in AAPS.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "**Inter-app Settings** (Broadcast)",
+      "anchor": "inter-app-settings-broadcast",
+      "source_hash": "10bf8c60ef4941d5",
+      "summary": "Turning on xDrip's local broadcast so AAPS receives BG, and optionally accepting treatments and calibrations from AAPS; the AAPS side is the xDrip+ plugin's 'Enable broadcasts to xDrip+' setting.",
+      "dialogs": [
+        "Configuration > Communication > xDrip+"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "xdrip_local_broadcasts_title",
+          "as_written": "Enable broadcasts to xDrip",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "xdrip",
+          "as_written": "xDrip plugin",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Identify receiver",
+      "anchor": "xdrip-identify-receiver",
+      "source_hash": "100f797d13a55bb0",
+      "summary": "Entering the AAPS package name in xDrip's Identify receiver setting when AAPS does not get BG from xDrip; it must be typed in lowercase.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Use AAPS to calibrate in xDrip",
+      "anchor": "use-aaps-to-calibrate-in-xdrip",
+      "source_hash": "1128ac5fa05c7275",
+      "summary": "Allowing xDrip to accept calibrations sent from AAPS, in xDrip's Inter-app settings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Dexcom sensors",
+      "anchor": "dexcom-sensors",
+      "source_hash": "4036924c736bc3fa",
+      "summary": "Points to the xDrip Dexcom documentation for everything about the sensor and transmitter.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Dexcom G6 and ONE",
+      "anchor": "dexcom-g6-and-one",
+      "source_hash": "99e78b308ce54004",
+      "summary": "Recommended xDrip setup for G6/ONE; xDrip and the Dexcom app cannot both connect to the transmitter.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Sensor restarts",
+      "anchor": "sensor-restarts",
+      "source_hash": "8081f218dd79e4cb",
+      "summary": "Native algorithm, preemptive restarts on old transmitters, and the risks of restarting on Firefly transmitters.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Start, stop and replace sensors",
+      "anchor": "xdrip-connect-g6-transmitter-for-the-first-time",
+      "source_hash": "ab4482986ec57043",
+      "summary": "Links to xDrip instructions for starting, stopping and removing G6/ONE transmitters and sensors.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Replace a transmitter",
+      "anchor": "xdrip-replace-transmitter",
+      "source_hash": "4d61832e72cecb87",
+      "summary": "Forgetting the old transmitter in xDrip's System Status and in Android Bluetooth before starting a new one. xDrip labels only.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Dexcom G7, ONE+ and Stelo",
+      "anchor": "dexcom-g7-one-and-stelo",
+      "source_hash": "d10064448c2d0fc0",
+      "summary": "Points to the xDrip G7 instructions and the Dexcom G7 page of this manual.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Troubleshooting Dexcom and xDrip",
+      "anchor": "xdrip-troubleshooting-dexcom-g5-g6-and-xdrip",
+      "source_hash": "3c1f44ad00422dd7",
+      "summary": "Links to xDrip troubleshooting pages for Dexcom sensors.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Libre 1",
+      "anchor": "libre-1",
+      "source_hash": "dc84be6af14edc56",
+      "summary": "Bluetooth settings in xDrip for a Libre NFC-to-Bluetooth bridge: watchdogs off, optional scanning options.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Libre smart reader battery level",
+      "anchor": "libre-smart-reader-battery-level",
+      "source_hash": "0e81ce1eee05d3b5",
+      "summary": "The battery level of MiaoMiao or Bubble bridges can be shown in AAPS; points to the screens page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Connect Libre Transmitter & start sensor",
+      "anchor": "connect-libre-transmitter-start-sensor",
+      "source_hash": "9337b9444ef97fa4",
+      "summary": "Setting xDrip's data source to Libre Bluetooth, scanning for the bridge and starting the sensor in xDrip after the one-hour warm-up.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Libre 2 patched app",
+      "anchor": "xdrip-libre2-patched-app",
+      "source_hash": "3f16df90cf6f9f64",
+      "summary": "Setting xDrip's data source to Libre (patched App) and optional extra logging tags.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

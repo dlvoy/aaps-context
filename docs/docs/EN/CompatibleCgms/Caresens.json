@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatibleCgms/Caresens.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Setting up a CareSens CGM to feed glucose readings to AAPS, either through xDrip or through Juggluco. In both cases the reader ends by selecting the xDrip+ BG source in AAPS Configuration.",
+  "features": [
+    "BG source",
+    "CGM setup"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > BG Source",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_bgsource"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "CareSens",
+      "anchor": "caresens",
+      "source_hash": "95f278e422b1cd18",
+      "summary": "Introduction: the two ways to bring CareSens data into AAPS; the Sens365 follower app is not needed.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "1. xDrip",
+      "anchor": "1-xdrip",
+      "source_hash": "e6dffbb99382abfe",
+      "summary": "Turning on the xDrip connection in the CareSens app, choosing Companion App as the xDrip data source, then selecting xDrip+ as the BG source in AAPS.",
+      "dialogs": [
+        "Configuration > BG Source"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "ConfigBuilder",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_bgsource",
+          "as_written": "BG Source",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "source_xdrip",
+          "as_written": "xDrip",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "2. Juggluco",
+      "anchor": "2-juggluco",
+      "source_hash": "b2c9e39b68223a77",
+      "summary": "Pairing the sensor in Juggluco by scanning the package QR code, enabling the xDrip broadcast in Juggluco, then selecting xDrip+ as the BG source in AAPS.",
+      "dialogs": [
+        "Configuration > BG Source"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "ConfigBuilder",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_bgsource",
+          "as_written": "BG Source",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "source_xdrip",
+          "as_written": "xDrip",
+          "confidence": 0.6
+        }
+      ]
+    }
+  ],
+  "manual_note": null
+}

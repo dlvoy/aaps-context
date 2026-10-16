@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatibleCgms/SyaiTagX1.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Using a Syai X1 sensor: installing the Syai Tag app, starting the sensor, selecting the Syai BG source in AAPS and turning on data sharing with AAPS in the Syai app.",
+  "features": [
+    "BG source",
+    "CGM setup"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > BG Source",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_bgsource"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Syai X1",
+      "anchor": "syai-x1",
+      "source_hash": "7dafc0138689fb5d",
+      "summary": "Page title.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Using X1 And Syai Tag app",
+      "anchor": "using-x1-and-syai-tag-app",
+      "source_hash": "f2c5112d19d8fd04",
+      "summary": "Installing the Syai Tag app, selecting Syai in Configuration > BG Source, and enabling sharing with AAPS in the Syai Health Ecosystem menu. The Syai app labels are not AAPS strings.",
+      "dialogs": [
+        "Configuration > BG Source"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "syai_tag_app",
+          "as_written": "Syai Tag",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "ConfigBuilder",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_bgsource",
+          "as_written": "BG Source",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": null
+}

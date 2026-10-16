@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatibleCgms/Libre2MinimalL00per.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "A detailed guide to connecting an EU Freestyle Libre 2/2+ directly to xDrip over Bluetooth using the OOP2 app: starting the sensor with LibreLink, pairing it in xDrip, checking the connection and troubleshooting. All steps happen in xDrip, OOP2, LibreLink and Android; no AAPS screen is used.",
+  "features": [
+    "CGM setup"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "How to setup FSL 2 and OOP2 to use a native Bluetooth connection in xDrip",
+      "anchor": "how-to-setup-fsl-2-and-oop2-to-use-a-native-bluetooth-connection-in-xdrip",
+      "source_hash": "2946eb886de8dc18",
+      "summary": "Page title and source note: a step-by-step guide to reading an EU Libre 2/2+ directly over Bluetooth in xDrip with the OOP2 app.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Configuration",
+      "anchor": "configuration",
+      "source_hash": "37f210b46aa90130",
+      "summary": "Heading for the hardware and software the method needs.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Hardware",
+      "anchor": "hardware",
+      "source_hash": "e3b1531e0db4aa5b",
+      "summary": "Which Libre 2 sensors and readers work; a reader must start the sensor first if it is to be used.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Software",
+      "anchor": "software",
+      "source_hash": "b08f258085909cb6",
+      "summary": "What OOP2 and xDrip do in this setup and which versions to use.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Process",
+      "anchor": "process",
+      "source_hash": "7d6d737c7e853ba1",
+      "summary": "Overview list of the steps on the page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Before You Start",
+      "anchor": "before-you-start",
+      "source_hash": "29582ba2c5b52fa7",
+      "summary": "Recommends starting with a new sensor.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "First download and install the apps below",
+      "anchor": "first-download-and-install-the-apps-below",
+      "source_hash": "2161331fc37ea831",
+      "summary": "Where to download OOP2 and the minimum xDrip version.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What if my sensor is already started? Can I still get reading in xDrip? YES!",
+      "anchor": "minimallooper-started-sensor",
+      "source_hash": "ec3524be4a573a83",
+      "summary": "How to connect xDrip to a sensor that is already running: configure xDrip and OOP2, close LibreLink, then continue from step 5.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to Start a FSL2 Sensor in Bluetooth Native mode using LL and xDrip",
+      "anchor": "how-to-start-a-fsl2-sensor-in-bluetooth-native-mode-using-ll-and-xdrip",
+      "source_hash": "c7104c23bf60a99c",
+      "summary": "Introduces the numbered steps; settings shown unchecked in the screenshots must stay off.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 1: Application Installation and Configuration",
+      "anchor": "minimallooper-step1",
+      "source_hash": "9bf2520b8b20afa8",
+      "summary": "Installing and checking OOP2 and xDrip. All settings named are xDrip's or OOP2's.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 2: xDrip Settings Configuration",
+      "anchor": "minimallooper-step2",
+      "source_hash": "06e75e597bfd6685",
+      "summary": "xDrip settings for native Libre 2 Bluetooth, optionally loaded from a QR code with xDrip's Auto Configure, plus OOP2 settings. xDrip labels only.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 3: Physically insert the sensor",
+      "anchor": "minimallooper-step3",
+      "source_hash": "4d282cef75c2117f",
+      "summary": "Inserting the sensor.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 4: Start the LL App and start sensor with very first NFC Scan",
+      "anchor": "minimallooper-step4",
+      "source_hash": "03bd705098934c6c",
+      "summary": "Starting the sensor with one LibreLink NFC scan, then closing or uninstalling LibreLink and waiting out the 60-minute warm-up.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 4a (OPTIONAL, Use FSLReader):",
+      "anchor": "step-4a-optional-use-fslreader",
+      "source_hash": "ccf2fe335c039868",
+      "summary": "Starting the sensor with the FreeStyle reader first so the reader can also be used, and keeping LibreLink from taking the Bluetooth connection.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 5: Open xDrip and NFC SCAN the FSL2 sensor",
+      "anchor": "minimallooper-step5",
+      "source_hash": "5eeb8ad06bf3d5a6",
+      "summary": "Scanning the sensor with xDrip's NFC to begin Bluetooth bonding.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 6: Start the new sensor in xDrip",
+      "anchor": "minimallooper-step6",
+      "source_hash": "1846f0c3700e1773",
+      "summary": "Starting the sensor from xDrip's menu and answering 'Not today' to the insertion prompt.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 7: Wait 60 seconds and NFC Scan the sensor again",
+      "anchor": "minimallooper-step7",
+      "source_hash": "fe8f105675e45234",
+      "summary": "A second xDrip NFC scan, a minute later, adds the sensor as xDrip's Bluetooth device; check xDrip's event log.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 8: Data Collection between 3 and 15 Minutes",
+      "anchor": "minimallooper-step8",
+      "source_hash": "693422144aad71ff",
+      "summary": "Waiting for the first readings and, on some phones, applying a QR code that changes xDrip's Bluetooth settings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 9: Verify Sensor is connected and delivering data",
+      "anchor": "minimallooper-step9",
+      "source_hash": "5b2d100bd650bf2a",
+      "summary": "Checking the connection on xDrip's System Status and BT Device screens; the field names and states are xDrip's, not AAPS labels.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Notes",
+      "anchor": "minimallooper-notes",
+      "source_hash": "813970be06406602",
+      "summary": "Using LibreLink scans after bonding, phone reboots, excluding xDrip, OOP2, LibreLink and AndroidAPS from battery optimisation, and flight mode.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Advantages",
+      "anchor": "minimallooper-advantages",
+      "source_hash": "afd04a4fe7df0872",
+      "summary": "Benefits of this method: no patched LibreLink, no third-party NFC bridge, reader still usable, fewer devices, no gaps at sensor change.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Disadvantages",
+      "anchor": "minimallooper-disadvantages",
+      "source_hash": "ced155727c5ec985",
+      "summary": "Drawbacks: care after reboots, LibreLink and xDrip cannot share Bluetooth, reader must start the sensor, no automatic LibreView upload.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Definitions",
+      "anchor": "minimallooper-definitions",
+      "source_hash": "625ca8d6080baaa6",
+      "summary": "Glossary of abbreviations used on the page (BT, FSL, LL, LV, NFC, OOP).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Troubleshooting",
+      "anchor": "minimallooper-troubleshooting",
+      "source_hash": "c6b72ab43705d5ab",
+      "summary": "Heading for the troubleshooting subsections.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Failure to scan the sensor with NFC",
+      "anchor": "failure-to-scan-the-sensor-with-nfc",
+      "source_hash": "c90091379dc6c1c3",
+      "summary": "Fixes for NFC scans that fail: phone NFC settings, antenna position, xDrip's NFC reading options.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Stuck on collecting initial readings",
+      "anchor": "stuck-on-collecting-initial-readings",
+      "source_hash": "739212079feb6536",
+      "summary": "Setting OOP2's calibration strategy to 'No calibration' until readings arrive. This is an OOP2 option, not the AAPS calibration plugin.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Sensor is reported as FSL1",
+      "anchor": "sensor-is-reported-as-fsl1",
+      "source_hash": "56f9183662b8a38d",
+      "summary": "Update xDrip and OOP2.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Connection to the sensor fails",
+      "anchor": "connection-to-the-sensor-fails",
+      "source_hash": "2f2fdc329aaf9020",
+      "summary": "Checks when xDrip cannot connect: OOP1 off, OOP2 not put to sleep, Play Protect off, Bluetooth Pairing back to Disabled in xDrip's System Status.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Missed readings",
+      "anchor": "missed-readings",
+      "source_hash": "50fcafc0158630cc",
+      "summary": "Signs of a failing sensor in OOP2 values and xDrip's sensor age.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Restart from scratch sensor pairing",
+      "anchor": "restart-from-scratch-sensor-pairing",
+      "source_hash": "3690d0b9f623e3a3",
+      "summary": "Re-pairing in xDrip: stop sensor, forget device, scan, start sensor, scan again. xDrip menu items only.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

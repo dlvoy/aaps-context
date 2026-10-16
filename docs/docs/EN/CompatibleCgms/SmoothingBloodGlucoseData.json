@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatibleCgms/SmoothingBloodGlucoseData.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Why noisy CGM data is risky and how to choose a smoothing method in AAPS under Configuration > Smoothing: No smoothing, Exponential, Average or Unscented Kalman Filter. Includes per-sensor recommendations and the Change smoothing automation action.",
+  "features": [
+    "Smoothing",
+    "Configuration"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > Smoothing",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_smoothing"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Smoothing blood glucose data",
+      "anchor": "smoothing-blood-glucose-data",
+      "source_hash": "f989f5e69399b247",
+      "summary": "Why jumpy BG data can make AAPS dose wrongly, and that the loop should be paused until the problem is fixed.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Smoothing data within AAPS",
+      "anchor": "smoothing-data-within-aaps",
+      "source_hash": "80d89629b459025b",
+      "summary": "Opening Configuration > Smoothing in AAPS and picking one of the four smoothing plugins.",
+      "dialogs": [
+        "Configuration > Smoothing"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_smoothing",
+          "as_written": "Smoothing",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/smoothing/src/androidMain/res/values/strings.xml",
+          "key": "no_smoothing_name",
+          "as_written": "No smoothing",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/smoothing/src/androidMain/res/values/strings.xml",
+          "key": "exponential_smoothing_name",
+          "as_written": "Exponential smoothing",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/smoothing/src/androidMain/res/values/strings.xml",
+          "key": "avg_smoothing_name",
+          "as_written": "Average smoothing",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/smoothing/src/androidMain/res/values/strings.xml",
+          "key": "UKF_name",
+          "as_written": "Unscented Kalman Filter",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Exponential smoothing",
+      "anchor": "exponential-smoothing",
+      "source_hash": "2a69954d99a53865",
+      "summary": "What the Exponential smoothing option does; the recommended starting point.",
+      "dialogs": [
+        "Configuration > Smoothing"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/smoothing/src/androidMain/res/values/strings.xml",
+          "key": "exponential_smoothing_name",
+          "as_written": "Exponential smoothing",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Average smoothing",
+      "anchor": "average-smoothing",
+      "source_hash": "5b0fc385b138ec91",
+      "summary": "What the Average smoothing option does and its weakness with noisy data.",
+      "dialogs": [
+        "Configuration > Smoothing"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/smoothing/src/androidMain/res/values/strings.xml",
+          "key": "avg_smoothing_name",
+          "as_written": "Average smoothing",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "No Smoothing",
+      "anchor": "no-smoothing",
+      "source_hash": "91b750aad45a4cbb",
+      "summary": "When to choose No smoothing: only if the collector app already smooths the data.",
+      "dialogs": [
+        "Configuration > Smoothing"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/smoothing/src/androidMain/res/values/strings.xml",
+          "key": "no_smoothing_name",
+          "as_written": "No Smoothing",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Unscented Kalman Filter (UKF)",
+      "anchor": "unscented-kalman-filter-ukf",
+      "source_hash": "02e2cac97707c402",
+      "summary": "What the Unscented Kalman Filter option does: adapts to sensor noise and rejects outliers.",
+      "dialogs": [
+        "Configuration > Smoothing"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/smoothing/src/androidMain/res/values/strings.xml",
+          "key": "UKF_name",
+          "as_written": "Unscented Kalman Filter",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Suggestions to use smoothing",
+      "anchor": "smoothing-xdrip-dexcom-g6",
+      "source_hash": "d373f61e18b94e9d",
+      "summary": "Which smoothing to use per sensor and data source (tables), and switching smoothing automatically with the Change smoothing automation action.",
+      "dialogs": [
+        "Configuration > Smoothing",
+        "Automation > Action"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "change_smoothing",
+          "as_written": "Change smoothing",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": null
+}
