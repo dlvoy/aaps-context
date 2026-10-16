@@ -1,0 +1,836 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/DailyLifeWithAaps/KeyAapsFeatures.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Describes the AAPS loop modes (Open Loop, Low Glucose Suspend, Closed Loop) and the OpenAPS algorithm features: Autosens, SMB, Auto ISF and AMA. Most of the page walks through the settings of the OpenAPS SMB and AMA plugins one by one; setting names in headings and bold are the app's preference labels, some under older names.",
+  "features": [
+    "Loop modes",
+    "OpenAPS SMB",
+    "OpenAPS AMA",
+    "Auto ISF",
+    "Autosens"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > APS",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_aps"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Key AAPS features",
+      "anchor": "key-aaps-features",
+      "source_hash": "81261e0417c8aa59",
+      "summary": "The page title: an overview of loop modes and the OpenAPS algorithm features and their settings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Loop mode",
+      "anchor": "loop-mode",
+      "source_hash": "1b2ff4628750dee1",
+      "summary": "Introduces the three loop modes shown by the loop status icon on the main screen.",
+      "dialogs": [
+        "Main screen > Loop status"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "closedloop",
+          "as_written": "Closed Loop",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "lowglucosesuspend",
+          "as_written": "Low Glucose Suspend",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "openloop",
+          "as_written": "Open Loop",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Open Loop",
+      "anchor": "KeyAapsFeatures-OpenLoop",
+      "source_hash": "8444229daab815cc",
+      "summary": "How open loop works: AAPS suggests temp basals, the user opens the Loop entry in the bottom navigation and presses Perform; stale suggestions are refused.",
+      "dialogs": [
+        "Main screen > Loop",
+        "Loop > Perform"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "openloop",
+          "as_written": "Open Loop",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "loop_accept_nav_label",
+          "as_written": "Loop",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "loop_accept_set_basal_question",
+          "as_written": "Accept new temp basal",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "loop_accept_perform",
+          "as_written": "Perform",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "open_loop_suggestion_too_old",
+          "as_written": "This suggestion is too old. Nothing was sent to the pump. Wait for the next one.",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Low Glucose Suspend (LGS)",
+      "anchor": "KeyAapsFeatures-LGS",
+      "source_hash": "5ed5bb5dc810e51f",
+      "summary": "The LGS loop mode: max IOB is zero, AAPS can only lower basal; when it becomes available and when AAPS switches to it automatically.",
+      "dialogs": [
+        "Main screen > Loop status"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "lowglucosesuspend",
+          "as_written": "Low Glucose Suspend",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.4
+        }
+      ]
+    },
+    {
+      "heading": "Closed Loop",
+      "anchor": "KeyAapsFeatures-ClosedLoop",
+      "source_hash": "41c4c7a9e765f0e5",
+      "summary": "The closed loop mode: AAPS adjusts treatment automatically within safety limits, available from Objective 7.",
+      "dialogs": [
+        "Main screen > Loop status"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "closedloop",
+          "as_written": "Closed Loop",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Autosens",
+      "anchor": "Open-APS-features-autosens",
+      "source_hash": "cc38c52a79c64629",
+      "summary": "Explains the Autosens sensitivity algorithm, its sensitivity ratio and limits, and how it differs from Autotune.",
+      "dialogs": [
+        "Configuration > Sensitivity detection"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sensitivity",
+          "as_written": "Sensitivity Detection",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Super Micro Bolus (SMB)",
+      "anchor": "Open-APS-features-super-micro-bolus-smb",
+      "source_hash": "2fcc0ce11ca19787",
+      "summary": "Explains SMB, how SMBs appear on the main graph, and its safety mechanisms; introduces the OpenAPS SMB settings below.",
+      "dialogs": [
+        "Main screen > Graph",
+        "Treatments history"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments_history",
+          "as_written": "Treatments history",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_smb_max_minutes",
+          "as_written": "Max minutes of basal to limit SMB",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Max U/h a temp basal can be set to",
+      "anchor": "Open-APS-features-max-u-h-a-temp-basal-can-be-set-to",
+      "source_hash": "3e0d69f19494ae91",
+      "summary": "The max-basal safety setting of OpenAPS SMB, how to choose it, and its hard limits by patient age.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS SMB > Settings",
+        "Preferences > Safety > Patient age"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_max_basal",
+          "as_written": "Max U/h a temp basal can be set to",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/strings.xml",
+          "key": "safety",
+          "as_written": "Safety",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_patient_age",
+          "as_written": "Patient age",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Maximum total IOB OpenAPS can’t go over",
+      "anchor": "Open-APS-features-maximum-total-iob-openaps-cant-go-over",
+      "source_hash": "0be27b4b78305d38",
+      "summary": "The max-IOB safety setting of OpenAPS SMB, a starting value, and its hard limits by patient age.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS SMB > Settings",
+        "Preferences > Safety > Patient age"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_smb_max_iob",
+          "as_written": "Maximum total IOB OpenAPS can’t go over",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/strings.xml",
+          "key": "safety",
+          "as_written": "Safety",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_patient_age",
+          "as_written": "Patient age",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Use dynamic sensitivity",
+      "anchor": "use-dynamic-sensitivity",
+      "source_hash": "bbecf4272bc6f342",
+      "summary": "The switch that turns on Dynamic ISF in the OpenAPS SMB settings.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS SMB > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_dynamic_sensitivity",
+          "as_written": "Use dynamic sensitivity",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Use Autosens",
+      "anchor": "use-autosens",
+      "source_hash": "ce90a081bdd7290f",
+      "summary": "The switch that turns on Autosens in the OpenAPS SMB settings; it cannot be combined with Dynamic ISF.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS SMB > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_autosens",
+          "as_written": "Use Autosens",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Sensitivity raises target",
+      "anchor": "sensitivity-raises-target",
+      "source_hash": "139c6af746d6fd2b",
+      "summary": "The option letting sensitivity detection raise the BG target; a raised target shows with a green background on the main screen.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS SMB > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_sensitivity_raises_target",
+          "as_written": "Sensitivity raises target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_dynamic_sensitivity",
+          "as_written": "Use dynamic sensitivity",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_autosens",
+          "as_written": "Use Autosens",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Resistance lowers target",
+      "anchor": "resistance-lowers-target",
+      "source_hash": "53dd548a310d988d",
+      "summary": "The option letting sensitivity detection lower the BG target when resistance is detected.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS SMB > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_resistance_lowers_target",
+          "as_written": "Resistance lowers target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_dynamic_sensitivity",
+          "as_written": "Use dynamic sensitivity",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_autosens",
+          "as_written": "Use Autosens",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Enable SMB",
+      "anchor": "enable-smb",
+      "source_hash": "8acfda4605fa1791",
+      "summary": "The master switch for SMBs in the OpenAPS SMB settings.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS SMB > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb",
+          "as_written": "Enable SMB",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Enable SMB with high temp target",
+      "anchor": "Open-APS-features-enable-smb-with-high-temp-targets",
+      "source_hash": "ed6bed2542aa33a7",
+      "summary": "Whether SMBs are still given with a high temp target, and how it combines with the low temp target option.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS SMB > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_with_high_tt",
+          "as_written": "Enable SMB with high temp target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "eatingsoon",
+          "as_written": "Eating Soon",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_with_low_tt",
+          "as_written": "Enable SMB with low temp target",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Enable SMB always",
+      "anchor": "Open-APS-features-enable-smb-always",
+      "source_hash": "3ffda194bf7fe7a3",
+      "summary": "Always allows SMBs; only offered with a reliable BG source.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS SMB > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_always",
+          "as_written": "Enable SMB always",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_with_high_tt",
+          "as_written": "Enable SMB with high temp target",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Enable SMB with COB",
+      "anchor": "enable-smb-with-cob",
+      "source_hash": "bbfba4f77798b54d",
+      "summary": "Allows SMBs while carbs are on board.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS SMB > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_with_cob",
+          "as_written": "Enable SMB with COB",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_always",
+          "as_written": "Enable SMB always",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Enable SMB with low temp target",
+      "anchor": "enable-smb-with-low-temp-target",
+      "source_hash": "7665d74a300a8e96",
+      "summary": "Allows SMBs while a (low) temp target is set.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS SMB > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_with_low_tt",
+          "as_written": "Enable SMB with low temp target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_with_high_tt",
+          "as_written": "Enable SMB with high temp target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_always",
+          "as_written": "Enable SMB always",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Enable SMB after carbs",
+      "anchor": "enable-smb-after-carbs",
+      "source_hash": "13c5a8598f855462",
+      "summary": "Allows SMBs for 6 hours after carbs are entered; needs a reliable BG source.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS SMB > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_after_carbs",
+          "as_written": "Enable SMB after carbs",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_always",
+          "as_written": "Enable SMB always",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "SMB interval",
+      "anchor": "smb-interval",
+      "source_hash": "9ad6bcbf7bb40ddd",
+      "summary": "The minimum time between SMBs.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS SMB > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_smb_frequency",
+          "as_written": "SMB interval",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Max minutes of basal to limit SMB",
+      "anchor": "Open-APS-features-max-minutes-of-basal-to-limit-smb-to",
+      "source_hash": "362c9d65cc8b2a9c",
+      "summary": "The safety setting that caps each SMB at a number of minutes of basal, with advice on raising it.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS SMB > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_smb_max_minutes",
+          "as_written": "Max minutes of basal to limit SMB",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "UAM max minutes of basal to limit SMB",
+      "anchor": "uam-max-minutes-of-basal-to-limit-smb",
+      "source_hash": "0a65c5c48235089b",
+      "summary": "The same cap applied during unannounced meals.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS SMB > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_uam_smb_max_minutes",
+          "as_written": "UAM max minutes of basal to limit SMB",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_smb_max_minutes",
+          "as_written": "Max minutes of basal to limit SMB",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb",
+          "as_written": "Enable SMB",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_uam",
+          "as_written": "Enable UAM",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Enable UAM",
+      "anchor": "enable-uam",
+      "source_hash": "981800c8c6668944",
+      "summary": "The switch for unannounced meal detection, recommended whenever SMB is used.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS SMB > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_uam",
+          "as_written": "Enable UAM",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Carbs required threshold",
+      "anchor": "key-aaps-features-minimal-carbs-required-for-suggestion",
+      "source_hash": "1bca8917bf9a7bb2",
+      "summary": "The minimum carbs for a carbs-required notification, and where required carbs show on the main screen.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS SMB > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_carbs_request_threshold",
+          "as_written": "Carbs required threshold",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Advanced Settings",
+      "anchor": "advanced-settings",
+      "source_hash": "d4d37bfe8d58f639",
+      "summary": "The rarely changed advanced OpenAPS SMB settings: short average delta and the two basal safety multipliers.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS SMB > Settings > Advanced Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "advanced_settings_title",
+          "as_written": "Advanced Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_always_use_short_deltas",
+          "as_written": "Always use short average delta",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_max_daily_multiplier",
+          "as_written": "Max daily safety multiplier",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_current_basal_multiplier",
+          "as_written": "Current Basal safety multiplier",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Auto ISF",
+      "anchor": "Open-APS-features-auto-isf",
+      "source_hash": "a8fa3c9592c0be75",
+      "summary": "The experimental Auto ISF algorithm: where to select it in Configuration > APS and what its settings do.",
+      "dialogs": [
+        "Configuration > APS",
+        "Configuration > APS > OpenAPS AutoISF > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openaps_auto_isf",
+          "as_written": "Auto ISF",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_aps",
+          "as_written": "APS",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "autoISF_settings_title",
+          "as_written": "AutoISF settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_autoisf_weights",
+          "as_written": "Enable AutoISF",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_autoisf_min",
+          "as_written": "AutoISF min",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_autoisf_max",
+          "as_written": "AutoISF max",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_pp_weight",
+          "as_written": "post-prandial",
+          "confidence": 0.4
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_dura_weight",
+          "as_written": "duration",
+          "confidence": 0.4
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_smb_delivery_ratio",
+          "as_written": "SMB delivery ratio",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_iob_threshold_percent",
+          "as_written": "IOB threshold percent",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Advanced Meal Assist (AMA)",
+      "anchor": "Open-APS-features-advanced-meal-assist-ama",
+      "source_hash": "e9d8a80a70c3f2cc",
+      "summary": "Introduces the older OpenAPS AMA algorithm; its settings follow.",
+      "dialogs": [
+        "Configuration > APS"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Max U/hr a Temp Basal can be set to (OpenAPS \"max-basal\")",
+      "anchor": "max-u-hr-a-temp-basal-can-be-set-to-openaps-max-basal",
+      "source_hash": "bf20034567b246e3",
+      "summary": "The max-basal safety setting of OpenAPS AMA and its hard limits.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS AMA > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_max_basal",
+          "as_written": "Max U/hr a Temp Basal can be set to",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Maximum basal IOB OpenAPS can deliver [U] (OpenAPS \"max-iob\")",
+      "anchor": "maximum-basal-iob-openaps-can-deliver-u-openaps-max-iob",
+      "source_hash": "a5a76f6d5dd9f560",
+      "summary": "The max basal IOB setting of OpenAPS AMA and its hard limits.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS AMA > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ama_max_iob",
+          "as_written": "Maximum basal IOB OpenAPS can deliver [U]",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Use Autosens (AMA)",
+      "anchor": "use-autosens-ama",
+      "source_hash": "4e834610c28f91c0",
+      "summary": "Turns Autosens on or off in OpenAPS AMA.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS AMA > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_autosens",
+          "as_written": "Use Autosens",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Autosens adjust targets",
+      "anchor": "autosens-adjust-targets",
+      "source_hash": "75242548d76dca72",
+      "summary": "Lets Autosens adjust targets too in OpenAPS AMA.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS AMA > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_autosens_adjust_targets",
+          "as_written": "Autosens adjust targets",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Advanced Settings",
+      "anchor": "advanced-settings",
+      "source_hash": "e3522ee4fea69220",
+      "summary": "The advanced OpenAPS AMA settings: short average delta, the basal safety multipliers and bolus snooze.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS AMA > Settings > Advanced Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "advanced_settings_title",
+          "as_written": "Advanced Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_always_use_short_deltas",
+          "as_written": "Always use short average delta",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_max_daily_multiplier",
+          "as_written": "Max daily safety multiplier",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_current_basal_multiplier",
+          "as_written": "Current Basal safety multiplier",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_bolus_snooze_divisor",
+          "as_written": "Bolus snooze dia divisor",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Overview of hard-coded limits",
+      "anchor": "Open-APS-features-overview-of-hard-coded-limits",
+      "source_hash": "e21d689bbbc333e6",
+      "summary": "A reference table of the hard-coded limits per patient age; no app labels.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "Several headings use older preference names: \"Max U/h a temp basal can be set to\" is now \"Maximum basal rate\" (pref_title_max_basal), \"Maximum total IOB OpenAPS can’t go over\" is now \"Max IOB for SMB\", and the AMA \"Maximum basal IOB OpenAPS can deliver\" is now \"Max IOB for AMA\". The bold \"Always use short average delta instead of simple data\" is the app's \"Always use short average delta\"."
+}

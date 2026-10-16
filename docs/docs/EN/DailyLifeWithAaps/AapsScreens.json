@@ -1,0 +1,1799 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/DailyLifeWithAaps/AapsScreens.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "A tour of the AAPS screens: the main screen section by section (top bar, status block with loop status and BG warnings, status row, graphs, QuickLaunch toolbar, bottom navigation), the bolus wizard, where the old Actions tab's functions went, the careportal entries, and the screens opened from Manage, Configuration and the menu, including Treatments history. Bold names are the app's labels for buttons, dialogs and screens.",
+  "features": [
+    "Main screen",
+    "Running mode",
+    "Bolus wizard",
+    "Careportal",
+    "Treatments history"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main screen > Manage",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "manage"
+    },
+    {
+      "ui_location": "Main menu > Treatments history",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "treatments_history"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "AAPS screens",
+      "anchor": "aaps-screens",
+      "source_hash": "4e098ce7dcbd77a1",
+      "summary": "The page title: a tour of the AAPS main screen, the bolus wizard and the other screens reached from Manage, Configuration and the menu.",
+      "dialogs": [
+        "Main screen"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "The main screen",
+      "anchor": "AapsScreens-the-homescreen",
+      "source_hash": "f2ecc95c42654153",
+      "summary": "Introduces the main screen and its sections A to G.",
+      "dialogs": [
+        "Main screen"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Section A - Top bar",
+      "anchor": "section-a-top-bar",
+      "source_hash": "ecc8329adcd38fa3",
+      "summary": "The top bar: the menu (☰) with its screens, the search bar and the Settings icon.",
+      "dialogs": [
+        "Main screen",
+        "Main menu"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments_history",
+          "as_written": "Treatments history",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_history_browser",
+          "as_written": "History browser",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "statistics",
+          "as_written": "Statistics",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_profile_helper",
+          "as_written": "Profile helper",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "maintenance",
+          "as_written": "Maintenance",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_setupwizard",
+          "as_written": "Setup Wizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Section B - Status block",
+      "anchor": "aaps-screens-profile--target",
+      "source_hash": "92f03807601dca67",
+      "summary": "Heading for the status block next to the BG circle.",
+      "dialogs": [
+        "Main screen"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Current blood glucose",
+      "anchor": "current-blood-glucose",
+      "source_hash": "e00070eeace0563f",
+      "summary": "The BG circle: latest reading, delta, age and the range colours.",
+      "dialogs": [
+        "Main screen"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Loop status",
+      "anchor": "AapsScreens-loop-status",
+      "source_hash": "3639a5eb1f897c7b",
+      "summary": "The loop status icon and the running mode dialog it opens: switching mode, suspending, disconnecting, resuming and reconnecting, and the alarm when the pump refuses the zero temp basal.",
+      "dialogs": [
+        "Main screen",
+        "Main screen > Running mode"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "closedloop",
+          "as_written": "Closed Loop",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "lowglucosesuspend",
+          "as_written": "Low Glucose Suspend",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "openloop",
+          "as_written": "Open Loop",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "disableloop",
+          "as_written": "Disable loop",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "suspendloop",
+          "as_written": "Suspend loop",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "disconnectpump",
+          "as_written": "Disconnect pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "resume",
+          "as_written": "Resume",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "reconnect",
+          "as_written": "Reconnect Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "zero_basal_not_set",
+          "as_written": "The pump did not accept the zero temp basal. It may still be giving basal insulin. Check the pump.",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "BG warning sign",
+      "anchor": "aaps-screens-bg-warning-sign",
+      "source_hash": "6259cebac0ff5f74",
+      "summary": "The BG source shortcut with a warning badge that appears in the bottom bar when BG data has problems.",
+      "dialogs": [
+        "Main screen"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Duplicate BG data",
+      "anchor": "duplicate-bg-data",
+      "source_hash": "dc7613033f2ee1d1",
+      "summary": "Duplicate readings switch the loop to LGS; how to see why in the running mode dialog, find the cause, delete duplicates on the BG source screen and switch back to closed loop.",
+      "dialogs": [
+        "Main screen > Running mode",
+        "Configuration > BG Source > Open plugin",
+        "Preferences > NSClient > Synchronization"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "lowglucosesuspend",
+          "as_written": "Low Glucose Suspend",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "constraints",
+          "as_written": "Constraints",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/strings.xml",
+          "key": "bg_doubled_lgs",
+          "as_written": "LGS mode due to doubled values in BG source",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_sync_options",
+          "as_written": "Synchronization",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_receive_cgm",
+          "as_written": "Receive CGM data from NS",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "closedloop",
+          "as_written": "Closed Loop",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Flat BG data",
+      "anchor": "flat-bg-data",
+      "source_hash": "7d8debcffe35055e",
+      "summary": "Readings that do not change for 45 minutes are treated as wrong and limit the loop.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Irregular BG data",
+      "anchor": "irregular-bg-data",
+      "source_hash": "d73946ad6fc870de",
+      "summary": "Irregular readings are smoothed into 5-minute values; no action needed.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Current Profile",
+      "anchor": "current-profile",
+      "source_hash": "413a612c38a919b4",
+      "summary": "The profile name on the main screen: tap it to open the Profile screen and change the profile percentage with Activate.",
+      "dialogs": [
+        "Main screen",
+        "Manage > Profile"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "activate_label",
+          "as_written": "Activate",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Target",
+      "anchor": "target",
+      "source_hash": "d494f14a0d5989d9",
+      "summary": "The current target below the profile name; tap it to open the Temporary Target screen.",
+      "dialogs": [
+        "Main screen",
+        "Manage > Temp Target"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temporary Target",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Visualization of Dynamic target adjustment",
+      "anchor": "AapsScreens-visualization-of-dynamic-target-adjustment",
+      "source_hash": "4f7c928851a2ed76",
+      "summary": "How the target changes colour when autosens adjusts it, with the two OpenAPS SMB options that enable it.",
+      "dialogs": [
+        "Main screen",
+        "Configuration > APS > OpenAPS SMB > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_sensitivity_raises_target",
+          "as_written": "Sensitivity raises target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_resistance_lowers_target",
+          "as_written": "Resistance lowers target",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "IOB, COB, basal and sensitivity",
+      "anchor": "aaps-screens-iob-cob-basal-sens",
+      "source_hash": "bfe2b9c742150993",
+      "summary": "The IOB, COB, basal and sensitivity chips and the dialogs they open.",
+      "dialogs": [
+        "Main screen"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "algorithm_long",
+          "as_written": "Autosens in algorithm",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Carbs required",
+      "anchor": "aaps-screens-carbs-required",
+      "source_hash": "9b238920f80c7735",
+      "summary": "When and how the algorithm suggests extra carbs.",
+      "dialogs": [
+        "Main screen"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Section C - Status row",
+      "anchor": "section-c-status-row",
+      "source_hash": "cb5b63ff760f685c",
+      "summary": "The status row with cannula, insulin, sensor and pump battery ages and levels, its thresholds, and the buttons that record changes.",
+      "dialogs": [
+        "Main screen",
+        "Main screen > Status lights"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "add",
+          "as_written": "Add",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "sensor_label",
+          "as_written": "Sensor",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "prime_fill",
+          "as_written": "Prime/Fill",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cannula",
+          "as_written": "Cannula",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "patch_pump",
+          "as_written": "Patch pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_label",
+          "as_written": "Insulin",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pb_label",
+          "as_written": "Pump battery",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Sensor level (battery)",
+      "anchor": "screens-sensor-level-battery",
+      "source_hash": "9e262b8a2701ed5c",
+      "summary": "Sensor battery level for CGMs with an extra transmitter.",
+      "dialogs": [
+        "Main screen"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Section D - Main graph",
+      "anchor": "aaps-screens-main-graph",
+      "source_hash": "d7c8ec17be39e8e6",
+      "summary": "What the main BG graph shows: target range, boluses, carbs, profile switches, loop status band and SMBs.",
+      "dialogs": [
+        "Main screen"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_bgcheck",
+          "as_written": "BG check",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "See the values at a given time",
+      "anchor": "aaps-screens-graph-press-and-hold",
+      "source_hash": "13754fa3672ef940",
+      "summary": "Press and hold the graph to see the values at one reading.",
+      "dialogs": [
+        "Main screen"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Activate optional information",
+      "anchor": "AapsScreens-activate-optional-information",
+      "source_hash": "a29341aff27aeff5",
+      "summary": "The graph settings opened with the pencil icon: graph height and the ACT and PRED overlays.",
+      "dialogs": [
+        "Main screen > Graph settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "graph_height",
+          "as_written": "Graph height",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "activity_shortname",
+          "as_written": "ACT",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "predictions_shortname",
+          "as_written": "PRED",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Prediction lines",
+      "anchor": "aaps-screens-prediction-lines",
+      "source_hash": "1e5004d1bcb624ef",
+      "summary": "The coloured prediction lines (IOB, COB, UAM, ZT, aCOB) and what each predicts.",
+      "dialogs": [
+        "Main screen"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "predictions_shortname",
+          "as_written": "PRED",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "iob",
+          "as_written": "IOB",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cob",
+          "as_written": "COB",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_uam",
+          "as_written": "Enable UAM",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "How AAPS turns predictions into a dosing decision",
+      "anchor": "aaps-screens-how-predictions-become-a-dosing-decision",
+      "source_hash": "c3b17a970ed35974",
+      "summary": "How the algorithm combines the predictions into a temp basal or SMB decision; no app labels.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Basals",
+      "anchor": "basals",
+      "source_hash": "aeebc7924bf0a3ca",
+      "summary": "How basal delivery is drawn on the graph.",
+      "dialogs": [
+        "Main screen"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Activity",
+      "anchor": "activity",
+      "source_hash": "9f87521174f11f95",
+      "summary": "The insulin activity line on the graph.",
+      "dialogs": [
+        "Main screen"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Section E - Additional graphs",
+      "anchor": "AapsScreens-section-g-additional-graphs",
+      "source_hash": "2f04187024eeb49a",
+      "summary": "Adding and configuring the graphs below the main graph, and their link to Simple mode.",
+      "dialogs": [
+        "Main screen > Graph settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_simple_mode",
+          "as_written": "Simple Mode",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "remove",
+          "as_written": "Remove",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "graph_add",
+          "as_written": "Add graph",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "sensitivity_shortname",
+          "as_written": "SENS%",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "deviation_shortname",
+          "as_written": "DEV",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Absolute insulin (ABS)",
+      "anchor": "absolute-insulin-abs",
+      "source_hash": "2b4084529e2e1d53",
+      "summary": "The ABS graph option.",
+      "dialogs": [
+        "Main screen > Graph settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "abs_insulin_shortname",
+          "as_written": "ABS",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Insulin on board (IOB)",
+      "anchor": "aaps-screens-iob",
+      "source_hash": "70b805c55007649c",
+      "summary": "The IOB graph option.",
+      "dialogs": [
+        "Main screen > Graph settings"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Carbs On Board (COB)",
+      "anchor": "carbs-on-board-cob",
+      "source_hash": "98f280a567bd5525",
+      "summary": "The COB graph option.",
+      "dialogs": [
+        "Main screen > Graph settings"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Sensitivity change (SENS%)",
+      "anchor": "sensitivity-change-sens",
+      "source_hash": "9646ce7bd920c8d7",
+      "summary": "The SENS% graph option showing autosens results.",
+      "dialogs": [
+        "Main screen > Graph settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "sensitivity_shortname",
+          "as_written": "SENS%",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Variable sensitivity (VSENS)",
+      "anchor": "variable-sensitivity-vsens",
+      "source_hash": "e0a6f1806dcafd32",
+      "summary": "The VSENS graph option for Dynamic ISF.",
+      "dialogs": [
+        "Main screen > Graph settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "variable_sensitivity_shortname",
+          "as_written": "VSENS",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Heart rate (HR) & Steps",
+      "anchor": "screen-heart-rate-steps",
+      "source_hash": "25c14a64f94335cc",
+      "summary": "Heart rate and steps graphs from a Wear watch.",
+      "dialogs": [
+        "Main screen > Graph settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "heartRate_shortname",
+          "as_written": "HR",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Deviations (DEV)",
+      "anchor": "deviations-dev",
+      "source_hash": "eefd6e379858ccf5",
+      "summary": "The colours of the deviation bars.",
+      "dialogs": [
+        "Main screen > Graph settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "deviation_shortname",
+          "as_written": "DEV",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Blood Glucose Impact (-BGI)",
+      "anchor": "blood-glucose-impact-bgi",
+      "source_hash": "0da3e33892a9681a",
+      "summary": "The -BGI line and how to read it against deviations.",
+      "dialogs": [
+        "Main screen > Graph settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "bgi_shortname",
+          "as_written": "-BGI",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Section F - QuickLaunch toolbar",
+      "anchor": "section-f-quicklaunch-toolbar",
+      "source_hash": "302fa602cd2f0d09",
+      "summary": "The floating QuickLaunch toolbar, its configuration, and the treatment buttons that stay while the pump is disconnected.",
+      "dialogs": [
+        "Main screen",
+        "Configure QuickLaunch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "overview_insulin_label",
+          "as_written": "Insulin",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "carbs",
+          "as_written": "Carbs",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "boluswizard",
+          "as_written": "Bolus wizard",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Insulin",
+      "anchor": "aaps-screens-buttons-insulin",
+      "source_hash": "cd930c9b1fc494d1",
+      "summary": "The Insulin dialog: giving or recording insulin, eating soon TT, time offset and increment buttons.",
+      "dialogs": [
+        "Insulin"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "start_eating_soon_tt",
+          "as_written": "Start Eating soon TT",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "bolus_recorded_only",
+          "as_written": "Bolus will be recorded only",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "time",
+          "as_written": "Time",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "carb_time_now",
+          "as_written": "Now",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Carbs",
+      "anchor": "carbs",
+      "source_hash": "619f533459654ca5",
+      "summary": "The Carbs dialog: preset temp targets, carb time, duration for extended carbs and increment buttons.",
+      "dialogs": [
+        "Carbs"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "hypo",
+          "as_written": "Hypo",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "eatingsoon",
+          "as_written": "Eating soon",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "activity",
+          "as_written": "Activity",
+          "confidence": 0.4
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wizard_carb_time",
+          "as_written": "Carb time",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "duration",
+          "as_written": "Duration",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Quick Wizard",
+      "anchor": "quick-wizard",
+      "source_hash": "364c55a9777d3718",
+      "summary": "QuickWizard buttons that enter preset carbs and calculations.",
+      "dialogs": [
+        "Manage > QuickWizard"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Section G - Bottom navigation",
+      "anchor": "aaps-screens-treatments-sheet",
+      "source_hash": "e859d8449749dbb1",
+      "summary": "The bottom navigation: Treatments, Scenes, Manage with its items, and Objectives.",
+      "dialogs": [
+        "Main screen",
+        "Manage"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments",
+          "as_written": "Treatments",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scenes",
+          "as_written": "Scenes",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "user_action",
+          "as_written": "User action",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "objectives",
+          "as_written": "Objectives",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Notifications",
+      "anchor": "aaps-screens-notifications",
+      "source_hash": "5913245c2577d1c8",
+      "summary": "The notification bubble and panel, and dismissing messages.",
+      "dialogs": [
+        "Main screen",
+        "Notification"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "notification",
+          "as_written": "Notification",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "dismiss",
+          "as_written": "Dismiss",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Bolus Wizard",
+      "anchor": "aaps-screens-bolus-wizard",
+      "source_hash": "8ecb2eaf727c9330",
+      "summary": "Introduces the bolus wizard used for meal boluses.",
+      "dialogs": [
+        "Bolus wizard"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "boluswizard",
+          "as_written": "Bolus Wizard",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Section I",
+      "anchor": "section-i",
+      "source_hash": "3f7875a7ee7299d6",
+      "summary": "The Calculation header and the icon row that turns inputs on and off.",
+      "dialogs": [
+        "Bolus wizard"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wizard_calculation",
+          "as_written": "Calculation",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Combinations of COB and IOB and what they mean",
+      "anchor": "combinations-of-cob-and-iob-and-what-they-mean",
+      "source_hash": "93dcd2dde2fddc60",
+      "summary": "What enabling or disabling COB, IOB and temp target inputs does to the calculation.",
+      "dialogs": [
+        "Bolus wizard"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temporary_target",
+          "as_written": "temporary target",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Section J - Entry fields",
+      "anchor": "AapsScreens-section-j",
+      "source_hash": "34b13824025b5e1b",
+      "summary": "The Carbs field, in grams.",
+      "dialogs": [
+        "Bolus wizard"
+      ],
+      "mentions": [
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "carbs",
+          "as_written": "Carbs",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Carbs type: bread, cake or pizza",
+      "anchor": "AapsScreens-carbs-type",
+      "source_hash": "e2049eb3b3037c9a",
+      "summary": "The three carbs-type buttons and how they split carbs into eCarbs, then the other wizard rows: Correction, Carb time, BG, Use percentage, Profile, Set alarm and the result button.",
+      "dialogs": [
+        "Bolus wizard"
+      ],
+      "mentions": [
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "carbs",
+          "as_written": "Carbs",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "wizard_ecarbs",
+          "as_written": "eCarbs",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wizard_carb_time",
+          "as_written": "Carb time",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wizard_correction",
+          "as_written": "Correction",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wizard_bg_label",
+          "as_written": "BG",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wizard_use_percentage",
+          "as_written": "Use percentage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wizard_set_alarm",
+          "as_written": "Set alarm",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_max_bolus",
+          "as_written": "Maximum bolus",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "bolus_constraint_applied_warn",
+          "as_written": "Bolus constraint applied",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "bolus_recorded_only",
+          "as_written": "Bolus will be recorded only",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Wrong COB detection",
+      "anchor": "AapsScreens-wrong-cob-detection",
+      "source_hash": "73226ee4c3882107",
+      "summary": "The warning that the calculated COB may be wrong.",
+      "dialogs": [
+        "Bolus wizard"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Where did the Actions tab go?",
+      "anchor": "screens-action-tab",
+      "source_hash": "f3df8879a5ff10e1",
+      "summary": "Where the functions of the old Actions tab live in AAPS 4.",
+      "dialogs": [
+        "Main screen",
+        "Manage"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile switch",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "profilepercentage",
+          "as_written": "Profile Percentage",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_management",
+          "as_written": "Profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temporary_target",
+          "as_written": "Temporary target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "prime_fill",
+          "as_written": "Prime/Fill",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cgm_sensor_insert",
+          "as_written": "Sensor Insert",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_bgcheck",
+          "as_written": "BG check",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_history_browser",
+          "as_written": "History browser",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "statistics",
+          "as_written": "Statistics",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Careportal entries",
+      "anchor": "aaps-screens-careportal",
+      "source_hash": "6cf0baa7badb1352",
+      "summary": "Recording Prime/Fill, Sensor Insert, Pump Battery Change and the Careportal entries (BG Check, Note, Exercise, Question, Announcement).",
+      "dialogs": [
+        "Manage",
+        "Manage > Careportal"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "prime_fill",
+          "as_written": "Prime/Fill",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cgm_sensor_insert",
+          "as_written": "Sensor Insert",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_battery_change",
+          "as_written": "Pump Battery Change",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal",
+          "as_written": "Careportal",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_bgcheck",
+          "as_written": "BG Check",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_note",
+          "as_written": "Note",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_exercise",
+          "as_written": "Exercise",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_question",
+          "as_written": "Question",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_announcement",
+          "as_written": "Announcement",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "bg_sensor",
+          "as_written": "Sensor",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "glucosetype_finger",
+          "as_written": "Finger",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Tools",
+      "anchor": "tools",
+      "source_hash": "72ee1234c12b966a",
+      "summary": "Heading for the tools below.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Site Rotation",
+      "anchor": "Aapsscreens-site-rotation",
+      "source_hash": "ac8ea33e0748aab8",
+      "summary": "The Site Rotation screen: view and edit modes, filtering, the arrow and note, and its settings.",
+      "dialogs": [
+        "Manage > Site Rotation"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "site_rotation",
+          "as_written": "Site Rotation",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_site_rotation_profile",
+          "as_written": "User profile for site rotation",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "site_rotation_profile_man",
+          "as_written": "Man",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "site_rotation_profile_woman",
+          "as_written": "Woman",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "site_rotation_profile_child",
+          "as_written": "Child",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_site_rotation_manage_pump",
+          "as_written": "Manage pump site rotation",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_site_rotation_manage_cgm",
+          "as_written": "Manage CGM site rotation",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "prime_fill",
+          "as_written": "Prime/Fill",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "select_arrow",
+          "as_written": "Select Arrow",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_note",
+          "as_written": "Note",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "save",
+          "as_written": "save",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "TDD",
+      "anchor": "tdd",
+      "source_hash": "3d871ce4425a3e9b",
+      "summary": "What total daily dose is and rules of thumb for basal share.",
+      "dialogs": [
+        "Main menu > Statistics"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Insulin",
+      "anchor": "AapsScreens-insulin-profile",
+      "source_hash": "1d3d1e0460e5a841",
+      "summary": "The Insulin settings screen with peak time and DIA of the insulin configurations.",
+      "dialogs": [
+        "Manage > Insulin settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_management",
+          "as_written": "Insulin settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_insulin",
+          "as_written": "Insulin",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Pump Status",
+      "anchor": "pump-status",
+      "source_hash": "a90ffaefae4c197a",
+      "summary": "The pump status screen.",
+      "dialogs": [
+        "Manage > Pump",
+        "Configuration > Pump > Open plugin"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Loop, AMA / SMB",
+      "anchor": "loop-ama-smb",
+      "source_hash": "c03f2797d1e4b1cd",
+      "summary": "The Loop and APS plugin screens showing the last run, the request and constraints.",
+      "dialogs": [
+        "Configuration > Loop > Open plugin",
+        "Configuration > APS > Open plugin"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_loop",
+          "as_written": "Loop",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_aps",
+          "as_written": "APS",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Profile",
+      "anchor": "aaps-screens-profile",
+      "source_hash": "fe6aaf19dd1ebeb6",
+      "summary": "The Profile screen: profile carousel with add, edit, clone, delete and activate.",
+      "dialogs": [
+        "Manage > Profile"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_management",
+          "as_written": "Profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "activate_label",
+          "as_written": "activate",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Automation",
+      "anchor": "automation",
+      "source_hash": "ec9639e7d2171730",
+      "summary": "The Automation screen under Manage.",
+      "dialogs": [
+        "Manage > Automation"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "NSClient",
+      "anchor": "nsclient",
+      "source_hash": "2e44947df443fce4",
+      "summary": "The NSClientV3 plugin screen with connection status and sync log.",
+      "dialogs": [
+        "Configuration > Communication > NSClientV3 > Open plugin"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_v3_title",
+          "as_written": "NSClientV3",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "BG Source - xDrip, BYODA...",
+      "anchor": "aaps-screens-bg-source",
+      "source_hash": "9ea762776791cb35",
+      "summary": "The BG source plugin screen listing readings, where faulty or duplicate readings can be removed.",
+      "dialogs": [
+        "Configuration > BG Source > Open plugin"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_bgsource",
+          "as_written": "BG Source",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Treatments history",
+      "anchor": "aaps-screens-treatments",
+      "source_hash": "fefda9b5d8197c67",
+      "summary": "The Treatments history screen, its tabs and the source icons at the end of each line.",
+      "dialogs": [
+        "Main menu > Treatments history"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments_history",
+          "as_written": "Treatments history",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "extended_bolus",
+          "as_written": "Extended bolus",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_basal",
+          "as_written": "Temp basal",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temporary_target",
+          "as_written": "Temporary target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile switch",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal",
+          "as_written": "Careportal",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "running_mode",
+          "as_written": "Running mode",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "user_entry",
+          "as_written": "User entry",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump",
+          "as_written": "Pump",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Carbs and bolus",
+      "anchor": "screens-bolus-carbs",
+      "source_hash": "bfedb8c2e55bed0f",
+      "summary": "The Carbs and bolus tab and how to correct a wrong carb entry.",
+      "dialogs": [
+        "Treatments history > Carbs and bolus"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Temp basal",
+      "anchor": "temp-basal",
+      "source_hash": "8df425f4a10750c7",
+      "summary": "The Temp basal tab and its IOB and suspend marks.",
+      "dialogs": [
+        "Treatments history > Temp basal"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_basal",
+          "as_written": "Temp basal",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Temporary target",
+      "anchor": "temporary-target",
+      "source_hash": "e947e171203eace7",
+      "summary": "The Temporary target tab.",
+      "dialogs": [
+        "Treatments history > Temporary target"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temporary_target",
+          "as_written": "Temporary target",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Profile switch",
+      "anchor": "profile-switch",
+      "source_hash": "976c0b1518d09f86",
+      "summary": "The Profile switch tab and cloning a profile switch.",
+      "dialogs": [
+        "Treatments history > Profile switch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile switch",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "clone_label",
+          "as_written": "Clone",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Careportal",
+      "anchor": "careportal",
+      "source_hash": "1c1e8efa1204fe68",
+      "summary": "The Careportal tab.",
+      "dialogs": [
+        "Treatments history > Careportal"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal",
+          "as_written": "Careportal",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Running mode",
+      "anchor": "AapsScreens-running-mode",
+      "source_hash": "c30b507a4e553bbc",
+      "summary": "The Running mode tab with loop status history.",
+      "dialogs": [
+        "Treatments history > Running mode"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "running_mode",
+          "as_written": "Running mode",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "User entry",
+      "anchor": "user-entry",
+      "source_hash": "5433e20887f68323",
+      "summary": "The User entry tab listing user and automation actions.",
+      "dialogs": [
+        "Treatments history > User entry"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "user_entry",
+          "as_written": "User entry",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "History Browser",
+      "anchor": "aaps-screens-running-mode",
+      "source_hash": "57f82e97f3203d15",
+      "summary": "Opening the History browser from the menu.",
+      "dialogs": [
+        "Main menu > History browser"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_history_browser",
+          "as_written": "History browser",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_history_browser",
+          "as_written": "History Browser",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Statistics",
+      "anchor": "aaps-screens-statistics",
+      "source_hash": "d5727ededcac8d94",
+      "summary": "Opening Statistics from the menu.",
+      "dialogs": [
+        "Main menu > Statistics"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "statistics",
+          "as_written": "Statistics",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Profile Helper",
+      "anchor": "aaps-screens-profile-helper",
+      "source_hash": "d8135d0306dbbb71",
+      "summary": "Opening the Profile helper from the menu.",
+      "dialogs": [
+        "Main menu > Profile helper"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_profile_helper",
+          "as_written": "Profile helper",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_profile_helper",
+          "as_written": "Profile Helper",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Home screen widgets",
+      "anchor": "aaps-screens-widgets",
+      "source_hash": "7ac8953ec32fc178",
+      "summary": "Points to the page on the AAPS home screen widgets.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "The carbs types Bread, Cake and Pizza are icon buttons in the app with no text labels. The message \"An SMB is being delivered right now. Try again when it has finished.\" is not in the app's strings. \"Bolus constraint applied\" and \"Bolus will be recorded only\" are the start of longer app strings."
+}

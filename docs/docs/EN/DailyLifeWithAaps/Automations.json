@@ -1,0 +1,790 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/DailyLifeWithAaps/Automations.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Explains the Automation feature: rules that run actions (temp targets, profile percentage, smoothing, careportal entries, settings export) when their triggers are met. The reader learns where the Automation screen is (Manage > Automation), how to build, order, test and delete rules, the safety limits, and worked examples. Trigger and action names in bold or quotes are the app's labels.",
+  "features": [
+    "Automation"
+  ],
+  "screens": [
+    {
+      "ui_location": "Manage > Automation",
+      "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+      "key": "automation"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Automation",
+      "anchor": "automation",
+      "source_hash": "62f6ff191d793df1",
+      "summary": "The page title; the page explains the Automation screen and how to build rules.",
+      "dialogs": [
+        "Manage > Automation"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "What is an Automation?",
+      "anchor": "what-is-an-automation",
+      "source_hash": "5349482311a62837",
+      "summary": "What Automation does: rules made of triggers (conditions) and actions, created on the Automation screen under Manage.",
+      "dialogs": [
+        "Manage > Automation"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "How Automation can help",
+      "anchor": "how-automation-can-help",
+      "source_hash": "527e9840adb658fe",
+      "summary": "The benefits of Automation, with examples of temp targets and profile percentages set automatically.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Key considerations before starting with Automations",
+      "anchor": "key-considerations-before-starting-with-automations",
+      "source_hash": "de27bc4ac793c919",
+      "summary": "Advice before using Automation: good basic settings first, prefer temp targets to profile switches, keep actions time-limited.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile switch",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "When can I start using Automation?",
+      "anchor": "when-can-i-start-using-automation",
+      "source_hash": "e1776053a5d3fe25",
+      "summary": "Automation becomes available at objective 10.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Where are Automations located in AAPS?",
+      "anchor": "where-are-automations-located-in-aaps",
+      "source_hash": "f2541c9b5cb60e5a",
+      "summary": "Opening the Automation screen from Manage in the main screen's bottom navigation.",
+      "dialogs": [
+        "Manage > Automation"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "How can I set up an Automation?",
+      "anchor": "how-can-i-set-up-an-automation",
+      "source_hash": "2ef63b7aab094d44",
+      "summary": "Step by step: create a rule with +, give it a task name, edit its condition and triggers, add an action, save and tick it to activate it.",
+      "dialogs": [
+        "Manage > Automation",
+        "Manage > Automation > Edit rule",
+        "Manage > Automation > Edit rule > Condition",
+        "Manage > Automation > Edit rule > Add trigger",
+        "Manage > Automation > Edit rule > Add action"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "taskname",
+          "as_written": "Task name",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "edit_short",
+          "as_written": "EDIT",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "condition",
+          "as_written": "Condition",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "and",
+          "as_written": "And",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "or",
+          "as_written": "Or",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "xor",
+          "as_written": "Exclusive or",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation_choose_trigger",
+          "as_written": "Add trigger",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "add_short",
+          "as_written": "ADD",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "action",
+          "as_written": "Action",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "save",
+          "as_written": "Save",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "notification",
+          "as_written": "Notification",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "When rules are checked",
+      "anchor": "when-rules-are-checked",
+      "source_hash": "739d7dedc725bc5f",
+      "summary": "When AAPS evaluates the rules: on every new glucose reading and on charging, network, location and Bluetooth events.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Safety limits",
+      "anchor": "safety-limits",
+      "source_hash": "7a57b1ea3cc130d8",
+      "summary": "The limits Automation enforces on temp targets, profile percentage and how often a rule runs.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "profilepercentage",
+          "as_written": "Profile Percentage",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Correct use of negative values",
+      "anchor": "correct-use-of-negative-values",
+      "source_hash": "d383899171acb8e3",
+      "summary": "How the comparison operators behave with negative values in a condition.",
+      "dialogs": [
+        "Manage > Automation > Edit rule > Condition"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "islesser",
+          "as_written": "is lesser than",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "isequalorlesser",
+          "as_written": "is equal or lesser than",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "isgreater",
+          "as_written": "is greater than",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Automation Triggers",
+      "anchor": "automations-automation-triggers",
+      "source_hash": "d70eff31b4dce699",
+      "summary": "The triggers you can add to a rule: connectors, time and recurring time, location and its service setting, and pump and sensor ages and levels.",
+      "dialogs": [
+        "Manage > Automation > Edit rule > Add trigger",
+        "Preferences > Automation"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "and",
+          "as_written": "And",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "or",
+          "as_written": "Or",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "xor",
+          "as_written": "Exclusive or",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "recurringTime",
+          "as_written": "recurring time",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "location",
+          "as_written": "location",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_automation_location",
+          "as_written": "location service",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "automation_location_passive",
+          "as_written": "Use passive location",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "automation_location_network",
+          "as_written": "Use network location",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "automation_location_gps",
+          "as_written": "Use GPS location",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerCannulaAgeLabel",
+          "as_written": "Cannula age",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerInsulinAgeLabel",
+          "as_written": "Insulin age",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerSensorAgeLabel",
+          "as_written": "Sensor age",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerPodChangeLabel",
+          "as_written": "Pod Activation",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerReservoirLevelLabel",
+          "as_written": "Reservoir level",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerPumpBatteryLevelLabel",
+          "as_written": "Pump battery level",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "isnotavailable",
+          "as_written": "NOT\\_AVAILABLE",
+          "confidence": 0.4
+        }
+      ]
+    },
+    {
+      "heading": "Action",
+      "anchor": "automations-automation-action",
+      "source_hash": "daadb6b058e0b841",
+      "summary": "The actions you can add: start or stop a temp target, profile percentage, change smoothing and a careportal entry, with their limits and automatic preconditions.",
+      "dialogs": [
+        "Manage > Automation > Edit rule > Add action"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "starttemptarget",
+          "as_written": "start Temp Target",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "stoptemptarget",
+          "as_written": "stop Temp Target",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "preconditions",
+          "as_written": "Preconditions",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "notemptarget",
+          "as_written": "Temp target not exists",
+          "confidence": 0.5
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "profilepercentage",
+          "as_written": "Profile Percentage",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "change_smoothing",
+          "as_written": "Change smoothing",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "precondition_smoothing_not_active",
+          "as_written": "Smoothing … is not active",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerSensorAgeLabel",
+          "as_written": "Sensor age",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/smoothing/src/androidMain/res/values/strings.xml",
+          "key": "avg_smoothing_name",
+          "as_written": "Average smoothing",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/smoothing/src/androidMain/res/values/strings.xml",
+          "key": "no_smoothing_name",
+          "as_written": "No smoothing",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal",
+          "as_written": "Careportal",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_note",
+          "as_written": "Note",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_exercise",
+          "as_written": "Exercise",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_question",
+          "as_written": "Question",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_announcement",
+          "as_written": "Announcement",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_pump_site_change",
+          "as_written": "Pump Site Change",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerInsulinAgeLabel",
+          "as_written": "Insulin age",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerCannulaAgeLabel",
+          "as_written": "Cannula age",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "The order of the **Automations** in the list matters",
+      "anchor": "Automations-the-order-of-the-automations-in-the-list-matters",
+      "source_hash": "c6f4e11a8176cc60",
+      "summary": "Rules run from the top of the list; drag the handle to reorder them.",
+      "dialogs": [
+        "Manage > Automation"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "How to delete Automation rules",
+      "anchor": "how-to-delete-automation-rules",
+      "source_hash": "8c318836d81f130e",
+      "summary": "Deleting a rule with its trash icon.",
+      "dialogs": [
+        "Manage > Automation"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Examples of Automations",
+      "anchor": "examples-of-automations",
+      "source_hash": "a1985799feb1980f",
+      "summary": "Introduces the example rules below.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Low Glucose Temp Target",
+      "anchor": "automations-low-glucose-temp-target",
+      "source_hash": "203fecf9c06e4816",
+      "summary": "Example rule: start a higher temp target when glucose falls below a threshold.",
+      "dialogs": [
+        "Manage > Automation > Edit rule"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Lunch Time Temp Target (with ‘Location’)",
+      "anchor": "lunch-time-temp-target-with-location",
+      "source_hash": "4f74dc3e439f8615",
+      "summary": "Example rule combining time and a location trigger (picked on a map) to set an eating-soon temp target before lunch.",
+      "dialogs": [
+        "Manage > Automation > Edit rule",
+        "Manage > Automation > Edit rule > Add trigger > Location"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "eatingsoon",
+          "as_written": "Eating Soon",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "pick_from_map",
+          "as_written": "Pick from map",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "and",
+          "as_written": "And",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Wi-Fi SSID Location Automation",
+      "anchor": "wi-fi-ssid-location-automation",
+      "source_hash": "ce98e2b65c696431",
+      "summary": "Example rule combining recurring time and a Wi-Fi SSID trigger to set a temp target on weekday mornings at home.",
+      "dialogs": [
+        "Manage > Automation > Edit rule"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "recurringTime",
+          "as_written": "Recurring time",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Automating Preference Settings Export",
+      "anchor": "automating-preference-settings-export",
+      "source_hash": "f7cfdebfe181222f",
+      "summary": "Heading for rules that export the settings automatically.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Unattended Exports: scheduled (daily)",
+      "anchor": "unattended-exports-scheduled-daily",
+      "source_hash": "09eef2be4f87faa0",
+      "summary": "Example rule exporting settings every weekday morning with the Settings Export action.",
+      "dialogs": [
+        "Manage > Automation > Edit rule"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "recurringTime",
+          "as_written": "Recurring time",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settingsexport",
+          "as_written": "Settings Export",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "export_settings_short",
+          "as_written": "Text in treatments",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal",
+          "as_written": "Careportal",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Unattended Exports: Pod Activation (patch pump only)",
+      "anchor": "unattended-exports-pod-activation-patch-pump-only",
+      "source_hash": "8bb0d4a27eaa680e",
+      "summary": "Example rule exporting settings on each pod activation; needs one manual export first.",
+      "dialogs": [
+        "Manage > Automation > Edit rule",
+        "Preferences > Maintenance"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerPodChangeLabel",
+          "as_written": "Pod Activation",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settingsexport",
+          "as_written": "Settings Export",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "export_settings_short",
+          "as_written": "Text in treatments",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search_category_preferences",
+          "as_written": "Preferences",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "maintenance",
+          "as_written": "Maintenance",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Automation Logs",
+      "anchor": "automation-logs",
+      "source_hash": "531bc9b65c16f2df",
+      "summary": "Reading the log of recent Automation events below the rules to check that a rule triggered.",
+      "dialogs": [
+        "Manage > Automation"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Troubleshooting",
+      "anchor": "automations-troubleshooting",
+      "source_hash": "ed597b788e226bf3",
+      "summary": "Fixes for rules that do not trigger, trigger in the wrong order, or contain an unknown trigger.",
+      "dialogs": [
+        "Manage > Automation"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerUnknownDesc",
+          "as_written": "Unknown trigger … - never true",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Alternatives to Automations",
+      "anchor": "alternatives-to-automations",
+      "source_hash": "a679a5854dcc515c",
+      "summary": "Other ways to automate tasks: IFTTT and the Automate app; no app labels.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "The page writes the precondition as \"Temp target not exists\"; the app says \"Temp Target does not exist\" (notemptarget). \"Wi-Fi SSID\" and \"Battery age\" triggers have no exact label in the automation strings (the app has \"WiFi SSID %1$s %2$s\" and \"Pump battery age\")."
+}
