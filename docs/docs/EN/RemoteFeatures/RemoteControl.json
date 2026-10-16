@@ -1,0 +1,346 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/RemoteFeatures/RemoteControl.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Overview of the ways to control AAPS remotely: SMS commands, AAPSClient (installation, Nightscout synchronization, pairing), the Nightscout app, and smartwatches. The reader sets up NSClientV3 on both phones and pairs AAPSClient with AAPS.",
+  "features": [
+    "Remote control",
+    "AAPSClient",
+    "NSClientV3",
+    "Nightscout",
+    "Wear OS"
+  ],
+  "screens": [
+    {
+      "ui_location": "Configuration > Communication > NSClientV3",
+      "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+      "key": "ns_client_v3_title"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Remote control of AAPS",
+      "anchor": "remote-control-of-aaps",
+      "source_hash": "dd91efc32da49fc8",
+      "summary": "Lists the four ways to manage AAPS remotely: SMS commands, AAPSClient, Nightscout and smartwatches.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "1) SMS Commands",
+      "anchor": "RemoteControl_SMS-Commands",
+      "source_hash": "447c498b4554e535",
+      "summary": "Points to the SMS Commands page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "2) AAPSClient",
+      "anchor": "RemoteControl_aapsclient",
+      "source_hash": "e530659e1834cc00",
+      "summary": "Introduces AAPSClient, which offers a caregiver the same screens as AAPS to send commands remotely.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "About AAPSClient, AAPSClient2 and AAPSClient3",
+      "anchor": "remotecontrol-aapsclient-versions",
+      "source_hash": "bec54f50f522eb5d",
+      "summary": "The three client apps can be installed side by side to follow up to three people; each is paired on its own and has its own color.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Download and installation",
+      "anchor": "download-and-installation",
+      "source_hash": "42ba32a2be0f69d0",
+      "summary": "How to download the AAPSClient apk from GitHub and move it to the follower phone, or build it yourself (aapsclientRelease variant) when the phone also runs AAPS. All client apps must be signed with the same key.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Synchronization: AAPSClient and AAPS set up",
+      "anchor": "synchronization-aapsclient-and-aaps-set-up",
+      "source_hash": "d580338d3c542dfc",
+      "summary": "On both phones the reader enables NSClientV3 under Configuration > Communication and enters the same Nightscout URL and access token with websockets on, then checks both show connected.",
+      "dialogs": [
+        "Configuration > Communication > NSClientV3",
+        "NSClientV3 > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_v3_title",
+          "as_written": "NSClientV3",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_url_title",
+          "as_written": "Nightscout URL",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "nsclient_token_title",
+          "as_written": "Nightscout access token",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_use_ws",
+          "as_written": "Use websockets",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Pairing AAPSClient with AAPS (remote control)",
+      "anchor": "pairing-aapsclient-with-aaps-remote-control",
+      "source_hash": "3f388f128aad92a4",
+      "summary": "Short pairing steps: on the AAPS phone, Manage > Authorized clients, turn on Allow client control and add the follower to get a PIN; on AAPSClient, Manage > Pair with master, enter the PIN and tap Pair. Then test with a carbs entry.",
+      "dialogs": [
+        "Manage > Authorized clients",
+        "Manage > Pair with master",
+        "Treatments"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_management",
+          "as_written": "Profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pair_with_master_manage_label",
+          "as_written": "Pair with master",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_manage_label",
+          "as_written": "Authorized clients",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_comm_switch_title",
+          "as_written": "Allow client control",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "pair_with_master_pin_entry_submit",
+          "as_written": "Pair",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_state_active",
+          "as_written": "Active",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments",
+          "as_written": "Treatments",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scenes",
+          "as_written": "Scenes",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Troubleshooting 'Nightscout access token' configuration issues",
+      "anchor": "remotecontrol-nightscout-access-token",
+      "source_hash": "def0891b79d748f1",
+      "summary": "What to do when AAPS does not accept the Nightscout access token, depending on the Nightscout hosting.",
+      "dialogs": [
+        "NSClientV3 > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "nsclient_token_title",
+          "as_written": "Nightscout access token",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "What AAPSClient offers",
+      "anchor": "what-aapsclient-offers",
+      "source_hash": "d02be6ca6815a02d",
+      "summary": "Lists what a paired AAPSClient offers under Treatments, Scenes, Manage and the main menu, and how commands are signed and executed by the AAPS phone. Treatments entered elsewhere in Nightscout need the matching Receive options.",
+      "dialogs": [
+        "Treatments",
+        "Scenes",
+        "Manage",
+        "NSClient preferences > Synchronization"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments",
+          "as_written": "Treatments",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scenes",
+          "as_written": "Scenes",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_sync_options",
+          "as_written": "Synchronization",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "AAPSClient with smartwatch options",
+      "anchor": "aapsclient-with-smartwatch-options",
+      "source_hash": "893aeb6fce42b63f",
+      "summary": "The AAPSClient Wear OS app on a caregiver's watch shows BG and loop status and, once paired, relays actions to AAPS.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "3) Nightscout",
+      "anchor": "RemoteControl_nightscout",
+      "source_hash": "21e4b9defd88d6a7",
+      "summary": "Sets up the iPhone Nightscout app and explains its display, menus and status tabs. All labels here are the Nightscout app's, not AAPS's.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Sending treatments through the Nightscout app to AAPS",
+      "anchor": "sending-treatments-through-the-nightscout-app-to-aaps",
+      "source_hash": "55aa70c845e2c785",
+      "summary": "On the AAPS phone, the reader opens the NSClient preferences' synchronization options to receive treatments and profiles from Nightscout, and uses Full synchronization if data is missing. Nightscout cannot send boluses.",
+      "dialogs": [
+        "NSClient > Preferences > Synchronization"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "full_sync",
+          "as_written": "full synchronisation",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Cancelling negative insulin to avoid repeat hypos",
+      "anchor": "cancelling-negative-insulin-to-avoid-repeat-hypos",
+      "source_hash": "37b49e50fe5e1f53",
+      "summary": "Announcing a correction bolus in Nightscout (not delivered) makes AAPS less aggressive and can prevent repeat lows.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Nightscout command table",
+      "anchor": "nightscout-command-table",
+      "source_hash": "f8f445ee7039bb15",
+      "summary": "Table of Nightscout careportal treatments and when each is useful. The names are Nightscout's treatment types.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Tips for getting the most out of the Nightscout app",
+      "anchor": "tips-for-getting-the-most-out-of-the-nightscout-app",
+      "source_hash": "9d764cc3054baed9",
+      "summary": "Tips for navigating the Nightscout app and reading profile, basal and OpenAPS information.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Other icons in the menu: what does the pencil (edit) mean?",
+      "anchor": "other-icons-in-the-menu-what-does-the-pencil-edit-mean",
+      "source_hash": "b47e53d02647434e",
+      "summary": "The Nightscout edit pencil can move or delete recent treatments, but changes should be made in AAPS instead.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "4) Smartwatches",
+      "anchor": "remotecontrol-smartwatches",
+      "source_hash": "6cdc6bdf80e39652",
+      "summary": "Heading for the smartwatch options.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Option 1) Controlling AAPS from a Wear OS Watch",
+      "anchor": "option-1-controlling-aaps-from-a-wear-os-watch",
+      "source_hash": "35391d57a403d13e",
+      "summary": "Lists what can be done from the AAPS Wear OS watch app, including remote bolus when both devices are online.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Communication from caregivers to the watch using other apps (like WhatsApp)",
+      "anchor": "communication-from-caregivers-to-the-watch-using-other-apps-like-whatsapp",
+      "source_hash": "4c5595bb3114f143",
+      "summary": "Setting up messaging apps such as WhatsApp on a Samsung watch for caregiver messages.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Option 2) **AAPS** on watch, for remote control of **AAPS** on a phone",
+      "anchor": "option-2-aaps-on-watch-for-remote-control-of-aaps-on-a-phone",
+      "source_hash": "54f6e8ab164e3801",
+      "summary": "A watch running the AAPS Wear app controls the AAPS phone over Bluetooth or network without an authenticator code; lists watch requirements.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Option 3) AAPSClient on a watch for remote control of **AAPS** on a phone",
+      "anchor": "option-3-aapsclient-on-a-watch-for-remote-control-of-aaps-on-a-phone",
+      "source_hash": "346d270642713d75",
+      "summary": "Downloading the AAPSClient Wear apk matching the client app and side-loading it onto the watch.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "The Nightscout sections (settings, careportal, command table: Correction bolus, Temporary Target, Profile switch, BG check, Meal bolus, ...) name Nightscout's own labels. AAPS has similar careportal strings, but they were not recorded as mentions; translate them as the Nightscout app does."
+}

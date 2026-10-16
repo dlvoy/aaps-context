@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/RemoteFeatures/FollowingOnly.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Overview of third-party apps and devices that let others follow AAPS glucose and treatment data without controlling AAPS: Dexcom Follow, Nightguard, Nightwatch, xDrip, xDrip4iOS, Sugarmate, Spike, and glucose display devices. Labels on this page belong to those apps, not to AAPS.",
+  "features": [
+    "Following",
+    "Nightscout",
+    "xDrip"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Following AAPS (no interaction with the AAPS system)",
+      "anchor": "following-aaps-no-interaction-with-the-aaps-system",
+      "source_hash": "2c8ea2545b3cdbcf",
+      "summary": "Introduces third-party apps and devices that only display AAPS data, without controlling AAPS.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Smartphone apps",
+      "anchor": "smartphone-apps",
+      "source_hash": "0d99271575337add",
+      "summary": "Heading for the smartphone follower apps below; all are free.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Dexcom Follow ([Android](https://play.google.com/store/apps/details?id=com.dexcom.follow.region2.mgdl) and [iOS](https://apps.apple.com/fr/app/dexcom-follow-mg-dl-dxcm2/id1032203080))",
+      "anchor": "dexcom-follow-android-https-play-google-com-store-apps-details-id-com-dexcom-follow-region2-mgdl-and-ios-https-apps-apple-com-fr-app-dexcom-follow-mg-dl-dxcm2-id1032203080",
+      "source_hash": "40fe3d1205d35781",
+      "summary": "Pros of the Dexcom Follow app for caregivers who want a simple display and alerts.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Setting up Dexcom Follow: how-to-guide",
+      "anchor": "setting-up-dexcom-follow-how-to-guide",
+      "source_hash": "ba4911f9d5036187",
+      "summary": "Steps to invite Dexcom followers through the official Dexcom app, since third-party apps can no longer send invites. All labels are Dexcom's.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "[Nightguard](https://apps.apple.com/fr/app/nightguard/id1116430352) (iOS)",
+      "anchor": "nightguard-https-apps-apple-com-fr-app-nightguard-id1116430352-ios",
+      "source_hash": "d3c8c1de938b3b90",
+      "summary": "Pros and cons, as reported by users, of the Nightguard iOS follower app.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "[Nightwatch](https://play.google.com/store/apps/details?id=se.cornixit.nightwatch) (Android)",
+      "anchor": "nightwatch-https-play-google-com-store-apps-details-id-se-cornixit-nightwatch-android",
+      "source_hash": "724dad1ffef2fadc",
+      "summary": "Features of the Nightwatch Android app, which follows Nightscout glucose data.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "xDrip (Android)",
+      "anchor": "xdrip-android",
+      "source_hash": "89fb27e65b27b53f",
+      "summary": "Introduces xDrip as a follower app.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "With Nightscout",
+      "anchor": "with-nightscout",
+      "source_hash": "c8dade9a9909451c",
+      "summary": "xDrip set as a Nightscout follower receives BG and treatments, not basal.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Without Nightscout - xDrip BG data source",
+      "anchor": "without-nightscout-xdrip-bg-data-source",
+      "source_hash": "f67bcc683e6c6bda",
+      "summary": "Sharing data to xDrip followers from the master phone when xDrip is the AAPS BG source.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Without Nightscout - xDrip BG companion app",
+      "anchor": "without-nightscout-xdrip-bg-companion-app",
+      "source_hash": "50736c34d01a258a",
+      "summary": "Sharing data to xDrip followers when AAPS uses another BG source that xDrip can read as a companion app.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "xDrip4iOS (iOS)",
+      "anchor": "xdrip4ios-ios",
+      "source_hash": "a99cc7d12ab2d203",
+      "summary": "What xDrip4iOS is, how to get it, and how it relates to the Shuggah copy.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "[Sugarmate](https://apps.apple.com/fr/app/sugarmate/id1111093108) (iOS)",
+      "anchor": "sugarmate-https-apps-apple-com-fr-app-sugarmate-id1111093108-ios",
+      "source_hash": "77f9656f0f22521b",
+      "summary": "Sugarmate on iPhone and iPad, and reported Apple CarPlay use in the USA.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "[Spike](https://spike-app.com/) (iOS)",
+      "anchor": "spike-https-spike-app-com-ios",
+      "source_hash": "0af081d46e5be3b8",
+      "summary": "Spike, an unmaintained iOS receiver and follower app.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Smartwatches for **Monitoring of AAPS** (full profile data, or glucose-only) where **AAPS** is running on a phone.",
+      "anchor": "smartwatches-for-monitoring-of-aaps-full-profile-data-or-glucose-only-where-aaps-is-running-on-a-phone",
+      "source_hash": "887ccd8b2b34ed11",
+      "summary": "Points to the watches page for monitoring AAPS on a smartwatch.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Devices for following AAPS",
+      "anchor": "devices-for-following-aaps",
+      "source_hash": "7e6d867bb48ead95",
+      "summary": "Heading for dedicated hardware that displays glucose data.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "M5 stack",
+      "anchor": "m5-stack",
+      "source_hash": "25af8159c61128bb",
+      "summary": "The M5Stack box running NightscoutMon to show glucose, IOB and COB.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Sugarpixel",
+      "anchor": "sugarpixel",
+      "source_hash": "0da7456adcf34b22",
+      "summary": "SugarPixel, a bedside glucose display with loud alerts and several display faces.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Nightscout Clock on Ulanzi TC001",
+      "anchor": "nightscout-clock-on-ulanzi-tc001",
+      "source_hash": "8b45bb9405e2cc51",
+      "summary": "Nightscout Clock software on the Ulanzi TC001 device, a cheaper display with alarms.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "PC (TeamViewer)",
+      "anchor": "pc-teamviewer",
+      "source_hash": "bc90ab21a0be45a8",
+      "summary": "Remote access tools such as TeamViewer for advanced troubleshooting.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

@@ -1,0 +1,349 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/RemoteFeatures/AapsClient.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Describes AAPSClient, the follower app for a caregiver's phone: what it contains, its three versions, its shorter Setup Wizard, pairing with the master, the home screen, the Manage sheet before and after pairing, and synced settings. Actions on the client are executed by the master AAPS phone.",
+  "features": [
+    "AAPSClient",
+    "Remote control",
+    "Pairing",
+    "Setup Wizard"
+  ],
+  "screens": [
+    {
+      "ui_location": "Manage > Pair with master",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "pair_with_master_manage_label"
+    },
+    {
+      "ui_location": "Setup Wizard",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "nav_setupwizard"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The AAPSClient app",
+      "anchor": "aapsclient-app",
+      "source_hash": "b9bb34606483253d",
+      "summary": "Introduces AAPSClient, the companion app for a caregiver's phone that follows AAPS and, from version 4, controls it through signed commands over Nightscout. Defines client and master; the iPhone version is not released.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What AAPSClient is (and is not)",
+      "anchor": "what-aapsclient-is-and-is-not",
+      "source_hash": "f774de28881b8bd5",
+      "summary": "Lists what AAPSClient leaves out (APS algorithm, objectives, pump drivers, some plugins) and what it includes; every action is executed by the master.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "objectives",
+          "as_written": "Objectives",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator",
+          "as_written": "SMS Communicator",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "tidepool",
+          "as_written": "Tidepool",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+          "key": "open_humans",
+          "as_written": "Open Humans",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_v3_title",
+          "as_written": "NSClientV3",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "xdrip",
+          "as_written": "xDrip+",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "garmin",
+          "as_written": "Garmin",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Versions: AAPSClient, AAPSClient2 and AAPSClient3",
+      "anchor": "versions-aapsclient-aapsclient2-and-aapsclient3",
+      "source_hash": "0d903319b0cbf2fa",
+      "summary": "Up to three client apps can follow three different people from one phone; they differ only by name and color.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Getting the app",
+      "anchor": "getting-the-app",
+      "source_hash": "8ada174d2e414c90",
+      "summary": "Points to where AAPSClient is downloaded and installed.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "First start: a shorter Setup Wizard",
+      "anchor": "first-start-a-shorter-setup-wizard",
+      "source_hash": "614e4d3411e84496",
+      "summary": "Walks through the client's shorter Setup Wizard: welcome, license, permissions and master password, then Communication with NSClientV3, the client-only Pair with master step, and the name of the person using the phone. Units and low/high marks come from the master.",
+      "dialogs": [
+        "Setup Wizard",
+        "Setup Wizard > Communication",
+        "Setup Wizard > Pair with master",
+        "Manage > Pair with master",
+        "Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_setupwizard",
+          "as_written": "Setup Wizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "welcome",
+          "as_written": "Welcome",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "end_user_license_agreement",
+          "as_written": "license agreement",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "setupwizard_permissions",
+          "as_written": "permissions",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_master_password",
+          "as_written": "master password",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_v3_title",
+          "as_written": "NSClientV3",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "xdrip",
+          "as_written": "xDrip+",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wear",
+          "as_written": "Wear",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "tizen",
+          "as_written": "External Companion Apps",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "garmin",
+          "as_written": "Garmin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pair_with_master_manage_label",
+          "as_written": "Pair with master",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Pairing with the master",
+      "anchor": "aapsclient-pairing-with-the-master",
+      "source_hash": "af9dcbf4ed81a9cd",
+      "summary": "Short pairing procedure: on the master, Manage > Authorized clients gives a one-time PIN; on the client the reader enters it and taps Pair twice. The wizard then shows Paired with a master and the master lists the client as Active.",
+      "dialogs": [
+        "Manage > Pair with master",
+        "Manage > Authorized clients",
+        "Setup Wizard > Pair with master"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pair_with_master_manage_label",
+          "as_written": "Pair with master",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_manage_label",
+          "as_written": "Authorized clients",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "pair_with_master_pin_entry_submit",
+          "as_written": "Pair",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "pair_with_master_confirm_pair",
+          "as_written": "Pair",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "setupwizard_pairing_status_client_paired",
+          "as_written": "Paired with a master",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_state_active",
+          "as_written": "Active",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "The home screen",
+      "anchor": "the-home-screen",
+      "source_hash": "60f1838dc5491edd",
+      "summary": "Describes the client's home screen: BG and treatment data from Nightscout, the master's loop status and running mode, the followed pump's status card, and the bottom bar with Treatments, Scenes and Manage.",
+      "dialogs": [
+        "Home screen"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments",
+          "as_written": "Treatments",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scenes",
+          "as_written": "Scenes",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Treatments and actions",
+      "anchor": "treatments-and-actions",
+      "source_hash": "93b5c7b104efe320",
+      "summary": "Explains the Manage sheet on a client: therapy actions are hidden until paired and then relayed to the master; Profile is view-only when unpaired. Describes the red master-unreachable banner and the missing Pump entry.",
+      "dialogs": [
+        "Manage",
+        "Manage > Profile"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_management",
+          "as_written": "Profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pair_with_master_manage_label",
+          "as_written": "Pair with master",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "master_offline_banner",
+          "as_written": "Master device unreachable. Editing is disabled until the connection is restored.",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Settings synchronized with the master",
+      "anchor": "settings-synchronized-with-the-master",
+      "source_hash": "45c7274f9f2f25c5",
+      "summary": "Synced configuration and preferences carry a phone icon on the client and are disabled while the master is unreachable.",
+      "dialogs": [
+        "Configuration",
+        "Preferences"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "master_offline_banner",
+          "as_written": "Master device unreachable",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "AAPSClient on a smartwatch",
+      "anchor": "aapsclient-on-a-smartwatch",
+      "source_hash": "dfd47d78f16f45f1",
+      "summary": "A Wear OS watch paired with the client phone relays actions through the client to the master.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "The wizard step \"Who is using this phone?\" has no matching string in the app; the label may have changed."
+}

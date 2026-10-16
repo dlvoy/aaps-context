@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/RemoteFeatures/AndroidAuto.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "How to see the AAPS status notification (glucose, IOB, COB) on an Android Auto car display. The reader checks Android notification settings for AAPS and enables unknown sources through Android Auto's developer mode; nothing is configured inside AAPS.",
+  "features": [
+    "Android Auto",
+    "Notifications"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Android Auto",
+      "anchor": "android-auto",
+      "source_hash": "622d338e618d36b6",
+      "summary": "Introduces showing the AAPS status notification in Android Auto in the car.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Requirements",
+      "anchor": "requirements",
+      "source_hash": "1c54ad37211b272f",
+      "summary": "AAPS needs notification permission in Android and Android Auto must allow unknown sources.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Check that AAPS can show notifications",
+      "anchor": "check-that-aaps-can-show-notifications",
+      "source_hash": "03ce8c5f0d9c2f6f",
+      "summary": "In the phone's Android settings (not in AAPS), the reader allows AAPS notifications and the channel of the ongoing status notification, then checks the notification shows on the phone.",
+      "dialogs": [
+        "Android Settings > Apps > AAPS > Notifications"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Allow the use of \"unknown sources\" with Android Auto.",
+      "anchor": "allow-the-use-of-unknown-sources-with-android-auto",
+      "source_hash": "7289837cc6f782f5",
+      "summary": "In Android Auto (car and phone), the reader enables developer mode by tapping the version ten times, then turns on Unknown sources in the developer settings. All labels are Android Auto's own.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Show notifications in car",
+      "anchor": "show-notifications-in-car",
+      "source_hash": "cf371f69901bc20d",
+      "summary": "In the car, the reader taps the notification icon in Android Auto to see the AAPS glucose data.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Troubleshooting:",
+      "anchor": "android-auto-troubleshooting",
+      "source_hash": "89cd020d730ec7b9",
+      "summary": "If no notification appears, check the AAPS notification permission and Android Auto's unknown sources setting.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "The labels on this page (Settings, Apps, Notifications, developer settings, Unknown sources) are Android and Android Auto system labels, not AAPS strings. The page calls the notification channel \"Ongoing status\"; AAPS creates it with the untranslated id \"AndroidAPS-Ongoing\" (NotificationHolderImpl.kt), so the shown name may differ."
+}

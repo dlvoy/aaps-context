@@ -1,0 +1,513 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/RemoteFeatures/ClientMasterControl.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "How AAPS 4 lets a paired AAPSClient phone control the main AAPS phone through signed commands sent over Nightscout. The reader enables client control and creates a pairing PIN on the master, pairs the client, then triggers treatments, boluses, profile and setting changes from the client, which the master confirms and executes.",
+  "features": [
+    "AAPSClient",
+    "Remote control",
+    "Pairing",
+    "NSClientV3"
+  ],
+  "screens": [
+    {
+      "ui_location": "Manage > Authorized clients (master)",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "authorized_clients_manage_label"
+    },
+    {
+      "ui_location": "Manage > Pair with master (client)",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "pair_with_master_manage_label"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Master ↔ Client control (signed remote control)",
+      "anchor": "client-master-control",
+      "source_hash": "d44a5a34124865d1",
+      "summary": "Introduces signed remote control in AAPS 4: a paired AAPSClient phone (client) sends commands that the main AAPS phone (master) checks and runs, including boluses. Defines the words master and client.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How it works",
+      "anchor": "how-it-works",
+      "source_hash": "6d32fdffc38412c0",
+      "summary": "Explains the signed Client-Control channel over Nightscout: the client sends an intent, the master recalculates, caps and writes the confirmation, then executes once. Lists the actions a client can trigger.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Roles and prerequisites",
+      "anchor": "roles-and-prerequisites",
+      "source_hash": "ba95354bbe051a01",
+      "summary": "Lists what the master and client phones need: the full AAPS build on the master, AAPSClient on the client, NSClientV3 on the same Nightscout, and websockets on. Separates data synchronization from pairing.",
+      "dialogs": [
+        "Configuration > NSClientV3"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_v3_title",
+          "as_written": "NSClientV3",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Setting it up",
+      "anchor": "setting-it-up",
+      "source_hash": "2e9efc2248fea49b",
+      "summary": "Heading for the three setup steps below.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "1. On the master — enable control and add a client",
+      "anchor": "client_master_master_setup",
+      "source_hash": "167662eadeebda8a",
+      "summary": "On the master, the reader opens Manage > Authorized clients, turns on Allow client control, adds a client with + and a device name, and reads the one-time pairing PIN. Websockets must be on.",
+      "dialogs": [
+        "Manage > Authorized clients",
+        "Manage > Authorized clients > New client",
+        "NSClientV3 settings > Remote control"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_manage_label",
+          "as_written": "Authorized clients",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_comm_switch_title",
+          "as_written": "Allow client control",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_allow_client_control",
+          "as_written": "Allow client control",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_v3_title",
+          "as_written": "NSClientV3",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_remote_control_options",
+          "as_written": "Remote control",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_needs_websocket",
+          "as_written": "Websockets are turned off, so commands from clients cannot be received. Clients see this master as not accepting commands until you turn websockets on.",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_name_placeholder",
+          "as_written": "device name",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "2. On the client — pair with the master",
+      "anchor": "client_master_client_setup",
+      "source_hash": "36005e74a722f8ca",
+      "summary": "On the client, the reader opens Manage > Pair with master, enters the master's 8-digit PIN, taps Pair and confirms. The client then shows as Active in the master's Authorized clients list; Unpair is needed before pairing with another master.",
+      "dialogs": [
+        "Manage > Pair with master",
+        "Manage > Authorized clients"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pair_with_master_manage_label",
+          "as_written": "Pair with master",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "pair_with_master_pin_entry_submit",
+          "as_written": "Pair",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "pair_with_master_confirm_title",
+          "as_written": "Pair with this master?",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_title",
+          "as_written": "Authorized clients",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_state_active",
+          "as_written": "Active",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "pair_with_master_unpair",
+          "as_written": "Unpair",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "3. Managing clients",
+      "anchor": "3-managing-clients",
+      "source_hash": "1ddaf9208f55facf",
+      "summary": "On the master's Authorized clients screen the reader revokes one client with the trash icon, or stops all clients with Allow client control.",
+      "dialogs": [
+        "Manage > Authorized clients"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_title",
+          "as_written": "Authorized clients",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_comm_switch_title",
+          "as_written": "Allow client control",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Using remote control",
+      "anchor": "using-remote-control",
+      "source_hash": "4becea2f6233a9ed",
+      "summary": "Heading for using a paired client to control the master.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Triggering an action from the client",
+      "anchor": "triggering-an-action-from-the-client",
+      "source_hash": "99b6a3f5ae4253f7",
+      "summary": "The reader opens a treatment or management screen on the client, fills it in, and confirms; the client shows a confirmation written by the master and the reader taps OK.",
+      "dialogs": [
+        "Manage",
+        "Carbs",
+        "Insulin",
+        "Temp Target",
+        "Profile",
+        "Scenes"
+      ],
+      "mentions": [
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "carbs",
+          "as_written": "Carbs",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "overview_insulin_label",
+          "as_written": "Insulin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_management",
+          "as_written": "Profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scene_management",
+          "as_written": "Scenes",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "contacting_master",
+          "as_written": "Contacting master…",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Insulin bolus from a client",
+      "anchor": "insulin-bolus-from-a-client",
+      "source_hash": "0dc61715a979fe54",
+      "summary": "A bolus started on the client is capped and delivered by the master, and the client shows delivery progress.",
+      "dialogs": [
+        "Insulin"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "When the master is offline",
+      "anchor": "when-the-master-is-offline",
+      "source_hash": "1d498e1b9f81f7c7",
+      "summary": "When the master cannot be reached, the client blocks control actions with a message and re-enables them when the master is back.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Wear OS (watch) on a client",
+      "anchor": "clientmastercontrol-wear-os-on-a-client",
+      "source_hash": "f4a5ee997d964d02",
+      "summary": "A watch paired to a client phone relays its actions through the client to the master and shows the master's confirmation.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "contacting_master",
+          "as_written": "Contacting master",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Changing configuration and preferences",
+      "anchor": "client-master-config-prefs",
+      "source_hash": "5cb72f14d132ac85",
+      "summary": "Introduces how pairing also keeps configuration and some preferences in sync between master and clients.",
+      "dialogs": [
+        "Configuration",
+        "Preferences"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "configuration",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Configuration (which plugins are active)",
+      "anchor": "configuration-which-plugins-are-active",
+      "source_hash": "99929ac2a6f5e1f8",
+      "summary": "Active plugins are chosen on the master and mirrored to clients; on a client the Configuration screen marks synced categories with a mobile icon. The Nightscout URL and token stay per device.",
+      "dialogs": [
+        "Configuration"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_smoothing",
+          "as_written": "Smoothing",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_calibration",
+          "as_written": "Calibration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sensitivity",
+          "as_written": "Sensitivity detection",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_aps",
+          "as_written": "APS",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Profiles",
+      "anchor": "profiles",
+      "source_hash": "8c729fee82608563",
+      "summary": "On a paired client, Manage > Profile shows the master's profiles and lets the reader edit or activate one; the change runs on the master. First activation may ask to select the insulin, shown on the master under Manage > Insulin settings. An unpaired client shows profiles read-only.",
+      "dialogs": [
+        "Manage > Profile",
+        "Manage > Insulin settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_management",
+          "as_written": "Profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_management",
+          "as_written": "Insulin settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_switch_select_insulin_hint",
+          "as_written": "No insulin is in use yet",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Preferences",
+      "anchor": "preferences",
+      "source_hash": "540bd408457c859a",
+      "summary": "Some preferences are synced both ways between master and paired clients, marked with a mobile icon in the settings; the newest edit wins and the master must be online.",
+      "dialogs": [
+        "Preferences"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_absorption_cutoff",
+          "as_written": "Absorption cutoff",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Security notes",
+      "anchor": "security-notes",
+      "source_hash": "c938a32cd02db0c1",
+      "summary": "How the pairing secret, signatures, replay counter and command expiry protect the channel; after restoring a client backup, unpair and pair again.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_comm_switch_title",
+          "as_written": "Allow client control",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Troubleshooting",
+      "anchor": "client-master-control-troubleshooting",
+      "source_hash": "fd7ab263bfd8c219",
+      "summary": "Table of symptoms and checks: master offline, client not paired, rejected or slow commands, pairing secret storage errors, and nothing happening after pairing.",
+      "dialogs": [
+        "Manage > Pair with master",
+        "Manage > Authorized clients",
+        "Configuration > NSClientV3"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "clientcontrol_fail_not_reachable",
+          "as_written": "master is offline",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_v3_title",
+          "as_written": "NSClientV3",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pair_with_master_manage_label",
+          "as_written": "Pair with master",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_state_active",
+          "as_written": "Active",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_title",
+          "as_written": "Authorized clients",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "pair_with_master_error_secret_store",
+          "as_written": "The pairing secret could not be stored",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_comm_switch_title",
+          "as_written": "Allow client control",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": null
+}

@@ -1,0 +1,521 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/RemoteFeatures/SMSCommands.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "How to set up and use SMS commands to control AAPS from a caregiver's phone. The reader enables the SMS Communicator plugin, enters allowed phone numbers and a PIN, provisions an authenticator app, then sends text commands for BG, loop, basal, bolus, profile and targets. Command words stay in English; quoted replies are app strings.",
+  "features": [
+    "SMS Communicator",
+    "Remote control"
+  ],
+  "screens": [
+    {
+      "ui_location": "Configuration > General > SMS Communicator",
+      "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+      "key": "smscommunicator"
+    },
+    {
+      "ui_location": "SMS Communicator > Authenticator setup",
+      "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+      "key": "smscommunicator_tab_otp_label"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "SMS Commands",
+      "anchor": "sms-commands",
+      "source_hash": "9299ab380dfdff2b",
+      "summary": "Lists when SMS commands are useful: routine remote control, remote boluses, poor internet coverage, and as a fallback.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Safety First",
+      "anchor": "safety-first",
+      "source_hash": "79956c4186e0cac9",
+      "summary": "Safety advice for the SMS Communicator: lock the caregiver phone, add a second phone number, the 15-minute minimum between remote boluses, entering carbs separately, and how to revoke access.",
+      "dialogs": [
+        "SMS Communicator"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator",
+          "as_written": "SMS Communicator",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_remote_bolus_not_allowed",
+          "as_written": "Remote bolus not available. Try again later",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_otp_reset_btn",
+          "as_written": "Reset Authenticators",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Setup SMS commands",
+      "anchor": "setup-sms-commands",
+      "source_hash": "fa25514ca83b79d4",
+      "summary": "Heading for the setup steps below.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Authenticator setup",
+      "anchor": "sms-commands-authenticator-setup",
+      "source_hash": "fa95ea80d75f595a",
+      "summary": "The reader installs an authenticator app that supports RFC 6238 TOTP on the caregiver phone.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Check phone settings",
+      "anchor": "check-phone-settings",
+      "source_hash": "092855ce2b2317d1",
+      "summary": "In the phone's Android settings, the reader allows the SMS and Phone permissions for AAPS, using Allow restricted settings if Android blocks SMS. These are Android labels.",
+      "dialogs": [
+        "Android Settings > Apps > AAPS > Permissions"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Date and time syncing",
+      "anchor": "date-and-time-syncing",
+      "source_hash": "8f320c398b78443e",
+      "summary": "Both phones must set date and time automatically from the network, in the phones' own system settings.",
+      "dialogs": [
+        "Android Settings > Date and time"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "AAPS settings",
+      "anchor": "aaps-settings",
+      "source_hash": "69251f86d8e14e8b",
+      "summary": "The reader enables the SMS Communicator plugin under Configuration > General, opens its settings and turns on Allow remote commands via SMS, which reveals the PIN and authenticator options.",
+      "dialogs": [
+        "Configuration > General > SMS Communicator",
+        "SMS Communicator > Preferences"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_general",
+          "as_written": "General",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator",
+          "as_written": "SMS Communicator",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_sms_allow_remote_commands",
+          "as_written": "Allow remote commands via SMS",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_otp_pin",
+          "as_written": "Additional mandatory PIN at token end",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_tab_otp_label",
+          "as_written": "Authenticator setup",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Allowed phone numbers",
+      "anchor": "SMSCommands-authorized-phone-numbers",
+      "source_hash": "a315387380ae14f0",
+      "summary": "The reader enters the caregiver phone numbers with country code, separated by semicolons without spaces.",
+      "dialogs": [
+        "SMS Communicator > Preferences > Allowed phone numbers"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_allowednumbers",
+          "as_written": "Allowed phone numbers",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator",
+          "as_written": "SMS Communicator",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Remote bolus min distance",
+      "anchor": "remote-bolus-min-distance",
+      "source_hash": "b87e86d061b34960",
+      "summary": "Minimum minutes between SMS boluses; editable only with at least two phone numbers.",
+      "dialogs": [
+        "SMS Communicator > Preferences > Remote bolus min distance"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_sms_remote_bolus_distance",
+          "as_written": "Remote bolus min distance",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Additional mandatory PIN at token end",
+      "anchor": "additional-mandatory-pin-at-token-end",
+      "source_hash": "ca54db3f41210bbd",
+      "summary": "The reader chooses a 3–6 digit PIN that caregivers add after the authenticator code.",
+      "dialogs": [
+        "SMS Communicator > Preferences"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_otp_pin",
+          "as_written": "Additional mandatory PIN at token end",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Authenticator setup",
+      "anchor": "authenticator-setup",
+      "source_hash": "ff9b94f97df438ba",
+      "summary": "On the Authenticator setup screen the reader scans the QR code with the caregiver's authenticator app, then tests the code plus PIN; the red WRONG PIN turns to a green OK. Reset Authenticators invalidates all caregiver phones.",
+      "dialogs": [
+        "SMS Communicator > Preferences > Authenticator setup"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_tab_otp_label",
+          "as_written": "Authenticator setup",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_otp_step2_provisioning_header",
+          "as_written": "Scan code to setup AAPS OTP codes",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_otp_step3_test_header",
+          "as_written": "Test One-Time-Password",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_code_verify_label",
+          "as_written": "Code to check",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_otp_verification_wrong_pin",
+          "as_written": "WRONG PIN",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_otp_verification_ok",
+          "as_written": "OK",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_otp_reset_btn",
+          "as_written": "Reset Authenticators",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "SMS commands usage",
+      "anchor": "sms-commands-usage",
+      "source_hash": "e3e6e7c8b8cec5c2",
+      "summary": "Heading for using SMS commands.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "First steps using SMS commands",
+      "anchor": "first-steps-using-sms-commands",
+      "source_hash": "f11c9bf86dc96ea1",
+      "summary": "The reader tests the setup with a bg SMS, then a command that needs the authenticator code plus PIN, and reads the confirmation reply.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Delivering mealtime boluses through SMS commands",
+      "anchor": "delivering-mealtime-boluses-through-sms-commands",
+      "source_hash": "5d603e7be3a121ea",
+      "summary": "Insulin and carbs must be sent as separate SMS commands, and the order matters with SMB enabled.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Commands",
+      "anchor": "SMSCommands-commands",
+      "source_hash": "44d8a103a4336d5e",
+      "summary": "Commands are typed in English and are not case-sensitive; replies come in the app's language.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Authentication or not?",
+      "anchor": "authentication-or-not",
+      "source_hash": "345406082cb9a419",
+      "summary": "Which commands reply directly and which need the authenticator code.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "CGM data",
+      "anchor": "cgm-data",
+      "source_hash": "20f839bf3c5c037f",
+      "summary": "SMS commands BG and CAL and their replies.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_calibration_sent",
+          "as_written": "Calibration sent",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Pump",
+      "anchor": "pump",
+      "source_hash": "18704582a7b3224c",
+      "summary": "SMS commands to show pump status and to disconnect or reconnect the pump.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_reconnect",
+          "as_written": "Pump reconnected",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Basal",
+      "anchor": "basal",
+      "source_hash": "97149ea22948138c",
+      "summary": "SMS commands to start or stop a temp basal in U/h or percent, and the reply when the pump supports only the other form.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "sms_tbr_percent_only",
+          "as_written": "This pump takes a temp basal only in percent, not in U/h.",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Loop",
+      "anchor": "loop",
+      "source_hash": "df12bb8eac97acd4",
+      "summary": "SMS commands to query, disable, suspend, resume or change the loop mode, with their replies.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "loopisdisabled",
+          "as_written": "Loop is disabled",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_loop_is_enabled",
+          "as_written": "Loop is enabled",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "sms_loop_suspended_for",
+          "as_written": "Suspended (10 min)",
+          "confidence": 0.4
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_loop_has_been_disabled",
+          "as_written": "Loop has been disabled",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_loop_suspended",
+          "as_written": "Loop suspended",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_loop_resumed",
+          "as_written": "Loop resumed",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_current_loop_mode",
+          "as_written": "Current loop mode",
+          "confidence": 0.4
+        }
+      ]
+    },
+    {
+      "heading": "Bolus",
+      "anchor": "bolus",
+      "source_hash": "2656a3d19028ddda",
+      "summary": "SMS commands for boluses, meal boluses, carbs and extended boluses, and the 15-minute bolus limit.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator_remote_bolus_not_allowed",
+          "as_written": "Remote bolus not available. Try again later.",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Profile",
+      "anchor": "profile",
+      "source_hash": "6f606e8e44c4b483",
+      "summary": "SMS commands to show the profile list and switch profile by number and percentage.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Temporary Targets",
+      "anchor": "temporary-targets",
+      "source_hash": "16e4d7e76f8735ed",
+      "summary": "SMS commands to set or cancel the meal, activity or hypo temp target.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Other",
+      "anchor": "SMSCommands-other",
+      "source_hash": "dccdbdad6028dd70",
+      "summary": "SMS commands to refresh treatments, restart AAPS or AAPSClient, stop the SMS service, and get help.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Troubleshooting and FAQ",
+      "anchor": "SMSCommands-troubleshooting",
+      "source_hash": "13f94cbeff321c2e",
+      "summary": "Heading for the troubleshooting questions.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What _can’t_ we do with SMS commands?",
+      "anchor": "what-_can-t_-we-do-with-sms-commands",
+      "source_hash": "4c04e8d6564b62b3",
+      "summary": "SMS commands cannot set a temporary profile switch, cancel automations or set custom target values; workarounds are given, such as Manage > Temp Target on the AAPS phone.",
+      "dialogs": [
+        "Manage > Temp Target"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "What happens if I change my mind about a command I have just sent?",
+      "anchor": "what-happens-if-i-change-my-mind-about-a-command-i-have-just-sent",
+      "source_hash": "1f782fc038db2808",
+      "summary": "Only the most recent command is carried out.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Why didn't I get a response to an SMS command?",
+      "anchor": "why-didn-t-i-get-a-response-to-an-sms-command",
+      "source_hash": "559364a8235012b0",
+      "summary": "Reasons for a missing reply: network, a command still running, or no pump connection.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "No response whatsoever for SMS commands",
+      "anchor": "no-response-whatsoever-for-sms-commands",
+      "source_hash": "3b646cf4ade150ea",
+      "summary": "Disable chat/RCS messaging in the phones' messaging app. These are the messaging app's labels.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Errors carrying out commands",
+      "anchor": "errors-carrying-out-commands",
+      "source_hash": "01112a454f6fe443",
+      "summary": "Common reasons a command fails, such as wrong format or an expired code.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How can I stop a command once it has been authenticated?",
+      "anchor": "how-can-i-stop-a-command-once-it-has-been-authenticated",
+      "source_hash": "201f4d8d7309dd3c",
+      "summary": "An authenticated command cannot be stopped; ways to reduce the effect of a mistaken bolus or carbs entry.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Multiple SMS",
+      "anchor": "multiple-sms",
+      "source_hash": "0febe647ba401afe",
+      "summary": "Repeated messages can come from another app uploading treatments to Nightscout in a loop.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "I am getting far too many text messages from SMS Commands. Can I reduce the frequency, or make them stop?",
+      "anchor": "sms-commands-too-many-messages",
+      "source_hash": "f553041c20643d4a",
+      "summary": "Ways to cope with many automated SMS replies, and a file that turns off the profile-change SMS for changes from Nightscout.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_set_ok",
+          "as_written": "basal profile in pump updated",
+          "confidence": 0.8
+        }
+      ]
+    }
+  ],
+  "manual_note": "SMS command words (BG, LOOP STOP, BOLUS, TARGET MEAL...) must stay in English. Some replies on the page are older wording: the app now answers \"Current running mode: ...\" (not \"Current loop mode\"), \"Suspended (10 m)\", \"Loop suspended\", and \"Calibration sent. Receiving must be enabled in xDrip+.\""
+}

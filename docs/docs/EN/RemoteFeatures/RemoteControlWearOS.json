@@ -1,0 +1,931 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/RemoteFeatures/RemoteControlWearOS.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "How to use AAPS from a Wear OS watch: enabling Wear and Wear control on the phone, the watch menu and Loop Status screen, the bolus wizard result page, watch settings, complications, tiles, always-on and night modes, and battery tips. Most labels are from the AAPS wear app on the watch.",
+  "features": [
+    "Wear OS",
+    "Watchfaces",
+    "Complications",
+    "Tiles"
+  ],
+  "screens": [
+    {
+      "ui_location": "Configuration > Communication > Wear",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "wear"
+    },
+    {
+      "ui_location": "Watch > Main menu > Settings",
+      "file": "wear/src/main/res/values/strings.xml",
+      "key": "menu_settings"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Operation of AAPS via your Wear OS smartwatch",
+      "anchor": "operation-of-aaps-via-your-wear-os-smartwatch",
+      "source_hash": "2104499e695bf95c",
+      "summary": "Page title: using AAPS from a Wear OS watch.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "AAPS Watchfaces",
+      "anchor": "Watchfaces-aaps-watchfaces",
+      "source_hash": "a00f3320a9eebd5e",
+      "summary": "The AAPS watchfaces and which Wear OS versions support them; double taps open the AAPS menu or change the graph scale.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Configuration",
+      "anchor": "configuration",
+      "source_hash": "69236ae6c4c8a3ae",
+      "summary": "On the phone, the reader enables Wear under Configuration > Communication, turns on Wear control to allow treatments from the watch, and uses the Wear screen to resend data, open watch settings and choose the watchface installed on Wear OS 6.",
+      "dialogs": [
+        "Configuration > Communication > Wear",
+        "Settings > Wear",
+        "Wear screen"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wear",
+          "as_written": "Wear",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_wear_control",
+          "as_written": "Wear control",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "wear_control_disabled",
+          "as_written": "Wear control is turned off in the Wear settings on the phone.",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_wear_pushed_watchface",
+          "as_written": "Watchface installed on watch",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Accessing main menu of AAPS",
+      "anchor": "accessing-main-menu-of-aaps",
+      "source_hash": "a7f66d47c52260d7",
+      "summary": "Ways to open the AAPS main menu on the watch.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Loop Status screen",
+      "anchor": "WearOsSmartwatch-loop-status",
+      "source_hash": "d4946450ae25c202",
+      "summary": "Describes the watch's Loop Status screen and its cards: running mode, loop result, active scene, targets, profile and sensitivity, opened from the menu or the Blood Glucose complication.",
+      "dialogs": [
+        "Watch > Main menu > Loop status",
+        "Watch > Status > Loop"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "loop_status",
+          "as_written": "Loop Status",
+          "confidence": 0.8
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "complication_blood_glucose",
+          "as_written": "Blood Glucose",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "menu_status",
+          "as_written": "Status",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "status_loop",
+          "as_written": "Loop",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "label_running_mode_title",
+          "as_written": "Running mode",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "loop_status_result",
+          "as_written": "Loop result",
+          "confidence": 0.8
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "label_scene_tile",
+          "as_written": "Scene",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "loop_status_scene_until_ended",
+          "as_written": "Until ended",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "loop_status_scene_follow_up",
+          "as_written": "Follow-up",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "loop_status_targets",
+          "as_written": "Targets",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "loop_status_profile",
+          "as_written": "Profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "loop_status_profile_percentage",
+          "as_written": "Percentage",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "loop_status_profile_timeshift",
+          "as_written": "Timeshift",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "loop_status_profile_returns_to",
+          "as_written": "Returns to",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "loop_status_sensitivity",
+          "as_written": "Sensitivity",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "loop_status_set_by_scene",
+          "as_written": "set by the active scene",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Adjusting the bolus on the wizard result page",
+      "anchor": "WearOsSmartwatch-wizard-result",
+      "source_hash": "fdc7fc5d2a71ce11",
+      "summary": "On the watch's bolus wizard result page, the reader adjusts the dose with − and + in pump steps; an amber warning shows when the dose was limited.",
+      "dialogs": [
+        "Watch > Calculator"
+      ],
+      "mentions": [
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "bolus_constraint_applied_warn",
+          "as_written": "Bolus constraint applied",
+          "confidence": 0.6
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_wizard_percentage",
+          "as_written": "Wizard Percentage",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Settings (in wear watch)",
+      "anchor": "settings-in-wear-watch",
+      "source_hash": "06c03ec90536da7c",
+      "summary": "How to open the settings on the watch; a filled star means on, a hollow star off.",
+      "dialogs": [
+        "Watch > Main menu > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "menu_settings",
+          "as_written": "Settings",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "AAPS companion parameters",
+      "anchor": "aaps-companion-parameters",
+      "source_hash": "84b54308e9e33d6b",
+      "summary": "Watch settings for vibration on bolus and the units used when setting a temp target.",
+      "dialogs": [
+        "Watch > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_vibrate_on_bolus",
+          "as_written": "Vibrate on Bolus",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Watchface settings",
+      "anchor": "Watchfaces-watchface-settings",
+      "source_hash": "921c0b0739ecef0c",
+      "summary": "Watch settings that choose which values the AAPS watchfaces show, the dark theme, basal highlighting, divider style and chart timeframe.",
+      "dialogs": [
+        "Watch > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "pref_show_date",
+          "as_written": "Show Date",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "pref_show_iob",
+          "as_written": "Show IOB",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "pref_show_cob",
+          "as_written": "Show COB",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "pref_show_delta",
+          "as_written": "Show Delta",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "pref_show_avgdelta",
+          "as_written": "Show AvgDelta",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "pref_show_phone_battery",
+          "as_written": "Show Phone Battery",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "pref_show_rig_battery",
+          "as_written": "Show Rig Battery",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "pref_show_basal_rate",
+          "as_written": "Show Basal Rate",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "pref_show_loop_status",
+          "as_written": "Show Loop Status",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "pref_show_bg",
+          "as_written": "Show BG",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "pref_show_direction_arrow",
+          "as_written": "Show Direction Arrow",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "pref_show_ago",
+          "as_written": "Show Ago",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_dark",
+          "as_written": "Dark",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_highlight_basals",
+          "as_written": "Highlight Basals",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_matching_divider",
+          "as_written": "Matching divider",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_chart_timeframe",
+          "as_written": "Chart Timeframe",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "duration_3_hours",
+          "as_written": "3 hours",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Specific watchface parameters",
+      "anchor": "specific-watchface-parameters",
+      "source_hash": "cf5fed2640111ee1",
+      "summary": "Heading for settings that apply to one watchface.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Circle WF",
+      "anchor": "circle-wf",
+      "source_hash": "51d5e57d472ca2cb",
+      "summary": "Settings specific to the Circle watchface.",
+      "dialogs": [
+        "Watch > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_big_numbers",
+          "as_written": "Big Numbers",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_ring_history",
+          "as_written": "Ring History",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_light_ring_history",
+          "as_written": "Light Ring History",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_animations",
+          "as_written": "Animations",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Commands settings",
+      "anchor": "WearOsSmartwatch-commands-settings",
+      "source_hash": "8d9d1d966ab79133",
+      "summary": "Watch settings that enable the calculator and prime in the menu, single-value temp targets, and a percentage step in the calculator.",
+      "dialogs": [
+        "Watch > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_wizard_in_menu",
+          "as_written": "Wizard in Menu",
+          "confidence": 0.6
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_prime_in_menu",
+          "as_written": "Prime in Menu",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_single_target",
+          "as_written": "Single Target",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_wizard_percentage",
+          "as_written": "Wizard Percentage",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Complications",
+      "anchor": "Watchfaces-complications",
+      "source_hash": "83e2ddbdad61b514",
+      "summary": "What complications are and how AAPS provides data and shortcuts to any watchface that supports them.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Complication Types",
+      "anchor": "complication-types",
+      "source_hash": "e200852397c2c29d",
+      "summary": "The Wear OS complication types AAPS uses and how much text each holds.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Complication Setup",
+      "anchor": "complication-setup",
+      "source_hash": "9704f3c4ab1882b6",
+      "summary": "How to add AAPS complications to a watchface from the watchface's own setup.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Complications provided by AAPS",
+      "anchor": "complications-provided-by-aaps",
+      "source_hash": "20d4627e92cd24cb",
+      "summary": "Lists each AAPS complication, what it shows and which screen a tap opens, including the Running Mode picker with its allowed mode changes.",
+      "dialogs": [
+        "Watch > Running mode"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "complication_bg_graph",
+          "as_written": "BG Graph",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "complication_br_cob_iob",
+          "as_written": "BR, CoB & IoB",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "complication_blood_glucose",
+          "as_written": "Blood Glucose",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "complication_cob_iob",
+          "as_written": "CoB & IoB",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "complication_cob_detailed",
+          "as_written": "CoB Detailed",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "complication_cob_icon",
+          "as_written": "CoB Icon",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "complication_full_status",
+          "as_written": "Full Status",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "complication_full_status_flipped",
+          "as_written": "Full Status (flipped)",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "complication_iob_detailed",
+          "as_written": "IoB Detailed",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "complication_iob_icon",
+          "as_written": "IoB Icon",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "label_running_mode_title",
+          "as_written": "Running Mode",
+          "confidence": 0.8
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "title_activity_suspend_loop",
+          "as_written": "Suspend loop",
+          "confidence": 0.8
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "title_activity_disconnect_pump",
+          "as_written": "Disconnect pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "running_mode_resume",
+          "as_written": "Resume loop",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "running_mode_reconnect",
+          "as_written": "Reconnect pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "complication_uploader_phone_battery",
+          "as_written": "Uploader/Phone Battery",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Complication related settings",
+      "anchor": "complication-related-settings",
+      "source_hash": "974043ca14473a1d",
+      "summary": "Watch settings for what a complication tap opens and whether complications use Unicode symbols.",
+      "dialogs": [
+        "Watch > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_complication_tap_action",
+          "as_written": "Complication Tap Action",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "menu_default",
+          "as_written": "Default",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "menu_menu",
+          "as_written": "Menu",
+          "confidence": 0.8
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "menu_wizard",
+          "as_written": "Wizard",
+          "confidence": 0.4
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "menu_bolus",
+          "as_written": "Bolus",
+          "confidence": 0.8
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "menu_status",
+          "as_written": "Status",
+          "confidence": 0.8
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "menu_none",
+          "as_written": "None",
+          "confidence": 0.8
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_unicode_in_complications",
+          "as_written": "Unicode in Complications",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Wear OS Tiles",
+      "anchor": "WearOsSmartwatch-wear-os-tiles",
+      "source_hash": "b9e37831c7a186ca",
+      "summary": "What Wear OS tiles are; a tile sends a request that is confirmed on the watch.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to add Tiles",
+      "anchor": "how-to-add-tiles",
+      "source_hash": "19e4d474d599b9d3",
+      "summary": "The reader turns on Wear control on the phone, then adds AAPS tiles from the watch face or the watch's companion app, and edits them by long press.",
+      "dialogs": [
+        "Settings > Wear"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_wear_control",
+          "as_written": "Wear control",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "APS(Actions) Tile",
+      "anchor": "aps-actions-tile",
+      "source_hash": "289cc2736c2e3e7a",
+      "summary": "The action tile holds up to four buttons: Calc, Insulin, Treatment, Carbs (negative amounts allowed) and TempT. The calculator percentage default comes from the phone's Overview settings.",
+      "dialogs": [
+        "Watch > Actions tile"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "menu_wizard_short",
+          "as_written": "Calc",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "action_insulin",
+          "as_written": "Insulin",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "menu_treatment",
+          "as_written": "Treatment",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "menu_carb",
+          "as_written": "Carbs",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "menu_tempt",
+          "as_written": "TempT",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_wizard_percentage",
+          "as_written": "Calculator Percentage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search_category_preferences",
+          "as_written": "Preferences",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "AAPS(Temp Target) Tile",
+      "anchor": "aaps-temp-target-tile",
+      "source_hash": "05ce533f5f5ff9c6",
+      "summary": "The temp target tile requests the phone's preset targets (Activity, Hypo, Eating soon), a manual target, or cancel; presets are set in the phone's preferences.",
+      "dialogs": [
+        "Watch > Temp Target tile",
+        "Preferences > Overview"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "temp_target_activity",
+          "as_written": "Activity",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "temp_target_hypo",
+          "as_written": "Hypo",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "temp_target_eating_soon",
+          "as_written": "Eating soon",
+          "confidence": 0.6
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "temp_target_manual",
+          "as_written": "Manual",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "temp_target_cancel",
+          "as_written": "Cancel",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "AAPS(QuickWizard)Tile",
+      "anchor": "aaps-quickwizard-tile",
+      "source_hash": "75d6da6c1079a988",
+      "summary": "The QuickWizard tile shows up to four QuickWizard buttons defined on the phone; Resend all data refreshes a stale tile.",
+      "dialogs": [
+        "Watch > QuickWizard tile",
+        "Wear screen"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "resend_all_data",
+          "as_written": "Resend all data",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Always on",
+      "anchor": "always-on",
+      "source_hash": "fc72b8dcf9ccbfac",
+      "summary": "The simplified always-on UI for the Digital Style and Custom watchfaces, set with Simplify UI in the watch face settings.",
+      "dialogs": [
+        "Watch face settings"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_simplify_ui",
+          "as_written": "Simplify UI",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "simple_ui_always_on",
+          "as_written": "Always On Mode",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "simple_ui_always_on_charging",
+          "as_written": "Always On and Charging",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Night-time mode",
+      "anchor": "night-time-mode",
+      "source_hash": "5e5b4c6049917135",
+      "summary": "Simplified UI only while charging, set with Simplify UI, and the Android developer option to stay awake when charging.",
+      "dialogs": [
+        "Watch face settings"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_simplify_ui",
+          "as_written": "Simplify UI",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "simple_ui_charging",
+          "as_written": "During Charging",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "simple_ui_always_on_charging",
+          "as_written": "Always On and Charging",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Snooze Alert shortcut",
+      "anchor": "snooze-alert-shortcut",
+      "source_hash": "93e2524efeaa56c9",
+      "summary": "Assigning a watch button to the AAPS Snooze Alert program to mute AAPS alarms; the button menu labels are Samsung's.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "snooze_alert",
+          "as_written": "AAPS Snooze Alert",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Snooze xDrip",
+      "anchor": "snooze-xdrip",
+      "source_hash": "46197e85e46d2e7f",
+      "summary": "The AAPS Snooze Alert shortcut also snoozes xDrip alarms when xDrip is on the watch.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "snooze_alert",
+          "as_written": "AAPS Snooze Alert",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Performance and battery life tips",
+      "anchor": "performance-and-battery-life-tips",
+      "source_hash": "ade4723666bad98c",
+      "summary": "Tips to extend watch battery life, such as simpler watchfaces, the Dark theme and Matching divider.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_dark",
+          "as_written": "Dark",
+          "confidence": 0.8
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_matching_divider",
+          "as_written": "Matching divider",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Troubleshooting the wear app:",
+      "anchor": "Watchfaces-troubleshooting-the-wear-app",
+      "source_hash": "cc67112d1f497413",
+      "summary": "Debugging the wear app with ADB and checking watchfaces when complications do not update.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Additional AAPS custom watchfaces are also available",
+      "anchor": "additional-aaps-custom-watchfaces-are-also-available",
+      "source_hash": "3904a2566c554ab6",
+      "summary": "Points to custom watchfaces shared by other users.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build your own watchface",
+      "anchor": "build-your-own-watchface",
+      "source_hash": "53bf6f70d7fd394c",
+      "summary": "Points to the guide for building a custom watchface and how to share it through a pull request.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "The page uses older watch setting names: \"Wizard in Menu\" and \"Wizard Percentage\" are now \"Calculator in Menu\" and \"Calculator Percentage\", the tap action \"Wizard\" is \"Calculator\", and the temp target tile's \"Eating soon\" is \"Eating\". \"Units for Actions\" has no matching string in the wear app. The Dark, Gray and Light Wallpaper complication names are hard-coded in the wear manifest, not translatable."
+}

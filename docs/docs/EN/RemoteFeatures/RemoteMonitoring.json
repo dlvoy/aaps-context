@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/RemoteFeatures/RemoteMonitoring.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Overview of how caregivers can follow and remotely control AAPS on a child's phone: the monitoring apps (Nightscout, AAPSClient, xDrip follower, Dexcom Follow, iOS apps), smartwatch options, and what to plan for when remote control fails. It links to the detailed pages and names few app labels.",
+  "features": [
+    "Remote monitoring",
+    "AAPSClient",
+    "SMS commands",
+    "Wear OS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Remote monitoring",
+      "anchor": "remote-monitoring",
+      "source_hash": "f9a4adc0ed0515da",
+      "summary": "Introduces remote monitoring of children and partners with AAPS and AAPSClient.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Functions",
+      "anchor": "functions",
+      "source_hash": "0f7e2820bc81bfcd",
+      "summary": "Lists what a caregiver setup can do: follow data in AAPSClient, get alarms from xDrip in follower mode, and send remote commands by SMS or from a paired AAPSClient.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Tools and apps for remote monitoring",
+      "anchor": "tools-and-apps-for-remote-monitoring",
+      "source_hash": "4d9a680821b275e8",
+      "summary": "Lists the apps a caregiver can use to follow AAPS and what each shows; AAPSClient comes in three copies to follow up to three people.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Smartwatch options",
+      "anchor": "smartwatch-options",
+      "source_hash": "1f3f11e9a8457a95",
+      "summary": "Two watch setups for caregivers: the AAPSClient Wear OS app paired with the caregiver's phone, or the AAPS Wear OS app connected to the child's phone.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Things to consider",
+      "anchor": "things-to-consider",
+      "source_hash": "550d55a3c5b5b95c",
+      "summary": "Warns about the delay between master and follower and asks the reader to plan for remote control failing, using time-limited profile switches.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}
