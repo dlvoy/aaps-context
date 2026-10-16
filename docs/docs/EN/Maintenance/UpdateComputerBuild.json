@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Maintenance/UpdateComputerBuild.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "How to update an AAPS app built with Android Studio: export settings, check the Android Studio and JVM versions, fetch and pull the new code with git, build the signed APK with the same keystore, and install it. Menu names (Git > Fetch, Pull) are Android Studio labels, not AAPS app strings.",
+  "features": [
+    "Updating AAPS",
+    "Building AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Update with Android Studio",
+      "anchor": "update-with-android-studio",
+      "source_hash": "bb693074cb0efe87",
+      "summary": "Page title.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build yourself instead of download",
+      "anchor": "build-yourself-instead-of-download",
+      "source_hash": "4ca9393af10f61f1",
+      "summary": "AAPS cannot be downloaded; building on a new computer needs the backed-up keystore.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Overview for updating to a new version of AAPS with Android Studio",
+      "anchor": "overview-for-updating-to-a-new-version-of-aaps-with-android-studio",
+      "source_hash": "8655f1d59f511f70",
+      "summary": "List of the update steps and a link to troubleshooting.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Export your settings",
+      "anchor": "export-your-settings",
+      "source_hash": "1aecf706b4fd4def",
+      "summary": "Exporting AAPS settings on the phone before updating.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Check your Android Studio version",
+      "anchor": "check-your-android-studio-version",
+      "source_hash": "540cfaa4774231b3",
+      "summary": "Making sure Android Studio meets the minimum version.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Update your local copy",
+      "anchor": "Update-to-new-version-update-your-local-copy",
+      "source_hash": "0fd355f238d3dff8",
+      "summary": "Fetching and pulling the latest release in Android Studio and waiting for Gradle sync.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Check JVM version",
+      "anchor": "check-jvm-version",
+      "source_hash": "fe7955c34cdbe088",
+      "summary": "Checking the Gradle JVM version required by the AAPS version being built.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build the Signed APK",
+      "anchor": "Update-to-new-version-build-the-signed-apk",
+      "source_hash": "9e944c24e0184e22",
+      "summary": "Pointer to the instructions for building the signed APK.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Transfer and install the apk",
+      "anchor": "Update-to-new-version-transfer-and-install",
+      "source_hash": "dc31cc3ba377de4e",
+      "summary": "Installing the new APK over the old app when the same keystore was used, otherwise uninstalling first after exporting settings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Troubleshooting",
+      "anchor": "update-computer-build-troubleshooting",
+      "source_hash": "f41c85568ce1ebf8",
+      "summary": "Where to look and who to ask if the update fails.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Maintenance/UpdateBrowserBuild.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "How to update an AAPS app built with the browser build: export settings, sync the GitHub fork, run the AAPS-CI workflow to build a signed APK into Google Drive, and install it. The button names (Sync fork, Update branch, Run workflow) are GitHub labels, not AAPS app strings.",
+  "features": [
+    "Updating AAPS",
+    "Building AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Update with a browser",
+      "anchor": "update-with-a-browser",
+      "source_hash": "080423e69cf8d98f",
+      "summary": "Page title, with a pointer to the AAPS Builder update guide for users of that method.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build yourself instead of download",
+      "anchor": "build-yourself-instead-of-download",
+      "source_hash": "73a1dbc5d485c6e9",
+      "summary": "AAPS cannot be downloaded; and the first browser update after an Android Studio build needs the keystore in Google Drive.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Overview for updating to a new version of AAPS with a browser",
+      "anchor": "overview-for-updating-to-a-new-version-of-aaps-with-a-browser",
+      "source_hash": "a82e1a3096dd35ee",
+      "summary": "List of the update steps and a link to troubleshooting.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Export your settings",
+      "anchor": "export-your-settings",
+      "source_hash": "1aecf706b4fd4def",
+      "summary": "Exporting AAPS settings on the phone before updating.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Update your GitHub repository",
+      "anchor": "Update-to-new-version-update-your-repo",
+      "source_hash": "11725e9e6fdc7a9e",
+      "summary": "Syncing the user's AndroidAPS fork on GitHub with Sync fork and Update branch.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Run the Workflow to Build the Signed APK",
+      "anchor": "run-the-workflow-to-build-the-signed-apk",
+      "source_hash": "893e8ad757953b95",
+      "summary": "Running the AAPS-CI GitHub Actions workflow with the version and variant to build the signed APK.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Install the AAPS APK",
+      "anchor": "install-the-aaps-apk",
+      "source_hash": "0a2b7a62080ebd9b",
+      "summary": "Finding the new APK in Google Drive and installing it, with a note on Android developer verification.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Troubleshooting",
+      "anchor": "update-browser-build-troubleshooting",
+      "source_hash": "1601da4733daccc9",
+      "summary": "Where to look and who to ask if the browser update fails.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

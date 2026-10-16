@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Maintenance/DocumentationUpdate.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "A changelog of the AAPS documentation, by month, listing which pages were added or changed and by whom. It names documentation pages, not app screens; link texts are page titles.",
+  "features": [
+    "Documentation"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Docs updates & changes",
+      "anchor": "docs-updates-changes",
+      "source_hash": "f389119e7224a897",
+      "summary": "Page title: the changelog of the documentation itself.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "October 2026",
+      "anchor": "october-2026",
+      "source_hash": "8ee0f41d5da4c3ed",
+      "summary": "Documentation changes: the AAPS Builder browser build page and its workflow versions, and removal of the patched Dexcom G7 app.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "August 2026",
+      "anchor": "august-2026",
+      "source_hash": "0482052c572f4a6b",
+      "summary": "Documentation changes: Android developer verification merged into the installation guide, with the web installer and wireless ADB.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "July 2026",
+      "anchor": "july-2026",
+      "source_hash": "662c39f7e8bb7372",
+      "summary": "Documentation changes: review of the Introduction, new glossary entries, and the new Android developer verification page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "June 2026",
+      "anchor": "june-2026",
+      "source_hash": "48de79482c1b88cb",
+      "summary": "Documentation changes: restructured browser build and Introduction terminology (OS-AID).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "March 2026",
+      "anchor": "march-2026",
+      "source_hash": "94a642cf8e869f24",
+      "summary": "Documentation changes: CLI build option added and Computer Build renamed Android Studio Build.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "January 2025",
+      "anchor": "january-2025",
+      "source_hash": "24706adaf6e17ab7",
+      "summary": "Documentation changes for the 3.4 release (site rotation, running mode, Autotune) and the CGM list. The page has a second January 2025 heading further down.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "December 2025",
+      "anchor": "december-2025",
+      "source_hash": "ce9dcb52946b8092",
+      "summary": "Documentation changes: new profile tuning page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "October 2025",
+      "anchor": "october-2025",
+      "source_hash": "c9350d46ccafe436",
+      "summary": "Documentation changes: DiaKEM and patched Libre 2 app no longer work, Omnipod Dash page reworked.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "August 2025",
+      "anchor": "august-2025",
+      "source_hash": "c99aa1b5067b4194",
+      "summary": "Documentation changes: Android Studio prerequisites, release 3.3.2.1 and the browser build.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "May 2025",
+      "anchor": "may-2025",
+      "source_hash": "5b4969c02d3fde94",
+      "summary": "Documentation changes: the 3.2.0.4 upgrade page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "January 2025",
+      "anchor": "january-2025",
+      "source_hash": "8c9241667766700b",
+      "summary": "Documentation changes: quick wizard long press and the Dynamic ISF page rewrite (placed between May 2025 and December 2024, so probably January 2025 is right here and the earlier heading is a typo for 2026).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "December 2024",
+      "anchor": "december-2024",
+      "source_hash": "af6db4fbc99b7a7b",
+      "summary": "Documentation changes: documentation of version 3.3.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "November 2024",
+      "anchor": "november-2024",
+      "source_hash": "267b9ea189ad9b45",
+      "summary": "Documentation changes: profile page update and Wear OS reorganisation.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "October 2024",
+      "anchor": "october-2024",
+      "source_hash": "2dbb724821acbb69",
+      "summary": "Documentation changes: several setup and daily-use pages updated, Android Studio Ladybug build instructions, and a note that history from March 2022 to September 2024 is missing.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "February 2022",
+      "anchor": "february-2022",
+      "source_hash": "e50ba156178117d2",
+      "summary": "Documentation changes for AAPS 3.0: BG quality warning, pump pages, checks after updating, Wear OS.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "January 2022",
+      "anchor": "january-2022",
+      "source_hash": "e47d13c6c6918d3f",
+      "summary": "Documentation changes: Android Studio troubleshooting update.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "December 2021",
+      "anchor": "december-2021",
+      "source_hash": "40581a287b2f84b0",
+      "summary": "Documentation changes: build instructions for Android Studio Arctic Fox and Dana-i information.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "November 2021",
+      "anchor": "november-2021",
+      "source_hash": "9f6c69cd7db76030",
+      "summary": "Documentation changes: Libre 2 calibration, ISF wording, troubleshooting, removal of the patched Dexcom app.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "October 2021",
+      "anchor": "october-2021",
+      "source_hash": "47e0f6afaf089cc3",
+      "summary": "Documentation changes: release notes for AAPS 3.0 beta.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "September 2021",
+      "anchor": "september-2021",
+      "source_hash": "93f0e407f91153bb",
+      "summary": "Documentation changes: recommended computer for building the app.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "June 2021",
+      "anchor": "june-2021",
+      "source_hash": "36bc629e7ec77d3e",
+      "summary": "Documentation changes: watchface sideloading.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "April 2021",
+      "anchor": "april-2021",
+      "source_hash": "88fbcda63f4ce8e4",
+      "summary": "Documentation changes: communication devices for Omnipod and Medtronic, AAPS predictions in Nightscout.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "March 2021",
+      "anchor": "march-2021",
+      "source_hash": "cc1899cfa3ec89d2",
+      "summary": "Documentation changes: developer chat moved to Discord.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "February 2021",
+      "anchor": "february-2021",
+      "source_hash": "9475294ed684b27f",
+      "summary": "Documentation changes: new navigation bar and language switch in the docs.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "January 2021",
+      "anchor": "january-2021",
+      "source_hash": "12308657160960cd",
+      "summary": "Documentation changes: Action tab, Dexcom G6 BYODA, Libre reader battery, new objective questions, AAPS 2.8.0 features.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "December 2020",
+      "anchor": "december-2020",
+      "source_hash": "cdee125604827316",
+      "summary": "Documentation changes: Libre 2 patched app limits, OpenAPS hard-coded limits, Sony Smartwatch 3.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "October 2020",
+      "anchor": "october-2020",
+      "source_hash": "ae5a7326114791c5",
+      "summary": "Documentation changes: Combo DST, Insight absolute values, log folders, Omnipod Eros, SMS time sync.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "September 2020",
+      "anchor": "september-2020",
+      "source_hash": "128cf84cee4671a6",
+      "summary": "Documentation changes: major update for AAPS 2.7.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "June 2020",
+      "anchor": "june-2020",
+      "source_hash": "88dd86d76fb00453",
+      "summary": "Documentation changes: Libre 2 patched app and time zone travel.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "May 2020",
+      "anchor": "may-2020",
+      "source_hash": "e7afb2c9febbc8db",
+      "summary": "Documentation changes: extended bolus, Insight vibration, minimal request rate, patched Libre Link, prediction lines.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "April 2020",
+      "anchor": "april-2020",
+      "source_hash": "2ac7032aa83a9f80",
+      "summary": "Documentation changes: backdating insulin and end of Android 6 support.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "March 2020",
+      "anchor": "march-2020",
+      "source_hash": "9031b76ec1b506f9",
+      "summary": "Documentation changes: Android Studio 3.6.1, DanaRS firmware v3, extended bolus.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "February 2020",
+      "anchor": "february-2020",
+      "source_hash": "ee522be4ac9339ac",
+      "summary": "Documentation changes: automation caveats, Autosens, Careportal, extended bolus, Local Profile plugin, version 2.6.0, wear complications.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "January 2020",
+      "anchor": "january-2020",
+      "source_hash": "b2e4fb071a7d27cb",
+      "summary": "Documentation changes: manual carb correction and image size when editing docs.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "December 2019",
+      "anchor": "december-2019",
+      "source_hash": "79a16e65d8a62a04",
+      "summary": "Documentation changes: Android Auto, Insight with Autotune, Glimp, watchfaces and complications.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "November 2019",
+      "anchor": "november-2019",
+      "source_hash": "0c34ffcce4c7778e",
+      "summary": "Documentation changes: automation, Dexcom G6 transmitter, extended bolus, FAQ, home screen graph lines, SMS commands, troubleshooting and more.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "October 2019",
+      "anchor": "october-2019",
+      "source_hash": "246ecf95ec1f27df",
+      "summary": "Documentation changes for AAPS 2.5: update page, Insight logs, COB, Dexcom G6, objectives, preferences, SGLT-2 warning.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "September 2019",
+      "anchor": "september-2019",
+      "source_hash": "635c3d574ef50e6f",
+      "summary": "Documentation changes: automation, bolus calculator, Nightscout security, profile time shift, remote monitoring.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "August 2019",
+      "anchor": "august-2019",
+      "source_hash": "9b5a6929b2161abd",
+      "summary": "Documentation changes: Dexcom G6 patched app and new transmitters, new structure.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

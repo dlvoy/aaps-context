@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Maintenance/Reviewing.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Explains where to review past AAPS data: the History browser for any past day, and the Statistics screen with total daily dose, time in range, activity monitor and TDD cycle pattern cards. Ends with how Nightscout and Tidepool differ for reviewing data. Card, column and button names are the app labels.",
+  "features": [
+    "History browser",
+    "Statistics"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > History browser",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "nav_history_browser"
+    },
+    {
+      "ui_location": "Main menu > Statistics",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "statistics"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Reviewing your data",
+      "anchor": "reviewing-your-data",
+      "source_hash": "6f50d1ae7ca00a3d",
+      "summary": "Page title.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "AAPS History Browser",
+      "anchor": "aaps-history-browser",
+      "source_hash": "8870cb574504db5c",
+      "summary": "Opening the History browser from the menu, picking a day, zooming the graphs and moving between days.",
+      "dialogs": [
+        "Main menu > History browser"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile Switch",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_history_browser",
+          "as_written": "History browser",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "history_now",
+          "as_written": "Now",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "AAPS Statistics",
+      "anchor": "reviewing-statistics",
+      "source_hash": "3954a6f91aca0575",
+      "summary": "Opening the Statistics screen from the menu.",
+      "dialogs": [
+        "Main menu > Statistics"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "statistics",
+          "as_written": "Statistics",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Total Daily Dose",
+      "anchor": "total-daily-dose",
+      "source_hash": "b3f714204d7c5e45",
+      "summary": "The Total Daily Dose card: one row per day, the average and today, with basal, bolus, total and carbs columns; Recalculate computes it again.",
+      "dialogs": [
+        "Statistics > Total Daily Dose"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "tdd",
+          "as_written": "Total Daily Dose",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "average",
+          "as_written": "Average",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "today",
+          "as_written": "Today",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "basalrate",
+          "as_written": "Basal",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "bolus",
+          "as_written": "Bolus",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "tdd_total",
+          "as_written": "TDD Total",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "carbs",
+          "as_written": "Carbs",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "recalculate",
+          "as_written": "Recalculate",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Time in Range",
+      "anchor": "time-in-range",
+      "source_hash": "242ade342e62f5f6",
+      "summary": "The time in range and time in tight range statistics, SD and estimated HbA1c, and a reminder to discuss targets with the medical team.",
+      "dialogs": [
+        "Statistics > Time in Range"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "tir",
+          "as_written": "Time In Range",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Activity monitor",
+      "anchor": "activity-monitor",
+      "source_hash": "6b068761d52a4ada",
+      "summary": "The activity monitor card, which shows time spent on each AAPS screen.",
+      "dialogs": [
+        "Statistics > Activity monitor"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "activity_monitor",
+          "as_written": "Activity monitor",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "TDD Cycle Pattern",
+      "anchor": "tdd-cycle-pattern",
+      "source_hash": "c9807bd5c65710a6",
+      "summary": "The TDD Cycle Pattern card: daily insulin totals overlaid in 28-day cycles, with raw or cleaned TDD and a cycle offset.",
+      "dialogs": [
+        "Statistics > TDD Cycle Pattern"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "tdd_cycle_pattern",
+          "as_written": "TDD Cycle Pattern",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "cycle_lines_legend",
+          "as_written": "Individual cycles",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "raw_tdd",
+          "as_written": "Raw TDD",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "cleaned_tdd",
+          "as_written": "Cleaned TDD",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "cycle_offset",
+          "as_written": "Cycle offset",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "not_enough_data_for_cycles",
+          "as_written": "Not enough data (need at least 56 days for 2 cycles)",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "What is the difference between Nightscout vs Tidepool?",
+      "anchor": "what-is-the-difference-between-nightscout-vs-tidepool",
+      "source_hash": "d2cc177069c62f0d",
+      "summary": "How Nightscout and Tidepool differ for storing, reporting and sharing AAPS data.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

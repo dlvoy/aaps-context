@@ -1,0 +1,374 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/AdvancedOptions/InsulinConcentration.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Explains insulin concentrations (U100 and others) and how to run AAPS with non-U100 insulin. It covers the older method of a 50% modified profile and its risks, then the AAPS 4 concentration feature: enabling it, creating an insulin with another concentration in the insulin settings, switching to it at a reservoir or pod change, and recording external pen boluses. Concentration names (U100, U200) and screen labels are the app's.",
+  "features": [
+    "Insulin concentration",
+    "Insulin settings",
+    "Profiles"
+  ],
+  "screens": [
+    {
+      "ui_location": "Insulin settings",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "insulin_management"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Insulin Concentration",
+      "anchor": "Insulin-Concentration",
+      "source_hash": "5a3aae259586871c",
+      "summary": "Page title and a warning that pumps are designed for U100 insulin only.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Reminder of the basics of insulin",
+      "anchor": "reminder-of-the-basics-of-insulin",
+      "source_hash": "eaa5241ee351360e",
+      "summary": "Introduction to the basic insulin concepts that follow.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "The insulin unit: a measure of action",
+      "anchor": "the-insulin-unit-a-measure-of-action",
+      "source_hash": "a8ee00b3e6779a05",
+      "summary": "What an international unit of insulin measures.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Insulin concentrations",
+      "anchor": "insulin-concentrations",
+      "source_hash": "c51185df828fcbdd",
+      "summary": "The common concentrations (U100, U200 to U500, U40, diluted) and the danger of mismatched devices.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "u100",
+          "as_written": "U100",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "When using a non-standard concentration?",
+      "anchor": "when-using-a-non-standard-concentration",
+      "source_hash": "e7d2010c04910f45",
+      "summary": "Introduction to the medical situations that need non-U100 insulin.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Use Case 1: diluted insulin for very low doses",
+      "anchor": "use-case-1-diluted-insulin-for-very-low-doses",
+      "source_hash": "6a799ddbca180601",
+      "summary": "Diluted insulin for babies and toddlers whose doses are below the pump minimum, and the safety rules for dilution.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Use Case 2: concentrated insulin for high insulin needs or significant insulin resistance",
+      "anchor": "use-case-2-concentrated-insulin-for-high-insulin-needs-or-significant-insulin-resistance",
+      "source_hash": "8f727f3a6f6cde9b",
+      "summary": "Concentrated insulin such as U200 for high insulin needs or pain from additives.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "u200",
+          "as_written": "U200",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "How to manage insulin concentration with AAPS (AAPS 3 and earlier)?",
+      "anchor": "how-to-manage-insulin-concentration-with-aaps-aaps-3-and-earlier",
+      "source_hash": "f4463e5da413b36a",
+      "summary": "Introduction to the modified-profile method used before AAPS 4.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Using a modified profile",
+      "anchor": "using-a-modified-profile",
+      "source_hash": "438a0f6887b49f4e",
+      "summary": "The old method: a 50% profile switch makes AAPS match U200 delivery, and the risks this creates for external boluses and reports.",
+      "dialogs": [
+        "Profile switch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile Switch",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Using the concentration parameter (new feature in AAPS 4.0)",
+      "anchor": "using-the-concentration-parameter-new-feature-in-aaps-4-0",
+      "source_hash": "0aa98a2840821847",
+      "summary": "Introduction to the AAPS 4 concentration feature, which keeps AAPS in real international units.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How it works: automatic conversion",
+      "anchor": "how-it-works-automatic-conversion",
+      "source_hash": "6efec43ca7702691",
+      "summary": "AAPS keeps all data in real IU and converts values only for the pump driver.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Benefits and remaining risks",
+      "anchor": "benefits-and-remaining-risks",
+      "source_hash": "5ec374ae4ee5163d",
+      "summary": "What the concentration feature fixes, and the risks that remain (relearning real values, manual pump boluses).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "User interface display",
+      "anchor": "user-interface-display",
+      "source_hash": "400f291f14a5f336",
+      "summary": "Where real and concentrated units are shown: the bolus progress dialog shows IU, the pump overview shows both.",
+      "dialogs": [
+        "Bolus progress",
+        "Pump overview"
+      ],
+      "mentions": [
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "bolus_delivered_so_far",
+          "as_written": "2.50 U / 10.00 U delivered",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "last_bolus_label",
+          "as_written": "Last Bolus",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "u200",
+          "as_written": "U200",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Enabling the feature",
+      "anchor": "enabling-the-feature",
+      "source_hash": "27827b75b6fc6ce7",
+      "summary": "Turning on Insulin concentration support in the general settings after finishing objective 3.",
+      "dialogs": [
+        "Preferences > General"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_insulin_concentration",
+          "as_written": "Insulin concentration support",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Create a new insulin with another concentration",
+      "anchor": "create-a-new-insulin-with-another-concentration",
+      "source_hash": "e78f3b086812d0b3",
+      "summary": "Adding an insulin with another concentration in the insulin settings: concentration, peak time, DIA and nickname, then saving.",
+      "dialogs": [
+        "Insulin settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_management",
+          "as_written": "Insulin Manager",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "concentration_label",
+          "as_written": "concentration",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "u10",
+          "as_written": "U10",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "u200",
+          "as_written": "U200",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "dia_label",
+          "as_written": "Duration of Insulin Action (DIA)",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_nickname_label",
+          "as_written": "Insulin Nickname",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Switch concentration from U100 to Uxxx (AAPS 4)",
+      "anchor": "switch-concentration-from-u100-to-uxxx-aaps-4",
+      "source_hash": "54dbb8edd2ce0055",
+      "summary": "Switching to another concentration during a reservoir or pod change: Prime/Fill, Change, choosing the concentration and insulin, then applying the profile switch.",
+      "dialogs": [
+        "Overview > Prime/Fill",
+        "Insulin settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "prime_fill",
+          "as_written": "Prime/Fill",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "change_insulin",
+          "as_written": "Change",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "u200",
+          "as_written": "U200",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "current_insulin",
+          "as_written": "Currently active",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile Switch",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_management",
+          "as_written": "Insulin settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_management",
+          "as_written": "Profile Manager",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Switch concentration for users with U200 insulin associated with a 50% profile (AAPS 4)",
+      "anchor": "switch-concentration-for-users-with-u200-insulin-associated-with-a-50-profile-aaps-4",
+      "source_hash": "e4cb0d41b46a9759",
+      "summary": "Moving from the 50% profile method to the concentration feature: building a 200% profile, pausing Dynamic ISF, and switching insulin at the next change.",
+      "dialogs": [
+        "Treatments > Profile",
+        "Insulin settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments",
+          "as_written": "Treatments",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile Switch",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_management",
+          "as_written": "Profile Manager",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_management",
+          "as_written": "Insulin settings",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "How to manage external boluses with different pens?",
+      "anchor": "how-to-manage-external-boluses-with-different-pens",
+      "source_hash": "21045d36d7980c51",
+      "summary": "Heading for recording pen boluses with non-U100 insulin.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "With U200 insulin associated with a 50% profile (AAPS 3)",
+      "anchor": "with-u200-insulin-associated-with-a-50-profile-aaps-3",
+      "source_hash": "62e72aa675a95ece",
+      "summary": "With the old 50% profile, pen doses must be doubled from AAPS and halved when recorded in AAPS.",
+      "dialogs": [
+        "Insulin"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "overview_insulin_label",
+          "as_written": "Insulin",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "With U200 insulin using the concentration management included in AAPS 4",
+      "anchor": "with-u200-insulin-using-the-concentration-management-included-in-aaps-4",
+      "source_hash": "d88683243edfe187",
+      "summary": "With the concentration feature, pen doses are recorded as given, choosing the pen insulin in the Insulin dialog.",
+      "dialogs": [
+        "Insulin"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "overview_insulin_label",
+          "as_written": "Insulin",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_management",
+          "as_written": "Insulin Manager",
+          "confidence": 0.6
+        }
+      ]
+    }
+  ],
+  "manual_note": "The page calls the insulin and profile screens \"Insulin Manager\" and \"Profile Manager\"; the app labels them \"Insulin settings\" and \"Profile\". The caption \"Will be activated\" was not found in the app strings."
+}

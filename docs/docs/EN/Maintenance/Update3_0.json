@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Maintenance/Update3_0.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "A redirect page for the old AAPS 3.0 update notes; it only has a title and anchors kept for old links.",
+  "features": [
+    "Updating AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Updating to AAPS 3.0",
+      "anchor": "updating-to-aaps-3-0",
+      "source_hash": "1c4847385d0aea97",
+      "summary": "Title of a redirect page to the archived AAPS 3.0 update notes.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

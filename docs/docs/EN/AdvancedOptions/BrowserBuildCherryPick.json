@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/AdvancedOptions/BrowserBuildCherryPick.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "An optional step for the browser build: running the GitHub cherry-pick workflow to add one specific commit to the user's AAPS fork. The field names are GitHub workflow inputs, not AAPS app labels.",
+  "features": [
+    "Building AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Browser build: cherry-pick a commit",
+      "anchor": "github-cherry-pick",
+      "source_hash": "eaf390437dc302bd",
+      "summary": "Page title and a note that this is an optional, advanced browser-build step.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Add a specific commit to your branch",
+      "anchor": "add-a-specific-commit-to-your-branch",
+      "source_hash": "d1fc6956816e0f90",
+      "summary": "The inputs of the cherry-pick GitHub workflow: target branch, upstream repository, commit SHA and build variant.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

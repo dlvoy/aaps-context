@@ -1,0 +1,368 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Maintenance/ExportImportSettings.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Explains what to back up to restore AAPS on a new phone (keystore, APK, settings export, master password) and how. The reader exports settings manually from Maintenance or automatically through Automation, and restores them on a new phone with Import settings, deciding whether to replace pump settings. Button, chip and message names are the app labels in the Maintenance menu and the import screen.",
+  "features": [
+    "Settings export and import",
+    "Maintenance",
+    "Backups"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Maintenance",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "maintenance"
+    },
+    {
+      "ui_location": "Main menu > Maintenance > Import settings",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "import_setting"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Creating and restoring back-ups",
+      "anchor": "creating-and-restoring-back-ups",
+      "source_hash": "4a3138820493cefc",
+      "summary": "Page introduction: why a backup plan matters and the items needed to restore AAPS (keystore, APK, settings export, master password, notes).",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_export",
+          "as_written": "settings export",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Creating back-ups",
+      "anchor": "creating-back-ups",
+      "source_hash": "1b9892f3b17177b9",
+      "summary": "Heading for the items worth backing up.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Keystore file from the computer you used to build the APK",
+      "anchor": "keystore-file-from-the-computer-you-used-to-build-the-apk",
+      "source_hash": "cf35f18eec96b157",
+      "summary": "Why and how to back up the keystore file and its passwords, found through the Android Studio build dialog.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Copies of the most recent APK",
+      "anchor": "copies-of-the-most-recent-apk",
+      "source_hash": "4d75c73637b0c074",
+      "summary": "Keeping copies of the latest installed APK on the build computer and in the cloud.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "AAPS settings file (also referred to as 'Preferences')",
+      "anchor": "aaps-settings-file-also-referred-to-as-preferences",
+      "source_hash": "636cc0880bc90ad4",
+      "summary": "What the settings export contains, when to export, and how to export it manually from Maintenance with the Local or Cloud destination after setting a master password.",
+      "dialogs": [
+        "Preferences > General > Protection",
+        "Main menu > Maintenance"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aaps_directory",
+          "as_written": "AAPS Directory",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "protection",
+          "as_written": "Protection",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "maintenance",
+          "as_written": "Maintenance",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "chip_local",
+          "as_written": "Local",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "chip_cloud",
+          "as_written": "Cloud",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_export",
+          "as_written": "Export settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "export_result_message_exported",
+          "as_written": "Settings exported",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "export_cloud_success",
+          "as_written": "Cloud export successful",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Settings Export",
+      "anchor": "ExportImportSettings-Settings-Export",
+      "source_hash": "17d6e430506b24e9",
+      "summary": "Advice to export settings regularly and keep the master password, since the file is encrypted with it.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aaps_directory",
+          "as_written": "AAPS Directory",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Exporting or Importing Settings",
+      "anchor": "exporting-or-importing-settings",
+      "source_hash": "4e7fc97dc4cccd53",
+      "summary": "Using the Local and Cloud chips under File management in the Maintenance menu to choose where Export settings and Import settings save or read the file.",
+      "dialogs": [
+        "Main menu > Maintenance"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "maintenance",
+          "as_written": "Maintenance",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "file_management",
+          "as_written": "File management",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "chip_local",
+          "as_written": "Local",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "chip_cloud",
+          "as_written": "Cloud",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_export",
+          "as_written": "Export settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_setting",
+          "as_written": "Import settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cloud_directory",
+          "as_written": "Cloud Directory",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Automating Settings Export",
+      "anchor": "ExportImportSettings-Automating-Settings-Export",
+      "source_hash": "ee2b1bffdb8135f9",
+      "summary": "Turning on Enable automated settings export under Unattended Settings Export in the Maintenance preferences, so an Automation rule can export settings.",
+      "dialogs": [
+        "Settings > Maintenance > Unattended Settings Export"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "maintenance",
+          "as_written": "Maintenance",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "unattended_settings_export",
+          "as_written": "Unattended Settings Export",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_maintenance_enable_export_automation",
+          "as_written": "Enable automated settings export",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Restoring from your backups on a new phone or fresh installation of AAPS",
+      "anchor": "ExportImportSettings-restoring-from-your-backups-on-a-new-phone-or-fresh-installation-of-aaps",
+      "source_hash": "e3a1ab8f434e9972",
+      "summary": "Step by step restore on a new phone: install the APK, set the master password and AAPS directory, copy the settings file, import it, decide whether to replace pump settings, and confirm. Also covers tubeless pump sessions and falling back to the Virtual Pump.",
+      "dialogs": [
+        "Main menu > Maintenance > Import settings",
+        "Preferences > General > Protection",
+        "Configuration > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/protection.xml",
+          "key": "aaps_directory_access_lost",
+          "as_written": "Access to the AAPS directory was lost",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_replace_pump_settings",
+          "as_written": "Also replace pump settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "protection",
+          "as_written": "Protection",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "aaps_directory",
+          "as_written": "AAPS DIRECTORY",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "maintenance",
+          "as_written": "Maintenance",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_export",
+          "as_written": "Export settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_setting",
+          "as_written": "Import settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "chip_cloud",
+          "as_written": "Cloud",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_decrypt_review",
+          "as_written": "Decrypt & Review",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_btn",
+          "as_written": "Import",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_apply_title",
+          "as_written": "Apply imported settings?",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cancel",
+          "as_written": "Cancel",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_applying",
+          "as_written": "Applying settings…",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_apply_waiting",
+          "as_written": "Waiting for pump…",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_applied_title",
+          "as_written": "Settings applied",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "virtual_pump",
+          "as_written": "Virtual Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Note for Dana RS users",
+      "anchor": "note-for-dana-rs-users",
+      "source_hash": "f0b19bf10b4518d4",
+      "summary": "With Also replace pump settings ticked, the Dana RS pairing is imported; pair the new phone with the pump manually.",
+      "dialogs": [
+        "Main menu > Maintenance > Import settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_replace_pump_settings",
+          "as_written": "Also replace pump settings",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": "The page writes \"Preferences > Maintenance Settings\" for the Maintenance preferences screen. \"Build > APK > Next\" and \"Key store path\" are Android Studio labels, not app strings."
+}

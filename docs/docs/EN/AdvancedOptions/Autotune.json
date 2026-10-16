@@ -1,0 +1,395 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/AdvancedOptions/Autotune.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Explains the Autotune plugin, which analyses recent AAPS history and proposes changes to basal rates, ISF and carb ratio. The reader enables the hidden plugin, runs it from its screen, compares and activates or copies the tuned profile, sets its preferences, and can run it nightly from an automation rule. Button and setting names are the app labels on the Autotune screen and in its preferences.",
+  "features": [
+    "Autotune",
+    "Profiles",
+    "Automation"
+  ],
+  "screens": [
+    {
+      "ui_location": "Configuration > General > Autotune",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "autotune"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "How to use Autotune plugin",
+      "anchor": "how-to-use-autotune-plugin",
+      "source_hash": "1ee182e1c98bb6a9",
+      "summary": "The page title and introduction: what Autotune does and that the plugin is hidden by default.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "autotune",
+          "as_written": "Autotune",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "How Autotune calculates adjustments",
+      "anchor": "autotune-how-autotune-calculates-adjustments",
+      "source_hash": "7ae84062477efbf6",
+      "summary": "Background on the algorithm: how deviations are sorted into basal, ISF and carb ratio buckets, and how far one run may move a value.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Show the Autotune plugin",
+      "anchor": "show-the-autotune-plugin",
+      "source_hash": "52d8750f9f4f69ad",
+      "summary": "Making the plugin visible with an enable_autotune file in the AAPS directory, then enabling it under Configuration > General.",
+      "dialogs": [
+        "Main menu > Configuration > General"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_general",
+          "as_written": "General",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "autotune",
+          "as_written": "Autotune",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Autotune user interface",
+      "anchor": "autotune-user-interface",
+      "source_hash": "d0e6b7ecd3b02781",
+      "summary": "Walk-through of the Autotune screen: choosing the input profile and number of days, running the calculation, reading the results table and using the result buttons (compare, activate, copy to local profile, update or revert the input profile).",
+      "dialogs": [
+        "Autotune",
+        "Manage > Profile"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "autotune",
+          "as_written": "Autotune",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "autotune_default_tune_days_title",
+          "as_written": "Number of days of data",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "autotune_tune_days",
+          "as_written": "Tune days",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "autotune_run",
+          "as_written": "Run Autotune",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "autotune_tunedprofile_name",
+          "as_written": "Tuned",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "autotune_compare_profile",
+          "as_written": "Compare profiles",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "activate_profile",
+          "as_written": "Activate profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "autotune_copy_localprofile_button",
+          "as_written": "Copy to local profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_management",
+          "as_written": "Profile",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "autotune_update_input_profile_button",
+          "as_written": "Update input profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "autotune_revert_input_profile_button",
+          "as_written": "Revert input profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "autotune_last_run",
+          "as_written": "Last Run",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "autotune_warning",
+          "as_written": "Warning",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "autotune_check_input_profile_button",
+          "as_written": "Check Input Profile button",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Autotune settings",
+      "anchor": "autotune-settings",
+      "source_hash": "01a9fc56781fd27d",
+      "summary": "Heading for the settings that affect Autotune.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Autotune plugin settings",
+      "anchor": "autotune-plugin-settings",
+      "source_hash": "7130f6a3bbe1a056",
+      "summary": "The Autotune preferences: auto switch profile, categorize UAM as basal, default tune days and circadian IC/ISF.",
+      "dialogs": [
+        "Autotune > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_autotune_auto_switch_profile",
+          "as_written": "Auto switch profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_autotune_categorize_uam_as_basal",
+          "as_written": "Categorize UAM as basal",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_autotune_days",
+          "as_written": "Default tune days",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "autotune_default_tune_days_title",
+          "as_written": "Number of days of data",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_autotune_circadian_ic_isf",
+          "as_written": "Use circadian IC/ISF",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Other settings",
+      "anchor": "autotune-other-settings",
+      "source_hash": "2e8c98cb764f2db5",
+      "summary": "Autotune is also limited by Autosens max and Autosens min in the advanced absorption settings.",
+      "dialogs": [
+        "Settings > Absorption settings > Advanced Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/sensitivity/src/androidMain/res/values/strings.xml",
+          "key": "absorption_settings_title",
+          "as_written": "Absorption settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "advanced_settings_title",
+          "as_written": "Advanced Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_autosens_max",
+          "as_written": "Autosens max",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_autosens_min",
+          "as_written": "Autosens min",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Advanced feature",
+      "anchor": "advanced-feature",
+      "source_hash": "17ee312ee3dca421",
+      "summary": "Heading for the advanced Autotune options.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Circadian IC or ISF profile",
+      "anchor": "autotune-circadian-ic-or-isf-profile",
+      "source_hash": "37dba7813cd2ec9d",
+      "summary": "When to enable Use circadian IC/ISF, which applies the average change to every IC and ISF value of the profile.",
+      "dialogs": [
+        "Autotune > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_autotune_circadian_ic_isf",
+          "as_written": "Use circadian IC/ISF",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Tune specific days of the week",
+      "anchor": "tune-specific-days-of-the-week",
+      "source_hash": "d1f46f422c928795",
+      "summary": "Using the day selector next to the number of days field to include only some weekdays in the calculation.",
+      "dialogs": [
+        "Autotune"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "autotune_default_tune_days_title",
+          "as_written": "Number of days of data",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Run Autotune with an automation rule",
+      "anchor": "autotune-run-autotune-with-an-automation-rule",
+      "source_hash": "847cadfaf7bf044c",
+      "summary": "Setting up an automation rule with a recurring time trigger and the Autotune action to tune a profile every day, and when to turn on Auto switch profile.",
+      "dialogs": [
+        "Automation > Action > Loop & insulin"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_autotune_auto_switch_profile",
+          "as_written": "Auto switch profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "recurringTime",
+          "as_written": "Recurring time",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "autotune_run",
+          "as_written": "Autotune profile",
+          "confidence": 0.5
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation_category_loop",
+          "as_written": "Loop & insulin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "autotune_select_profile",
+          "as_written": "Select profile to tune",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "autotune_tune_days",
+          "as_written": "Tune days",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Tips and trick's",
+      "anchor": "tips-and-trick-s",
+      "source_hash": "5afb53e79227e34f",
+      "summary": "Advice on when Autotune results can be trusted and the situations (missing carbs, many UAM periods, slow absorption, bad days) where it should not be used.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_autotune_categorize_uam_as_basal",
+          "as_written": "categorized UAM as basal",
+          "confidence": 0.5
+        }
+      ]
+    }
+  ],
+  "manual_note": "The automation action is called \"Autotune profile\" on the page; the app names it \"Run Autotune\" (autotune_run). \"Tune days\" is the label in the automation action; on the Autotune screen the field is now \"Number of days of data\"."
+}

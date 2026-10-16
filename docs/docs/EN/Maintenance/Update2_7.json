@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Maintenance/Update2_7.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "A redirect page for the old AAPS 2.7 update notes; it only has a title.",
+  "features": [
+    "Updating AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Updating to AAPS 2.7",
+      "anchor": "updating-to-aaps-2-7",
+      "source_hash": "87b9562e3df16ffd",
+      "summary": "Title of a redirect page to the archived AAPS 2.7 update notes.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

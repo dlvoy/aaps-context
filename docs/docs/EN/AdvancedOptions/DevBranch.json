@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/AdvancedOptions/DevBranch.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Explains what the AAPS development branch is, why it is only for testers on a separate phone, how engineering mode unlocks unfinished features, and how to build a test APK from a chosen branch or from a pull request with the GitHub CI workflows. Workflow field names are GitHub inputs, not app labels.",
+  "features": [
+    "Building AAPS",
+    "Development versions"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Development branch",
+      "anchor": "development-branch",
+      "source_hash": "3bf17f38d8b44621",
+      "summary": "Warnings about using the dev branch, enabling engineering mode with an engineering_mode file in AAPS/extra, reporting bugs, and why dev builds expire.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Test a specific branch (branch-ci)",
+      "anchor": "branch-ci-test",
+      "source_hash": "f3a8d3cf1ea0832a",
+      "summary": "Building an APK from a chosen branch with the branch-ci GitHub workflow.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Test items in a pull request (GitHub CI actions deploy)",
+      "anchor": "github-pr-test",
+      "source_hash": "bc045e387eb016d7",
+      "summary": "Building a test APK from a pull request with the GitHub CI workflow: target repository, PR number, head or merge reference, and variant.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

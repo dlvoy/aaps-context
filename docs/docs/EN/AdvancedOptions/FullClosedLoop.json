@@ -1,0 +1,420 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/AdvancedOptions/FullClosedLoop.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Explains full closed looping (FCL): letting AAPS handle meals without user boluses or carb entries, using UAM and Automation rules that raise the profile percentage when a meal-related glucose rise is detected. The reader checks the prerequisites, learns which meals and situations are hard, builds and orders the Automation rules, and troubleshoots highs and lows. Most of the page is therapy advice; the app labels are mainly Automation fields and SMB preferences.",
+  "features": [
+    "Full closed loop",
+    "Automation",
+    "SMB"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Automation",
+      "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+      "key": "automation"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Full Closed Loop",
+      "anchor": "full-closed-loop",
+      "source_hash": "3c954fc1eec74e7c",
+      "summary": "Page title and introduction: what FCL is compared with hybrid closed loop, and the role of un-announced meals (UAM).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What to expect?",
+      "anchor": "what-to-expect",
+      "source_hash": "02606347959d817e",
+      "summary": "Studies on FCL results and what the user needs to do to succeed: meet the prerequisites, set up Automations and keep tuning.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automations",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "General considerations why (not to) move from HCL to FCL",
+      "anchor": "general-considerations-why-not-to-move-from-hcl-to-fcl",
+      "source_hash": "1573206addee4bea",
+      "summary": "Reasons FCL may or may not suit a user: achievable time in range, tuning effort, exercise and children.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Well-tuned hybrid closed loop",
+      "anchor": "well-tuned-hybrid-closed-loop",
+      "source_hash": "5a5612fccf0efd2e",
+      "summary": "Advice to have a well-tuned hybrid closed loop before moving to FCL.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automations",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Fast insulin (Lyumjev, Fiasp)",
+      "anchor": "fast-insulin-lyumjev-fiasp",
+      "source_hash": "51f1ada1e866e93b",
+      "summary": "Why FCL needs fast insulin and the occlusion risk that comes with it.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Prerequisites",
+      "anchor": "prerequisites",
+      "source_hash": "81e0dd1cb78f84cb",
+      "summary": "Technical stability FCL needs: CGM quality and smoothing, Bluetooth, occlusion avoidance, charged components and early cannula changes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Meal-related limitations",
+      "anchor": "meal-related-limitations",
+      "source_hash": "6ec1749255c6096f",
+      "summary": "Which diets and meal patterns make FCL easier or harder.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Glycemic index and effect on blood glucose",
+      "anchor": "glycemic-index-and-effect-on-blood-glucose",
+      "source_hash": "ec0dd833cdb740f9",
+      "summary": "How the effect of a food on blood glucose affects UAM, with food examples per category.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Preparing for activity/sports",
+      "anchor": "preparing-for-activity-sports",
+      "source_hash": "38d212772351b1c9",
+      "summary": "Planning exercise with FCL: a high temp target and a lower profile percentage set well in advance, and a higher overnight target after an active day.",
+      "dialogs": [
+        "Automation",
+        "Preferences > SMB settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "profilepercentage",
+          "as_written": "Profile Percentage",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "profilepercentage",
+          "as_written": "Percentage Profile",
+          "confidence": 0.4
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automations",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Hurdles for kids",
+      "anchor": "hurdles-for-kids",
+      "source_hash": "d51f50c7c924f06b",
+      "summary": "Why FCL is harder for children.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Enabling boosted SMBs: safety",
+      "anchor": "enabling-boosted-smbs-safety",
+      "source_hash": "f09e16215faaa35f",
+      "summary": "Widening the SMB size limits so the loop can give large enough SMBs for meals, and the danger of boosting ISF too far.",
+      "dialogs": [
+        "Preferences > SMB settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_uam_smb_max_minutes",
+          "as_written": "maxUAMSMBBasalMinutes",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Meal detection/your Automations for boosting",
+      "anchor": "meal-detection-your-automations-for-boosting",
+      "source_hash": "4c3145da0c53af22",
+      "summary": "How an Automation raises the profile above 100% when a meal is detected from glucose deltas, which sharpens ISF.",
+      "dialogs": [
+        "Automation"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automations",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "FCL's Automation templates",
+      "anchor": "fcl-s-automation-templates",
+      "source_hash": "0339b12436f9f06a",
+      "summary": "Switching Automation rules on and off, and the User action option that asks before a rule runs.",
+      "dialogs": [
+        "Automation",
+        "Automation > Edit rule"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "user_action",
+          "as_written": "User action",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "profilepercentage",
+          "as_written": "Profile Percentage",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Automated big SMBs at bg rise",
+      "anchor": "automated-big-smbs-at-bg-rise",
+      "source_hash": "e84a5c8f7290110c",
+      "summary": "Designing Automation rules that start a profile percentage boost when the glucose delta and IOB meet set limits, with example rules for different meals.",
+      "dialogs": [
+        "Automation > Edit rule > Condition",
+        "Automation > Edit rule > Action"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "delta",
+          "as_written": "deltas",
+          "confidence": 0.5
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "short_avgdelta",
+          "as_written": "short avg delta",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "profilepercentage",
+          "as_written": "Profile Percentage",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "iob threshold",
+      "anchor": "iob-threshold",
+      "source_hash": "d146b6442efda3ac",
+      "summary": "Setting an IOB threshold Automation that sets a temp target to stop SMBs once enough insulin is on board, and how to handle an eating-soon temp target.",
+      "dialogs": [
+        "Automation",
+        "Preferences > SMB settings"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_with_high_tt",
+          "as_written": "allow SMB at elevated target",
+          "confidence": 0.5
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "profilepercentage",
+          "as_written": "Percentage Profile",
+          "confidence": 0.4
+        }
+      ]
+    },
+    {
+      "heading": "Stagnation at high bg values",
+      "anchor": "stagnation-at-high-bg-values",
+      "source_hash": "cb091fe724dea33a",
+      "summary": "Example Automation rules that raise the profile percentage during a long post-meal high and switch it back when glucose falls.",
+      "dialogs": [
+        "Automation"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Hypo prevention",
+      "anchor": "hypo-prevention",
+      "source_hash": "6ba8261755247254",
+      "summary": "Avoiding lows 3 to 5 hours after a meal by making Automations less aggressive as IOB rises, and adjusting them per meal.",
+      "dialogs": [
+        "Automation"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automations",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Order of programmed Automations",
+      "anchor": "order-of-programmed-automations",
+      "source_hash": "25dc84b8129ffb8d",
+      "summary": "Rules are checked in list order, so stronger delta rules must come first; reordering the Automation list.",
+      "dialogs": [
+        "Automation"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automations",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "delta",
+          "as_written": "delta",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Troubleshooting",
+      "anchor": "full-closed-loop-troubleshooting",
+      "source_hash": "659a188b36f9c326",
+      "summary": "Heading for the FCL troubleshooting sections.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to get back into Hybrid Closed Loop",
+      "anchor": "how-to-get-back-into-hybrid-closed-loop",
+      "source_hash": "a2eb9204393e3e8a",
+      "summary": "Turning off the FCL Automation rules and showing the overview buttons for insulin and the calculator again.",
+      "dialogs": [
+        "Automation",
+        "Preferences > Overview"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automations",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Are the pre-conditions for FCL still given?",
+      "anchor": "are-the-pre-conditions-for-fcl-still-given",
+      "source_hash": "c89176707cdc4f44",
+      "summary": "Checklist: is the profile still correct and is CGM quality still good.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Glucose goes too high",
+      "anchor": "glucose-goes-too-high",
+      "source_hash": "9f23abea86087c25",
+      "summary": "What to check when meals are detected too late or SMBs are too weak.",
+      "dialogs": [
+        "Automation"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automations",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Glucose goes too low",
+      "anchor": "glucose-goes-too-low",
+      "source_hash": "aae09a8627afe251",
+      "summary": "What to check when meals are falsely detected, SMBs give too much insulin, or insulin tails cause lows; includes enabling User action on a rule.",
+      "dialogs": [
+        "Automation > Edit rule"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "user_action",
+          "as_written": "User action",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "profilepercentage",
+          "as_written": "Percentage Profile",
+          "confidence": 0.4
+        }
+      ]
+    },
+    {
+      "heading": "More info",
+      "anchor": "more-info",
+      "source_hash": "63adc0da01f7e1d9",
+      "summary": "Links to FCL user communities.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "The page refers to an \"SMB tab\" and to \"Preferences/Overview/Buttons\"; the app has no screen with those exact titles now, so they were not mapped. \"Profile Percentage\" / \"Percentage Profile\" refer to the Automation action labelled \"Profile percentage\"."
+}

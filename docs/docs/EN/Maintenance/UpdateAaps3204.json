@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Maintenance/UpdateAaps3204.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "How to update an Android Studio build from AAPS 3.2.0.x to 3.2.0.4: the required Android Studio, Gradle and JVM versions and computer specifications, then fetching the code, selecting JVM 17, checking out the 3.2.0.4 branch, syncing Gradle, building and installing. Labels such as Gradle Settings and Gradle JDK are Android Studio labels, not AAPS app strings.",
+  "features": [
+    "Updating AAPS",
+    "Building AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Updating to AAPS 3.2.0.4",
+      "anchor": "updating-to-aaps-3-2-0-4",
+      "source_hash": "0a2db214e72432eb",
+      "summary": "Page title.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build yourself instead of download",
+      "anchor": "update-aaps-3204",
+      "source_hash": "dd9efa12c205cc31",
+      "summary": "AAPS cannot be downloaded and must be built for personal use.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Computer and software specifications for building AAPS 3.2.0.4",
+      "anchor": "computer-and-software-specifications-for-building-aaps-3-2-0-4",
+      "source_hash": "97eaa4a00bf63392",
+      "summary": "The Android Studio, Gradle and JVM versions for 3.2.0.4, and the minimum computer specifications.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Help and support during 3.2.0.4 building process",
+      "anchor": "help-and-support-during-3-2-0-4-building-process",
+      "source_hash": "738b1dae7a24a6ee",
+      "summary": "Where to get help when the build fails.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Overview for updating 3.2.0.x to 3.2.0.4",
+      "anchor": "overview-for-updating-3-2-0-x-to-3-2-0-4",
+      "source_hash": "686be17c71c42d96",
+      "summary": "List of the update steps.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Export your current settings",
+      "anchor": "export-your-current-settings",
+      "source_hash": "27eb7abaed409c30",
+      "summary": "Exporting AAPS settings on the phone before updating.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Update your local AAPS copy",
+      "anchor": "update-your-local-aaps-copy",
+      "source_hash": "9970488bc4146042",
+      "summary": "Fetching and pulling the latest code in Android Studio and waiting for Gradle sync.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Select JVM version 17",
+      "anchor": "select-jvm-version-17",
+      "source_hash": "06d7cbb9149305cb",
+      "summary": "Choosing or downloading JDK 17 in Android Studio's Gradle settings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Select the AAPS 3.2.0.4 branch",
+      "anchor": "select-the-aaps-3-2-0-4-branch",
+      "source_hash": "dafad4778d496715",
+      "summary": "Checking out the 3.2.0.4 branch in Android Studio.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Sync project with Gradle",
+      "anchor": "sync-project-with-gradle",
+      "source_hash": "2911dc0331af9780",
+      "summary": "Syncing the project with Gradle files, without updating Gradle.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build the Signed 3.2.0.4 APK",
+      "anchor": "build-the-signed-3-2-0-4-apk",
+      "source_hash": "1b70a12c7ae69f52",
+      "summary": "Pointer to the signed APK build instructions.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Transfer and install the 3.2.0.4 APK",
+      "anchor": "transfer-and-install-the-3-2-0-4-apk",
+      "source_hash": "ebd72ee5d27dad37",
+      "summary": "Installing the new APK, over the old app when the same keystore was used.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Check AAPS version 3.2.0.4 on phone",
+      "anchor": "check-aaps-version-3-2-0-4-on-phone",
+      "source_hash": "0c50a88c60a316dd",
+      "summary": "Checking the installed version in About from the menu.",
+      "dialogs": [
+        "Menu > About"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_about",
+          "as_written": "About",
+          "confidence": 0.8
+        }
+      ]
+    }
+  ],
+  "manual_note": null
+}

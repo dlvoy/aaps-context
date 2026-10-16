@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Maintenance/UpdateToNewVersion.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Entry page for updating AAPS: why the app must be built rather than downloaded, what to do before updating, links to the update guides for each build method, and how to check the installed version afterwards.",
+  "features": [
+    "Updating AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Update to a new version or branch",
+      "anchor": "update-to-a-new-version-or-branch",
+      "source_hash": "11f5026594e22517",
+      "summary": "Page title.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build yourself instead of download",
+      "anchor": "build-yourself-instead-of-download",
+      "source_hash": "13732ec2d64fa8be",
+      "summary": "AAPS cannot be downloaded and must be built for personal use.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Important notes",
+      "anchor": "important-notes",
+      "source_hash": "0cd0e0143077dbe1",
+      "summary": "Update soon after a release, read the release notes first, and export settings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Update AAPS with browser build",
+      "anchor": "update-aaps-with-browser-build",
+      "source_hash": "72af1f14fc76c22e",
+      "summary": "Link to the browser build update guide.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Update AAPS with Android Studio",
+      "anchor": "update-aaps-with-android-studio",
+      "source_hash": "b813b8bbe53a8eab",
+      "summary": "Link to the Android Studio update guide.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Update AAPS with the command-line",
+      "anchor": "update-aaps-with-the-command-line",
+      "source_hash": "a1f78865cee7e6e2",
+      "summary": "Updating a command-line build by pulling new changes with git.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Check AAPS version on phone",
+      "anchor": "Update-to-new-version-check-aaps-version-on-phone",
+      "source_hash": "207b3f15155ae065",
+      "summary": "Checking the installed version in About from the menu, and checking the settings after the update.",
+      "dialogs": [
+        "Main menu > About",
+        "Main menu > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_about",
+          "as_written": "About",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        }
+      ]
+    }
+  ],
+  "manual_note": null
+}

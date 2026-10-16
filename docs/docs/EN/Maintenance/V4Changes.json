@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Maintenance/V4Changes.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Lists behaviour changes from AAPS v3 to v4 for existing users: NSClient v1 removed, tabs replaced by the Treatments, Scenes and Manage sheets, settings protection now locking management screens, paired AAPSClient remote control, duplicate BG switching the loop to Low Glucose Suspend, and a new Tidepool device name. Each section says what the user needs to do. Sheet entries and modes are the app labels.",
+  "features": [
+    "AAPS v4 changes",
+    "Navigation",
+    "Nightscout",
+    "Settings protection"
+  ],
+  "screens": [
+    {
+      "ui_location": "Bottom navigation > Treatments",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "treatments"
+    },
+    {
+      "ui_location": "Bottom navigation > Manage",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "manage"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What changed in AAPS v4",
+      "anchor": "v4-changes",
+      "source_hash": "bdbc51f670673170",
+      "summary": "Page title and introduction: a list of v3 to v4 behaviour changes for users updating.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "NSClient v1 has been removed",
+      "anchor": "nsclient-v1-has-been-removed",
+      "source_hash": "30ddb8b438d34775",
+      "summary": "The legacy NSClient plugin is gone; users switch to NSClientV3 in Configuration > Communication with a Nightscout URL and access token.",
+      "dialogs": [
+        "Configuration > Communication > NSClientV3"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client",
+          "as_written": "NSClient",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_v3_title",
+          "as_written": "NSClientV3",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_url_title",
+          "as_written": "Nightscout URL",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "The bottom navigation: Treatments, Scenes and Manage",
+      "anchor": "the-bottom-navigation-treatments-scenes-and-manage",
+      "source_hash": "6b2216e973f3c928",
+      "summary": "The v3 tabs and the Actions, Automation and Food plugins are replaced by the Overview and three bottom sheets; Config Builder is renamed Configuration.",
+      "dialogs": [
+        "Bottom navigation"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments",
+          "as_written": "Treatments",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scenes",
+          "as_written": "Scenes",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "food_management",
+          "as_written": "Food",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Treatments — enter and deliver",
+      "anchor": "v4changes-treatments",
+      "source_hash": "44e112276719a938",
+      "summary": "What the Treatments sheet offers: bolus wizard, insulin, carbs, treatment, calibration, CGM and QuickWizards; the same treatments on a Wear OS watch.",
+      "dialogs": [
+        "Bottom navigation > Treatments"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments",
+          "as_written": "Treatments",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "boluswizard",
+          "as_written": "Bolus wizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "overview_insulin_label",
+          "as_written": "Insulin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "carbs",
+          "as_written": "Carbs",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "overview_treatment_label",
+          "as_written": "Treatment",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "calibration",
+          "as_written": "Calibration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cgm",
+          "as_written": "CGM",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Scenes",
+      "anchor": "scenes",
+      "source_hash": "68879c40636340c7",
+      "summary": "The Scenes sheet holds situation presets.",
+      "dialogs": [
+        "Bottom navigation > Scenes"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scenes",
+          "as_written": "Scenes",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Manage — manage and activate",
+      "anchor": "v4changes-manage",
+      "source_hash": "76d4dfded8d16872",
+      "summary": "What the Manage sheet holds: profile, insulin settings, temp target, QuickWizard, scenes, automation, food, site rotation, pump, authorized clients and the former Actions pump actions; and how to open the profile switch settings in v4.",
+      "dialogs": [
+        "Bottom navigation > Manage",
+        "Manage > Profile"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_management",
+          "as_written": "Profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_management",
+          "as_written": "Insulin settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "quickwizard_managemnt",
+          "as_written": "QuickWizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scene_management",
+          "as_written": "Scenes",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "food_management",
+          "as_written": "Food",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "site_rotation",
+          "as_written": "Site Rotation",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_manage_label",
+          "as_written": "Authorized clients",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "extended_bolus",
+          "as_written": "Extended Bolus",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cancel_temp",
+          "as_written": "cancel temp basal",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "prime_fill",
+          "as_written": "Prime/Fill",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cgm_sensor_insert",
+          "as_written": "Sensor Insert",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_battery_change",
+          "as_written": "Pump Battery Change",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Settings protection now also locks the management screens",
+      "anchor": "v4changes-read-only-management",
+      "source_hash": "61f56e490a6370fa",
+      "summary": "With settings protection on, the Profile, Insulin settings, Temp Target and QuickWizard screens open read-only; the pencil in the top bar unlocks editing.",
+      "dialogs": [
+        "Manage > Profile",
+        "Settings > Protection"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_management",
+          "as_written": "Profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_management",
+          "as_written": "Insulin settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "quickwizard_managemnt",
+          "as_written": "QuickWizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "activate_label",
+          "as_written": "Activate",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "add",
+          "as_written": "Add",
+          "confidence": 0.6
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "clone_label",
+          "as_written": "Clone",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "delete",
+          "as_written": "Delete",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "protection",
+          "as_written": "Protection",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "AAPSClient remote control needs pairing",
+      "anchor": "v4changes-remote-control",
+      "source_hash": "1df8e6413be9f93a",
+      "summary": "AAPSClient now pairs with the main phone and sends signed commands, including boluses.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Duplicate BG data now switches the loop to Low Glucose Suspend",
+      "anchor": "duplicate-bg-data-now-switches-the-loop-to-low-glucose-suspend",
+      "source_hash": "6ae6d249fbc336d6",
+      "summary": "Duplicate BG readings now visibly switch a closed loop to Low Glucose Suspend; after removing them the user selects Closed Loop again from the loop icon.",
+      "dialogs": [
+        "Running mode"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "closedloop",
+          "as_written": "Closed Loop",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "lowglucosesuspend",
+          "as_written": "Low Glucose Suspend",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/strings.xml",
+          "key": "bg_doubled_lgs",
+          "as_written": "LGS mode due to doubled values in BG source",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Tidepool: data now shows under the device name AAPS",
+      "anchor": "v4changes-tidepool",
+      "source_hash": "d28993f472a86658",
+      "summary": "Tidepool data now appears under the device name AAPS; when to use Purge all data and Full synchronization from the Tidepool menu.",
+      "dialogs": [
+        "Tidepool > Menu"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "full_sync",
+          "as_written": "Full synchronization",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "tidepool_purge_data",
+          "as_written": "Purge all data",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": "The page refers to the old \"Local Profile\" tab and \"Config Builder\"; the app now has Manage > Profile and Configuration."
+}

@@ -1,0 +1,857 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Maintenance/ReleaseNotes.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "The AAPS release notes, newest first: which AAPS version suits each Android version, then each release with its new features, device support, fixes and upgrade requirements. Feature names are mostly descriptive; where a setting or trigger is named, it is the app label.",
+  "features": [
+    "Release notes",
+    "Updating AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Release notes",
+      "anchor": "release-notes",
+      "source_hash": "c7c9eef1b1f979c6",
+      "summary": "Page introduction: update as soon as a new version is announced; an expired version switches to open loop.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "openloop",
+          "as_written": "Open Loop",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Android version and AAPS version",
+      "anchor": "maintenance-android-version-aaps-version",
+      "source_hash": "ecda5db78c78af51",
+      "summary": "Which AAPS version and branch to use for each Android version.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "WearOS version",
+      "anchor": "wearos-version",
+      "source_hash": "a36213ee7fdf237e",
+      "summary": "The minimum Wear OS level for the watch app.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 4.0.0.0",
+      "anchor": "version4000",
+      "source_hash": "8a8af84814d34083",
+      "summary": "Release of version 4.0.0.0 (beta), with a pointer to the v4 changes page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "New features",
+      "anchor": "new-features",
+      "source_hash": "0ab8ad8aed0410ef",
+      "summary": "New features in 4.0.0.0: Compose interface, global search, desktop and iOS clients, scenes, master and client control, insulin concentration, calibration plugin, UKF smoothing, site rotation, Autotune rework, widgets, accessibility and settings import.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scenes",
+          "as_written": "Scenes",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "site_rotation",
+          "as_written": "Site rotation",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "New devices",
+      "anchor": "new-devices",
+      "source_hash": "665707b1414485f3",
+      "summary": "New devices in 4.0.0.0: CareLevo pump, Dana-i2, Instara CGM.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pump Driver Improvements",
+      "anchor": "pump-driver-improvements",
+      "source_hash": "95d799f06cf6e43e",
+      "summary": "Pump driver changes in 4.0.0.0: rebuilt pump overview screens and Omnipod, Dana and Equil changes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Wear OS",
+      "anchor": "wear-os",
+      "source_hash": "b38a4ec777728e5f",
+      "summary": "Wear OS changes in 4.0.0.0: watch app rebuilt, custom watchface and complication changes, wizard fixes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build",
+      "anchor": "build",
+      "source_hash": "e43900a8bdd17657",
+      "summary": "Build changes in 4.0.0.0: CI workflows for tag and branch builds.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Contributors",
+      "anchor": "contributors",
+      "source_hash": "81ed717ccd3f15f2",
+      "summary": "Contributors to 4.0.0.0 and a link to the full changelog.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 3.4.2.6",
+      "anchor": "version3426",
+      "source_hash": "070d58adf84a7466",
+      "summary": "Release notes of version 3.4.2.6: Equil stability.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 3.4.2.5",
+      "anchor": "version3425",
+      "source_hash": "7076edd9a97af58f",
+      "summary": "Release notes of version 3.4.2.5: Equil fix.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 3.4.2.4",
+      "anchor": "version3424",
+      "source_hash": "47ffb74c67bceb3a",
+      "summary": "Release notes of version 3.4.2.4: Equil and Nightscout profile sync fixes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 3.4.2.3",
+      "anchor": "version3423",
+      "source_hash": "ded2110a7d6c2edb",
+      "summary": "Release notes of version 3.4.2.3: fixes for Dash, NSClientV3, Automation, Equil, DanaRS and Insight.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 3.4.2.2",
+      "anchor": "version3422",
+      "source_hash": "4c377cda3163b16c",
+      "summary": "Release notes of version 3.4.2.2: Equil, Medtronic and Medtrum fixes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 3.4.2.1",
+      "anchor": "version3421",
+      "source_hash": "635c4e555085b9f3",
+      "summary": "Release notes of version 3.4.2.1: Equil pairing fix.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 3.4.2.0",
+      "anchor": "version3420",
+      "source_hash": "2d66074858e34fc5",
+      "summary": "Release notes of version 3.4.2.0: Equil, Tidepool, Medtrum and COB fixes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 3.4.1.0",
+      "anchor": "version3410",
+      "source_hash": "f0df78d282dfd422",
+      "summary": "Release notes of version 3.4.1.0 and its release date.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Core",
+      "anchor": "core",
+      "source_hash": "a71f9488a00d51cd",
+      "summary": "Core changes in 3.4.1.0: DST, target identification, SMS RESTART PIN, directory warning.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pump Driver Improvements",
+      "anchor": "pump-driver-improvements",
+      "source_hash": "73c4c1d9926fa52e",
+      "summary": "Pump driver changes in 3.4.1.0: Omnipod, Medtronic, RileyLink, Equil and Diaconn fixes, and insulin delivery while the loop is suspended.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Cloud / Backup",
+      "anchor": "cloud-backup",
+      "source_hash": "a832f905d380188a",
+      "summary": "Backup changes in 3.4.1.0: backups to Google Drive, local and cloud storage together.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Tidepool",
+      "anchor": "tidepool",
+      "source_hash": "80065b542d40f38a",
+      "summary": "Tidepool changes in 3.4.1.0: OAuth2 migration and blocked-state fixes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "NSClient",
+      "anchor": "nsclient",
+      "source_hash": "509f224245202148",
+      "summary": "NSClient changes in 3.4.1.0: better NSClientV3 reconnection.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Wear OS",
+      "anchor": "wear-os",
+      "source_hash": "e91b7a7db7868222",
+      "summary": "Wear OS changes in 3.4.1.0: IOB in the wizard result, bolus progress fix.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "UI",
+      "anchor": "ui",
+      "source_hash": "1907af7d3b9c3a80",
+      "summary": "UI changes in 3.4.1.0: site rotation fixes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Contributors",
+      "anchor": "contributors",
+      "source_hash": "7a36f7488f759fce",
+      "summary": "Contributors to 3.4.1.0.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 3.4.0.0",
+      "anchor": "version3400",
+      "source_hash": "a4a4707a351f3d5a",
+      "summary": "Release notes of version 3.4.0.0 and its release date.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Before upgrading:",
+      "anchor": "before-upgrading",
+      "source_hash": "9dba0d24ce9c89ed",
+      "summary": "Before upgrading to 3.4.0.0: Android 12 is required and Android Studio must be current.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "New features",
+      "anchor": "new-features",
+      "source_hash": "09c4271c4849c387",
+      "summary": "New features in 3.4.0.0: running mode history and control from AAPSClient, new CGMs, site rotation, an automation action to enable or disable SMB, Syai as a trusted source.",
+      "dialogs": [
+        "Preferences > NSClient > Synchronization"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_sync_options",
+          "as_written": "Synchronization",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "running_mode",
+          "as_written": "Running mode",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "site_rotation",
+          "as_written": "Site rotation",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Wear OS Improvements",
+      "anchor": "wear-os-improvements",
+      "source_hash": "8a07670d52dbfe26",
+      "summary": "Wear OS changes in 3.4.0.0: battery use, rewritten code, new complications.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Memory Leak Fixes",
+      "anchor": "memory-leak-fixes",
+      "source_hash": "b9dbb50d6ec10470",
+      "summary": "Memory leak fixes and leak reporting in 3.4.0.0.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pump Driver Improvements",
+      "anchor": "pump-driver-improvements",
+      "source_hash": "f729f707b457da16",
+      "summary": "Pump driver changes in 3.4.0.0: Dana-i, RileyLink, Medtrum, Combo and Equil.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Nightscout Sync",
+      "anchor": "nightscout-sync",
+      "source_hash": "ebe9e1f1597f1435",
+      "summary": "Nightscout sync change in 3.4.0.0: better deduplication.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "UI/UX Improvements",
+      "anchor": "ui-ux-improvements",
+      "source_hash": "cce8fe9fbae2a353",
+      "summary": "Various UI improvements in 3.4.0.0.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Automation",
+      "anchor": "automation",
+      "source_hash": "dea99be75b8539e6",
+      "summary": "Automation change in 3.4.0.0: an action to enable or disable SMB.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Testing",
+      "anchor": "testing",
+      "source_hash": "93b751a7921e735a",
+      "summary": "Testing changes in 3.4.0.0: new unit tests for pump drivers.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Tidepool",
+      "anchor": "tidepool",
+      "source_hash": "5cd3aeb4c32b8a8a",
+      "summary": "Tidepool change in 3.4.0.0: OAuth2 authentication.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 3.3.2.1",
+      "anchor": "version3321",
+      "source_hash": "0073482837271615",
+      "summary": "Release notes of version 3.3.2.1: Omnipod on Android 16, browser build CI and fixes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 3.3.2.0",
+      "anchor": "version3300",
+      "source_hash": "11c14964910b572e",
+      "summary": "Release notes of version 3.3.2.0 and its release date.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to upgrade",
+      "anchor": "how-to-upgrade",
+      "source_hash": "08629c6809852a68",
+      "summary": "Upgrading to 3.3.2.0 requires Android Studio Meerkat.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Starting this version, notification and version enforcement has been simplified and softed and works following way:",
+      "anchor": "starting-this-version-notification-and-version-enforcement-has-been-simplified-and-softed-and-works-following-way",
+      "source_hash": "694e191f6b18a812",
+      "summary": "How version notifications and expiry work from 3.3.2.0: no offline expiry, LGS after expiry, fewer reminders, two kinds of notification.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "News",
+      "anchor": "news",
+      "source_hash": "5a8e87d08786857d",
+      "summary": "New features in 3.3.2.0: SMS RESTART, watch profile switch, widget configuration, automation map position, version on the main screen, Tidepool upload.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Bug fixes",
+      "anchor": "bug-fixes",
+      "source_hash": "e265f54f94131ee1",
+      "summary": "Bug fixes in 3.3.2.0: Dash, Garmin, IOB display, objectives, emulated TBRs, security.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 3.3.1.3",
+      "anchor": "version-3-3-1-3",
+      "source_hash": "c460307601046c02",
+      "summary": "Release notes of version 3.3.1.3 and its release date.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Bug fixes",
+      "anchor": "bug-fixes",
+      "source_hash": "08620af5ac139dc1",
+      "summary": "Bug fixes in 3.3.1.3: Dash bonding optional, Equil, Garmin and watch, loop control from the watch; authenticator may need setting up again.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 3.3.1.2",
+      "anchor": "version-3-3-1-2",
+      "source_hash": "de3215c565fa8c46",
+      "summary": "Release notes of version 3.3.1.2 and its release date.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to upgrade",
+      "anchor": "how-to-upgrade",
+      "source_hash": "91477936ab83ddd0",
+      "summary": "Upgrading to 3.3.1.2 requires Android Studio Ladybug Feature Drop.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Bug fixes",
+      "anchor": "bug-fixes",
+      "source_hash": "4ed6d7be1ab139d8",
+      "summary": "Bug fixes in 3.3.1.2: Dash bonding, Dexcom button, Equil, DynISF adjustment factor warning, NSClientV3, SMS one-time password, preferences, master password reset, large settings imports.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_dynisf_adjustment_factor",
+          "as_written": "DynISF Adjustment Factor",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Version 3.3.1.0",
+      "anchor": "version-3-3-1-0",
+      "source_hash": "a30bc18a50572aa2",
+      "summary": "Release notes of version 3.3.1.0 and its release date.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "UI changes",
+      "anchor": "ui-changes",
+      "source_hash": "f19b2cb06bc21d24",
+      "summary": "UI changes in 3.3.1.0: AAPSClient colours and user actions layout.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Other functionalities",
+      "anchor": "other-functionalities",
+      "source_hash": "87b13ed77df0aea3",
+      "summary": "Other changes in 3.3.1.0: a steps count automation trigger, full NSClientV3 sync, announcements from AAPSClient.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerStepsCountLabel",
+          "as_written": "steps count",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Technical changes & bug fixes",
+      "anchor": "technical-changes-bug-fixes",
+      "source_hash": "1ab97ae4c72010dd",
+      "summary": "Fixes in 3.3.1.0: Insight, Nightscout device status, carbs absorption, radio buttons, DynISF migration, watchfaces.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 3.3.0.0",
+      "anchor": "version-3-3-0-0",
+      "source_hash": "cab8020867da92ea",
+      "summary": "Release notes of version 3.3.0.0 and its release date.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Main features",
+      "anchor": "main-features",
+      "source_hash": "2850d9e51bd2a74f",
+      "summary": "Main features of 3.3.0.0: Dynamic ISF becomes an option of OpenAPS SMB, SMB always and after carbs for Libre 2 and 3, new Automation triggers, unattended settings exports.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openapssmb",
+          "as_written": "OpenAPS SMB",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile Switch",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "How to upgrade",
+      "anchor": "how-to-upgrade",
+      "source_hash": "d1a6d6e574c5b0d8",
+      "summary": "Before and after upgrading to 3.3.0.0: Android 11, the native Combo driver, additional graphs lost, Android Studio Ladybug and JVM, and setting the new AAPS directory in Maintenance.",
+      "dialogs": [
+        "Preferences > Maintenance"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aaps_directory",
+          "as_written": "AAPS directory",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Detailed changes",
+      "anchor": "detailed-changes",
+      "source_hash": "808c7075d1ead552",
+      "summary": "Heading for the detailed 3.3.0.0 changes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "CGMs and Pumps",
+      "anchor": "cgms-and-pumps",
+      "source_hash": "577754d5dc4e8494",
+      "summary": "CGM and pump changes in 3.3.0.0: SMB always for Libre, Medtrum, Equil 5.3, Ottai and Syai CGMs, Insight rewrite, old Combo driver removed.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "UI changes",
+      "anchor": "ui-changes",
+      "source_hash": "2cb1023200a86d65",
+      "summary": "UI changes in 3.3.0.0: simple mode by default, QuickWizard options, graph scale menu, collapsed Configuration sections, bolus wizard.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_simple_mode",
+          "as_written": "Simple mode",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "quickwizard_managemnt",
+          "as_written": "QuickWizard",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Other functionalities",
+      "anchor": "other-functionalities",
+      "source_hash": "0ffe12f0a63b99a8",
+      "summary": "Other changes in 3.3.0.0: unattended settings export, new automation triggers (pod activation, cannula, insulin, battery and sensor age, reservoir and battery level), negative carbs, AAPS directory, objective 2 update, SMS options.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerPodChangeLabel",
+          "as_written": "Pod Activation",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerCannulaAgeLabel",
+          "as_written": "Cannula age",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerInsulinAgeLabel",
+          "as_written": "Insulin age",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerPumpBatteryAgeLabel",
+          "as_written": "Battery age",
+          "confidence": 0.5
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerSensorAgeLabel",
+          "as_written": "Sensor age",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerReservoirLevelLabel",
+          "as_written": "Reservoir level",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "triggerPumpBatteryLevelLabel",
+          "as_written": "Pump battery level",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aaps_directory",
+          "as_written": "AAPS directory",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Smartwatches",
+      "anchor": "smartwatches",
+      "source_hash": "2b5a905f09a4a55f",
+      "summary": "Watch changes in 3.3.0.0: watchface improvements, tiles from Automation actions, combined watchfaces.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Technical changes",
+      "anchor": "technical-changes",
+      "source_hash": "1cb7b16366b71ebe",
+      "summary": "Technical changes in 3.3.0.0: log location, module structure, Kotlin rewrites, CI and libraries.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "[Version 3.2.0.4](https://github.com/nightscout/AndroidAPS/releases/tag/3.2.0.4)",
+      "anchor": "version3204",
+      "source_hash": "95151d172d4c99f9",
+      "summary": "Version 3.2.0.4, the last for Android 10.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Changes",
+      "anchor": "changes",
+      "source_hash": "e981da21056beab9",
+      "summary": "Changes in 3.2.0.4: xDrip G7, Medtrum, automation icon, objective 1 fix.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 3.2.0.0 dedicated to @Philoul",
+      "anchor": "version3200",
+      "source_hash": "f2d8e7ba9d337d7a",
+      "summary": "Release notes of version 3.2.0.0, dedicated to a contributor.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Important hints",
+      "anchor": "important-hints",
+      "source_hash": "b467167f45459f92",
+      "summary": "Things to know before using 3.2.0.0: Nightscout 15, websockets, reselecting xDrip, Tidepool for objective 1, xDrip sync, ComboV2, objective 11 for DynISF.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Changes",
+      "anchor": "changes",
+      "source_hash": "65cc26fecb9c6e27",
+      "summary": "Changes in 3.2.0.0: new pump and CGM drivers, NSClient v3, Tidepool, smoothing, DynamicISF, Garmin, new SMS commands and many internal changes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Important comments on using v3 versus v1 API for Nightscout with AAPS",
+      "anchor": "Important-comments-on-using-v3-versus-v1-API-for-Nightscout-with-AAPS",
+      "source_hash": "a50ece075344d25a",
+      "summary": "Differences between the Nightscout v1 and v3 APIs, their limits, and the recommended setup (one method on all devices, AAPS as the single uploader).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 3.1.0",
+      "anchor": "version3100",
+      "source_hash": "c12d7bd137b427cb",
+      "summary": "Version 3.1.0 with a link to its release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 3.0.0",
+      "anchor": "version-3-0-0",
+      "source_hash": "95459bfcc364d461",
+      "summary": "Version 3.0.0 with a link to its release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 2.8.2",
+      "anchor": "version-2-8-2",
+      "source_hash": "02e998a190bd12b5",
+      "summary": "Version 2.8.2 with a link to its release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 2.8.1.1",
+      "anchor": "important-hints-2-8-1-1",
+      "source_hash": "b416d733b79d9ae6",
+      "summary": "Version 2.8.1.1 with a link to its release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 2.8.0",
+      "anchor": "Releasenotes-version-2-8-0",
+      "source_hash": "336dc6475975ff00",
+      "summary": "Version 2.8.0 with a link to its release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 2.7.0",
+      "anchor": "Releasenotes-version-2-7-0",
+      "source_hash": "11e2a4ea2dd3971f",
+      "summary": "Version 2.7.0 with a link to its release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 2.6.1.4",
+      "anchor": "Releasenotes-version-2-6-1-4",
+      "source_hash": "4a14cd77947b6ae1",
+      "summary": "Version 2.6.1.4 with a link to its archived release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 2.6.1.3",
+      "anchor": "version-2-6-1-3",
+      "source_hash": "47b854a3250817fb",
+      "summary": "Version 2.6.1.3 with a link to its archived release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 2.6.1.2",
+      "anchor": "version-2-6-1-2",
+      "source_hash": "f2bf80734b9c7fce",
+      "summary": "Version 2.6.1.2 with a link to its archived release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 2.6.1.1",
+      "anchor": "version-2-6-1-1",
+      "source_hash": "1a705b552ddf225e",
+      "summary": "Version 2.6.1.1 with a link to its archived release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 2.6.1",
+      "anchor": "version-2-6-1",
+      "source_hash": "26e5d7b3ef98462f",
+      "summary": "Version 2.6.1 with a link to its archived release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 2.6.0",
+      "anchor": "Releasenotes-version-2-6-0",
+      "source_hash": "fdfb683361b61538",
+      "summary": "Version 2.6.0 with a link to its archived release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 2.5.1",
+      "anchor": "version-2-5-1",
+      "source_hash": "3c129b8d3bc73b1a",
+      "summary": "Version 2.5.1 with a link to its archived release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 2.5.0",
+      "anchor": "Releasenotes-version-2-5-0",
+      "source_hash": "a4bcdb54e0431d84",
+      "summary": "Version 2.5.0 with a link to its archived release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 2.3",
+      "anchor": "version-2-3",
+      "source_hash": "19340c2e3145dba3",
+      "summary": "Version 2.3 with a link to its archived release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 2.2.2",
+      "anchor": "version-2-2-2",
+      "source_hash": "568b96e4a7b53c80",
+      "summary": "Version 2.2.2 with a link to its archived release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 2.2",
+      "anchor": "version-2-2",
+      "source_hash": "54146d8c0e339148",
+      "summary": "Version 2.2 with a link to its archived release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 2.1",
+      "anchor": "version-2-1",
+      "source_hash": "92fbb84d32ba7d7e",
+      "summary": "Version 2.1 with a link to its archived release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 2.0",
+      "anchor": "version-2-0",
+      "source_hash": "7738cddedfe93a8f",
+      "summary": "Version 2.0 with a link to its archived release notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Version 1.0",
+      "anchor": "version-1-0",
+      "source_hash": "ed7af8b34bb3df80",
+      "summary": "The first AAPS version: testing from 2015, first release in 2016.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "Headings such as \"New features\", \"Bug fixes\", \"Pump Driver Improvements\" and \"Tidepool\" repeat under several versions; each section summary names its version. The \"Receive Running mode events\" setting named in 3.4.0.0 was not found in the app strings."
+}
