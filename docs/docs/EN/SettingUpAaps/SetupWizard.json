@@ -1,0 +1,1093 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/SetupWizard.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Step-by-step walkthrough of the Setup Wizard that runs on first start of AAPS. It covers granting permissions, the license agreement, the master password, importing settings, units and display range, Communication (Nightscout), client control, patient type and limits, insulin, BG source, the profile editor and activation, pump, APS algorithm, sensitivity, and starting Objective 1. Button names follow the wizard screens.",
+  "features": [
+    "Setup Wizard",
+    "Permissions",
+    "Profile",
+    "Objectives"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Setup Wizard",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "nav_setupwizard"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "AAPS Setup Wizard",
+      "anchor": "aaps-setup-wizard",
+      "source_hash": "b975216b99a916df",
+      "summary": "Introduces the Setup Wizard run on first start, says it can be left and resumed, and that features are unlocked later through the objectives.",
+      "dialogs": [
+        "Setup Wizard"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_setupwizard",
+          "as_written": "Setup Wizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "objectives",
+          "as_written": "Objectives",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Welcome message",
+      "anchor": "welcome-message",
+      "source_hash": "91c15619a12377d5",
+      "summary": "The welcome screen, the Permissions Required panel that opens over it, and the Next button.",
+      "dialogs": [
+        "Setup Wizard > Welcome"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "welcome",
+          "as_written": "Welcome",
+          "confidence": 0.4
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "permission_sheet_title",
+          "as_written": "Permissions Required",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "Next",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "NEXT",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Required permissions",
+      "anchor": "required-permissions",
+      "source_hash": "05d7282467704d87",
+      "summary": "The Permissions Required panel lists each permission with its own Grant button.",
+      "dialogs": [
+        "Setup Wizard > Welcome > Permissions Required"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "permission_sheet_title",
+          "as_written": "Permissions Required",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "permission_grant",
+          "as_written": "Grant",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Battery optimization",
+      "anchor": "battery-optimization",
+      "source_hash": "d11c4f437b36bb25",
+      "summary": "Why AAPS must be excluded from battery optimization, and granting it in the system dialog.",
+      "dialogs": [
+        "Setup Wizard > Welcome > Permissions Required"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "permission_grant",
+          "as_written": "Grant",
+          "confidence": 0.9
+        },
+        {
+          "file": "implementation/src/androidMain/res/values/strings.xml",
+          "key": "permission_battery_title",
+          "as_written": "Battery Optimization",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "AAPS Directory",
+      "anchor": "SetupWizard-StoragePermission",
+      "source_hash": "09b4cb5c7d7bb6a8",
+      "summary": "Choosing the storage folder for AAPS settings and logs through the Android file picker.",
+      "dialogs": [
+        "Setup Wizard > Welcome > Permissions Required"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "permission_grant",
+          "as_written": "Grant",
+          "confidence": 0.9
+        },
+        {
+          "file": "implementation/src/androidMain/res/values/strings.xml",
+          "key": "permission_directory_title",
+          "as_written": "AAPS Directory",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Notifications",
+      "anchor": "notifications",
+      "source_hash": "00b13798e42bf5e2",
+      "summary": "Allowing AAPS to send notifications.",
+      "dialogs": [
+        "Setup Wizard > Welcome > Permissions Required"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "permission_grant",
+          "as_written": "Grant",
+          "confidence": 0.9
+        },
+        {
+          "file": "implementation/src/androidMain/res/values/strings.xml",
+          "key": "permission_notifications_title",
+          "as_written": "Notifications",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Alarms and reminders",
+      "anchor": "alarms-and-reminders",
+      "source_hash": "d332c3b00644ac61",
+      "summary": "The exact alarms permission on Android 14+, shown only when needed; once all permissions are ticked the panel closes.",
+      "dialogs": [
+        "Setup Wizard > Welcome > Permissions Required"
+      ],
+      "mentions": [
+        {
+          "file": "implementation/src/androidMain/res/values/strings.xml",
+          "key": "permission_schedule_exact_alarm_title",
+          "as_written": "Alarms and reminders",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.6
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "permission_grant",
+          "as_written": "Grant",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "permission_sheet_title",
+          "as_written": "Permissions Required",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "NEXT",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Bluetooth battery optimization",
+      "anchor": "setup-wizard-bluetooth-battery-optimisation",
+      "source_hash": "f77e94339cf00292",
+      "summary": "Android settings outside AAPS: turning off battery optimization for the system Bluetooth app. The labels quoted here are Android's, not AAPS's.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "License agreement",
+      "anchor": "license-agreement",
+      "source_hash": "2a591633ed0208e1",
+      "summary": "Reading and accepting the license agreement, then the Permissions step that lists the permissions again.",
+      "dialogs": [
+        "Setup Wizard > End User License Agreement",
+        "Setup Wizard > Permissions"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "end_user_license_agreement_i_understand",
+          "as_written": "I UNDERSTAND AND AGREE",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "Next",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "NEXT",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "setupwizard_permissions",
+          "as_written": "Permissions",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "grant",
+          "as_written": "Grant",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Master password",
+      "anchor": "master-password",
+      "source_hash": "e7150336f918681c",
+      "summary": "Setting the master password from the wizard through the Protection screen, and why it must not be lost.",
+      "dialogs": [
+        "Setup Wizard > Master password",
+        "Settings > Protection"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/protection.xml",
+          "key": "password_not_set",
+          "as_written": "Password not set",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "set",
+          "as_written": "Set",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "protection",
+          "as_written": "Protection",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_master_password",
+          "as_written": "Master password",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/protection.xml",
+          "key": "password_set",
+          "as_written": "Password set!",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "NEXT",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Import settings",
+      "anchor": "setup-wizard-import-settings",
+      "source_hash": "28582cc278e4ba49",
+      "summary": "Shown only when exported settings are found: import them or continue with a new setup.",
+      "dialogs": [
+        "Setup Wizard > Import settings"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "storedsettingsfound",
+          "as_written": "Stored settings found",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_setting",
+          "as_written": "Import settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "NEXT",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Units (mg/dL <-> mmol/L)",
+      "anchor": "units-mg-dl-mmol-l",
+      "source_hash": "019a87468ef17b36",
+      "summary": "Choosing mg/dL or mmol/L.",
+      "dialogs": [
+        "Setup Wizard > Units"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "units",
+          "as_written": "Units",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "NEXT",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Display Settings",
+      "anchor": "display-settings",
+      "source_hash": "2a22d520c6d29a90",
+      "summary": "Setting the low and high marks of the glucose graph; display only.",
+      "dialogs": [
+        "Setup Wizard > Display Settings"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "display_settings",
+          "as_written": "Display Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "low_mark",
+          "as_written": "LOW mark",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "high_mark",
+          "as_written": "HIGH mark",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "in_range",
+          "as_written": "in range",
+          "confidence": 0.5
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "NEXT",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Communication",
+      "anchor": "SetupWizard-synchronization-with-the-reporting-server-and-more",
+      "source_hash": "7595ba0e2efd38c7",
+      "summary": "The Communication step: enabling NSClientV3 and setting its URL, access token and websockets; an overview of alarm, connection and advanced options.",
+      "dialogs": [
+        "Setup Wizard > Communication",
+        "Setup Wizard > Communication > NSClientV3 > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator",
+          "as_written": "SMS Communicator",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_v3_title",
+          "as_written": "NSClientV3",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "tidepool",
+          "as_written": "Tidepool",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "xdrip",
+          "as_written": "xDrip",
+          "confidence": 0.7
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+          "key": "open_humans",
+          "as_written": "Open Humans",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wear",
+          "as_written": "Wear",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "tizen",
+          "as_written": "External Companion Apps",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "garmin",
+          "as_written": "Garmin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_url_title",
+          "as_written": "Nightscout URL",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "nsclient_token_title",
+          "as_written": "Nightscout access token",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_use_ws",
+          "as_written": "Use websockets",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_alarm_options",
+          "as_written": "Alarm options",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "connection_settings_title",
+          "as_written": "Connection settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_use_cellular",
+          "as_written": "Use cellular data",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "advanced_settings_title",
+          "as_written": "Advanced Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_log_app_start",
+          "as_written": "Log app start event",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_create_announcements_from_errors",
+          "as_written": "Create announcements from errors",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_create_announcements_from_carbs_req",
+          "as_written": "Create announcements from carbs required",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_slow_sync",
+          "as_written": "Use slow sync",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "NEXT",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Client control",
+      "anchor": "client-control",
+      "source_hash": "e2f3126ce12ba6df",
+      "summary": "The Client control step: pairing AAPSClient devices later from Manage, and the Nightscout data acceptance settings that are off by default.",
+      "dialogs": [
+        "Setup Wizard > Client control",
+        "Manage > Authorized clients",
+        "Settings > NSClientV3 > Synchronization"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "setupwizard_client_control_title",
+          "as_written": "Client control",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_manage_label",
+          "as_written": "Authorized clients",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "setupwizard_open_ns_receive_settings",
+          "as_written": "Nightscout data acceptance",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_sync_options",
+          "as_written": "Synchronization",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "NEXT",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Who is using this phone?",
+      "anchor": "setup-wizard-instance-name",
+      "source_hash": "ff52452e1630cad0",
+      "summary": "Entering the name of the person using the phone, which identifies this AAPS instance; it can be changed later in Settings > General.",
+      "dialogs": [
+        "Setup Wizard > Name",
+        "Settings > General"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_general",
+          "as_written": "General",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_patient_name",
+          "as_written": "Instance name",
+          "confidence": 0.5
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "NEXT",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Patient type",
+      "anchor": "patient-type",
+      "source_hash": "4abcb2352ad26a23",
+      "summary": "Choosing the patient type, which sets safety limits, plus the maximum bolus and maximum carbs.",
+      "dialogs": [
+        "Setup Wizard > Patient type"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "patient_type",
+          "as_written": "Patient type",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "max_bolus_title",
+          "as_written": "maximum allowed bolus",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "NEXT",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Insulin",
+      "anchor": "insulin",
+      "source_hash": "4ccf59f19ff8ea44",
+      "summary": "Creating the insulin in the insulin editor: nickname, peak from a preset, DIA (9 h for new users), and the dialog shown when a client changed the insulin.",
+      "dialogs": [
+        "Setup Wizard > Insulin",
+        "Manage > Insulin settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_insulin",
+          "as_written": "Insulin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_nickname_label",
+          "as_written": "nickname",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "peak_label",
+          "as_written": "Peak",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "dia_label",
+          "as_written": "DIA",
+          "confidence": 0.8
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "load_peak_from",
+          "as_written": "Load peak from",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "rapid_acting_oref",
+          "as_written": "Novorapid",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "ultra_rapid_oref",
+          "as_written": "Fiasp",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "lyumjev",
+          "as_written": "Lyumjev",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_external_update_title",
+          "as_written": "Insulin configuration changed",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cancel",
+          "as_written": "Cancel",
+          "confidence": 0.7
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "NEXT",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Blood sugar source",
+      "anchor": "blood-sugar-source",
+      "source_hash": "c133ee601a31d056",
+      "summary": "Selecting the BG source; the selected card shows Settings and Open plugin.",
+      "dialogs": [
+        "Setup Wizard > BG Source"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_bgsource",
+          "as_written": "BG source",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "dexcom_app_patched",
+          "as_written": "BYODA",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "NEXT",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Profile",
+      "anchor": "setup-wizard-profile",
+      "source_hash": "a5548d36a34d31f5",
+      "summary": "Creating the first profile in the profile editor (IC, ISF, BAS, TARG tabs), saving it, then activating it with an insulin selected and confirming the profile switch.",
+      "dialogs": [
+        "Setup Wizard > Profile",
+        "Profile",
+        "Profile > Activate"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.8
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "no_records_available",
+          "as_written": "No records available",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ic_short",
+          "as_written": "IC",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "isf_short",
+          "as_written": "ISF",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "basal_short",
+          "as_written": "BAS",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "target_short",
+          "as_written": "TARG",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "activate_label",
+          "as_written": "Activate",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "select_insulin",
+          "as_written": "Select Insulin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.7
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "NEXT",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Insulin pump",
+      "anchor": "insulin-pump",
+      "source_hash": "958f0aa100b97748",
+      "summary": "Selecting the pump driver (the virtual pump while learning), and the confirmation that a real pump's basal rates will be overwritten.",
+      "dialogs": [
+        "Setup Wizard > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "insulin pump",
+          "confidence": 0.4
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "virtual_pump",
+          "as_written": "Virtual Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cancel",
+          "as_written": "Cancel",
+          "confidence": 0.7
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "NEXT",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "APS algorithm",
+      "anchor": "aps-algorithm",
+      "source_hash": "b3ea58a023c11748",
+      "summary": "Choosing OpenAPS SMB and looking at its only setting; SMB and closed loop stay locked by the objectives.",
+      "dialogs": [
+        "Setup Wizard > APS",
+        "Setup Wizard > APS > OpenAPS SMB > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openapssmb",
+          "as_written": "OpenAPS SMB",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openapsama",
+          "as_written": "OpenAPS AMA",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_dynamic_sensitivity",
+          "as_written": "Use dynamic sensitivity",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "objectives",
+          "as_written": "Objectives",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "closedloop",
+          "as_written": "closed loop",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "NEXT",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Sensitivity detection",
+      "anchor": "sensitivity-detection",
+      "source_hash": "898b4caf7d20e091",
+      "summary": "Keeping Sensitivity Oref1 and reviewing its absorption settings.",
+      "dialogs": [
+        "Setup Wizard > Sensitivity detection"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sensitivity",
+          "as_written": "Sensitivity detection",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/sensitivity/src/androidMain/res/values/strings.xml",
+          "key": "sensitivity_oref1",
+          "as_written": "Sensitivity Oref1",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "next_button",
+          "as_written": "NEXT",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Start Objective 1",
+      "anchor": "start-objective-1",
+      "source_hash": "b947d350a071eae9",
+      "summary": "Opening the objectives from the wizard, starting Objective 1, finishing the wizard and dismissing notifications on the main screen.",
+      "dialogs": [
+        "Setup Wizard > Objectives",
+        "Objectives"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "open_objectives",
+          "as_written": "Open Objectives",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/objectives.xml",
+          "key": "objectives_button_start",
+          "as_written": "Start",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/objectives.xml",
+          "key": "nth_objective",
+          "as_written": "1. Objective",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "setupwizard_finish",
+          "as_written": "FINISH",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "notification",
+          "as_written": "Notification",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "dismiss",
+          "as_written": "Dismiss",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Bluetooth permission",
+      "anchor": "bluetooth-permission",
+      "source_hash": "9cdaa9c04be5f021",
+      "summary": "For a Bluetooth pump: the reminder banner during the wizard and granting the Bluetooth permission afterwards on the main screen.",
+      "dialogs": [
+        "Main screen > Permissions Required"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "need_connect_permission",
+          "as_written": "Bluetooth permission",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "dismiss",
+          "as_written": "Dismiss",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "permission_sheet_title",
+          "as_written": "Permissions Required",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "permission_grant",
+          "as_written": "Grant",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "permission_bluetooth_title",
+          "as_written": "Bluetooth",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": "The name step's title \"Who is using this phone?\" was not found as an app string. The page calls the name setting \"Instance name\"; the app titles it \"Name\" (pref_title_patient_name). The Bluetooth battery optimization section quotes Android system labels (Apps, See all apps, Show system, Unrestricted), not AAPS strings."
+}

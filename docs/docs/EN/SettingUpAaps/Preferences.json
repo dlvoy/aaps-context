@@ -1,0 +1,1469 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/Preferences.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Reference for the Settings screen (formerly Preferences), opened from the gear icon at the top right of the main screen, from a plugin's Settings in Configuration, or through the search bar. It goes through the settings sections one by one (General, Appearance, Protection, Safety, BG source, Loop, OpenAPS, Absorption, Pump, NSClient, Wear, Automation, Maintenance and more). It also says where former Overview settings live in v4: QuickLaunch, QuickWizard, temp target presets, prime/fill, status lights and the bolus wizard.",
+  "features": [
+    "Settings",
+    "Protection",
+    "Safety limits",
+    "Maintenance"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main screen > Settings",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "settings"
+    },
+    {
+      "ui_location": "Main menu > Maintenance",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "maintenance"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Settings (Preferences)",
+      "anchor": "settings-preferences",
+      "source_hash": "e7ad7adfc372bc44",
+      "summary": "How to reach the Settings screen in v4: the gear icon on the main screen, Settings under a plugin in Configuration, or the search bar; sections expand and collapse.",
+      "dialogs": [
+        "Main screen > Settings",
+        "Main menu > Configuration"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search",
+          "as_written": "search",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_simple_mode",
+          "as_written": "Simple mode",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "General",
+      "anchor": "Preferences-general",
+      "source_hash": "bba0dff12217bd0f",
+      "summary": "General settings: units, language, simple mode, insulin concentration support, keep screen on and the instance name.",
+      "dialogs": [
+        "Settings > General"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_general",
+          "as_written": "General",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_units",
+          "as_written": "Units",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_language",
+          "as_written": "Language",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_simple_mode",
+          "as_written": "Simple mode",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_simple_mode",
+          "as_written": "simple mode",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_insulin_concentration",
+          "as_written": "Insulin concentration support",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_keep_screen_on",
+          "as_written": "Keep screen on",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_patient_name",
+          "as_written": "Instance name",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Skin",
+      "anchor": "Preferences-skin",
+      "source_hash": "84d59308f6398468",
+      "summary": "The v3 skin choice no longer exists; the colour scheme is under Appearance.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "appearance",
+          "as_written": "Appearance",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Appearance",
+      "anchor": "preferences-appearance",
+      "source_hash": "8f23a85f40a66a21",
+      "summary": "The Appearance section of Settings.",
+      "dialogs": [
+        "Settings > Appearance"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "appearance",
+          "as_written": "Appearance",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Range for visualization",
+      "anchor": "Preferences-range-for-visualization",
+      "source_hash": "9c92f1f0f147a9e5",
+      "summary": "Setting the high and low marks of the BG graph on the main screen and watch; display only, not the target.",
+      "dialogs": [
+        "Settings > Appearance"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "prefs_range_title",
+          "as_written": "Range for visualization",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Show notes in dialogs",
+      "anchor": "Preferences-show-notes-field-in-treatments-dialogs",
+      "source_hash": "de82e505e18086ca",
+      "summary": "Option to add a text note field in treatment dialogs.",
+      "dialogs": [
+        "Settings > Appearance"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_show_notes_in_dialogs",
+          "as_written": "Show notes in dialogs",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "App Color Scheme",
+      "anchor": "app-color-scheme",
+      "source_hash": "a2ead4c7c7221682",
+      "summary": "Choosing light theme, dark theme or the phone's system setting.",
+      "dialogs": [
+        "Settings > Appearance"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_app_color_scheme",
+          "as_written": "App Color Scheme",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Protection",
+      "anchor": "Preferences-protection",
+      "source_hash": "6c96533fbddcfe6a",
+      "summary": "The Protection section of Settings.",
+      "dialogs": [
+        "Settings > Protection"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "protection",
+          "as_written": "Protection",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Master password",
+      "anchor": "Preferences-master-password",
+      "source_hash": "f95b301ca93951eb",
+      "summary": "The master password, needed to export settings; biometric caveat on OnePlus phones.",
+      "dialogs": [
+        "Settings > Protection",
+        "Settings > Protection > Master password"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_master_password",
+          "as_written": "Master password",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Settings protection",
+      "anchor": "Preferences-settings-protection",
+      "source_hash": "7e0dd3b0b13bdc6a",
+      "summary": "Protecting settings with a password or biometrics; management screens then open read-only, and how to set a custom settings password.",
+      "dialogs": [
+        "Settings > Protection"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_protection_type_settings",
+          "as_written": "Settings protection",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_management",
+          "as_written": "Profile",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_management",
+          "as_written": "Insulin settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "quickwizard_managemnt",
+          "as_written": "QuickWizard",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_settings_password",
+          "as_written": "Settings password",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Application protection",
+      "anchor": "application-protection",
+      "source_hash": "2290869c60d4b2aa",
+      "summary": "Protecting the whole app with a password or biometrics, and what happens on a wrong password.",
+      "dialogs": [
+        "Settings > Protection"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_protection_type_application",
+          "as_written": "Application protection",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Bolus protection",
+      "anchor": "bolus-protection",
+      "source_hash": "6b594d7b11dcff14",
+      "summary": "Protecting treatment dialogs; requires settings protection first, and the authentication prompt asks for the chosen password.",
+      "dialogs": [
+        "Settings > Protection"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_protection_type_bolus",
+          "as_written": "Bolus protection",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_protection_type_settings",
+          "as_written": "Settings protection",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "master_password",
+          "as_written": "Master password",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "overview_insulin_label",
+          "as_written": "Insulin",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "biometric",
+          "as_written": "Biometric",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Password and PIN retention",
+      "anchor": "Preferences-password-and-pin-retention",
+      "source_hash": "d05873d40dbc33c7",
+      "summary": "How long settings or bolus stay unlocked after entering the password.",
+      "dialogs": [
+        "Settings > Protection"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_protection_timeout",
+          "as_written": "Protection timeout",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Treatment safety",
+      "anchor": "treatment-safety",
+      "source_hash": "1aec1ad7dac9d1b5",
+      "summary": "The Safety section with hard limits for treatments.",
+      "dialogs": [
+        "Settings > Safety"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/strings.xml",
+          "key": "safety",
+          "as_written": "Safety",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Patient age",
+      "anchor": "preferences-patient-type",
+      "source_hash": "32abc2fd48fdfc86",
+      "summary": "Choosing the patient age, which sets the hard safety limits, and why not to pick a higher age.",
+      "dialogs": [
+        "Settings > Safety"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_patient_age",
+          "as_written": "Patient age",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Maximum bolus",
+      "anchor": "Preferences-maximum-bolus",
+      "source_hash": "4327a4b4b31c3937",
+      "summary": "The largest single bolus AAPS will deliver, as a safety limit.",
+      "dialogs": [
+        "Settings > Safety"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_max_bolus",
+          "as_written": "Maximum bolus",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Maximum carbs allowed",
+      "anchor": "maximum-carbs-allowed",
+      "source_hash": "fa433addb430d234",
+      "summary": "The largest carb amount the bolus calculator will dose for.",
+      "dialogs": [
+        "Settings > Safety"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_max_carbs",
+          "as_written": "Maximum carbs allowed",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "BG source",
+      "anchor": "bg-source",
+      "source_hash": "f28d422637fb1853",
+      "summary": "The selected BG source has its own settings section, e.g. uploading BG to Nightscout and logging sensor changes.",
+      "dialogs": [
+        "Settings > xDrip+ BG"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "source_xdrip",
+          "as_written": "xDrip+ BG",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_bg_source_upload_to_ns",
+          "as_written": "Upload BG data to NS",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_bg_source_create_sensor_change",
+          "as_written": "Log sensor change",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "The main screen",
+      "anchor": "the-main-screen",
+      "source_hash": "cb6d12f9f76221cc",
+      "summary": "The v3 Overview settings are now set from the main screen elements they belong to.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "QuickLaunch buttons",
+      "anchor": "Preferences-buttons",
+      "source_hash": "926fde85a81090d0",
+      "summary": "Choosing the action buttons on the main screen through the gear at the bottom (Configure QuickLaunch).",
+      "dialogs": [
+        "Main screen > Configure QuickLaunch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_launch_configure",
+          "as_written": "Configure QuickLaunch",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Quick Wizard",
+      "anchor": "Preferences-quick-wizard",
+      "source_hash": "b6a9bc3f7aee01b7",
+      "summary": "Creating meal buttons with set carbs and time windows, managed through the QuickWizard management screen found via search.",
+      "dialogs": [
+        "Main screen > Search > QuickWizard"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "quickwizard_managemnt",
+          "as_written": "QuickWizard",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage_quickwizard_desc",
+          "as_written": "Manage quick wizard presets",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Default temp targets",
+      "anchor": "Preferences-default-temp-targets",
+      "source_hash": "c13ea9eb78afe06d",
+      "summary": "Editing the temp target presets (Eating Soon, Activity, Hypo) on the Temp Target screen opened from the target on the main screen.",
+      "dialogs": [
+        "Main screen > Temp Target",
+        "Temp Target > Preset Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "preset_settings",
+          "as_written": "Preset Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "eatingsoon",
+          "as_written": "Eating Soon",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "activity",
+          "as_written": "Activity",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "hypo",
+          "as_written": "Hypo",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Fill/Prime standard insulin amounts",
+      "anchor": "fill-prime-standard-insulin-amounts",
+      "source_hash": "9fd793513964a052",
+      "summary": "Setting the default amounts of the prime/fill buttons, found through search.",
+      "dialogs": [
+        "Main screen > Prime/Fill"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "prime_fill",
+          "as_written": "Prime/Fill",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Status lights",
+      "anchor": "Preferences-status-lights",
+      "source_hash": "166b0aae8dd7074f",
+      "summary": "Which status lights exist, their colours, and setting their thresholds from the expanded status panel on the main screen.",
+      "dialogs": [
+        "Main screen > Status > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "statuslights",
+          "as_written": "Status lights",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "status",
+          "as_written": "Status",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cannula",
+          "as_written": "Cannula",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_label",
+          "as_written": "Insulin",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "sensor_label",
+          "as_written": "Sensor",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pb_label",
+          "as_written": "Pump battery",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Bolus wizard settings",
+      "anchor": "Preferences-deliver-this-part-of-bolus-wizard-result",
+      "source_hash": "8f24bb21441d7be7",
+      "summary": "Bolus wizard settings found via search: the default bolus percentage and the bolus advisor.",
+      "dialogs": [
+        "Main screen > Search > Bolus wizard"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "boluswizard",
+          "as_written": "Bolus wizard",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_bolus_percentage",
+          "as_written": "Bolus percentage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_use_bolus_advisor",
+          "as_written": "Use bolus advisor",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Superbolus",
+      "anchor": "Preferences-advanced-settings-overview",
+      "source_hash": "b2f13771a9106786",
+      "summary": "The v3 Superbolus setting no longer exists in v4.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Loop",
+      "anchor": "loop",
+      "source_hash": "b8f3c8772c253d86",
+      "summary": "The Loop section; loop mode is changed from the main screen loop status.",
+      "dialogs": [
+        "Settings > Loop"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_loop",
+          "as_written": "Loop",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Open mode minimum change",
+      "anchor": "Preferences-minimal-request-change",
+      "source_hash": "a6d5926a78bed22e",
+      "summary": "In open loop, the minimum percentage change that triggers a basal recommendation.",
+      "dialogs": [
+        "Settings > Loop"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "openloop",
+          "as_written": "Open loop",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_open_mode_min_change",
+          "as_written": "Open mode minimum change",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Advanced Meal Assist (AMA) or Super Micro Bolus (SMB)",
+      "anchor": "advanced-meal-assist-ama-or-super-micro-bolus-smb",
+      "source_hash": "b1666d3ef4090a42",
+      "summary": "The APS algorithm chosen in Configuration decides which algorithm settings appear.",
+      "dialogs": [
+        "Configuration > APS"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_aps",
+          "as_written": "APS",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "OpenAPS AMA",
+      "anchor": "openaps-ama",
+      "source_hash": "e13cab91977ba349",
+      "summary": "Points to the AMA settings in Key AAPS Features.",
+      "dialogs": [
+        "Settings > OpenAPS AMA"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openapsama",
+          "as_written": "OpenAPS AMA",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "OpenAPS SMB",
+      "anchor": "Preferences-openaps-smb-settings",
+      "source_hash": "fb12222942231bf3",
+      "summary": "The SMB settings shown depend on objectives and simple mode; Advanced Settings at the bottom.",
+      "dialogs": [
+        "Settings > OpenAPS SMB",
+        "Settings > OpenAPS SMB > Advanced Settings"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openapssmb",
+          "as_written": "OpenAPS SMB",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_dynamic_sensitivity",
+          "as_written": "Use dynamic sensitivity",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "advanced_settings_title",
+          "as_written": "Advanced Settings",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Absorption settings",
+      "anchor": "absorption-settings",
+      "source_hash": "06651fbf8c0e7f4d",
+      "summary": "The Absorption settings section.",
+      "dialogs": [
+        "Settings > Absorption settings"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sensitivity/src/androidMain/res/values/strings.xml",
+          "key": "absorption_settings_title",
+          "as_written": "Absorption settings",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "SMB min 5m carbs impact (min_5m_carbimpact)",
+      "anchor": "Preferences-min_5m_carbimpact",
+      "source_hash": "40894eae1ca84b58",
+      "summary": "What the min 5m carbs impact does as a default carb decay, its standard values, and how it shows on the COB graph.",
+      "dialogs": [
+        "Settings > Absorption settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_smb_min_5m_carbs_impact",
+          "as_written": "SMB min 5m carbs impact",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Absorption cutoff",
+      "anchor": "absorption-cutoff",
+      "source_hash": "c26140aaa5b2d337",
+      "summary": "Time after which a meal is considered absorbed.",
+      "dialogs": [
+        "Settings > Absorption settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_absorption_cutoff",
+          "as_written": "Absorption cutoff",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Advanced settings - autosens ratio",
+      "anchor": "advanced-settings-autosens-ratio",
+      "source_hash": "dcabf7e04b902c69",
+      "summary": "The minimum and maximum autosens ratio.",
+      "dialogs": [
+        "Settings > Absorption settings > Advanced Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_autosens_min",
+          "as_written": "autosens",
+          "confidence": 0.4
+        }
+      ]
+    },
+    {
+      "heading": "Pump",
+      "anchor": "pump",
+      "source_hash": "05ff2ec12d025350",
+      "summary": "The Pump section of Settings.",
+      "dialogs": [
+        "Settings > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump",
+          "as_written": "Pump",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "BT Watchdog",
+      "anchor": "bt-watchdog",
+      "source_hash": "070b6e5677b930b1",
+      "summary": "Option that restarts Bluetooth when the pump cannot be reached.",
+      "dialogs": [
+        "Settings > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_bt_watchdog",
+          "as_written": "BT Watchdog",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Pump settings",
+      "anchor": "pump-settings",
+      "source_hash": "a0d1f50339ac1e01",
+      "summary": "The selected pump driver has its own settings section; example with the virtual pump.",
+      "dialogs": [
+        "Configuration > Pump",
+        "Settings > Virtual pump settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "virtual_pump",
+          "as_written": "Virtual Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/virtual/src/androidMain/res/values/strings.xml",
+          "key": "virtualpump_settings",
+          "as_written": "Virtual pump settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_virtual_pump_type",
+          "as_written": "Pump type",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Tidepool",
+      "anchor": "tidepool",
+      "source_hash": "14651a81f9dfc5a8",
+      "summary": "Points to the Tidepool page.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "tidepool",
+          "as_written": "Tidepool",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "NSClient",
+      "anchor": "Preferences-nsclient",
+      "source_hash": "51842bd18bad1113",
+      "summary": "Setting up the Nightscout connection: URL, access token, websockets, and the warning about other uploaders.",
+      "dialogs": [
+        "Settings > NSClientV3"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_v3_title",
+          "as_written": "NSClientV3",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_url_title",
+          "as_written": "Nightscout URL",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "nsclient_token_title",
+          "as_written": "Nightscout access token",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_use_ws",
+          "as_written": "Use websockets",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Synchronization",
+      "anchor": "Preferences-nsclient-synchronization",
+      "source_hash": "554fa7d77437bad8",
+      "summary": "Choosing which data is uploaded to and downloaded from Nightscout.",
+      "dialogs": [
+        "Settings > NSClientV3 > Synchronization"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_sync_options",
+          "as_written": "Synchronization",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Alarm options",
+      "anchor": "alarm-options",
+      "source_hash": "6b04b89650168215",
+      "summary": "Nightscout alarms and announcements in AAPS and the stale data thresholds.",
+      "dialogs": [
+        "Settings > NSClientV3 > Alarm options"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_alarm_options",
+          "as_written": "Alarm options",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_notifications_from_announcements",
+          "as_written": "NS announcements",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Remote control",
+      "anchor": "remote-control",
+      "source_hash": "a34f7a16928854a2",
+      "summary": "The Allow client control subsection for master and client phones; described elsewhere.",
+      "dialogs": [
+        "Settings > NSClientV3 > Remote control"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_remote_control_options",
+          "as_written": "Remote control",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_allow_client_control",
+          "as_written": "Allow client control",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Connection settings",
+      "anchor": "connection-settings",
+      "source_hash": "de8e872b55c134e2",
+      "summary": "Limiting the Nightscout connection to Wi-Fi or chosen SSIDs.",
+      "dialogs": [
+        "Settings > NSClientV3 > Connection settings"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "connection_settings_title",
+          "as_written": "Connection settings",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Advanced settings (NSClient)",
+      "anchor": "Preferences-advanced-settings-nsclient",
+      "source_hash": "6e49f75c0e451aad",
+      "summary": "Other NSClient options.",
+      "dialogs": [
+        "Settings > NSClientV3 > Advanced Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "advanced_settings_title",
+          "as_written": "Advanced settings",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "SMS Communicator",
+      "anchor": "sms-communicator",
+      "source_hash": "368ce53332a2fd17",
+      "summary": "Points to the SMS Commands page.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator",
+          "as_written": "SMS Communicator",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Wear",
+      "anchor": "preferences-wear",
+      "source_hash": "6eaff1bb3d04e3ab",
+      "summary": "Wear settings: watch control, which parts the watch bolus wizard includes, custom watchface authorization and SMB notifications.",
+      "dialogs": [
+        "Configuration > Communication",
+        "Settings > Wear",
+        "Settings > Wear > Wear Wizard Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wear",
+          "as_written": "Wear",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_wear_control",
+          "as_written": "Wear control",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wear_wizard_settings",
+          "as_written": "Wear Wizard Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_wear_wizard_bg",
+          "as_written": "Include BG in wizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_wear_wizard_tt",
+          "as_written": "Include temp target in wizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_wear_wizard_trend",
+          "as_written": "Include trend in wizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_wear_wizard_cob",
+          "as_written": "Include COB in wizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_wear_wizard_iob",
+          "as_written": "Include IOB in wizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "wear_custom_watchface_settings",
+          "as_written": "Custom Watchface Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_wear_custom_watchface_authorization",
+          "as_written": "Authorize custom watchfaces",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "wear_general_settings",
+          "as_written": "General Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_wear_notify_on_smb",
+          "as_written": "Notify on SMB",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Autotune",
+      "anchor": "autotune",
+      "source_hash": "7383c848465c21c8",
+      "summary": "The Autotune section appears when the plugin is enabled in Configuration > General.",
+      "dialogs": [
+        "Configuration > General",
+        "Settings > Autotune"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "autotune",
+          "as_written": "Autotune",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_general",
+          "as_written": "General",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Automation",
+      "anchor": "automation",
+      "source_hash": "6ed83f5e4a8bcfa4",
+      "summary": "Choosing the location service used by automations.",
+      "dialogs": [
+        "Settings > Automation"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "automation_location_passive",
+          "as_written": "Use passive location",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "automation_location_network",
+          "as_written": "Use network location",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "automation_location_gps",
+          "as_written": "Use GPS location",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Local alerts",
+      "anchor": "local-alerts",
+      "source_hash": "8b014a853df3ec9b",
+      "summary": "The local alerts section.",
+      "dialogs": [
+        "Settings > Local alerts"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "localalertsettings_title",
+          "as_written": "Local alerts",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Maintenance settings",
+      "anchor": "preferences-maintenance-settings",
+      "source_hash": "887632b0cf80f9ed",
+      "summary": "Log email recipient and count, data choices (crash reports) and unattended settings export with its stored master password.",
+      "dialogs": [
+        "Settings > Maintenance"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "maintenance",
+          "as_written": "Maintenance",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "maintenance_email",
+          "as_written": "Email recipient",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_logs_amount",
+          "as_written": "Number of logs to send",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "data_choices",
+          "as_written": "Data Choices",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "unattended_settings_export",
+          "as_written": "Unattended Settings Export",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal",
+          "as_written": "Careportal",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "user_entry",
+          "as_written": "User entry",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Log files",
+      "anchor": "log-files",
+      "source_hash": "b8fc499b15b3188a",
+      "summary": "Why logs matter, where they are stored, and that log handling is on the Maintenance screen.",
+      "dialogs": [
+        "Main menu > Maintenance"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "maintenance",
+          "as_written": "Maintenance",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Setting the local AAPS directory",
+      "anchor": "preferences-maintenance-logdirectory",
+      "source_hash": "5864d4bdc6fca7f9",
+      "summary": "Choosing the AAPS directory on the phone in Maintenance, the wrong-subdirectory error, and the notification when Android drops the directory permission.",
+      "dialogs": [
+        "Main menu > Maintenance"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "maintenance",
+          "as_written": "Maintenance",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "aaps_directory",
+          "as_written": "AAPS directory",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "dismiss",
+          "as_written": "DISMISS",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/protection.xml",
+          "key": "aaps_directory_access_lost",
+          "as_written": "Access to the AAPS directory was lost",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Setting a cloud directory",
+      "anchor": "preferences-maintenance-cloud",
+      "source_hash": "00e299b9aca256c9",
+      "summary": "Setting up Google Drive as cloud directory from Maintenance, step by step, and clearing it again.",
+      "dialogs": [
+        "Main menu > Maintenance > Cloud Directory",
+        "Select Storage Type"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "maintenance",
+          "as_written": "Maintenance",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cloud_directory",
+          "as_written": "Cloud Directory",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "file_management",
+          "as_written": "File management",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "select_storage_type",
+          "as_written": "Select Storage Type",
+          "confidence": 0.9
+        },
+        {
+          "file": "implementation/src/androidMain/res/values/strings.xml",
+          "key": "storage_google_drive",
+          "as_written": "Google Drive",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cloud_auth_success",
+          "as_written": "Cloud storage authentication successful",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "chip_cloud",
+          "as_written": "Cloud",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "send_logs",
+          "as_written": "Send logs",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_export",
+          "as_written": "Export settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_setting",
+          "as_written": "Import settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ue_export_to_csv",
+          "as_written": "Export User Entries to Excel (csv)",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "clear_cloud_action",
+          "as_written": "Clear Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "clear_cloud_settings",
+          "as_written": "Clear Cloud Settings",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Open Humans",
+      "anchor": "open-humans",
+      "source_hash": "a76558726fbdf25e",
+      "summary": "Open Humans upload conditions: Wi-Fi only and charging only.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+          "key": "open_humans",
+          "as_written": "Open Humans",
+          "confidence": 0.8
+        }
+      ]
+    }
+  ],
+  "manual_note": "The page heading \"Treatment safety\" is the app's \"Safety\" section. \"Instance name\" is the preference the app titles \"Name\" (pref_title_patient_name). The protection levels show in the app as \"Level 0: Application protection\", \"Level 1: Bolus protection\" and \"Level 2: Settings protection\". \"Settings protection\" is also a standalone key (settings_protection), but it is unused."
+}

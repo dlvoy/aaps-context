@@ -1,0 +1,560 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/YourAapsProfile.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Explains the four profile settings (glucose targets, basal rates, ISF and IC ratio): what each means, how it affects AAPS and how to set and test it, with answers to common questions. The last part covers managing profiles in v4: the profile editor under Manage > Profile, the Profile helper for children and for comparing profiles, cloning a profile switch, backups, and receiving profiles from Nightscout.",
+  "features": [
+    "Profile",
+    "Profile helper",
+    "Profile switch"
+  ],
+  "screens": [
+    {
+      "ui_location": "Manage > Profile",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "profile_management"
+    },
+    {
+      "ui_location": "Main menu > Profile helper",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "nav_profile_helper"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Your AAPS profile",
+      "anchor": "your-aaps-profile",
+      "source_hash": "5cadca0878e296b7",
+      "summary": "Introduces the profile and its four settings, says DIA now belongs to the insulin, and gives advice on adjusting the profile in small steps.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_management",
+          "as_written": "Profile",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "objectives",
+          "as_written": "Objectives",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Glucose targets",
+      "anchor": "profile-glucose-targets",
+      "source_hash": "dfe759d685e7ba06",
+      "summary": "Section on the profile's glucose targets.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Description",
+      "anchor": "description",
+      "source_hash": "76601032269ef656",
+      "summary": "What the BG target is and the allowed low and high target limits.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Impact",
+      "anchor": "impact",
+      "source_hash": "5293a4af7e8f66bc",
+      "summary": "Why a very wide target range leads to little AAPS action.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to set it",
+      "anchor": "how-to-set-it",
+      "source_hash": "962e409f497133ad",
+      "summary": "Example targets by time of day, and the advice to use a wide range in open loop and a single target in closed loop.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Basal rates",
+      "anchor": "your-aaps-profile-basal-rates",
+      "source_hash": "8ecd7ceb86515044",
+      "summary": "Section on the profile's basal rates.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Description",
+      "anchor": "description",
+      "source_hash": "365d409b4287965f",
+      "summary": "What basal insulin does and why to tune basal rates first.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Impact",
+      "anchor": "impact",
+      "source_hash": "f3593b08b8d8037b",
+      "summary": "How too high or too low basal rates lead to lows or highs, also through AAPS's corrections.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to set it",
+      "anchor": "how-to-set-it",
+      "source_hash": "0f80951a044ebe79",
+      "summary": "Basal testing methods (fasting with the loop suspended or in LGS, watching IOB, overnight analysis) and when to change the profile.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Message: \"Basal rate is not compatible with the current pump\"",
+      "anchor": "your-aaps-profile-basal-not-compatible",
+      "source_hash": "8ae7ad95a45deea6",
+      "summary": "Why the Activate screen shows this message when a basal rate (after the percentage) is outside the pump's limits, and how to fix it.",
+      "dialogs": [
+        "Manage > Profile > Activate"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_basal_not_compatible_with_pump",
+          "as_written": "Basal rate is not compatible with the current pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "activate_label",
+          "as_written": "Activate",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Insulin sensitivity factor (ISF)",
+      "anchor": "your-aaps-profile-insulin-sensitivity-factor",
+      "source_hash": "4b75e16a83de0023",
+      "summary": "Section on the insulin sensitivity factor.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Description",
+      "anchor": "description",
+      "source_hash": "388bfdd9c1a14bc8",
+      "summary": "What ISF means in mg/dL and mmol/L and what strengthening or weakening it means.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Impact",
+      "anchor": "impact",
+      "source_hash": "b54de0d94d9864de",
+      "summary": "How a too strong or too weak ISF affects corrections, with a worked example.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to set it",
+      "anchor": "how-to-set-it",
+      "source_hash": "b3fff71749b01f6b",
+      "summary": "Estimating ISF from TDD with the 1700/94 rule and testing it.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Insulin to Carb ratio (ICR)",
+      "anchor": "your-aaps-profile-insulin-to-carbs-ratio",
+      "source_hash": "a4e61165afcb8272",
+      "summary": "Section on the insulin to carb ratio.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Description",
+      "anchor": "description",
+      "source_hash": "7d7f0b9d790b62eb",
+      "summary": "What the IC ratio means, its abbreviations, daily variation, and converting from bread units.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Impact",
+      "anchor": "impact",
+      "source_hash": "ad7f890cd6bb2b29",
+      "summary": "How a too strong or too weak IC ratio leads to lows or highs.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to set it",
+      "anchor": "how-to-set-it",
+      "source_hash": "95010fe67f7b526d",
+      "summary": "Entering the IC ratio in the profile and testing it after meals.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Common questions related to the Profile",
+      "anchor": "common-questions-related-to-the-profile",
+      "source_hash": "1bbe2fbe8d81d4e7",
+      "summary": "Frequently asked questions about the profile.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "About the importance of getting your profile right",
+      "anchor": "about-the-importance-of-getting-your-profile-right",
+      "source_hash": "b0d0db70cc9e9d5b",
+      "summary": "Why a correct profile matters even with a closed loop, and advice when coming from another system or from injections.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What causes high postprandial peaks in closed loop?",
+      "anchor": "what-causes-high-postprandial-peaks-in-closed-loop",
+      "source_hash": "b489fb1b05282316",
+      "summary": "Checking basal, eating soon temp targets, pre-bolus timing and the IC ratio for high peaks after meals.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "eatingsoon",
+          "as_written": "eating soon",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "I'm stuck high and the loop does not bring me down",
+      "anchor": "i-m-stuck-high-and-the-loop-does-not-bring-me-down",
+      "source_hash": "785958fe1e410995",
+      "summary": "Possible reasons for too little insulin: ISF, basal, safety limits such as max IOB, SMB disabled, or automations.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_smb_max_iob",
+          "as_written": "maxIOB",
+          "confidence": 0.4
+        }
+      ]
+    },
+    {
+      "heading": "I have negative IOB, is this an issue ?",
+      "anchor": "i-have-negative-iob-is-this-an-issue",
+      "source_hash": "57a90124f6dce903",
+      "summary": "What negative IOB means and its causes: basal too strong, too much bolus, DIA too short, activity.",
+      "dialogs": [
+        "Manage > Insulin settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Config Builder",
+          "confidence": 0.4
+        }
+      ]
+    },
+    {
+      "heading": "Manage your Profiles",
+      "anchor": "manage-your-profiles",
+      "source_hash": "2260ed58f9184c76",
+      "summary": "Operations on profiles in AAPS.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Create and edit Profiles",
+      "anchor": "your-aaps-profile-create-and-edit-profiles",
+      "source_hash": "d2ff3da0a1e5a944",
+      "summary": "Profiles are on Manage > Profile as cards with Add, Edit, Clone, Delete and Activate; the editor sets name, units and the IC, ISF, BAS and TARG time blocks.",
+      "dialogs": [
+        "Manage > Profile",
+        "Manage > Profile > Edit"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_management",
+          "as_written": "Profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "add",
+          "as_written": "Add",
+          "confidence": 0.7
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "edit_label",
+          "as_written": "Edit",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "clone_label",
+          "as_written": "Clone",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "delete",
+          "as_written": "Delete",
+          "confidence": 0.7
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "activate_label",
+          "as_written": "Activate",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ic_short",
+          "as_written": "IC",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "isf_short",
+          "as_written": "ISF",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "basal_short",
+          "as_written": "BAS",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "target_short",
+          "as_written": "TARG",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "save",
+          "as_written": "Save",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Build a Profile from scratch for a kid",
+      "anchor": "your-aaps-profile-profile-from-scratch-for-a-kid",
+      "source_hash": "81284bd4be80b1c0",
+      "summary": "Using the Profile helper to build a starting profile for a child from two hospital data sets and cloning the result.",
+      "dialogs": [
+        "Main menu > Profile helper"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_profile_helper",
+          "as_written": "Profile Helper",
+          "confidence": 0.8
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_tab_1",
+          "as_written": "Profile 1",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_type",
+          "as_written": "Profile type",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "motol_default_profile",
+          "as_written": "Default profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_tab_2",
+          "as_written": "Profile 2",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "dpv_default_profile",
+          "as_written": "DPV Default profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "comparation",
+          "as_written": "Comparation",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "clone_label",
+          "as_written": "Clone",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Switch Profile",
+      "anchor": "switch-profile",
+      "source_hash": "2134fbf2f7f6ba4c",
+      "summary": "Points to the profile switch page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Clone a Profile switch to a new Profile",
+      "anchor": "your-aaps-profile-clone-profile-switch",
+      "source_hash": "8a1390c544d660ad",
+      "summary": "In the treatments history, cloning a past profile switch into a new profile.",
+      "dialogs": [
+        "Main menu > Treatments history > Profile switch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments_history",
+          "as_written": "Treatments history",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile switch",
+          "confidence": 0.7
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "clone_label",
+          "as_written": "Clone",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Profile backup",
+      "anchor": "YourAapsProfile_Profile-backup",
+      "source_hash": "d96d6fc4e0b3200b",
+      "summary": "Where profiles are kept: the database, Nightscout via NSClientV3, and exported settings.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_v3_title",
+          "as_written": "NSClientV3",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_sync_options",
+          "as_written": "Synchronization",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Editing Profiles from Nightscout",
+      "anchor": "editing-profiles-from-nightscout",
+      "source_hash": "6715e63ef1ee1605",
+      "summary": "Receiving profiles edited in Nightscout through the Receive profile store from NS setting, and cloning the database record in the Nightscout editor.",
+      "dialogs": [
+        "Settings > NSClientV3 > Synchronization"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_receive_profile_store",
+          "as_written": "Receive profile store from NS",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "setupwizard_open_ns_receive_settings",
+          "as_written": "Nightscout data acceptance",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile switch",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Compare two Profiles",
+      "anchor": "your-aaps-profile-compare-profiles",
+      "source_hash": "a0ddf5586f7b66bd",
+      "summary": "Using the Profile helper to compare two profiles or profile switches.",
+      "dialogs": [
+        "Main menu > Profile helper"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_profile_helper",
+          "as_written": "Profile Helper",
+          "confidence": 0.8
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_tab_1",
+          "as_written": "Profile 1",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_type",
+          "as_written": "Profile type",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "available_profile",
+          "as_written": "Available profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_tab_2",
+          "as_written": "Profile 2",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile switch",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_switches",
+          "as_written": "Profile Switches",
+          "confidence": 0.7
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "comparation",
+          "as_written": "Comparation",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": "The page links DIA to \"Config Builder > Insulin\"; in v4 DIA is set in Manage > Insulin settings."
+}

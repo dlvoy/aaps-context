@@ -1,0 +1,1188 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/ConfigBuilder.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Reference for the Configuration screen (formerly Config Builder), opened from the top-left menu, where the reader picks the active plugin in each category (BG source, smoothing, calibration, pump, sensitivity detection, APS, communication, general) and opens each plugin or its settings. It also covers the insulin editor under Manage > Insulin settings, which replaced the insulin plugins, and says where former plugins (Actions, Automation, Food, Maintenance) now live.",
+  "features": [
+    "Configuration",
+    "Enabling and disabling plugins",
+    "Insulin settings"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "nav_configuration"
+    },
+    {
+      "ui_location": "Manage > Insulin settings",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "insulin_management"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Configuration (Config Builder)",
+      "anchor": "configuration-config-builder",
+      "source_hash": "96364fa08e969fd1",
+      "summary": "Page title and intro: the old Config Builder is now the Configuration entry in the top-left menu, where plugins are activated and opened.",
+      "dialogs": [
+        "Main menu > Configuration"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Config Builder",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Configuration in AAPS v4",
+      "anchor": "configuration-v4",
+      "source_hash": "30444e1fde273206",
+      "summary": "How to open Configuration from the top-left menu, how its category rows show the active plugin, and the two actions each plugin offers: open its screen or its settings.",
+      "dialogs": [
+        "Main menu > Configuration",
+        "Configuration > APS"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration_desc",
+          "as_written": "Set up your configuration (CGM, pump, …) and enable features",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_smoothing",
+          "as_written": "Smoothing",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_calibration",
+          "as_written": "Calibration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sensitivity",
+          "as_written": "Sensitivity detection",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_aps",
+          "as_written": "APS",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_general",
+          "as_written": "General",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openapssmb",
+          "as_written": "OpenAPS SMB",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pick_many_hint",
+          "as_written": "Choose any that apply",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "The mobile icon — “synced from the master”",
+      "anchor": "configuration_sync_icon",
+      "source_hash": "a48c272727e0dbe0",
+      "summary": "Explains the phone icon a client (AAPSClient) shows next to categories and preferences that are synced from the master phone, and which settings stay per device.",
+      "dialogs": [
+        "Main menu > Configuration",
+        "Configuration > Communication > NSClient"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_smoothing",
+          "as_written": "Smoothing",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_calibration",
+          "as_written": "Calibration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sensitivity",
+          "as_written": "Sensitivity detection",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_aps",
+          "as_written": "APS",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_absorption_cutoff",
+          "as_written": "Absorption cutoff",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_url_title",
+          "as_written": "Nightscout URL",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_use_ws",
+          "as_written": "websockets",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Opening a plugin screen",
+      "anchor": "Config-Builder-tab-or-hamburger-menu",
+      "source_hash": "5eb93de9f1c7095b",
+      "summary": "Lists the ways to open a plugin's screen in v4: from Configuration, from the Manage sheet of the bottom navigation, from a QuickLaunch button or from the search bar.",
+      "dialogs": [
+        "Main menu > Configuration",
+        "Manage"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_management",
+          "as_written": "Profile",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_management",
+          "as_written": "Insulin settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump",
+          "as_written": "Pump",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "food_management",
+          "as_written": "Food",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Profile",
+      "anchor": "ConfigBuilder_Profile",
+      "source_hash": "88ef6f5bc91adafc",
+      "summary": "The profile module is a core part of AAPS and cannot be disabled; points to the profile page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Insulin",
+      "anchor": "Config-Builder-insulin",
+      "source_hash": "b3b0e3f077e7f178",
+      "summary": "The insulin is now set in the insulin editor under Manage > Insulin settings: nickname, peak and DIA, the peak presets, the allowed ranges and the IOB and activity curves.",
+      "dialogs": [
+        "Manage > Insulin settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_management",
+          "as_written": "Insulin settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_nickname_label",
+          "as_written": "Insulin nickname",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "peak_label",
+          "as_written": "Peak",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "dia_label",
+          "as_written": "DIA",
+          "confidence": 0.8
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "load_peak_from",
+          "as_written": "Load peak from",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "rapid_acting_oref",
+          "as_written": "Novorapid",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "ultra_rapid_oref",
+          "as_written": "Fiasp",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "lyumjev",
+          "as_written": "Lyumjev",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pregnant",
+          "as_written": "Pregnant",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "iob",
+          "as_written": "IOB",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "activity",
+          "as_written": "Activity",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Insulin type differences",
+      "anchor": "insulin-type-differences",
+      "source_hash": "92ee3b29792b48dc",
+      "summary": "Compares the insulin curve types and their recommended peaks; the Load peak from presets fill in these defaults.",
+      "dialogs": [
+        "Manage > Insulin settings"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "load_peak_from",
+          "as_written": "Load peak from",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "free_peak_oref",
+          "as_written": "Free-Peak Oref",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Rapid-Acting Oref",
+      "anchor": "rapid-acting-oref",
+      "source_hash": "6fee2cc0a432e1de",
+      "summary": "Curve type for Humalog, Novolog and Novorapid, peak 75 minutes, loaded by the Novorapid preset.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "rapid_acting_oref",
+          "as_written": "Novorapid",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Ultra-Rapid Oref",
+      "anchor": "ultra-rapid-oref",
+      "source_hash": "2a59fbc6b1bf9f09",
+      "summary": "Curve type for Fiasp, peak 55 minutes, loaded by the Fiasp preset.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "ultra_rapid_oref",
+          "as_written": "Fiasp",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Lyumjev",
+      "anchor": "Config-Builder-lyumjev",
+      "source_hash": "64981f55fd4e3354",
+      "summary": "Curve type for Lyumjev, peak 45 minutes, loaded by the Lyumjev preset.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "lyumjev",
+          "as_written": "Lyumjev",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Free Peak Oref",
+      "anchor": "free-peak-oref",
+      "source_hash": "cb23f789e42df0f7",
+      "summary": "There is no separate Free-Peak type in v4; a custom peak is typed directly in the insulin editor.",
+      "dialogs": [
+        "Manage > Insulin settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "free_peak_oref",
+          "as_written": "Free-Peak Oref",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "peak_label",
+          "as_written": "Peak",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "load_peak_from",
+          "as_written": "Load peak from",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Duration of insulin action (DIA) and peak",
+      "anchor": "Config-Builder-insulin-dia",
+      "source_hash": "74a502607e650145",
+      "summary": "Background on how DIA and peak shape the IOB curve, where to set them (Manage > Insulin settings) and how to choose values; includes a warning and charts.",
+      "dialogs": [
+        "Manage > Insulin settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_management",
+          "as_written": "Insulin settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "peak_label",
+          "as_written": "peak",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Further reading on DIA and peak configuration",
+      "anchor": "further-reading-on-dia-and-peak-configuration",
+      "source_hash": "416f8843623cbebb",
+      "summary": "External links about DIA and insulin curves.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "BG Source",
+      "anchor": "Config-Builder-bg-source",
+      "source_hash": "06cd039f9d6c656c",
+      "summary": "Choosing the BG source plugin in Configuration, with a list of the available sources and links to their setup pages.",
+      "dialogs": [
+        "Configuration > BG Source"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_bgsource",
+          "as_written": "BG Source",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "source_xdrip",
+          "as_written": "xDrip+ BG",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "mm640g",
+          "as_written": "MM640g",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "glimp",
+          "as_written": "Glimp",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "dexcom_app_patched",
+          "as_written": "BYODA",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "notification_reader",
+          "as_written": "Notification Reader",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "random_bg",
+          "as_written": "Random BG",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "virtual_pump",
+          "as_written": "Virtual Pump",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Smoothing",
+      "anchor": "smoothing",
+      "source_hash": "d97b6132441bfb27",
+      "summary": "The Smoothing category of Configuration; points to the smoothing page.",
+      "dialogs": [
+        "Configuration > Smoothing"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_smoothing",
+          "as_written": "Smoothing",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Calibration",
+      "anchor": "calibration",
+      "source_hash": "1a82ef7e85f1dbd2",
+      "summary": "Choosing between No calibration and Linear calibration, how linear calibration uses fingerstick entries, and the plugin screen where entries are added.",
+      "dialogs": [
+        "Configuration > Calibration",
+        "Configuration > Calibration > Linear calibration"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_calibration",
+          "as_written": "Calibration",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/calibration/src/androidMain/res/values/strings.xml",
+          "key": "no_calibration_name",
+          "as_written": "No calibration",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/calibration/src/androidMain/res/values/strings.xml",
+          "key": "linear_calibration_name",
+          "as_written": "Linear calibration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/calibration/src/androidMain/res/values/strings.xml",
+          "key": "cal_add_calibration",
+          "as_written": "Add calibration",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Pump",
+      "anchor": "Config-Builder-pump",
+      "source_hash": "769c85181196a9d4",
+      "summary": "Choosing the pump driver in Configuration, the confirmation dialog when switching, and the list of drivers including the virtual pump for open loop.",
+      "dialogs": [
+        "Configuration > Pump",
+        "Switch plugin?"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "danarspump",
+          "as_written": "Dana-i/RS",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Message: \"Data is coming from different pump\"",
+      "anchor": "config-builder-wrong-pump-data",
+      "source_hash": "0e1f6ae9662e3ef3",
+      "summary": "Why AAPS shows this message after a pump replacement and how to reset it by switching to the virtual pump and back.",
+      "dialogs": [
+        "Configuration > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wrong_pump_data",
+          "as_written": "Data is coming from different pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "virtual_pump",
+          "as_written": "Virtual pump",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Sensitivity Detection",
+      "anchor": "Config-Builder-sensitivity-detection",
+      "source_hash": "f387d45f4f6730cc",
+      "summary": "Choosing the sensitivity detection plugin and where its result is shown; it only adjusts insulin from Objective 8 on.",
+      "dialogs": [
+        "Configuration > Sensitivity detection"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sensitivity",
+          "as_written": "Sensitivity detection",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Absorption settings",
+      "anchor": "absorption-settings",
+      "source_hash": "5329c40335ac5f2a",
+      "summary": "With Oref1 and SMB, set the min 5m carb impact to 8; explains what that value does.",
+      "dialogs": [
+        "Configuration > Sensitivity detection > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sensitivity/src/androidMain/res/values/strings.xml",
+          "key": "absorption_settings_title",
+          "as_written": "Absorption settings",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_smb_min_5m_carbs_impact",
+          "as_written": "min_5m_carbimpact",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "APS",
+      "anchor": "Config-Builder-aps",
+      "source_hash": "11330d1afa0fa89d",
+      "summary": "Choosing the APS algorithm (OpenAPS AMA, OpenAPS SMB, Auto ISF), and changing min 5m carb impact when moving from AMA to SMB.",
+      "dialogs": [
+        "Configuration > APS"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_aps",
+          "as_written": "APS",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openapsama",
+          "as_written": "OpenAPS AMA",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openapssmb",
+          "as_written": "OpenAPS SMB",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openaps_auto_isf",
+          "as_written": "Auto ISF",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_smb_min_5m_carbs_impact",
+          "as_written": "min_5m_carbimpact",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search_category_preferences",
+          "as_written": "Preferences",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sensitivity",
+          "as_written": "Sensitivity detection",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/sensitivity/src/androidMain/res/values/strings.xml",
+          "key": "sensitivity_oref1",
+          "as_written": "Sensitivity Oref1",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Loop",
+      "anchor": "loop",
+      "source_hash": "0223ac6dfe2f2167",
+      "summary": "The Loop category is a core part of AAPS and cannot be disabled.",
+      "dialogs": [
+        "Configuration > Loop"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_loop",
+          "as_written": "Loop",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Constraints",
+      "anchor": "constraints",
+      "source_hash": "83589abef0e94ff1",
+      "summary": "The Constraints category of Configuration.",
+      "dialogs": [
+        "Configuration > Constraints"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "constraints",
+          "as_written": "Constraints",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Objectives",
+      "anchor": "objectives",
+      "source_hash": "57d24608a9b6d2d6",
+      "summary": "The objectives learning program, under Constraints; points to the objectives page.",
+      "dialogs": [
+        "Configuration > Constraints > Objectives"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "objectives",
+          "as_written": "Objectives",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Synchronization",
+      "anchor": "synchronization",
+      "source_hash": "7122e67f32018c5f",
+      "summary": "The category for sending data elsewhere, now called Communication.",
+      "dialogs": [
+        "Configuration > Communication"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "NSClientV3",
+      "anchor": "nsclientv3",
+      "source_hash": "141b512cb51c0b9c",
+      "summary": "Nightscout sync plugin, used for reporting, remote monitoring and remote control.",
+      "dialogs": [
+        "Configuration > Communication"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_v3_title",
+          "as_written": "NSClientV3",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Tidepool",
+      "anchor": "tidepool",
+      "source_hash": "70d9c1da581f66ab",
+      "summary": "Tidepool upload plugin as a reporting server.",
+      "dialogs": [
+        "Configuration > Communication"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "tidepool",
+          "as_written": "Tidepool",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "xDrip",
+      "anchor": "xdrip",
+      "source_hash": "d578a541991fc575",
+      "summary": "Plugin that sends treatments and other data to xDrip+.",
+      "dialogs": [
+        "Configuration > Communication"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "xdrip",
+          "as_written": "xDrip",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Open Humans",
+      "anchor": "open-humans",
+      "source_hash": "bae468797bd53923",
+      "summary": "Open Humans upload plugin; points to its page.",
+      "dialogs": [
+        "Configuration > Communication"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+          "key": "open_humans",
+          "as_written": "Open Humans",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Wear",
+      "anchor": "Config-Builder-wear",
+      "source_hash": "31dc9abe49e642b2",
+      "summary": "Wear OS watch plugin; its options are under Settings > Wear.",
+      "dialogs": [
+        "Configuration > Communication",
+        "Settings > Wear"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wear",
+          "as_written": "Wear",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "External Companion Apps",
+      "anchor": "external-companion-apps",
+      "source_hash": "4b7c5f90a3245c59",
+      "summary": "Plugin that broadcasts AAPS status for companion apps on the phone; formerly named Samsung Tizen.",
+      "dialogs": [
+        "Configuration > Communication"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "tizen",
+          "as_written": "External Companion Apps",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Garmin",
+      "anchor": "garmin",
+      "source_hash": "032f1f154e2496eb",
+      "summary": "Plugin for Garmin devices.",
+      "dialogs": [
+        "Configuration > Communication"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "garmin",
+          "as_written": "Garmin",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Treatments",
+      "anchor": "treatments",
+      "source_hash": "768d07e051986819",
+      "summary": "The treatments history is opened from the top-left menu; how to correct a wrong entry.",
+      "dialogs": [
+        "Main menu > Treatments history"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments_history",
+          "as_written": "Treatments history",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "General",
+      "anchor": "general",
+      "source_hash": "f183d1a5ea3d6e8c",
+      "summary": "The General category now only lists Autotune; the other former plugins are always available elsewhere.",
+      "dialogs": [
+        "Configuration > General"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_general",
+          "as_written": "General",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "autotune",
+          "as_written": "Autotune",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Overview",
+      "anchor": "overview",
+      "source_hash": "dd178485f345089f",
+      "summary": "The main screen, which cannot be disabled; its former options follow.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Show notes field in treatment dialogs",
+      "anchor": "show-notes-field-in-treatment-dialogs",
+      "source_hash": "b2e70d3dc9d07bbf",
+      "summary": "Option to show a notes field in treatment dialogs.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_show_notes_in_dialogs",
+          "as_written": "Show notes field in treatment dialogs",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Status lights",
+      "anchor": "status-lights",
+      "source_hash": "7ab075188a1bb490",
+      "summary": "Option to show status lights for cannula, insulin, sensor and battery age and levels, with warning and critical colours.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "statuslights",
+          "as_written": "Status lights",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Advanced settings",
+      "anchor": "advanced-settings",
+      "source_hash": "cbe6f3a217460072",
+      "summary": "The bolus wizard percentage and the super bolus option, with warnings about super bolus.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_bolus_percentage",
+          "as_written": "Deliver this part of bolus wizard result",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_use_super_bolus",
+          "as_written": "Enable super bolus functionality in wizard",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_smb_max_minutes",
+          "as_written": "Max minutes of basal to limit SMB to",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Actions",
+      "anchor": "Config-Builder-actions",
+      "source_hash": "d73a7a35cefca386",
+      "summary": "The Actions tab is gone; its buttons are in the Manage sheet.",
+      "dialogs": [
+        "Manage"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Automation",
+      "anchor": "automation",
+      "source_hash": "a7452244b72f55d8",
+      "summary": "Automations are managed from Manage > Automation, from Objective 10 on.",
+      "dialogs": [
+        "Manage > Automation"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "SMS Communicator",
+      "anchor": "Config-Builder-sms-communicator",
+      "source_hash": "de9d187043487dfb",
+      "summary": "Plugin letting caregivers control AAPS by SMS.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator",
+          "as_written": "SMS Communicator",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Food",
+      "anchor": "food",
+      "source_hash": "8a48e7d3c57235d6",
+      "summary": "Manage > Food shows the Nightscout food database, view only.",
+      "dialogs": [
+        "Manage > Food"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "food_management",
+          "as_written": "Food",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Autotune",
+      "anchor": "Config-Builder-autotune",
+      "source_hash": "69267b96938c444d",
+      "summary": "Autotune can be enabled in General; points to its page.",
+      "dialogs": [
+        "Configuration > General"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "autotune",
+          "as_written": "Autotune",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Maintenance",
+      "anchor": "maintenance",
+      "source_hash": "9c1a13554ed6e4e6",
+      "summary": "The Maintenance screen in the top-left menu for exporting and importing settings and managing logs.",
+      "dialogs": [
+        "Main menu > Maintenance"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "maintenance",
+          "as_written": "Maintenance",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Config Builder",
+      "anchor": "config-builder",
+      "source_hash": "1e3944caf5b8ce77",
+      "summary": "The old Config Builder entry is now Configuration, this page.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": "The manual calls the screen \"Config Builder\" in places; the app titles it \"Configuration\" (nav_configuration). The manual writes \"Pregnant\" for the patient type the app calls \"Pregnancy\". It writes \"min_5m_carbimpact\" for the preference the app titles \"SMB min 5m carbs impact\". \"Show notes field in treatment dialogs\" and \"Deliver this part of bolus wizard result\" are older labels; the app now says \"Show notes in dialogs\" and \"Bolus percentage\"."
+}

@@ -1,0 +1,565 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/CompletingTheObjectives.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Guide to the objectives, the staged learning program that unlocks AAPS features from open loop to full closed loop. It explains backing up settings after each objective, then goes through Objectives 1 to 10: what each requires, the minimum time, and the app actions involved (running modes, profile switch, temp targets, max IOB, SMB, automation). It ends with viewing completed objectives and resetting them.",
+  "features": [
+    "Objectives",
+    "Running mode",
+    "Automation"
+  ],
+  "screens": [
+    {
+      "ui_location": "Configuration > Constraints > Objectives",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "objectives"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Completing the Objectives",
+      "anchor": "completing-the-objectives",
+      "source_hash": "2ac83762f431d7ef",
+      "summary": "What the objectives are, how long they take, and that features unlock as each one is completed.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "objectives",
+          "as_written": "Objectives",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Backup your settings",
+      "anchor": "backup-your-settings",
+      "source_hash": "52bae18b0a513bef",
+      "summary": "Why to export settings after each objective, so that objective progress survives a lost phone.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "objectives",
+          "as_written": "Objectives",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_max_bolus",
+          "as_written": "max bolus",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Objective 1: Setting up visualization and monitoring, analyzing basals and ratios",
+      "anchor": "objectives-objective1",
+      "source_hash": "4c0a0acaedb6846f",
+      "summary": "Basic setup needed for Objective 1: BG source, pump (or virtual pump) and Nightscout or Tidepool.",
+      "dialogs": [
+        "Configuration > BG Source",
+        "Configuration > Pump",
+        "Settings > NSClientV3"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Config Builder",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_bgsource",
+          "as_written": "BG Source",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "virtual_pump",
+          "as_written": "virtual pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client",
+          "as_written": "NSClient",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search_category_preferences",
+          "as_written": "Preferences",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "tidepool",
+          "as_written": "Tidepool",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Objective 2: Learn how to control AAPS",
+      "anchor": "objectives-objective2",
+      "source_hash": "16078d68061642b9",
+      "summary": "Objective 2 tasks with their status and hints: a profile switch, disconnecting and reconnecting the pump, a temp target, opening the Loop plugin, and zooming the chart.",
+      "dialogs": [
+        "Objectives",
+        "Manage > Profile > Activate",
+        "Main screen > Running mode",
+        "Configuration > Loop"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/strings.xml",
+          "key": "not_completed_yet",
+          "as_written": "Not completed yet",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/strings.xml",
+          "key": "completed_well_done",
+          "as_written": "Completed, well done!",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/objectives.xml",
+          "key": "objectives_show_hint",
+          "as_written": "Hint",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_management",
+          "as_written": "Profile",
+          "confidence": 0.7
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "activate_label",
+          "as_written": "Activate",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "disconnectpump",
+          "as_written": "Disconnect pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_reconnect",
+          "as_written": "Reconnect Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "disconnected",
+          "as_written": "disconnected",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temporary_target",
+          "as_written": "Temporary Target",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_loop",
+          "as_written": "Loop",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Objective 3: Prove your knowledge",
+      "anchor": "objectives-objective3",
+      "source_hash": "131249a1824d8701",
+      "summary": "The multiple-choice exam: answering questions, the one-hour lock after a wrong answer, and new questions after updates.",
+      "dialogs": [
+        "Objectives"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Objective 4: Starting on an open loop",
+      "anchor": "objective-4-starting-on-an-open-loop",
+      "source_hash": "63dba83d216ba84a",
+      "summary": "Switching to open loop, enacting 20 temp basal suggestions over 7 days, using temp targets, and reducing suggestions with Open mode minimum change.",
+      "dialogs": [
+        "Main screen > Running mode",
+        "Settings > Loop"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "openloop",
+          "as_written": "Open Loop",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temporary_targets",
+          "as_written": "Temporary Targets",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_open_mode_min_change",
+          "as_written": "Open mode minimum change",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_loop",
+          "as_written": "Loop",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_simple_mode",
+          "as_written": "Simple Mode",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Objective 5: Understanding your open loop, including its temp basal recommendations",
+      "anchor": "objectives-objective5",
+      "source_hash": "4fbacf0bd4aaf4cc",
+      "summary": "Understanding temp basal suggestions from the OpenAPS screen, setting the maximum basal rate, and switching to a real pump before going on.",
+      "dialogs": [
+        "Settings > OpenAPS SMB"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "openaps",
+          "as_written": "OpenAPS",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_max_basal",
+          "as_written": "Max U/h a temp basal can be set to",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search_category_preferences",
+          "as_written": "Preferences",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openapssmb",
+          "as_written": "OpenAPS SMB",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/objectives.xml",
+          "key": "objectives_button_verify",
+          "as_written": "verify",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Objective 6: Starting to close the loop with Low Glucose Suspend",
+      "anchor": "objectives-objective6",
+      "source_hash": "cbd0a4375a14ad23",
+      "summary": "Running in Low Glucose Suspend for 5 days with max IOB forced to zero; high BG must be corrected manually.",
+      "dialogs": [
+        "Main screen > Running mode"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "lowglucosesuspend",
+          "as_written": "Low Glucose Suspend",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments_wizard_basaliob_label",
+          "as_written": "basal IOB",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Objective 7: Tuning the closed loop, raising maxIOB above 0 and gradually lowering BG targets",
+      "anchor": "objectives-objective7",
+      "source_hash": "205d09c3950c9c13",
+      "summary": "Switching to closed loop, raising max IOB step by step from the suggested starting value, then lowering BG targets.",
+      "dialogs": [
+        "Main screen > Running mode",
+        "Settings > OpenAPS SMB"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "closedloop",
+          "as_written": "Closed Loop",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_smb_max_iob",
+          "as_written": "Maximum total IOB OpenAPS can’t go over",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Objective 8: Adjust basals and ratios if needed, and then enable Autosens",
+      "anchor": "objectives-objective8",
+      "source_hash": "8ab3a402e635fd1d",
+      "summary": "Running with Autosens for 7 days and reviewing the profile and sensitivity detection.",
+      "dialogs": [
+        "Configuration > Sensitivity detection"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_autosens",
+          "as_written": "Autosens",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sensitivity",
+          "as_written": "Sensitivity Detection",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Objective 9: Enabling additional oref1 features for daytime use, such as super micro bolus (SMB)",
+      "anchor": "objectives-objective9",
+      "source_hash": "7b944bf449b6505f",
+      "summary": "Learning SMB and zero-temping over 28 days, raising max IOB, and tuning the min 5m carb impact.",
+      "dialogs": [
+        "Settings > Absorption settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search_category_preferences",
+          "as_written": "Preferences",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/sensitivity/src/androidMain/res/values/strings.xml",
+          "key": "absorption_settings_title",
+          "as_written": "Absorption settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_smb_min_5m_carbs_impact",
+          "as_written": "min_5m_carbimpact",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Objective 10: Automation",
+      "anchor": "objectives-objective10",
+      "source_hash": "737053da69a55ef6",
+      "summary": "Automations unlock here; step by step instructions for a first rule with a time trigger and a notification action, and an example for a breakfast temp target.",
+      "dialogs": [
+        "Manage > Automation",
+        "Automation > Edit"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "add_automation",
+          "as_written": "add rule",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "edit_short",
+          "as_written": "edit",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "condition",
+          "as_written": "condition",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "time",
+          "as_written": "Time",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.7
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "add_short",
+          "as_written": "ADD",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "action",
+          "as_written": "Action",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "notification",
+          "as_written": "Notification",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temporary_target",
+          "as_written": "Temporary Target",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "recurringTime",
+          "as_written": "recurring time",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "starttemptarget",
+          "as_written": "Start temp target",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "When all objectives are completed",
+      "anchor": "when-all-objectives-are-completed",
+      "source_hash": "d5d1a58ecd81031e",
+      "summary": "The completed objectives list, where to open it once it leaves the bottom navigation, and More to see an objective's tasks.",
+      "dialogs": [
+        "Configuration > Constraints > Objectives"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "objectives",
+          "as_written": "Objectives",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "constraints",
+          "as_written": "Constraints",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/objectives.xml",
+          "key": "objectives_expand",
+          "as_written": "More",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Go back in objectives",
+      "anchor": "CompletingTheObjectives-go-back-in-objectives",
+      "source_hash": "101c5989d657db4c",
+      "summary": "Resetting a finished or the current objective to go back.",
+      "dialogs": [
+        "Objectives"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "objectives",
+          "as_written": "Objectives",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/objectives.xml",
+          "key": "objectives_expand",
+          "as_written": "More",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/strings.xml",
+          "key": "objectives_button_unfinish",
+          "as_written": "Reset finished state",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/strings.xml",
+          "key": "objectives_button_unstart",
+          "as_written": "Reset started state",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": "The page writes \"Config Builder\" and \"Preferences\" in links; the app now says \"Configuration\" and \"Settings\". It names \"Max U/h a temp basal can be set to\" and \"Maximum total IOB OpenAPS can't go over\"; the app titles these preferences \"Maximum basal rate\" and \"Max IOB for SMB\"."
+}
