@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/GettingHelp/GeneralTroubleshooting.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "The starting point for troubleshooting: a page of links to the troubleshooting sections elsewhere in the manual, sorted by topic (building and installing, settings, usage, Bluetooth, Android battery optimisation, CGMs, pumps, phones, remote control, watches). The only steps it gives itself are turning off Android battery optimisation, including AAPS's own link to Don't kill my app under About.",
+  "features": [
+    "Troubleshooting",
+    "Battery optimisation"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > About",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "nav_about"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Troubleshooting",
+      "anchor": "generaltroubleshooting",
+      "source_hash": "3b88fc577aac3607",
+      "summary": "Page introduction: this page collects links to troubleshooting elsewhere; also points to the FAQ, profile tuning and where to get help.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "AAPS app",
+      "anchor": "generaltroubleshooting-aaps-app",
+      "source_hash": "b60b594eeb07093d",
+      "summary": "Heading for problems with the AAPS app itself.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Building & updating",
+      "anchor": "building-updating",
+      "source_hash": "64735cfa6608bcc5",
+      "summary": "Links to build troubleshooting per build method, reinstalling with a new keystore, and updating.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Installing",
+      "anchor": "installing",
+      "source_hash": "0acefccbee0f381a",
+      "summary": "Links for Google Play Protect warnings and installs blocked by Android developer verification.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Settings",
+      "anchor": "settings",
+      "source_hash": "401b66a5561a0f9b",
+      "summary": "Links for two error messages (basal rate not compatible with the pump, data from a different pump) and for Nightscout Client problems.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_basal_not_compatible_with_pump",
+          "as_written": "Basal rate is not compatible with the current pump",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wrong_pump_data",
+          "as_written": "Data is coming from different pump",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Usage",
+      "anchor": "usage",
+      "source_hash": "b173f5d684ab0a09",
+      "summary": "Links for wrong carb values, automations and full closed loop problems.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Bluetooth related issues",
+      "anchor": "generaltroubleshooting-bluetooth-related-issues",
+      "source_hash": "d5c816197482329d",
+      "summary": "Link to the Bluetooth troubleshooting page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Android Related Issues",
+      "anchor": "generaltroubleshooting-android-related-issues",
+      "source_hash": "8288d363ab2e16a4",
+      "summary": "Heading for Android-related problems.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Battery optimization",
+      "anchor": "battery-optimization",
+      "source_hash": "d7535e8e4ebb6c38",
+      "summary": "Why Android battery optimisation must be off for AAPS, xDrip and Bluetooth, and where AAPS links to the phone-specific instructions (menu > About > Don't kill my app?).",
+      "dialogs": [
+        "Main menu > About"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_about",
+          "as_written": "About",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cta_dont_kill_my_app_info",
+          "as_written": "Don't kill my app?",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Pixel phones (stock Android)",
+      "anchor": "pixel-phones-stock-android",
+      "source_hash": "6bd8940738877979",
+      "summary": "Setting the system Bluetooth app's battery usage to Unrestricted in Android settings on a Pixel.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Samsung phones",
+      "anchor": "samsung-phones",
+      "source_hash": "c5c71fe14bfce279",
+      "summary": "Setting the system Bluetooth app's battery usage to Unrestricted in Android settings on a Samsung.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Huawei phones",
+      "anchor": "huawei-phones",
+      "source_hash": "d3b2f7913e0a059e",
+      "summary": "Link to the Huawei battery optimisation guide.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Continuous Glucose Monitor (CGM)",
+      "anchor": "generaltroubleshooting-cgm",
+      "source_hash": "3777b7a6dd5b4a3b",
+      "summary": "Links to troubleshooting for each CGM.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pumps",
+      "anchor": "generaltroubleshooting-pumps",
+      "source_hash": "7e7ec05c4c6ecede",
+      "summary": "Links to troubleshooting for each pump.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Phones",
+      "anchor": "generaltroubleshooting-phones",
+      "source_hash": "8fee0a964cf39adc",
+      "summary": "Links to the tested phones list and phone-specific pages.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Remote control",
+      "anchor": "generaltroubleshooting-remote-control",
+      "source_hash": "fdeeb70e43997d71",
+      "summary": "Links for AAPSClient, Nightscout access token, SMS commands and Android Auto problems.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Smartwatches",
+      "anchor": "generaltroubleshooting-smartwatches",
+      "source_hash": "bb3f644fca0de95c",
+      "summary": "Links to troubleshooting for the Wear OS app and watches.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

@@ -1,0 +1,953 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/UsefulLinks/FAQ.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Frequently asked questions for AAPS users: getting started, everyday practicalities (protection, watch, disconnecting the pump, backups), algorithm and settings questions, daily life (sports, alcohol, sleep, travel, scenes), and common Discord questions on building, passwords, settings files, phone and pump connection problems, warnings and moving a DASH pod.",
+  "features": [
+    "FAQ"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "FAQ for loopers",
+      "anchor": "faq-for-loopers",
+      "source_hash": "8e70c6ed19dc5de1",
+      "summary": "Page title; how to add questions to the FAQ.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "General",
+      "anchor": "general",
+      "source_hash": "b5ed9dca907eee5a",
+      "summary": "Heading for general questions.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Can I just download the AAPS installation file?",
+      "anchor": "can-i-just-download-the-aaps-installation-file",
+      "source_hash": "877382d982f6b648",
+      "summary": "Why there is no downloadable APK: medical device regulations mean users must build it themselves.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to begin?",
+      "anchor": "FAQ-how-to-begin",
+      "source_hash": "343f650231eca358",
+      "summary": "The three things to get started: compatible hardware, the software setup, and understanding the treatment factors.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What practicalities of looping do I have?",
+      "anchor": "what-practicalities-of-looping-do-i-have",
+      "source_hash": "4f75cdb4582b8997",
+      "summary": "Heading for everyday looping practicalities.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Password protection",
+      "anchor": "password-protection",
+      "source_hash": "a49271e2e9bafeeb",
+      "summary": "Protecting settings, the app or boluses with a password, PIN or biometrics under Settings > Protection.",
+      "dialogs": [
+        "Preferences > General > Protection"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "protection",
+          "as_written": "Protection",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/protection.xml",
+          "key": "settings_protection",
+          "as_written": "Settings protection",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Android Wear Smartwatches",
+      "anchor": "android-wear-smartwatches",
+      "source_hash": "9c20099c93a4df1f",
+      "summary": "Every watch bolus or settings request must be confirmed on the watch with CONFIRM.",
+      "dialogs": [
+        "Wear OS watch"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "action_confirm",
+          "as_written": "CONFIRM",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Disconnect pump",
+      "anchor": "FAQ-disconnect-pump",
+      "source_hash": "766593a2fc8e07fd",
+      "summary": "Telling AAPS the pump is disconnected through the loop icon on the main screen, and changing the duration.",
+      "dialogs": [
+        "Overview > Loop status"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "disconnectpump",
+          "as_written": "Disconnect pump",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Recommendations not only based on one single CGM reading",
+      "anchor": "recommendations-not-only-based-on-one-single-cgm-reading",
+      "source_hash": "6082327b3b576de2",
+      "summary": "The loop uses average deltas, so it resumes slowly after missed readings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Further readings",
+      "anchor": "further-readings",
+      "source_hash": "6581b07418e0c0ae",
+      "summary": "Blog posts with practical looping tips.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What emergency equipment is recommended to take with me?",
+      "anchor": "what-emergency-equipment-is-recommended-to-take-with-me",
+      "source_hash": "c1242bf09e8b9476",
+      "summary": "Extra equipment to carry when looping: chargers, pump batteries, and access to backups (APKs, keystore, settings exports, master password).",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_master_password",
+          "as_written": "master password",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "How to organize my backups?",
+      "anchor": "FAQ-organize-backups",
+      "source_hash": "2d96a3ab413dd55b",
+      "summary": "Exporting settings regularly and letting AAPS export automatically to a cloud folder.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How can I safely and securely attach the CGM/FGM?",
+      "anchor": "how-can-i-safely-and-securely-attach-the-cgm-fgm",
+      "source_hash": "2329600d10a0e0fd",
+      "summary": "Overpatches, tape and arm bands to hold the sensor.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "APS algorithm",
+      "anchor": "aps-algorithm",
+      "source_hash": "c383e222ce014a77",
+      "summary": "Heading for algorithm questions.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Why does OpenAPS AMA show \"dia: 3\" even though I have a different DIA in my profile?",
+      "anchor": "why-does-openaps-ama-show-dia-3-even-though-i-have-a-different-dia-in-my-profile",
+      "source_hash": "cbd331e57d89660f",
+      "summary": "Why the OpenAPS AMA plugin screen shows dia 3 in its Profile section: in AMA it is a correction time, not the insulin action time.",
+      "dialogs": [
+        "Configuration > APS > OpenAPS AMA"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openapsama",
+          "as_written": "OpenAPS AMA",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_aps",
+          "as_written": "APS",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openapsma_profile_label",
+          "as_written": "Profile",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Other settings",
+      "anchor": "other-settings",
+      "source_hash": "c783b327b399f6a0",
+      "summary": "Heading for questions on other settings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Nightscout settings",
+      "anchor": "nightscout-settings",
+      "source_hash": "ade0339880fc4f0c",
+      "summary": "Heading for Nightscout questions.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "AAPSClient (or AAPS) does not upload data: \"Blocked by…\". What can I do?",
+      "anchor": "FAQ-nsclient-blocked",
+      "source_hash": "2832bc5e688094ff",
+      "summary": "What the NSClient status messages Blocked by connectivity options, Blocked by charging options and No connectivity mean, and which NSClient connection settings to check.",
+      "dialogs": [
+        "Configuration > Communication > NSClientV3",
+        "Preferences > NSClientV3 > Connection settings"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "blocked_by_connectivity",
+          "as_written": "Blocked by connectivity options",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "blocked_by_charging",
+          "as_written": "Blocked by charging options",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "no_connectivity",
+          "as_written": "No connectivity",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client",
+          "as_written": "NSClient",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_use_cellular",
+          "as_written": "Use cellular data",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_use_roaming",
+          "as_written": "Use roaming",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_use_wifi",
+          "as_written": "Use WiFi",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "ns_wifi_ssids",
+          "as_written": "WiFi SSID",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_use_on_battery",
+          "as_written": "Sync on battery",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_use_on_charging",
+          "as_written": "Sync while charging",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "CGM settings",
+      "anchor": "cgm-settings",
+      "source_hash": "b1c53b1345fd44e7",
+      "summary": "Heading for CGM questions.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Why does AAPS say 'SMB always and after carbs disabled because active BG source doesn't support advanced filtering'?",
+      "anchor": "FAQ-advanced-filtering",
+      "source_hash": "ad27f114419d851f",
+      "summary": "Why Enable SMB always and Enable SMB after carbs are switched off with an untrusted BG source, and what to check.",
+      "dialogs": [
+        "Preferences > OpenAPS SMB"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/strings.xml",
+          "key": "smbalwaysdisabled",
+          "as_written": "SMB always and after carbs disabled because active BG source doesn't support advanced filtering",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_always",
+          "as_written": "Enable SMB always",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_after_carbs",
+          "as_written": "Enable SMB after carbs",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Pump",
+      "anchor": "pump",
+      "source_hash": "7f0e2259efb469a4",
+      "summary": "Heading for pump questions.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Batteries",
+      "anchor": "batteries",
+      "source_hash": "27c03ed6eb6371a4",
+      "summary": "Making pump batteries last longer, including tracking AAPS restarts with Log app start event in the NSClient advanced settings.",
+      "dialogs": [
+        "Preferences > NSClientV3 > Advanced settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_log_app_start",
+          "as_written": "Log app start event",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "advanced_settings_title",
+          "as_written": "Advanced settings",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Changing reservoirs and cannulas",
+      "anchor": "changing-reservoirs-and-cannulas",
+      "source_hash": "7a15ba7b9a2f4688",
+      "summary": "Reservoirs are changed on the pump and recorded in AAPS; link to the guide.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Wallpaper",
+      "anchor": "wallpaper",
+      "source_hash": "f1b3e69130d82576",
+      "summary": "Where to find the AAPS phone wallpaper.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Daily usage",
+      "anchor": "daily-usage",
+      "source_hash": "4bcb4f61d32b0340",
+      "summary": "Scenes as presets for daily situations, with the ready-made templates Exercise, Sleep, Alcohol and Bathing.",
+      "dialogs": [
+        "Scenes"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_exercise",
+          "as_written": "Exercise",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_sleep",
+          "as_written": "Sleep",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_alcohol",
+          "as_written": "Alcohol",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_bathing",
+          "as_written": "Bathing",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Hygiene",
+      "anchor": "hygiene",
+      "source_hash": "0c396e56191fec1c",
+      "summary": "Heading for hygiene.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What to do when taking a shower or bath?",
+      "anchor": "what-to-do-when-taking-a-shower-or-bath",
+      "source_hash": "bc7e5feda6bea8e7",
+      "summary": "Disconnecting the pump in AAPS while showering, or using the Bathing scene template.",
+      "dialogs": [
+        "Scenes"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_bathing",
+          "as_written": "Bathing",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Work",
+      "anchor": "work",
+      "source_hash": "36c7e48166cd6b1b",
+      "summary": "Using a profile switch, temp target or profile time shift for workdays.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Leisure activities",
+      "anchor": "leisure-activities",
+      "source_hash": "57b84bf69331355a",
+      "summary": "Heading for leisure activities.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Sports",
+      "anchor": "FAQ-sports",
+      "source_hash": "eefd2ce3e376bfe2",
+      "summary": "Preparing for sport: a profile switch below 100% (Percentage, Duration, Activate), an activity temp target from the same screen, SMB options off, and the Exercise and Post-exercise Night scene templates.",
+      "dialogs": [
+        "Profile > Activate"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "percentage_label",
+          "as_written": "Percentage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "duration",
+          "as_written": "Duration",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "activate_label",
+          "as_written": "Activate",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temporary_target",
+          "as_written": "Temporary target",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "activity",
+          "as_written": "Activity",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_with_high_tt",
+          "as_written": "Enable SMB with high temp targets",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_always",
+          "as_written": "Enable SMB always",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_exercise",
+          "as_written": "Exercise",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_post_exercise_night",
+          "as_written": "Post-exercise Night",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Sex",
+      "anchor": "sex",
+      "source_hash": "4d57a55266d544ab",
+      "summary": "Disconnecting the pump in AAPS.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Drinking alcohol",
+      "anchor": "drinking-alcohol",
+      "source_hash": "be6e372804f912da",
+      "summary": "Options for drinking alcohol: open loop, high temp target without UAM, a lower profile percentage, or the Alcohol scene template.",
+      "dialogs": [
+        "Scenes"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_alcohol",
+          "as_written": "Alcohol",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Sleeping",
+      "anchor": "sleeping",
+      "source_hash": "6c03cd0a36019be9",
+      "summary": "Heading for sleep.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How can I loop during the night without mobile and Wi-Fi radiation?",
+      "anchor": "how-can-i-loop-during-the-night-without-mobile-and-wi-fi-radiation",
+      "source_hash": "f5fb738738678527",
+      "summary": "Looping in airplane mode with Bluetooth on (CGM app on the same phone), xDrip's receiver setting, and the Sleep scene template.",
+      "dialogs": [
+        "Scenes"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_sleep",
+          "as_written": "Sleep",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Traveling",
+      "anchor": "traveling",
+      "source_hash": "77677e7e61b8732e",
+      "summary": "Heading for travel.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to deal with time zone changes?",
+      "anchor": "how-to-deal-with-time-zone-changes",
+      "source_hash": "996531c48e45490d",
+      "summary": "Link to the time zone travel page; Dana R needs nothing.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Medical topics",
+      "anchor": "medical-topics",
+      "source_hash": "2ad1d87729e2193b",
+      "summary": "Heading for medical topics.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Hospitalization",
+      "anchor": "hospitalization",
+      "source_hash": "b7be68714982ab85",
+      "summary": "Printing the clinician guide for hospital staff.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Medical appointment with your endocrinologist",
+      "anchor": "medical-appointment-with-your-endocrinologist",
+      "source_hash": "132c0d2d3fb7b195",
+      "summary": "Heading for endocrinologist appointments.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Reporting",
+      "anchor": "reporting",
+      "source_hash": "90e94667fb3785bc",
+      "summary": "Nightscout reports and Nightscout Reporter for appointments.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Frequent questions on Discord and their answers...",
+      "anchor": "frequent-questions-on-discord-and-their-answers",
+      "source_hash": "422b652ffadc4ccb",
+      "summary": "Heading for frequent Discord questions.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "My problem is not listed here.",
+      "anchor": "my-problem-is-not-listed-here",
+      "source_hash": "b67e1b7b0277a7b4",
+      "summary": "Where to get help, and asking to add new solutions.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Building and installing",
+      "anchor": "building-and-installing",
+      "source_hash": "5ae764031f1b8e4d",
+      "summary": "Heading for build and install questions.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "I have problems, errors building the app.",
+      "anchor": "FAQ-build-errors",
+      "source_hash": "2148b2657d06b74a",
+      "summary": "Links to the troubleshooting page for each build method.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build error: file name too long",
+      "anchor": "FAQ-build-error-file-name-too-long",
+      "source_hash": "309e4d7713d51341",
+      "summary": "Fixing the Android Studio \"file name too long\" error by moving the sources and cleaning caches.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Alert: Running dev version. Closed loop is disabled",
+      "anchor": "FAQ-running-dev-version",
+      "source_hash": "1213a5978aeaea5a",
+      "summary": "Why a dev version shows this alert and how to turn on engineering mode with a file in the AAPS extra folder.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/strings.xml",
+          "key": "closed_loop_disabled_on_dev_branch",
+          "as_written": "Running dev version. Closed loop is disabled",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Objectives",
+      "anchor": "objectives",
+      "source_hash": "f59a9e39eed08f10",
+      "summary": "Heading for objectives.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "I'm stuck on an objective and need help.",
+      "anchor": "i-m-stuck-on-an-objective-and-need-help",
+      "source_hash": "0720cf1fb1c5854a",
+      "summary": "Where to ask for help with an objective.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Settings, passwords and backups",
+      "anchor": "settings-passwords-and-backups",
+      "source_hash": "6a73327be710261d",
+      "summary": "Heading for settings, password and backup questions.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to reset the master password?",
+      "anchor": "FAQ-reset-master-password",
+      "source_hash": "d10fde559fe078db",
+      "summary": "Resetting a forgotten master password to the pump serial number with a PasswordReset file, then setting a new one under Settings > Protection > Master password.",
+      "dialogs": [
+        "Preferences > General > Protection"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "waiting_for_pump",
+          "as_written": "Waiting for pump…",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/protection.xml",
+          "key": "password_set",
+          "as_written": "Password set!",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "protection",
+          "as_written": "Protection",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_master_password",
+          "as_written": "Master password",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Where can I find settings files?",
+      "anchor": "FAQ-where-are-settings-files",
+      "source_hash": "39a2c5e9003b30ae",
+      "summary": "Settings exports are in the preferences subfolder of the AAPS directory, or in the cloud folder.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How do I import settings from earlier versions of AAPS into AAPS v3 or v4 ?",
+      "anchor": "FAQ-import-settings-earlier-versions",
+      "source_hash": "3a99e64b2e9c0e1d",
+      "summary": "Exports older than 2.8 must go through AAPS 2.8 first; with the same key no import is needed.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Where can I delete treatments?",
+      "anchor": "FAQ-delete-treatments",
+      "source_hash": "223b4a3703033a11",
+      "summary": "Selecting and deleting entries in Treatments history.",
+      "dialogs": [
+        "Main menu > Treatments history"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments_history",
+          "as_written": "Treatments history",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Phone and connection problems",
+      "anchor": "phone-and-connection-problems",
+      "source_hash": "0c1e8fc991307694",
+      "summary": "Heading for phone and connection problems.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "AAPS stops everyday around the same time.",
+      "anchor": "FAQ-aaps-stops",
+      "source_hash": "65ad599c18f0e012",
+      "summary": "Google Play Protect, cleaning apps and battery optimisation as causes of AAPS being stopped.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to configure battery savings?",
+      "anchor": "FAQ-battery-savings",
+      "source_hash": "dc007c0678d47d4e",
+      "summary": "Turning off battery optimisation for AAPS, the CGM app and Bluetooth, including the About > Don't kill my app? link.",
+      "dialogs": [
+        "Main menu > About"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_unreachable",
+          "as_written": "pump unreachable",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_about",
+          "as_written": "About",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cta_dont_kill_my_app_info",
+          "as_written": "Don't kill my app?",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Pump unreachable alerts several times a day or at night.",
+      "anchor": "FAQ-pump-unreachable-alerts",
+      "source_hash": "2c6f14065280c7cd",
+      "summary": "Battery savings as the cause, and changing Pump unreachable threshold in the Local alerts settings.",
+      "dialogs": [
+        "Preferences > Local alerts"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "localalertsettings_title",
+          "as_written": "Local alerts",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_pump_unreachable_threshold",
+          "as_written": "Pump unreachable threshold",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "My link/pump/pod is unresponsive (RL/OL/EmaLink…)",
+      "anchor": "FAQ-link-unresponsive",
+      "source_hash": "fa2d896afa02dbc2",
+      "summary": "Recovering an unresponsive RileyLink-type link: Reset RileyLink, or exit AAPS, clear its cache in Android, restart and Pair RileyLink again.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_custom_action_reset_rileylink",
+          "as_written": "Reset RileyLink",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "exit",
+          "as_written": "Exit",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_pair",
+          "as_written": "Pair RileyLink",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Remote control",
+      "anchor": "remote-control",
+      "source_hash": "67c18411a2777a33",
+      "summary": "Heading for remote control.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Configuring and Using the AAPSClient remote app",
+      "anchor": "FAQ-aapsclient",
+      "source_hash": "f3fff438969ec529",
+      "summary": "What AAPSClient is, the pairing needed since AAPS 4, and links to its pages.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Alerts and warnings",
+      "anchor": "alerts-and-warnings",
+      "source_hash": "4d27a3f83adbdd6e",
+      "summary": "Heading for alerts and warnings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "I have a red warning badge (red triangle) / AAPS won't enable closed loop / Loop stays in LGS / I had a yellow triangle",
+      "anchor": "i-have-a-red-warning-badge-red-triangle-aaps-won-t-enable-closed-loop-loop-stays-in-lgs-i-had-a-yellow-triangle",
+      "source_hash": "89031e5f41f0fb73",
+      "summary": "The red warning badge means duplicate BG values and switches the loop to Low Glucose Suspend; deleting duplicates in the BG source screen and selecting Closed Loop again; the old yellow triangle.",
+      "dialogs": [
+        "Overview > Loop status"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "lowglucosesuspend",
+          "as_written": "Low Glucose Suspend",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "closedloop",
+          "as_written": "Closed Loop",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Omnipod DASH",
+      "anchor": "omnipod-dash",
+      "source_hash": "50bbd263b9077b1d",
+      "summary": "Heading for Omnipod DASH questions.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Can I move an active DASH Pod to another phone?",
+      "anchor": "FAQ-move-dash-pod",
+      "source_hash": "b8def98040683b62",
+      "summary": "Moving an active DASH pod by exporting and importing settings with Also replace pump settings; unsupported and risky.",
+      "dialogs": [
+        "Main menu > Maintenance > Import settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_replace_pump_settings",
+          "as_written": "Also replace pump settings",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": "The page writes \"Enable SMB with high temp targets\"; the app label is \"Enable SMB with high temp target\". \"Reset RileyLink\" exists for Medtronic and Omnipod Eros; the Medtronic key is tagged."
+}

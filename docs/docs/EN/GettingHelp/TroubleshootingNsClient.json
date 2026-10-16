@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/GettingHelp/TroubleshootingNsClient.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Troubleshooting an unstable or failing NSClient connection to Nightscout: checking the connection status on the NSClientV3 screen, restarting Nightscout and the phone, battery and network settings, hosting issues, turning on CGM data from Nightscout, and a full Nightscout database.",
+  "features": [
+    "NSClient",
+    "Nightscout"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > Communication > NSClientV3",
+      "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+      "key": "ns_client_v3_title"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Troubleshooting NSClient",
+      "anchor": "Troubleshooting-NSClient-troubleshooting-nsclient",
+      "source_hash": "70f13dec12258ece",
+      "summary": "How to spot an unstable Nightscout connection on the NSClientV3 screen and fix it (restart, phone power options, hosting settings), how to get BG readings from Nightscout through the Synchronization settings, and what to do when the Nightscout database is full.",
+      "dialogs": [
+        "Configuration > Communication > NSClientV3",
+        "Preferences > NSClientV3 > Synchronization"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_v3_title",
+          "as_written": "NSClientV3",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "status_label",
+          "as_written": "Status",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "connected",
+          "as_written": "connected",
+          "confidence": 0.7
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_sync_options",
+          "as_written": "Synchronization",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_receive_cgm",
+          "as_written": "Receive CGM data from NS",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": null
+}

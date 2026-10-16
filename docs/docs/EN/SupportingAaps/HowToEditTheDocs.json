@@ -1,0 +1,328 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SupportingAaps/HowToEditTheDocs.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Guide for contributors to the English AAPS documentation: how to propose a change on GitHub with a pull request, the Markdown (MyST) syntax used in the docs, and a writing style guide with AAPS-specific conventions. No app screens are involved.",
+  "features": [
+    "Contributing",
+    "Documentation"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "How to edit the docs",
+      "anchor": "how-to-edit-the-docs",
+      "source_hash": "bb01c01790a1e7e2",
+      "summary": "Page introduction: this page is for editing the English docs only; translations go through Crowdin.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "General",
+      "anchor": "general",
+      "source_hash": "481ab2fe221596ef",
+      "summary": "Proposing a change to the English docs on GitHub: forking, editing a page, previewing, and opening a pull request.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Code syntax",
+      "anchor": "edit-the-docs-code-syntax",
+      "source_hash": "1df181cb35a6545f",
+      "summary": "Why the docs use Markdown (MyST) and stay close to the standard so translation tools can work on them.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Headlines",
+      "anchor": "headlines",
+      "source_hash": "13cd20d2f19f1953",
+      "summary": "Markdown syntax for headings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Text format",
+      "anchor": "text-format",
+      "source_hash": "f04d0c9be0a0a439",
+      "summary": "Markdown syntax for bold and italic text.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Ordered list",
+      "anchor": "ordered-list",
+      "source_hash": "56b1d206743cdbf8",
+      "summary": "Markdown syntax for numbered lists.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Unordered list",
+      "anchor": "unordered-list",
+      "source_hash": "b23cd830d589adef",
+      "summary": "Markdown syntax for bullet lists.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Multi level list",
+      "anchor": "multi-level-list",
+      "source_hash": "fe3f000ac230ec92",
+      "summary": "Markdown syntax for nested lists.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Images",
+      "anchor": "images",
+      "source_hash": "cbe2b645c479be68",
+      "summary": "Markdown syntax for images and the allowed image formats.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Links",
+      "anchor": "links",
+      "source_hash": "952dce07a1bc5648",
+      "summary": "Heading for link syntax.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "External links",
+      "anchor": "external-links",
+      "source_hash": "c2695e8039660972",
+      "summary": "Markdown syntax for links to other websites.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Internal links to the start of a md file",
+      "anchor": "internal-links-to-the-start-of-a-md-file",
+      "source_hash": "27bddefd64b73b2d",
+      "summary": "Markdown syntax for links to another docs page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Internal links to named inline references",
+      "anchor": "internal-links-to-named-inline-references",
+      "source_hash": "1f2bf413b3c7ade0",
+      "summary": "Creating labels and linking to a section of a docs page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Notes, Warnings, Collapsing Notes",
+      "anchor": "notes-warnings-collapsing-notes",
+      "source_hash": "8ad66a62e88047bf",
+      "summary": "When to use note, warning and collapsible boxes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Notes",
+      "anchor": "notes",
+      "source_hash": "5f32292d97d6edb1",
+      "summary": "Syntax for a note box.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Warnings",
+      "anchor": "warnings",
+      "source_hash": "fa49012b998f507d",
+      "summary": "Syntax for a warning box.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Collapsing Notes",
+      "anchor": "collapsing-notes",
+      "source_hash": "f09235a186747687",
+      "summary": "Syntax for a collapsible box.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Tables",
+      "anchor": "tables",
+      "source_hash": "072d5d25bac5ef0e",
+      "summary": "Avoid tables with long text: they do not fit phone screens or survive translation.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Style Guide",
+      "anchor": "style-guide",
+      "source_hash": "93ce5138e329929d",
+      "summary": "Heading for the writing style guide.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Contents",
+      "anchor": "contents",
+      "source_hash": "5eaf2592540f773e",
+      "summary": "Contents of the style guide.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "![Image](../images/styleguide01.png) 1\\. English language writing tips",
+      "anchor": "image-images-styleguide01-png-1-english-language-writing-tips",
+      "source_hash": "8fde0e40fbe80ed4",
+      "summary": "Heading for English writing tips.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Use language that is appropriate for the reader",
+      "anchor": "use-language-that-is-appropriate-for-the-reader",
+      "source_hash": "f1c4164bac410ea3",
+      "summary": "Writing for the reader's knowledge level.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Use plain words that everyone can understand",
+      "anchor": "use-plain-words-that-everyone-can-understand",
+      "source_hash": "0abf251611646740",
+      "summary": "Preferring plain words over jargon.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Privacy/licensing concerns:",
+      "anchor": "privacy-licensing-concerns",
+      "source_hash": "70a75fc4ccfa9594",
+      "summary": "Privacy and licensing points for screenshots and content.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Keep sentences short, get to the point",
+      "anchor": "keep-sentences-short-get-to-the-point",
+      "source_hash": "a92c889460445447",
+      "summary": "Writing short, direct sentences.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Don't be afraid to give instructions",
+      "anchor": "don-t-be-afraid-to-give-instructions",
+      "source_hash": "c6657b68c3258b70",
+      "summary": "Using direct instructions to the reader.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Mostly use active verbs, rather than passive verbs",
+      "anchor": "mostly-use-active-verbs-rather-than-passive-verbs",
+      "source_hash": "6b4d3d42779d6ea3",
+      "summary": "Preferring active over passive voice, with examples.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Good uses of passives",
+      "anchor": "good-uses-of-passives",
+      "source_hash": "a49c553cebb2ae62",
+      "summary": "Cases where the passive voice is fine.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Avoid nominalisations",
+      "anchor": "avoid-nominalisations",
+      "source_hash": "af3d621e589362d4",
+      "summary": "Using verbs instead of nouns made from verbs.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Use lists where appropriate",
+      "anchor": "use-lists-where-appropriate",
+      "source_hash": "eab70024446a9d4d",
+      "summary": "When to use lists.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Mythbusting",
+      "anchor": "mythbusting",
+      "source_hash": "39d24dedd7ba4072",
+      "summary": "Common writing myths that do not apply.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Optimizing writing style by purpose",
+      "anchor": "optimizing-writing-style-by-purpose",
+      "source_hash": "f2b0293c08724f7e",
+      "summary": "Matching the style to the purpose: tutorials, how-to guides and explanations.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "![Image](../images/styleguide03.png) Tutorials (e.g. teaching a kid to beat egg whites)",
+      "anchor": "image-images-styleguide03-png-tutorials-e-g-teaching-a-kid-to-beat-egg-whites",
+      "source_hash": "71c0a0e715070035",
+      "summary": "How to write tutorials, which teach by doing.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "![Image](../images/styleguide05.png) How-To Guides (e.g. a recipe)",
+      "anchor": "image-images-styleguide05-png-how-to-guides-e-g-a-recipe",
+      "source_hash": "b3617dd0b45483fe",
+      "summary": "How to write how-to guides for a specific task.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "![Image](../images/styleguide07.png) Explanation (e.g. Science behind why egg whites stiffen when you beat them)",
+      "anchor": "image-images-styleguide07-png-explanation-e-g-science-behind-why-egg-whites-stiffen-when-you-beat-them",
+      "source_hash": "1168ee189fcb6bba",
+      "summary": "How to write explanations that deepen understanding.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "2\\. AAPS-specific writing/updating notes",
+      "anchor": "2-aaps-specific-writing-updating-notes",
+      "source_hash": "8af79a9a66c6fdb0",
+      "summary": "Heading for AAPS-specific writing notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Author & Editor",
+      "anchor": "author-editor",
+      "source_hash": "880782872704e800",
+      "summary": "The two roles in writing a docs section: author drafts, editor checks style and clarity.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "General AAPS points",
+      "anchor": "general-aaps-points",
+      "source_hash": "9172defab109b9af",
+      "summary": "AAPS conventions: give glucose in mg/dL and mmol/L, write \"AAPS\", state the version written for.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "3\\. Useful References",
+      "anchor": "3-useful-references",
+      "source_hash": "aa82c472efa80993",
+      "summary": "Links to external style guides.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

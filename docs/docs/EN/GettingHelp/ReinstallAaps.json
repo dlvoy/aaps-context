@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/GettingHelp/ReinstallAaps.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Step-by-step guide to uninstalling AAPS and installing an APK signed with a new keystore without losing settings: export settings from Maintenance, copy the file off the phone, sync to Nightscout, uninstall, reinstall through the setup wizard, import settings with the master password, and reload history from Nightscout with NSClientV3's Full synchronization.",
+  "features": [
+    "Reinstalling AAPS",
+    "Settings export and import",
+    "Keystore",
+    "NSClient"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Maintenance",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "maintenance"
+    },
+    {
+      "ui_location": "Main menu > Maintenance > Import settings",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "import_setting"
+    },
+    {
+      "ui_location": "Main menu > Configuration > Communication > NSClientV3",
+      "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+      "key": "ns_client_v3_title"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Reinstalling AAPS with a new keystore",
+      "anchor": "reinstall-aaps",
+      "source_hash": "86eac4478ffd72ce",
+      "summary": "Page introduction: an update only installs over AAPS when signed with the same keystore; otherwise installation fails.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "When do you need to reinstall?",
+      "anchor": "reinstall-aaps-when",
+      "source_hash": "96aa9c9ea8dad2b0",
+      "summary": "Cases that need an uninstall and reinstall: lost keystore or password, a new keystore from the browser build or AAPS Builder, or a new build computer.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Before you start",
+      "anchor": "reinstall-aaps-before",
+      "source_hash": "598fada20796de82",
+      "summary": "What is lost on uninstall and how it comes back: a recent settings file, the master password, Nightscout history, and the tubeless pump caveat.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_master_password",
+          "as_written": "master password",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Steps",
+      "anchor": "reinstall-aaps-steps",
+      "source_hash": "e7a24e8c5ae3d41c",
+      "summary": "Introduction to the numbered steps; screenshots move from AAPS 3.4 to AAPS 4.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "1. Export your settings",
+      "anchor": "reinstall-aaps-export",
+      "source_hash": "a03e1633cb451fb0",
+      "summary": "Exporting settings to local storage from Maintenance, in AAPS 3.4 through Export options, in AAPS 4 with the Local chip and Export settings, entering the master password.",
+      "dialogs": [
+        "Main menu > Maintenance"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "maintenance",
+          "as_written": "Maintenance",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "chip_local",
+          "as_written": "Local",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_export",
+          "as_written": "Export settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "2. Copy the settings file off your phone",
+      "anchor": "reinstall-aaps-copy",
+      "source_hash": "932d073d5950645e",
+      "summary": "Finding the exported file in the preferences folder of the AAPS directory and copying it to a computer or cloud.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aaps_directory",
+          "as_written": "AAPS directory",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "3. Synchronize with Nightscout",
+      "anchor": "reinstall-aaps-nightscout-before",
+      "source_hash": "df1a21c6b419477e",
+      "summary": "Uploading all data to Nightscout before uninstalling, with Full synchronization in the NSClient screen menu, and answering the database cleanup question.",
+      "dialogs": [
+        "Configuration > Communication > NSClientV3"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client",
+          "as_written": "NSClient",
+          "confidence": 0.7
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "full_sync",
+          "as_written": "Full synchronization",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cancel",
+          "as_written": "Cancel",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "4. Build the new apk",
+      "anchor": "reinstall-aaps-build",
+      "source_hash": "f4d446bf348658b7",
+      "summary": "Building a signed APK with the new keystore and moving it to the phone.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "5. Uninstall AAPS",
+      "anchor": "reinstall-aaps-uninstall",
+      "source_hash": "853f25bdd7e373f8",
+      "summary": "Uninstalling AAPS from the phone's Android settings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "6. Install and start the new AAPS",
+      "anchor": "reinstall-aaps-install",
+      "source_hash": "89c0f744de3dc08c",
+      "summary": "Installing the new APK, granting permissions in the setup wizard, choosing the same AAPS directory, and optionally importing from the Stored settings found screen.",
+      "dialogs": [
+        "Setup wizard"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "permission_grant",
+          "as_written": "Grant",
+          "confidence": 0.9
+        },
+        {
+          "file": "implementation/src/androidMain/res/values/strings.xml",
+          "key": "permission_directory_title",
+          "as_written": "AAPS Directory",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/configuration/src/androidMain/res/values/strings.xml",
+          "key": "storedsettingsfound",
+          "as_written": "Stored settings found",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "maintenance",
+          "as_written": "Maintenance",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "7. Import your settings",
+      "anchor": "reinstall-aaps-import",
+      "source_hash": "62bc47c3721d2f65",
+      "summary": "Importing the exported file from Maintenance: Local chip, Import settings, choosing the file, entering the old master password, ticking Also replace pump settings, and applying.",
+      "dialogs": [
+        "Main menu > Maintenance > Import settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "maintenance",
+          "as_written": "Maintenance",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "chip_local",
+          "as_written": "Local",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_setting",
+          "as_written": "Import settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_decryption_password",
+          "as_written": "Decryption password",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_decrypt",
+          "as_written": "Decrypt",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_different_password_hint",
+          "as_written": "File was encrypted with a different password",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_replace_pump_settings",
+          "as_written": "Also replace pump settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_btn",
+          "as_written": "Import",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_applied_title",
+          "as_written": "Settings applied",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "8. Get your history back from Nightscout",
+      "anchor": "reinstall-aaps-nightscout-after",
+      "source_hash": "6d29b522100dc0e2",
+      "summary": "Opening NSClientV3 from Configuration > Communication, checking it is Connected, and running Full synchronization to download the history.",
+      "dialogs": [
+        "Configuration > Communication > NSClientV3"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_v3_title",
+          "as_written": "NSClientV3",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "connected",
+          "as_written": "Connected",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "full_sync",
+          "as_written": "Full synchronization",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "9. Check and keep looping",
+      "anchor": "reinstall-aaps-check",
+      "source_hash": "e64c7f5c083a4206",
+      "summary": "Checking that pump and CGM work again.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Afterwards",
+      "anchor": "reinstall-aaps-afterwards",
+      "source_hash": "1a6802fb60f25ebe",
+      "summary": "Keep using and safely storing the new keystore.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "Step 1 describes AAPS 3.4 labels (Export options, User Settings, Local Storage, Cloud Storage, \"Export settings (local)\") that the current app no longer has; they are not tagged. \"Full sync finished\" is a hardcoded log line, not a string resource. Settings > Apps > Uninstall, Use this folder and Allow are Android labels."
+}

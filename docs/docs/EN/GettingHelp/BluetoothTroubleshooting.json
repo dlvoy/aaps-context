@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/GettingHelp/BluetoothTroubleshooting.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Fixes for Bluetooth pump problems, mainly Omnipod DASH and Medtrum Nano: the minimum AAPS version for Android 16, Bluetooth battery optimisation, revoking the Android \"Nearby devices\" permission from other apps, and turning on Bluetooth bonding in the DASH settings on Android 15. Most steps are in Android's own settings; their labels (Security and privacy, Permission manager, Don't allow) are Android's, not AAPS strings.",
+  "features": [
+    "Bluetooth",
+    "Omnipod DASH",
+    "Troubleshooting"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Manage > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "pump_management"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Bluetooth related issues",
+      "anchor": "bluetoothtroubleshooting-bluetooth-related-issues",
+      "source_hash": "52bfe918ce4e74e3",
+      "summary": "Page introduction: Bluetooth causes of DASH activation failures and Medtrum Nano connection problems.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Cannot start Omnipod with Android 16",
+      "anchor": "bluetoothtroubleshooting-cannot-start-omnipod-with-android-16",
+      "source_hash": "17b644b9ab8ec6ba",
+      "summary": "Omnipod DASH on Android 16 needs at least AAPS 3.3.2.1.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Bluetooth Battery Optimisation",
+      "anchor": "bluetoothtroubleshooting-bluetooth-battery-optimisation",
+      "source_hash": "49351d9b4ca28037",
+      "summary": "Checking that battery optimisation is off for the system Bluetooth app, as set in the Setup Wizard.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Apps that use the \"Nearby devices\" Android permission can cause connection drops and Pod activation problems",
+      "anchor": "bluetoothtroubleshooting-apps-using-nearby-device-permission",
+      "source_hash": "021bcf4db3f707e2",
+      "summary": "Why other apps holding the Android \"Nearby devices\" permission can disturb pod activation.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Apps that use \"Nearby device\" permissions and are known to have caused problems:",
+      "anchor": "bluetoothtroubleshooting-apps-using-nearby-device-permission-known-apps",
+      "source_hash": "2df9006624a18f86",
+      "summary": "Third-party apps known to disturb DASH or Medtrum connections.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to revoke \"Nearby device\" permissions for other apps:",
+      "anchor": "bluetoothtroubleshooting-revoke-nearby-device-permission",
+      "source_hash": "d23e9bdc6097d910",
+      "summary": "Step-by-step through Android settings to remove the Nearby devices permission from every app except AAPS before activating a pod.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to re-enable \"Nearby device\" permissions for system apps and other apps:",
+      "anchor": "bluetoothtroubleshooting-re-enable-nearby-device-permission",
+      "source_hash": "a128794aea30f492",
+      "summary": "Giving the Nearby devices permission back in Android settings, including showing hidden system apps.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Android 15 Frequent Bluetooth connection problems",
+      "anchor": "bluetoothtroubleshooting-android-15-bluetooth-connection-problems",
+      "source_hash": "93652dff70b3594f",
+      "summary": "On Android 15 only, turning on Bluetooth bonding in the Advanced Settings of the DASH pump settings, opened from the pump screen's gear icon, then restarting the phone.",
+      "dialogs": [
+        "Manage > Pump > Settings > Advanced Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "advanced_settings_title",
+          "as_written": "Advanced Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_dash_use_bonding",
+          "as_written": "Bluetooth bonding",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": "Android system labels (Security and privacy, Privacy controls, Permission manager, Nearby devices, Don't allow, Show system) are not AAPS strings and are left out."
+}

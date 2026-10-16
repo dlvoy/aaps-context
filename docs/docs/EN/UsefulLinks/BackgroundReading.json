@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/UsefulLinks/BackgroundReading.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "A reading list for new users before they build AAPS: websites, blogs, books, articles and videos about DIY closed looping. No app screens are involved.",
+  "features": [
+    "Background reading"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Useful resources to read before you start",
+      "anchor": "useful-resources-to-read-before-you-start",
+      "source_hash": "40fb2b5cd41becaa",
+      "summary": "Page introduction: why reading up first helps.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Further reading",
+      "anchor": "further-reading",
+      "source_hash": "ba40709e4d70cad7",
+      "summary": "Links to OpenAPS, Loop and related documentation, blogs, articles and books.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Background reading and articles about DIY closed looping",
+      "anchor": "background-reading-and-articles-about-diy-closed-looping",
+      "source_hash": "9bbaa4d46aac1361",
+      "summary": "Press articles about DIY closed loops.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Stuff on YouTube",
+      "anchor": "stuff-on-youtube",
+      "source_hash": "19a074969c168195",
+      "summary": "Video talks and interviews.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

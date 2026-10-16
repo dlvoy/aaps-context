@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/GettingHelp/ProfileTuning.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "A guide to fine-tuning the AAPS Profile (basal, ISF, I:C) once the basic setup and objectives are done: how to test with closed loop and without automations or sensitivity features, which IOB and BG patterns point to which Profile change, and how to measure the I:C ratio. Not medical advice. \"Profile\" is the app's term for the basal/ISF/IC/target settings; ISF, IOB, COB, BG and SMB are the app's abbreviations.",
+  "features": [
+    "Profile",
+    "Profile tuning"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Tweaking the AAPS' Profile",
+      "anchor": "tweaking-the-aaps-profile",
+      "source_hash": "f02bfcb1255cd2af",
+      "summary": "Page introduction and medical disclaimer: what the guide covers and why closed loop helps with basal testing.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "closedloop",
+          "as_written": "closed loop",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Changing profile's settings, how to proceed",
+      "anchor": "changing-profile-s-settings-how-to-proceed",
+      "source_hash": "4f2d32cd1f37fa57",
+      "summary": "The method: observe BG and IOB over several days, find repeating patterns, change one Profile value at a time in small steps.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "bg_label",
+          "as_written": "BG",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "iob",
+          "as_written": "IOB",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Recommended settings and advice while tweaking basal",
+      "anchor": "recommended-settings-and-advice-while-tweaking-basal",
+      "source_hash": "aacaf6e0be3875d3",
+      "summary": "Test conditions: closed loop on, automations and DynISF/AutoISF/Autosens off, no manual actions, which additional graphs to show, and what to avoid during testing.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "isf_short",
+          "as_written": "ISF",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "iob",
+          "as_written": "IOB",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "[Profile](../SettingUpAaps/YourAapsProfile.md) definitions",
+      "anchor": "profile-settingupaaps-youraapsprofile-md-definitions",
+      "source_hash": "d19dfba977c702a8",
+      "summary": "Which values make a Profile too strong.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "IOB Observations",
+      "anchor": "iob-observations",
+      "source_hash": "25f5798688646e48",
+      "summary": "Heading for IOB patterns; IOB over several days can be seen in Nightscout reports.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "IOB positive",
+      "anchor": "iob-positive",
+      "source_hash": "9ed568704f65a874",
+      "summary": "Constantly positive IOB suggests the Profile basal is too weak.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "IOB negative",
+      "anchor": "iob-negative",
+      "source_hash": "1b2bab478660766b",
+      "summary": "Constantly negative IOB suggests basal too strong, past exercise, or a previous oversized bolus.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "BG Target Observations",
+      "anchor": "bg-target-observations",
+      "source_hash": "fa31d28548845bcb",
+      "summary": "Heading for patterns around the BG target.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Stuck High",
+      "anchor": "stuck-high",
+      "source_hash": "0b3ee2ec318b7ffe",
+      "summary": "Causes of BG staying high: ISF too weak, basal too weak, a safety limit such as MaxIOB (check the SMB tab), or site problems.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "smb_shortname",
+          "as_written": "SMB",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Stuck Low",
+      "anchor": "stuck-low",
+      "source_hash": "fb84cdbc457bf15a",
+      "summary": "Causes of BG staying low: ISF or basal too strong.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Rollercoaster (ups and downs)",
+      "anchor": "rollercoaster-ups-and-downs",
+      "source_hash": "d4c25b829e4c20e3",
+      "summary": "Ups and downs may mean the ISF is too strong.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "isf_short",
+          "as_written": "ISF",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "BG After Meals Observations",
+      "anchor": "bg-after-meals-observations",
+      "source_hash": "18b77670da822383",
+      "summary": "Heading for patterns after meals.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Fast rise and BG going high",
+      "anchor": "fast-rise-and-bg-going-high",
+      "source_hash": "c3690b38c3637182",
+      "summary": "Fast carbs, pre-bolus timing or a too weak bolus after meals.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Fast rise and then BG going low",
+      "anchor": "fast-rise-and-then-bg-going-low",
+      "source_hash": "5c612e10a7da211d",
+      "summary": "A too aggressive Profile or bolus after meals; consider a pre-bolus.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "[How to calculate your I:C](#your-aaps-profile-insulin-to-carbs-ratio)",
+      "anchor": "how-to-calculate-your-i-c-your-aaps-profile-insulin-to-carbs-ratio",
+      "source_hash": "c07d2ff88a68564b",
+      "summary": "Measuring the insulin-to-carbs ratio from a test meal: record insulin and IOB before and after, subtract basal, divide.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Explanations for the I:C calculations",
+      "anchor": "explanations-for-the-i-c-calculations",
+      "source_hash": "7fe0a3ddf2667779",
+      "summary": "Why the I:C measurement works and why the time frame must be long enough.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.7
+        }
+      ]
+    }
+  ],
+  "manual_note": "The graph series named in full on the page (Insulin On Board, Carbs On Board, Sensitivity change, Deviations, Blood Glucose Impact) are shown in the app as short labels (IOB, COB, DEV, -BGI) and are not tagged."
+}

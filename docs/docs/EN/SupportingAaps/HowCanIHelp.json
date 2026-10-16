@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SupportingAaps/HowCanIHelp.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Ways to support the volunteer AAPS project: donating, writing code, editing the English documentation, translating the app or docs on Crowdin, and answering questions in the community. No app screens are involved.",
+  "features": [
+    "Contributing"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "How to help with AAPS",
+      "anchor": "how-to-help-with-aaps",
+      "source_hash": "d6671d16a91e317e",
+      "summary": "Page title.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "AAPS operates entirely on volunteer efforts and has no paid staff.",
+      "anchor": "aaps-operates-entirely-on-volunteer-efforts-and-has-no-paid-staff",
+      "source_hash": "680eadae0c335454",
+      "summary": "Why donations help the volunteer developers (test hardware, shipping, meetings).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "I can write code! How do I participate?",
+      "anchor": "i-can-write-code-how-do-i-participate",
+      "source_hash": "e6a65bc9b12e3370",
+      "summary": "Developers: pick an issue, ask on Discord, open a first pull request.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "I know the system and can write documentation!",
+      "anchor": "i-know-the-system-and-can-write-documentation",
+      "source_hash": "56f15cd149c5b6c5",
+      "summary": "Documentation writers: the Discord channel and the guide to editing the English docs.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "I do speak multiple languages and want to translate the app or the documentation",
+      "anchor": "i-do-speak-multiple-languages-and-want-to-translate-the-app-or-the-documentation",
+      "source_hash": "83ee0ac0c78180a1",
+      "summary": "Translators: start with the app strings, then the docs, both on Crowdin.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Are there other ways to help?",
+      "anchor": "are-there-other-ways-to-help",
+      "source_hash": "1c60da6bf78fead7",
+      "summary": "Other useful skills, such as design and answering questions in the community.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

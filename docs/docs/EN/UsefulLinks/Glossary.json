@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/UsefulLinks/Glossary.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Alphabetical glossary of the abbreviations and terms used in AAPS and its documentation (BG, IOB, COB, ISF, SMB, TT, Profile switch, Closed Loop and so on), with links to the pages that explain them. Many entries are labels or abbreviations the app itself shows, so the translation should match the app's terms.",
+  "features": [
+    "Glossary"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Glossary",
+      "anchor": "glossary",
+      "source_hash": "b4f16550546ea2ef",
+      "summary": "Definitions of AAPS terms and abbreviations, one per entry, many of them app labels (BG source, Profile switch, Prime/Fill, Sensor Insert, Closed Loop, Open Loop, Low Glucose Suspend, Virtual pump).",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client",
+          "as_written": "NSClient",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "activity",
+          "as_written": "Activity",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search_category_preferences",
+          "as_written": "Preferences",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "bg_label",
+          "as_written": "BG",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_bgsource",
+          "as_written": "BG source",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "dexcom_app_patched",
+          "as_written": "BYODA",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "prime_fill",
+          "as_written": "Prime/Fill",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "closedloop",
+          "as_written": "Closed Loop",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cob",
+          "as_written": "COB",
+          "confidence": 0.7
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openaps_smb_dynamic_isf",
+          "as_written": "Dynamic ISF",
+          "confidence": 0.7
+        },
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "glimp",
+          "as_written": "Glimp",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "iob",
+          "as_written": "IOB",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "isf_short",
+          "as_written": "ISF",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "lowglucosesuspend",
+          "as_written": "Low Glucose Suspend",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "log_files",
+          "as_written": "Log files",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "openloop",
+          "as_written": "Open Loop",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile switch",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "profilepercentage",
+          "as_written": "Profile Percentage",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cgm_sensor_insert",
+          "as_written": "Sensor Insert",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "smb_shortname",
+          "as_written": "SMB",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "superbolus",
+          "as_written": "Super bolus",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "tdd_short",
+          "as_written": "TDD",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "tt_label",
+          "as_written": "TT",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "virtual_pump",
+          "as_written": "Virtual pump",
+          "confidence": 0.8
+        }
+      ]
+    }
+  ],
+  "manual_note": "The status lights BAT, CAN, RES and SEN, and the terms Adjustment Factor, eCarbs, maxIOB, UAM and Pump History, are not tagged: no phone-app string with that exact text was found, or the term is used only as a concept."
+}

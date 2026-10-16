@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/GettingHelp/BrowserBuildTroubleshooting.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Troubleshooting the browser build of AAPS (the AAPS-CI GitHub workflow): reading the GitHub Actions log, updating secrets, re-running a failed build, and fixing common failures (expired Google refresh token, preparation page server, repository permissions, keystore password). All labels on this page belong to GitHub, Google Account pages or the build workflow, not to the AAPS app.",
+  "features": [
+    "Browser build",
+    "Building AAPS",
+    "Troubleshooting"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Browser build: troubleshooting",
+      "anchor": "aaps-ci-troubleshooting",
+      "source_hash": "5bb85379fdb25cd9",
+      "summary": "Page introduction; points AAPS Builder users to their own troubleshooting section.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "AAPS-CI Troubleshooting",
+      "anchor": "aaps-ci-troubleshooting",
+      "source_hash": "e85cc9d6004c3789",
+      "summary": "Heading for the AAPS-CI workflow problems.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "First: find out what went wrong",
+      "anchor": "aaps-ci-read-the-logs",
+      "source_hash": "8a95a33370951f72",
+      "summary": "Opening the failed run in GitHub Actions and finding the failed step and its error lines in the log.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Update a secret",
+      "anchor": "aaps-ci-update-secret",
+      "source_hash": "e38d555d63e22da4",
+      "summary": "Replacing the value of a repository secret in the GitHub repository settings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Run the build again after a fix",
+      "anchor": "aaps-ci-rerun",
+      "source_hash": "908d887bd9c7fcbc",
+      "summary": "Re-running the failed jobs of a GitHub Actions run, or starting a new build.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "aaps-ci-preparation web page",
+      "anchor": "aaps-ci-preparation-web",
+      "source_hash": "eb5e1e112164a293",
+      "summary": "What to do when the preparation page cannot reach its temporary local server.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Google Refresh Token Expired",
+      "anchor": "aaps-ci-google-token-expired",
+      "source_hash": "9f691304347f8be0",
+      "summary": "Recognising an expired Google refresh token in the build log and getting a new GDRIVE_OAUTH2 token.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Remove AAPS Access From Your Google Account And Restart The Authorization",
+      "anchor": "aaps-ci-google-remove-access",
+      "source_hash": "de2f620965f9b84c",
+      "summary": "Removing AAPS's access in the Google Account connections page, then redoing the Google Drive authorization and updating the secret.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Disable Software That May Interfere With OAUTH Verification",
+      "anchor": "aaps-ci-disable-software",
+      "source_hash": "a3987efc793236de",
+      "summary": "Turning off VPN and security apps on the phone before getting the OAuth key.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Check GitHub Actions Permission Settings",
+      "anchor": "aaps-ci-actions-permission",
+      "source_hash": "3ed3775dee6df10a",
+      "summary": "Allowing all actions and reusable workflows in the GitHub repository settings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Check GitHub Workflow Permissions Settings",
+      "anchor": "aaps-ci-workflow-permissions",
+      "source_hash": "2a74ce8d46c5e662",
+      "summary": "Setting read and write workflow permissions in GitHub when the build fails with an invalid workflow file.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build Fails Checking The Keystore Password",
+      "anchor": "aaps-ci-password-special-characters",
+      "source_hash": "53fa7b223ba49ca6",
+      "summary": "Fixing keystore password errors: entering passwords without escape characters, syncing an old fork, and the vertical bar in the combined KEYSTORE_SET secret.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "Bold labels such as Actions, Settings, Update secret, Re-run failed jobs, Security, Delete all and Confirm are GitHub or Google Account UI, not AAPS strings; workflow step names (Build AAPS, Retrieving Google Drive access token) come from the build workflow."
+}

@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SupportingAaps/OpenHumans.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "How to donate AAPS data to research through the Open Humans plugin: which data is and is not uploaded, enabling the plugin under Configuration > Communication, its upload settings, the in-app login and consent flow, and the research projects that use the data. Also the terms of use and data privacy.",
+  "features": [
+    "Open Humans",
+    "Data donation"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > Communication > Open Humans",
+      "file": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+      "key": "open_humans"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Open Humans Uploader",
+      "anchor": "open-humans-uploader",
+      "source_hash": "e591e2d1a8e2c5ce",
+      "summary": "Page title.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Donate your data for science",
+      "anchor": "donate-your-data-for-science",
+      "source_hash": "f2a548887bf1c67b",
+      "summary": "What Open Humans is, which AAPS data is uploaded and which private data is not.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Setup",
+      "anchor": "setup",
+      "source_hash": "d23afd994e23d5bb",
+      "summary": "Enabling the Open Humans plugin, setting Wi-Fi and charging restrictions, going through the Setup, Consent and login screens, authorizing on the website, then uploading or logging out from the plugin screen.",
+      "dialogs": [
+        "Configuration > Communication > Open Humans",
+        "Configuration > Communication > Open Humans > Settings",
+        "Open Humans > Setup"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+          "key": "open_humans",
+          "as_written": "Open Humans",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_openhumans_wifi_only",
+          "as_written": "WiFi only",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_openhumans_charging_only",
+          "as_written": "Charging only",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+          "key": "setup",
+          "as_written": "Setup",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+          "key": "welcome_to_open_humans",
+          "as_written": "Welcome to Open Humans",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+          "key": "next",
+          "as_written": "Next",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+          "key": "consent",
+          "as_written": "Consent",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+          "key": "agree",
+          "as_written": "I understand and agree.",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+          "key": "login_open_humans",
+          "as_written": "Login to Open Humans",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+          "key": "final_touches",
+          "as_written": "Final touches",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+          "key": "proceed",
+          "as_written": "Proceed",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+          "key": "we_re_done",
+          "as_written": "We're done!",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+          "key": "close",
+          "as_written": "Close",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+          "key": "project_member_id",
+          "as_written": "Project Member ID",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "upload_now",
+          "as_written": "Upload now",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/oh_strings.xml",
+          "key": "logout",
+          "as_written": "Logout",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Sharing Opportunities",
+      "anchor": "sharing-opportunities",
+      "source_hash": "5a27e82ccf66ef5b",
+      "summary": "Heading for research projects that use Open Humans data.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "[The 'OPEN' project](https://www.open-diabetes.eu/)",
+      "anchor": "the-open-project-https-www-open-diabetes-eu",
+      "source_hash": "ede3676bdbd948f2",
+      "summary": "The OPEN research consortium and its survey with data donation.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "[OpenAPS Data Commons](https://www.openhumans.org/activity/openaps-data-commons/)",
+      "anchor": "openaps-data-commons-https-www-openhumans-org-activity-openaps-data-commons",
+      "source_hash": "2c9cd1042945adb2",
+      "summary": "The OpenAPS Data Commons and the three ways to get data into Open Humans.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Terms of Use",
+      "anchor": "terms-of-use",
+      "source_hash": "cce5c22d7dfde380",
+      "summary": "Data is shared only with the user's authorization and can be deleted on the Open Humans website.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Data Privacy",
+      "anchor": "data-privacy",
+      "source_hash": "b81f156d493cb022",
+      "summary": "How Open Humans and AAPS identify data without identifying the person; links to the privacy policies.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "Authorize project and the membership visibility option are on the Open Humans website, not in AAPS. The list of uploaded data paraphrases the consent screen items."
+}

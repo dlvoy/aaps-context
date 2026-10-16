@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/GettingHelp/AccessingLogFiles.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Tells the reader where AAPS and AAPSClient keep their log files on the phone and how to view and share them when reporting a problem. No app screens are involved; the reader browses the phone's storage from a computer.",
+  "features": [
+    "Log files",
+    "Troubleshooting"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Accessing logfiles",
+      "anchor": "Accessing-logfiles-accessing-logfiles",
+      "source_hash": "5e2932ec985350f5",
+      "summary": "Copying the log files from the AAPS data folder on the phone over USB, viewing them, and sharing the right zipped log on Discord.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

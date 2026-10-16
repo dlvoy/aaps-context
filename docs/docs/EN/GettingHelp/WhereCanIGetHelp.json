@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/GettingHelp/WhereCanIGetHelp.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Lists where to ask for help with AAPS, in which order (docs, Facebook, Discord, GitHub issue, e-mail), and the community groups by country and language. No app screens are involved.",
+  "features": [
+    "Getting help",
+    "Community"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Where can I get help ?",
+      "anchor": "where-can-i-get-help",
+      "source_hash": "eece95193df7feab",
+      "summary": "Page title.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "I'm stuck; What should I do? Who can I ask?",
+      "anchor": "i-m-stuck-what-should-i-do-who-can-i-ask",
+      "source_hash": "17e0667536b3955e",
+      "summary": "The escalation order for asking for help, from reading the docs to e-mailing the developers, and where to ask about CGM or Nightscout problems.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Make sure to join the AndroidAPS users group on Facebook or Discord!",
+      "anchor": "make-sure-to-join-the-androidaps-users-group-on-facebook-or-discord",
+      "source_hash": "e2bd9cd856deeab1",
+      "summary": "The main Facebook and Discord groups, the Combo users group, and a note that old Facebook posts lost their links to the docs.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Other resources in English",
+      "anchor": "other-resources-in-english",
+      "source_hash": "92dc81aea064f4dd",
+      "summary": "English-language Facebook and Discord groups.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Country / language specific resources",
+      "anchor": "country-language-specific-resources",
+      "source_hash": "8485134cfaf34f41",
+      "summary": "Heading for the community groups listed by country.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Australia",
+      "anchor": "australia",
+      "source_hash": "c395409ee691d731",
+      "summary": "Australian user group.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Czech and Slovak",
+      "anchor": "czech-and-slovak",
+      "source_hash": "49c53d10c6d57558",
+      "summary": "Czech and Slovak user group.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "France",
+      "anchor": "france",
+      "source_hash": "ea01afc9f9f563c7",
+      "summary": "French user groups.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Germany",
+      "anchor": "germany",
+      "source_hash": "fccc3828547e5551",
+      "summary": "German user groups and community site.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Netherlands",
+      "anchor": "netherlands",
+      "source_hash": "1fe05c294e9c9ba2",
+      "summary": "Dutch-speaking user groups.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Norway",
+      "anchor": "norway",
+      "source_hash": "f8d1f2a70d0c53da",
+      "summary": "Norwegian user group.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Poland",
+      "anchor": "poland",
+      "source_hash": "217fb3d20932cc56",
+      "summary": "Polish user group.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Sweden",
+      "anchor": "sweden",
+      "source_hash": "0d02dd107a2390cf",
+      "summary": "Swedish user group.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "UK",
+      "anchor": "uk",
+      "source_hash": "9303a00941a5a4d7",
+      "summary": "UK user group.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

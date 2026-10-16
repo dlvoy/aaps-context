@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SupportingAaps/StateOfTranslations.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Shows the translation and proofreading progress per language for the AAPS app and the documentation, as Crowdin badges, and how long translations take to be published. No app screens are involved.",
+  "features": [
+    "Translations"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "state of translation for app and the documentation",
+      "anchor": "state-of-translation-for-app-and-the-documentation",
+      "source_hash": "a93c4ffec1a7ca87",
+      "summary": "Page introduction: how often the figures update and how translations reach GitHub.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "state app translation",
+      "anchor": "state-app-translation",
+      "source_hash": "b17c318afe4b37b1",
+      "summary": "Badge with the app translation progress per language.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "state documentation translation",
+      "anchor": "state-documentation-translation",
+      "source_hash": "248dce4257224f12",
+      "summary": "Badge with the documentation translation progress per language.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

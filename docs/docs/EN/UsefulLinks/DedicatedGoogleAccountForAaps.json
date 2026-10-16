@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/UsefulLinks/DedicatedGoogleAccountForAaps.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Optional guide to creating a separate Google account for AAPS and forwarding its e-mail to the user's everyday Gmail account. All steps are on Google and Gmail websites; no AAPS screens are involved.",
+  "features": [
+    "Google account",
+    "Preparation"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "A dedicated Google account for AAPS (optional)",
+      "anchor": "a-dedicated-google-account-for-aaps-optional",
+      "source_hash": "3486d7c67fe7dbcd",
+      "summary": "Why some users create a separate Google account for AAPS (Drive space for settings exports, one place for APKs, privacy); optional.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_export",
+          "as_written": "Export Preferences",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "How to set up a dedicated Google account for AAPS",
+      "anchor": "how-to-set-up-a-dedicated-google-account-for-aaps",
+      "source_hash": "eb23aaa5d933beda",
+      "summary": "Requirements and things to consider before creating the account; link to a video walkthrough.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Go to <https://account.google.com>",
+      "anchor": "go-to-https-account-google-com",
+      "source_hash": "f48064f203d149c8",
+      "summary": "Starting from the Google account page and adding another account.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Enter your NEW dedicated account details:",
+      "anchor": "enter-your-new-dedicated-account-details",
+      "source_hash": "227cd61beb80d51e",
+      "summary": "Creating the new account for personal use.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Enter your persona:",
+      "anchor": "enter-your-persona",
+      "source_hash": "fa4f7bb960a5767e",
+      "summary": "Entering name and an adult birth date.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Choose your NEW email address & password",
+      "anchor": "choose-your-new-email-address-password",
+      "source_hash": "75a7784d5dab86e1",
+      "summary": "Choosing the new address and password.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Enter a phone number which can receive the SMS verification",
+      "anchor": "enter-a-phone-number-which-can-receive-the-sms-verification",
+      "source_hash": "42b30db0de88be01",
+      "summary": "Verifying the account by SMS code.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Enter the recovery email address",
+      "anchor": "enter-the-recovery-email-address",
+      "source_hash": "2f9994b3fcc52ada",
+      "summary": "Using the everyday address as recovery e-mail.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Finish setting up the account",
+      "anchor": "finish-setting-up-the-account",
+      "source_hash": "963e82344bd28bea",
+      "summary": "Accepting Google's terms and personalisation settings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Customize the new profile display",
+      "anchor": "customize-the-new-profile-display",
+      "source_hash": "870dfd4e3668683b",
+      "summary": "Setting a profile picture so the AAPS account is easy to recognise.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Open the Gmail website on both windows to configure the new account",
+      "anchor": "open-the-gmail-website-on-both-windows-to-configure-the-new-account",
+      "source_hash": "c59f32dea60353a7",
+      "summary": "Opening both Gmail accounts in two browser windows to set up forwarding.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "In the new Gmail account (bottom window), open Gmail settings…",
+      "anchor": "in-the-new-gmail-account-bottom-window-open-gmail-settings",
+      "source_hash": "47b6253e2aa8417c",
+      "summary": "Opening all Gmail settings in the new account.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Setup forwarding…",
+      "anchor": "setup-forwarding",
+      "source_hash": "c51308fcfe0ba98d",
+      "summary": "Adding the everyday address as forwarding address in Gmail.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Verify the forwarded email address",
+      "anchor": "verify-the-forwarded-email-address",
+      "source_hash": "f1472abeda8d19db",
+      "summary": "Confirming the forwarding request from the everyday account.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Archive forwarded emails in the new dedicated Gmail account (bottom window)",
+      "anchor": "archive-forwarded-emails-in-the-new-dedicated-gmail-account-bottom-window",
+      "source_hash": "dd4329c4ab55b2be",
+      "summary": "Turning on forwarding and archiving Gmail's copy, then saving.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "\"Export Preferences\" is an old name for the settings export, now \"Export settings\" in Maintenance. Other bold or quoted labels (My Account, See all Settings, Forwarding and POP/IMAP) are Google's."
+}

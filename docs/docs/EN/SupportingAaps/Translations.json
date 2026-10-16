@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SupportingAaps/Translations.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "How to translate and proofread the AAPS app strings and the documentation on Crowdin: joining a language team, translating strings or files, proofreading, how translated pages get published, and keeping link tags intact. All labels (Join, Translate All, Proofread, save) are Crowdin's, not the app's.",
+  "features": [
+    "Translations",
+    "Crowdin"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "How to translate strings for the AAPS app or the documentation",
+      "anchor": "how-to-translate-strings-for-the-aaps-app-or-the-documentation",
+      "source_hash": "4ddaa766488dd555",
+      "summary": "Logging in to the Crowdin projects for the app and the docs and asking to join a language team.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Translation of the app",
+      "anchor": "translation-of-the-app",
+      "source_hash": "2e9064255a79b567",
+      "summary": "Heading for translating the app strings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Translate strings for AAPS app",
+      "anchor": "translations-translate-strings-for-AAPS-app",
+      "source_hash": "0d84e12ee932f8b9",
+      "summary": "Translating all untranslated strings or one file at a time in Crowdin, using suggestions.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Proofread strings for AAPS app",
+      "anchor": "proofread-strings-for-aaps-app",
+      "source_hash": "beb4e367220ed389",
+      "summary": "Approving translated app strings in Crowdin's proofread mode; approved strings go into the next AAPS version.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Translation of the documentation",
+      "anchor": "translations-translation-of-the-documentation",
+      "source_hash": "7dcb662348e8607b",
+      "summary": "Translating a docs page sentence by sentence in the Crowdin editor (colour coding, suggestions, saving), and the steps before a translated page is published.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Translating links",
+      "anchor": "translating-links",
+      "source_hash": "867579acdf2c1134",
+      "summary": "Links are no longer translated; keep the numbered link tags around the link text.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Proofreading",
+      "anchor": "proofreading",
+      "source_hash": "3d62ec0dd91a38ad",
+      "summary": "Approving translated docs text in proofreading mode, and when approved translations are published.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "Quoted button names (Join, Translate All, Proofread, save) are Crowdin UI, not AAPS strings."
+}

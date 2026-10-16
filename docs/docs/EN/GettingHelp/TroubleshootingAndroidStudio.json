@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/GettingHelp/TroubleshootingAndroidStudio.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Fixes for common problems when building AAPS with Android Studio: Gradle sync failures (uncommitted changes, git identity, JVM and Android Gradle plugin versions, offline mode, 32-bit Windows), false build warnings, and APK install problems, ending with a clean rebuild. Nearly all labels are Android Studio's or Gradle's; only Export settings and Import settings refer to AAPS.",
+  "features": [
+    "Building AAPS",
+    "Android Studio",
+    "Troubleshooting"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Troubleshooting Android Studio",
+      "anchor": "troubleshooting_androidstudio-troubleshooting-android-studio",
+      "source_hash": "1f6c136cab940d23",
+      "summary": "Page introduction.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Lost keystore",
+      "anchor": "troubleshooting_androidstudio-lost-keystore",
+      "source_hash": "aa3a0bbc117c064b",
+      "summary": "A lost keystore means uninstalling and reinstalling AAPS; links to the reinstall guide.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Gradle Sync failed",
+      "anchor": "gradle-sync-failed",
+      "source_hash": "cfcb2c61fc706690",
+      "summary": "Finding the Gradle sync error in Android Studio's Build tab, then resyncing after the fix.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Uncommitted changes",
+      "anchor": "troubleshooting_androidstudio-uncommitted-changes",
+      "source_hash": "da872814e896fd00",
+      "summary": "The \"uncommitted changes\" Gradle error and the three steps that fix it.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 1 - Check git installation",
+      "anchor": "step-1-check-git-installation",
+      "source_hash": "a3ed29ec51e2e9e5",
+      "summary": "Checking that git is installed and set up in Android Studio's version control settings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 2: Check for uncommitted changes.",
+      "anchor": "troubleshooting-android-studio-check-for-uncommitted-changes",
+      "source_hash": "ec2fe28a91b4f6c3",
+      "summary": "Finding and rolling back uncommitted files in Android Studio's Commit tab.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 3: Resync Gradle (again)",
+      "anchor": "step-3-resync-gradle-again",
+      "source_hash": "aebcdb0a13461989",
+      "summary": "Resyncing Gradle after the fix.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Git Pull Failed - Please tell me who you are",
+      "anchor": "git-pull-failed-please-tell-me-who-you-are",
+      "source_hash": "62456cc2ff717ce8",
+      "summary": "Setting the git user name and e-mail in a terminal.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Incompatible Gradle JVM",
+      "anchor": "incompatible-gradle-jvm",
+      "source_hash": "877562d3df3d9a23",
+      "summary": "Selecting or downloading the JDK version required for the AAPS version in Android Studio's Gradle settings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Incompatible version of Android Gradle plugin",
+      "anchor": "incompatible-version-of-android-gradle-plugin",
+      "source_hash": "e4aeef50b839b230",
+      "summary": "Updating an outdated Android Studio when the Android Gradle plugin version is not supported.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Could not resolve/No cached version",
+      "anchor": "troubleshooting_androidstudio-could-not-resolve-no-cached-version",
+      "source_hash": "3eb6918615ad37e9",
+      "summary": "Turning off Gradle offline mode, then resyncing.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Unable to start daemon process",
+      "anchor": "troubleshooting_androidstudio-unable-to-start-daemon-process",
+      "source_hash": "808aa256ac17826c",
+      "summary": "32-bit Windows is not supported by Android Studio.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Gradle Resync",
+      "anchor": "gradle-resync",
+      "source_hash": "12ee09cd160fb5dd",
+      "summary": "Retrying Gradle sync from the error message or reloading the Gradle project from the Gradle tab.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Generate Signed APK generated successfully with 0 build variants",
+      "anchor": "generate-signed-apk-generated-successfully-with-0-build-variants",
+      "source_hash": "b83e98ed2d3e394b",
+      "summary": "The \"0 build variants\" message is a false warning; the APK is in the destination folder.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "App was created with compiler/kotlin warnings",
+      "anchor": "app-was-created-with-compiler-kotlin-warnings",
+      "source_hash": "da836d488daef94f",
+      "summary": "Compiler and Kotlin warnings can be ignored.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "No CGM data is received by AAPS",
+      "anchor": "no-cgm-data-is-received-by-aaps",
+      "source_hash": "ecba3ec4b7e4d3ff",
+      "summary": "Use BYODA instead of the patched Dexcom app; set up xDrip's receiver identification.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Apk not installed",
+      "anchor": "apk-not-installed",
+      "source_hash": "4a6ab108d42c5c3c",
+      "summary": "When the phone refuses the APK: wrong keystore, or reinstalling with exported settings, Bluetooth off and airplane mode on.",
+      "dialogs": [
+        "Main menu > Maintenance"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_export",
+          "as_written": "Export settings",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_setting",
+          "as_written": "Import settings",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Apk installed but old version",
+      "anchor": "apk-installed-but-old-version",
+      "source_hash": "1df0cd453d79ae8b",
+      "summary": "The version stays the same when the local copy of the code was not updated.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "None of the above worked",
+      "anchor": "none-of-the-above-worked",
+      "source_hash": "b760754f397cff3d",
+      "summary": "Rebuilding the APK from scratch, reinstalling it and importing the exported settings.",
+      "dialogs": [
+        "Main menu > Maintenance"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_export",
+          "as_written": "Export settings",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_setting",
+          "as_written": "Import settings",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Worst case scenario",
+      "anchor": "worst-case-scenario",
+      "source_hash": "aa77c07df7e26d60",
+      "summary": "Uninstalling Android Studio completely and starting over.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "Bold labels such as Gradle Settings, Gradle JDK, Download JDK, Settings, OK and Try again are Android Studio UI, not AAPS strings; \"App not installed\" is an Android message."
+}

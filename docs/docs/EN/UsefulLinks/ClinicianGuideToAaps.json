@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/UsefulLinks/ClinicianGuideToAaps.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "A high-level introduction to AAPS for clinicians: how a DIY closed loop gathers data and adjusts temporary basal rates, how the algorithm's predictions lead to dosing decisions (with four scenarios), and how patients should optimise their settings. Concepts only; it does not walk through app screens.",
+  "features": [
+    "Clinician guide",
+    "Algorithm"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "For Clinicians – A General Introduction and Guide to AAPS",
+      "anchor": "for-clinicians-a-general-introduction-and-guide-to-aaps",
+      "source_hash": "357f1ec0a1340e08",
+      "summary": "Page introduction: who this overview of AAPS is for (clinicians, or patients sharing it with them).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "The steps for building a DIY Closed Loop:",
+      "anchor": "the-steps-for-building-a-diy-closed-loop",
+      "source_hash": "48d3d56dad0170e6",
+      "summary": "The three steps to start: compatible devices, building the app, configuring it.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How A DIY Closed Loop Works",
+      "anchor": "how-a-diy-closed-loop-works",
+      "source_hash": "362bee1597d802cc",
+      "summary": "How automated insulin delivery adjusts temporary basal rates, and the fallback to normal pump basal.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How data is gathered:",
+      "anchor": "how-data-is-gathered",
+      "source_hash": "e3325c36c37dcef9",
+      "summary": "What data the phone collects from the pump, CGM and Nightscout, and what settings the algorithm uses.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How does it know what to do?",
+      "anchor": "how-does-it-know-what-to-do",
+      "source_hash": "46ceebe17b116d77",
+      "summary": "How the algorithm predicts BG and decides, why CGM quality matters, and that every decision is logged.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Examples of AAPS algorithm decision making:",
+      "anchor": "examples-of-aaps-algorithm-decision-making",
+      "source_hash": "72979a19a05c9ec2",
+      "summary": "AAPS uses the OpenAPS algorithm and several prediction lines.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Here are examples of the purple prediction lines, and how they might differ:",
+      "anchor": "here-are-examples-of-the-purple-prediction-lines-and-how-they-might-differ",
+      "source_hash": "6ec2bb8f3d386aca",
+      "summary": "Illustration of different prediction lines.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Here are examples of different time frames that influence the needed adjustments to insulin delivery:",
+      "anchor": "clinicianguide-dosing-scenarios",
+      "source_hash": "8a086b825cd8b980",
+      "summary": "Introduces four dosing scenarios.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Scenario 1 - Zero Temp for safety",
+      "anchor": "scenario-1-zero-temp-for-safety",
+      "source_hash": "b74d68f16bd7d757",
+      "summary": "Rising BG predicted to go low later: AAPS sets a zero temp basal.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Scenario 2 - Zero temp for safety",
+      "anchor": "scenario-2-zero-temp-for-safety",
+      "source_hash": "edcf02630ffe4e8e",
+      "summary": "Near-term low below threshold: AAPS sets a zero temp basal.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Scenario 3 - More insulin needed",
+      "anchor": "scenario-3-more-insulin-needed",
+      "source_hash": "bd9effcd3d70d8a9",
+      "summary": "Near-term dip above threshold, high eventual BG: AAPS adds insulin carefully.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Scenario 4 - Low temping for safety",
+      "anchor": "scenario-4-low-temping-for-safety",
+      "source_hash": "151bebeb8fb9e828",
+      "summary": "High BG with enough insulin on board: AAPS sets a low temp basal.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Optimizing settings and making changes",
+      "anchor": "optimizing-settings-and-making-changes",
+      "source_hash": "0054099de62178f2",
+      "summary": "How patients should change settings (one at a time), using Autotune, and how habits such as over-treating lows affect results.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "OpenAPS",
+      "anchor": "openaps",
+      "source_hash": "4a9659cfcbf94b69",
+      "summary": "This guide is adapted from the OpenAPS clinician's guide; AAPS shares its algorithm.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Summary",
+      "anchor": "summary",
+      "source_hash": "36c9241134ed69a5",
+      "summary": "Closing summary and further reading.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}
