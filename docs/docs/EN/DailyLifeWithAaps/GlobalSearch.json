@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/DailyLifeWithAaps/GlobalSearch.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Describes the global search box at the top of the main screen in AAPS 4: it finds plugins, dialogs, preference screens, single preferences and online documentation pages, matching both the translated and the English text. Explains the result groups, what tapping each result does, and the %PLUGINS% and %DIALOGS% shortcuts. The result group names are the app's labels.",
+  "features": [
+    "Global search"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main screen > Search",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "search"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Global search",
+      "anchor": "global-search",
+      "source_hash": "26698eb673d6f86e",
+      "summary": "Introduction: one search box that looks across the whole app and the online documentation.",
+      "dialogs": [
+        "Main screen > Search"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Opening search",
+      "anchor": "opening-search",
+      "source_hash": "fd9621e3d498b458",
+      "summary": "Tapping the Search field on the main screen, results grouped by category, clearing and closing search.",
+      "dialogs": [
+        "Main screen > Search"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search",
+          "as_written": "Search",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Search in English *or* your own language",
+      "anchor": "search-in-english-or-your-own-language",
+      "source_hash": "acb76d291d514af5",
+      "summary": "Search matches both the app's translated text and the English text, ignoring accents and case; localized titles rank highest.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What search covers",
+      "anchor": "what-search-covers",
+      "source_hash": "90ba57734962c5a1",
+      "summary": "The five result groups (plugins with their enable switch, dialogs, preference categories, preferences, documentation) and how settings of disabled plugins appear greyed out.",
+      "dialogs": [
+        "Main screen > Search"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search_category_plugins",
+          "as_written": "Plugins",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search_category_dialogs",
+          "as_written": "Dialogs",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pair_with_master_manage_label",
+          "as_written": "Pair with master",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_manage_label",
+          "as_written": "Authorized clients",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search_category_categories",
+          "as_written": "Preference categories",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search_category_preferences",
+          "as_written": "Preferences",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search_category_wiki",
+          "as_written": "Documentation",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search_plugin_disabled",
+          "as_written": "Plugin … disabled",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Documentation results (online)",
+      "anchor": "documentation-results-online",
+      "source_hash": "22b598b2350f6052",
+      "summary": "Online documentation results appear in their own group and open in the browser; offline, a note says an internet connection is needed.",
+      "dialogs": [
+        "Main screen > Search"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search_category_wiki",
+          "as_written": "Documentation",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wiki_search_offline",
+          "as_written": "Documentation search requires internet connection",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Opening a result",
+      "anchor": "opening-a-result",
+      "source_hash": "504fe74cb5e5a297",
+      "summary": "What tapping each kind of result opens, and that protection still applies.",
+      "dialogs": [
+        "Main screen > Search"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search_category_wiki",
+          "as_written": "Documentation",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Power-user shortcuts",
+      "anchor": "power-user-shortcuts",
+      "source_hash": "5948a9edd79c8e44",
+      "summary": "The %PLUGINS% and %DIALOGS% queries list every plugin or dialog; the search index is rebuilt when plugins or the language change.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

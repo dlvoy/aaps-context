@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/DailyLifeWithAaps/AapsForChildren.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Advice for parents using AAPS with a child: getting the first profile right, adjusting it as the child grows, keeping phone, pump and CGM in range, locking settings with protection, and planning remote monitoring and control. Mostly advice; the only app labels are Profile and the Protection preferences.",
+  "features": [
+    "Profiles",
+    "Protection",
+    "Remote monitoring"
+  ],
+  "screens": [
+    {
+      "ui_location": "Preferences > General > Protection",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "protection"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "AAPS for children",
+      "anchor": "aaps-for-children",
+      "source_hash": "d0850a5a53c3a9e7",
+      "summary": "Introduction: AAPS works for children with type 1 diabetes, with some points to consider.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Things to consider",
+      "anchor": "things-to-consider",
+      "source_hash": "bcaeb1e80b69a521",
+      "summary": "Heading for the points parents should think about before starting.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Initial Profile",
+      "anchor": "initial-profile",
+      "source_hash": "3e10018b92e1eefc",
+      "summary": "Testing the child's basal rate, ISF, I:C and insulin DIA in real life before starting remote treatment.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Monitor and adjust your child’s Profile where necessary",
+      "anchor": "monitor-and-adjust-your-child-s-profile-where-necessary",
+      "source_hash": "f977936959e3b743",
+      "summary": "Profiles need regular adjustment as the child grows.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Keeping the phone in range",
+      "anchor": "keeping-the-phone-in-range",
+      "source_hash": "d8d1a17dcf862724",
+      "summary": "Practical advice on carrying the phone close to the pump and CGM, e.g. belts or harnesses.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to protect your child’s AAPS from being misused?",
+      "anchor": "how-to-protect-your-child-s-aaps-from-being-misused",
+      "source_hash": "bb1197ee7cba7d84",
+      "summary": "Pointer to the protection preferences, where the reader adds a password or biometric check to boluses, settings or the whole app.",
+      "dialogs": [
+        "Preferences > General > Protection"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search_category_preferences",
+          "as_written": "Preferences",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_general",
+          "as_written": "General",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "protection",
+          "as_written": "Protection",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Remote monitoring and remote control",
+      "anchor": "remote-monitoring-and-remote-control",
+      "source_hash": "78009257e6115ed3",
+      "summary": "Why remote monitoring matters for children and how to coordinate remote control with school or childcare staff.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/DailyLifeWithAaps/CobCalculation.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Explains how AAPS estimates carbs on board (COB) from BG deviations and the carb sensitivity factor, how the two sensitivity plugins cut off unabsorbed carbs, the bolus wizard warning about unreliable COB, and how to correct a wrong carb entry in Treatments history. COB, IOB, ISF and IC are the app's own short labels.",
+  "features": [
+    "Carbs on board",
+    "Sensitivity detection",
+    "Bolus wizard",
+    "Treatments history"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Treatments history",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "treatments_history"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "COB calculation",
+      "anchor": "cob-calculation",
+      "source_hash": "d9394e6519a77862",
+      "summary": "Page title: how carbs on board are calculated.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How does AAPS calculate the COB value?",
+      "anchor": "how-does-aaps-calculate-the-cob-value",
+      "source_hash": "da0191da683b7d18",
+      "summary": "Explains that entered carbs are added to COB and absorbed according to BG deviations and a carb sensitivity factor derived from ISF and I:C.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cob",
+          "as_written": "COB",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Carb Sensitivity Factor",
+      "anchor": "carb-sensitivity-factor",
+      "source_hash": "61743e6278e7e4b5",
+      "summary": "The absorption formula and how changing IC, ISF or the profile percentage affects absorption time, with a worked example.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "profilepercentage",
+          "as_written": "Profile Percentage",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ic_label",
+          "as_written": "IC",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "isf_label",
+          "as_written": "ISF",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "iob",
+          "as_written": "IOB",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Carbs Sensitivity - Oref1",
+      "anchor": "carbs-sensitivity-oref1",
+      "source_hash": "accca543b4ad72de",
+      "summary": "With the Oref1 sensitivity plugin, unabsorbed carbs are cut off after a set time; screenshots of the COB graph.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Carbs Sensitivity - WeightedAverage",
+      "anchor": "carbs-sensitivity-weightedaverage",
+      "source_hash": "24237736484478d3",
+      "summary": "With the WeightedAverage sensitivity plugin, COB reaches zero after a set time; an orange dot on the COB graph marks minimal-absorption fallback.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Detection of wrong COB values",
+      "anchor": "CobCalculation-detection-of-wrong-cob-values",
+      "source_hash": "e016cbd4c15693f5",
+      "summary": "AAPS warns on the bolus wizard confirmation screen when COB from a previous meal may be wrong.",
+      "dialogs": [
+        "Bolus wizard > Confirmation"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cob",
+          "as_written": "COB",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "How does AAPS detect wrong COB values?",
+      "anchor": "how-does-aaps-detect-wrong-cob-values",
+      "source_hash": "4353e0d8ed849e85",
+      "summary": "When absorption cannot be seen in BG deviations, AAPS falls back to the min_5m_carbimpact setting; the warning shows how much of the time this fallback was used.",
+      "dialogs": [
+        "Bolus wizard > Confirmation"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "How to deal with this warning?",
+      "anchor": "how-to-deal-with-this-warning",
+      "source_hash": "10d7d24553dda6af",
+      "summary": "What to do when the slow-absorption warning appears: cancel, recalculate without COB, or enter a correction manually.",
+      "dialogs": [
+        "Bolus wizard > Confirmation"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cancel",
+          "as_written": "Cancel",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Why does the algorithm not detect COB correctly?",
+      "anchor": "why-does-the-algorithm-not-detect-cob-correctly",
+      "source_hash": "5b80caa88b68a8d2",
+      "summary": "Common reasons for wrong COB: overestimated carbs, exercise, wrong I:C or wrong min_5m_carbimpact.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Manual correction of carbs entered",
+      "anchor": "manual-correction-of-carbs-entered",
+      "source_hash": "5c7ba1722dafc0fa",
+      "summary": "Points to the Treatments history screen for correcting over- or underestimated carbs.",
+      "dialogs": [
+        "Main menu > Treatments history"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments_history",
+          "as_written": "Treatments history",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Carb correction - how to delete a Carb entry from Treatments",
+      "anchor": "carb-correction-how-to-delete-a-carb-entry-from-treatments",
+      "source_hash": "9ddd0b44047aa37c",
+      "summary": "Step by step: open Treatments history, Carbs and bolus tab, long-press to select the wrong entry, delete it, then re-enter the correct carbs in the Carbs dialog and check COB and IOB on the main screen.",
+      "dialogs": [
+        "Main menu > Treatments history > Carbs and bolus",
+        "Treatments > Carbs"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments_history",
+          "as_written": "Treatments history",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "carbs_and_bolus",
+          "as_written": "Carbs and bolus",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "delete",
+          "as_written": "Delete",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments",
+          "as_written": "Treatments",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "carbs",
+          "as_written": "Carbs",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cob",
+          "as_written": "COB",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "iob",
+          "as_written": "IOB",
+          "confidence": 0.8
+        }
+      ]
+    }
+  ],
+  "manual_note": null
+}

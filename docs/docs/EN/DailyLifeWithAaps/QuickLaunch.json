@@ -1,0 +1,555 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/DailyLifeWithAaps/QuickLaunch.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Describes QuickLaunch, the customizable row of one-tap buttons at the bottom of the main screen in AAPS 4: using it, opening Configure QuickLaunch, reordering and removing buttons, and each category of actions that can be added (treatments, care portal events, Manage screens, QuickWizards, scenes, automations, temp target presets, profile shortcuts and plugins). Also explains that the toolbar is stored per device. Category and action names are the app's labels.",
+  "features": [
+    "QuickLaunch",
+    "Main screen"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main screen > QuickLaunch > Configure QuickLaunch",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "quick_launch_configure"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "QuickLaunch (overview quick-action toolbar)",
+      "anchor": "quicklaunch",
+      "source_hash": "73a3ac54954964f5",
+      "summary": "Introduction: the QuickLaunch toolbar on the main screen and what it is for.",
+      "dialogs": [
+        "Main screen > QuickLaunch"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Using the toolbar",
+      "anchor": "using-the-toolbar",
+      "source_hash": "f528ffc07c809c80",
+      "summary": "Tapping and long-pressing buttons, the overflow menu, and the fixed Configure QuickLaunch gear button; the default toolbar has the bolus wizard and the gear.",
+      "dialogs": [
+        "Main screen > QuickLaunch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_launch_configure",
+          "as_written": "Configure QuickLaunch",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "boluswizard",
+          "as_written": "Bolus wizard",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Configuring QuickLaunch",
+      "anchor": "configuring-quicklaunch",
+      "source_hash": "ed1c740b1d262056",
+      "summary": "Opening Configure QuickLaunch from the gear or Configuration; the screen lists the selected actions and a catalog of actions to add.",
+      "dialogs": [
+        "Main screen > QuickLaunch > Configure QuickLaunch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_launch_configure",
+          "as_written": "Configure QuickLaunch",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_launch_configure_desc",
+          "as_written": "Customize quick-action buttons on overview",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_launch_selected_actions",
+          "as_written": "Selected actions",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Selected actions — reorder, edit, remove",
+      "anchor": "selected-actions-reorder-edit-remove",
+      "source_hash": "5054e6c4226f2b40",
+      "summary": "Dragging to reorder, removing a button, editing a profile shortcut; changes apply immediately without saving.",
+      "dialogs": [
+        "Configure QuickLaunch > Selected actions"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_launch_selected_actions",
+          "as_written": "Selected actions",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "The action categories",
+      "anchor": "the-action-categories",
+      "source_hash": "745ffe551bbd9c7c",
+      "summary": "Introduces the catalog categories; empty categories are hidden.",
+      "dialogs": [
+        "Configure QuickLaunch"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Treatment",
+      "anchor": "treatment",
+      "source_hash": "37469dccbe1678d6",
+      "summary": "The Treatment category: insulin, carbs, bolus wizard, treatment, CGM and calibration dialogs.",
+      "dialogs": [
+        "Configure QuickLaunch > Treatment"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_launch_category_treatment",
+          "as_written": "Treatment",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "overview_insulin_label",
+          "as_written": "Insulin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "carbs",
+          "as_written": "Carbs",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "boluswizard",
+          "as_written": "Bolus wizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "overview_treatment_label",
+          "as_written": "Treatment",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cgm",
+          "as_written": "CGM",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "calibration",
+          "as_written": "Calibration",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Care Portal",
+      "anchor": "care-portal",
+      "source_hash": "6d037c45ef45fdd8",
+      "summary": "The Care Portal category: care-portal events and device maintenance records; some entries are hidden for patch pumps.",
+      "dialogs": [
+        "Configure QuickLaunch > Care Portal"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_launch_category_care",
+          "as_written": "Care Portal",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_bgcheck",
+          "as_written": "BG Check",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_note",
+          "as_written": "Note",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_exercise",
+          "as_written": "Exercise",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_question",
+          "as_written": "Question",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_announcement",
+          "as_written": "Announcement",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cgm_sensor_insert",
+          "as_written": "Sensor Insert",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_battery_change",
+          "as_written": "Pump Battery Change",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_pump_site_change",
+          "as_written": "Pump Site Change",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "prime_fill",
+          "as_written": "Prime/Fill",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "site_rotation",
+          "as_written": "Site Rotation",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments",
+          "as_written": "Treatments",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Manage",
+      "anchor": "manage",
+      "source_hash": "221b406d41861671",
+      "summary": "The Manage category: the screens of the Manage sheet, which open a screen rather than start an action.",
+      "dialogs": [
+        "Configure QuickLaunch > Manage"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile_management",
+          "as_written": "Profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "insulin_management",
+          "as_written": "Insulin settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "overview_insulin_label",
+          "as_written": "Insulin",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "quickwizard_managemnt",
+          "as_written": "QuickWizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scene_management",
+          "as_written": "Scenes",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "food_management",
+          "as_written": "Food",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "running_mode",
+          "as_written": "Running mode",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "authorized_clients_manage_label",
+          "as_written": "Authorized clients",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_launch_category_quick_wizard",
+          "as_written": "Quick Wizard",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Quick Wizard",
+      "anchor": "quick-wizard",
+      "source_hash": "f80ba66798f5837c",
+      "summary": "Adding QuickWizard presets as buttons; they follow the same validity and hiding rules as in the Treatments sheet.",
+      "dialogs": [
+        "Configure QuickLaunch > Quick Wizard"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_launch_category_quick_wizard",
+          "as_written": "Quick Wizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "quickwizard_managemnt",
+          "as_written": "QuickWizard",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments",
+          "as_written": "Treatments",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Scenes",
+      "anchor": "scenes",
+      "source_hash": "76c88e335ee1adcd",
+      "summary": "Adding enabled scenes as buttons that activate the scene after confirmation.",
+      "dialogs": [
+        "Configure QuickLaunch > Scenes"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scenes",
+          "as_written": "Scenes",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Automation",
+      "anchor": "automation",
+      "source_hash": "13785c7dccdc46fe",
+      "summary": "Adding user-action automation rules as buttons; they run only on the master.",
+      "dialogs": [
+        "Configure QuickLaunch > Automation"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_launch_category_automation",
+          "as_written": "Automation",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Temp Target Presets",
+      "anchor": "temp-target-presets",
+      "source_hash": "c40e9183a151ff8f",
+      "summary": "Adding temp target presets as buttons that start the temp target after confirmation.",
+      "dialogs": [
+        "Configure QuickLaunch > Temp Target Presets"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_launch_category_temp_target",
+          "as_written": "Temp Target Presets",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Profile",
+      "anchor": "profile-shortcuts",
+      "source_hash": "a98bba5d36d2a1cf",
+      "summary": "Adding profile shortcuts that run a profile switch with their own percentage and duration, set with the edit button.",
+      "dialogs": [
+        "Configure QuickLaunch > Profile",
+        "Configure QuickLaunch > Edit profile preset"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_launch_category_profile",
+          "as_written": "Profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "profile switch",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "percent",
+          "as_written": "Percentage",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "duration",
+          "as_written": "Duration",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_launch_profile_permanent",
+          "as_written": "Permanent",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Plugins",
+      "anchor": "plugins",
+      "source_hash": "dee6f5d13326e90f",
+      "summary": "Adding shortcuts to enabled plugins' screens, grouped by plugin type.",
+      "dialogs": [
+        "Configure QuickLaunch > Plugins"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_bgsource",
+          "as_written": "BG Source",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_aps",
+          "as_written": "APS",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_loop",
+          "as_written": "Loop",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sensitivity",
+          "as_written": "Sensitivity detection",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_smoothing",
+          "as_written": "Smoothing",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_calibration",
+          "as_written": "Calibration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "constraints",
+          "as_written": "Constraints",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_general",
+          "as_written": "General",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "QuickLaunch and Master/Client",
+      "anchor": "quicklaunch-and-master-client",
+      "source_hash": "7a7064f4651cb749",
+      "summary": "The toolbar is stored per device and not synced, but is included in settings export; missing targets are skipped and some actions run on the master.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

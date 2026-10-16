@@ -1,0 +1,641 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/DailyLifeWithAaps/TempTargets.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Explains temporary targets: the built-in Activity, Eating Soon and Hypo presets and when to use them, the AAPS 4 Temp Target screen under Manage (preset carousel, editor, activating, saving, reverting, adding, deleting and reordering presets), other ways to start one (Carbs dialog toggles, QuickLaunch, watch, client, scenes, automation), cancelling, and the OpenAPS SMB preferences that change SMB and sensitivity during temp targets.",
+  "features": [
+    "Temporary target",
+    "Carbs dialog",
+    "OpenAPS SMB"
+  ],
+  "screens": [
+    {
+      "ui_location": "Manage > Temp Target",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "temp_target_management"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Temp-Targets",
+      "anchor": "temp-targets",
+      "source_hash": "37e5f70462a0132b",
+      "summary": "Page title: temporary targets.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What are Temp-Targets and where can I set and configure them?",
+      "anchor": "what-are-temp-targets-and-where-can-i-set-and-configure-them",
+      "source_hash": "3731df79acc8f2f6",
+      "summary": "What a temp target does, its allowed range, the three built-in presets on the Temp Target screen, and realistic expectations about how fast it works.",
+      "dialogs": [
+        "Manage > Temp Target"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "activity",
+          "as_written": "Activity",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "eatingsoon",
+          "as_written": "Eating Soon",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "hypo",
+          "as_written": "Hypo",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temporary_target",
+          "as_written": "Temporary target",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "TT - Activity",
+      "anchor": "tt-activity",
+      "source_hash": "18d672f1af380853",
+      "summary": "Default Activity preset values and how it reduces insulin; tips on timing it before exercise.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "TT - Eating soon",
+      "anchor": "tt-eating-soon",
+      "source_hash": "a4fca0f5b7812bdc",
+      "summary": "Default Eating soon preset values and how it increases insulin before a meal.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "TT - Hypo",
+      "anchor": "tt-hypo",
+      "source_hash": "57fd65c9b5f88e59",
+      "summary": "Default Hypo preset values and its effect on SMB and basal.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Setting and managing temporary targets (Manage → Temp Target)",
+      "anchor": "TempTargets-manage-v4",
+      "source_hash": "9192692ed1ad5a93",
+      "summary": "Layout of the Temp Target screen: preset carousel, editor with target, duration and activation time, and the action bar; built-in presets cannot be deleted.",
+      "dialogs": [
+        "Manage > Temp Target"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage_temp_target_desc",
+          "as_written": "Manage and set temporary targets",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temporary_target",
+          "as_written": "Temporary target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "duration",
+          "as_written": "Duration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "activation",
+          "as_written": "Activation",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "eatingsoon",
+          "as_written": "Eating Soon",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "activity",
+          "as_written": "Activity",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "hypo",
+          "as_written": "Hypo",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "custom",
+          "as_written": "custom",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Activating a temporary target",
+      "anchor": "activating-a-temporary-target",
+      "source_hash": "6b2aede86ff00e86",
+      "summary": "Picking a preset, optionally changing target and duration for this one activation, and confirming with Activate; edits do not change the preset.",
+      "dialogs": [
+        "Manage > Temp Target"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "activate_label",
+          "as_written": "Activate",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "activation",
+          "as_written": "Activation",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Saving changes to a preset",
+      "anchor": "saving-changes-to-a-preset",
+      "source_hash": "1c505cf5a7a51309",
+      "summary": "Saving edited values back into a preset with the Save icon, and restoring a built-in preset's defaults with Revert to defaults.",
+      "dialogs": [
+        "Manage > Temp Target"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "save",
+          "as_written": "Save",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "revert_to_defaults",
+          "as_written": "Revert to defaults",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "activate_label",
+          "as_written": "Activate",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Adding and removing presets",
+      "anchor": "adding-and-removing-presets",
+      "source_hash": "5a26307e2a372bdb",
+      "summary": "Adding a custom preset from the editor values, deleting custom presets, and reordering them; presets sync between devices.",
+      "dialogs": [
+        "Manage > Temp Target"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "add",
+          "as_written": "Add",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "delete",
+          "as_written": "Delete",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "eatingsoon",
+          "as_written": "Eating Soon",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "activity",
+          "as_written": "Activity",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "hypo",
+          "as_written": "Hypo",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "reorder",
+          "as_written": "Reorder",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Other ways to set a temporary target",
+      "anchor": "other-ways-to-set-a-temporary-target",
+      "source_hash": "9b3232349769d3c2",
+      "summary": "Other places to start a temp target: Carbs dialog toggles, QuickLaunch preset buttons, the watch, a client, scenes and automation actions.",
+      "dialogs": [
+        "Treatments > Carbs",
+        "Main screen > QuickLaunch > Configure QuickLaunch"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_launch_category_temp_target",
+          "as_written": "Temp Target Presets",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_launch_configure",
+          "as_written": "Configure QuickLaunch",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temporary_target",
+          "as_written": "Temporary target",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "starttemptarget",
+          "as_written": "Start temp target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "stoptemptarget",
+          "as_written": "Stop temp target",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Where can I select a Temp-Target?",
+      "anchor": "TempTargets-where-can-i-select-a-temp-target",
+      "source_hash": "50edb0abdef46e9d",
+      "summary": "Opening the Temp Target screen from the target chip on the main screen or from Manage, and starting a preset with the TT toggles in the Carbs dialog; the Hypo toggle is preselected at low BG.",
+      "dialogs": [
+        "Main screen > Target chip",
+        "Manage > Temp Target",
+        "Treatments > Carbs"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "activate_label",
+          "as_written": "Activate",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments",
+          "as_written": "Treatments",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "carbs",
+          "as_written": "Carbs",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "start_hypo_tt",
+          "as_written": "Start Hypo TT",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "start_eating_soon_tt",
+          "as_written": "Start Eating soon TT",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "start_activity_tt",
+          "as_written": "Start Activity TT",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Where can I change the default Temp-Target and override with my own preferences?",
+      "anchor": "TempTargets-change-preset-defaults",
+      "source_hash": "9dccf82a67e2e2eb",
+      "summary": "Step by step: change a preset's target and duration on the Temp Target screen and save; Revert restores a built-in preset.",
+      "dialogs": [
+        "Manage > Temp Target"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temporary_target",
+          "as_written": "Temporary target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "duration",
+          "as_written": "Duration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "save",
+          "as_written": "Save",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "How do I cancel a Temp-Target?",
+      "anchor": "how-do-i-cancel-a-temp-target",
+      "source_hash": "21fa9b17fcae74a9",
+      "summary": "Cancelling a running temp target from the Temp Target screen, or from the watch, a client or an automation rule.",
+      "dialogs": [
+        "Manage > Temp Target"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "active",
+          "as_written": "ACTIVE",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cancel",
+          "as_written": "Cancel",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "stoptemptarget",
+          "as_written": "Stop temp target",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Hypo Temp-Target",
+      "anchor": "TempTargets-hypo-temp-target",
+      "source_hash": "1f385e36bec8e7e5",
+      "summary": "Using the Hypo temp target to reduce insulin before a predicted low, and the OpenAPS SMB preferences that stop SMBs or raise sensitivity during high temp targets.",
+      "dialogs": [
+        "Preferences > OpenAPS SMB",
+        "Treatments > Carbs"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openapssmb",
+          "as_written": "OpenAPS SMB",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_high_tt_raises_sensitivity",
+          "as_written": "High temp target raises sensitivity",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_with_high_tt",
+          "as_written": "Enable SMB with high temp target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_with_low_tt",
+          "as_written": "Enable SMB with low temp target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_always",
+          "as_written": "Enable SMB always",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "start_hypo_tt",
+          "as_written": "Start Hypo TT",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Activity Temp-Target",
+      "anchor": "TempTargets-activity-temp-target",
+      "source_hash": "f941ac938db6195f",
+      "summary": "Using the Activity temp target around exercise, combining it with a reduced profile percentage in one step, and the SMB preferences for high temp targets.",
+      "dialogs": [
+        "Manage > Profile > Activate",
+        "Preferences > OpenAPS SMB"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile switch",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "percentage_label",
+          "as_written": "Percentage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "duration",
+          "as_written": "Duration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temporary_target",
+          "as_written": "Temporary target",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "activity",
+          "as_written": "Activity",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_high_tt_raises_sensitivity",
+          "as_written": "High temp target raises sensitivity",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_with_high_tt",
+          "as_written": "Enable SMB with high temp target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_with_low_tt",
+          "as_written": "Enable SMB with low temp target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_always",
+          "as_written": "Enable SMB always",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Eating soon Temp-Target",
+      "anchor": "TempTargets-eating-soon-temp-target",
+      "source_hash": "a8ca95bc0c41260d",
+      "summary": "Using the Eating soon temp target to build IOB before a meal, and the low temp target preference that makes AAPS more aggressive.",
+      "dialogs": [
+        "Preferences > OpenAPS SMB"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_low_tt_lowers_sensitivity",
+          "as_written": "Low temp target lowers sensitivity",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "How do I turn off SMB during Temp-Targets?",
+      "anchor": "how-do-i-turn-off-smb-during-temp-targets",
+      "source_hash": "0b6458369eba3c9b",
+      "summary": "Turning off Enable SMB with high temp target in the OpenAPS SMB preferences.",
+      "dialogs": [
+        "Preferences > OpenAPS SMB"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openapssmb",
+          "as_written": "OpenAPS SMB",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_with_high_tt",
+          "as_written": "Enable SMB with high temp target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_with_low_tt",
+          "as_written": "Enable SMB with low temp target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_always",
+          "as_written": "Enable SMB always",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": null
+}

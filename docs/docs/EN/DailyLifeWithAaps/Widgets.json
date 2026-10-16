@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/DailyLifeWithAaps/Widgets.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Describes the five AAPS home screen widgets and what each shows, how to add one from the Android widget picker, the Widget configuration dialog (opacity and black background), and limits: widgets only display data, may show stale data if AAPS is restricted, and use coloured backgrounds for AAPSClient builds. Widget names are the app's labels in the widget picker; Widgets and Add are Android launcher labels.",
+  "features": [
+    "Home screen widgets"
+  ],
+  "screens": [
+    {
+      "ui_location": "Home screen > Widget > Widget configuration",
+      "file": "ui/src/androidMain/res/values/strings.xml",
+      "key": "widget_configuration"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Home screen widgets",
+      "anchor": "widgets",
+      "source_hash": "6375183027eedf47",
+      "summary": "Introduction: AAPS widgets show current data on the phone's home screen and open the app when tapped.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Available widgets",
+      "anchor": "available-widgets",
+      "source_hash": "4f6b3f8c6e8b2628",
+      "summary": "The five widgets, their default sizes and what each displays; BG colours match the app.",
+      "dialogs": [
+        "Android widget picker > AAPS"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "widget_description",
+          "as_written": "AAPS widget",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "widget_glucose_circle_description",
+          "as_written": "AAPS glucose circle",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "widget_small_description",
+          "as_written": "AAPS Small",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "widget_compact_bg_description",
+          "as_written": "AAPS BG + IOB + COB (compact)",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "widget_bg_graph_description",
+          "as_written": "AAPS BG graph",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "widget_bg_graph_description",
+          "as_written": "BG graph",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Adding a widget",
+      "anchor": "adding-a-widget",
+      "source_hash": "e2a5f8d36fbb8f25",
+      "summary": "Adding a widget from the phone launcher's widget picker, then moving and resizing it.",
+      "dialogs": [
+        "Android widget picker > AAPS"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Widget configuration",
+      "anchor": "widget-configuration",
+      "source_hash": "533ffe65c5afd3da",
+      "summary": "Opening the Widget configuration dialog with the pencil button and setting the background opacity or a black background; each widget is configured separately.",
+      "dialogs": [
+        "Home screen > Widget > Widget configuration"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "widget_configuration",
+          "as_written": "Widget configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "configure",
+          "as_written": "Configure opacity",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "use_black_color",
+          "as_written": "Use black color",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Good to know",
+      "anchor": "good-to-know",
+      "source_hash": "76384c0a6a1e0cc2",
+      "summary": "Widgets are display-only, depend on AAPS running in the background, and have a coloured background in AAPSClient builds.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

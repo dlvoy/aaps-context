@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/DailyLifeWithAaps/TimezoneTraveling-DaylightSavingTime.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Pump-by-pump advice for travelling across time zones and for daylight saving time changes: what AAPS recalculates, which pumps adjust themselves, how Dana users keep home time and time-shift their profile or clear pump history, how the closed loop is paused for 3 hours after a DST change, and an Omnipod Dash workaround using a time zone without DST.",
+  "features": [
+    "Time zones",
+    "Daylight saving time",
+    "Profile switch"
+  ],
+  "screens": [
+    {
+      "ui_location": "Manage > Profile > Activate",
+      "file": "ui/src/androidMain/res/values/strings.xml",
+      "key": "activate_label"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Timezone Change and Daylight Saving",
+      "anchor": "timezone-change-and-daylight-saving",
+      "source_hash": "1702a38a06a06b02",
+      "summary": "Introduction: AAPS recalculates IOB, basal and sensitivity shortly after the phone's time zone changes.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "iob",
+          "as_written": "IOB",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Timezone change for Omnipod Dash",
+      "anchor": "timezone-traveling-with-pumps",
+      "source_hash": "1ca3e8b00f815397",
+      "summary": "Refresh the Dash tab and switch profile away and back after a time zone change.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Timezone change for DanaR, Korean DanaR",
+      "anchor": "timezone-change-for-danar-korean-danar",
+      "source_hash": "07b5ed608bb285b9",
+      "summary": "No action needed, as these pumps' history is not used.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Timezone change for DanaRv2, DanaRS, Dana-i",
+      "anchor": "timezone-traveling-danarv2-danars",
+      "source_hash": "bb66f57bf9780b38",
+      "summary": "These pumps' history has no time zone, so changing the phone's zone would duplicate records; two options follow.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Option 1: Keep home time and timeshift profile",
+      "anchor": "option-1-keep-home-time-and-timeshift-profile",
+      "source_hash": "99ba1b453e77b62a",
+      "summary": "Keep the phone on home time and activate the profile with a time shift matching the destination.",
+      "dialogs": [
+        "Manage > Profile > Activate"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.6
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "activate_label",
+          "as_written": "Activate",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "timeshift_label",
+          "as_written": "Time shift",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile Switch",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Option 2: Delete pump history",
+      "anchor": "option-2-delete-pump-history",
+      "source_hash": "5f09d86061005a36",
+      "summary": "Steps after landing: change the phone's time zone, clear the pump history and set the pump's time before reconnecting.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Timezone Change for Insight",
+      "anchor": "timezone-traveling-insight",
+      "source_hash": "dba40fd103ccd352",
+      "summary": "The driver syncs pump time automatically and the Insight records time changes; history before a clock reset is ignored.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Timezone Change for Accu-Chek Combo",
+      "anchor": "timezone-change-for-accu-chek-combo",
+      "source_hash": "7ab79a053f52aa10",
+      "summary": "The driver sets the pump's local time automatically and stores the time zone; adjustment is slow.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Timezone Change for Medtrum",
+      "anchor": "timezone-change-for-medtrum",
+      "source_hash": "6a45ec9eb1ac0d5c",
+      "summary": "The driver syncs pump time; running TBRs stop on a time change and manual time changes can affect IOB.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "DAYLIGHT SAVING (DST)",
+      "anchor": "time-adjustment-daylight-savings-time-dst",
+      "source_hash": "35858262da3cb235",
+      "summary": "Introduction to daylight saving changes and why some pumps are better adjusted while awake.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "DST automatic adjustment for most pumps",
+      "anchor": "dst-automatic-adjustment-for-most-pumps",
+      "source_hash": "a0ff90408c7dbcde",
+      "summary": "The closed loop is disabled for 3 hours after a DST change with a notification beforehand; a profile switch afterwards restores it; be careful using COB and IOB in the calculator.",
+      "dialogs": [
+        "Manage > Profile > Activate"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile Switch",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cob",
+          "as_written": "COB",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "iob",
+          "as_written": "IOB",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "DST for Accu-Chek Insight",
+      "anchor": "dst-for-accu-chek-insight",
+      "source_hash": "55280b465be24274",
+      "summary": "DST change is automatic, no action needed.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "DST for Accu-Chek Combo",
+      "anchor": "dst-for-accu-chek-combo",
+      "source_hash": "9b22fe2b9fd4b144",
+      "summary": "DST change is automatic, no action needed.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "DST for Medtrum",
+      "anchor": "dst-for-medtrum",
+      "source_hash": "d02cc7bd7954e96c",
+      "summary": "DST change is automatic, no action needed.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "DST for Omnipod Dash",
+      "anchor": "dst-for-omnipod-dash",
+      "source_hash": "8a3d531037d5b408",
+      "summary": "Either accept the 3-hour fallback to profile basal, or switch the phone to a time zone without DST the day before.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Actions to take before the clock change",
+      "anchor": "actions-to-take-before-the-clock-change",
+      "source_hash": "32bc930737dec900",
+      "summary": "Steps for the Dash workaround: turn off automatic time zone on the phone, pick a non-DST zone with the same time, refresh the pump and switch profile, check IOB and COB, and switch back when IOB is low.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "iob",
+          "as_written": "IOB",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cob",
+          "as_written": "COB",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "DST for Accu-Chek Combo",
+      "anchor": "dst-for-accu-chek-combo",
+      "source_hash": "9b22fe2b9fd4b144",
+      "summary": "DST change is automatic, no action needed.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/DailyLifeWithAaps/ExtendedCarbs.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Explains extended carbs (eCarbs): carbs spread over several hours for slow meals, entered in the Carbs dialog with a duration and carb time, and shown on the main screen. Recommends the SMB setup, describes the extended bolus that Dana and Insight users can start from Manage (which switches the loop to open loop while it runs), and why extended boluses do not fit a closed loop.",
+  "features": [
+    "Extended carbs",
+    "Carbs dialog",
+    "Extended bolus",
+    "Bolus wizard"
+  ],
+  "screens": [
+    {
+      "ui_location": "Treatments > Carbs",
+      "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+      "key": "carbs"
+    },
+    {
+      "ui_location": "Manage > Extended Bolus",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "extended_bolus_button"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Extended carbs / \"eCarbs\"",
+      "anchor": "Extended-Carbs-extended-carbs-ecarbs",
+      "source_hash": "401ec5215b1de556",
+      "summary": "Page title: extended carbs, also called eCarbs.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What are eCarbs and when are they useful?",
+      "anchor": "what-are-ecarbs-and-when-are-they-useful",
+      "source_hash": "b561942e520bb5d4",
+      "summary": "Why extended boluses do not suit a loop and how eCarbs, carbs split over hours, let SMBs deliver insulin gradually for slow meals or other BG-raising influences.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Mechanics of using eCarbs",
+      "anchor": "mechanics-of-using-ecarbs",
+      "source_hash": "2e13db43329436c6",
+      "summary": "Entering eCarbs in the Carbs dialog with a total, a duration and an optional carb time, and seeing them in the COB field and COB graph on the main screen.",
+      "dialogs": [
+        "Treatments > Carbs",
+        "Main screen > Add graph"
+      ],
+      "mentions": [
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "carbs",
+          "as_written": "Carbs",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments",
+          "as_written": "Treatments",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "duration_label",
+          "as_written": "Duration",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wizard_carb_time",
+          "as_written": "Carb time",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cob",
+          "as_written": "COB",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "graph_add",
+          "as_written": "Add graph",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Recommended setup, example scenario, and important notes",
+      "anchor": "recommended-setup-example-scenario-and-important-notes",
+      "source_hash": "07c1a907f2c8e750",
+      "summary": "Recommended OpenAPS SMB settings, a pizza example combining a partial bolus with eCarbs, the Cake and Pizza carb types in the bolus wizard, and the Careportal note created for each eCarbs entry.",
+      "dialogs": [
+        "Bolus wizard",
+        "Treatments > Carbs",
+        "Preferences > OpenAPS SMB"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_smb_with_cob",
+          "as_written": "Enable SMB with COB",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "boluswizard",
+          "as_written": "Bolus wizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "carbs",
+          "as_written": "Carbs",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_smb_max_minutes",
+          "as_written": "max minutes of basal to limit SMB",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal",
+          "as_written": "Careportal",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Extended bolus and why they won't work in closed-loop environment?",
+      "anchor": "extended-bolus-and-why-they-wont-work-in-closed-loop-environment",
+      "source_hash": "202add2397ad8b4a",
+      "summary": "Heading for extended boluses; repeats that they do not work well with a closed loop.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Extended bolus and switch to open loop - Dana and Insight pump only",
+      "anchor": "Extended-Carbs-extended-bolus-and-switch-to-open-loop-dana-and-insight-pump-only",
+      "source_hash": "f9cc4ed518400d73",
+      "summary": "Starting an extended bolus from Manage on Dana and Insight pumps: confirming the open-loop warning, entering insulin and duration, the open loop icon while it runs, and cancelling it early from Manage.",
+      "dialogs": [
+        "Manage > Extended Bolus"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "extended_bolus_button",
+          "as_written": "Extended Bolus",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "overview_insulin_label",
+          "as_written": "Insulin",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "duration",
+          "as_written": "Duration",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "not_available_full",
+          "as_written": "not available",
+          "confidence": 0.4
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "openloop",
+          "as_written": "Open Loop",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cancel",
+          "as_written": "Cancel",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Why extended boluses won't work in a closed loop environment",
+      "anchor": "why-extended-boluses-won-t-work-in-a-closed-loop-environment",
+      "source_hash": "1a95805559a892b8",
+      "summary": "Reasons an extended bolus conflicts with the loop's own basal adjustments and hypo prevention.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "The page names the bolus wizard carb types **Cake** and **Pizza**; the app has only the longer carbs_type_cake and carbs_type_pizza descriptions, not short labels, so they are not mapped."
+}

@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/DailyLifeWithAaps/DynamicISF.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Explains Dynamic ISF, an option of the OpenAPS SMB algorithm that computes ISF from total daily dose and current or predicted BG instead of the profile. Covers the formula, where the dynamic value shows on the main screen and graphs, how it is used for COB and the bolus wizard, and its three preferences: adjustment factor, LGS threshold and DynamicISF adjust sensitivity. Ends with cautions about automations and profile percentages.",
+  "features": [
+    "Dynamic ISF",
+    "OpenAPS SMB",
+    "Profile switch",
+    "Automation"
+  ],
+  "screens": [
+    {
+      "ui_location": "Preferences > OpenAPS SMB",
+      "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+      "key": "openapssmb"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Dynamic ISF (DynISF)",
+      "anchor": "Open-APS-features-DynamicISF",
+      "source_hash": "8831418ed386f18c",
+      "summary": "Introduction: why a static profile ISF is limited, Dynamic ISF as a successor to Autosens for advanced users, a warning against automations that change the profile percentage, and the need for 7 days of data.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automations",
+          "confidence": 0.5
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "profilepercentage",
+          "as_written": "Profile Percentage",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "What does Dynamic ISF do ?",
+      "anchor": "what-does-dynamic-isf-do",
+      "source_hash": "510d671cc8c9a475",
+      "summary": "Dynamic ISF replaces the profile ISF using TDD and BG; shows where the profile ISF and the dynamic ISF appear on the main screen and how to add the VSENS graph.",
+      "dialogs": [
+        "Main screen > Add graph"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "graph_add",
+          "as_written": "Add graph",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "variable_sensitivity_shortname",
+          "as_written": "VSENS",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "How is Dynamic ISF calculated ?",
+      "anchor": "how-is-dynamic-isf-calculated",
+      "source_hash": "e84dbd17a7fdb48e",
+      "summary": "The Chris Wilson formula used to compute ISF, and where the result is used in predictions, COB and the bolus wizard.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "TDD (Total Daily Dose)",
+      "anchor": "tdd-total-daily-dose",
+      "source_hash": "28cd594b234ab29b",
+      "summary": "How the TDD in the formula is weighted from the 7-day average, the previous day and the last 8 hours.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "tdd_short",
+          "as_written": "TDD",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Dynamic ISF Adjustment Factor",
+      "anchor": "dynamic-isf-adjustment-factor",
+      "source_hash": "9a477e5c660d4162",
+      "summary": "The adjustment factor setting makes Dynamic ISF more or less aggressive; points to the preferences section.",
+      "dialogs": [
+        "Preferences > OpenAPS SMB"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Insulin Divisor",
+      "anchor": "insulin-divisor",
+      "source_hash": "c7d11bafe0b6c0d0",
+      "summary": "The insulin divisor value for each insulin type, based on its peak time.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "ISF based on predicted BG for dosing decisions",
+      "anchor": "isf-based-on-predicted-bg-for-dosing-decisions",
+      "source_hash": "b9ab67b08a892c14",
+      "summary": "For dosing, oref1 uses a future ISF computed from minimum predicted BG, current BG or their average depending on the BG trend.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Other usages of ISF",
+      "anchor": "dynisf-other-usages-of-isf",
+      "source_hash": "8dbb73e1026609f7",
+      "summary": "Heading for other places where ISF is used.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "ISF and COB absorption",
+      "anchor": "isf-and-cob-absorption",
+      "source_hash": "9144c79bb5f245d1",
+      "summary": "With Dynamic ISF, carb absorption uses the 24-hour average of dynamic ISF.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "ISF in Bolus Wizard",
+      "anchor": "isf-in-bolus-wizard",
+      "source_hash": "3f0d4007c1383d8e",
+      "summary": "With Dynamic ISF, the bolus wizard correction uses the 24-hour average of dynamic ISF.",
+      "dialogs": [
+        "Bolus wizard"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Preferences",
+      "anchor": "dyn-isf-preferences",
+      "source_hash": "32cbd0d5cc874d2e",
+      "summary": "Turning on Use dynamic sensitivity in the OpenAPS SMB preferences, which reveals the further settings.",
+      "dialogs": [
+        "Preferences > OpenAPS SMB"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_use_dynamic_sensitivity",
+          "as_written": "Use dynamic sensitivity",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openapssmb",
+          "as_written": "OpenAPS SMB",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "DynamicISF adjustment factor",
+      "anchor": "dyn-isf-adjustment-factor",
+      "source_hash": "39dcabc7f8fececf",
+      "summary": "The adjustment factor (1–300%) multiplies TDD to make Dynamic ISF more or less aggressive; a profile switch percentage multiplies it further.",
+      "dialogs": [
+        "Preferences > OpenAPS SMB > DynamicISF adjustment factor"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_dynisf_adjustment_factor",
+          "as_written": "DynamicISF adjustment factor",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile Switch",
+          "confidence": 0.7
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "profilepercentage",
+          "as_written": "Profile Percentage",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "LGS threshold",
+      "anchor": "lgs-threshold",
+      "source_hash": "a90c8ce0a65ab166",
+      "summary": "The BG level below which insulin is suspended, and its allowed range.",
+      "dialogs": [
+        "Preferences > OpenAPS SMB > LGS threshold"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_lgs_threshold",
+          "as_written": "LGS threshold",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "DynamicISF adjust sensitivity",
+      "anchor": "dynamicisf-adjust-sensitivity",
+      "source_hash": "f1963091d251ee7c",
+      "summary": "This option replaces Autosens, adjusting basal and targets from the 24h/7-day TDD ratio without changing ISF.",
+      "dialogs": [
+        "Preferences > OpenAPS SMB > DynamicISF adjust sensitivity"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_aps_dynisf_adjust_sensitivity",
+          "as_written": "DynamicISF adjust sensitivity",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_summary_aps_dynisf_adjust_sensitivity",
+          "as_written": "Adjust sensitivity calculations when using DynamicISF",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Things to consider when activating Dynamic ISF",
+      "anchor": "dyn-isf-things-to-consider-when-activating-dynamicisf",
+      "source_hash": "a6d31f63dbeabff5",
+      "summary": "Cautions before enabling Dynamic ISF: experience with SMB, turning off profile-percentage automations, avoiding long non-100% profiles, choosing a starting adjustment factor and keeping the profile ISF up to date as a fallback.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automations",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "profilepercentage",
+          "as_written": "Profile Percentage",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.6
+        }
+      ]
+    }
+  ],
+  "manual_note": null
+}

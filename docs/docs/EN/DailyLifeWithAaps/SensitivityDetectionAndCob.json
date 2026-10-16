@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/DailyLifeWithAaps/SensitivityDetectionAndCob.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Compares the three sensitivity detection plugins chosen under Configuration > Sensitivity detection (Sensitivity AAPS, Sensitivity WeightedAverage, Sensitivity Oref1): how each computes sensitivity, which supports unannounced meals, and how they handle overlapping meals. The plugin names are the app's labels.",
+  "features": [
+    "Sensitivity detection",
+    "Carbs on board"
+  ],
+  "screens": [
+    {
+      "ui_location": "Configuration > Sensitivity detection",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_sensitivity"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Sensitivity detection",
+      "anchor": "Sensitivity-detection-and-COB-sensitivity-detection",
+      "source_hash": "b316be7ea3d15998",
+      "summary": "Page title: the sensitivity detection plugins.",
+      "dialogs": [
+        "Configuration > Sensitivity detection"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sensitivity",
+          "as_written": "Sensitivity detection",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Sensitivity algorithm",
+      "anchor": "sensitivity-algorithm",
+      "source_hash": "9e9d4ea75ca1e876",
+      "summary": "Lists the three sensitivity detection plugins AAPS offers.",
+      "dialogs": [
+        "Configuration > Sensitivity detection"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sensitivity/src/androidMain/res/values/strings.xml",
+          "key": "sensitivity_aaps",
+          "as_written": "Sensitivity AAPS",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sensitivity/src/androidMain/res/values/strings.xml",
+          "key": "sensitivity_weighted_average",
+          "as_written": "Sensitivity WeightedAverage",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sensitivity/src/androidMain/res/values/strings.xml",
+          "key": "sensitivity_oref1",
+          "as_written": "Sensitivity Oref1",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Sensitivity AAPS",
+      "anchor": "sensitivity-aaps",
+      "source_hash": "9dd936d5e6723074",
+      "summary": "Works like Oref1 but with a configurable look-back range; minimal absorption comes from the max absorption time preference.",
+      "dialogs": [
+        "Configuration > Sensitivity detection"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sensitivity/src/androidMain/res/values/strings.xml",
+          "key": "sensitivity_aaps",
+          "as_written": "Sensitivity AAPS",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Sensitivity WeightedAverage",
+      "anchor": "sensitivity-weightedaverage",
+      "source_hash": "f20b31d359f626d4",
+      "summary": "Weighted average of deviations with newer ones weighted more; the fastest to follow sensitivity changes.",
+      "dialogs": [
+        "Configuration > Sensitivity detection"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sensitivity/src/androidMain/res/values/strings.xml",
+          "key": "sensitivity_weighted_average",
+          "as_written": "Sensitivity WeightedAverage",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Sensitivity Oref1",
+      "anchor": "SensitivityDetectionAndCob-sensitivity-oref1",
+      "source_hash": "b16f31ddc82a4692",
+      "summary": "Uses the last 8 hours or the time since the last site change, cuts off unabsorbed carbs, and is the only one supporting unannounced meals; recommended with OpenAPS SMB.",
+      "dialogs": [
+        "Configuration > Sensitivity detection"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sensitivity/src/androidMain/res/values/strings.xml",
+          "key": "sensitivity_oref1",
+          "as_written": "Sensitivity Oref1",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openapssmb",
+          "as_written": "OpenAPS SMB",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Simultaneous carbs",
+      "anchor": "simultaneous-carbs",
+      "source_hash": "e43b2aa4b0148526",
+      "summary": "How Oref1 decays overlapping meals one after another, while the other two decay them at once.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/sensitivity/src/androidMain/res/values/strings.xml",
+          "key": "sensitivity_aaps",
+          "as_written": "Sensitivity AAPS",
+          "confidence": 0.8
+        }
+      ]
+    }
+  ],
+  "manual_note": null
+}

@@ -1,0 +1,523 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/DailyLifeWithAaps/Scenes.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Describes scenes, named presets in AAPS 4 that apply several actions at once (profile switch, temp target, SMB on/off, running mode, care-portal note) for a duration, then notify or chain into another scene. Covers the Scenes management screen, creating a scene from a template with the step-by-step editor, activating and ending scenes, automation actions and triggers for scenes, and using scenes from a client or the Wear OS Scene tile. Template, step and button names are the app's labels.",
+  "features": [
+    "Scenes",
+    "Automation",
+    "Wear OS"
+  ],
+  "screens": [
+    {
+      "ui_location": "Manage > Scenes",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "scene_management"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Scenes (situation presets)",
+      "anchor": "scenes",
+      "source_hash": "2ca742952760e5ae",
+      "summary": "Introduction: a scene applies a bundle of actions with one tap, e.g. a Sleep, Exercise or Sick Day preset.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scene",
+          "as_written": "scene",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_sleep",
+          "as_written": "Sleep",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_exercise",
+          "as_written": "Exercise",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_sick_day",
+          "as_written": "Sick Day",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "What is a scene",
+      "anchor": "what-is-a-scene",
+      "source_hash": "4fce9f9f77077b96",
+      "summary": "The actions a scene can bundle, its duration and its end action (notification or chaining into another scene).",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile switch",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temporary_target",
+          "as_written": "Temporary target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "activity",
+          "as_written": "Activity",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "eatingsoon",
+          "as_written": "Eating soon",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_exercise",
+          "as_written": "Exercise",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_sickness",
+          "as_written": "Sickness",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scene_duration_indefinite",
+          "as_written": "Indefinite (manual end)",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "duration",
+          "as_written": "duration",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_sick_day",
+          "as_written": "Sick Day",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Managing scenes",
+      "anchor": "managing-scenes",
+      "source_hash": "eb9fd2e1a6df1a00",
+      "summary": "The Scenes management screen: scene cards with enable checkbox, icon, name, summary and activate, edit and delete buttons; + creates a new scene.",
+      "dialogs": [
+        "Manage > Scenes"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scene_management",
+          "as_written": "Scenes",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scene_icon",
+          "as_written": "icon",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "name",
+          "as_written": "name",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Creating or editing a scene",
+      "anchor": "creating-or-editing-a-scene",
+      "source_hash": "a60153af49917d2d",
+      "summary": "Heading for creating and editing scenes.",
+      "dialogs": [
+        "Manage > Scenes"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Start from a template",
+      "anchor": "start-from-a-template",
+      "source_hash": "65274627f5ba075a",
+      "summary": "Creating a scene starts by picking a template (or Blank), which pre-fills recommended actions and explains when to use it.",
+      "dialogs": [
+        "Manage > Scenes > Start from template"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scene_start_from_template",
+          "as_written": "Start from template",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_exercise",
+          "as_written": "Exercise",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_sick_day",
+          "as_written": "Sick Day",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_sick_day_vomiting",
+          "as_written": "Sick Day — Vomiting",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_sleep",
+          "as_written": "Sleep",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_post_exercise_night",
+          "as_written": "Post-exercise Night",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_pre_meal",
+          "as_written": "Pre-meal",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_alcohol",
+          "as_written": "Alcohol",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_driving",
+          "as_written": "Driving",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_bathing",
+          "as_written": "Bathing",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_luteal_phase",
+          "as_written": "Luteal Phase",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_hot_weather",
+          "as_written": "Hot Weather",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_medical_procedure",
+          "as_written": "Medical Procedure",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_blank",
+          "as_written": "Blank",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Step through the actions",
+      "anchor": "step-through-the-actions",
+      "source_hash": "56d8173ce7a88336",
+      "summary": "The step-by-step scene editor: an include switch per action, then duration, follow-up scene, and name and icon, finished with Finish.",
+      "dialogs": [
+        "Manage > Scenes > Scene editor"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_wizard_include_action",
+          "as_written": "Include … in scene",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "next",
+          "as_written": "Next",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "back",
+          "as_written": "Back",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal_profileswitch",
+          "as_written": "Profile switch",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temporary_target",
+          "as_written": "Temporary target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "smb_shortname",
+          "as_written": "SMB",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "running_mode",
+          "as_written": "Running mode",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "careportal",
+          "as_written": "Careportal",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "duration",
+          "as_written": "Duration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_wizard_chain_title",
+          "as_written": "Follow-up scene",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scene",
+          "as_written": "Scene",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_wizard_finish",
+          "as_written": "Finish",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings_scene_wizard.xml",
+          "key": "scene_template_exercise",
+          "as_written": "Exercise",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Activating a scene",
+      "anchor": "activating-a-scene",
+      "source_hash": "1a95086191ea30fb",
+      "summary": "Activating from the Scenes list or the Scenes sheet in the bottom navigation, the confirmation, the active-scene banner with End Scene, Skip to a follow-up, reverting on end, and the Scene ended banner with Dismiss.",
+      "dialogs": [
+        "Manage > Scenes",
+        "Bottom navigation > Scenes",
+        "Main screen > Active scene banner"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scenes",
+          "as_written": "Scenes",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scene_management",
+          "as_written": "Scenes",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scene_deactivate",
+          "as_written": "End Scene",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scene_skip_to_label",
+          "as_written": "Skip to",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scene_ended",
+          "as_written": "Scene ended",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "dismiss",
+          "as_written": "Dismiss",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Triggering scenes from Automation",
+      "anchor": "triggering-scenes-from-automation",
+      "source_hash": "a7449e84ecb9467a",
+      "summary": "Automation actions Run scene, Enable scene and Disable scene, and the Scene trigger that checks whether a scene is active.",
+      "dialogs": [
+        "Manage > Automation > Action > Scenes"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automation",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation_category_scenes",
+          "as_written": "Scenes",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "action_run_scene",
+          "as_written": "Run scene",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "action_enable_scene",
+          "as_written": "Enable scene",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "action_disable_scene",
+          "as_written": "Disable scene",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "trigger_scene_active",
+          "as_written": "Scene",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Scenes with Master/Client and a watch",
+      "anchor": "scenes-with-master-client-and-a-watch",
+      "source_hash": "96debecdf84b96b3",
+      "summary": "The active scene syncs across paired devices; a client sends activation and end requests to the master.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "From a Wear OS watch",
+      "anchor": "scenes-from-watch",
+      "source_hash": "0657bf331aa08186",
+      "summary": "The Wear OS Scene tile: starting a scene, configuring its four slots (Automatic, a specific scene or None), and the End and Skip buttons while a scene runs.",
+      "dialogs": [
+        "Watch > Scene tile"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "label_scene_tile",
+          "as_written": "Scene",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "tile_scene_auto",
+          "as_written": "Automatic",
+          "confidence": 0.8
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "tile_none",
+          "as_written": "None",
+          "confidence": 0.8
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "tile_scene_unavailable",
+          "as_written": "Unavailable",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "scene_ended",
+          "as_written": "Scene ended",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "scene_end",
+          "as_written": "End",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "scene_skip",
+          "as_written": "Skip",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": null
+}

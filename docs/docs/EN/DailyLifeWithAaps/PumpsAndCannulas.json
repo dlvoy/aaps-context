@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/DailyLifeWithAaps/PumpsAndCannulas.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Practical guide for tubed pumps: changing the reservoir and cannula while the pump is disconnected in AAPS, priming and recording the change in Prime/Fill, deleting boluses that were not delivered, disconnecting for showers or sport, recording insulin given while disconnected, and reconnecting afterwards.",
+  "features": [
+    "Prime/Fill",
+    "Disconnect pump",
+    "Insulin dialog",
+    "Treatments history"
+  ],
+  "screens": [
+    {
+      "ui_location": "Manage > Prime/Fill",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "prime_fill"
+    },
+    {
+      "ui_location": "Main screen > Loop icon > Running mode",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "running_mode"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Pumps and cannulas",
+      "anchor": "pumps-and-cannulas",
+      "source_hash": "7cfd44ec24b50cd3",
+      "summary": "Page title: handling the pump and cannula day to day.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Changing infusion sets: insulin reservoirs and cannulas",
+      "anchor": "changing-infusion-sets-insulin-reservoirs-and-cannulas",
+      "source_hash": "ccc8fe66af8f8fa1",
+      "summary": "Set changes apply to tubed pumps; patch pumps prime in their own wizard and have no Prime/Fill. Reservoir changes are done on the pump and logged in AAPS.",
+      "dialogs": [
+        "Manage > Prime/Fill"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "prime_fill",
+          "as_written": "Prime/Fill",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Guide for changing both the pump reservoir and cannula",
+      "anchor": "pumps-cannulas-changing-reservoir-and-cannula",
+      "source_hash": "6d6ee6d7831a9c5b",
+      "summary": "Step by step: disconnect the pump from the loop icon, change reservoir and cannula, prime on the pump, record the change and prime the cannula in Prime/Fill, then reconnect.",
+      "dialogs": [
+        "Main screen > Loop icon > Running mode",
+        "Manage > Prime/Fill"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "disconnectpump",
+          "as_written": "Disconnect pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "prime_fill",
+          "as_written": "Prime/Fill",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "record_pump_site_change",
+          "as_written": "Pump site change",
+          "confidence": 0.7
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "record_insulin_cartridge_change",
+          "as_written": "Insulin cartridge change",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.8
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "reconnect",
+          "as_written": "Reconnect pump",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Useful information concerning insulin/cannula changes",
+      "anchor": "useful-information-concerning-insulin-cannula-changes",
+      "source_hash": "35f743a8564247b4",
+      "summary": "Effects of logging a site change (Autosens reset, status lights), where to set default prime amounts, and that primed insulin and insulin bolused while disconnected are not counted in IOB.",
+      "dialogs": [
+        "Preferences > Prime/Fill",
+        "Treatments > Insulin"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "prime_fill",
+          "as_written": "Prime/Fill",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments_history",
+          "as_written": "Treatments history",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "overview_insulin_label",
+          "as_written": "Insulin",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Cannula, infusion site, tubing and/or pump issues",
+      "anchor": "cannula-infusion-site-tubing-and-or-pump-issues",
+      "source_hash": "abf3e82800c23856",
+      "summary": "When insulin was not delivered, deleting undelivered boluses from the Carbs and bolus tab of Treatments history, or pausing the loop when the amount is unclear.",
+      "dialogs": [
+        "Main menu > Treatments history > Carbs and bolus"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments_history",
+          "as_written": "Treatments history",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "carbs_and_bolus",
+          "as_written": "Carbs and bolus",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Disconnecting the pump for showering or activity",
+      "anchor": "pumps-cannulas-disconnecting",
+      "source_hash": "c903a564c5f86aa7",
+      "summary": "Disconnecting the pump from the loop icon for a chosen duration, extending it, and reconnecting every two hours to make up for missed basal.",
+      "dialogs": [
+        "Main screen > Loop icon > Running mode"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "disconnectpump",
+          "as_written": "Disconnect pump",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "To announce delivered insulin without actually bolusing",
+      "anchor": "pumps-cannulas-announce-insulin",
+      "source_hash": "b13a7624f5d0cc66",
+      "summary": "Recording insulin given by pen or by the pump while disconnected in the Insulin dialog without delivering it, and backdating it; disconnecting the pump remotely by SMS.",
+      "dialogs": [
+        "Treatments > Insulin"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments",
+          "as_written": "Treatments",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "bolus_recorded_only",
+          "as_written": "Bolus will be recorded only",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "time",
+          "as_written": "Time offset",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Reconnecting the pump after activity",
+      "anchor": "reconnecting-the-pump-after-activity",
+      "source_hash": "06b6aaa609038f8e",
+      "summary": "After a long disconnection, either reconnect and let the loop catch up, or bolus the missing insulin with the bolus wizard and zero carbs.",
+      "dialogs": [
+        "Main screen > Loop icon > Running mode",
+        "Bolus wizard"
+      ],
+      "mentions": []
+    }
+  ],
+  "manual_note": "The page names a **Time offset** field in the Insulin dialog; the dialog's field is labelled 'Time' (time). 'Time offset' only appears in the QuickWizard editor."
+}

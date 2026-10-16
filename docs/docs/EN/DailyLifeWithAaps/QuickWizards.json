@@ -1,0 +1,376 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/DailyLifeWithAaps/QuickWizards.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Describes QuickWizards, saved one-tap buttons for recurring meals, managed from Manage > QuickWizard in AAPS 4: the card carousel and editor, the Wizard, Insulin and Carbs modes, the calculator options, the valid time range, where the buttons appear (Treatments sheet, QuickLaunch, Wear OS tile, client) and adding, cloning, deleting and reordering them. Field names are the app's editor labels.",
+  "features": [
+    "QuickWizard",
+    "Bolus wizard",
+    "QuickLaunch",
+    "Wear OS"
+  ],
+  "screens": [
+    {
+      "ui_location": "Manage > QuickWizard",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "quickwizard_managemnt"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "QuickWizards (one-tap boluses)",
+      "anchor": "quickwizards",
+      "source_hash": "38268814ffdceca5",
+      "summary": "Introduction: a QuickWizard is a saved button with a fixed carb amount that boluses or logs carbs in one tap plus confirmation.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "quickwizard_managemnt",
+          "as_written": "QuickWizard",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Opening QuickWizards",
+      "anchor": "opening-quickwizards",
+      "source_hash": "ac5b477007693349",
+      "summary": "Opening QuickWizard from the Manage sheet.",
+      "dialogs": [
+        "Manage > QuickWizard"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "quickwizard_managemnt",
+          "as_written": "QuickWizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage_quickwizard_desc",
+          "as_written": "Manage quick wizard presets",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Managing QuickWizards",
+      "anchor": "managing-quickwizards",
+      "source_hash": "cbda41482d3964a6",
+      "summary": "The card carousel, the editor for the selected QuickWizard, the action bar buttons and the main editor fields.",
+      "dialogs": [
+        "Manage > QuickWizard"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "overview_edit_quickwizard_button_text",
+          "as_written": "Button text",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "carbs",
+          "as_written": "Carbs",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "carb_time",
+          "as_written": "Carb Time",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "valid_from_to",
+          "as_written": "Valid Time Range",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "calculator_options",
+          "as_written": "Calculator Options",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "device_selection",
+          "as_written": "Device Selection",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "The three modes",
+      "anchor": "the-three-modes",
+      "source_hash": "c5b04ceb15bda169",
+      "summary": "The Wizard, Insulin and Carbs mode selector decides whether the button runs the bolus calculator, delivers a fixed dose or only records carbs.",
+      "dialogs": [
+        "Manage > QuickWizard"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_wizard_mode_wizard",
+          "as_written": "Wizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_wizard_mode_insulin",
+          "as_written": "Insulin",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_wizard_mode_carbs",
+          "as_written": "Carbs",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "calculator_options",
+          "as_written": "Calculator Options",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "boluswizard",
+          "as_written": "bolus calculator",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Calculator Options (Wizard mode)",
+      "anchor": "calculator-options-wizard-mode",
+      "source_hash": "07ae24a965ce113f",
+      "summary": "The inputs a Wizard-mode QuickWizard uses (BG, COB, IOB, trend, temp target, alarm), the bolus percentage and adding eCarbs.",
+      "dialogs": [
+        "Manage > QuickWizard > Calculator Options"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "calculator_options",
+          "as_written": "Calculator Options",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_wizard_mode_wizard",
+          "as_written": "Wizard",
+          "confidence": 0.8
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "use_bg",
+          "as_written": "Use BG",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "use_cob",
+          "as_written": "Use COB",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "use_iob",
+          "as_written": "Use IOB",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "overview_edit_quickwizard_use_positive_iob_only",
+          "as_written": "Positive IOB only",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "use_trend",
+          "as_written": "Use Trend",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "trend_all",
+          "as_written": "All",
+          "confidence": 0.8
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "trend_positive_only",
+          "as_written": "Positive only",
+          "confidence": 0.8
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "trend_negative_only",
+          "as_written": "Negative only",
+          "confidence": 0.8
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "use_temp_target",
+          "as_written": "Use Temp Target",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "use_alarm",
+          "as_written": "Use Alarm",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_bolus_percentage",
+          "as_written": "Bolus percentage",
+          "confidence": 0.7
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "additional_ecarbs",
+          "as_written": "Add eCarbs",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Validity — when the button appears",
+      "anchor": "validity-when-the-button-appears",
+      "source_hash": "49ab0ea4e94d035e",
+      "summary": "The valid time range hides a QuickWizard outside its hours in the Treatments sheet and QuickLaunch, and hides short-window buttons for 30 minutes after use.",
+      "dialogs": [
+        "Manage > QuickWizard"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "valid_from_to",
+          "as_written": "Valid Time Range",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments",
+          "as_written": "Treatments",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Invocation points — where you use it",
+      "anchor": "invocation-points-where-you-use-it",
+      "source_hash": "b8dc09058bf97c12",
+      "summary": "Show on Phone and Show on Watch decide where a QuickWizard appears: the Treatments sheet, the QuickLaunch toolbar or the Wear OS tile; Device Selection needs Wear control; confirmation and max bolus/carbs limits always apply.",
+      "dialogs": [
+        "Manage > QuickWizard > Device Selection",
+        "Treatments",
+        "Main screen > QuickLaunch > Configure QuickLaunch"
+      ],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "device_selection",
+          "as_written": "Device Selection",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "show_on_phone",
+          "as_written": "Show on Phone",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "show_on_watch",
+          "as_written": "Show on Watch",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "treatments",
+          "as_written": "Treatments",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_launch_configure",
+          "as_written": "Configure QuickLaunch",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "quick_launch_category_quick_wizard",
+          "as_written": "Quick Wizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wear",
+          "as_written": "Wear",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_wear_control",
+          "as_written": "Wear control",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "confirmation",
+          "as_written": "confirmation",
+          "confidence": 0.4
+        }
+      ]
+    },
+    {
+      "heading": "Adding and removing",
+      "anchor": "adding-and-removing",
+      "source_hash": "4c70377670189696",
+      "summary": "Adding, cloning, deleting and reordering QuickWizards; they sync between master and clients.",
+      "dialogs": [
+        "Manage > QuickWizard"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "add",
+          "as_written": "Add",
+          "confidence": 0.8
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "clone_label",
+          "as_written": "Clone",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "delete",
+          "as_written": "Delete",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "reorder",
+          "as_written": "Reorder",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": null
+}

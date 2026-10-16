@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/DailyLifeWithAaps/Food.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Describes the Food screen, a personal database of saved foods opened from Manage: browsing and filtering the list, adding and editing foods in a bottom-sheet editor, starting the bolus wizard from a food, and how foods are downloaded (but never uploaded) through Nightscout. Field and button names are the app's labels.",
+  "features": [
+    "Food database",
+    "Bolus wizard",
+    "Nightscout sync"
+  ],
+  "screens": [
+    {
+      "ui_location": "Manage > Food",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "food_management"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Food (your food database)",
+      "anchor": "food",
+      "source_hash": "be906bb8f9e15314",
+      "summary": "Introduction: the Food database stores frequently eaten foods with their carbs and optional nutrition values.",
+      "dialogs": [
+        "Manage > Food"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "food_management",
+          "as_written": "Food",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Opening the food database",
+      "anchor": "opening-the-food-database",
+      "source_hash": "e06cf7b7484adaf3",
+      "summary": "Opening Food from the Manage sheet; in AAPS 4 it is a standalone screen, not a plugin.",
+      "dialogs": [
+        "Manage > Food"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "food_management",
+          "as_written": "Food",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage_food_desc",
+          "as_written": "Manage food database entries",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "The food list",
+      "anchor": "the-food-list",
+      "source_hash": "6b706bf5187d51e1",
+      "summary": "The food list rows, searching by name, filtering by category and subcategory chips, the add button and the empty-list message.",
+      "dialogs": [
+        "Manage > Food"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "name",
+          "as_written": "name",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "category",
+          "as_written": "category",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "subcategory",
+          "as_written": "subcategory",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "search",
+          "as_written": "Search",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "no_data",
+          "as_written": "No data",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Adding and editing a food",
+      "anchor": "adding-and-editing-a-food",
+      "source_hash": "9cd062f7ec3d231c",
+      "summary": "The Add Food / Edit Food editor: its fields, saving, cancelling, deleting, and undoing a delete.",
+      "dialogs": [
+        "Manage > Food > Add Food",
+        "Manage > Food > Edit Food"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "add_food",
+          "as_written": "Add Food",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "edit_food",
+          "as_written": "Edit Food",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "name",
+          "as_written": "Name",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "category",
+          "as_written": "Category",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "subcategory",
+          "as_written": "Subcategory",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "portion",
+          "as_written": "Portion",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "unit_label",
+          "as_written": "Unit",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "label_carbs_g",
+          "as_written": "Carbs (g)",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "label_fat_g",
+          "as_written": "Fat (g)",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "label_protein_g",
+          "as_written": "Protein (g)",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "label_energy_kj",
+          "as_written": "Energy (kJ)",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "save",
+          "as_written": "Save",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cancel",
+          "as_written": "Cancel",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "delete",
+          "as_written": "Delete",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "food_deleted",
+          "as_written": "Food deleted",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "undo",
+          "as_written": "Undo",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Using a food for a bolus",
+      "anchor": "using-a-food-for-a-bolus",
+      "source_hash": "0124ca8df4ec3e18",
+      "summary": "The calculator button on a food row opens the bolus wizard with the food's carbs and name filled in; the carbs are not scaled by portion.",
+      "dialogs": [
+        "Manage > Food",
+        "Bolus wizard"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "boluswizard",
+          "as_written": "bolus wizard",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Where foods come from (Nightscout sync)",
+      "anchor": "where-foods-come-from-nightscout-sync",
+      "source_hash": "be39ab5f12f14003",
+      "summary": "Foods are downloaded from the Nightscout food database but never uploaded, so a shared list must be maintained in Nightscout.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Not on the watch",
+      "anchor": "not-on-the-watch",
+      "source_hash": "680f2317fc04530e",
+      "summary": "The food database is phone-only; Wear OS has no food screen.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}
