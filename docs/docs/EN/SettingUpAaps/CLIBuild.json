@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/CLIBuild.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Instructions for building AAPS on the Linux command line without Android Studio: install a JDK and the Android command-line tools, generate a keystore with keytool, compile with the Gradle wrapper, and sign the APK with apksigner. No app screens are involved.",
+  "features": [
+    "Building AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Build instructions for the command-line",
+      "anchor": "build-instructions-for-the-command-line",
+      "source_hash": "f751d8de3a8bb320",
+      "summary": "Page title and a note that this method is for users comfortable with the command line and git.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Requirements",
+      "anchor": "requirements",
+      "source_hash": "3c3d5966a47f72ac",
+      "summary": "Installing OpenJDK and the Android command-line tools, setting ANDROID_HOME and PATH, and accepting SDK licences.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Building AAPS with Gradle wrapper",
+      "anchor": "building-aaps-with-gradle-wrapper",
+      "source_hash": "06262f30b52ec537",
+      "summary": "Heading for the three build steps.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "1. Generate a Java keystore file for signing AAPS",
+      "anchor": "1-generate-a-java-keystore-file-for-signing-aaps",
+      "source_hash": "6a2b013a655514ac",
+      "summary": "Creating a signing keystore with keytool, or reusing an existing one.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "2. Compile the AAPS APK file",
+      "anchor": "2-compile-the-aaps-apk-file",
+      "source_hash": "749df35b5243235e",
+      "summary": "Cloning the repository and running the Gradle task that produces the unsigned APK.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "3. Create a signed APK file from the unsigned one",
+      "anchor": "3-create-a-signed-apk-file-from-the-unsigned-one",
+      "source_hash": "928527bbc78fda33",
+      "summary": "Signing the APK with apksigner so it can be installed.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

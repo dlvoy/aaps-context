@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/BrowserBuildO1Computer.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Option 1 on a computer: the reader downloads the preparation file, serves it locally with Simple Web Server and opens it in the browser to generate a new keystore, following a video. Labels are Simple Web Server's.",
+  "features": [
+    "Building AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Option 1 · Computer – Generate a new keystore",
+      "anchor": "aaps-ci-option1-computer",
+      "source_hash": "658cc4218084bdef",
+      "summary": "Page title: generating a new keystore on Windows, Mac or Linux.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "1. Download the preparation file",
+      "anchor": "1-download-the-preparation-file",
+      "source_hash": "28958045f95b990d",
+      "summary": "Downloading aaps-ci-preparation.html (shared snippet).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "2. Start a local server and generate the keystore",
+      "anchor": "2-start-a-local-server-and-generate-the-keystore",
+      "source_hash": "e0176da628a4cc51",
+      "summary": "Installing Simple Web Server, creating a server for the folder holding the preparation file, opening it at 127.0.0.1:8080, and following the video to generate the keystore.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

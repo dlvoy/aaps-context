@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/BrowserBuildAapsBuilder.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Step-by-step guide to AAPS Builder, a setup page in the documentation that builds AAPS in the reader's own private GitHub repository: create the repository, add the build workflow, create or upload the signing key, store it as a GitHub secret, run the build, and download and install the APK. Bold labels are buttons and fields of the setup page and of GitHub, not of the app. The page also covers updating and troubleshooting.",
+  "features": [
+    "Building AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Browser build with AAPS Builder",
+      "anchor": "aaps-builder",
+      "source_hash": "3351a64763ad5924",
+      "summary": "Page title and intro: what AAPS Builder does, the six setup steps, and why neither a fork nor Google Drive is needed.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Before you start",
+      "anchor": "aaps-builder-before-you-start",
+      "source_hash": "b8330d2c266dad24",
+      "summary": "What the reader needs (GitHub account, browser, existing keystore if updating), why the repository must stay private, and how choosing an existing or a new key decides whether AAPS can be updated in place.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Open the setup page",
+      "anchor": "open-the-setup-page",
+      "source_hash": "9c4d4e101a17e1fd",
+      "summary": "Link to the AAPS Builder setup page; it runs in the browser and keeps keys and passwords local.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 1 – Create your private build repository",
+      "anchor": "aaps-builder-step1",
+      "source_hash": "fba607c39e7628f8",
+      "summary": "On the setup page and then GitHub: enter the username and repository name and create an empty private repository without changing GitHub's defaults.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 2 – Add the build workflow",
+      "anchor": "aaps-builder-step2",
+      "source_hash": "cec7c327e33b84e1",
+      "summary": "Copy the workflow from the setup page, paste it into a new .github/workflows/build.yml file on GitHub and commit it.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 3 – Your signing key",
+      "anchor": "aaps-builder-step3",
+      "source_hash": "73f64462157d32bc",
+      "summary": "Introduces the two setup-page tabs for the signing key.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "I already have a keystore",
+      "anchor": "i-already-have-a-keystore",
+      "source_hash": "d9c6349e36a5896c",
+      "summary": "Uploading an existing keystore on the setup page with its password and alias, and checking it.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Create a new key",
+      "anchor": "create-a-new-key",
+      "source_hash": "defa843546e1f535",
+      "summary": "Creating a new key on the setup page, the password rules, and downloading the keystore backup (alias aaps).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 4 – Give the key to your repository",
+      "anchor": "aaps-builder-step4",
+      "source_hash": "9e4aa7e93a0ca021",
+      "summary": "Adding the KEYSTORE_SET secret on GitHub's New secret page, with the Name and Secret fields copied from the setup page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 5 – Build the app",
+      "anchor": "aaps-builder-step5",
+      "source_hash": "502b7d297044704f",
+      "summary": "Opening the Build AAPS workflow on GitHub, choosing version and variant, running it, and what to check if the build buttons are missing.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 6 – Install the app on your phone",
+      "anchor": "aaps-builder-step6",
+      "source_hash": "7ea92caa1b3a8cb0",
+      "summary": "Backing up AAPS settings before every update, downloading the APK from the GitHub build page in Chrome, and installing it.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 7 (optional) – Also save the app in Google Drive",
+      "anchor": "aaps-builder-google-drive",
+      "source_hash": "bf012edc7be5754c",
+      "summary": "Optionally saving builds to Google Drive by adding the GDRIVE_OAUTH2 secret, obtained with the preparation file on a computer.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Updating AAPS",
+      "anchor": "aaps-builder-updates",
+      "source_hash": "80196fdad00d0d70",
+      "summary": "How to build and install a new AAPS version, and how to replace the build workflow file when it changes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Troubleshooting",
+      "anchor": "aaps-builder-troubleshooting",
+      "source_hash": "4e08bd26751e8a4a",
+      "summary": "Build error messages from the workflow and setup page and what to do about each, mostly in GitHub settings or by redoing setup steps.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

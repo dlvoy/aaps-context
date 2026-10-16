@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/BrowserBuildDownloadPrep.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Snippet included in the browser-build keystore pages: where to download the aaps-ci-preparation.html file, with fallback links if the download fails inside an in-app browser. No app screens are involved.",
+  "features": [
+    "Building AAPS"
+  ],
+  "screens": [],
+  "sections": [],
+  "manual_note": null
+}

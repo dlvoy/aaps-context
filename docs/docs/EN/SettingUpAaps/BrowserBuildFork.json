@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/BrowserBuildFork.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Step 1 of the fork-based browser build: the reader creates a GitHub account and forks the official AndroidAPS repository, so build secrets can be stored in their own copy. Labels are GitHub's.",
+  "features": [
+    "Building AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Browser build – Step 1: Create your GitHub fork",
+      "anchor": "github-fork",
+      "source_hash": "94376d8637109038",
+      "summary": "Page title and why a personal fork is needed: secrets for the keystore and Google Drive cannot be stored in the public repository.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "GitHub account",
+      "anchor": "github-account",
+      "source_hash": "e6e729b08445e208",
+      "summary": "Creating a GitHub account and signing in.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Fork AndroidAPS",
+      "anchor": "fork-androidaps",
+      "source_hash": "c9acb5147329a4d3",
+      "summary": "Forking the AndroidAPS repository on GitHub, what the 'already forked' message means, and a warning not to delete the fork without backing up its secrets.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

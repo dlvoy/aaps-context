@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/BrowserBuildGoogleDrive.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Step 3 of the fork-based browser build: the reader authorizes Google Drive on the preparation page and stores the resulting GDRIVE_OAUTH2 value as a GitHub repository secret, so built APKs are saved to Google Drive. Labels are the preparation page's and GitHub's.",
+  "features": [
+    "Building AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Browser build – Step 3: Authorize Google Drive",
+      "anchor": "aaps-ci-google-drive-auth",
+      "source_hash": "681e0ff32bad95f1",
+      "summary": "Running Google Drive Auth on the preparation page, then adding the GDRIVE_OAUTH2 name and value as a new repository secret on GitHub.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

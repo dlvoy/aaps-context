@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/TransferringAndInstallingAaps.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "How to get the built AAPS APK onto the phone and install it (via Google Drive or a USB cable), what the Play Protect warning means, and how Google's Android developer verification (from September 2026) affects installing self-built apps, with four free ways to keep installing AAPS: ADB, the web installer, the advanced flow and a limited distribution account. Bold and quoted labels are Android system, Google Drive and Play Protect labels, not app strings.",
+  "features": [
+    "Installing AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Transferring and Installing AAPS on your smartphone",
+      "anchor": "transferring-and-installing-aaps-on-your-smartphone",
+      "source_hash": "ebcddc7980c47a88",
+      "summary": "Page title and intro: transfer the APK to the phone, install it, and read about the upcoming developer verification.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Installing AAPS by tapping the APK file",
+      "anchor": "installing-aaps-by-tapping-the-apk-file",
+      "source_hash": "96e3d445c1990a58",
+      "summary": "Installing by opening the APK on the phone, the two transfer options, and a warning that developer verification may block this.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Option 1. Use Google drive to transfer files",
+      "anchor": "option-1-use-google-drive-to-transfer-files",
+      "source_hash": "23f66bfe07aa6d4f",
+      "summary": "Uploading the APK to Google Drive from a computer.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Use the Google Drive app to execute the apk file for installation",
+      "anchor": "use-the-google-drive-app-to-execute-the-apk-file-for-installation",
+      "source_hash": "9baf953699da3620",
+      "summary": "Opening the APK in the Google Drive app on the phone, temporarily allowing installs from Drive in Android settings, then revoking it.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Option 2. Use a USB cable to transfer files",
+      "anchor": "option-2-use-a-usb-cable-to-transfer-files",
+      "source_hash": "20f3b865af043eea",
+      "summary": "Copying the APK to the phone's Downloads folder by cable, allowing installs from that source in Android settings, installing, and disabling the permission again.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Google Play Protect warning",
+      "anchor": "transferring-installing-play-protect-warning",
+      "source_hash": "2c235405d0d3f77e",
+      "summary": "Play Protect's unsafe-app warning is expected for a self-built app; tap through to install anyway.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Android developer verification",
+      "anchor": "android-developer-verification",
+      "source_hash": "3e9d62b7a04d0564",
+      "summary": "Introduces Google's requirement that installed apps come from a verified developer, including sideloaded APKs.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What is changing",
+      "anchor": "what-is-changing",
+      "source_hash": "d98da2b0c166a9db",
+      "summary": "How the check works at install and update time, and the rollout timeline by country.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Does this affect me?",
+      "anchor": "does-this-affect-me",
+      "source_hash": "56ee781070851f8b",
+      "summary": "Who is affected and when: building and running AAPS are unaffected; installs and updates may be blocked depending on country and date.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Free ways to install AAPS",
+      "anchor": "android-developer-verification-free-methods",
+      "source_hash": "463c63ca04f7f4a0",
+      "summary": "Choosing among the four free installation methods depending on whether a computer is available.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Option 1: Install with ADB (computer needed)",
+      "anchor": "android-developer-verification-adb",
+      "source_hash": "422f29a7e20ef6a6",
+      "summary": "Enabling Android developer options and USB debugging, then installing or updating AAPS from a computer with adb install -r.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Option 2: Install from a web page (computer, no command line)",
+      "anchor": "android-developer-verification-web",
+      "source_hash": "1ff982c76ff514d8",
+      "summary": "Using the AAPS web installer page in Chrome, Edge or Opera over USB debugging, also from a second Android phone.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Option 3: The \"advanced flow\" on your phone (no computer needed)",
+      "anchor": "android-developer-verification-advanced-flow",
+      "source_hash": "edef18d0ccf75efe",
+      "summary": "Turning on Android's Allow apps from unverified developers in developer options, the 24-hour waiting period, and choosing to allow indefinitely.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Option 4: Register with Google (free limited distribution account)",
+      "anchor": "android-developer-verification-limited-account",
+      "source_hash": "98ceb043003608ee",
+      "summary": "The free limited distribution developer account and why its use with AAPS is still untested.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What does not change",
+      "anchor": "what-does-not-change",
+      "source_hash": "de955cfe0b97ed10",
+      "summary": "Building, GitHub and keystores, the installed app with its settings and objectives, and ADB installs are unaffected.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Where to get help",
+      "anchor": "where-to-get-help",
+      "source_hash": "64ee662ecfae99d0",
+      "summary": "Where to read Google's FAQ and ask the community, and what details to include.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

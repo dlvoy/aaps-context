@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/Tidepool.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "How to report AAPS data to Tidepool: create a Tidepool account, enable the Tidepool plugin under Configuration > Communication, log in from the plugin's menu, set its connection settings, and use the actions in the Tidepool screen's menu (upload, full sync, purge, clear log).",
+  "features": [
+    "Tidepool"
+  ],
+  "screens": [
+    {
+      "ui_location": "Configuration > Communication > Tidepool",
+      "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+      "key": "tidepool"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Tidepool",
+      "anchor": "tidepool",
+      "source_hash": "c6baf68df0fcdfd3",
+      "summary": "Page title and intro: Tidepool is a reporting platform for sharing data with the clinical team, not a real-time follow app; it can satisfy part of Objective 1.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 1 - Set up a Tidepool account",
+      "anchor": "step-1-set-up-a-tidepool-account",
+      "source_hash": "b2751da1f713f0a9",
+      "summary": "Signing up for a personal account on tidepool.org and verifying the email address; the quoted labels are Tidepool's website.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 2 - Connect AAPS to Tidepool",
+      "anchor": "step-2-connect-aaps-to-tidepool",
+      "source_hash": "d184fca4f1175650",
+      "summary": "Enabling Tidepool in Configuration > Communication, opening the plugin, logging in from its menu in the browser, checking the connection status, and adjusting its Connection settings.",
+      "dialogs": [
+        "Main menu > Configuration",
+        "Configuration > Communication",
+        "Tidepool > Login",
+        "Tidepool > Settings > Connection settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "tidepool",
+          "as_written": "Tidepool",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "login",
+          "as_written": "Login",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "connection_settings_title",
+          "as_written": "Connection settings",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "The Tidepool menu",
+      "anchor": "tidepool-menu",
+      "source_hash": "cf7c415f36db3b90",
+      "summary": "The actions in the Tidepool screen's top-right menu: log in or out, upload now, full synchronization, purge all uploaded data, and clear the log.",
+      "dialogs": [
+        "Tidepool > ⋮ menu"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "login",
+          "as_written": "Login",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "logout",
+          "as_written": "Logout",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "upload_now",
+          "as_written": "Upload now",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "full_sync",
+          "as_written": "Full synchronization",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "tidepool_purge_data",
+          "as_written": "Purge all data",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "clear_log",
+          "as_written": "Clear log",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": "Step 2 says Connection settings has a \"Use Nightscout connection settings\" switch; the app has no such label. Tidepool's Connection settings (connection_settings_title) list the same NSClient connection preferences (cellular, roaming, Wi-Fi, battery, charging). SESSION_ESTABLISHED is an internal status value shown as is, not a translatable string."
+}

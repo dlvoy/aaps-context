@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/BrowserBuild.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Overview of building the AAPS app in a web browser with GitHub Actions instead of on a computer with Android Studio. The reader picks a method: AAPS Builder from an Android phone, or a GitHub fork plus a keystore preparation file from a computer or iPhone/iPad, then follows the four linked step pages. No app screens are involved; the labels are GitHub's and Google's.",
+  "features": [
+    "Building AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Browser build",
+      "anchor": "browser-build",
+      "source_hash": "73a2084446c66dae",
+      "summary": "Page title and intro: the app can be built in the browser with GitHub Actions, from AAPS version 3.3.2.1 on.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build yourself instead of download",
+      "anchor": "build-yourself-instead-of-download",
+      "source_hash": "dd9efa12c205cc31",
+      "summary": "Legal note: the APK cannot be downloaded and must not be shared; each user builds it for their own use.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Choose how to build",
+      "anchor": "Building-APK-without-a-computer",
+      "source_hash": "f483032d856b571e",
+      "summary": "Introduces the two build methods, chosen by the device the reader builds from.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "On an Android phone: AAPS Builder (recommended)",
+      "anchor": "on-an-android-phone-aaps-builder-recommended",
+      "source_hash": "3c5ee7e17582de42",
+      "summary": "The recommended method: a setup page creates a private GitHub build repository; the reader downloads the built app from GitHub.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "On a computer or an iPhone / iPad: fork and preparation file",
+      "anchor": "on-a-computer-or-an-iphone-ipad-fork-and-preparation-file",
+      "source_hash": "2ac0fc0f892dcbc7",
+      "summary": "The alternative method: fork the AAPS source on GitHub, make a keystore with a preparation file, and save the built app to Google Drive, switching between several browser tabs.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What you'll need",
+      "anchor": "what-you-ll-need",
+      "source_hash": "07416af24b239eef",
+      "summary": "Accounts and tools needed for the fork method: Google account, GitHub account, a browser, and a helper (Simple Web Server or the iOS Files app) to run the preparation file.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "The steps",
+      "anchor": "the-steps",
+      "source_hash": "09df5b0d8c437025",
+      "summary": "The four steps of the fork method in order (fork, keystore, Google Drive authorization, build), with links to troubleshooting and optional operations.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

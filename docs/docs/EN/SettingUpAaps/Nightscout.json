@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/Nightscout.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "How to use Nightscout safely with AAPS: restrict access on the Nightscout site, choose in the NSClientV3 Synchronization settings whether AAPS uploads data and accepts changes from Nightscout, and set the Nightscout variables AAPS needs.",
+  "features": [
+    "Nightscout",
+    "NSClient synchronization"
+  ],
+  "screens": [
+    {
+      "ui_location": "Settings > NSClientV3 > Synchronization",
+      "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+      "key": "ns_sync_options"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Nightscout",
+      "anchor": "nightscout",
+      "source_hash": "5b4c19fb9ae2dc5a",
+      "summary": "Page title.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Security considerations",
+      "anchor": "Nightscout-security-considerations",
+      "source_hash": "46eddd6cb1caad13",
+      "summary": "Nightscout can send commands to AAPS (temp targets, carbs), so the site should be secured.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Nightscout settings",
+      "anchor": "nightscout-settings",
+      "source_hash": "0ec73dd311cd4db8",
+      "summary": "On the Nightscout site: deny public access with authentication roles, share only readable tokens, and keep API_SECRET private.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "AAPS settings",
+      "anchor": "Nightscout-aaps-settings",
+      "source_hash": "d261ed8bcd630f3e",
+      "summary": "Opening the NSClientV3 Synchronization settings from Settings or from Configuration > Communication, and which upload and receive options to enable depending on whether Nightscout is the BG source.",
+      "dialogs": [
+        "Settings > NSClientV3 > Synchronization",
+        "Configuration > Communication > NSClientV3 > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_sync_options",
+          "as_written": "Synchronization",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "ns_client_v3_title",
+          "as_written": "NSClientV3",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_upload_data",
+          "as_written": "Upload data to NS",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_bg_source_upload_to_ns",
+          "as_written": "Upload BG data to NS",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_ns_receive_cgm",
+          "as_written": "Receive CGM data from NS",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Do not sync from Nightscout",
+      "anchor": "do-not-sync-from-nightscout",
+      "source_hash": "87d7db3731e3b8c5",
+      "summary": "Keeping all 'Receive … from NS' switches off in Synchronization so AAPS ignores changes made in Nightscout.",
+      "dialogs": [
+        "Settings > NSClientV3 > Synchronization"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Accept changes from Nightscout",
+      "anchor": "accept-changes-from-nightscout",
+      "source_hash": "19e7caf73dedc730",
+      "summary": "Turning the receive switches on so profile changes, temp targets and carbs entered in Nightscout are used by AAPS; insulin from Nightscout is only recorded.",
+      "dialogs": [
+        "Settings > NSClientV3 > Synchronization"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Further security settings",
+      "anchor": "further-security-settings",
+      "source_hash": "a058b5e9298873cb",
+      "summary": "Keep the phone updated, as described in the safety section.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Manual Nightscout setup",
+      "anchor": "Nightscout-manual-nightscout-setup",
+      "source_hash": "70a5797145b7faf3",
+      "summary": "Nightscout site variables (ENABLE, DEVICESTATUS_ADVANCED, SHOW_FORECAST, pump fields and alarms, SHOW_PLUGINS) needed to show AAPS data; values in code are Nightscout configuration, not app labels.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Nightscout as a paid SaaS (Software as a Service)",
+      "anchor": "nightscout-as-a-paid-saas-software-as-a-service",
+      "source_hash": "c89ca9a05fd4b8e2",
+      "summary": "With a hosted Nightscout, set the variables in the vendor's web interface.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "\"Receive ... from NS\" in 'Do not sync from Nightscout' stands for the whole group of receive switches (pref_title_ns_receive_*), not one label. The quoted \"Do not bolus, record only\" has no exact app string; the closest is bolus_recorded_only in core/interfaces."
+}

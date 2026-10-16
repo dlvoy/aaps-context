@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/BrowserBuildAPK.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Step 4 of the fork-based browser build: the reader runs the AAPS-CI workflow in GitHub Actions, picks the AAPS version and build variant, and finds the built phone and watch APKs in Google Drive. The bold labels are GitHub workflow inputs, not app strings.",
+  "features": [
+    "Building AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Browser build – Step 4: Build the APK",
+      "anchor": "github-build-apk",
+      "source_hash": "99961d227c853393",
+      "summary": "Page title and a note that this is step 4 and follows the Google Drive authorization.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "AAPS-CI GitHub Actions to Build the AAPS APK",
+      "anchor": "aaps-ci-github-actions-to-build-the-aaps-apk",
+      "source_hash": "73bd124db048596c",
+      "summary": "In GitHub: open Actions, run the AAPS-CI workflow with a chosen version and variant, watch it finish, then find the APKs in the AAPS folder of Google Drive. Also offered as a video.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build Version selection",
+      "anchor": "build-version-selection",
+      "source_hash": "552ba509620296c0",
+      "summary": "Picking the AAPS version in the workflow's Select AAPS Version list; only 3.3.2.1 and later build this way.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build Variants selection",
+      "anchor": "browserbuild-variant",
+      "source_hash": "0c0005cda4f26eb1",
+      "summary": "What each build variant is for (fullRelease, AAPSClient variants for caregivers, pumpcontrolRelease, Debug variants), then where to continue and what to do if the build fails.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

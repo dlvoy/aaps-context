@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/ChangeAapsConfiguration.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Explains the three ways to change AAPS configuration after the Setup Wizard: the Configuration screen (which plugins are active), the Settings screen (settings of all enabled plugins), and a plugin's own Settings opened from its category in Configuration. All three lead to the same settings.",
+  "features": [
+    "Configuration",
+    "Settings"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "nav_configuration"
+    },
+    {
+      "ui_location": "Main screen > Settings",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "settings"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Making changes to your AAPS' configuration",
+      "anchor": "making-changes-to-your-aaps-configuration",
+      "source_hash": "67ddee3c618351ac",
+      "summary": "Page title and intro: after the Setup Wizard, configuration can be changed through three routes that reach the same settings.",
+      "dialogs": [
+        "Main menu > Configuration",
+        "Main screen > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_setupwizard",
+          "as_written": "Setup Wizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Configuration",
+      "anchor": "configuration",
+      "source_hash": "4564bc1202841671",
+      "summary": "Opening Configuration from the top-left menu of the main screen; it chooses which plugin is active in each category.",
+      "dialogs": [
+        "Main menu > Configuration"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Settings",
+      "anchor": "settings",
+      "source_hash": "dd5687d73af608e2",
+      "summary": "Opening Settings with the gear icon at the top right of the main screen; it shows the settings of all enabled plugins in expandable sections.",
+      "dialogs": [
+        "Main screen > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "A plugin's Settings",
+      "anchor": "a-plugin-s-settings",
+      "source_hash": "bc3c11d68d7a5fb8",
+      "summary": "Opening one plugin's settings from its category in Configuration, for example the pump's, as a shortcut into the same settings.",
+      "dialogs": [
+        "Configuration > Pump",
+        "Configuration > Pump > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "manual_note": null
+}

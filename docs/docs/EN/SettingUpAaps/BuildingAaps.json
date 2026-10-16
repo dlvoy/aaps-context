@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/BuildingAaps.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Entry page for building the AAPS app: why it cannot be downloaded, the three build methods (browser, Android Studio, command line) with links, and where to find troubleshooting for each.",
+  "features": [
+    "Building AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Building AAPS",
+      "anchor": "building-aaps",
+      "source_hash": "4765e34dfef9b956",
+      "summary": "Page title.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build yourself instead of download",
+      "anchor": "build-yourself-instead-of-download",
+      "source_hash": "e18496c9c1c2e05d",
+      "summary": "Legal note: the APK cannot be downloaded and must not be shared; three build methods follow.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build with a browser (recommended)",
+      "anchor": "build-with-a-browser-recommended",
+      "source_hash": "895121ae2f83bacf",
+      "summary": "Building with GitHub Actions: AAPS Builder from an Android phone, or a fork with Google Drive from a computer or iPhone.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build with Android Studio",
+      "anchor": "build-with-android-studio",
+      "source_hash": "c25e751d32dda70d",
+      "summary": "Building on a computer with Android Studio, now mostly for developers.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build using the command-line",
+      "anchor": "build-using-the-command-line",
+      "source_hash": "4ce13e651bb5d5d1",
+      "summary": "Building locally from the command line without Android Studio.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "If the build fails",
+      "anchor": "building-aaps-troubleshooting",
+      "source_hash": "335eac3dfc675c38",
+      "summary": "Links to the troubleshooting page for each build method, lost keystores and installation problems.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

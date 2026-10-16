@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/BrowserBuildO1.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Option 1 of the browser-build keystore step: generating a new keystore. The reader picks the page for their device, computer or iPhone/iPad; Android users are sent to AAPS Builder.",
+  "features": [
+    "Building AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Option 1 – Generate a new keystore",
+      "anchor": "aaps-ci-option1",
+      "source_hash": "319e634572f17a77",
+      "summary": "Page title and who should generate a new keystore.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Choose your device",
+      "anchor": "choose-your-device",
+      "source_hash": "35d9c91bedf75531",
+      "summary": "Links to the computer and iPhone/iPad pages; Android phone users should use AAPS Builder.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

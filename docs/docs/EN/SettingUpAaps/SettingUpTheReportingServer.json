@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/SettingUpTheReportingServer.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Introduces the two reporting servers AAPS can upload to, Nightscout (recommended, near real time, allows remote commands) and Tidepool (reports only, three-hour delay), and the self-hosted or paid hosting options for Nightscout. It is a planning page; app settings are covered on the Nightscout and Tidepool pages.",
+  "features": [
+    "Nightscout",
+    "Tidepool"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Setting up the Reporting Server",
+      "anchor": "setting-up-the-reporting-server",
+      "source_hash": "4cfbeecc875f592a",
+      "summary": "Page title and intro: Nightscout and Tidepool are the two reporting servers; Nightscout is recommended.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Nightscout",
+      "anchor": "SettingUpTheReportingServer-nightscout",
+      "source_hash": "95d82ec5c04591c8",
+      "summary": "What Nightscout does for AAPS users and caregivers: near-real-time data, reports and remote commands.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Option 1 - Set up your Nightscout server yourself",
+      "anchor": "option-1-set-up-your-nightscout-server-yourself",
+      "source_hash": "b1e3d06286d181ca",
+      "summary": "Self-hosting Nightscout, with the maintenance and migration effort it may need.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Option 2 - Pay for a hosted Nightscout service",
+      "anchor": "option-2-pay-for-a-hosted-nightscout-service",
+      "source_hash": "ba2e9ce4c4c2056c",
+      "summary": "Paying a provider to host Nightscout, with a link to a vendor comparison.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Further configuration of Nightscout",
+      "anchor": "further-configuration-of-nightscout",
+      "source_hash": "754dd4f4d99f8414",
+      "summary": "Pointer to the Nightscout configuration page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Tidepool",
+      "anchor": "SettingUpTheReportingServer-tidepool",
+      "source_hash": "c200e7e247523eaa",
+      "summary": "Tidepool as a free reporting-only option suited to sharing reports with the clinic; AAPS uploads to it directly, so the separate Tidepool uploader must not be used.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Next step",
+      "anchor": "next-step",
+      "source_hash": "c34b35dc9509a73d",
+      "summary": "Continue with a dedicated Google account or with building the AAPS app.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

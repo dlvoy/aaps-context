@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/SettingUpAaps/ComputerBuild.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "The traditional way to build AAPS on a computer: install Git and the right Android Studio version, clone the AndroidAPS repository, point Android Studio to Git, and generate a signed APK with a keystore. Quoted and bold labels are Android Studio's, not the app's, so none map to app strings.",
+  "features": [
+    "Building AAPS"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Android Studio Build",
+      "anchor": "android-studio-build",
+      "source_hash": "93e728b02d8acf0a",
+      "summary": "Page title: building with Android Studio, with a pointer to the browser build as the alternative.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build yourself instead of download",
+      "anchor": "build-yourself-instead-of-download",
+      "source_hash": "158a9f2bdce2d02b",
+      "summary": "Legal note: the APK cannot be downloaded and must not be shared.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Computer and software specifications for building AAPS",
+      "anchor": "Building-APK-recommended-specification-of-computer-for-building-apk-file",
+      "source_hash": "481f20f4e99802ac",
+      "summary": "Table of the Android Studio, Gradle and JVM versions needed for each AAPS version, plus 64-bit and SSD recommendations.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Help and support during the building process",
+      "anchor": "help-and-support-during-the-building-process",
+      "source_hash": "d5135d3672a68b73",
+      "summary": "Where to get help: the Android Studio troubleshooting page and the user groups.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step-by-step guide to building the AAPS app",
+      "anchor": "step-by-step-guide-to-building-the-aaps-app",
+      "source_hash": "bf47ca849bed4e5c",
+      "summary": "Introduction to the build steps; returning users go to the update guide. Screenshots may differ between Android Studio versions and platforms.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Install Git",
+      "anchor": "install-git-if-you-dont-have-it",
+      "source_hash": "4318a252e9703856",
+      "summary": "What Git is and why it is needed to download the AAPS source code.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Steps for Installing Git",
+      "anchor": "BuildingAaps-steps-for-installing-git",
+      "source_hash": "c0d22de8def6da1f",
+      "summary": "Checking for and installing Git, noting its installation path, and rebooting.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Install Android Studio",
+      "anchor": "Building-APK-install-android-studio",
+      "source_hash": "79749f44d1b01683",
+      "summary": "Downloading and installing the right Android Studio version with the default options, accepting licences, and waiting for the SDK downloads.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Download the AAPS code",
+      "anchor": "Building-APK-download-AAPS-code",
+      "source_hash": "ccb7ba45fde4a7fb",
+      "summary": "Cloning the AndroidAPS repository from the Android Studio welcome screen, trusting the project, switching to the new UI if needed, and letting the Gradle sync finish without updating Gradle.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Set Git path in Android Studio preferences",
+      "anchor": "Building-APK-set-git-path-in-preferences",
+      "source_hash": "da9133bdb8061bf3",
+      "summary": "In Android Studio's own settings, checking or setting the path to the Git executable under Version Control.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Build the AAPS \"signed\" APK",
+      "anchor": "Building-APK-generate-signed-apk",
+      "source_hash": "b156575be6a1a46d",
+      "summary": "Generating the signed APK with Android Studio's Generate Signed App Bundle / APK wizard: create or reuse a keystore, note its passwords, pick the fullRelease variant, build, and locate the APK file.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}
