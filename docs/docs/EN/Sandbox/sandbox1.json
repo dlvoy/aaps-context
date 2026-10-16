@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Sandbox/sandbox1.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Internal test page for the documentation team (Markdown syntax, Crowdin and Read the Docs). Placeholder and lorem ipsum text; the page itself says it needs no translation.",
+  "features": [],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "internal sandbox file 1 for testing our sprint",
+      "anchor": "internal-sandbox-file-1-for-testing-our-sprint",
+      "source_hash": "db58a9c536a58fd5",
+      "summary": "Test content: admonitions, a quote, numbered lists and anchor links. No app content.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "This is a test",
+      "anchor": "sandbox1-this-is-a-test",
+      "source_hash": "13635b7e17ec4ac8",
+      "summary": "Lorem ipsum filler used as a link target.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "This is another test",
+      "anchor": "sandbox1-this-is-another-test",
+      "source_hash": "18052d29d0b5c8f7",
+      "summary": "Lorem ipsum filler and a list of test links to anchors on other pages.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

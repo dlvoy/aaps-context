@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatiblePhones/Jelly.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Experience notes on using the very small Jelly Star Mini phone as a dedicated AAPS phone: its pros and cons and the phone settings to change (battery optimization, Play Protect, remote connection for a Samsung watch). The settings named are Android or phone settings, not AAPS labels.",
+  "features": [
+    "Phone setup",
+    "Background restrictions"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Jelly",
+      "anchor": "jelly",
+      "source_hash": "e2aaa741b02018d2",
+      "summary": "Page title for the Jelly phone brand.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Jelly Star Mini",
+      "anchor": "jelly-star-mini",
+      "source_hash": "e3e86597f868bbae",
+      "summary": "Specs, advantages and disadvantages of the Jelly Star Mini as a looping-only phone.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Battery life optimization",
+      "anchor": "battery-life-optimization",
+      "source_hash": "471d92557ac43bd2",
+      "summary": "Disabling the Jelly's battery optimization and intelligent assistance for AAPS and other DIY apps; enabling NFC for Libre sensors. Phone settings only.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Battery life optimization",
+      "anchor": "battery-life-optimization",
+      "source_hash": "9d89fe5ddb5f1735",
+      "summary": "Setting the phone's battery usage to 'unrestricted' for AAPS and other DIY apps. Phone settings only.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Google Play Protect",
+      "anchor": "google-play-protect",
+      "source_hash": "9fc0d72e90f9ee1d",
+      "summary": "Reminder to disable Google Play Protect on the phone.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Remote Connection for Weak apk",
+      "anchor": "remote-connection-for-weak-apk",
+      "source_hash": "1bdd07273f5b667f",
+      "summary": "Turning on 'Remote Connection' in a Samsung Galaxy watch's settings so the Wear app and AAPS on the Jelly connect over Wi-Fi.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

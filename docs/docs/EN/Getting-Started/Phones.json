@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Getting-Started/Phones.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Phone requirements for AAPS (Android 12 or newer, Android 16 preferred), links to brand-specific setup pages, the community list of tested phone/pump/CGM setups, and a downloadable AAPS wallpaper.",
+  "features": [
+    "Phone selection"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Phones",
+      "anchor": "phones",
+      "source_hash": "1edb6cd1bd0edd62",
+      "summary": "Minimum and recommended Android versions, and links to Jelly and Huawei setup pages.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "List of tested phones",
+      "anchor": "Phones-list-of-tested-phones",
+      "source_hash": "bdb2f269504ec929",
+      "summary": "The shared spreadsheet of tested hardware setups and the form to add one.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "I didn't find my phone",
+      "anchor": "i-didn-t-find-my-phone",
+      "source_hash": "061f0cf8270a5174",
+      "summary": "Where to ask about a phone model, and how to donate devices for testing.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Phone wallpaper",
+      "anchor": "Phones-phone-wallpaper",
+      "source_hash": "50b8176f93f50a17",
+      "summary": "Link to an AAPS background image.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

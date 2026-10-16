@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/NavigateDoc/SearchDoc.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "How to use the search box of the documentation website and get better results. About the docs site, not the app.",
+  "features": [
+    "Documentation navigation"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Search the documentation",
+      "anchor": "search-the-documentation",
+      "source_hash": "6d7b6fcd4c9d9c20",
+      "summary": "Why searching is often faster than browsing the menu.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to search",
+      "anchor": "how-to-search",
+      "source_hash": "533d4c53ee88e378",
+      "summary": "Where the search box is (left navigation panel, behind the ☰ icon on phones) and how to run a search and open a result.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Tips for better results",
+      "anchor": "tips-for-better-results",
+      "source_hash": "e7bedf8275a510e1",
+      "summary": "Advice on keywords; search covers only the current language and version of the docs. The code-formatted examples are search terms the reader types.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

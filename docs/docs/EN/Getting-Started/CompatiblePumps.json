@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Getting-Started/CompatiblePumps.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Lists the insulin pumps AAPS supports, each linked to its own page, and says whether it talks to the phone over Bluetooth or needs a RileyLink-type radio bridge. Pump model names are product names.",
+  "features": [
+    "Pump selection"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Compatible Pumps",
+      "anchor": "compatible-pumps",
+      "source_hash": "01c0c5f9e3fe0a03",
+      "summary": "The list of supported pumps, with the connection type for each.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "My pump is not listed",
+      "anchor": "my-pump-is-not-listed",
+      "source_hash": "c3ab1bc9a8d60030",
+      "summary": "Points to the page on pumps that may be supported in the future.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Additional communication device",
+      "anchor": "CompatiblePumps-additional-communication-device",
+      "source_hash": "1db7710d9e11b3f5",
+      "summary": "Why old Medtronic pumps and Omnipod Eros need a bridge device (OrangeLink, RileyLink, EmaLink, DiaLink, LoopLink) on the pump's radio frequency.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

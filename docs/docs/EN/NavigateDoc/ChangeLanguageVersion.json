@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/NavigateDoc/ChangeLanguageVersion.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "How to switch the documentation website to another language or to the manual for another AAPS version, using the selector at the bottom right of the website. About the docs site, not the app.",
+  "features": [
+    "Documentation navigation"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Change language and version",
+      "anchor": "change-language-and-version",
+      "source_hash": "68c973dd6eeaf098",
+      "summary": "Introduces the language and version menu at the bottom right of the documentation website.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Change language",
+      "anchor": "change-language",
+      "source_hash": "5eb651bc74abc6f5",
+      "summary": "Picking a documentation language in that menu; invites readers to translate on Crowdin.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Change version",
+      "anchor": "change-version",
+      "source_hash": "93325dc018185f2f",
+      "summary": "Switching to the manual for another AAPS version, and why that can lead to a 404 page.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

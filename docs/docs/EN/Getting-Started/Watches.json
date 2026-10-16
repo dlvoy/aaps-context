@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Getting-Started/Watches.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Helps the reader choose a smartwatch for AAPS: the ways a watch can be used (standalone full Android, Wear OS remote control, AAPSClient remote, Garmin, display only), what to check before buying, and brand-by-brand notes (Wear OS, Samsung Tizen, Garmin, Fitbit, Xiaomi/Amazfit, Pebble, Bluejay, Apple). Watch setup itself is on the Wear OS pages; the only in-app settings named are cards in Configuration > Communication.",
+  "features": [
+    "Smartwatches",
+    "Remote control"
+  ],
+  "screens": [
+    {
+      "ui_location": "Configuration > Communication",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_sync"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Smartwatches and AAPS",
+      "anchor": "smartwatches-and-aaps",
+      "source_hash": "6e07fcc6f65dd37a",
+      "summary": "Introduction: watches can display AAPS data, send treatments, or run AAPS standalone.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "General advantages of using smartwatches with **AAPS**",
+      "anchor": "general-advantages-of-using-smartwatches-with-aaps",
+      "source_hash": "06839e27444c2823",
+      "summary": "Why a watch helps: checking or controlling AAPS while driving, exercising or discreetly.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Specific advantages for parents/carers using **AAPS**",
+      "anchor": "specific-advantages-for-parents-carers-using-aaps",
+      "source_hash": "808e320def28a525",
+      "summary": "How carers can use a watch near a child's AAPS phone, including over Bluetooth where there is no network.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Different types of Smartwatch-AAPS interactions",
+      "anchor": "different-types-of-smartwatch-aaps-interactions",
+      "source_hash": "fc164b7dd63a9f7b",
+      "summary": "Table of the five watch setups, their features and which apk build each needs (app-fullRelease, wear-fullRelease, wear-aapsclientRelease are build names).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Before you buy a smartwatch…",
+      "anchor": "before-you-buy-a-smartwatch",
+      "source_hash": "7a5975c635e873d7",
+      "summary": "Advice on choosing a model and checking phone compatibility; search the community groups.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Full Android",
+      "anchor": "full-android",
+      "source_hash": "3f3e2b8c4d6cb3bf",
+      "summary": "Running the full AAPS apk on a standalone Android watch: requirements and practical drawbacks.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Wear OS",
+      "anchor": "wear-os",
+      "source_hash": "ada3b9c5b53b4a39",
+      "summary": "The AAPS Wear OS app extension, enabled in Configuration > Communication (shown in a screenshot).",
+      "dialogs": [
+        "Configuration > Communication"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "What _is_ Wear OS?",
+      "anchor": "what-_is_-wear-os",
+      "source_hash": "4e850ff381973608",
+      "summary": "What Wear OS is, the minimum version needed (Android 12, API 31), AAPS watchfaces and complications, and the warning that newer Wear OS breaks custom watchfaces.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What could my smartwatch look like?",
+      "anchor": "what-could-my-smartwatch-look-like",
+      "source_hash": "7ef9923c7b91fae1",
+      "summary": "Picking one of the AAPS watchfaces on the watch after installing.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How would I operate a Wear OS watch from day-to-day?",
+      "anchor": "how-would-i-operate-a-wear-os-watch-from-day-to-day",
+      "source_hash": "4efef47ec93746e2",
+      "summary": "Pointer to the Wear OS operation pages.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Samsung Tizen",
+      "anchor": "Watchfaces-tizen",
+      "source_hash": "762a23f1b580adc4",
+      "summary": "Sending data to the unmaintained G-Watch app by enabling External Companion Apps in Configuration > Communication; not recommended for new setups.",
+      "dialogs": [
+        "Configuration > Communication"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "tizen",
+          "as_written": "External Companion Apps",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Garmin",
+      "anchor": "Watchfaces-garmin",
+      "source_hash": "ae7d0c74a800323b",
+      "summary": "Garmin watch faces from ConnectIQ, the AAPS Glucose Watch face and what it shows; the Garmin card in Configuration > Communication is shown in a screenshot.",
+      "dialogs": [
+        "Configuration > Communication"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.7
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "garmin",
+          "as_written": "Garmin",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Fitbit",
+      "anchor": "fitbit",
+      "source_hash": "9fde4486a4d52f13",
+      "summary": "Fitbit watchfaces are no longer recommended; monitoring-only options for existing watches.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Following only",
+      "anchor": "following-only",
+      "source_hash": "1573766325ef388d",
+      "summary": "Overview of display-only watches.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Xiaomi and Amazfit watches",
+      "anchor": "xiaomi-and-amazfit-watches",
+      "source_hash": "352f7a04b3add0a9",
+      "summary": "WatchDrip+ for Xiaomi and Amazfit watches.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pebble watch",
+      "anchor": "pebble-watch",
+      "source_hash": "e9c154b04bc01dae",
+      "summary": "Discontinued Pebble watches with the Urchin watchface; IFTTT notifications.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "[Bluejay watches](https://bluejay.website/)",
+      "anchor": "bluejay-watches-https-bluejay-website",
+      "source_hash": "95c7d359e190a268",
+      "summary": "Bluejay watches that read the Dexcom transmitter directly, independent of the phone.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Apple watch",
+      "anchor": "apple-watch",
+      "source_hash": "8f4ab757e97e583b",
+      "summary": "Apple watch with Nightscout or G7 direct connection alongside AAPS.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

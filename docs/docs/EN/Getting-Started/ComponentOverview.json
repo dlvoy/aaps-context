@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Getting-Started/ComponentOverview.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Describes the parts of a working AAPS system before the reader buys or builds anything: the required ones (correct therapy settings, phone, pump, CGM, the self-built app, a reporting server) and the optional ones (smartwatch, xDrip). Includes a pump comparison and what to do while waiting for hardware.",
+  "features": [
+    "System components"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Component Overview",
+      "anchor": "component-overview",
+      "source_hash": "55aa14fecdaf59db",
+      "summary": "Introduction and safety notice: only approved pumps, CGMs and supplies; no SGLT-2 inhibitors.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Necessary Modules",
+      "anchor": "necessary-modules",
+      "source_hash": "7249f11e45c6228c",
+      "summary": "Heading for the required components.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Good individual dosage algorithm for your diabetes therapy",
+      "anchor": "good-individual-dosage-algorithm-for-your-diabetes-therapy",
+      "source_hash": "5e4bdad51595a079",
+      "summary": "Checking the Profile (basal rates, ISF, carb ratio) with the diabetes team, and choosing the insulin type in the Configuration screen.",
+      "dialogs": [
+        "Configuration > Insulin"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_insulin",
+          "as_written": "Config Builder > Insulin",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Phone",
+      "anchor": "phone",
+      "source_hash": "450ada895a5a28e0",
+      "summary": "Pointer to the Phones page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Insulin pump",
+      "anchor": "insulin-pump",
+      "source_hash": "fc3ef1e7c31b1bd6",
+      "summary": "Pointer to the compatible pumps list, then the pros and cons of Combo, Insight, Medtronic and Dana pumps for looping.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "BG Source",
+      "anchor": "bg-source",
+      "source_hash": "9bcbaec85c7af181",
+      "summary": "Pointer to the compatible CGMs page.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_bgsource",
+          "as_written": "BG Source",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "**AAPS**-.apk file",
+      "anchor": "aaps-apk-file",
+      "source_hash": "88d6ae5469e08afe",
+      "summary": "The app itself, which the reader builds from source.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Reporting server",
+      "anchor": "reporting-server",
+      "source_hash": "2d1913f1b5660c41",
+      "summary": "What Nightscout and Tidepool are for, and why one is needed for Objective 1.",
+      "dialogs": [
+        "Objectives"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "tir",
+          "as_written": "time in range",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Optional Modules",
+      "anchor": "optional-modules",
+      "source_hash": "979231e239eae5ec",
+      "summary": "Heading for the optional components.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Smartwatch",
+      "anchor": "smartwatch",
+      "source_hash": "facb8f50231db2bc",
+      "summary": "Which Wear OS versions work and where to find watchfaces.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "xDrip",
+      "anchor": "xdrip",
+      "source_hash": "2a9127c7e3ccbda6",
+      "summary": "Using xDrip for alarms or display even when it is not the BG source.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_bgsource",
+          "as_written": "BG Source",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "What to do while waiting for modules",
+      "anchor": "what-to-do-while-waiting-for-modules",
+      "source_hash": "e08e0511564ac6b4",
+      "summary": "Checking therapy settings, trying open loop, reading; then reading the Objectives before starting. 'Done?' is a docs subheading.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

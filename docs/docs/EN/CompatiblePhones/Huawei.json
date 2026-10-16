@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatiblePhones/Huawei.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Configuring a Huawei phone (EMUI 12 to 15) so Android does not stop AAPS and the CGM app in the background. Every step happens in the phone's own Settings app (battery optimization, App launch, recent apps lock, power saving); the bold labels are EMUI menu names, not AAPS labels.",
+  "features": [
+    "Phone setup",
+    "Background restrictions"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "How to configure a Huawei phone",
+      "anchor": "how-to-configure-a-huawei-phone",
+      "source_hash": "5bbac8aefe25193d",
+      "summary": "Which Huawei phones and EMUI versions the page covers, that HarmonyOS NEXT cannot run AAPS, and why the background settings below matter. All bold labels here are Android or EMUI system settings, not AAPS strings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Ignore battery optimization",
+      "anchor": "ignore-battery-optimization",
+      "source_hash": "7eda22a2ff47c610",
+      "summary": "In the phone's Settings, excluding AAPS and the CGM app from battery optimization. All bold labels here are Android or EMUI system settings, not AAPS strings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "App launch: allow running in the background",
+      "anchor": "app-launch-allow-running-in-the-background",
+      "source_hash": "c429c92741eb0254",
+      "summary": "In the phone's battery settings, switching AAPS and the CGM app to manual App launch management with auto-launch, secondary launch and background running allowed. All bold labels here are Android or EMUI system settings, not AAPS strings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Lock AAPS in the recent apps",
+      "anchor": "lock-aaps-in-the-recent-apps",
+      "source_hash": "54d84aa22575dd6d",
+      "summary": "Locking the AAPS card in the phone's recent apps list so it is not closed.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Power saving mode",
+      "anchor": "power-saving-mode",
+      "source_hash": "baa3cf0408f3d800",
+      "summary": "Keeping the phone's power saving modes off. All bold labels here are Android or EMUI system settings, not AAPS strings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "If AAPS still stops in the background",
+      "anchor": "if-aaps-still-stops-in-the-background",
+      "source_hash": "f0ff27a68ae5186d",
+      "summary": "Link to dontkillmyapp.com for more Huawei fixes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Honor phones",
+      "anchor": "honor-phones",
+      "source_hash": "62ad3812a8039d9f",
+      "summary": "Honor phones (MagicOS) need the same App launch and battery optimization changes. All bold labels here are Android or EMUI system settings, not AAPS strings.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

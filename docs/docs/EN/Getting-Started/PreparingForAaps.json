@@ -1,0 +1,395 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Getting-Started/PreparingForAaps.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Prepares a new user before building AAPS: how the manual is organised, technical and medical safety (Objectives, slow HbA1c reduction, no SGLT-2 inhibitors), what will be built and installed, a realistic timeline including each Objective, and medical and technical requirements (insulin types, build methods, phone choice). Objective names in the timeline table are the app's Objective titles, often shortened.",
+  "features": [
+    "Getting started",
+    "Objectives",
+    "Safety"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Objectives",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "objectives"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Preparing to start with AAPS",
+      "anchor": "preparing-to-start-with-aaps",
+      "source_hash": "8c9d5d7ce9be768a",
+      "summary": "Welcome line for new users.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Finding your way around the documentation",
+      "anchor": "finding-your-way-around-the-documentation",
+      "source_hash": "7f38aa34f7578ea4",
+      "summary": "How to navigate the docs website (index, left menu, search) and why some details only make sense once AAPS is in use.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Safety First",
+      "anchor": "preparing-safety-first",
+      "source_hash": "03139d0726cd8155",
+      "summary": "Heading for the safety sections.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Technical safety",
+      "anchor": "technical-safety",
+      "source_hash": "bf3736b460cc139b",
+      "summary": "AAPS unlocks features step by step through the Objectives, moving from open loop to closed loop.",
+      "dialogs": [
+        "Objectives"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "objectives",
+          "as_written": "Objectives",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "openloop",
+          "as_written": "Open Loop",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "closedloop",
+          "as_written": "Closed Loop",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Medical safety",
+      "anchor": "medical-safety",
+      "source_hash": "434b4204d1448d23",
+      "summary": "Warning that lowering HbA1c too fast can damage eyes and nerves; start with higher targets in AAPS and lower them over months.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How quickly can I reduce my HbA1c without risking permanent damage?",
+      "anchor": "how-quickly-can-i-reduce-my-hba1c-without-risking-permanent-damage",
+      "source_hash": "6e47d76ccb56c6f9",
+      "summary": "Study results on safe rates of HbA1c reduction. Medical content, no app labels.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "No SGLT-2 inhibitors",
+      "anchor": "PreparingForAaps-no-sglt-2-inhibitors",
+      "source_hash": "8b07852cdc117944",
+      "summary": "Why gliflozins must not be taken with AAPS, with hypo and ketoacidosis examples.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Key principles of looping with AAPS",
+      "anchor": "key-principles-of-looping-with-aaps",
+      "source_hash": "c7fd548fd2e2c3d6",
+      "summary": "Learning through the docs and the Objectives (6 to 9 weeks), using the virtual pump early on; later Objectives add SMS commands and automations.",
+      "dialogs": [
+        "Objectives"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "virtual_pump",
+          "as_written": "virtual pump",
+          "confidence": 0.7
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "smscommunicator",
+          "as_written": "SMS commands",
+          "confidence": 0.5
+        },
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "automations",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Plan for delays and minor issues in getting everything set up and running",
+      "anchor": "plan-for-delays-and-minor-issues-in-getting-everything-set-up-and-running",
+      "source_hash": "b85ce269b535bea4",
+      "summary": "Expect setup glitches and plan troubleshooting for quiet times.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Technology compatibility",
+      "anchor": "technology-compatibility",
+      "source_hash": "180e907c681b29e5",
+      "summary": "Check the CGM, pump and phone compatibility pages first.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "App build time and progressing to full looping",
+      "anchor": "app-build-time-and-progressing-to-full-looping",
+      "source_hash": "83980b239268b625",
+      "summary": "How long building takes and which pages help (build guide, FAQ, troubleshooting).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Keystore & configuration settings export file",
+      "anchor": "keystore-configuration-settings-export-file",
+      "source_hash": "23edc3b64c98a8f8",
+      "summary": "Keeping the signing keystore and its password safe for every update, and exporting AAPS settings for recovery.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Troubleshooting",
+      "anchor": "troubleshooting",
+      "source_hash": "723f993b271462d7",
+      "summary": "Encourages asking the community.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "[ask on the AAPS Facebook group](https://www.facebook.com/groups/AndroidAPSUsers/)",
+      "anchor": "ask-on-the-aaps-facebook-group-https-www-facebook-com-groups-androidapsusers",
+      "source_hash": "a37269d957feb5bb",
+      "summary": "Link to the Facebook group.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "[ask on the AAPS Discord channel](https://discord.gg/4fQUWHZ4Mw)",
+      "anchor": "ask-on-the-aaps-discord-channel-https-discord-gg-4fquwhz4mw",
+      "source_hash": "ccb301d27bcde8a3",
+      "summary": "Link to the Discord server.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "[Where to go for help](../UsefulLinks/BackgroundReading.md)?",
+      "anchor": "where-to-go-for-help-usefullinks-backgroundreading-md",
+      "source_hash": "5f5fe1d77da97a54",
+      "summary": "Link to the help resources page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "[Section For Clinicians](../UsefulLinks/ClinicianGuideToAaps.md)",
+      "anchor": "section-for-clinicians-usefullinks-clinicianguidetoaaps-md",
+      "source_hash": "2d0e986d0833e461",
+      "summary": "Link to the clinicians' section.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What are we going to build and install?",
+      "anchor": "what-are-we-going-to-build-and-install",
+      "source_hash": "4782eed3b8cf410f",
+      "summary": "Diagram of the system: phone, pump and sensor plus the AAPS app, a reporting server and a CGM app.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "1) An Android Phone Application: **AAPS**",
+      "anchor": "1-an-android-phone-application-aaps",
+      "source_hash": "033df5c59e96fb6a",
+      "summary": "The reader builds the AAPS apk from source and installs it on the phone.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "2) A reporting server: Nightscout (Tidepool*)",
+      "anchor": "2-a-reporting-server-nightscout-tidepool",
+      "source_hash": "5f0d95b94b09904e",
+      "summary": "Why a Nightscout (or Tidepool) server is needed for reports and remote follow-up.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "3) CGM sensor app",
+      "anchor": "3-cgm-sensor-app",
+      "source_hash": "d7c8d42956936296",
+      "summary": "A CGM app is needed to feed glucose readings to AAPS; options in a diagram.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Maintenance of the **AAPS** system",
+      "anchor": "maintenance-of-the-aaps-system",
+      "source_hash": "3a87659de7f3f404",
+      "summary": "Nightscout and AAPS need updating about once a year.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How long will it take to set everything up?",
+      "anchor": "preparing-how-long-will-it-take",
+      "source_hash": "74b502e5b3ac87d0",
+      "summary": "Overall 4 to 6 months; a table of setup tasks and the minimum time of each Objective. The task column gives Objective titles, mostly shortened.",
+      "dialogs": [
+        "Objectives"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "virtual_pump",
+          "as_written": "virtual pump",
+          "confidence": 0.7
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/objectives.xml",
+          "key": "objectives_0_objective",
+          "as_written": "Setting up visualization and monitoring",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/objectives.xml",
+          "key": "objectives_usage_objective",
+          "as_written": "Learn how to control AAPS",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/objectives.xml",
+          "key": "objectives_exam_objective",
+          "as_written": "Prove your knowledge",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/objectives.xml",
+          "key": "objectives_openloop_objective",
+          "as_written": "Starting on an open loop",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/objectives.xml",
+          "key": "objectives_maxbasal_objective",
+          "as_written": "Understanding your open loop",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/objectives.xml",
+          "key": "objectives_maxiobzero_objective",
+          "as_written": "Starting to close the loop (Low Glucose Suspend)",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/objectives.xml",
+          "key": "objectives_maxiob_objective",
+          "as_written": "Tuning the closed loop",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/objectives.xml",
+          "key": "objectives_autosens_objective",
+          "as_written": "Adjust basals and ratios, enable Autosens",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/objectives.xml",
+          "key": "objectives_smb_objective",
+          "as_written": "Enabling Super Micro Bolus (SMB)",
+          "confidence": 0.5
+        },
+        {
+          "file": "plugins/constraints/src/androidMain/res/values/objectives.xml",
+          "key": "objectives_auto_objective",
+          "as_written": "Automation",
+          "confidence": 0.5
+        },
+        {
+          "file": "plugins/aps/src/androidMain/res/values/strings.xml",
+          "key": "openaps_smb_dynamic_isf",
+          "as_written": "Dynamic ISF",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Requirements",
+      "anchor": "requirements",
+      "source_hash": "98c33b0a0714844b",
+      "summary": "Heading for medical and technical requirements.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Medical considerations",
+      "anchor": "medical-considerations",
+      "source_hash": "74dc01732c140606",
+      "summary": "Some settings depend on the insulin used.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Insulin choice",
+      "anchor": "insulin-choice",
+      "source_hash": "60391636eedcba30",
+      "summary": "AAPS assumes U100 insulin; lists the insulin presets the app offers.",
+      "dialogs": [
+        "Configuration > Insulin"
+      ],
+      "mentions": [
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "lyumjev",
+          "as_written": "Lyumjev",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/interfaces/src/androidMain/res/values/strings.xml",
+          "key": "free_peak_oref",
+          "as_written": "Free-Peak Oref",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Technical",
+      "anchor": "technical",
+      "source_hash": "58cc949fcc76fca1",
+      "summary": "The three ways to build AAPS (browser, Android Studio, command line) and what else must be set up.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Smartphones",
+      "anchor": "smartphones",
+      "source_hash": "d431096707054092",
+      "summary": "Heading for phone requirements.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "AAPS and Android Versions",
+      "anchor": "aaps-and-android-versions",
+      "source_hash": "9cb808a0fe75beee",
+      "summary": "AAPS 4.0 needs Android 12 or newer; older AAPS versions for older phones.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Smartphone model choice",
+      "anchor": "smartphone-model-choice",
+      "source_hash": "663229965dba517f",
+      "summary": "Choosing a phone, delaying Android updates, stopping forced Samsung updates, Google Play Protect, and Android developer verification. Bold labels are Android settings.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "Insulin choice: The page lists presets 'Rapid-Acting Oref' and 'Ultra-Rapid ORef'; the app now labels them 'Novorapid' (rapid_acting_oref) and 'Fiasp' (ultra_rapid_oref), so they were left out."
+}

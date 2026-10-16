@@ -1,0 +1,383 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Getting-Started/Introduction.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Background reading before using AAPS: what an artificial pancreas and hybrid closed loop are, where AAPS comes from, its components and advantages, comparisons with other systems, safety, how to talk to the clinical team, why the app must be self-built, how it connects and is developed, and accessibility for blind users. Mostly concepts; few app labels.",
+  "features": [
+    "Introduction"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Introduction to APS and AAPS",
+      "anchor": "introduction-to-aps-and-aaps",
+      "source_hash": "9bf31ac5167830d0",
+      "summary": "The page title and its table of contents.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What is an “Artificial Pancreas System”?",
+      "anchor": "what-is-an-artificial-pancreas-system",
+      "source_hash": "041b941574141b42",
+      "summary": "Explains what an artificial pancreas system is (sensor, algorithm, pump, alarms) and the autopilot comparison. General diabetes concepts, not app labels.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What does hybrid closed loop mean?",
+      "anchor": "Introduction-what-does-hybrid-closed-loop-mean",
+      "source_hash": "26d343611ba1c1f4",
+      "summary": "What hybrid closed loop means compared with a full closed loop.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How and why did looping start?",
+      "anchor": "how-and-why-did-looping-start",
+      "source_hash": "ede0a3ec86bf31d8",
+      "summary": "History of the #WeAreNotWaiting movement and OS-AID systems; reading suggestions.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What is Android APS (AAPS)?",
+      "anchor": "what-is-android-aps-aaps",
+      "source_hash": "a5b4c5c7caf0b114",
+      "summary": "What AAPS is: a hybrid closed loop app based on OpenAPS algorithms, and its history.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What are the basic components of AAPS?",
+      "anchor": "what-are-the-basic-components-of-aaps",
+      "source_hash": "ca7cd3f4e9144da4",
+      "summary": "The parts of the system: the self-built app on an Android phone, a CGM app, the pump, the oref0/oref1 algorithm and a reporting server.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What are the advantages of the AAPS system?",
+      "anchor": "what-are-the-advantages-of-the-aaps-system",
+      "source_hash": "d99deadf96db8343",
+      "summary": "Overall benefits of AAPS, including automations and fine-tuning.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "Automations",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Specific advantages include:",
+      "anchor": "specific-advantages-include",
+      "source_hash": "36cb739b96849351",
+      "summary": "Heading for the list of specific advantages.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "1) Safety built-in",
+      "anchor": "1-safety-built-in",
+      "source_hash": "36042462a99b664b",
+      "summary": "Safety features of the oref algorithms; the user sets the limits.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "2) Hardware flexibility",
+      "anchor": "2-hardware-flexibility",
+      "source_hash": "9cdd5fb78f112b89",
+      "summary": "AAPS works with many pumps and sensors, switched in the app, and has a virtual pump for trying it out.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "virtual_pump",
+          "as_written": "virtual pump",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "3) Highly customisable, with wide parameters",
+      "anchor": "3-highly-customisable-with-wide-parameters",
+      "source_hash": "8c8245e7b1332832",
+      "summary": "Examples of what can be customised: lower targets before meals, automation rules switching profile percentage, suspending insulin, SMB and UAM limited to daytime.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "plugins/automation/src/androidMain/res/values/strings.xml",
+          "key": "automation",
+          "as_written": "automation",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "profile",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "smb_shortname",
+          "as_written": "SMB",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "4) Remote monitoring",
+      "anchor": "4-remote-monitoring",
+      "source_hash": "b6f1fddf264e0538",
+      "summary": "Monitoring apps for followers (Sugarmate, Dexcom Follow, xDrip, Android Auto).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "5) Remote control",
+      "anchor": "5-remote-control",
+      "source_hash": "66e896bd99350e09",
+      "summary": "Followers can send commands by SMS or from Nightscout or AAPSClient, and from some watches.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "6) No commercial constraints, due to open application interfaces",
+      "anchor": "6-no-commercial-constraints-due-to-open-application-interfaces",
+      "source_hash": "750e1b8c8f6ea6ce",
+      "summary": "Open source code and interfaces; close integration with Nightscout.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "7) Detailed app interface",
+      "anchor": "7-detailed-app-interface",
+      "source_hash": "47fce76e0aa1032e",
+      "summary": "What the app lets the user track (reservoir, cannula and sensor age, IOB) and do (prime, disconnect) without touching the pump.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "8) Accessibility and affordability",
+      "anchor": "8-accessibility-and-affordability",
+      "source_hash": "f26179cf44bcfb90",
+      "summary": "AAPS is free; a Nightscout account is needed for setup.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "9) Support",
+      "anchor": "9-support",
+      "source_hash": "1d9eee14f66ab4ff",
+      "summary": "Community support on Facebook, Discord and GitHub.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "10) Predictability, transparency and safety",
+      "anchor": "10-predictability-transparency-and-safety",
+      "source_hash": "41d9293682545f5e",
+      "summary": "AAPS shows what it does and why, so settings are easier to check.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "11) Access to advanced features through development (dev) modes including full closed loop",
+      "anchor": "11-access-to-advanced-features-through-development-dev-modes-including-full-closed-loop",
+      "source_hash": "36e7f403990b11ac",
+      "summary": "The master and development branches; dev modes for full closed loop.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "12) Ability to contribute yourself to further improvements",
+      "anchor": "12-ability-to-contribute-yourself-to-further-improvements",
+      "source_hash": "c958ddc0269ddfa6",
+      "summary": "Users can help others and contribute to the project.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How does AAPS compare to MDI and open looping?",
+      "anchor": "how-does-aaps-compare-to-mdi-and-open-looping",
+      "source_hash": "5f8d1d7738747cdc",
+      "summary": "Compares injections (MDI), open pumping and hybrid closed loop, with a figure.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How does AAPS compare to other looping systems?",
+      "anchor": "how-does-aaps-compare-to-other-looping-systems",
+      "source_hash": "bbc0f4d8afcf3d48",
+      "summary": "Feature table comparing AAPS, Loop, OpenAPS and Trio, with notes and a consensus paper.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Does AAPS use artificial intelligence or any learning algorithm?",
+      "anchor": "does-aaps-use-artificial-intelligence-or-any-learning-algorithm",
+      "source_hash": "ea17e1d8c2cbfef5",
+      "summary": "AAPS 4.0 has no machine learning; why that matters.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Which system is right for me or someone I am caring for?",
+      "anchor": "which-system-is-right-for-me-or-my-dependent",
+      "source_hash": "df45a038d2b37f82",
+      "summary": "How pump and phone limit the choice of system, and the responsibility AAPS users take on.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Is it safe to use open-source systems like AAPS?",
+      "anchor": "is-it-safe-to-use-open-source-systems-like-aaps",
+      "source_hash": "b2bf8645a4204d2e",
+      "summary": "Heading for safety questions.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Safety of the AAPS system",
+      "anchor": "safety-of-the-aaps-system",
+      "source_hash": "2d4538e677f045b9",
+      "summary": "Safety evidence for AAPS and ways to reduce hacking risk (pump limits, CGM alarms, Nightscout monitoring).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Safety considerations around improving blood glucose control too fast",
+      "anchor": "safety-considerations-around-improving-blood-glucose-control-too-fast",
+      "source_hash": "6f5ac483db673131",
+      "summary": "Lowering HbA1c too fast can cause eye and nerve damage.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Medical safety around devices, consumable supplies and other medications",
+      "anchor": "medical-safety-around-devices-consumable-supplies-and-other-medications",
+      "source_hash": "5faf8d539279db9e",
+      "summary": "Only approved pumps, CGMs and supplies; no SGLT-2 inhibitors.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How can I approach discussing AAPS with my clinical team?",
+      "anchor": "introduction-how-can-i-approach-discussing-aaps-with-my-clinical-team",
+      "source_hash": "82c99a35b41f7f1f",
+      "summary": "Encourages an open conversation with the diabetes team.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Suggested approach:",
+      "anchor": "suggested-approach",
+      "source_hash": "4a66e6b2c2eb7783",
+      "summary": "How to start that conversation.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Local precedent",
+      "anchor": "local-precedent",
+      "source_hash": "c93525d30a53b7d3",
+      "summary": "Finding out the clinic's experience with OS-AID and other patients.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "National and International Precedent",
+      "anchor": "national-and-international-precedent",
+      "source_hash": "64275a49f1d186ec",
+      "summary": "Arguments to present if the clinic is not supportive, including the gradual Objectives programme.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Support for OS-AID looping by other clinicians",
+      "anchor": "support-for-os-aid-looping-by-other-clinicians",
+      "source_hash": "d142d69be20bebeb",
+      "summary": "What the Lancet consensus paper and other publications say to clinicians.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "The articles referenced above, and other useful links and position statements are listed below:",
+      "anchor": "the-articles-referenced-above-and-other-useful-links-and-position-statements-are-listed-below",
+      "source_hash": "7b3a9adc13455f2b",
+      "summary": "Numbered list of the referenced articles and position statements.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Why can’t I just download AAPS and use it straight away?",
+      "anchor": "why-can-t-i-just-download-aaps-and-use-it-straight-away",
+      "source_hash": "905c1805dc2404be",
+      "summary": "Why AAPS must be self-built, and what every user must do: work through the Objectives, back up keystore and settings, update, monitor.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "objectives",
+          "as_written": "objectives",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "What is the connectivity of the AAPS system?",
+      "anchor": "what-is-the-connectivity-of-the-aaps-system",
+      "source_hash": "27d02de454c532bd",
+      "summary": "Diagrams of the system's connections with and without followers.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How does AAPS get continually developed and improved?",
+      "anchor": "how-does-aaps-get-continually-developed-and-improved",
+      "source_hash": "7ceab8cf2c1aecc2",
+      "summary": "Master versus dev versions and community experiments.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Who can benefit from AAPS?",
+      "anchor": "who-can-benefit-from-aaps",
+      "source_hash": "651b9ca377fc3609",
+      "summary": "Who can use AAPS (people with T1D, carers, blind users, clinicians via data sharing).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Accessibility for AAPS users who are partially or completely blind",
+      "anchor": "accessibility-for-users-aaps-who-are-partially-or-completely-blind",
+      "source_hash": "26debe3b6e53ffdb",
+      "summary": "Heading for accessibility for blind users.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Day to day AAPS use:",
+      "anchor": "day-to-day-aaps-use",
+      "source_hash": "058c89cd55f8e7c8",
+      "summary": "Using AAPS with Android's TalkBack screen reader.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Building the AAPS app:",
+      "anchor": "building-the-aaps-app",
+      "source_hash": "711b7abffbed0748",
+      "summary": "Enabling a screen reader for Android Studio on Windows (Narrator, Java Access Bridge). Bold labels are Windows settings.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

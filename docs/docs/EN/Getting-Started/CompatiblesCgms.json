@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/Getting-Started/CompatiblesCgms.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Overview of the CGMs that work with AAPS: links to setup pages, a table of which BG source app to use for each sensor, and which sources count as trusted (allowing SMB at all times). Bold terms in the trusted-source table are settings of the CGM apps (xDrip, Juggluco), not AAPS labels.",
+  "features": [
+    "BG source"
+  ],
+  "screens": [
+    {
+      "ui_location": "Configuration > BG Source",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_bgsource"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Compatible CGMs",
+      "anchor": "compatible-cgms",
+      "source_hash": "a51b1c131130fc2b",
+      "summary": "Links to CGM setup pages and a table mapping each sensor to the apps that can feed it to AAPS as BG source; warns against using Nightscout as BG source.",
+      "dialogs": [
+        "Configuration > BG Source"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_bgsource",
+          "as_written": "BG Sources",
+          "confidence": 0.6
+        },
+        {
+          "file": "plugins/source/src/androidMain/res/values/strings.xml",
+          "key": "dexcom_app_patched",
+          "as_written": "BYODA",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Trusted BG data sources",
+      "anchor": "GettingStarted-TrustedBGSource",
+      "source_hash": "bb84d3825464bd8e",
+      "summary": "Which sensor and app combinations AAPS treats as trusted, so SMB is always allowed. Terms like 'Direct, Native', 'xDrip broadcast', 'Patched Libre' and 'no calibration' are xDrip or Juggluco settings.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "smb_shortname",
+          "as_written": "SMB",
+          "confidence": 0.6
+        }
+      ]
+    }
+  ],
+  "manual_note": null
+}

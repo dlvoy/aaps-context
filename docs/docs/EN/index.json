@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/index.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "The manual's home page. It introduces AAPS (an open-source artificial pancreas app for Android), lists the devices needed, gives a short tour of the twelve parts of the documentation with links, and ends with safety notices, a disclaimer and the full table of contents. The reader does nothing in the app here.",
+  "features": [
+    "Documentation overview"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Welcome to the AAPS documentation",
+      "anchor": "welcome-to-the-aaps-documentation",
+      "source_hash": "1e6abf1354a4e5ac",
+      "summary": "Title, latest-release notice and a one-paragraph introduction to AAPS and the devices it needs; points to the menu, the docs search and the index for navigation.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Overview of the AAPS documentation (\"The docs\")",
+      "anchor": "overview-of-the-aaps-documentation-the-docs",
+      "source_hash": "c0077dc63ddca3f2",
+      "summary": "Walks through each numbered part of the manual (getting started, building, reporting server, configuring, daily use, remote features, watches, maintenance, help, advanced options, supporting, resources) with what each covers. Names the setup wizard, the Objectives and the open and closed loop modes.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_setupwizard",
+          "as_written": "setup Wizard",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "objectives",
+          "as_written": "Objectives",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "openloop",
+          "as_written": "Open Loop",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "closedloop",
+          "as_written": "Closed Loop",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Interested in getting started with **AAPS**? Read more about **AAPS** in the [Introduction](Getting-Started/Introduction.md).",
+      "anchor": "interested-in-getting-started-with-aaps-read-more-about-aaps-in-the-introduction-getting-started-introduction-md",
+      "source_hash": "7c468a55c106a1e1",
+      "summary": "Pointer to the Introduction, followed by the safety notice (approved hardware and supplies only, no SGLT-2 inhibitors) and the legal disclaimer listing manufacturers AAPS is not affiliated with.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "AAPS Documentation Index",
+      "anchor": "index-aaps-documentation-index",
+      "source_hash": "048ae61f87c63bca",
+      "summary": "The table of contents: toctree captions and page titles for every part of the manual. Each entry is a page title.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}
