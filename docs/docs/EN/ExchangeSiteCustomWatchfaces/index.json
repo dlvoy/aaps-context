@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/ExchangeSiteCustomWatchfaces/index.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "A download gallery of custom watchface zip files shared by users, with how to contribute one through a GitHub pull request. The watchface names in the table are file names chosen by their authors, not app labels.",
+  "features": [
+    "Wear OS",
+    "Custom watchfaces"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Exchange site for custom watchfaces",
+      "anchor": "exchange-site-for-custom-watchfaces",
+      "source_hash": "6181c7b868793b56",
+      "summary": "The reader downloads shared custom watchface zips from the table or contributes their own via a pull request; the footnote marks watchfaces that need Custom Watchface V2 (AAPS 3.3.0 or later).",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

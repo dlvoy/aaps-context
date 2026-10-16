@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/WearOS/BuildingAapsWearOS.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Explains how to build the separate AAPS Wear OS apk for the smartwatch in Android Studio, alongside the phone apk and with the same keystore. It names the minimum Wear OS version, the build module and variant to pick, and how to clear a common build error. No app screens are involved; the labels are Android Studio's.",
+  "features": [
+    "Wear OS",
+    "Building the app"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Building the Wear AAPS app",
+      "anchor": "building-the-wear-aaps-app",
+      "source_hash": "b719617b8eb01944",
+      "summary": "Introduction: the watch app is a second apk that must be built together with the phone apk, from the same version and with the same keystore file.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Supported Wear OS versions",
+      "anchor": "supported-wear-os-versions",
+      "source_hash": "0725f6f3db306944",
+      "summary": "Minimum Wear OS level (API 31, Android 12) and a warning that AAPS watchfaces only fully work up to API 33.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Building the **AAPS** Wear apk",
+      "anchor": "building-the-aaps-wear-apk",
+      "source_hash": "3042cba8676d8f25",
+      "summary": "In Android Studio's signed-apk wizard the reader selects the AndroidAPS.wear module and the fullRelease (or pumpcontrolRelease) build variant. These are Android Studio names, not app labels.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Troubleshooting",
+      "anchor": "building-aaps-wear-os-troubleshooting",
+      "source_hash": "b148c8f3adbb254d",
+      "summary": "Fixing the 'uncommitted changes' build error by deleting or moving the .json file Android Studio left in the phone apk's output folder.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

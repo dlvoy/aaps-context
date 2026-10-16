@@ -1,0 +1,532 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/ExchangeSiteCustomWatchfaces/CustomWatchfaceReference.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "A reference for designers of custom watchfaces for the AAPS(Custom) watchface: the zip and JSON format, a step-by-step guide to a first design, advanced features (preferences, twin views, dynData, dynPref, formatting, follower data), and tables of every JSON key and value. Almost all terms are JSON identifiers and file names that must stay in English; the few app labels are the Wear plugin buttons and watch settings.",
+  "features": [
+    "Wear OS",
+    "Custom watchfaces"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > Communication > Wear",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "wear"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Custom Watchface Reference Document",
+      "anchor": "custom-watchface-reference-document",
+      "source_hash": "722de2682c4fe863",
+      "summary": "Introduction: a reference for designers creating custom watchfaces, listing every keyword and feature.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Custom Watchface Format",
+      "anchor": "custom-watchface-format",
+      "source_hash": "7c03d7b55a2944cc",
+      "summary": "What a custom watchface zip must contain (the CustomWatchface preview image and CustomWatchface.json) and which extra images and fonts it may include. The preview is what the user sees after pressing Load Watchface in the phone's Wear plugin; the zip feeds the AAPS(Custom) watchface on the watch.",
+      "dialogs": [
+        "Configuration > Communication > Wear > Load Watchface"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "label_watchface_custom",
+          "as_written": "AAPS (Custom)",
+          "confidence": 0.8
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "wear_load_watchface",
+          "as_written": "Load Watchface",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "JSON Structure",
+      "anchor": "cwf-reference-json-structure",
+      "source_hash": "041a6852c08df8ce",
+      "summary": "Basics of JSON syntax for editing CustomWatchface.json in a text editor.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Metadata Settings",
+      "anchor": "cwf-reference-metadata-settings",
+      "source_hash": "0f58a8f2a90abb78",
+      "summary": "The mandatory metadata block (name, author, dates, versions) at the start of the JSON file.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "General parameter settings",
+      "anchor": "cwf-reference-general-parameter-settings",
+      "source_hash": "e461a74eb8d17df9",
+      "summary": "The general parameters block that sets graph colours and default BG colours.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "ImageView settings",
+      "anchor": "cwf-reference-imageview-settings",
+      "source_hash": "774b26ee4c58bd64",
+      "summary": "JSON block for an image view: position, size, visibility and colour tint.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "TextView settings",
+      "anchor": "cwf-reference-textview-settings",
+      "source_hash": "39bcf526ef5867bb",
+      "summary": "JSON block for a text view: rotation, text size, alignment, font, colours, background, hiding a view, and the free text views.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "ChartView settings",
+      "anchor": "cwf-reference-chartview-settings",
+      "source_hash": "63bb91cdc8b607e4",
+      "summary": "JSON block for the chart view and its optional background colour or image.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to build/design your first Watchface",
+      "anchor": "cwf-reference-how-to-build-watchface",
+      "source_hash": "e2902a080bea9a3e",
+      "summary": "Parent heading of the step-by-step guide to designing a first watchface.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Tools required",
+      "anchor": "tools-required",
+      "source_hash": "634f1074b6ac16ea",
+      "summary": "The text and image editors a designer needs, and the 400 x 400 px working size.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Get template to not start from scratch",
+      "anchor": "get-template-to-not-start-from-scratch",
+      "source_hash": "3bf853a4dcc157ff",
+      "summary": "Getting the default watchface as a starting template with the Export template button in the phone's Wear plugin; the zip lands in the AAPS/exports folder. A connected watch is needed to see the custom watchface buttons.",
+      "dialogs": [
+        "Configuration > Communication > Wear > Export template"
+      ],
+      "mentions": [
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "wear_export_watchface",
+          "as_written": "Export Template",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wear",
+          "as_written": "Wear",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Organize your files within your computer",
+      "anchor": "organize-your-files-within-your-computer",
+      "source_hash": "06c5a60a2f09e1ad",
+      "summary": "A working setup: edit files on the computer, zip them, copy the zip into the phone's AAPS/exports folder and send it to the watch.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Initialize Watchface customization",
+      "anchor": "initialize-watchface-customization",
+      "source_hash": "df4ae85de609ee4c",
+      "summary": "First design steps: name the watchface, choose which views are visible, rough positioning, and the back-to-front layer order of views.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Manage colors",
+      "anchor": "manage-colors",
+      "source_hash": "5b5a8b2b9f2207de",
+      "summary": "How colours are written in the JSON (#RRGGBB, #AARRGGBB) and the bgColor value that follows the BG range colours.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Include Hardcoded images",
+      "anchor": "include-hardcoded-images",
+      "source_hash": "6c0565e065fd8872",
+      "summary": "Replacing default images (background, hands, dial) by adding files with fixed names to the zip, including the High/Low variants per BG level.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Tune image color",
+      "anchor": "cwf-reference-tune-image-color",
+      "source_hash": "47ce3429a67038f8",
+      "summary": "How the color key tints backgrounds, dials, hands and bitmap images; it has no effect on SVG files.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Use additional fonts for TextViews",
+      "anchor": "use-additional-fonts-for-textviews",
+      "source_hash": "ea35ed493a11ffc3",
+      "summary": "Adding custom .ttf/.otf fonts to the zip and referencing them by file name.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Advanced features",
+      "anchor": "cwf-reference-advanced-features",
+      "source_hash": "a62f4cacf405e566",
+      "summary": "Parent heading of the advanced watchface features.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Preferences Feature",
+      "anchor": "cwf-reference-preference-feature",
+      "source_hash": "479ab1ee55c52e71",
+      "summary": "A watchface can require and lock some watch display settings (for example Show detailed IOB) if the user allows it with the custom watchface authorization in the Wear plugin preferences; the required count is shown when choosing a watchface.",
+      "dialogs": [
+        "Preferences > Wear"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_show_detailed_iob",
+          "as_written": "Show detailed iob",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "TwinView Feature",
+      "anchor": "cwf-reference-twinview-feature",
+      "source_hash": "3c501bbaac15525c",
+      "summary": "Twin views shift a view to stay centred when its partner view is hidden by a watch setting such as Show Rig Battery or Show AvgDelta.",
+      "dialogs": [
+        "Watch > AAPS > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_show_rig_battery",
+          "as_written": "Show rig battery",
+          "confidence": 0.8
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_show_avgdelta",
+          "as_written": "Show avg delta",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "DynData Feature",
+      "anchor": "cwf-reference-dyndata-feature",
+      "source_hash": "396445a40d4bc8ba",
+      "summary": "Introduction to dynData: animating views from internal values (BG, delta, battery), using the SteamPunk watchface as the example.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Background management",
+      "anchor": "cwf-reference-background-management",
+      "source_hash": "11eaa4d5eb592a0c",
+      "summary": "Rotating the background image with BG value through a dynData block (rotationOffset, minData/maxData).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Chart management",
+      "anchor": "chart-management",
+      "source_hash": "f7a843e8a948e417",
+      "summary": "Giving the chart view its own background image so it blends with the watchface.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Avg delta management",
+      "anchor": "cwf-reference-avg-delta-management",
+      "source_hash": "6cbe7d340734d447",
+      "summary": "Switching scale images and rotating pointers with the average delta using freetext views and several dynData blocks.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "loop view",
+      "anchor": "loop-view",
+      "source_hash": "6fb1f178e1e677e3",
+      "summary": "Hiding or restyling the loop status arrows with a dynData block on the loop view.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "rig_battery and uploader_battery views",
+      "anchor": "rig_battery-and-uploader_battery-views",
+      "source_hash": "d37338c863c7f9f9",
+      "summary": "Changing battery text colour by battery level with a shared dynData block.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "DynPref Feature",
+      "anchor": "cwf-reference-dynpref-feature",
+      "source_hash": "d98af7f096078dab",
+      "summary": "Introduction to dynPref: choosing dynData blocks from watch or app preferences.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Simple usage of dynPref within Steampunk watchface",
+      "anchor": "simple-usage-of-dynpref-within-steampunk-watchface",
+      "source_hash": "210e9854c3b6b6c0",
+      "summary": "Switching mg/dL and mmol/L images with dynPref on the units preference (key_units).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Combine different preferences within dynPref with AAPS V2",
+      "anchor": "combine-different-preferences-within-dynpref-with-aaps-v2",
+      "source_hash": "f9016c5c2c897e40",
+      "summary": "Combining several preferences (Dark, Matching divider, Show detailed IOB) in dynPref blocks to set colours and text size, using the AAPS V2 watchface.",
+      "dialogs": [
+        "Watch > AAPS > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_dark",
+          "as_written": "dark",
+          "confidence": 0.6
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_matching_divider",
+          "as_written": "match divider",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Tips and tricks for dynPref",
+      "anchor": "tips-and-tricks-for-dynpref",
+      "source_hash": "850ec6a53180167e",
+      "summary": "Pitfalls with dynPref: growing block counts, loops, indexed keys, a single valueKey.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "New Features in CustomWatchface V2 (AAPS V3.3.0 or above)",
+      "anchor": "cwf-reference-new-v2-features",
+      "source_hash": "6a39535bf3b6af31",
+      "summary": "Overview of what Custom Watchface V2 adds; it needs the Wear apk from AAPS 3.3.0 or later.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "New Status view",
+      "anchor": "cwf-reference-new-status-feature",
+      "source_hash": "fe467ddf8282db9d",
+      "summary": "The status view showing IOB, detailed IOB and BGI, and its visibility key.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "New TempTarget view",
+      "anchor": "cwf-reference-new-temp-target-feature",
+      "source_hash": "68ebb24a74aa251d",
+      "summary": "The tempTarget view showing the profile, loop or user temporary target, with colours per type.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "New Reservoir Level view",
+      "anchor": "cwf-reference-new-reservoir-level-feature",
+      "source_hash": "6a676eed1ab950f4",
+      "summary": "The reservoir view showing reservoir level with warning and urgent colours.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "New Formatting feature for DynData or DynPref",
+      "anchor": "cwf-reference-new-formating-feature",
+      "source_hash": "7c4f6e396b48a48c",
+      "summary": "Formatting raw values with printf-style strings (dynValue, textvalue1…) including singular/plural labels, with the AAPS (Large) watchface as the example.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Show External data for Follower",
+      "anchor": "cwf-reference-show-external-datas",
+      "source_hash": "37764af4951d0060",
+      "summary": "Showing data from up to three apps (AAPS, AAPSClient, AAPSClient2) on one watchface: enable broadcasting in the client apps and, if needed, the Switch external data setting of the watchface on the watch.",
+      "dialogs": [
+        "Watch > AAPS > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_switch_external",
+          "as_written": "Switch external data in watchface",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Key and KeyValue reference",
+      "anchor": "cwf-reference-key-and-keyvalue-reference",
+      "source_hash": "234b93de9b6e8fc1",
+      "summary": "Parent heading of the reference tables of JSON keys and values.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "List of Metadata keys",
+      "anchor": "cwf-reference-list-of-metadata-keys",
+      "source_hash": "dc8af7b62365c1e0",
+      "summary": "Parent heading of the metadata key tables.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "List of Standard information metadata keys",
+      "anchor": "cwf-reference-list-of-standard-metadata-keys",
+      "source_hash": "19513f7b1e3aedf8",
+      "summary": "Table of the standard metadata keys (name, author, created_at, versions, comment).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Preference keys",
+      "anchor": "cwf-reference-preference-keys",
+      "source_hash": "4487bf2566e072ea",
+      "summary": "Table of the watch preference keys a watchface can require or lock (key_show_*). The values are JSON identifiers, not labels.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Internal keys",
+      "anchor": "internal-keys",
+      "source_hash": "023f4abb99bdf52b",
+      "summary": "Table of keys AAPS writes itself (filename, cwf_authorization).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "List of General parameters",
+      "anchor": "cwf-reference-list-of-general-parameters",
+      "source_hash": "312a160b78bd3ff0",
+      "summary": "Table of general parameters: BG range colours, graph colours, point size, seconds, day and month formats.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "List of HardCoded resource files",
+      "anchor": "cwf-reference-list-of-hardcoded-resource-files",
+      "source_hash": "50653e7fb420b993",
+      "summary": "Table of fixed image file names (background, dial, hands, trend arrows) and their defaults.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "List of View keys",
+      "anchor": "cwf-reference-list-of-view-keys",
+      "source_hash": "21e9484f632096ff",
+      "summary": "Table of all view keys in back-to-front order, with view type, data shown and dynData key.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "List of Json keys",
+      "anchor": "cwf-reference-list-of-json-keys",
+      "source_hash": "eb5673aae3075a1d",
+      "summary": "Parent heading of the JSON key tables per view type.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Common keys",
+      "anchor": "cwf-reference-common-keys",
+      "source_hash": "539fd9d8870501d0",
+      "summary": "Table of keys valid on every view: size, margins, rotation, visibility, dynData, offsets, twin view, dynPref.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "TextView keys",
+      "anchor": "cwf-reference-textview-keys",
+      "source_hash": "ff2af161a6e0bd7c",
+      "summary": "Table of text view keys: text size, alignment, font, colours, background, textvalue, dynValue.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "ImageView keys",
+      "anchor": "cwf-reference-imageview-keys",
+      "source_hash": "b33a0f94d06168a4",
+      "summary": "Table of image view keys (color).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "ChartView keys",
+      "anchor": "cwf-reference-chartview-keys",
+      "source_hash": "d4b20a1575c12d1e",
+      "summary": "Table of chart view keys (color, background).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Key values",
+      "anchor": "cwf-reference-key-values",
+      "source_hash": "013ba2aba964928b",
+      "summary": "Table of allowed values for visibility, gravity, font and fontStyle.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "DynData keys",
+      "anchor": "cwf-reference-dyndata-keys",
+      "source_hash": "d95501fac72a126a",
+      "summary": "Table of keys usable inside dynData blocks.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "DynData key values",
+      "anchor": "cwf-reference-dyndata-key-values",
+      "source_hash": "c9da620d04a506da",
+      "summary": "Table of internal values a dynData block can follow, with their min/max ranges.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "DynPref keys",
+      "anchor": "cwf-reference-dynpref-keys",
+      "source_hash": "8183a800b6e69c46",
+      "summary": "Table of keys usable inside dynPref blocks.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "PrefKey values",
+      "anchor": "cwf-reference-prefkey-values",
+      "source_hash": "45b846b7e6e31b9f",
+      "summary": "Table of preference keys dynPref can follow and their values.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

@@ -1,0 +1,379 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/WearOS/WearOsSmartwatch.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Explains how to put the AAPS Wear app on a Wear OS smartwatch and connect it to AAPS on the phone. It covers which Wear OS versions still run the AAPS watchfaces, the watchface AAPS installs on Wear OS 6 and newer, side-loading the watch apk (Wear Installer 2, Easy Fire Tools, ADB), enabling the Wear plugin on the phone, and picking a custom watchface. Watch system menus (Settings > Developer options) belong to the watch maker, not to AAPS.",
+  "features": [
+    "Wear OS",
+    "Wear plugin",
+    "Custom watchfaces"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > Communication > Wear",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "wear"
+    },
+    {
+      "ui_location": "Watch > AAPS > Settings",
+      "file": "wear/src/main/res/values/strings.xml",
+      "key": "menu_settings"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Set up AAPS on your Wear OS watch",
+      "anchor": "set-up-aaps-on-your-wear-os-watch",
+      "source_hash": "8d05c14393335814",
+      "summary": "Introduction: the page applies to the self-built AAPS Wear apk, and also to the AAPSClient and PumpControl Wear apks, each pairing only with its matching phone app.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wear",
+          "as_written": "Wear",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Wear OS Versions and compatibility",
+      "anchor": "wear-os-versions-and-compatibility",
+      "source_hash": "b7a3f67225d8e83d",
+      "summary": "Parent heading for the per-version compatibility notes below.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Wear OS watch face changes (impact on AAPS watchfaces)",
+      "anchor": "wearos-watchface-changes",
+      "source_hash": "3e226d4fe99c7441",
+      "summary": "Why newer Wear OS versions break the legacy AAPS watchfaces (Google is retiring the old watch face engine), a per-version impact table, and alternatives such as complications or GlucoDataHandler. Also notes the coloured tile headers that tell side-by-side AAPSClient flavors apart.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Wear OS 6 and newer — the watchface AAPS installs",
+      "anchor": "wearos-aaps-v4-watchface",
+      "source_hash": "d51e7f2eccb4f366",
+      "summary": "On Wear OS 6+ the watch app installs one Watch Face Format watchface: either the Custom watchface (draws the loaded custom design as a picture) or the Complications watchface (AAPS V4, seven preconfigured slots). The reader picks one on the phone in the Wear plugin under Watchface installed on watch, and can reinstall it from the watch's AAPS main menu.",
+      "dialogs": [
+        "Configuration > Communication > Wear > Watchface installed on watch",
+        "Watch > AAPS > Menu > Install watchface"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "wear_pushed_watchface_cwf",
+          "as_written": "Custom watchface",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "wear_pushed_watchface_wfs",
+          "as_written": "Complications watchface",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_wear_pushed_watchface",
+          "as_written": "Watchface installed on watch",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "wear_load_watchface",
+          "as_written": "Load Watchface",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wear",
+          "as_written": "Wear",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "label_running_mode_title",
+          "as_written": "Running Mode",
+          "confidence": 0.6
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "complication_bg_graph",
+          "as_written": "BG Graph",
+          "confidence": 0.7
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "menu_install_watchface",
+          "as_written": "Install watchface",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "tile_tap_main_menu",
+          "as_written": "main menu",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Wear OS 3",
+      "anchor": "wear-os-3",
+      "source_hash": "47283aefa3cabd06",
+      "summary": "Wear OS 3 watches: install the Wear apk with Wear Installer 2, Easy Fire Tools or ADB; everything works.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Wear OS 4 and Galaxy watch updated to Wear OS 5",
+      "anchor": "BuildingAapsWearOs-WearOS5",
+      "source_hash": "ddf1bb18a9ca60d3",
+      "summary": "Galaxy Watch 4–6: install with Wear Installer 2; works fully, but firmware updates will likely break the watchfaces, so the reader should disable watch updates.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Galaxy watch with factory installed Wear OS 5",
+      "anchor": "galaxy-watch-with-factory-installed-wear-os-5",
+      "source_hash": "a9f56d49d077b630",
+      "summary": "Galaxy Watch 7 / Ultra: the AAPS watchface must be installed with Wear Installer 2 and its parameters (Dark, divider) cannot be changed; on Samsung watches the AAPS watchface settings open Samsung's own watch face editor.",
+      "dialogs": [
+        "Watch > AAPS > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_dark",
+          "as_written": "Dark",
+          "confidence": 0.7
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "menu_settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Pixel watch with Wear OS 5",
+      "anchor": "pixel-watch-with-wear-os-5",
+      "source_hash": "79a1e37da6473576",
+      "summary": "Pixel watches on Wear OS 5 cannot use the AAPS watchface; GlucoDataHandler with a complication is suggested instead.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to set up a Samsung Galaxy 4 smartwatch with **AAPS**",
+      "anchor": "how-to-set-up-a-samsung-galaxy-4-smartwatch-with-aaps",
+      "source_hash": "c609e27b4db0111f",
+      "summary": "Introduction to the step-by-step Galaxy Watch 4 setup, written for Wear OS 3 and for readers new to smartwatches.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Basic smartwatch familiarity",
+      "anchor": "basic-smartwatch-familiarity",
+      "source_hash": "a07f5f4bd2a07520",
+      "summary": "Installing the Samsung companion apps and a side-loading tool on the phone and pairing the watch in Galaxy Wearable. No AAPS screens.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Setting up a Samsung account",
+      "anchor": "setting-up-a-samsung-account",
+      "source_hash": "ab5614b9d0300581",
+      "summary": "Workaround for Samsung accounts whose owner is under 13. No AAPS screens.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Transferring the **AAPS** Wear app onto your **AAPS** phone",
+      "anchor": "remote-control-transferring-the-aaps-wear-app-onto-your-aaps-phone",
+      "source_hash": "c7dd25f3892ba1d3",
+      "summary": "Copying the built Wear apk to the phone (USB or Google Drive) and the three tools for side-loading it to the watch.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Using Wear Installer 2 to side-load **AAPS** Wear from the phone onto the watch",
+      "anchor": "using-wear-installer-2-to-side-load-aaps-wear-from-the-phone-onto-the-watch",
+      "source_hash": "91eb57bc11b2711e",
+      "summary": "Side-loading the Wear apk with the Wear Installer 2 phone app by following its video, then switching ADB debugging off on the watch.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Use Easy Fire tools to side-load the **AAPS** wear on the watch",
+      "anchor": "use-easy-fire-tools-to-side-load-the-aaps-wear-on-the-watch",
+      "source_hash": "253fe57ddb624015",
+      "summary": "Enabling developer mode and ADB / wireless debugging in the watch's system settings, entering the watch IP in Easy Fire Tools and side-loading the apk. The menu names here are the watch's system menus, not AAPS labels.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Using the terminal",
+      "anchor": "BuildingAapsWearOs-WearOS5-TShoot",
+      "source_hash": "ae27fd6a74a2b5fc",
+      "summary": "Installing ADB on a computer, pairing it with the watch over wireless debugging and installing the Wear apk with adb commands. Watch system menus only.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "General troubleshooting recommendations for Wear OS 5",
+      "anchor": "wear-os-5-troubleshooting",
+      "source_hash": "4b9642d061980194",
+      "summary": "Network and pairing tips when side-loading to a Wear OS 5 watch with Wear Installer 2.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Setting up the connection between the watch and the phone from **AAPS**",
+      "anchor": "setting-up-the-connection-between-the-watch-and-the-phone-from-aaps",
+      "source_hash": "f1f8483ffab5830d",
+      "summary": "On the phone the reader enables the Wear plugin under Configuration > Communication, turns on Wear control in the Wear preferences to allow boluses from the watch, and picks an AAPS watchface on the watch.",
+      "dialogs": [
+        "Main menu > Configuration > Communication",
+        "Preferences > Wear"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wear",
+          "as_written": "Wear",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_wear_control",
+          "as_written": "Wear control",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Troubleshooting the **AAPS** watch- **AAPS** phone communication",
+      "anchor": "wear-os-watch-phone-communication",
+      "source_hash": "59d4bc982c3c2c6d",
+      "summary": "Checklist when the watch gets no data: IP address, internet connection, Samsung pairing, restarts, the right Wear apk variant, router isolation.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Changing to an AAPS Watchface on your WearOS watch",
+      "anchor": "WearOS_changing-to-AAPS-watchface",
+      "source_hash": "6d085b48eb6452e0",
+      "summary": "Adding the AAPS(Custom) watchface on the watch, then on the phone opening the Wear plugin and pressing Load Watchface to choose a design. A note explains the up to five complication slots of custom watchfaces, set in the watch app's Settings (Complication 1–5, Complication type priority), which work only up to Wear OS 5.",
+      "dialogs": [
+        "Configuration > Communication > Wear > Open plugin",
+        "Wear > Load Watchface",
+        "Watch > AAPS > Settings > Complication 1"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_sync",
+          "as_written": "Communication",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "wear",
+          "as_written": "Wear",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "plugins/sync/src/androidMain/res/values/strings.xml",
+          "key": "wear_load_watchface",
+          "as_written": "Load Watchface",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "label_watchface_custom",
+          "as_written": "AAPS (Custom)",
+          "confidence": 0.8
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "cwf_complication_layout",
+          "as_written": "Complication layout",
+          "confidence": 0.8
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "menu_settings",
+          "as_written": "Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_complication_1",
+          "as_written": "Complication 1",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_complication_5",
+          "as_written": "Complication 5",
+          "confidence": 0.9
+        },
+        {
+          "file": "wear/src/main/res/values/strings.xml",
+          "key": "pref_complication_type_priority",
+          "as_written": "Complication type priority",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "wear_pushed_watchface_cwf",
+          "as_written": "Custom watchface",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_wear_pushed_watchface",
+          "as_written": "Watchface installed on watch",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "AAPSv2 watchface - Legend",
+      "anchor": "aapsv2-watchface-legend",
+      "source_hash": "dfa37cbe33476ba4",
+      "summary": "Legend of the AAPSv2 watchface: what each labelled field (A–J) shows, such as time since last loop, BG, delta, basal, BGI, carbs and IOB.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}
