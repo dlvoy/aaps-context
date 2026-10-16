@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatiblePumps/DanaR-Insulin-Pump.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Setting up a DanaR pump with AAPS: preparing the pump menus, pairing it over Bluetooth, choosing the DanaR driver under Configuration > Pump, pairing from the pump screen and adjusting the driver settings. Ends with time-zone travel and where to get help.",
+  "features": [
+    "DanaR",
+    "Pump"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_pump"
+    },
+    {
+      "ui_location": "Manage > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "pump_management"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "DanaR",
+      "anchor": "danar",
+      "source_hash": "d459b6f036707bff",
+      "summary": "Introduces the page for the original DanaR and points DanaRS owners to their own page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pump capabilities with AAPS",
+      "anchor": "pump-capabilities-with-aaps",
+      "source_hash": "3427178992d48d36",
+      "summary": "The DanaR talks to AAPS over the phone's Bluetooth and needs nothing special for time-zone or DST changes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Setup",
+      "anchor": "setup",
+      "source_hash": "d99639d766e58dd9",
+      "summary": "Step-by-step setup: enable extended bolus and discovery on the pump, pair it in Android Bluetooth settings, select the DanaR driver in Configuration > Pump, pair from the pump screen with the pump password, and set bolus speed and the >200% extended bolus option in the driver settings.",
+      "dialogs": [
+        "Main menu > Configuration > Pump",
+        "Manage > Pump > Pairing",
+        "Configuration > Pump > DanaR > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "danarpump",
+          "as_written": "DanaR",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "danarkoreanpump",
+          "as_written": "DanaR Korean",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "danarv2pump",
+          "as_written": "DanaRv2",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pairing",
+          "as_written": "Pairing",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "danar_password_title",
+          "as_written": "Pump password",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "select_paired_device",
+          "as_written": "Select paired device",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "open_bluetooth_settings",
+          "as_written": "Open Bluetooth settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "bolusspeed",
+          "as_written": "Bolus speed",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "danar_useextended_title",
+          "as_written": "Use extended boluses for >200%",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Timezone traveling with Dana R pump",
+      "anchor": "timezone-traveling-with-dana-r-pump",
+      "source_hash": "bbabcceaf32fb0a7",
+      "summary": "Points to the shared section on time-zone travel with Dana pumps.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Where to get help",
+      "anchor": "where-to-get-help",
+      "source_hash": "879daae0e4d7cd6b",
+      "summary": "How to get help with the community-maintained DanaR driver: read the docs, ask on Discord, report bugs on GitHub with logs and device details.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

@@ -1,0 +1,764 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatiblePumps/Accu-Chek-Combo-Pump-v2.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Setting up and using the Accu-Chek Combo with AAPS: requirements and limitations, phone and pump configuration, selecting the driver and pairing, the pump screen, driver settings, how pump alerts are handled, and practical tips on connection problems, batteries and boluses. Notes that Roche is phasing the pump out.",
+  "features": [
+    "Accu-Chek Combo",
+    "Pump"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_pump"
+    },
+    {
+      "ui_location": "Manage > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "pump_management"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Accu-Chek Combo",
+      "anchor": "accu-chek-combo",
+      "source_hash": "56180b8087d18c62",
+      "summary": "DIY disclaimer and the notice that Roche is ending Combo sales.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pump capabilities with AAPS",
+      "anchor": "pump-capabilities-with-aaps",
+      "source_hash": "94cf593faf581a2c",
+      "summary": "The Combo talks to AAPS over the phone's Bluetooth and handles DST and time zones automatically.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Hardware and software requirements",
+      "anchor": "hardware-and-software-requirements",
+      "source_hash": "9ce5dac6f19a0525",
+      "summary": "What is needed: a Combo, a Smartpix or Realtyme device with the 360 configuration software, an Android 9+ phone and AAPS.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Before you begin",
+      "anchor": "combov2-before-you-begin",
+      "source_hash": "65552d4b60e5c303",
+      "summary": "Safety advice and the driver's limitations: no extended or multiwave bolus, only basal profile 1, basal and TBR limits, pump unreachable alerts and how to recover, and the supported pump display languages.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "refresh",
+          "as_written": "Refresh",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_unreachable",
+          "as_written": "pump unreachable",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Phone setup",
+      "anchor": "phone-setup",
+      "source_hash": "c80c31086ee2dbbe",
+      "summary": "Turning off battery optimisation for the Android Bluetooth system app (Android settings, not AAPS).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Combo setup",
+      "anchor": "combo-setup",
+      "source_hash": "4d91a6edae4067e2",
+      "summary": "Required and recommended pump settings to make with the 360 configuration software.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Activating the driver and pairing it with the Combo",
+      "anchor": "activating-the-driver-and-pairing-it-with-the-combo",
+      "source_hash": "1a12456669a0881e",
+      "summary": "Selecting the Accu-Chek Combo driver in Configuration > Pump, opening its settings or pump screen, pairing with the 10-digit PIN, and checking the setup with a test TBR and bolus.",
+      "dialogs": [
+        "Main menu > Configuration > Pump",
+        "Manage > Pump > Pair with pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_plugin_name",
+          "as_written": "Accu-Chek Combo",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_not_paired",
+          "as_written": "Not paired to a pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pairing",
+          "as_written": "Pairing",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_pair_with_pump_title",
+          "as_written": "Pair with pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_start_pairing",
+          "as_written": "Start pairing",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_pin_hint",
+          "as_written": "10-digit PIN",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_pairing_pin_failure",
+          "as_written": "PIN did not work. Check if there was a typo. If this keeps happening, cancel and retry pairing.",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_pairing_finished_successfully",
+          "as_written": "Successfully paired with Combo",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_unpair",
+          "as_written": "Unpair",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Notes about pairing",
+      "anchor": "notes-about-pairing",
+      "source_hash": "60e20360864534ec",
+      "summary": "Why Combo pairing is not fully reliable on Android, and to cancel Android's 4-digit Bluetooth PIN dialog if it stays on screen.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Accu-Chek Combo pump screen contents",
+      "anchor": "combov2-tab-contents",
+      "source_hash": "5e03b04aea042097",
+      "summary": "The fields on the Combo pump screen (driver state, last connection, battery, reservoir, last bolus, temp basal, base basal, serial number, Bluetooth address), the remote-terminal display, and the Refresh and Unpair buttons.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_driver_state_label",
+          "as_written": "Driver state",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "disconnected",
+          "as_written": "Disconnected",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "connecting",
+          "as_written": "Connecting",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_checking_pump",
+          "as_written": "Checking pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_ready",
+          "as_written": "Ready",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_suspended",
+          "as_written": "Suspended",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_setting_basal_profile_cmddesc",
+          "as_written": "Setting basal profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_updating_pump_status_cmddesc",
+          "as_written": "Updating pump status",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "error",
+          "as_written": "Error",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "last_connection_label",
+          "as_written": "Last connection",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "battery_label",
+          "as_written": "Battery",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_battery_full",
+          "as_written": "Full",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_battery_low",
+          "as_written": "Low",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_battery_empty",
+          "as_written": "Empty",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "reservoir_label",
+          "as_written": "Reservoir",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "last_bolus_label",
+          "as_written": "Last bolus",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "tempbasal_label",
+          "as_written": "Temp basal",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "base_basal_rate_label",
+          "as_written": "Base basal rate",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "serial_number",
+          "as_written": "Serial number",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "bluetooth_address",
+          "as_written": "Bluetooth address",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "refresh",
+          "as_written": "Refresh",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_unpair",
+          "as_written": "Unpair",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_confirm_unpair_message",
+          "as_written": "Do you really want to unpair the pump?",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pairing",
+          "as_written": "Pairing",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Settings",
+      "anchor": "combov2-preferences",
+      "source_hash": "258ef1f67fe81c03",
+      "summary": "The Combo driver settings: discovery duration for pairing, automatic entry of reservoir and battery changes, and verbose logging.",
+      "dialogs": [
+        "Configuration > Pump > Accu-Chek Combo > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_plugin_name",
+          "as_written": "Accu-Chek Combo",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_discovery_duration",
+          "as_written": "Discovery duration (in seconds)",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_automatic_reservoir_entry",
+          "as_written": "Autodetect and automatically enter insulin reservoir change",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "prime_fill",
+          "as_written": "Prime/Fill",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_automatic_battery_entry",
+          "as_written": "Autodetect and automatically enter battery change",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_battery_change",
+          "as_written": "Pump Battery Change",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_verbose_logging",
+          "as_written": "Enable verbose Combo logging",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Autodetecting and automatically entering battery and reservoir changes",
+      "anchor": "combov2-autodetections",
+      "source_hash": "0a28f8b5820912e7",
+      "summary": "How the driver detects battery and reservoir changes from level changes, and when that works.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Alerts (warnings and errors) and how they are handled",
+      "anchor": "combov2-alerts",
+      "source_hash": "e7930035009e12fa",
+      "summary": "Which Combo warnings the driver dismisses itself, how other warnings and errors put the driver in an error state that blocks the loop until Refresh, and why warnings are not dismissed during a bolus.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_reservoir_low_warning",
+          "as_written": "low reservoir",
+          "confidence": 0.5
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_battery_low_warning",
+          "as_written": "low battery",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "refresh",
+          "as_written": "Refresh",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Things to be careful about when using the Combo",
+      "anchor": "things-to-be-careful-about-when-using-the-combo",
+      "source_hash": "a20c816c15b0ac6e",
+      "summary": "Cautions: slow operations, no TBRs or button presses on the pump while AAPS talks to it or while bolusing.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Checklist for when no connection can be established with the Combo",
+      "anchor": "checklist-for-when-no-connection-can-be-established-with-the-combo",
+      "source_hash": "5b0a25c20e77c4e3",
+      "summary": "Steps when the Combo will not connect: press a pump button, restart the phone, replace the battery cap, re-pair.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Tips for basic usage",
+      "anchor": "combov2-tips-for-basic-usage",
+      "source_hash": "e3f8eb0cd2a7cad0",
+      "summary": "Heading for practical tips on daily use.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "How to ensure smooth operations",
+      "anchor": "how-to-ensure-smooth-operations",
+      "source_hash": "3b82e6c2350b1c97",
+      "summary": "Keep the phone close, the battery full, and the pump key lock on.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pump not reachable. What to do?",
+      "anchor": "pump-not-reachable-what-to-do",
+      "source_hash": "bebce83fff50a341",
+      "summary": "Heading for handling pump unreachable situations.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Activate pump unreachable alarm",
+      "anchor": "activate-pump-unreachable-alarm",
+      "source_hash": "c2104e25c6bbce9b",
+      "summary": "Turning on the pump unreachable alert in Local alerts with a 31-minute threshold.",
+      "dialogs": [
+        "Preferences > Local alerts"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "localalertsettings_title",
+          "as_written": "Local alerts",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_alert_pump_unreachable",
+          "as_written": "Alert if pump is unreachable",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_pump_unreachable_threshold",
+          "as_written": "Pump unreachable threshold",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Restore reachability of the pump",
+      "anchor": "restore-reachability-of-the-pump",
+      "source_hash": "70bf3ff95d8ce98f",
+      "summary": "After a pump unreachable alarm, press a pump button and tap Refresh on the pump screen, or reboot the phone.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_unreachable",
+          "as_written": "pump unreachable",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "refresh",
+          "as_written": "Refresh",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Root causes and consequences of frequent communication errors",
+      "anchor": "root-causes-and-consequences-of-frequent-communication-errors",
+      "source_hash": "1577387e4fdf988d",
+      "summary": "Why low memory or aggressive power saving causes pump unreachable alarms, how to check the last connection on the pump screen, and the effect on the pump battery.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "last_connection_label",
+          "as_written": "Last connection",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Cancellation of temporary basal rate fails",
+      "anchor": "cancellation-of-temporary-basal-rate-fails",
+      "source_hash": "c3ef952741f7339f",
+      "summary": "If AAPS cannot clear a TBR CANCELED alert, tap Refresh or confirm it on the pump.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "refresh",
+          "as_written": "Refresh",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Pump battery considerations",
+      "anchor": "pump-battery-considerations",
+      "source_hash": "6f7fd0ac3233a089",
+      "summary": "Heading for battery tips.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Changing the battery",
+      "anchor": "changing-the-battery",
+      "source_hash": "73564fde708fd7ae",
+      "summary": "Changing the Combo battery: suspend the loop for an hour from the Loop icon on the main screen, change the battery quickly, then resume the loop.",
+      "dialogs": [
+        "Main screen > Loop"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "loop",
+          "as_written": "Loop",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "suspendloop",
+          "as_written": "Suspend loop",
+          "confidence": 0.9
+        },
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "resume",
+          "as_written": "Resume",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Battery type and causes of short battery life",
+      "anchor": "Accu-Chek-Combo-Tips-for-Basic-usage-battery-type-and-causes-of-short-battery-life",
+      "source_hash": "4dbdae7df6d58a71",
+      "summary": "Recommended battery types, typical battery life, and causes of short battery life.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Extended bolus, multiwave bolus",
+      "anchor": "extended-bolus-multiwave-bolus",
+      "source_hash": "0623e5aed2a50350",
+      "summary": "Alternatives to extended and multiwave boluses: e-carbs, an Eating Soon temp target, and an adjusted bolus from the Bolus wizard.",
+      "dialogs": [
+        "Manage > Temp Target"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "eatingsoon",
+          "as_written": "Eating Soon",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "temp_target_management",
+          "as_written": "Temp Target",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "boluswizard",
+          "as_written": "Bolus wizard",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Alarms at bolus delivery",
+      "anchor": "alarms-at-bolus-delivery",
+      "source_hash": "3829030a92e69e1c",
+      "summary": "How the driver checks the pump's bolus history after each bolus, and the messages for unaccounted or failed boluses.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_unaccounted_bolus_detected_cancelling_bolus",
+          "as_written": "Unaccounted bolus deliveries detected. Cancelling bolus for safety reasons.",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/combov2/src/main/res/values/strings.xml",
+          "key": "combov2_bolus_delivery_failed",
+          "as_written": "Bolus delivery failed. It appears no bolus was delivered. To be sure, please check the pump to avoid a double bolus and then bolus again.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Where to get help",
+      "anchor": "where-to-get-help",
+      "source_hash": "566fbf45cf68e551",
+      "summary": "How to get help with the community-maintained Combo driver: read the docs, ask on Discord, report bugs on GitHub with logs and device details.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

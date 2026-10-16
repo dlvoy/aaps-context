@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatiblePumps/Accu-Chek-Combo-Tips-for-Basic-usage.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Redirect page with no content of its own: it forwards the reader to the Tips for basic usage section of the Accu-Chek Combo page.",
+  "features": [
+    "Accu-Chek Combo"
+  ],
+  "screens": [],
+  "sections": [],
+  "manual_note": null
+}

@@ -1,0 +1,346 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatiblePumps/DanaRS-Insulin-Pump.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Setting up DanaRS, Dana-i and Dana-i2 pumps with the Dana-i/RS driver: selecting the driver, pairing from the pump screen by firmware type, driver settings and model-specific options, pump passwords, handling delivery errors, and switching to a new phone.",
+  "features": [
+    "DanaRS",
+    "Dana-i",
+    "Pump"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_pump"
+    },
+    {
+      "ui_location": "Manage > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "pump_management"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "DanaRS, Dana-i and Dana-i2",
+      "anchor": "danars-dana-i-and-dana-i2",
+      "source_hash": "11d1b2a686d38741",
+      "summary": "Introduces the page: which AAPS versions support each Dana model, that all use the Dana-i/RS driver, and that AAPS overwrites basal profile A on the pump.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "danarspump",
+          "as_written": "Dana-i/RS",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Pump capabilities with AAPS",
+      "anchor": "pump-capabilities-with-aaps",
+      "source_hash": "270b513b9280fba7",
+      "summary": "The pump talks to AAPS over the phone's Bluetooth; DST and time-zone changes must be handled by hand.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pairing pump",
+      "anchor": "DanaRS-Insulin-Pump-pairing-pump",
+      "source_hash": "5d4badd0acfba3d1",
+      "summary": "Selecting the Dana-i/RS driver in Configuration > Pump, opening its settings or pump screen, pairing the pump (password for v1, code sequences for v3, Android pairing for Dana-i/i2), setting bolus speed, and setting basal and bolus steps on the pump.",
+      "dialogs": [
+        "Main menu > Configuration > Pump",
+        "Configuration > Pump > Dana-i/RS > Settings",
+        "Manage > Pump > Pairing"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "danarspump",
+          "as_written": "Dana-i/RS",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pairing",
+          "as_written": "Pairing",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "danars_password_title",
+          "as_written": "Pump password (v1 only)",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "done",
+          "as_written": "Done",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "pairing_successful",
+          "as_written": "Pairing successful!",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "bolusspeed",
+          "as_written": "Bolus speed",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "basal_bolus_step",
+          "as_written": "Basal/Bolus step",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Options shown only for some models",
+      "anchor": "options-shown-only-for-some-models",
+      "source_hash": "9baad9af3207d85f",
+      "summary": "Model-specific items on the pump screen: the Dana-i2 Auto lock switch under User options, the Easy mode row, and the reasons shown when a Dana-i2 refuses a bolus.",
+      "dialogs": [
+        "Manage > Pump > User options"
+      ],
+      "mentions": [
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "danai2_auto_lock",
+          "as_written": "Auto lock",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "danar_user_options",
+          "as_written": "User options",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "danar_save_user_options",
+          "as_written": "Save options to pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "dana_easy_mode",
+          "as_written": "Easy mode",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "danai2_bolus_error_no_prime",
+          "as_written": "Pump is not primed",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "danai2_bolus_error_not_enough_insulin",
+          "as_written": "Not enough insulin in the reservoir",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "danai2_bolus_error_easy_sleep",
+          "as_written": "Easy sleep mode is on in the pump",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Default password",
+      "anchor": "DanaRS-Insulin-Pump-default-password",
+      "source_hash": "159c1e06f59b06e5",
+      "summary": "Default pump passwords by firmware (1234, or MMDD from the manufacturing date shown in the pump's shipping information menu).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Change password on pump",
+      "anchor": "DanaRS-Insulin-Pump-change-password-on-pump",
+      "source_hash": "70fafd06311344fd",
+      "summary": "Step-by-step instructions for changing the password in the pump's own menus (not in AAPS).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Dana RS specific errors",
+      "anchor": "DanaRS-Insulin-Pump-dana-rs-specific-errors",
+      "source_hash": "32b9a91b99dca6c7",
+      "summary": "Heading for errors specific to the Dana RS.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Error during insulin delivery",
+      "anchor": "error-during-insulin-delivery",
+      "source_hash": "529e245509398b31",
+      "summary": "What to do when the connection drops during a bolus: check the bolus in the pump history on the pump or in the AAPS pump screen, delete the error entry if wanted, and refresh to read the real amount.",
+      "dialogs": [
+        "Manage > Pump > Pump history"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_history",
+          "as_written": "Pump history",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "danar_history_bolus",
+          "as_written": "Boluses",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "refresh",
+          "as_written": "Refresh",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Special note when switching phone",
+      "anchor": "special-note-when-switching-phone",
+      "source_hash": "857baf48f2785fd5",
+      "summary": "Moving to a new phone: export settings on the old phone and transfer them.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "DanaRS v1",
+      "anchor": "danars-v1",
+      "source_hash": "02ab504fbe33c561",
+      "summary": "For DanaRS v1, pair the pump with the new phone manually; importing with the pump settings option makes AAPS skip the Bluetooth scan.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_replace_pump_settings",
+          "as_written": "Also replace pump settings",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "DanaRS v3, Dana-i, Dana-i2",
+      "anchor": "danars-v3-dana-i-dana-i2",
+      "source_hash": "419cbc9540810455",
+      "summary": "For newer models, pair again from the pump screen, first clearing the old pairing with Unpair if needed.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_unpair",
+          "as_written": "Unpair",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/dana/common/src/main/res/values/strings.xml",
+          "key": "resetpairing",
+          "as_written": "Reset pairing information?",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pairing",
+          "as_written": "Pairing",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Timezone traveling with DanaRS, Dana-i and Dana-i2 pumps",
+      "anchor": "timezone-traveling-with-danars-dana-i-and-dana-i2-pumps",
+      "source_hash": "146e7f23ca5cd4e4",
+      "summary": "Points to the shared section on time-zone travel with Dana pumps.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Where to get help",
+      "anchor": "where-to-get-help",
+      "source_hash": "addfa87a0f8df2b6",
+      "summary": "How to get help with the community-maintained Dana driver: read the docs, ask on Discord, report bugs on GitHub with logs and device details.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

@@ -1,0 +1,455 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatiblePumps/Accu-Chek-Insight-Pump.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Setting up the Accu-Chek Insight pump with AAPS: selecting the driver, pairing it over Bluetooth, the driver settings, the pump screen, recommended alarm settings on the pump, battery changes and Insight-specific errors. Notes that Roche is phasing the pump out.",
+  "features": [
+    "Accu-Chek Insight",
+    "Pump"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_pump"
+    },
+    {
+      "ui_location": "Manage > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "pump_management"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Accu-Chek Insight",
+      "anchor": "accu-chek-insight",
+      "source_hash": "cf62c73fe56b3021",
+      "summary": "Introduces the page with the DIY disclaimer, the notice that Roche is ending Insight sales, and advice to uninstall the old SightRemote app.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pump capabilities with AAPS",
+      "anchor": "pump-capabilities-with-aaps",
+      "source_hash": "94cf593faf581a2c",
+      "summary": "The Insight talks to AAPS over the phone's Bluetooth and handles DST and time zones automatically.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Hardware and software requirements",
+      "anchor": "hardware-and-software-requirements",
+      "source_hash": "0408d486cce0d123",
+      "summary": "What is needed: any Insight pump, an Android phone and AAPS; AAPS always writes the first basal profile on the pump.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Setup",
+      "anchor": "setup",
+      "source_hash": "e2776c5e2e061942",
+      "summary": "Removing the Insight meter from the pump's paired devices, then selecting the Accu-Chek Insight driver in Configuration > Pump and opening its settings or pump screen.",
+      "dialogs": [
+        "Main menu > Configuration > Pump",
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "insight_local",
+          "as_written": "Accu-Chek Insight",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Pairing",
+      "anchor": "accu-chek-insight-pairing",
+      "source_hash": "429b4d5f6f688ad6",
+      "summary": "Pairing the Insight: start Insight pairing on the pump screen, add the device on the pump, pick its serial number, compare the codes, then check the pump details shown after pairing. Also how to remove the pairing with Unpair.",
+      "dialogs": [
+        "Manage > Pump > Insight pairing"
+      ],
+      "mentions": [
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "insight_pairing",
+          "as_written": "Insight pairing",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "yes",
+          "as_written": "Yes",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "no",
+          "as_written": "No",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "pairing_completed",
+          "as_written": "Pairing completed",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "exit",
+          "as_written": "Exit",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "serial_number",
+          "as_written": "Serial number",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "manufacturing_date",
+          "as_written": "Manufacturing date",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "release_software_version",
+          "as_written": "Release software version",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "bluetooth_address",
+          "as_written": "Bluetooth address",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "unpair",
+          "as_written": "Unpair",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "reset_pairing",
+          "as_written": "Reset pairing information?",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Settings in AAPS",
+      "anchor": "Accu-Chek-Insight-Pump-settings-in-aaps",
+      "source_hash": "44dfc9b1a7a5ed91",
+      "summary": "The Insight driver settings: which pump events to log, TBR emulation above 250%, disabling bolus vibrations, connection recovery durations and disconnect delay.",
+      "dialogs": [
+        "Configuration > Pump > Accu-Chek Insight > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "insight_local",
+          "as_written": "Accu-Chek Insight",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "log_reservoir_changes",
+          "as_written": "Log reservoir changes",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "log_tube_changes",
+          "as_written": "Log tube changes",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "log_site_changes",
+          "as_written": "Log site changes",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "log_battery_changes",
+          "as_written": "Log battery changes",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "log_operating_mode_changes",
+          "as_written": "Log operating mode changes",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "log_alerts",
+          "as_written": "Log alerts",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "enable_tbr_emulation",
+          "as_written": "Enable TBR emulation",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "disable_vibration",
+          "as_written": "Disable vibrations on manual bolus delivery",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "disable_vibration_auto",
+          "as_written": "Disable vibrations on automated bolus delivery",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "min_recovery_duration",
+          "as_written": "Min. recovery duration [s]",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "max_recovery_duration",
+          "as_written": "Max. recovery duration [s]",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "disconnect_delay",
+          "as_written": "Disconnect delay [s]",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "The pump screen",
+      "anchor": "the-pump-screen",
+      "source_hash": "9d659f098ee920bb",
+      "summary": "What the Insight pump screen shows (status, operating mode, battery, reservoir, daily totals) and its buttons: refresh, toggle the pump's TBR-end alarm, and unpair.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "insight_status",
+          "as_written": "Status",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "last_connected",
+          "as_written": "Last connected",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "operating_mode",
+          "as_written": "Operating mode",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "battery_label",
+          "as_written": "Battery",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "reservoir_level",
+          "as_written": "Reservoir level",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "tdd_bolus",
+          "as_written": "TDD Bolus",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "tdd_basal",
+          "as_written": "TDD Basal",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "refresh",
+          "as_written": "Refresh",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "enable_tbr_over_notification",
+          "as_written": "Enable notification of TBR end (pump setting)",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "disable_tbr_over_notification",
+          "as_written": "Disable notification of TBR end (pump setting)",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "unpair",
+          "as_written": "Unpair",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Settings in the pump",
+      "anchor": "settings-in-the-pump",
+      "source_hash": "977bc540935b16da",
+      "summary": "Menu paths on the Insight pump itself for silencing its alarms so AAPS decides which alarms to raise.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Vibration",
+      "anchor": "Accu-Chek-Insight-Pump-vibration",
+      "source_hash": "16e1df36da6b773f",
+      "summary": "Whether the pump vibrates on each bolus, by firmware version.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Battery replacement",
+      "anchor": "battery-replacement",
+      "source_hash": "a10956f8b6f29306",
+      "summary": "Typical battery life, and why a slow battery change can reset the pump clock and drop older AAPS entries from calculations.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Insight specific errors",
+      "anchor": "Accu-Chek-Insight-Pump-insight-specific-errors",
+      "source_hash": "b9c078ac8a8a2ed7",
+      "summary": "Heading for errors specific to the Insight.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Extended bolus",
+      "anchor": "extended-bolus",
+      "source_hash": "8e8ff197beaa5801",
+      "summary": "Use only one extended bolus at a time.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Time out",
+      "anchor": "time-out",
+      "source_hash": "138470ec84c73823",
+      "summary": "The handshake time-out notification and how to fix it by restarting Bluetooth on pump and phone.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "pump/insight/src/main/res/values/strings.xml",
+          "key": "timeout_during_handshake",
+          "as_written": "Timeout during handshake - reset bluetooth",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Crossing time zones with Insight pump",
+      "anchor": "crossing-time-zones-with-insight-pump",
+      "source_hash": "cb2b48fb4303d544",
+      "summary": "Points to the shared section on time-zone travel with the Insight.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Where to get help",
+      "anchor": "where-to-get-help",
+      "source_hash": "1403011c4c8ed97b",
+      "summary": "How to get help with the community-maintained Insight driver: read the docs, ask on Discord, report bugs on GitHub with logs and device details.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

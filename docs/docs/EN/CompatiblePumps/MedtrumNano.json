@@ -1,0 +1,1083 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatiblePumps/MedtrumNano.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Setting up the Medtrum Nano 200U/300U patch pump with AAPS: requirements and cautions, selecting the driver, its settings and related AAPS alerts, activating, deactivating and resuming patches with the Change Patch wizard, the pump screen, switching phones and troubleshooting.",
+  "features": [
+    "Medtrum",
+    "Pump"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_pump"
+    },
+    {
+      "ui_location": "Manage > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "pump_management"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Medtrum Nano 200U / 300U",
+      "anchor": "medtrum-nano-300u",
+      "source_hash": "ce8813b50f3fd965",
+      "summary": "Introduces the instructions for the Medtrum pump.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pump capabilities with AAPS",
+      "anchor": "pump-capabilities-with-aaps",
+      "source_hash": "fcb1a85411cc4709",
+      "summary": "Full loop support, automatic DST handling; extended bolus is not supported.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Hardware and software requirements",
+      "anchor": "hardware-and-software-requirements",
+      "source_hash": "52d2fcee50cf73d5",
+      "summary": "Supported pump bases, the minimum AAPS version and a BLE-capable phone.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Before you begin",
+      "anchor": "before-you-begin",
+      "source_hash": "c93c6d31073a6ccd",
+      "summary": "Cautions: patches activated by AAPS cannot be used with the PDM or Medtrum app, the pump falls back to its basal when disconnected, and the Profile cannot use half-hour or zero basal rates.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "ui/src/androidMain/res/values/strings.xml",
+          "key": "disconnectpump",
+          "as_written": "Disconnect pump",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Setup",
+      "anchor": "setup",
+      "source_hash": "08e611e7378e10a7",
+      "summary": "Warns to turn off every other device that can talk to the pump base before activating a patch with AAPS.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Step 1: Select Medtrum pump",
+      "anchor": "step-1-select-medtrum-pump",
+      "source_hash": "23ca11ca5498bf8f",
+      "summary": "Heading for the two ways to select the Medtrum driver.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Option 1: New installations",
+      "anchor": "option-1-new-installations",
+      "source_hash": "a165b68e0a895d55",
+      "summary": "Selecting Medtrum at the Pump step of the Setup Wizard, or Virtual Pump for now.",
+      "dialogs": [
+        "Setup Wizard > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_setupwizard",
+          "as_written": "Setup Wizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "medtrum",
+          "as_written": "Medtrum",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "virtual_pump",
+          "as_written": "Virtual Pump",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Option 2: The Configuration screen",
+      "anchor": "option-2-the-configuration-screen",
+      "source_hash": "e650bfcc247a18a0",
+      "summary": "Selecting the Medtrum driver in Configuration > Pump and opening its settings or pump screen.",
+      "dialogs": [
+        "Main menu > Configuration > Pump",
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "medtrum",
+          "as_written": "Medtrum",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Step 2: Change Medtrum settings",
+      "anchor": "medtrum-step-2",
+      "source_hash": "dba740af0314d661",
+      "summary": "Opening the Medtrum pump settings; there is no serial number setting any more because the pump base is found by a scan.",
+      "dialogs": [
+        "Configuration > Pump > Medtrum > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "medtrum",
+          "as_written": "Medtrum",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "medtrum_pump_setting",
+          "as_written": "Medtrum pump settings",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Alarm Settings",
+      "anchor": "alarm-settings",
+      "source_hash": "1d5160a890a31fa7",
+      "summary": "Whether the patch beeps or stays silent on alarms and warnings.",
+      "dialogs": [
+        "Configuration > Pump > Medtrum > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "alarm_setting_title",
+          "as_written": "Alarm Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "alarm_setting_beep",
+          "as_written": "Beep",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "alarm_setting_silent",
+          "as_written": "Silent",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Notification on pump warning",
+      "anchor": "notification-on-pump-warning",
+      "source_hash": "d928d29a3aadb0ea",
+      "summary": "Whether AAPS shows phone notifications for non-critical pump warnings.",
+      "dialogs": [
+        "Configuration > Pump > Medtrum > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "pump_warning_notification_title",
+          "as_written": "Notification on pump warning",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "alarm_setting_silent",
+          "as_written": "Silent",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Patch Expiration",
+      "anchor": "medtrum-patch-expiration",
+      "source_hash": "ebee5924b88556f1",
+      "summary": "Whether the patch expires after 3 days with a warning, or runs without warning until it stops.",
+      "dialogs": [
+        "Configuration > Pump > Medtrum > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "patch_expiration_title",
+          "as_written": "Patch Expiration",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Pump expiry warning [hours]",
+      "anchor": "pump-expiry-warning-hours",
+      "source_hash": "d68507911ebd4c6f",
+      "summary": "How many hours after activation AAPS shows the expiry warning.",
+      "dialogs": [
+        "Configuration > Pump > Medtrum > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "pump_warning_expiry_hour_title",
+          "as_written": "Pump expiry warning [hours]",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Hourly Maximum Insulin [Units]",
+      "anchor": "hourly-maximum-insulin-units",
+      "source_hash": "3c1686d361a96863",
+      "summary": "The hourly insulin limit above which the patch suspends; reset with Reset alarms.",
+      "dialogs": [
+        "Configuration > Pump > Medtrum > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "hourly_max_insulin_title",
+          "as_written": "Hourly Maximum Insulin [Units]",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "reset_alarms_label",
+          "as_written": "Reset alarms",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Daily Maximum Insulin [Units]",
+      "anchor": "daily-maximum-insulin-units",
+      "source_hash": "5fa4ef1313398bd9",
+      "summary": "The daily insulin limit above which the patch suspends; reset with Reset alarms.",
+      "dialogs": [
+        "Configuration > Pump > Medtrum > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "daily_max_insulin_title",
+          "as_written": "Daily Maximum Insulin [Units]",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "reset_alarms_label",
+          "as_written": "Reset alarms",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Scan on connection error",
+      "anchor": "scan-on-connection-error",
+      "source_hash": "826e6df28d3570e3",
+      "summary": "Advanced setting that rescans for the pump before reconnecting; needs the location permission set to allow all the time.",
+      "dialogs": [
+        "Configuration > Pump > Medtrum > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "scan_on_connection_error_title",
+          "as_written": "Scan on connection error",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "advanced_settings_title",
+          "as_written": "Advanced Settings",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Step 2b: AAPS alert settings",
+      "anchor": "step-2b-aaps-alert-settings",
+      "source_hash": "5407eb5ffe50a0de",
+      "summary": "Introduces AAPS preferences outside the Medtrum driver that matter for it.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "BT Watchdog",
+      "anchor": "bt-watchdog",
+      "source_hash": "6bab5a1406f3229d",
+      "summary": "The BT Watchdog pump preference that restarts Bluetooth when AAPS cannot connect.",
+      "dialogs": [
+        "Preferences > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_bt_watchdog",
+          "as_written": "BT Watchdog",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Local alerts",
+      "anchor": "local-alerts",
+      "source_hash": "38b0b7ae60d83d50",
+      "summary": "Opening the Local alerts preferences.",
+      "dialogs": [
+        "Preferences > Local alerts"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "localalertsettings_title",
+          "as_written": "Local alerts",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Alert if pump is unreachable",
+      "anchor": "alert-if-pump-is-unreachable",
+      "source_hash": "293f7a204c103094",
+      "summary": "The pump unreachable alert, forced on while the Medtrum driver is active.",
+      "dialogs": [
+        "Preferences > Local alerts"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_alert_pump_unreachable",
+          "as_written": "Alert if pump is unreachable",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Pump unreachable threshold",
+      "anchor": "pump-unreachable-threshold",
+      "source_hash": "8bc9e1a9459938ea",
+      "summary": "How long AAPS waits before the pump unreachable alert; 30 minutes recommended.",
+      "dialogs": [
+        "Preferences > Local alerts"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_pump_unreachable_threshold",
+          "as_written": "Pump unreachable threshold",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Step 3: Activate patch",
+      "anchor": "medtrum-activate-patch",
+      "source_hash": "e580cc84703ac998",
+      "summary": "What to have ready before activating a patch, including an active profile.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_wizard_profile_gate_title",
+          "as_written": "Profile required",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Start the activation",
+      "anchor": "start-the-activation",
+      "source_hash": "1d15c7b9051f65bf",
+      "summary": "Starting the patch wizard with Change Patch on the pump screen, and its first steps: profile gate, finding the pump base, or the Activate Patch start screen.",
+      "dialogs": [
+        "Manage > Pump > Change Patch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "change_patch_label",
+          "as_written": "Change Patch",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cancel",
+          "as_written": "Cancel",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_wizard_profile_gate_title",
+          "as_written": "Profile required",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "step_ble_scan",
+          "as_written": "Find Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "step_prepare_patch",
+          "as_written": "Activate Patch",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "next",
+          "as_written": "Next",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Connect and fill the patch",
+      "anchor": "connect-and-fill-the-patch",
+      "source_hash": "c4c3c1ab17f9591e",
+      "summary": "Wizard step: connect the pump base and fill the patch with at least 70 U, then continue.",
+      "dialogs": [
+        "Manage > Pump > Change Patch"
+      ],
+      "mentions": [
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "step_prepare_patch_connect",
+          "as_written": "Connect and fill",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "next",
+          "as_written": "Next",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Select insulin",
+      "anchor": "select-insulin",
+      "source_hash": "61b07b145cf8c248",
+      "summary": "Wizard step shown with several insulins: choose the insulin in the patch.",
+      "dialogs": [
+        "Manage > Pump > Change Patch"
+      ],
+      "mentions": [
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "step_select_insulin",
+          "as_written": "Select insulin",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Prime the patch",
+      "anchor": "prime-the-patch",
+      "source_hash": "bd0fc470faef1fde",
+      "summary": "Wizard step: half-press the needle button and prime the patch.",
+      "dialogs": [
+        "Manage > Pump > Change Patch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "next",
+          "as_written": "Next",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Site Rotation",
+      "anchor": "site-rotation",
+      "source_hash": "ea5bf4f428bd47fe",
+      "summary": "Wizard step shown with pump site rotation on: choose the patch site or skip.",
+      "dialogs": [
+        "Manage > Pump > Change Patch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "site_rotation",
+          "as_written": "Site Rotation",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_site_rotation_manage_pump",
+          "as_written": "Manage pump site rotation",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Attach patch",
+      "anchor": "attach-patch",
+      "source_hash": "a08408fa98bd04fb",
+      "summary": "Wizard step: attach the patch, insert the cannula and continue to activation.",
+      "dialogs": [
+        "Manage > Pump > Change Patch"
+      ],
+      "mentions": [
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "step_attach",
+          "as_written": "Attach patch",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "next",
+          "as_written": "Next",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Activate patch",
+      "anchor": "activate-patch",
+      "source_hash": "22875f9e34e1afb7",
+      "summary": "Wizard step: AAPS activates the patch and shows the units left; then export settings.",
+      "dialogs": [
+        "Manage > Pump > Change Patch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Deactivate patch",
+      "anchor": "nano-deactivate-patch",
+      "source_hash": "b22cf3b40e2e247e",
+      "summary": "Deactivating the current patch from Change Patch, discarding the session if the pump base no longer responds, then removing the patch.",
+      "dialogs": [
+        "Manage > Pump > Change Patch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "change_patch_label",
+          "as_written": "Change Patch",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "step_deactivate",
+          "as_written": "Deactivate patch",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "next",
+          "as_written": "Next",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cancel",
+          "as_written": "Cancel",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "discard",
+          "as_written": "Discard",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Resume interrupted activation",
+      "anchor": "nano-resume-interrupted-activation",
+      "source_hash": "6026582bc9090e08",
+      "summary": "Resuming an interrupted activation from Change Patch, or discarding it.",
+      "dialogs": [
+        "Manage > Pump > Change Patch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "change_patch_label",
+          "as_written": "Change Patch",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "next",
+          "as_written": "Next",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "discard",
+          "as_written": "Discard",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Pump screen",
+      "anchor": "nano-overview",
+      "source_hash": "9b28ea0ff654bfb4",
+      "summary": "The status banner and rows on the Medtrum pump screen.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "patch_not_active",
+          "as_written": "Patch not activated",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "pump_is_suspended",
+          "as_written": "Pump is suspended",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "last_connection_label",
+          "as_written": "Last connection",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "last_bolus_label",
+          "as_written": "Last bolus",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "battery_label",
+          "as_written": "Battery",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "reservoir_label",
+          "as_written": "Reservoir",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "serial_number",
+          "as_written": "Serial number",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "pump_state_label",
+          "as_written": "Pump state",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "status_active",
+          "as_written": "Active",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "status_stopped",
+          "as_written": "Stopped",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "base_basal_rate_label",
+          "as_written": "Base basal rate",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "tempbasal_label",
+          "as_written": "Temp basal",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "active_bolus_label",
+          "as_written": "Active bolus",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "active_alarms_label",
+          "as_written": "Active alarms",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "pump_type_label",
+          "as_written": "Pump type",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "fw_version_label",
+          "as_written": "FW version",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "patch_no_label",
+          "as_written": "Patch no",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "patch_activation_time_label",
+          "as_written": "Activation",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "patch_expiry_label",
+          "as_written": "Patch expires",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "expiry_not_enabled",
+          "as_written": "Not enabled",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Active alarms",
+      "anchor": "medtrum-active-alarms",
+      "source_hash": "cfa23ae2cecf937a",
+      "summary": "The pump screen row listing alarms that are active now.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "active_alarms_label",
+          "as_written": "Active alarms",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Refresh",
+      "anchor": "refresh",
+      "source_hash": "9fcd4e410c4a1d80",
+      "summary": "The Refresh button, available when a patch is active and AAPS is not connected.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "refresh",
+          "as_written": "Refresh",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Change Patch",
+      "anchor": "change-patch",
+      "source_hash": "8d76a637bd2aee1e",
+      "summary": "The Change Patch button that starts the patch wizard.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "change_patch_label",
+          "as_written": "Change Patch",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Unpair",
+      "anchor": "medtrum-unpair",
+      "source_hash": "95569c7f9ac0ff5d",
+      "summary": "The Unpair button that forgets the stored pump base so the next activation scans again.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_unpair",
+          "as_written": "Unpair",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "step_ble_scan",
+          "as_written": "Find Pump",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Reset alarms",
+      "anchor": "nano-reset-alarms",
+      "source_hash": "ec84f466d1f050d5",
+      "summary": "The Reset alarms button, shown when the patch has suspended itself, to clear alarms and resume delivery.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "reset_alarms_label",
+          "as_written": "Reset alarms",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Switching phone, export/import settings",
+      "anchor": "switching-phone-export-import-settings",
+      "source_hash": "36dd1877b17afe9f",
+      "summary": "Moving to a new phone: export settings, import them with the pump settings option, and wait for the history sync.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_replace_pump_settings",
+          "as_written": "Also replace pump settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "syncing_records",
+          "as_written": "Syncing records, ... left",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Troubleshooting",
+      "anchor": "medtrum-nano-troubleshooting",
+      "source_hash": "659a188b36f9c326",
+      "summary": "Heading for troubleshooting.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Connection issues",
+      "anchor": "connection-issues",
+      "source_hash": "92224b796f737640",
+      "summary": "Fixes for connection problems: location permission, Scan on connection error and BT Watchdog.",
+      "dialogs": [
+        "Configuration > Pump > Medtrum > Settings > Advanced Settings",
+        "Preferences > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "scan_on_connection_error_title",
+          "as_written": "Scan on connection error",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "advanced_settings_title",
+          "as_written": "Advanced Settings",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_bt_watchdog",
+          "as_written": "BT Watchdog",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Bluetooth issues",
+      "anchor": "bluetooth-issues",
+      "source_hash": "4daa416892098e77",
+      "summary": "Points to the general Bluetooth troubleshooting page.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Activation interrupted",
+      "anchor": "activation-interrupted",
+      "source_hash": "9b8bea3b2026138b",
+      "summary": "Resume an interrupted activation with Change Patch.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/medtrum/src/main/res/values/strings.xml",
+          "key": "change_patch_label",
+          "as_written": "Change Patch",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Preventing patch faults",
+      "anchor": "preventing-patch-faults",
+      "source_hash": "1544953e71ff2bad",
+      "summary": "How to avoid patch errors: seat the pump base properly and do not overfill.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Where to get help",
+      "anchor": "where-to-get-help",
+      "source_hash": "560ae86f09078cce",
+      "summary": "How to get help with the community-maintained Medtrum driver: read the docs, ask on Discord, search or open GitHub issues with logs.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

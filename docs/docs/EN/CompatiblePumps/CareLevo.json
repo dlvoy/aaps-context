@@ -1,0 +1,686 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatiblePumps/CareLevo.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Setting up the CareLevo patch pump in AAPS: selecting the driver, its three notification settings, the pump screen, activating a patch step by step, suspending, resuming and discarding a patch, and the patch's critical alarms, alerts and notices.",
+  "features": [
+    "CareLevo",
+    "Pump"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_pump"
+    },
+    {
+      "ui_location": "Manage > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "pump_management"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "CareLevo",
+      "anchor": "carelevo",
+      "source_hash": "6b92c10ffd6f3910",
+      "summary": "Introduces the CareLevo patch pump, warns that the driver is new, and asks for basal rates in 0.05 U/h steps in the Profile.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Pump capabilities with AAPS",
+      "anchor": "pump-capabilities-with-aaps",
+      "source_hash": "1fd3d7f23f805e9c",
+      "summary": "What the CareLevo supports: Bluetooth, 0.05 U bolus and basal steps, absolute temp basals up to 12 h, extended bolus up to 8 h, manual time-zone handling.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pump Setup",
+      "anchor": "pump-setup",
+      "source_hash": "25de8f3e99fa6f98",
+      "summary": "Selecting the Carelevo driver in Configuration under Pump.",
+      "dialogs": [
+        "Main menu > Configuration > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo",
+          "as_written": "Carelevo",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Settings",
+      "anchor": "settings",
+      "source_hash": "4e142dc3ff1d1638",
+      "summary": "Opening the CareLevo pump screen and its preferences from the gear icon; introduces the three settings.",
+      "dialogs": [
+        "Manage > Pump",
+        "Manage > Pump > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Low Insulin Notification Setting",
+      "anchor": "low-insulin-notification-setting",
+      "source_hash": "f26a8307fa7b8e88",
+      "summary": "The reservoir level (20–50 U) at which the patch warns about low insulin; below 10 U it always raises a critical alarm.",
+      "dialogs": [
+        "Manage > Pump > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_low_reservoir_reminders_title_value",
+          "as_written": "Low Insulin Notification Setting",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Patch Usage Notification Setting",
+      "anchor": "patch-usage-notification-setting",
+      "source_hash": "924467327b72c701",
+      "summary": "How many hours of wear (24–167 h) before the patch reminds you to change it.",
+      "dialogs": [
+        "Manage > Pump > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_patch_expiration_reminders_title_value",
+          "as_written": "Patch Usage Notification Setting",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Patch Info Alarm",
+      "anchor": "patch-info-alarm",
+      "source_hash": "ec1e727c3d5e08c2",
+      "summary": "Switch that makes the patch beep when a bolus, extended bolus or temp basal starts and ends.",
+      "dialogs": [
+        "Manage > Pump > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_patch_buzzer_alarm_title",
+          "as_written": "Patch Info Alarm",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "The pump screen",
+      "anchor": "the-pump-screen",
+      "source_hash": "22c2a6e277f72c93",
+      "summary": "The fields shown on the CareLevo pump screen and its buttons for activating, filling, suspending/resuming and discarding a patch.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_bluetooth_state_key",
+          "as_written": "Bluetooth status",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_serial_number_key",
+          "as_written": "Serial No.",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_boot_date_time_key",
+          "as_written": "Activation Time",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_expiration_key",
+          "as_written": "Expiration",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_basal_rate_key",
+          "as_written": "Basal Rate",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_temp_basal_rate_key",
+          "as_written": "Temp basal rate",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_insulin_remain_key",
+          "as_written": "Insulin Remaining",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_running_remain_time",
+          "as_written": "Patch Time Remaining",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_total_insulin_key",
+          "as_written": "Total insulin delivered",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_overview_connect_btn_label",
+          "as_written": "Activate Patch",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_btn_insulin_guide",
+          "as_written": "Insulin Guide",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_overview_pump_suspend_btn_label",
+          "as_written": "Suspend Infusion",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_overview_pump_resume_btn_label",
+          "as_written": "Resume Infusion",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_overview_pump_discard_btn_label",
+          "as_written": "Discard Patch",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Activating a patch",
+      "anchor": "activating-a-patch",
+      "source_hash": "3e91b3e5ff5ae81c",
+      "summary": "What to check before activating (active Profile, Bluetooth on, time limit) and starting the activation from the pump screen.",
+      "dialogs": [
+        "Manage > Pump > Activate Patch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_warning_incomplete_patch_setting",
+          "as_written": "Patch Application Timeout",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_overview_connect_btn_label",
+          "as_written": "Activate Patch",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Select the insulin",
+      "anchor": "select-the-insulin",
+      "source_hash": "204eaecc07ffb924",
+      "summary": "Activation step: confirm the rapid-acting U-100 insulin used.",
+      "dialogs": [
+        "Manage > Pump > Activate Patch"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Fill the patch with insulin",
+      "anchor": "fill-the-patch-with-insulin",
+      "source_hash": "d6a0195152423b16",
+      "summary": "Activation step: fill 50–300 U, open the filling guide if needed, and select the amount filled.",
+      "dialogs": [
+        "Manage > Pump > Activate Patch"
+      ],
+      "mentions": [
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_btn_insulin_guide",
+          "as_written": "Insulin Guide",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Connect the patch",
+      "anchor": "connect-the-patch",
+      "source_hash": "2f22b72424e3900b",
+      "summary": "Activation step: switch the patch on, search for it, and confirm or rescan.",
+      "dialogs": [
+        "Manage > Pump > Activate Patch"
+      ],
+      "mentions": [
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_btn_input_search_patch",
+          "as_written": "Search Patch",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_btn_confirm",
+          "as_written": "Confirm",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_btn_research",
+          "as_written": "Rescan",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Safety check",
+      "anchor": "safety-check",
+      "source_hash": "e9e6dec994f25011",
+      "summary": "Activation step: run the safety check and priming, retry if no droplet appears, then continue.",
+      "dialogs": [
+        "Manage > Pump > Activate Patch"
+      ],
+      "mentions": [
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_btn_safety_check",
+          "as_written": "Safety Check",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_btn_retry",
+          "as_written": "Retry",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_btn_next",
+          "as_written": "Next",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Site and patch attachment",
+      "anchor": "site-and-patch-attachment",
+      "source_hash": "6fc4c47d4e35add1",
+      "summary": "Activation step: choose and clean the site, attach the patch and continue.",
+      "dialogs": [
+        "Manage > Pump > Activate Patch"
+      ],
+      "mentions": [
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_btn_next",
+          "as_written": "Next",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Insert the needle",
+      "anchor": "insert-the-needle",
+      "source_hash": "785c4ec7dbc5d5ab",
+      "summary": "Activation step: insert the needle with the applicator and confirm; failed attempts end in a needle insertion error.",
+      "dialogs": [
+        "Manage > Pump > Activate Patch"
+      ],
+      "mentions": [
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_btn_needle_insert_check",
+          "as_written": "Confirm Insertion",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_warning_needle_injection_error",
+          "as_written": "Needle Insertion Error",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Bolus messages",
+      "anchor": "bolus-messages",
+      "source_hash": "1763ad7fe19bc2a9",
+      "summary": "How AAPS reports a refused bolus and records boluses whose stop the patch did not confirm.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Suspending and resuming insulin delivery",
+      "anchor": "suspending-and-resuming-insulin-delivery",
+      "source_hash": "f4b9bea096ab2990",
+      "summary": "Pausing delivery for 30 min to 4 h from the pump screen and resuming it from the pump screen or the Start Insulin alert.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_overview_pump_suspend_btn_label",
+          "as_written": "Suspend Infusion",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_alert_resume_infusion",
+          "as_written": "Start Insulin",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_overview_pump_resume_btn_label",
+          "as_written": "Resume Infusion",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Discarding a patch",
+      "anchor": "discarding-a-patch",
+      "source_hash": "fa3002d34fbff8cf",
+      "summary": "Stopping and discarding the current patch from the pump screen, or from a critical alarm's Deactivate Patch button.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_overview_pump_discard_btn_label",
+          "as_written": "Discard Patch",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_btn_patch_discard",
+          "as_written": "Deactivate Patch",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Alarms and notifications",
+      "anchor": "carelevo-alarms-and-notifications",
+      "source_hash": "08da0cf59a1a1737",
+      "summary": "Introduces the three levels of patch events, all shown as AAPS notifications.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Critical alarms",
+      "anchor": "critical-alarms",
+      "source_hash": "cd3b1a3d63c9a63d",
+      "summary": "The critical alarms that stop delivery and what to do for each.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_warning_low_insulin",
+          "as_written": "Low Insulin",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_warning_expired_patch",
+          "as_written": "Patch Expired",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_warning_low_battery",
+          "as_written": "Low Battery",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_warning_invalid_temperature",
+          "as_written": "High/Low Temperature",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_warning_not_used_app",
+          "as_written": "Auto-Off",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_btn_resume_infusion",
+          "as_written": "Start Insulin",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_warning_incomplete_patch_setting",
+          "as_written": "Patch Application Timeout",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_warning_failed_safety_check",
+          "as_written": "Self-Diagnosis Failed",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_warning_patch_error",
+          "as_written": "Patch Error",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_warning_infusion_clogged",
+          "as_written": "Occlusion",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_warning_needle_injection_error",
+          "as_written": "Needle Insertion Error",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Alerts",
+      "anchor": "alerts",
+      "source_hash": "a61158756298568e",
+      "summary": "The alerts that need attention while delivery continues, and how to respond.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_alert_low_insulin",
+          "as_written": "Low Insulin",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_low_reservoir_reminders_title_value",
+          "as_written": "Low Insulin Notification Setting",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_alert_expired_patch_phase1",
+          "as_written": "Patch Will Expire Soon",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_alert_expired_patch_phase2",
+          "as_written": "Patch Operating Life Expired",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_alert_low_battery",
+          "as_written": "Low Battery",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_alert_invalid_temperature",
+          "as_written": "High/Low Temperature",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_alert_not_used_app",
+          "as_written": "Auto-Off",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "common_btn_ok",
+          "as_written": "OK",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_alert_incomplete_patch_setting",
+          "as_written": "Patch Activation Incomplete",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_alert_resume_infusion",
+          "as_written": "Start Insulin",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_alert_off_bluetooth",
+          "as_written": "Turn Bluetooth On",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_alert_not_connected_ble",
+          "as_written": "BLE Not Connected",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Notices",
+      "anchor": "notices",
+      "source_hash": "3d5f73ddd0d0b62b",
+      "summary": "Information-only notices from the patch, and the patch's LGS function that AAPS does not use.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_notice_low_insulin",
+          "as_written": "Low Insulin",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_notice_expired_patch",
+          "as_written": "Patch Usage Time Notification",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "carelevo_patch_expiration_reminders_title_value",
+          "as_written": "Patch Usage Notification Setting",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_notice_check_patch",
+          "as_written": "Patch Check Notification",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_notice_change_time_zone",
+          "as_written": "Time Zone Change",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/carelevo/src/main/res/values/strings.xml",
+          "key": "alarm_feat_title_notice_check_bg",
+          "as_written": "Check Blood Glucose",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Where to get help",
+      "anchor": "where-to-get-help",
+      "source_hash": "2778738c600c5801",
+      "summary": "Where to report CareLevo driver problems: GitHub issues or the community channels.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

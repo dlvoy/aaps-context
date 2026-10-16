@@ -1,0 +1,730 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatiblePumps/EOPatch2.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Using the EOPatch2 patch pump with AAPS: selecting the driver, its three settings, the patch activation wizard step by step, discarding a patch, suspending and resuming delivery, and the alarms and warnings the patch raises.",
+  "features": [
+    "EOPatch2",
+    "Pump"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_pump"
+    },
+    {
+      "ui_location": "Manage > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "pump_management"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "EOPatch2",
+      "anchor": "eopatch2",
+      "source_hash": "a6635a01e3468c28",
+      "summary": "Insulin the patch needs and the 0.05 U minimum for basal rates in the Profile and for boluses.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "profile",
+          "as_written": "Profile",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Pump capabilities with AAPS",
+      "anchor": "pump-capabilities-with-aaps",
+      "source_hash": "84e2a9aa506e4776",
+      "summary": "The patch talks to AAPS over the phone's Bluetooth; DST and time-zone changes must be handled by hand.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pump setup",
+      "anchor": "pump-setup",
+      "source_hash": "394b2ad4267277c5",
+      "summary": "Selecting the EOPatch2 driver in Configuration under Pump; its card has Settings and Open plugin.",
+      "dialogs": [
+        "Main menu > Configuration > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings.xml",
+          "key": "eopatch",
+          "as_written": "EOPatch2",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Settings",
+      "anchor": "settings",
+      "source_hash": "c672e24213631365",
+      "summary": "Opening the EOPatch2 settings from its Configuration card or the pump screen's gear icon.",
+      "dialogs": [
+        "Configuration > Pump > EOPatch2 > Settings",
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings.xml",
+          "key": "eopatch",
+          "as_written": "EOPatch2",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Low reservoir Alerts",
+      "anchor": "low-reservoir-alerts",
+      "source_hash": "d424e219ae0f811b",
+      "summary": "Setting the insulin level (10–50 U) at which a low reservoir warning appears.",
+      "dialogs": [
+        "Configuration > Pump > EOPatch2 > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "pump/eopatch/src/main/res/values/strings.xml",
+          "key": "low_reservoir",
+          "as_written": "Low reservoir Alerts",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Patch expiration Reminder",
+      "anchor": "patch-expiration-reminder",
+      "source_hash": "218e6ca7e39351b9",
+      "summary": "Setting how many hours before expiry (1–24 h) the patch reminds you.",
+      "dialogs": [
+        "Configuration > Pump > EOPatch2 > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "pump/eopatch/src/main/res/values/strings.xml",
+          "key": "patch_expiration_reminders",
+          "as_written": "Patch expiration Reminder",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Patch buzzer Reminders",
+      "anchor": "patch-buzzer-reminders",
+      "source_hash": "166faf70473f27f5",
+      "summary": "Switch that makes the patch beep when a bolus, extended bolus or temp basal starts and ends.",
+      "dialogs": [
+        "Configuration > Pump > EOPatch2 > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "pump/eopatch/src/main/res/values/strings.xml",
+          "key": "patch_buzzer_reminders",
+          "as_written": "Patch buzzer Reminders",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Activating a new patch",
+      "anchor": "activating-a-new-patch",
+      "source_hash": "82e595892d1e808a",
+      "summary": "Heading for the patch activation wizard.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Open the activation wizard",
+      "anchor": "open-the-activation-wizard",
+      "source_hash": "05a3e5fa0aa51994",
+      "summary": "Opening the pump screen and starting the activation wizard with Activate Patch; a profile gate appears if no profile was ever activated.",
+      "dialogs": [
+        "Manage > Pump > Activate Patch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings.xml",
+          "key": "eopatch",
+          "as_written": "EOPatch2",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings.xml",
+          "key": "eopatch_not_activated",
+          "as_written": "Not activated",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings.xml",
+          "key": "string_activate_patch",
+          "as_written": "Activate Patch",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_wizard_profile_gate_title",
+          "as_written": "Profile required",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "activate_profile",
+          "as_written": "Activate profile",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Filling Insulin",
+      "anchor": "filling-insulin",
+      "source_hash": "9229428f81c55ef1",
+      "summary": "Wizard step: fill the patch with 80–200 U until it boots, then start pairing.",
+      "dialogs": [
+        "Manage > Pump > Activate Patch"
+      ],
+      "mentions": [
+        {
+          "file": "pump/eopatch/src/main/res/values/strings.xml",
+          "key": "patch_start_pairing",
+          "as_written": "Start pairing",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Patch pairing",
+      "anchor": "patch-pairing",
+      "source_hash": "37f55d42125b93db",
+      "summary": "Wizard step: AAPS pairs with the patch; accept both Android Bluetooth pairing requests and finish within 60 minutes of boot.",
+      "dialogs": [
+        "Manage > Pump > Activate Patch"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Select insulin",
+      "anchor": "select-insulin",
+      "source_hash": "febc1e1e60cbc98c",
+      "summary": "Wizard step: choose the insulin in the patch; AAPS applies a profile switch with it after activation.",
+      "dialogs": [
+        "Manage > Pump > Activate Patch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "next",
+          "as_written": "Next",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Prepare for attaching the Patch",
+      "anchor": "prepare-for-attaching-the-patch",
+      "source_hash": "36ecff2a56d4535b",
+      "summary": "Wizard step: remove the adhesive tape, or discard a damaged patch.",
+      "dialogs": [
+        "Manage > Pump > Activate Patch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "next",
+          "as_written": "Next",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "discard",
+          "as_written": "Discard",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Site location",
+      "anchor": "site-location",
+      "source_hash": "080919ef479b12ce",
+      "summary": "Wizard step shown with pump site rotation on: pick the site on the body diagram or skip.",
+      "dialogs": [
+        "Manage > Pump > Activate Patch"
+      ],
+      "mentions": [
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_site_rotation_manage_pump",
+          "as_written": "Manage pump site rotation",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "next",
+          "as_written": "Next",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "skip",
+          "as_written": "Skip",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Attaching the Patch",
+      "anchor": "attaching-the-patch",
+      "source_hash": "fbfc47b630ea0e90",
+      "summary": "Wizard step: choose and prepare the site, attach the patch and start the safety check.",
+      "dialogs": [
+        "Manage > Pump > Activate Patch"
+      ],
+      "mentions": [
+        {
+          "file": "pump/eopatch/src/main/res/values/strings.xml",
+          "key": "patch_start_safety_check",
+          "as_written": "Start safety check",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Safety check",
+      "anchor": "safety-check",
+      "source_hash": "9fc2c09a88019f04",
+      "summary": "Wizard step: the 30-second safety check; retry if it fails.",
+      "dialogs": [
+        "Manage > Pump > Activate Patch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "retry",
+          "as_written": "Retry",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Inserting the needle",
+      "anchor": "inserting-the-needle",
+      "source_hash": "3b7ab49ec48d12f4",
+      "summary": "Wizard step: turn the needle lever to insert the needle; a needle insertion error offers retry or discard.",
+      "dialogs": [
+        "Manage > Pump > Activate Patch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "next",
+          "as_written": "Next",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings.xml",
+          "key": "needle_insertion_error_1",
+          "as_written": "Needle insertion Error",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "retry",
+          "as_written": "Retry",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "discard",
+          "as_written": "Discard",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "Patch activation completed",
+      "anchor": "patch-activation-completed",
+      "source_hash": "4b2c1a669cd56370",
+      "summary": "Wizard's last page: the patch is active; finish to return to the pump screen.",
+      "dialogs": [
+        "Manage > Pump > Activate Patch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "finish",
+          "as_written": "Finish",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Discarding the patch",
+      "anchor": "discarding-the-patch",
+      "source_hash": "f2a0ba776ac999f5",
+      "summary": "When and how to discard a patch from the pump screen, what AAPS records afterwards, and the Force Reset fallback when the patch does not respond.",
+      "dialogs": [
+        "Manage > Pump > Discard Patch"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings.xml",
+          "key": "string_discard_patch",
+          "as_written": "Discard Patch",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings.xml",
+          "key": "patch_discard_complete_title",
+          "as_written": "Discarding the patch is completed.",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "confirm",
+          "as_written": "Confirm",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings.xml",
+          "key": "patch_force_reset",
+          "as_written": "Force Reset",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Suspending and resuming insulin delivery",
+      "anchor": "suspending-and-resuming-insulin-delivery",
+      "source_hash": "af22cd49b7a83ec1",
+      "summary": "Suspending cancels extended boluses and temp basals, which are not restarted on resume.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Suspending insulin delivery",
+      "anchor": "suspending-insulin-delivery",
+      "source_hash": "c52b3fc4461dd6d1",
+      "summary": "Suspending delivery from the pump screen and choosing the suspend time.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_suspend",
+          "as_written": "Suspend pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "confirm",
+          "as_written": "Confirm",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings.xml",
+          "key": "string_suspend_time_insulin_delivery_title",
+          "as_written": "Basal Suspending Time",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Resuming insulin delivery",
+      "anchor": "resuming-insulin-delivery",
+      "source_hash": "cbc35d7d45f30b20",
+      "summary": "Resuming delivery from the pump screen; when the suspend time ends AAPS warns and waits for confirmation.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_resume",
+          "as_written": "Resume pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings.xml",
+          "key": "string_resume_insulin_delivery_title",
+          "as_written": "Resume insulin delivery",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "confirm",
+          "as_written": "Confirm",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings_alarm.xml",
+          "key": "string_b001",
+          "as_written": "End of insulin suspend",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Alarms and warnings",
+      "anchor": "eopatch2-alarms-and-warnings",
+      "source_hash": "336bfb74ccee28a8",
+      "summary": "Heading for patch alarms and warnings.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Alarms",
+      "anchor": "alarms",
+      "source_hash": "1bcd9dd787c11b47",
+      "summary": "Urgent patch alarms shown as notifications, how confirming them usually deactivates the patch, and a table of the alarms.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "confirm",
+          "as_written": "Confirm",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "retry",
+          "as_written": "Retry",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings_alarm.xml",
+          "key": "string_a002",
+          "as_written": "Empty reservoir",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings_alarm.xml",
+          "key": "string_a003",
+          "as_written": "Patch expired",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings_alarm.xml",
+          "key": "string_a004",
+          "as_written": "Occlusion",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings_alarm.xml",
+          "key": "string_a005",
+          "as_written": "Power on self-test failure",
+          "confidence": 0.6
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings_alarm.xml",
+          "key": "string_a007",
+          "as_written": "Inappropriate temperature",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings_alarm.xml",
+          "key": "string_a016",
+          "as_written": "Needle insertion Error",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings_alarm.xml",
+          "key": "string_a018",
+          "as_written": "Patch battery Error",
+          "confidence": 0.6
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings_alarm.xml",
+          "key": "string_a020",
+          "as_written": "Patch activation Error",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings_alarm.xml",
+          "key": "string_a022",
+          "as_written": "Patch Error",
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "heading": "Warnings",
+      "anchor": "warnings",
+      "source_hash": "32307f4e4902fe5a",
+      "summary": "Medium- and low-priority patch warnings shown as notifications, with a table of each warning and what to do.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_resume",
+          "as_written": "Resume pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings.xml",
+          "key": "low_reservoir",
+          "as_written": "Low reservoir Alerts",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings_alarm.xml",
+          "key": "string_b001",
+          "as_written": "End of insulin suspend",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings_alarm.xml",
+          "key": "string_b003",
+          "as_written": "Low reservoir",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings_alarm.xml",
+          "key": "string_b005",
+          "as_written": "Patch operating life expired",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings_alarm.xml",
+          "key": "string_b006",
+          "as_written": "Patch will expire soon",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings_alarm.xml",
+          "key": "string_b012",
+          "as_written": "Incomplete Patch activation",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/eopatch/src/main/res/values/strings_alarm.xml",
+          "key": "string_b018",
+          "as_written": "Patch battery low",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Where to get help",
+      "anchor": "where-to-get-help",
+      "source_hash": "17edb70f94a1dec7",
+      "summary": "How to get help with the community-maintained EOPatch2 driver: read the docs, ask on Discord, report bugs on GitHub with logs and device details.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "Alarm and warning names in the tables are the first line of longer alarm messages in strings_alarm.xml; several alarm codes share 'Patch Error' and 'Patch battery Error', so those links are approximate."
+}

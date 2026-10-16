@@ -1,0 +1,379 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatiblePumps/Equil5.3.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Setting up the Equil patch pump in AAPS: selecting the driver, its settings, the pairing wizard step by step, the pump screen buttons after pairing (suspend, change reservoir, history, unpair) and how alarms are handled.",
+  "features": [
+    "Equil",
+    "Pump"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_pump"
+    },
+    {
+      "ui_location": "Manage > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "pump_management"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Equil",
+      "anchor": "equil",
+      "source_hash": "8e53605b5883bf42",
+      "summary": "Page title: instructions for configuring the Equil insulin pump.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pump capabilities with AAPS",
+      "anchor": "pump-capabilities-with-aaps",
+      "source_hash": "79da88ea549dea5e",
+      "summary": "How AAPS treats the Equil: a Bluetooth patch pump with a 200 U reservoir, no Prime/Fill or battery change actions on the main screen, 0 U/h temp basal while suspended, manual DST handling.",
+      "dialogs": [],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "prime_fill",
+          "as_written": "Prime/Fill",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_battery_change",
+          "as_written": "Pump battery change",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Hardware and software requirements",
+      "anchor": "hardware-and-software-requirements",
+      "source_hash": "bff9fc3c828ea1ae",
+      "summary": "Supported Equil versions (5.3 and 5.4) and the minimum AAPS version.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Setup",
+      "anchor": "setup",
+      "source_hash": "0ecddf15e1aff85f",
+      "summary": "Heading for selecting, configuring and pairing the Equil.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Select Equil pump",
+      "anchor": "select-equil-pump",
+      "source_hash": "44fffb02818099e0",
+      "summary": "Selecting the Equil driver under Configuration > Pump and opening its settings or the pump screen.",
+      "dialogs": [
+        "Main menu > Configuration > Pump",
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_name",
+          "as_written": "Equil",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Settings",
+      "anchor": "settings",
+      "source_hash": "4fa94bc2af1d7067",
+      "summary": "The Equil driver settings: low battery and low insulin alarms, alert tone mode and bolus speed; a note explains how AAPS sends max basal and max bolus to the patch.",
+      "dialogs": [
+        "Configuration > Pump > Equil > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_name",
+          "as_written": "Equil",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_settings_alarm_battery",
+          "as_written": "Low battery alarm",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_settings_alarm_insulin",
+          "as_written": "Low drug storage alarm",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_tone",
+          "as_written": "Alert tone",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_tone_mode_mute",
+          "as_written": "Mute",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_tone_mode_shake",
+          "as_written": "Vibrate only",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_tone_mode_tone",
+          "as_written": "Tone only",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_tone_mode_tone_and_shake",
+          "as_written": "Vibrate and tone",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Pair the pump",
+      "anchor": "pair-the-pump",
+      "source_hash": "11ddce30175df73b",
+      "summary": "The Equil pairing wizard step by step: profile gate, assembling, finding the pump, optional pair password, insulin choice, priming, site rotation, attaching, purging air from the cannula and finishing.",
+      "dialogs": [
+        "Manage > Pump > Pair"
+      ],
+      "mentions": [
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_pair",
+          "as_written": "Pair",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "next",
+          "as_written": "Next",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cancel",
+          "as_written": "Cancel",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_wizard_profile_gate_title",
+          "as_written": "Profile required",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "activate_profile",
+          "as_written": "Activate profile",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_title_assemble",
+          "as_written": "Assemble pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "step_ble_scan",
+          "as_written": "Find Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_title_serial",
+          "as_written": "Pair device",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_set_pair_password",
+          "as_written": "Set pair password",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "select_insulin",
+          "as_written": "Select Insulin",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_title_fill",
+          "as_written": "Prime / Fill",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_fill",
+          "as_written": "Prime/Fill",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "site_rotation",
+          "as_written": "Site Rotation",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_site_rotation_manage_pump",
+          "as_written": "Manage pump site rotation",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "skip",
+          "as_written": "Skip",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_title_attach",
+          "as_written": "Attach pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_title_air",
+          "as_written": "Prime cannula",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_air",
+          "as_written": "Purge air",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "confirm",
+          "as_written": "Confirm",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "finish",
+          "as_written": "Finish",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Pump screen after pairing",
+      "anchor": "pump-screen-after-pairing",
+      "source_hash": "f7e93f5b8d9cfbd8",
+      "summary": "The buttons on the paired Equil pump screen: refresh, suspend/resume, the change reservoir wizard, the pump history and unpairing.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "refresh",
+          "as_written": "Refresh",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_common_overview_button_suspend_delivery",
+          "as_written": "Suspend",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_common_overview_button_resume_delivery",
+          "as_written": "Resume delivery",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_dressing",
+          "as_written": "Change reservoir",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "history",
+          "as_written": "History",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/equil/src/main/res/values/strings.xml",
+          "key": "equil_unbind",
+          "as_written": "Unpair device",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Alarms",
+      "anchor": "alarms",
+      "source_hash": "6d3e94e422599701",
+      "summary": "When the low insulin and low battery alarms sound, and how pump alarms and stops appear as announcements in treatments.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Where to get help",
+      "anchor": "where-to-get-help",
+      "source_hash": "16b503d41f475ebd",
+      "summary": "How to get help with the community-maintained Equil driver: read the docs, ask on Discord, report bugs on GitHub with logs and device details.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "The page describes a Bolus speed setting (1.5/3/6/12 U/min) and the Change reservoir choices 'Yes, new infusion set' / 'No, only reservoir or battery'; this AndroidAPS checkout has no such Equil strings, so they are not linked."
+}

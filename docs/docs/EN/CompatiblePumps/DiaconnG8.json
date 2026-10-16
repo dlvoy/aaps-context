@@ -1,0 +1,319 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatiblePumps/DiaconnG8.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Setting up the Diaconn G8 pump in AAPS: selecting the driver, pairing it over Bluetooth from the pump screen, checking status and syncing logs, fixing unstable Bluetooth connections, and the driver's settings.",
+  "features": [
+    "Diaconn G8",
+    "Pump"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_pump"
+    },
+    {
+      "ui_location": "Manage > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "pump_management"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Diaconn G8",
+      "anchor": "diaconn-g8",
+      "source_hash": "e05a1cadadb8c25d",
+      "summary": "Page title and table of contents.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pump capabilities with AAPS",
+      "anchor": "pump-capabilities-with-aaps",
+      "source_hash": "84e2a9aa506e4776",
+      "summary": "The pump talks to AAPS over the phone's Bluetooth; DST and time-zone changes must be handled by hand.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Insulin Pump Bluetooth Pairing",
+      "anchor": "insulin-pump-bluetooth-pairing",
+      "source_hash": "88d04cf2320b70e2",
+      "summary": "Selecting the Diaconn G8 driver in Configuration > Pump, opening its settings or pump screen, and pairing: tap Pair, pick the pump by its model number, enter the PIN shown on the pump.",
+      "dialogs": [
+        "Main menu > Configuration > Pump",
+        "Manage > Pump > Diaconn Pump Pairing"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/diaconn/src/main/res/values/strings.xml",
+          "key": "diaconn_g8_pump",
+          "as_written": "Diaconn G8",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_pair",
+          "as_written": "Pair",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/diaconn/src/main/res/values/strings.xml",
+          "key": "diaconn_pairing",
+          "as_written": "Diaconn Pump Pairing",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/diaconn/src/main/res/values/strings.xml",
+          "key": "diaconn_pairing_successful",
+          "as_written": "Pairing successful!",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Pump status check and log synchronization",
+      "anchor": "pump-status-check-and-log-synchronization",
+      "source_hash": "758f53746e49c6e0",
+      "summary": "Reading the pump status on the pump screen, refreshing to sync logs, and opening the pump history.",
+      "dialogs": [
+        "Manage > Pump",
+        "Manage > Pump > Pump history"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "refresh",
+          "as_written": "Refresh",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_history",
+          "as_written": "Pump history",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Bluetooth Troubleshooting",
+      "anchor": "diaconn-g8-bluetooth-troubleshooting",
+      "source_hash": "1ac0f2afb93469aa",
+      "summary": "Introduces two fixes for an unstable Bluetooth connection with the pump.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Method 1) Restart AAPS, then check the pump again",
+      "anchor": "method-1-restart-aaps-then-check-the-pump-again",
+      "source_hash": "2646bd9c708fa978",
+      "summary": "Quit AAPS from the main menu's Exit item, start it again and check the pump connection.",
+      "dialogs": [
+        "Main menu"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_exit",
+          "as_written": "Exit",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Method 2) If the first method doesn't work, disconnect Bluetooth and then reconnect.",
+      "anchor": "method-2-if-the-first-method-doesn-t-work-disconnect-bluetooth-and-then-reconnect",
+      "source_hash": "54c1452f346aa2a3",
+      "summary": "Unpair the phone on the pump, clear the pairing in AAPS with Unpair on the pump screen, then pair again.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_unpair",
+          "as_written": "Unpair",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/diaconn/src/main/res/values/strings.xml",
+          "key": "resetpairing",
+          "as_written": "Reset pairing information?",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Further Information",
+      "anchor": "further-information",
+      "source_hash": "ab35c9e169d5c116",
+      "summary": "Heading for the driver settings and extended bolus notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Diaconn G8 Insulin pump option setting",
+      "anchor": "diaconn-g8-insulin-pump-option-setting",
+      "source_hash": "b1509343a960e988",
+      "summary": "The Diaconn G8 driver settings: bolus speed, automatic logging of reservoir, needle, tube and battery changes, and Diaconn Cloud sync; also recording a battery change from Manage.",
+      "dialogs": [
+        "Configuration > Pump > Diaconn G8 > Settings",
+        "Manage > Pump Battery Change"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/diaconn/src/main/res/values/strings.xml",
+          "key": "diaconn_g8_pump",
+          "as_written": "Diaconn G8",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "bolusspeed",
+          "as_written": "Bolus speed",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/diaconn/src/main/res/values/strings.xml",
+          "key": "diaconn_g8_loginsulinchange_title",
+          "as_written": "Log reservoir change",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/diaconn/src/main/res/values/strings.xml",
+          "key": "diaconn_g8_logcanulachange_title",
+          "as_written": "Log needle change",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/diaconn/src/main/res/values/strings.xml",
+          "key": "diaconn_g8_logtubechange_title",
+          "as_written": "Log tube change",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/diaconn/src/main/res/values/strings.xml",
+          "key": "diaconn_g8_logbatterychange_title",
+          "as_written": "Log battery change",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_battery_change",
+          "as_written": "Pump Battery Change",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/diaconn/src/main/res/values/strings.xml",
+          "key": "diaconn_g8_cloudsend_title",
+          "as_written": "Diaconn Cloud Sync",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Extended Bolus function",
+      "anchor": "extended-bolus-function",
+      "source_hash": "1b8c8ef772219551",
+      "summary": "Warns that using an extended bolus disables the closed loop and links to the explanation.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Where to get help",
+      "anchor": "where-to-get-help",
+      "source_hash": "08c1601656c61823",
+      "summary": "How to get help with the community-maintained Diaconn G8 driver: read the docs, ask on Discord, report bugs on GitHub with logs and device details.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "The admonitions mention an old Selected pump setting and an Actions tab; AAPS 4 has neither, so they are not linked to app keys."
+}

@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatiblePumps/Future-possible-Pump-Drivers.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "An overview of insulin pumps that AAPS does not support yet, or no longer supports: pumps in integration, pumps that could be looped, pumps no longer sold, pumps that cannot be looped, and what a pump needs to be loopable. No app screens are involved.",
+  "features": [
+    "Pump"
+  ],
+  "screens": [],
+  "sections": [
+    {
+      "heading": "Future (possible) Pump Drivers",
+      "anchor": "future-possible-pump-drivers",
+      "source_hash": "f21b37432ac89670",
+      "summary": "Introduces the list of pumps and their looping status.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pumps in AAPS integration phase",
+      "anchor": "pumps-in-aaps-integration-phase",
+      "source_hash": "5b97475be0b9a8ef",
+      "summary": "Pumps whose AAPS drivers are in development and in test builds (Omnipod 5, Tandem t:Mobi).",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pumps that are Loopable",
+      "anchor": "pumps-that-are-loopable",
+      "source_hash": "45ee49761b9e6652",
+      "summary": "Heading for pumps that could be looped in principle.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Kaleido ([Homepage](https://www.hellokaleido.com/))",
+      "anchor": "kaleido-homepage-https-www-hellokaleido-com",
+      "source_hash": "a2525688c75a1faf",
+      "summary": "Kaleido's loop status and hardware needs: a candidate with an unknown protocol.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Tandem: t:slim X3 ([Homepage](https://www.tandemdiabetes.com/about-us/pipeline))",
+      "anchor": "tandem-t-slim-x3-homepage-https-www-tandemdiabetes-com-about-us-pipeline",
+      "source_hash": "9aa32e69939cb068",
+      "summary": "t:slim X3's loop status: a possible future candidate, not yet released.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Twiist ([Homepage](https://www.twiist.com/))",
+      "anchor": "twiist-homepage-https-www-twiist-com",
+      "source_hash": "58f9e10278df3998",
+      "summary": "Twiist's loop status: a Bluetooth loop candidate.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Willcare Insulin pump ([Homepage](http://shinmyungmedi.com/en/))",
+      "anchor": "willcare-insulin-pump-homepage-http-shinmyungmedi-com-en",
+      "source_hash": "080d209abcd1461a",
+      "summary": "Willcare's loop status: not loopable yet, but the vendor is interested in integration.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Ypsopump ([Homepage](https://www.ypsomed.com/))",
+      "anchor": "ypsopump-homepage-https-www-ypsomed-com",
+      "source_hash": "77d5c374dda2e83d",
+      "summary": "Ypsopump's loop status: protocol reverse-engineered but heavily encrypted; no production driver yet.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pumps no longer sold (companies no longer operating)",
+      "anchor": "pumps-no-longer-sold-companies-no-longer-operating",
+      "source_hash": "fe3774a1cccb19fb",
+      "summary": "Heading for pumps that are no longer sold.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Animas Vibe",
+      "anchor": "animas-vibe",
+      "source_hash": "4f5ff139e19d7b45",
+      "summary": "Animas Vibe, no longer sold.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Animas Ping",
+      "anchor": "animas-ping",
+      "source_hash": "19ddcadc5bc1957d",
+      "summary": "Animas Ping, no longer sold.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Cellnovo",
+      "anchor": "cellnovo",
+      "source_hash": "61eecb216b65efa3",
+      "summary": "Cellnovo, no longer sold.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Accu-Chek Insight",
+      "anchor": "accu-chek-insight",
+      "source_hash": "360d836e47a4325e",
+      "summary": "Accu-Chek Insight: support ended in March 2025.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pumps that aren't Loopable",
+      "anchor": "pumps-that-aren-t-loopable",
+      "source_hash": "7f26df9edfec4ebc",
+      "summary": "Heading for pumps that cannot be looped.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Medtronic Bluetooth",
+      "anchor": "medtronic-bluetooth",
+      "source_hash": "86b0366aa83bb8be",
+      "summary": "Medtronic's Bluetooth pumps: Medtronic withdrew from the loop partnership.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Tandem: t:slim X2 ([Homepage](https://www.tandemdiabetes.com/))",
+      "anchor": "tandem-t-slim-x2-homepage-https-www-tandemdiabetes-com",
+      "source_hash": "54fa7bbdbefaf3dd",
+      "summary": "t:slim X2: only boluses can be controlled, so it cannot be looped safely.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Accu-Chek Solo",
+      "anchor": "accu-chek-solo",
+      "source_hash": "527d03f4670afd73",
+      "summary": "Accu-Chek Solo: the community has not managed to communicate with it.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Requirements for pumps being loopable",
+      "anchor": "requirements-for-pumps-being-loopable",
+      "source_hash": "317a84db9909a76b",
+      "summary": "The pump commands a driver needs: prerequisites, the minimum for looping, for SMB, and nice-to-have commands.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Other pumps support",
+      "anchor": "other-pumps-support",
+      "source_hash": "8d8006d88668a09e",
+      "summary": "Asks readers to ask on Discord about pumps not listed.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}

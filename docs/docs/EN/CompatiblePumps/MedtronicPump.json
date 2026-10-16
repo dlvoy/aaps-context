@@ -1,0 +1,698 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatiblePumps/MedtronicPump.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Using older Medtronic pumps with AAPS through a RileyLink-compatible device: supported models, settings on the pump, selecting and configuring the Medtronic driver, pairing the RileyLink, the pump screen, pump history, RileyLink status and actions, plus notes and an FAQ on connection problems.",
+  "features": [
+    "Medtronic",
+    "RileyLink",
+    "Pump"
+  ],
+  "screens": [
+    {
+      "ui_location": "Main menu > Configuration > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_pump"
+    },
+    {
+      "ui_location": "Manage > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "pump_management"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Medtronic Pumps",
+      "anchor": "medtronic-pumps",
+      "source_hash": "7910910dac9e4ece",
+      "summary": "Which Medtronic models and firmware versions the driver supports, and where to check the firmware.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pump capabilities with AAPS",
+      "anchor": "pump-capabilities-with-aaps",
+      "source_hash": "fcad2a80488903ea",
+      "summary": "The pump needs a RileyLink-compatible device; DST and time zones are handled automatically.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Hardware and software requirements",
+      "anchor": "hardware-and-software-requirements",
+      "source_hash": "e8afb1f2a239bdae",
+      "summary": "The phone and the RileyLink-compatible devices (RileyLink, OrangeLink, EmaLink, GNARL) needed.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Configuration of the pump",
+      "anchor": "MedtronicPump-configuration-of-the-pump",
+      "source_hash": "2d3cc73fa1024ea5",
+      "summary": "Settings to make on the pump itself: remote mode, max basal, max bolus, standard profile and absolute temp basal type.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Medtronic Configuration of Phone/AAPS",
+      "anchor": "medtronic-configuration-of-phone-aaps",
+      "source_hash": "f44fdae76da9d4e9",
+      "summary": "Selecting the Medtronic driver in Configuration > Pump (or the setup wizard) and filling in its settings: serial number, pump type, frequency, max basal and bolus, bolus delay, encoding, battery type, scanning, link battery level and neutral temp basals.",
+      "dialogs": [
+        "Main menu > Configuration > Pump",
+        "Configuration > Pump > Medtronic > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_serial_number",
+          "as_written": "Pump Serial Number",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_pump_type",
+          "as_written": "Pump Type",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_pump_frequency",
+          "as_written": "Pump Frequency",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_pump_max_basal",
+          "as_written": "Max Basal on Pump (U/h)",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_pump_max_bolus",
+          "as_written": "Max Bolus on Pump (U)",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_pump_bolus_delay",
+          "as_written": "Delay before Bolus is started (s)",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "medtronic_pump_encoding_title",
+          "as_written": "Medtronic Encoding",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_pump_battery_select",
+          "as_written": "Battery Type (Power View)",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_pump_battery_no",
+          "as_written": "Not selected (Simple view)",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_pump_battery_alkaline",
+          "as_written": "Alkaline (Extended view)",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_pump_battery_lithium",
+          "as_written": "Lithium (Extended view)",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_pump_battery_nizn",
+          "as_written": "NiZn (Extended view)",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_pump_battery_nimh",
+          "as_written": "NiMH (Extended view)",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "orange_use_scanning_level",
+          "as_written": "Use Scanning",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "riley_link_show_battery_level",
+          "as_written": "Show battery level reported by OrangeLink/EmaLink/DiaLink",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "rl_battery_label",
+          "as_written": "RileyLink Battery",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "set_neutral_temps_title",
+          "as_written": "Set neutral temp basals",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Pairing your RileyLink compatible device",
+      "anchor": "pairing-your-rileylink-compatible-device",
+      "source_hash": "a9f791767867b1e3",
+      "summary": "Pairing the RileyLink-compatible device from the Medtronic pump screen, not from Android's Bluetooth menu.",
+      "dialogs": [
+        "Manage > Pump > Pair RileyLink"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_pair",
+          "as_written": "Pair RileyLink",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_pair_success",
+          "as_written": "RileyLink paired successfully",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Medtronic pump screen",
+      "anchor": "medtronic-pump-screen",
+      "source_hash": "a5e5e0a879a87b90",
+      "summary": "The status fields on the Medtronic pump screen and its buttons: refresh, pair RileyLink, pump history, RL stats, wake and tune up, reset RileyLink and clear bolus block.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_status",
+          "as_written": "RileyLink Status",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "rl_battery_label",
+          "as_written": "RileyLink Battery",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "riley_link_show_battery_level",
+          "as_written": "Show battery level reported by OrangeLink/EmaLink/DiaLink",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "medtronic_pump_status",
+          "as_written": "Pump Status",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "pump_status_waking_up",
+          "as_written": "Waking Up",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_cmd_desc_get_time",
+          "as_written": "Get Time",
+          "confidence": 0.5
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_cmd_desc_set_tbr",
+          "as_written": "Set TBR",
+          "confidence": 0.5
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "battery_label",
+          "as_written": "Battery",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_pump_battery_select",
+          "as_written": "Battery Type (Power View)",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "last_connection_label",
+          "as_written": "Last connection",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "last_bolus_label",
+          "as_written": "Last Bolus",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "base_basal_rate_label",
+          "as_written": "Base Basal Rate",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "tempbasal_label",
+          "as_written": "Temp basal",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "reservoir_label",
+          "as_written": "Reservoir",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "errors",
+          "as_written": "Errors",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "refresh",
+          "as_written": "Refresh",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_pair",
+          "as_written": "Pair RileyLink",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_history",
+          "as_written": "Pump history",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "riley_statistics",
+          "as_written": "RL Stats",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_custom_action_wake_and_tune",
+          "as_written": "Wake and Tune Up",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_custom_action_reset_rileylink",
+          "as_written": "Reset RileyLink",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_custom_action_clear_bolus_block",
+          "as_written": "Clear Bolus Block",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Pump History",
+      "anchor": "MedtronicPump-pump-history",
+      "source_hash": "b0afaa771745ade6",
+      "summary": "How pump history is kept (24 h) and how to filter it by entry type.",
+      "dialogs": [
+        "Manage > Pump > Pump history"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_history",
+          "as_written": "Pump history",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/common/src/main/res/values/strings.xml",
+          "key": "history_group_all",
+          "as_written": "All",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/common/src/main/res/values/strings.xml",
+          "key": "history_group_bolus",
+          "as_written": "Boluses",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/common/src/main/res/values/strings.xml",
+          "key": "history_group_basal",
+          "as_written": "Basals",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/common/src/main/res/values/strings.xml",
+          "key": "history_group_alarm",
+          "as_written": "Alarms",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "RL Status (RileyLink Status)",
+      "anchor": "MedtronicPump-rl-status-rileylink-status",
+      "source_hash": "c8ac076f7b5c86bd",
+      "summary": "The RileyLink status dialog: its Settings tab with device and connection details, and its History tab with communication history.",
+      "dialogs": [
+        "Manage > Pump > RL Stats"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "history",
+          "as_written": "History",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Actions",
+      "anchor": "medtronic-actions",
+      "source_hash": "5a347fbe3847cc2b",
+      "summary": "The two Medtronic actions on the pump screen: wake and tune up to find the pump frequency, and reset the RileyLink configuration.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_custom_action_wake_and_tune",
+          "as_written": "Wake and Tune Up",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_custom_action_reset_rileylink",
+          "as_written": "Reset RileyLink",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Important notes",
+      "anchor": "important-notes",
+      "source_hash": "b5d2429895f6a9d2",
+      "summary": "Heading for Medtronic-specific notes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Special attention in NS configuration needed",
+      "anchor": "special-attention-in-ns-configuration-needed",
+      "source_hash": "28a6b5e7a5e2fad9",
+      "summary": "Warns that the pump serial number is exposed to Nightscout and that the site must be secured.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "OpenAPS users",
+      "anchor": "openaps-users",
+      "source_hash": "91df1c3471a565b1",
+      "summary": "How AAPS differs from OpenAPS with Medtronic pumps; avoid bolusing on the pump while AAPS does.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Logging",
+      "anchor": "logging",
+      "source_hash": "fbf258d2c7613491",
+      "summary": "Which log categories to enable in Maintenance > Log Settings to troubleshoot the Medtronic driver.",
+      "dialogs": [
+        "Main menu > Maintenance > Log Settings"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Medtronic CGM",
+      "anchor": "medtronic-cgm",
+      "source_hash": "a8a3c9f90ba0c82a",
+      "summary": "Medtronic CGMs are not supported.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Manual use of pump",
+      "anchor": "manual-use-of-pump",
+      "source_hash": "bceb2f4ce40327e8",
+      "summary": "Avoid manual commands on the pump; leave at least 3 minutes between them.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Timezone changes and DST (Daylight Saving Time) or Traveling with Medtronic Pump and AAPS",
+      "anchor": "timezone-changes-and-dst-daylight-saving-time-or-traveling-with-medtronic-pump-and-aaps",
+      "source_hash": "403bb9b25882ea69",
+      "summary": "AAPS updates the pump time on time-zone changes; travelling west can cause wrong IOB.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Is a GNARL a fully compatible Rileylink compatible device?",
+      "anchor": "is-a-gnarl-a-fully-compatible-rileylink-compatible-device",
+      "source_hash": "ffca08e112322d69",
+      "summary": "GNARL supports all functions the driver uses but is experimental.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "FAQ",
+      "anchor": "MedtronicPump-faq",
+      "source_hash": "b07ed55203f0d88e",
+      "summary": "Heading for frequently asked questions.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "What to do if I loose connection to RileyLink and/or pump?",
+      "anchor": "MedtronicPump-what-to-do-if-i-loose-connection-to-rileylink-and-or-pump",
+      "source_hash": "713a52d4df9bbda6",
+      "summary": "Steps to restore the connection: wake and tune up, toggle Bluetooth, reset the RileyLink and tap Reset RileyLink, or restart phone and link together.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_custom_action_wake_and_tune",
+          "as_written": "Wake and Tune Up",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/medtronic/src/main/res/values/strings.xml",
+          "key": "medtronic_custom_action_reset_rileylink",
+          "as_written": "Reset RileyLink",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "How to determine what Frequency my pump uses",
+      "anchor": "how-to-determine-what-frequency-my-pump-uses",
+      "source_hash": "812e573b2e18f148",
+      "summary": "Reading the frequency code on the back of the pump and choosing the matching Pump Frequency option.",
+      "dialogs": [
+        "Configuration > Pump > Medtronic > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "medtronic_pump_frequency_us_ca",
+          "as_written": "US & Canada (916 MHz)",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "medtronic_pump_frequency_worldwide",
+          "as_written": "Worldwide (868 Mhz)",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "How to fix the \"pump unreachable\" error",
+      "anchor": "MedtronicPump-pump-unreachable",
+      "source_hash": "6dbb99b0bc37bb45",
+      "summary": "Fixing the pump unreachable error after AAPS 3.4 by switching Medtronic Encoding to hardware encoding.",
+      "dialogs": [
+        "Configuration > Pump > Medtronic > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_unreachable",
+          "as_written": "pump unreachable",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "medtronic_pump_encoding_title",
+          "as_written": "Medtronic Encoding",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "medtronic_pump_encoding_4b6b_rileylink",
+          "as_written": "Hardware Encoding",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Where to get help",
+      "anchor": "where-to-get-help",
+      "source_hash": "903221c8e05b0da5",
+      "summary": "How to get help with the community-maintained Medtronic driver: read the docs, ask on Discord, report bugs on GitHub with logs and device details.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": "The page writes 'Get Time', 'Set TBR' and 'Hardware Encoding'; the app labels are 'Get Pump Time', 'Set Temporary Basal' and 'Hardware 4b6b Encoding', so those mentions have lowered confidence."
+}
