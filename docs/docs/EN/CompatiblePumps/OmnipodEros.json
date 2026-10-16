@@ -1,0 +1,1990 @@
+{
+  "schema_version": 1,
+  "doc_path": "docs/EN/CompatiblePumps/OmnipodEros.md",
+  "repo_commit": "5aa82b15d9a0e953913d0a9bc7d7da6b7105fb23",
+  "app_commit": "1dabf4e74ddd7675153fc17c89a8f54d7d4d712b",
+  "generated_by": "claude-code skill aaps-doc-context",
+  "summary": "Setting up and using the Omnipod Eros pump driver with a RileyLink-type communication device: enabling the driver, pairing the RileyLink, activating and deactivating pods, suspending and resuming delivery, silencing alerts, pod and RileyLink history, the Omnipod pump screen, the driver settings and troubleshooting.",
+  "features": [
+    "Omnipod Eros",
+    "RileyLink",
+    "Pump"
+  ],
+  "screens": [
+    {
+      "ui_location": "Manage > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "pump_management"
+    },
+    {
+      "ui_location": "Main menu > Configuration > Pump",
+      "file": "core/ui/src/androidMain/res/values/strings.xml",
+      "key": "configbuilder_pump"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Omnipod Eros",
+      "anchor": "omnipod-eros",
+      "source_hash": "f1558b247b94780f",
+      "summary": "Introduces the page: setting up and using the Omnipod Eros pump driver in AAPS (not DASH), and notes that Omnipod Eros is being discontinued.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Hardware and software requirements",
+      "anchor": "hardware-and-software-requirements",
+      "source_hash": "87185181b4f19f2e",
+      "summary": "Lists the hardware needed: a RileyLink-type pod communication device, a supported phone and an Eros pod; on this page RileyLink means any of these devices.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Before you begin",
+      "anchor": "before-you-begin",
+      "source_hash": "1d581bfe64a92daf",
+      "summary": "Safety points before starting: spare equipment, the PDM stops working with the pod, one RileyLink per pod, the pod keeps delivering basal out of range, and no half-hour basal rates.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Enabling the Omnipod Driver in AAPS",
+      "anchor": "enabling-the-omnipod-driver-in-aaps",
+      "source_hash": "46685b85c01d63ad",
+      "summary": "Introduces the two ways to enable the Omnipod Eros driver.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Option 1: The Setup Wizard",
+      "anchor": "option-1-the-setup-wizard",
+      "source_hash": "2e88becd942189ee",
+      "summary": "Selecting Omnipod Eros at the Pump step of the Setup Wizard; the RileyLink is paired later on the pump screen.",
+      "dialogs": [
+        "Setup Wizard > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_setupwizard",
+          "as_written": "Setup Wizard",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_pump_description",
+          "as_written": "Pump integration for Omnipod Eros",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Option 2: The Configuration screen",
+      "anchor": "option-2-the-configuration-screen",
+      "source_hash": "36ec89382658b51a",
+      "summary": "Selecting Omnipod Eros under Configuration > Pump, then using the Settings and Open plugin buttons on its card.",
+      "dialogs": [
+        "Main menu > Configuration > Pump",
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "configbuilder_pump",
+          "as_written": "Pump",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Verification of Omnipod Driver Selection",
+      "anchor": "verification-of-omnipod-driver-selection",
+      "source_hash": "a5c4b5ed95584f02",
+      "summary": "Checking that the Eros driver is active by opening the pump screen from Manage; without a RileyLink it shows Not Started and No Active Pod.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_status",
+          "as_written": "RileyLink Status",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_state_not_started",
+          "as_written": "Not Started",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_pod_status",
+          "as_written": "Pod Status",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_status_no_active_pod",
+          "as_written": "No Active Pod",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Omnipod Configuration",
+      "anchor": "omnipod-configuration",
+      "source_hash": "0089dfbc3b8cc840",
+      "summary": "Explains that all pod and RileyLink actions are buttons on the Omnipod pump screen.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "refresh",
+          "as_written": "Refresh",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "RileyLink Setup",
+      "anchor": "OmnipodEros-rileylink-setup",
+      "source_hash": "6cf9d2f34e77d78f",
+      "summary": "Pairing the RileyLink from the Omnipod pump screen with Pair RileyLink and checking that it connects.",
+      "dialogs": [
+        "Manage > Pump",
+        "Manage > Pump > Pair RileyLink"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_pair",
+          "as_written": "Pair RileyLink",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_pair_success",
+          "as_written": "RileyLink paired successfully",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.6
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_status",
+          "as_written": "RileyLink Status",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_state_connected",
+          "as_written": "Connected",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_pod_status",
+          "as_written": "Pod Status",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_status_no_active_pod",
+          "as_written": "No Active Pod",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_pod_management_button_reset_riley_link_config",
+          "as_written": "Reset RileyLink",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Activating a Pod",
+      "anchor": "OmnipodEros-activating-a-pod",
+      "source_hash": "60dd879a1db41f0f",
+      "summary": "Step-by-step activation of a new Eros pod with the activation wizard: profile, filling, insulin choice, priming, site location, attaching the pod and inserting the cannula, and the RileyLink range errors.",
+      "dialogs": [
+        "Manage > Pump > Activate Pod"
+      ],
+      "mentions": [
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_status",
+          "as_written": "RileyLink Status",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_state_connected",
+          "as_written": "Connected",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_management_button_activate_pod",
+          "as_written": "Activate Pod",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_wizard_profile_gate_title",
+          "as_written": "Profile required",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_activation_wizard_start_pod_activation_title",
+          "as_written": "Fill Pod",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "next",
+          "as_written": "Next",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "select_insulin",
+          "as_written": "Select Insulin",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_activation_wizard_initialize_pod_title",
+          "as_written": "Initialize Pod",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_error_communication_failed_no_response_from_pod",
+          "as_written": "No response from Pod",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "retry",
+          "as_written": "Retry",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "site_location",
+          "as_written": "Site location",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_site_rotation_manage_pump",
+          "as_written": "Manage pump site rotation",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_activation_wizard_attach_pod_title",
+          "as_written": "Attach Pod",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cancel",
+          "as_written": "Cancel",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_activation_wizard_insert_cannula_title",
+          "as_written": "Insert Cannula",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_error_communication_failed_no_response_from_riley_link",
+          "as_written": "No response from RileyLink",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_activation_wizard_pod_activated_title",
+          "as_written": "Pod Activated",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "finish",
+          "as_written": "Finish",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_management_button_deactivate_pod",
+          "as_written": "Deactivate Pod",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Deactivating a Pod",
+      "anchor": "deactivating-a-pod",
+      "source_hash": "e1dece7736eb1744",
+      "summary": "Step-by-step deactivation of the active pod with the deactivation wizard, what to do when it fails (retry or discard), and checking the pump screen afterwards.",
+      "dialogs": [
+        "Manage > Pump > Deactivate Pod"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_management_button_deactivate_pod",
+          "as_written": "Deactivate Pod",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "next",
+          "as_written": "Next",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "ok",
+          "as_written": "OK",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "cancel",
+          "as_written": "Cancel",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_deactivation_wizard_deactivating_pod_title",
+          "as_written": "Deactivating Pod",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_error_communication_failed_no_response_from_riley_link",
+          "as_written": "No response from RileyLink",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_error_communication_failed_no_response_from_pod",
+          "as_written": "No response from Pod",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "retry",
+          "as_written": "Retry",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_deactivation_wizard_discard_pod",
+          "as_written": "Discard Pod",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_deactivation_wizard_pod_deactivated_title",
+          "as_written": "Pod Deactivated",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "finish",
+          "as_written": "Finish",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_status",
+          "as_written": "RileyLink Status",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_state_connected",
+          "as_written": "Connected",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_pod_status",
+          "as_written": "Pod Status",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_status_no_active_pod",
+          "as_written": "No Active Pod",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Suspending and Resuming Insulin Delivery",
+      "anchor": "suspending-and-resuming-insulin-delivery",
+      "source_hash": "261b1e5eb69bcdb7",
+      "summary": "Introduces suspending and resuming delivery; the Suspend button must first be enabled in the Other settings.",
+      "dialogs": [
+        "Omnipod Eros settings > Other"
+      ],
+      "mentions": [
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_button_suspend_delivery",
+          "as_written": "Suspend",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_suspend_delivery_button_enabled",
+          "as_written": "Show Suspend Delivery button in Omnipod tab",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_category_other",
+          "as_written": "Other",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Suspending Insulin Delivery",
+      "anchor": "suspending-insulin-delivery",
+      "source_hash": "28d4a1e4fb029488",
+      "summary": "Suspending all insulin delivery on the active pod with Suspend on the Omnipod pump screen, and the warning shown when it fails.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_button_suspend_delivery",
+          "as_written": "Suspend",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_pod_status",
+          "as_written": "Pod Status",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_status_suspended",
+          "as_written": "Suspended",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_button_resume_delivery",
+          "as_written": "Resume Delivery",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "warning",
+          "as_written": "Warning",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_error_failed_to_suspend_delivery",
+          "as_written": "Failed to suspend delivery",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Resuming Insulin Delivery",
+      "anchor": "resuming-insulin-delivery",
+      "source_hash": "2f9c029c7085b043",
+      "summary": "Resuming insulin delivery on a suspended pod with Resume Delivery, and the warning shown when it fails.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_pod_status",
+          "as_written": "Pod Status",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_status_suspended",
+          "as_written": "Suspended",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_button_resume_delivery",
+          "as_written": "Resume Delivery",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_status_running",
+          "as_written": "Running",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_button_suspend_delivery",
+          "as_written": "Suspend",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "warning",
+          "as_written": "Warning",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_error_failed_to_resume_delivery",
+          "as_written": "Failed to resume delivery",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Silencing Pod Alerts",
+      "anchor": "silencing-pod-alerts",
+      "source_hash": "68e69736f38c2160",
+      "summary": "Silencing the pod expiry beeps with Silence Alerts on the Omnipod pump screen, or letting AAPS silence them automatically.",
+      "dialogs": [
+        "Manage > Pump",
+        "Omnipod Eros settings > Alerts"
+      ],
+      "mentions": [
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_button_silence_alerts",
+          "as_written": "Silence Alerts",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_automatically_silence_alerts",
+          "as_written": "Automatically silence Pod alerts",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_expiration_alarm_hours_before_shutdown",
+          "as_written": "Alert at hours before shutdown (80 Hours)",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_category_alerts",
+          "as_written": "Alerts",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_pod_expiry_date",
+          "as_written": "Pod Expires",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_pod_active_alerts",
+          "as_written": "Active Pod Alerts",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_alert_expiration",
+          "as_written": "Pod will expire soon",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "warning",
+          "as_written": "Warning",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_error_failed_to_silence_alerts",
+          "as_written": "Failed to silence alerts",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "View Pod History",
+      "anchor": "OmnipodEros-view-pod-history",
+      "source_hash": "627c290c54ea3fb2",
+      "summary": "Opening the Pod History screen from the Omnipod pump screen and filtering pod commands by category.",
+      "dialogs": [
+        "Manage > Pump > Pod History"
+      ],
+      "mentions": [
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_uncertain",
+          "as_written": "Uncertain",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_management_button_pod_history",
+          "as_written": "Pod History",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/common/src/main/res/values/strings.xml",
+          "key": "history_group_all",
+          "as_written": "All",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "View RileyLink Settings and History",
+      "anchor": "view-rileylink-settings-and-history",
+      "source_hash": "d86524cc557f0755",
+      "summary": "Introduces the RileyLink Stats screen with its Settings and History tabs, and how to show its button.",
+      "dialogs": [
+        "Manage > Pump > RileyLink Stats",
+        "Omnipod Eros settings > Other"
+      ],
+      "mentions": [
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_pod_management_button_riley_link_stats",
+          "as_written": "RileyLink Stats",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "history",
+          "as_written": "History",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_preferences_riley_link_stats_button_enabled",
+          "as_written": "Show RileyLink Stats button in Pod Management menu",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_category_other",
+          "as_written": "Other",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Manually Re-establish Pod Communication Device Bluetooth Communication",
+      "anchor": "manually-re-establish-pod-communication-device-bluetooth-communication",
+      "source_hash": "5f860893cf120067",
+      "summary": "Reconnecting a RileyLink that shows RileyLink unreachable: Reset RileyLink, toggle phone Bluetooth, or pair it again.",
+      "dialogs": [
+        "Manage > Pump",
+        "Manage > Pump > RileyLink Stats > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_status",
+          "as_written": "RileyLink Status",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_error_unreachable",
+          "as_written": "RileyLink unreachable",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_pod_management_button_reset_riley_link_config",
+          "as_written": "Reset RileyLink",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_config_reset",
+          "as_written": "RileyLink configuration reset",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_pair",
+          "as_written": "Pair RileyLink",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_state_connected",
+          "as_written": "Connected",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_connection_status",
+          "as_written": "Connection Status",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_pod_management_button_riley_link_stats",
+          "as_written": "RileyLink Stats",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Pod Communication Device and Active Pod Settings",
+      "anchor": "pod-communication-device-and-active-pod-settings",
+      "source_hash": "f8b9b55888ff6b65",
+      "summary": "Opening the Settings tab of RileyLink Stats, which shows the paired RileyLink and the active pod.",
+      "dialogs": [
+        "Manage > Pump > RileyLink Stats > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_pod_management_button_riley_link_stats",
+          "as_written": "RileyLink Stats",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_title",
+          "as_written": "RileyLink",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_device",
+          "as_written": "Device",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "RileyLink fields",
+      "anchor": "rileylink-fields",
+      "source_hash": "6c35782d70f85a29",
+      "summary": "Describes the RileyLink fields on the Settings tab of RileyLink Stats.",
+      "dialogs": [
+        "Manage > Pump > RileyLink Stats > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_address",
+          "as_written": "Address:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_name",
+          "as_written": "Name:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_battery_level",
+          "as_written": "Battery Level:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "riley_link_show_battery_level",
+          "as_written": "Show battery level reported by OrangeLink/EmaLink/DiaLink",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_connection_status",
+          "as_written": "Connection Status",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_connection_error",
+          "as_written": "Connection Error:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_firmware_version",
+          "as_written": "Firmware Version:",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Device fields - With an Active Pod",
+      "anchor": "device-fields-with-an-active-pod",
+      "source_hash": "5988449863202844",
+      "summary": "Describes the device fields shown on the Settings tab of RileyLink Stats while a pod is active.",
+      "dialogs": [
+        "Manage > Pump > RileyLink Stats > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_device_type",
+          "as_written": "Device Type:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_target_device_omnipod",
+          "as_written": "Omnipod (Eros)",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_configured_device_model",
+          "as_written": "Configured Device Model:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_connected_device_model",
+          "as_written": "Connected Device Model:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_pump_serial_number",
+          "as_written": "Pump Serial Number:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_pump_frequency",
+          "as_written": "Pump Frequency:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_last_used_frequency",
+          "as_written": "Last Used Frequency:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_last_device_contact",
+          "as_written": "Last Device Contact:",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "RileyLink and Active Pod History",
+      "anchor": "omnipod-eros-rileylink-and-active-pod-history",
+      "source_hash": "d443c52251d5ecde",
+      "summary": "Opening the History tab of RileyLink Stats, which lists RileyLink and pod events for the active pod.",
+      "dialogs": [
+        "Manage > Pump > RileyLink Stats > History"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_pod_management_button_riley_link_stats",
+          "as_written": "RileyLink Stats",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "history",
+          "as_written": "History",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Fields",
+      "anchor": "fields",
+      "source_hash": "19b870b80ded3ed3",
+      "summary": "Describes the columns of each entry on the RileyLink Stats History tab.",
+      "dialogs": [
+        "Manage > Pump > RileyLink Stats > History"
+      ],
+      "mentions": [
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_device",
+          "as_written": "Device:",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "time",
+          "as_written": "Time:",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Omnipod pump screen",
+      "anchor": "OmnipodEros-omnipod-pod-tab",
+      "source_hash": "21174b1a5ed3aaec",
+      "summary": "Introduces the Omnipod pump screen, how to open it and its settings, and using Refresh to clear uncertain fields.",
+      "dialogs": [
+        "Manage > Pump",
+        "Configuration > Pump > Omnipod Eros > Open plugin"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "open_plugin",
+          "as_written": "Open plugin",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "refresh",
+          "as_written": "Refresh",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_uncertain",
+          "as_written": "uncertain",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "heading": "Fields",
+      "anchor": "fields",
+      "source_hash": "7a38cead1e4e63e8",
+      "summary": "Describes each status field on the Omnipod pump screen, its values and colours.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_status",
+          "as_written": "RileyLink Status:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_state_not_started",
+          "as_written": "Not Started",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_error_unreachable",
+          "as_written": "RileyLink unreachable",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_state_rl_ready",
+          "as_written": "RileyLink ready",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_state_connected",
+          "as_written": "Connected",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_pod_unique_id",
+          "as_written": "Unique ID:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_lot_number",
+          "as_written": "LOT Number:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_pod_sequence_number",
+          "as_written": "Sequence Number:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_firmware_version",
+          "as_written": "Firmware Version:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_time_on_pod",
+          "as_written": "Time on Pod:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_pod_expiry_date",
+          "as_written": "Pod Expires:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_pod_hard_end_date",
+          "as_written": "Pod Hard End:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_pod_status",
+          "as_written": "Pod Status:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_status_no_active_pod",
+          "as_written": "No Active Pod",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_status_running",
+          "as_written": "Running",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_status_suspended",
+          "as_written": "Suspended",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_last_connection",
+          "as_written": "Last Connection:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_moments_ago",
+          "as_written": "Moments ago",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_less_than_a_minute_ago",
+          "as_written": "Less than a minute ago",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_last_bolus",
+          "as_written": "Last Bolus:",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_base_basal_rate",
+          "as_written": "Base Basal Rate:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_temp_basal_rate",
+          "as_written": "Temp Basal Rate:",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "reservoir_label",
+          "as_written": "Reservoir:",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "overview_reservoir_concentration_value_over",
+          "as_written": "Over 50 U left",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_total_delivered",
+          "as_written": "Total Delivered:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_pod_active_alerts",
+          "as_written": "Active Pod Alerts:",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "errors",
+          "as_written": "Errors:",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Buttons",
+      "anchor": "buttons",
+      "source_hash": "ba4a158b761caa5e",
+      "summary": "Describes the pod status buttons and the pod and RileyLink management buttons on the Omnipod pump screen, and when each is shown.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "refresh",
+          "as_written": "Refresh:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_button_silence_alerts",
+          "as_written": "Silence Alerts:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_automatically_silence_alerts",
+          "as_written": "Automatically silence Pod alerts",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_button_set_time",
+          "as_written": "Set time:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_button_suspend_delivery",
+          "as_written": "Suspend:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_suspend_delivery_button_enabled",
+          "as_written": "Show Suspend Delivery button in Omnipod tab",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_button_resume_delivery",
+          "as_written": "Resume Delivery:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_management_button_activate_pod",
+          "as_written": "Activate Pod:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_management_button_deactivate_pod",
+          "as_written": "Deactivate Pod:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_deactivation_wizard_discard_pod",
+          "as_written": "Discard Pod",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_management_button_play_test_beep",
+          "as_written": "Play Test Beep:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_management_button_pod_history",
+          "as_written": "Pod History:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_pair",
+          "as_written": "Pair RileyLink:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_pod_management_button_riley_link_stats",
+          "as_written": "RileyLink Stats:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_preferences_riley_link_stats_button_enabled",
+          "as_written": "Show RileyLink Stats button in Pod Management menu",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.7
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "history",
+          "as_written": "History",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_pod_management_button_reset_riley_link_config",
+          "as_written": "Reset RileyLink:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_management_button_discard_pod",
+          "as_written": "Discard Pod:",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "*Reset RileyLink Notes*",
+      "anchor": "OmnipodEros-reset-rileylink-config-notes",
+      "source_hash": "80e81d1cdcb4afb3",
+      "summary": "When to use Reset RileyLink: a stuck RileyLink, or after it was switched off and on.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_pod_management_button_reset_riley_link_config",
+          "as_written": "Reset RileyLink",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Omnipod Settings",
+      "anchor": "OmnipodEros-omnipod-settings",
+      "source_hash": "610f513ee4327475",
+      "summary": "How to open the Omnipod Eros driver settings and how they are grouped.",
+      "dialogs": [
+        "Manage > Pump > Settings",
+        "Main menu > Configuration > Pump > Omnipod Eros > Settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "nav_configuration",
+          "as_written": "Configuration",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "heading": "RileyLink",
+      "anchor": "rileylink",
+      "source_hash": "86e97d818675af12",
+      "summary": "RileyLink settings: scanning before connecting, battery level reporting for OrangeLink/EmaLink/DiaLink, and battery change logging.",
+      "dialogs": [
+        "Omnipod Eros settings > RileyLink"
+      ],
+      "mentions": [
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_pair",
+          "as_written": "Pair RileyLink",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "orange_use_scanning_level",
+          "as_written": "Use Scanning:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "riley_link_show_battery_level",
+          "as_written": "Show battery level reported by OrangeLink/EmaLink/DiaLink:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_preferences_battery_change_logging_enabled",
+          "as_written": "Enable battery change logging in Actions:",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_battery_change",
+          "as_written": "Pump Battery Change",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Confirmation Beeps",
+      "anchor": "confirmation-beeps",
+      "source_hash": "09ceccc4b929e0e0",
+      "summary": "Switches that make the pod beep for boluses, basal changes, SMBs and TBRs.",
+      "dialogs": [
+        "Omnipod Eros settings > Confirmation Beeps"
+      ],
+      "mentions": [
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_bolus_beeps_enabled",
+          "as_written": "Bolus beeps enabled:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_basal_beeps_enabled",
+          "as_written": "Basal beeps enabled:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_smb_beeps_enabled",
+          "as_written": "SMB beeps enabled:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_tbr_beeps_enabled",
+          "as_written": "TBR beeps enabled:",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Alerts",
+      "anchor": "alerts",
+      "source_hash": "3af0ed1ed65f4e65",
+      "summary": "Settings for the pod expiry, shutdown and low reservoir alerts, and automatic silencing of pod alerts.",
+      "dialogs": [
+        "Omnipod Eros settings > Alerts"
+      ],
+      "mentions": [
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_automatically_silence_alerts",
+          "as_written": "Automatically silence Pod alerts",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_button_silence_alerts",
+          "as_written": "Silence Alerts",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_expiration_reminder_enabled",
+          "as_written": "Expiration reminder enabled:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_expiration_alarm_hours_before_shutdown",
+          "as_written": "Alert at hours before shutdown (80 Hours):",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_low_reservoir_alert_enabled",
+          "as_written": "Low reservoir alert enabled:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_low_reservoir_alert_units",
+          "as_written": "Number of units:",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Notifications",
+      "anchor": "notifications",
+      "source_hash": "ba7736c8d84d1ee3",
+      "summary": "Switches that add a sound to AAPS notifications about uncertain TBRs, SMBs and boluses.",
+      "dialogs": [
+        "Omnipod Eros settings > Notifications"
+      ],
+      "mentions": [
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_notification_uncertain_tbr_sound_enabled",
+          "as_written": "Sound for uncertain TBR notifications enabled:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_notification_uncertain_smb_sound_enabled",
+          "as_written": "Sound for uncertain SMB notifications enabled:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_notification_uncertain_bolus_sound_enabled",
+          "as_written": "Sound for uncertain bolus notifications enabled:",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Other",
+      "anchor": "other",
+      "source_hash": "b0cdc14f6be929e6",
+      "summary": "Debugging settings: showing the Suspend and RileyLink Stats buttons, the obsolete Pulse Log button setting, and DST/time zone detection.",
+      "dialogs": [
+        "Omnipod Eros settings > Other"
+      ],
+      "mentions": [
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_suspend_delivery_button_enabled",
+          "as_written": "Show Suspend Delivery button in Omnipod tab:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_button_suspend_delivery",
+          "as_written": "Suspend",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_preferences_pulse_log_button_enabled",
+          "as_written": "Show Pulse Log button in Pod Management menu:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_pod_management_pulse_log",
+          "as_written": "Pulse Log",
+          "confidence": 0.7
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_preferences_riley_link_stats_button_enabled",
+          "as_written": "Show RileyLink Stats button in Pod Management menu:",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_pod_management_button_riley_link_stats",
+          "as_written": "RileyLink Stats",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_preferences_time_change_enabled",
+          "as_written": "DST/Time zone detection enabled:",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Switching or Removing an Active Pod Communication Device (RileyLink)",
+      "anchor": "switching-or-removing-an-active-pod-communication-device-rileylink",
+      "source_hash": "86302157b02d0067",
+      "summary": "Switching to another RileyLink by pairing the new one with Pair RileyLink; there is no separate remove button.",
+      "dialogs": [
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "manage",
+          "as_written": "Manage",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "pump_management",
+          "as_written": "Pump",
+          "confidence": 0.8
+        },
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "rileylink_pair",
+          "as_written": "Pair RileyLink",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Status row and careportal",
+      "anchor": "status-row-and-careportal",
+      "source_hash": "149c9848bb9a1ed0",
+      "summary": "Explains that insulin and cannula ages in the status row reset at each pod change and that pump battery age is not reported for Omnipod.",
+      "dialogs": [
+        "Main screen > status row"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "Levels",
+      "anchor": "levels",
+      "source_hash": "3ab6fe55a9d0082f",
+      "summary": "How the pod reports the insulin level (50+U above 50 units) and how OrangeLink/EmaLink/DiaLink battery level is reported.",
+      "dialogs": [
+        "Omnipod Eros settings > RileyLink"
+      ],
+      "mentions": [
+        {
+          "file": "pump/rileylink/src/main/res/values/strings.xml",
+          "key": "riley_link_show_battery_level",
+          "as_written": "Show battery level reported by OrangeLink/EmaLink/DiaLink",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Troubleshooting",
+      "anchor": "OmnipodEros-troubleshooting",
+      "source_hash": "659a188b36f9c326",
+      "summary": "Heading for the troubleshooting sections.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pod Failures",
+      "anchor": "pod-failures",
+      "source_hash": "0e0e1c8a919948a1",
+      "summary": "Notes that pods fail occasionally and points to the list of fault codes.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Preventing error 49 pod failures",
+      "anchor": "preventing-error-49-pod-failures",
+      "source_hash": "3ff7380e48688227",
+      "summary": "Recommends upload-only Nightscout synchronisation to prevent error 49 pod failures.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Pump Unreachable Alerts",
+      "anchor": "pump-unreachable-alerts",
+      "source_hash": "6806b8daac4b0144",
+      "summary": "Setting the Pump unreachable threshold in Local alerts to 120 minutes.",
+      "dialogs": [
+        "Settings > Local alerts"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "settings",
+          "as_written": "Settings",
+          "confidence": 0.6
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "localalertsettings_title",
+          "as_written": "Local alerts",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/keys/src/androidMain/res/values/strings.xml",
+          "key": "pref_title_pump_unreachable_threshold",
+          "as_written": "Pump unreachable threshold",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Import Settings from previous AAPS",
+      "anchor": "OmnipodEros-import-settings-from-previous-aaps",
+      "source_hash": "cc152071462eb467",
+      "summary": "Reinstalling AAPS between two pods, and when to tick Also replace pump settings on import.",
+      "dialogs": [
+        "Maintenance > Import settings"
+      ],
+      "mentions": [
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "import_replace_pump_settings",
+          "as_written": "Also replace pump settings",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Omnipod driver alerts",
+      "anchor": "omnipod-driver-alerts",
+      "source_hash": "4018870e800b0ec8",
+      "summary": "Introduces the Omnipod driver notifications on the main screen.",
+      "dialogs": [
+        "Main screen > notifications"
+      ],
+      "mentions": []
+    },
+    {
+      "heading": "No active Pod",
+      "anchor": "no-active-pod",
+      "source_hash": "46425c36628d0cf3",
+      "summary": "The No active Pod notification, which keeps returning until a pod is activated.",
+      "dialogs": [
+        "Main screen > notifications"
+      ],
+      "mentions": [
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_error_pod_not_attached",
+          "as_written": "No active Pod",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "snooze",
+          "as_written": "SNOOZE",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "heading": "Pod suspended",
+      "anchor": "pod-suspended",
+      "source_hash": "ce7dda87016803ef",
+      "summary": "The informational Pod suspended notification.",
+      "dialogs": [
+        "Main screen > notifications"
+      ],
+      "mentions": [
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_error_pod_suspended",
+          "as_written": "Pod suspended",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Setting basal profile failed. Delivery might be suspended! Please manually refresh the Pod status from the Omnipod tab and resume delivery if needed.",
+      "anchor": "setting-basal-profile-failed-delivery-might-be-suspended-please-manually-refresh-the-pod-status-from-the-omnipod-tab-and-resume-delivery-if-needed",
+      "source_hash": "a75aed1c54ff1cb1",
+      "summary": "The notification that setting the basal profile failed; refresh the pod status and resume delivery if needed.",
+      "dialogs": [
+        "Main screen > notifications",
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_error_set_basal_failed_delivery_might_be_suspended",
+          "as_written": "Setting basal profile failed. Delivery might be suspended! Please manually refresh the Pod status from the Omnipod tab and resume delivery if needed.",
+          "confidence": 0.9
+        },
+        {
+          "file": "core/ui/src/androidMain/res/values/strings.xml",
+          "key": "refresh",
+          "as_written": "Refresh",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_button_resume_delivery",
+          "as_written": "Resume Delivery",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Unable to verify whether SMB bolus succeeded. If you are sure that the Bolus didn't succeed, you should manually delete the SMB entry from Treatments.",
+      "anchor": "unable-to-verify-whether-smb-bolus-succeeded-if-you-are-sure-that-the-bolus-didn-t-succeed-you-should-manually-delete-the-smb-entry-from-treatments",
+      "source_hash": "fe9bb58f53b9490b",
+      "summary": "The notification that an SMB could not be verified; check Last Bolus on the pump screen and delete the SMB from treatments if it failed.",
+      "dialogs": [
+        "Main screen > notifications",
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/omnipod/eros/src/main/res/values/strings.xml",
+          "key": "omnipod_eros_error_bolus_failed_uncertain_smb",
+          "as_written": "Unable to verify whether SMB bolus succeeded",
+          "confidence": 0.5
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_last_bolus",
+          "as_written": "Last Bolus",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Uncertain if \"task bolus/TBR/SMB\" completed, please manually verify if it was successful.",
+      "anchor": "uncertain-if-task-bolus-tbr-smb-completed-please-manually-verify-if-it-was-successful",
+      "source_hash": "cf3fe8012945df9f",
+      "summary": "Notifications about uncertain commands and how to clear them with a pod refresh, Set time or Resume Delivery.",
+      "dialogs": [
+        "Main screen > notifications",
+        "Manage > Pump"
+      ],
+      "mentions": [
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_button_set_time",
+          "as_written": "Set time",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_pod_status",
+          "as_written": "Pod Status",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_pod_status_suspended",
+          "as_written": "Suspended",
+          "confidence": 0.9
+        },
+        {
+          "file": "pump/omnipod/common/src/main/res/values/strings.xml",
+          "key": "omnipod_common_overview_button_resume_delivery",
+          "as_written": "Resume Delivery",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "heading": "Best Practices",
+      "anchor": "best-practices",
+      "source_hash": "0f443fd6dc74b48e",
+      "summary": "Heading for best practices.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Optimal Omnipod and RileyLink Positioning",
+      "anchor": "OmnipodEros-optimal-omnipod-and-rileylink-positioning",
+      "source_hash": "fafacddd1837ca4b",
+      "summary": "How to position the RileyLink relative to the pod for activation and deactivation, given its antenna pattern.",
+      "dialogs": [],
+      "mentions": []
+    },
+    {
+      "heading": "Where to get help",
+      "anchor": "where-to-get-help",
+      "source_hash": "dc1c9da117bf65b5",
+      "summary": "How to ask the community for help with the Omnipod driver.",
+      "dialogs": [],
+      "mentions": []
+    }
+  ],
+  "manual_note": null
+}
